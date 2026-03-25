@@ -1,0 +1,2574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Signal Room - Healthcare AI Leadership Podcast | Chris Hutchins</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="The Signal Room explores healthcare AI leadership, ethics, and strategy. Hosted by Chris Hutchins, Founder and CEO of Hutchins Data Strategy Consultants. Weekly conversations with leaders, innovators, and practitioners on AI readiness, governance, and responsible implementation in healthcare.">
+    <meta name="keywords" content="healthcare AI, AI governance, healthcare leadership, AI ethics, healthcare data strategy, AI readiness, Chris Hutchins, HDSC, healthcare podcast, LLM strategy, clinical AI, digital health">
+    <meta name="author" content="Chris Hutchins">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://signalroompodcast.com/">
+
+    <!-- Open Graph (LinkedIn, Facebook, Slack, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Signal Room - Healthcare AI Leadership Podcast">
+    <meta property="og:description" content="Healthcare AI leadership, ethics, and strategy. Hosted by Chris Hutchins. Weekly conversations on AI readiness, governance, and responsible implementation in healthcare.">
+    <meta property="og:url" content="https://signalroompodcast.com/">
+    <meta property="og:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="The Signal Room">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Signal Room - Healthcare AI Leadership Podcast">
+    <meta name="twitter:description" content="Healthcare AI leadership, ethics, and strategy. Hosted by Chris Hutchins. Weekly conversations on AI readiness, governance, and responsible implementation.">
+    <meta name="twitter:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/logos/sr-logo-purple.jpg">
+    <link rel="apple-touch-icon" href="assets/logos/sr-square.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://img.youtube.com">
+    <link rel="preconnect" href="https://cdn.prod.website-files.com">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "PodcastSeries",
+                "@id": "https://signalroompodcast.com/#podcast",
+                "name": "The Signal Room",
+                "description": "The Signal Room explores healthcare AI leadership, ethics, and strategy through authentic conversations with leaders, innovators, and practitioners navigating AI readiness, governance, and real-world implementation in healthcare.",
+                "url": "https://signalroompodcast.com",
+                "webFeed": "https://feeds.buzzsprout.com/2550733.rss",
+                "author": {
+                    "@type": "Person",
+                    "@id": "https://signalroompodcast.com/#host"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "@id": "https://signalroompodcast.com/#hdsc"
+                },
+                "image": "https://signalroompodcast.com/assets/logos/sr-banner.png",
+                "inLanguage": "en-US",
+                "genre": ["Healthcare", "Artificial Intelligence", "Leadership", "Ethics", "Technology"],
+                "keywords": "healthcare AI, AI governance, AI ethics, healthcare leadership, LLM strategy, AI readiness, clinical AI, healthcare data strategy",
+                "sameAs": [
+                    "https://www.youtube.com/@ChrisHutchinsAi",
+                    "https://www.buzzsprout.com/2550733",
+                    "https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366",
+                    "https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ",
+                    "https://x.com/Chrishutusa1",
+                    "https://www.instagram.com/chrishutusa1/",
+                    "https://www.facebook.com/profile.php?id=61584862907875",
+                    "https://www.tiktok.com/@chrishutchins6"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://signalroompodcast.com/#host",
+                "name": "Chris Hutchins",
+                "jobTitle": "Founder and CEO",
+                "worksFor": {
+                    "@type": "Organization",
+                    "@id": "https://signalroompodcast.com/#hdsc"
+                },
+                "url": "https://hutchinsdatastrategy.com",
+                "sameAs": [
+                    "https://www.linkedin.com/in/chutchins-healthcare/",
+                    "https://www.youtube.com/@ChrisHutchinsAi",
+                    "https://x.com/Chrishutusa1",
+                    "https://www.instagram.com/chrishutusa1/",
+                    "https://www.facebook.com/profile.php?id=61584862907875",
+                    "https://www.tiktok.com/@chrishutchins6"
+                ],
+                "image": "https://signalroompodcast.com/assets/chris-headshot-navysuit.png",
+                "description": "Chris Hutchins is the Founder and CEO of Hutchins Data Strategy Consultants (HDSC). For nearly three decades, he has worked inside complex healthcare systems, advising organizations, technology companies, and investors on AI readiness, governance frameworks, and responsible innovation."
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://signalroompodcast.com/#hdsc",
+                "name": "Hutchins Data Strategy Consultants",
+                "alternateName": "HDSC",
+                "url": "https://hutchinsdatastrategy.com",
+                "description": "Hutchins Data Strategy Consultants helps healthcare organizations deploy AI and data strategy responsibly, protecting trust and reducing risk in high-stakes environments.",
+                "sameAs": [
+                    "https://www.linkedin.com/company/hdsc-healthcare/",
+                    "https://www.linkedin.com/company/amplifi-tech-ventures/"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://signalroompodcast.com/#website",
+                "url": "https://signalroompodcast.com",
+                "name": "The Signal Room",
+                "publisher": {
+                    "@type": "Organization",
+                    "@id": "https://signalroompodcast.com/#hdsc"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #111118;
+            --bg-card: #16161f;
+            --accent-purple: #6c5ce7;
+            --accent-light-purple: #a29bfe;
+            --text-primary: #f0eef6;
+            --text-secondary: #9d9bb0;
+            --border-color: #2a2a3a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            object-fit: cover;
+            filter: hue-rotate(30deg) saturate(1.4) brightness(0.9);
+        }
+
+        .nav-logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .accent {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-light-purple);
+        }
+
+        .nav-links .cta-button {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            color: white;
+            padding: 0.6rem 1.3rem;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .nav-links .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 5rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.05) 0%, rgba(162, 155, 254, 0.05) 100%);
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-logo {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 16px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 12px 48px rgba(108, 92, 231, 0.35);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background-color: var(--bg-card);
+            border: 1px solid var(--accent-purple);
+            border-radius: 20px;
+            color: var(--accent-light-purple);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-headline {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-headline .gradient-text {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtext {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.85rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(108, 92, 231, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-card);
+            color: var(--accent-light-purple);
+            border: 1px solid var(--accent-purple);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent-purple);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Presented By Section */
+        .presented-by {
+            padding: 3rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .presented-label {
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .presented-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .presented-logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+        .presented-logo-link:hover {
+            opacity: 1;
+        }
+
+        .presented-logo-img {
+            height: 80px;
+            width: auto;
+            max-width: 220px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .presented-divider {
+            width: 1px;
+            height: 40px;
+            background: var(--border-color);
+        }
+
+        .amplifi-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        /* Subscribe Section */
+        .subscribe-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-secondary);
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .section-description {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 1.05rem;
+        }
+
+        .subscribe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .subscribe-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .subscribe-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .subscribe-card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .subscribe-card-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .subscribe-card-link {
+            display: inline-block;
+            color: var(--accent-light-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .subscribe-card-link:hover {
+            color: var(--accent-purple);
+        }
+
+        /* Episodes Section */
+        .episodes-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-primary);
+        }
+
+        .episodes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .episode-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .episode-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2);
+        }
+
+        .episode-date {
+            color: var(--accent-light-purple);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .episode-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .episode-guest {
+            color: var(--accent-light-purple);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .episode-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .episode-duration {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* YouTube Shorts Section */
+        .episode-shorts {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            overflow-x: auto;
+            scrollbar-width: thin;
+            min-height: 0;
+        }
+
+        .episode-shorts:empty {
+            display: none;
+        }
+
+        .episode-shorts .short-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #e17055;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .short-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(225, 112, 85, 0.12);
+            border: 1px solid rgba(225, 112, 85, 0.25);
+            color: #e17055;
+            padding: 0.3rem 0.65rem;
+            border-radius: 100px;
+            font-size: 0.72rem;
+            font-weight: 500;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s, border-color 0.2s;
+            flex-shrink: 0;
+        }
+
+        .short-pill:hover {
+            background: rgba(225, 112, 85, 0.2);
+            border-color: rgba(225, 112, 85, 0.5);
+            color: #e17055;
+        }
+
+        .short-pill svg {
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+        }
+
+        .episode-thumbnail {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            margin: -2rem -2rem 1.5rem -2rem;
+        }
+
+        .episode-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .episode-thumbnail a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 2;
+        }
+
+        .episode-thumbnail .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        .episode-thumbnail a:hover .play-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .episode-thumbnail .play-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 3;
+        }
+
+        .episode-thumbnail a:hover .play-icon {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .episode-thumbnail .play-icon::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid #6c5ce7;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin-left: 4px;
+        }
+
+        .view-all-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .view-all-link a {
+            color: var(--accent-light-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .view-all-link a:hover {
+            color: var(--accent-purple);
+        }
+
+        /* Guests Section */
+        .guests-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-secondary);
+        }
+
+        .guests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .guest-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .guest-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2);
+        }
+
+        .guest-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .guest-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .guest-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .guest-title {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .guest-episode {
+            color: var(--accent-light-purple);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .guest-links {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .guest-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .linkedin-link {
+            color: #0a66c2;
+            background: rgba(10, 102, 194, 0.1);
+            border: 1px solid rgba(10, 102, 194, 0.2);
+        }
+
+        .linkedin-link:hover {
+            background: rgba(10, 102, 194, 0.2);
+            color: #0a66c2;
+        }
+
+        .email-link {
+            color: var(--accent-light);
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+        }
+
+        .email-link:hover {
+            background: rgba(108, 92, 231, 0.2);
+        }
+
+        .icon-link {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.3s ease;
+        }
+
+        /* Original Scripted Shorts Section */
+        .scripted-shorts {
+            padding: 4rem 2rem;
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .shorts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .shorts-grid:empty + .shorts-empty-state {
+            display: block;
+        }
+
+        .shorts-grid:not(:empty) + .shorts-empty-state {
+            display: none;
+        }
+
+        .shorts-empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+            display: block;
+        }
+
+        .shorts-empty-state p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .short-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .short-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-purple);
+        }
+
+        .short-card-thumb {
+            position: relative;
+            aspect-ratio: 9/16;
+            overflow: hidden;
+            background: #1a1a2e;
+        }
+
+        .short-card-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .short-card-thumb .shorts-badge {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            background: rgba(225, 112, 85, 0.9);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .short-card-thumb .play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0);
+            transition: background 0.2s;
+        }
+
+        .short-card:hover .short-card-thumb .play-overlay {
+            background: rgba(0,0,0,0.3);
+        }
+
+        .short-card-thumb .play-overlay .play-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(108, 92, 231, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .short-card:hover .play-overlay .play-icon {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .short-card-info {
+            padding: 0.75rem;
+        }
+
+        .short-card-info h4 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--text-primary);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .short-card-info .short-meta {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 0.3rem;
+        }
+
+        /* Watch Section */
+        .watch-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-primary);
+        }
+
+        .embed-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .embed-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        .embed-button {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Listen Section */
+        .listen-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-secondary);
+        }
+
+        .listen-embed {
+            max-width: 900px;
+            margin: 2rem auto;
+        }
+
+        .listen-embed iframe {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Resources Section */
+        .resources-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-primary);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .resource-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .resource-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2);
+        }
+
+        .resource-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-link {
+            display: inline-block;
+            color: var(--accent-light-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .resource-link:hover {
+            color: var(--accent-purple);
+        }
+
+        .newsletter-cover {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-secondary);
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-subsection {
+            margin-bottom: 3rem;
+        }
+
+        .about-subsection-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-light-purple);
+        }
+
+        .about-text {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .about-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .about-link {
+            color: var(--accent-light-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .about-link:hover {
+            color: var(--accent-purple);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-light-purple);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(162, 155, 254, 0.1) 100%);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .cta-headline {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Host Photo */
+        .about-host {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .host-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 15%;
+            border: 3px solid var(--accent-purple);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-brand .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-light-purple);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: var(--text-secondary);
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-headline {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cta-headline {
+                font-size: 1.8rem;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+            }
+
+            .episodes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .shorts-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 0.75rem;
+            }
+
+            .embed-container iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 0.8rem 1rem;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+                margin-top: 70px;
+            }
+
+            .hero-headline {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-buttons .btn {
+                width: 100%;
+            }
+        }
+
+        /* Smooth transitions */
+        a, button {
+            transition: all 0.3s ease;
+        }
+
+        /* Guest Application Section */
+        .guest-apply {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .apply-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+            margin-top: 2rem;
+        }
+
+        .apply-info {
+            padding-right: 2rem;
+        }
+
+        .apply-description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .apply-what-we-look-for {
+            margin-top: 2rem;
+        }
+
+        .apply-subhead {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .apply-criteria {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .apply-form-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .apply-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.7rem 0.9rem;
+            font-family: inherit;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .apply-submit {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-light-purple));
+            color: white;
+            border: none;
+            padding: 0.85rem 2rem;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .apply-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(108, 92, 231, 0.3);
+        }
+
+        .form-note {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .apply-success {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .success-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(0, 184, 148, 0.15);
+            color: #00b894;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .apply-success h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .apply-success p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .apply-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .apply-info {
+                padding-right: 0;
+            }
+        }
+
+        /* Newsletter Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .modal-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            max-width: 480px;
+            width: 100%;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .modal-close:hover {
+            background: rgba(255,255,255,0.05);
+            color: var(--text-primary);
+        }
+
+        .modal-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .modal-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .newsletter-capture-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .newsletter-capture-form .form-group label,
+        .newsletter-capture-form .form-group input {
+            /* Inherit styles from the guest apply form */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <span class="logo nav-logo-text">The Signal Room</span>
+            <ul class="nav-links">
+                <li><a href="#episodes">Episodes</a></li>
+                <li><a href="#guests">Guests</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#listen">Listen</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#apply">Be a Guest</a></li>
+                <li><button class="cta-button" onclick="window.open('https://www.youtube.com/channel/UCk7qyfPFVyJCMsmQHX8b7mw?sub_confirmation=1', '_blank')">Subscribe</button></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <img src="assets/logos/sr-banner.png" alt="The Signal Room" class="hero-logo">
+            <div class="hero-badge">New Episode Every Wednesday</div>
+            <h1 class="hero-headline">Leadership, Ethics, and Innovation, <span class="gradient-text">Amplified</span></h1>
+            <p class="hero-subtext">Healthcare AI leadership, ethics, and LLM strategy. The Signal Room explores how healthcare leaders, data executives, and innovators navigate AI readiness, governance, and real-world implementation.</p>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/playlist?list=PLpaX7y-bHr0mKk9VLU18Iv0EyQUSHDzU8" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                <button class="btn btn-secondary" onclick="document.getElementById('listen').scrollIntoView({behavior: 'smooth'})">Listen Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presented By Section -->
+    <section class="presented-by">
+        <div class="container" style="text-align: center;">
+            <p class="presented-label">Presented by</p>
+            <div class="presented-logos">
+                <a href="https://www.hutchinsdatastrategy.com" target="_blank" class="presented-logo-link">
+                    <img src="assets/logos/hdsc-horizontal-logo.png" alt="Hutchins Data Strategy" class="presented-logo-img">
+                </a>
+                <span class="presented-divider"></span>
+                <a href="https://www.linkedin.com/company/amplifi-tech-ventures/" target="_blank" class="presented-logo-link">
+                    <img src="assets/logos/amplifi-logo.png" alt="AmpliFi Tech Ventures" class="presented-logo-img" onerror="this.parentElement.innerHTML='<span class=\'amplifi-text\'>AmpliFi Tech Ventures</span>'">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe/Connect Section -->
+    <section class="subscribe-section">
+        <div class="section-container">
+            <h2 class="section-title">Subscribe & Connect</h2>
+            <p class="section-description">Stay updated with new episodes and explore The Signal Room across your favorite platforms</p>
+            <div class="subscribe-grid">
+                <div class="subscribe-card">
+                    <div class="card-icon">▶</div>
+                    <h3 class="subscribe-card-title">YouTube Channel</h3>
+                    <p class="subscribe-card-description">Watch full episodes and exclusive content</p>
+                    <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="subscribe-card-link">Subscribe to Channel →</a>
+                </div>
+                <div class="subscribe-card">
+                    <div class="card-icon">🎙</div>
+                    <h3 class="subscribe-card-title">Buzzsprout</h3>
+                    <p class="subscribe-card-description">Audio podcast streaming and RSS</p>
+                    <a href="https://www.buzzsprout.com/2550733" target="_blank" class="subscribe-card-link">Follow Podcast →</a>
+                </div>
+                <div class="subscribe-card">
+                    <div class="card-icon">🎵</div>
+                    <h3 class="subscribe-card-title">Apple Podcasts</h3>
+                    <p class="subscribe-card-description">Subscribe and listen on Apple devices</p>
+                    <a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366" target="_blank" class="subscribe-card-link">Subscribe on Apple →</a>
+                </div>
+                <div class="subscribe-card">
+                    <div class="card-icon">🎧</div>
+                    <h3 class="subscribe-card-title">Spotify</h3>
+                    <p class="subscribe-card-description">Stream on Spotify with your library</p>
+                    <a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" class="subscribe-card-link">Stream on Spotify →</a>
+                </div>
+                <div class="subscribe-card">
+                    <div class="card-icon">📬</div>
+                    <h3 class="subscribe-card-title">AI Health Pulse Newsletter</h3>
+                    <p class="subscribe-card-description">Weekly Monday newsletter on healthcare AI governance, trust, and readiness. 38+ issues published.</p>
+                    <a href="#" onclick="openNewsletterModal(event)" class="subscribe-card-link">Subscribe on LinkedIn →</a>
+                </div>
+                <div class="subscribe-card">
+                    <div class="card-icon">🎤</div>
+                    <h3 class="subscribe-card-title">Speaker Page</h3>
+                    <p class="subscribe-card-description">Book Chris Hutchins for keynotes, panels, and workshops</p>
+                    <a href="https://www.chrisjhutchins.com" target="_blank" class="subscribe-card-link">View Speaker Page →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section class="episodes-section" id="episodes">
+        <div class="section-container">
+            <h2 class="section-title">Latest Episodes</h2>
+            <div class="episodes-grid">
+                <div class="episode-card" data-video-id="MhHS4drVihM" data-guest="MarKeisha Snaith">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/MhHS4drVihM/maxresdefault.jpg" alt="Healthcare Leadership, Operational Reality, and System Signals">
+                        <a href="https://www.youtube.com/watch?v=MhHS4drVihM" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="markeisha-snaith"></div>
+                    <div class="episode-date">March 25, 2026</div>
+                    <h3 class="episode-title">Healthcare Leadership, Operational Reality, and System Signals</h3>
+                    <div class="episode-guest">MarKeisha Snaith</div>
+                    <p class="episode-description">Leadership inside complex healthcare systems and how strategic decisions shape the way organizations actually function. Where transformation efforts stall, how communication influences behavior, and the signals leaders often overlook.</p>
+                    <div class="episode-duration">45 min</div>
+                </div>
+                <div class="episode-card" data-video-id="0QC5nLRY5fs" data-guest="Amanda Roser">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/0QC5nLRY5fs/maxresdefault.jpg" alt="Caregivers as the Connective Tissue of Healthcare">
+                        <a href="https://www.youtube.com/watch?v=0QC5nLRY5fs" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="amanda-roser"></div>
+                    <div class="episode-date">March 18, 2026</div>
+                    <h3 class="episode-title">Caregivers as the Connective Tissue of Healthcare</h3>
+                    <div class="episode-guest">Amanda Roser</div>
+                    <p class="episode-description">Exploring the critical role caregivers play in bridging gaps between clinical teams, patients, and systems. How human connection remains the foundation of healthcare delivery.</p>
+                    <div class="episode-duration">50 min</div>
+                </div>
+                <div class="episode-card" data-video-id="wizfkLwkIYw" data-guest="Natasha Dole">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/wizfkLwkIYw/maxresdefault.jpg" alt="The Scary Truth About AI in the ER and Why Clinical Judgment Still Wins">
+                        <a href="https://www.youtube.com/watch?v=wizfkLwkIYw" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="natasha-dole"></div>
+                    <div class="episode-date">March 13, 2026</div>
+                    <h3 class="episode-title">The Scary Truth About AI in the ER and Why Clinical Judgment Still Wins</h3>
+                    <div class="episode-guest">Dr. Natasha Dole</div>
+                    <p class="episode-description">A candid conversation with an ER physician about the real challenges of implementing AI in emergency medicine, trust gaps, and why human expertise remains irreplaceable.</p>
+                    <div class="episode-duration">44 min</div>
+                </div>
+                <div class="episode-card" data-video-id="iKiG5L005Fg" data-guest="Gary Cao">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/iKiG5L005Fg/maxresdefault.jpg" alt="The Enterprise AI Journey: From Data Foundations to Generative and Agentic AI">
+                        <a href="https://www.youtube.com/watch?v=iKiG5L005Fg" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="gary-cao"></div>
+                    <div class="episode-date">March 4, 2026</div>
+                    <h3 class="episode-title">The Enterprise AI Journey: From Data Foundations to Generative and Agentic AI</h3>
+                    <div class="episode-guest">Gary Cao</div>
+                    <p class="episode-description">A comprehensive look at building enterprise-scale AI programs. From data governance basics to advanced LLM strategy, and the execution challenges that matter most.</p>
+                    <div class="episode-duration">42 min</div>
+                </div>
+                <div class="episode-card" data-video-id="7lsO0GK-UK4" data-guest="Brian Sutherland">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/7lsO0GK-UK4/maxresdefault.jpg" alt="From AI Strategy to Execution: Trust, Leadership, and Operational Reality">
+                        <a href="https://www.youtube.com/watch?v=7lsO0GK-UK4" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="brian-sutherland"></div>
+                    <div class="episode-date">February 25, 2026</div>
+                    <h3 class="episode-title">From AI Strategy to Execution: Trust, Leadership, and Operational Reality</h3>
+                    <div class="episode-guest">Brian Sutherland</div>
+                    <p class="episode-description">Moving from strategy to reality. How leaders build trust in AI products, manage stakeholder concerns, and navigate the gap between ambition and operational constraints.</p>
+                    <div class="episode-duration">40 min</div>
+                </div>
+                <div class="episode-card" data-video-id="TvaEQ87vgpo" data-guest="David Finkelshteyn">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/TvaEQ87vgpo/maxresdefault.jpg" alt="Why AI Verification is the Real Bottleneck in Pharmaceutical Drug Discovery">
+                        <a href="https://www.youtube.com/watch?v=TvaEQ87vgpo" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="david-finkelshteyn"></div>
+                    <div class="episode-date">February 18, 2026</div>
+                    <h3 class="episode-title">Why AI Verification is the Real Bottleneck in Pharmaceutical Drug Discovery</h3>
+                    <div class="episode-guest">David Finkelshteyn</div>
+                    <p class="episode-description">AI accelerates research pipelines, but verification is the slowdown. Understanding validation, regulatory needs, and how pharma leaders approach responsible AI adoption.</p>
+                    <div class="episode-duration">37 min</div>
+                </div>
+                <div class="episode-card" data-video-id="gR6OXuIxIOY" data-guest="Guman Chauhan">
+                    <div class="episode-thumbnail">
+                        <img src="https://img.youtube.com/vi/gR6OXuIxIOY/maxresdefault.jpg" alt="No Alerts, Still Breached: Cybersecurity Risks and Ethical Leadership in Healthcare AI">
+                        <a href="https://www.youtube.com/watch?v=gR6OXuIxIOY" target="_blank">
+                            <div class="play-overlay">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="episode-shorts" data-episode="guman-chauhan"></div>
+                    <div class="episode-date">February 11, 2026</div>
+                    <h3 class="episode-title">No Alerts, Still Breached: Cybersecurity Risks and Ethical Leadership in Healthcare AI</h3>
+                    <div class="episode-guest">Guman Chauhan</div>
+                    <p class="episode-description">The intersection of AI, cybersecurity, and compliance. Real threats, governance failures, and why ethical leadership in healthcare AI starts with security fundamentals.</p>
+                    <div class="episode-duration">34 min</div>
+                </div>
+            </div>
+            <div class="view-all-link">
+                <a href="https://www.youtube.com/playlist?list=PLpaX7y-bHr0mKk9VLU18Iv0EyQUSHDzU8" target="_blank">View All Episodes →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guests Section -->
+    <section class="guests-section" id="guests">
+        <div class="section-container">
+            <h2 class="section-title">Our Guests</h2>
+            <p class="section-description">Leaders, innovators, and practitioners driving the future of healthcare AI</p>
+            <div class="guests-grid">
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/markeisha-snaith.jpg" alt="MarKeisha Snaith" loading="lazy"></div>
+                    <h3 class="guest-name">MarKeisha Snaith</h3>
+                    <p class="guest-title">Director of AI Security Governance & Founder, Xire</p>
+                    <p class="guest-episode">Healthcare Leadership, Operational Reality, and System Signals</p>
+                    <div class="guest-links">
+                        <a href="https://linkedin.com/in/markeishasnaith" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://xire.io" target="_blank" rel="noopener" class="guest-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            Website
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/amanda-roser.jpg" alt="Amanda Roser" loading="lazy"></div>
+                    <h3 class="guest-name">Amanda Roser</h3>
+                    <p class="guest-title">VP Marketing, Social Strategy1</p>
+                    <p class="guest-episode">Caregivers as the Connective Tissue of Healthcare</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/amandabroser/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/natasha-dole.jpg" alt="Dr. Natasha Dole" loading="lazy"></div>
+                    <h3 class="guest-name">Dr. Natasha Dole</h3>
+                    <p class="guest-title">Emergency Medicine Consultant & Digital Health/AI Lead</p>
+                    <p class="guest-episode">The Scary Truth About AI in the ER</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/natashadole/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/gary-cao.jpg" alt="Gary Cao" loading="lazy"></div>
+                    <h3 class="guest-name">Gary Cao</h3>
+                    <p class="guest-title">Chief Data & Analytics / AI Officer</p>
+                    <p class="guest-episode">Why Leading Late in AI is No Longer an Option</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/garycao/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/brian-sutherland.jpg" alt="Brian Sutherland" loading="lazy"></div>
+                    <h3 class="guest-name">Brian Sutherland</h3>
+                    <p class="guest-title">Lead AI Product Manager</p>
+                    <p class="guest-episode">The $7M AI Secret Hospitals Are Hiding</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/briandsutherland/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/david-finkelshteyn.jpg" alt="David Finkelshteyn" loading="lazy"></div>
+                    <h3 class="guest-name">David Finkelshteyn</h3>
+                    <p class="guest-title">CEO of Pivotal AI</p>
+                    <p class="guest-episode">AI Verification, Not Speed or Model Accuracy, is the Bottleneck</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/david-finkelshteyn-03191a130/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/guman-chauhan.jpg" alt="Guman Chauhan" loading="lazy"></div>
+                    <h3 class="guest-name">Guman Chauhan</h3>
+                    <p class="guest-title">Cybersecurity & Risk Leader</p>
+                    <p class="guest-episode">Why Undetected Cyberattacks Are the Most Dangerous Security Risk</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/guman-chauhan-m-s-cissp-cism-600824103/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/mark-gendreau.jpg" alt="Dr. Mark Gendreau" loading="lazy"></div>
+                    <h3 class="guest-name">Dr. Mark Gendreau</h3>
+                    <p class="guest-title">Emergency Medicine Physician & CMO</p>
+                    <p class="guest-episode">Balancing Human Judgment and Clinical Trust in Healthcare</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/markgendreaumd/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/parth-gargish.jpg" alt="Parth Gargish" loading="lazy"></div>
+                    <h3 class="guest-name">Parth Gargish</h3>
+                    <p class="guest-title">SaaS & AI Product Leader</p>
+                    <p class="guest-episode">From AI Hype to Real Value</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/parth-gargish-0803b897/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/aleida-lanza.jpg" alt="Aleida Lanza" loading="lazy"></div>
+                    <h3 class="guest-name">Aleida Lanza</h3>
+                    <p class="guest-title">Founder & CEO of Casedok</p>
+                    <p class="guest-episode">Healthcare AI Fails Without Complete Medical Records</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/aleidalanza/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/asha-mahesh.jpg" alt="Asha Mahesh" loading="lazy"></div>
+                    <h3 class="guest-name">Asha Mahesh</h3>
+                    <p class="guest-title">AI Ethics & Responsible Data Expert</p>
+                    <p class="guest-episode">AI Ethics and Ethical Leadership in Healthcare</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/asha-mahesh-4417265/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/susie-brannigan.jpg" alt="Susie Branagan" loading="lazy"></div>
+                    <h3 class="guest-name">Susie Branagan</h3>
+                    <p class="guest-title">Trauma-Informed Nurse Executive</p>
+                    <p class="guest-episode">The Human Readiness Gap: AI Meets Emotional Intelligence</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/susie-branagan-bsn-rn-b6319339/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/amit-shivpuja.jpg" alt="Amit Shivpuja" loading="lazy"></div>
+                    <h3 class="guest-name">Amit Shivpuja</h3>
+                    <p class="guest-title">Director of Data & AI Enablement at Walmart</p>
+                    <p class="guest-episode">The Hidden Infrastructure of Trust</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/amitshivpuja/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/anita-mareedu.jpg" alt="Anitha Mareedu" loading="lazy"></div>
+                    <h3 class="guest-name">Anitha Mareedu</h3>
+                    <p class="guest-title">Network Security Engineer at Cadence</p>
+                    <p class="guest-episode">AI Security Risks: Cybersecurity, National Risk, and the Future of Work</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/anitha-m-a94744134/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/keshavon-seshadri.jpg" alt="Keshavan Seshadri" loading="lazy"></div>
+                    <h3 class="guest-name">Keshavan Seshadri</h3>
+                    <p class="guest-title">Senior ML Engineer at Prudential Financial</p>
+                    <p class="guest-episode">Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/keshavan-seshadri/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/carol-velandia.jpg" alt="Carol Velandia" loading="lazy"></div>
+                    <h3 class="guest-name">Carol Velandia</h3>
+                    <p class="guest-title">Founder of Equal Access Language Services</p>
+                    <p class="guest-episode">AI Can't Replace Language Access</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/carol-velandia-mba-chi-pmp-msw-%E2%9A%96%EF%B8%8F-599b753/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:carolvelandia@equalaccesslanguageservices.com" class="guest-link email-link">Contact</a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/danette-mcgilvray.jpg" alt="Danette McGilvray" loading="lazy"></div>
+                    <h3 class="guest-name">Danette McGilvray</h3>
+                    <p class="guest-title">Data Quality Expert</p>
+                    <p class="guest-episode">Data Quality and AI Strategy: Garbage In, Gen AI Out</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/danette-mcgilvray/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/ritu-chakrawarty.jpg" alt="Ritu Chakrawarty" loading="lazy"></div>
+                    <h3 class="guest-name">Ritu Chakrawarty</h3>
+                    <p class="guest-title">GenAI/AI Solutions Strategy at AbbVie</p>
+                    <p class="guest-episode">AI Readiness: From Vision to Verification</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/ritu-chakrawarty" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/larry-kuhn.jpg" alt="Dr. Larry Kuhn" loading="lazy"></div>
+                    <h3 class="guest-name">Dr. Larry Kuhn</h3>
+                    <p class="guest-title">Organizational Psychologist & Executive Coach</p>
+                    <p class="guest-episode">AI Leadership, Trust, and Psychological Safety</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/drlarrykuhn/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:drlarrykuhn@aspireview.com" class="guest-link email-link">Contact</a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/barry-chaiken.jpg" alt="Dr. Barry Chaiken" loading="lazy"></div>
+                    <h3 class="guest-name">Dr. Barry Chaiken</h3>
+                    <p class="guest-title">Physician, Author of Future Healthcare 2050</p>
+                    <p class="guest-episode">How AI Redefines the Patient-Physician Journey</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/barrychaiken/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-avatar"><img src="assets/guests/ratnadeep.jpg" alt="Ratnadeep Bhattacharjee" loading="lazy"></div>
+                    <h3 class="guest-name">Ratnadeep Bhattacharjee</h3>
+                    <p class="guest-title">Founder & CEO, TechVariable</p>
+                    <p class="guest-episode">Data Readiness for AI Adoption</p>
+                    <div class="guest-links">
+                        <a href="https://www.linkedin.com/in/ratnadeepbhattacharjee/" target="_blank" rel="noopener" class="guest-link linkedin-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Be a Guest Application Section -->
+    <section class="guest-apply" id="apply">
+        <div class="container">
+            <div class="apply-grid">
+                <div class="apply-info">
+                    <div class="section-label">Be a Guest</div>
+                    <h2 class="section-title">Share Your Signal</h2>
+                    <p class="apply-description">The Signal Room features leaders, innovators, and practitioners at the intersection of healthcare, AI, and ethical leadership. If you have a perspective worth amplifying, we want to hear from you.</p>
+                    <div class="apply-what-we-look-for">
+                        <h3 class="apply-subhead">What we look for</h3>
+                        <p class="apply-criteria">Guests who bring real operational experience, not just theory. Practitioners who have navigated AI adoption, data governance, clinical trust, cybersecurity, workforce transformation, or regulatory complexity inside actual healthcare environments. We value candor, specificity, and perspectives that challenge conventional thinking.</p>
+                    </div>
+                </div>
+                <div class="apply-form-wrapper">
+                    <form class="apply-form" id="guest-apply-form">
+                        <div class="form-group">
+                            <label for="guest-name">Full Name *</label>
+                            <input type="text" id="guest-name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-email">Email *</label>
+                            <input type="email" id="guest-email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-linkedin">LinkedIn Profile *</label>
+                            <input type="url" id="guest-linkedin" name="linkedin" required placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-title">Title and Organization *</label>
+                            <input type="text" id="guest-title" name="title" required placeholder="e.g., Chief Data Officer at Regional Health System">
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-website">Website (optional)</label>
+                            <input type="url" id="guest-website" name="website" placeholder="https://yourwebsite.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-topics">Proposed Topics *</label>
+                            <textarea id="guest-topics" name="topics" required placeholder="What would you want to discuss on The Signal Room? What perspective or experience would you bring that the audience hasn't heard?" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-context">Additional Context (optional)</label>
+                            <textarea id="guest-context" name="context" placeholder="Any relevant publications, speaking experience, or links to previous podcast appearances." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="apply-submit">Submit Application</button>
+                        <p class="form-note">We review every submission. If there's a fit, we'll reach out to schedule a conversation.</p>
+                    </form>
+                    <div class="apply-success" id="apply-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Application Received</h3>
+                        <p>Thank you for your interest in The Signal Room. We review every submission and will reach out if there's a fit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Original Scripted Shorts Section -->
+    <section class="scripted-shorts" id="shorts">
+        <div class="section-container">
+            <h2 class="section-title">Original Shorts</h2>
+            <p class="section-description">Scripted perspectives on healthcare AI, leadership, and the signals that matter. Under 60 seconds.</p>
+
+            <div class="shorts-grid" id="scripted-shorts-grid">
+                <!-- Populated by JS config -->
+            </div>
+
+            <div class="shorts-empty-state" id="shorts-empty">
+                <p>New scripted Shorts dropping soon. Subscribe to the channel to catch them first.</p>
+                <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-primary" style="display:inline-block; margin-top:1rem;">Subscribe on YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Section -->
+    <section class="watch-section" id="watch">
+        <div class="section-container">
+            <h2 class="section-title">Watch on YouTube</h2>
+            <p class="section-description">Full episodes available in HD. Subscribe for weekly releases every Wednesday.</p>
+            <div class="embed-container">
+                <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLpaX7y-bHr0mKk9VLU18Iv0EyQUSHDzU8" title="The Signal Room Playlist" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="embed-button">
+                <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-primary">Subscribe to Channel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listen Section -->
+    <section class="listen-section" id="listen">
+        <div class="section-container">
+            <h2 class="section-title">Listen on Buzzsprout</h2>
+            <p class="section-description">Stream episodes on your favorite podcast platform. Get notified of new episodes automatically.</p>
+            <div class="listen-embed">
+                <iframe src="https://www.buzzsprout.com/2550733?client_source=large_player&iframe=true" width="100%" height="375" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="embed-button">
+                <a href="https://www.buzzsprout.com/2550733" target="_blank" class="btn btn-primary">Follow on Buzzsprout</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="section-container">
+            <h2 class="section-title">Resources</h2>
+            <p class="section-description">Explore transcripts, newsletters, and media coverage from The Signal Room</p>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3 class="resource-card-title">Transcripts & Show Notes</h3>
+                    <p class="resource-card-description">Full episode transcripts and detailed show notes for every conversation. Searchable content to find insights quickly.</p>
+                    <a href="https://hutchinsdatastrategy.com" target="_blank" class="resource-link">View Resources →</a>
+                </div>
+                <div class="resource-card">
+                    <h3 class="resource-card-title">The AI Health Pulse</h3>
+                    <p class="resource-card-description">Weekly Monday newsletter. 38+ issues on healthcare AI governance, trust, and readiness. In-depth analysis you won't find elsewhere.</p>
+                    <a href="#" onclick="openNewsletterModal(event)" class="resource-link">Subscribe on LinkedIn →</a>
+                    <img src="https://cdn.prod.website-files.com/68d4f3a60c2274a220f0efa2/69b80f84b6111bb470cfd890_1773613379817.png" alt="AI Health Pulse Issue 38 - Why Oversight Without Ownership Is Not Governance" class="newsletter-cover" style="margin-top: 1.5rem;">
+                    <a href="https://hutchinsdatastrategy.com/the-ai-health-pulse" target="_blank" class="resource-link">Latest AI Health Pulse →</a>
+                </div>
+                <div class="resource-card">
+                    <h3 class="resource-card-title">Press & Media Coverage</h3>
+                    <p class="resource-card-description">Where Chris has been featured. Information Week, TechTimes, Consumer Affairs, and more.</p>
+                    <a href="https://hutchinsdatastrategy.com/press-media-coverage" target="_blank" class="resource-link">View Coverage →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-subsection">
+                    <h3 class="about-subsection-title">About The Signal Room</h3>
+                    <p class="about-text">The Signal Room is a podcast dedicated to exploring healthcare AI leadership, ethics, and strategy. I bring together leaders, innovators, and practitioners to discuss the real challenges of AI readiness, governance, and implementation in healthcare.</p>
+                    <p class="about-text">New episodes drop every Wednesday. I cover the topics that matter: healthcare AI ethics, LLM strategy, governance frameworks, clinical integration, and the human elements that make AI transformation successful.</p>
+                </div>
+
+                <div class="about-subsection">
+                    <div class="about-host">
+                        <img src="assets/chris-headshot-navysuit.png" alt="Chris Hutchins" class="host-photo">
+                    </div>
+                    <h3 class="about-subsection-title">About Chris Hutchins</h3>
+                    <p class="about-text">Chris Hutchins is the Founder and CEO of Hutchins Data Strategy Consultants (HDSC). For nearly three decades, he has worked inside complex healthcare systems, advising organizations, technology companies, and investors on AI readiness, governance frameworks, and responsible innovation.</p>
+                    <p class="about-text">His work centers on a straightforward principle: technology does not replace judgment. It amplifies it, or exposes the absence of it. Chris educates senior leaders on proper AI implementation so they can protect trust, reduce risk, and lead through technological change with steadiness and perspective.</p>
+
+                    <div class="about-links">
+                        <a href="https://hutchinsdatastrategy.com" target="_blank" class="about-link">HDSC Website</a>
+                        <a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" class="about-link">LinkedIn Profile</a>
+                        <a href="https://www.linkedin.com/company/hdsc-healthcare/" target="_blank" class="about-link">HDSC LinkedIn</a>
+                        <a href="https://www.linkedin.com/company/amplifi-tech-ventures/" target="_blank" class="about-link">AmpliFi Tech Ventures</a>
+                    </div>
+                </div>
+
+                <div class="about-subsection">
+                    <h3 class="about-subsection-title">By The Numbers</h3>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Episodes Published</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">18+</div>
+                            <div class="stat-label">Expert Guests</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">38+</div>
+                            <div class="stat-label">Newsletter Issues</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Weekly</div>
+                            <div class="stat-label">New Episodes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="section-container">
+            <h2 class="cta-headline">Stay Curious. Stay Human.</h2>
+            <div class="cta-buttons">
+                <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-primary">Subscribe on YouTube</a>
+                <a href="https://www.buzzsprout.com/2550733" target="_blank" class="btn btn-secondary">Listen on Buzzsprout</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo-section">
+                    <div class="footer-brand">
+                        <img src="assets/logos/sr-logo-purple.jpg" alt="The Signal Room" style="width: 32px; height: 32px; border-radius: 6px; filter: hue-rotate(30deg) saturate(1.4) brightness(0.9);">
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Leadership, ethics, and innovation, amplified.</p>
+                </div>
+                <div class="footer-links" style="flex-wrap: wrap;">
+                    <a href="https://hutchinsdatastrategy.com" target="_blank" class="footer-link">HDSC</a>
+                    <a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" class="footer-link">LinkedIn</a>
+                    <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="footer-link">YouTube</a>
+                    <a href="https://www.buzzsprout.com/2550733" target="_blank" class="footer-link">Podcast</a>
+                    <a href="https://x.com/Chrishutusa1" target="_blank" class="footer-link">X</a>
+                    <a href="https://www.instagram.com/chrishutusa1/" target="_blank" class="footer-link">Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=61584862907875" target="_blank" class="footer-link">Facebook</a>
+                    <a href="https://www.tiktok.com/@chrishutchins6" target="_blank" class="footer-link">TikTok</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2026 The Signal Room. All rights reserved. Hosted by Chris Hutchins, Founder & CEO of Hutchins Data Strategy Consultants.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.backgroundColor = 'var(--bg-secondary)';
+                navLinks.style.borderBottom = '1px solid var(--border-color)';
+                navLinks.style.padding = '1rem';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({behavior: 'smooth'});
+                    }
+                }
+            });
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.querySelector('.nav-links');
+                if (window.innerWidth <= 768) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+
+        // Handle window resize for responsive nav
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                document.querySelector('.nav-links').style.display = 'flex';
+                document.querySelector('.nav-links').style.position = 'static';
+                document.querySelector('.nav-links').style.flexDirection = 'row';
+                document.querySelector('.nav-links').style.backgroundColor = 'transparent';
+                document.querySelector('.nav-links').style.borderBottom = 'none';
+                document.querySelector('.nav-links').style.padding = '0';
+            }
+        });
+
+        // YouTube Shorts Management
+        // ====================================================================
+
+        // MANUAL CONFIGURATION
+        // Add Shorts here as they are created
+        // Format: 'full-episode-video-id': ['short-id-1', 'short-id-2', ...]
+        // Example: '0QC5nLRY5fs': ['abc123def456', 'xyz789pqr123'],
+        const SHORTS_CONFIG = {
+            // Episode 1 (Amanda Roser) - video ID: 0QC5nLRY5fs
+            // '0QC5nLRY5fs': [],
+
+            // Episode 2 (Natasha Dole) - video ID: wizfkLwkIYw
+            // 'wizfkLwkIYw': [],
+
+            // Episode 3 (Gary Cao) - video ID: iKiG5L005Fg
+            // 'iKiG5L005Fg': [],
+
+            // Episode 4 (Brian Sutherland) - video ID: 7lsO0GK-UK4
+            // '7lsO0GK-UK4': [],
+
+            // Episode 5 (David Finkelshteyn) - video ID: TvaEQ87vgpo
+            // 'TvaEQ87vgpo': [],
+
+            // Episode 6 (Guman Chauhan) - video ID: gR6OXuIxIOY
+            // 'gR6OXuIxIOY': [],
+        };
+
+        // YOUTUBE DATA API CONFIGURATION (Optional - for auto-detecting Shorts)
+        // To use auto-detection, you need a YouTube Data API v3 key from:
+        // 1. Go to https://console.cloud.google.com/
+        // 2. Create a new project
+        // 3. Enable the YouTube Data API v3
+        // 4. Create an API key (restrict to YouTube Data API v3)
+        // 5. Paste your key below (keep it private and secure)
+        const YOUTUBE_API_KEY = ''; // Leave empty to disable auto-detection
+        const CHANNEL_ID = ''; // Your YouTube channel ID (e.g., 'UCxxxxxxxxxxxxxxx')
+
+        // ============================================================
+        // SCRIPTED SHORTS CONFIGURATION
+        // ============================================================
+        // Add your scripted (standalone) Shorts here.
+        // These are NOT tied to specific episodes - they're original
+        // short-form content you produce independently.
+        //
+        // Format: { id: 'youtube-short-id', title: 'Short Title', date: 'Mar 2026' }
+        //
+        // To find a Short's ID: open it on YouTube, the URL will be
+        // youtube.com/shorts/XXXXX - the XXXXX part is the ID.
+        // ============================================================
+        const SCRIPTED_SHORTS = [
+            // Example (uncomment and replace when you have Shorts):
+            // { id: 'abc123def', title: 'Why AI Governance Fails Without Culture', date: 'Mar 2026' },
+            // { id: 'ghi456jkl', title: 'The One Question Every CIO Should Ask', date: 'Mar 2026' },
+        ];
+
+        // YouTube Shorts Lightning Bolt Icon SVG
+        const SHORTS_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>';
+
+        // Render scripted shorts in the Original Shorts section
+        function renderScriptedShorts() {
+            const grid = document.getElementById('scripted-shorts-grid');
+            if (!grid || SCRIPTED_SHORTS.length === 0) return;
+
+            grid.innerHTML = SCRIPTED_SHORTS.map(short => `
+                <a href="https://www.youtube.com/shorts/${short.id}" target="_blank" rel="noopener" class="short-card">
+                    <div class="short-card-thumb">
+                        <img src="https://img.youtube.com/vi/${short.id}/maxresdefault.jpg" alt="${short.title}" loading="lazy" onerror="this.src='https://img.youtube.com/vi/${short.id}/hqdefault.jpg'">
+                        <span class="shorts-badge">Short</span>
+                        <div class="play-overlay">
+                            <div class="play-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="short-card-info">
+                        <h4>${short.title}</h4>
+                        <span class="short-meta">${short.date}</span>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // Render Shorts for a specific episode
+        function renderShortsForEpisode(videoId, shortIds) {
+            const episodeCard = document.querySelector(`.episode-card[data-video-id="${videoId}"]`);
+            if (!episodeCard) return;
+
+            const shortsContainer = episodeCard.querySelector('.episode-shorts');
+            if (!shortsContainer) return;
+
+            // Clear existing content
+            shortsContainer.innerHTML = '';
+
+            // Only render if there are shorts
+            if (shortIds.length === 0) return;
+
+            // Add label
+            const label = document.createElement('div');
+            label.className = 'short-label';
+            label.innerHTML = SHORTS_ICON + 'Shorts';
+            shortsContainer.appendChild(label);
+
+            // Add short pills
+            shortIds.forEach(shortId => {
+                const pill = document.createElement('a');
+                pill.className = 'short-pill';
+                pill.href = `https://www.youtube.com/shorts/${shortId}`;
+                pill.target = '_blank';
+                pill.rel = 'noopener noreferrer';
+                pill.innerHTML = SHORTS_ICON + 'Watch';
+                shortsContainer.appendChild(pill);
+            });
+        }
+
+        // Initialize Shorts display from manual config
+        function initializeShorts() {
+            Object.entries(SHORTS_CONFIG).forEach(([videoId, shortIds]) => {
+                renderShortsForEpisode(videoId, shortIds);
+            });
+            renderScriptedShorts();
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeShorts();
+        });
+
+        // If page is already loaded, initialize immediately
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeShorts);
+        } else {
+            initializeShorts();
+        }
+
+        // Guest Application Form Handler
+        // NOTE: When deployed to production, replace the mailto fallback with:
+        // - A Zapier webhook URL (POST form data to Zapier, which routes to Gmail)
+        // - Or Framer's built-in form handling
+        // - Or a Formspree/Getform endpoint
+        document.addEventListener('DOMContentLoaded', function() {
+            const guestForm = document.getElementById('guest-apply-form');
+            if (guestForm) {
+                guestForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const formData = {
+                        name: document.getElementById('guest-name').value,
+                        email: document.getElementById('guest-email').value,
+                        linkedin: document.getElementById('guest-linkedin').value,
+                        title: document.getElementById('guest-title').value,
+                        website: document.getElementById('guest-website').value || 'Not provided',
+                        topics: document.getElementById('guest-topics').value,
+                        context: document.getElementById('guest-context').value || 'Not provided'
+                    };
+
+                    // Store locally as backup
+                    const applications = JSON.parse(localStorage.getItem('guestApplications') || '[]');
+                    applications.push({ ...formData, date: new Date().toISOString() });
+                    localStorage.setItem('guestApplications', JSON.stringify(applications));
+
+                    // Send via mailto as fallback
+                    const subject = encodeURIComponent('Signal Room Guest Application: ' + formData.name);
+                    const body = encodeURIComponent(
+                        'Guest Application for The Signal Room\n\n' +
+                        'Name: ' + formData.name + '\n' +
+                        'Email: ' + formData.email + '\n' +
+                        'LinkedIn: ' + formData.linkedin + '\n' +
+                        'Title: ' + formData.title + '\n' +
+                        'Website: ' + formData.website + '\n\n' +
+                        'Proposed Topics:\n' + formData.topics + '\n\n' +
+                        'Additional Context:\n' + formData.context
+                    );
+                    window.open('mailto:chris@hutchinsdatastrategy.com?subject=' + subject + '&body=' + body, '_blank');
+
+                    // Show success state
+                    document.getElementById('guest-apply-form').style.display = 'none';
+                    document.getElementById('apply-success').style.display = 'block';
+                });
+            }
+        });
+    </script>
+
+    <!-- Newsletter Signup Modal -->
+    <div class="modal-overlay" id="newsletter-modal" style="display: none;">
+        <div class="modal-content newsletter-modal-content">
+            <button class="modal-close" onclick="document.getElementById('newsletter-modal').style.display='none'">&times;</button>
+            <h3 class="modal-title">Subscribe to The AI Health Pulse</h3>
+            <p class="modal-desc">Each Monday, one idea, tension, or shift worth paying attention to at the intersection of healthcare AI, governance, and leadership. Enter your info below and we'll take you to subscribe on LinkedIn.</p>
+            <form id="newsletter-capture-form" class="newsletter-capture-form">
+                <div class="form-group">
+                    <label for="nl-email">Email Address *</label>
+                    <input type="email" id="nl-email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="nl-linkedin">Your LinkedIn Profile *</label>
+                    <input type="url" id="nl-linkedin" name="linkedin" required placeholder="https://linkedin.com/in/yourprofile">
+                </div>
+                <button type="submit" class="apply-submit">Subscribe Now</button>
+                <p class="form-note">You'll be redirected to LinkedIn to complete your subscription.</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Newsletter modal handling
+        const NEWSLETTER_LINKEDIN_URL = 'https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7343479993399730176&lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3B5zE%2FzALeToCwBwQcl1nrBg%3D%3D';
+
+        function openNewsletterModal(e) {
+            if (e) e.preventDefault();
+            document.getElementById('newsletter-modal').style.display = 'flex';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('newsletter-modal').style.display = 'none';
+            }
+        });
+
+        // Close modal on overlay click
+        document.getElementById('newsletter-modal').addEventListener('click', function(e) {
+            if (e.target === this) this.style.display = 'none';
+        });
+
+        // Handle newsletter capture form submission
+        document.getElementById('newsletter-capture-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('nl-email').value;
+            const linkedin = document.getElementById('nl-linkedin').value;
+
+            // Store subscriber data
+            const subscribers = JSON.parse(localStorage.getItem('newsletterSubscribers') || '[]');
+            subscribers.push({ email, linkedin, date: new Date().toISOString() });
+            localStorage.setItem('newsletterSubscribers', JSON.stringify(subscribers));
+
+            // Also send via mailto as backup
+            const subject = encodeURIComponent('AI Health Pulse - New Subscriber');
+            const body = encodeURIComponent(
+                'New AI Health Pulse Subscriber\n\n' +
+                'Email: ' + email + '\n' +
+                'LinkedIn: ' + linkedin + '\n' +
+                'Date: ' + new Date().toLocaleString()
+            );
+
+            // Open mailto in background (some browsers may block this)
+            const mailLink = document.createElement('a');
+            mailLink.href = 'mailto:chris@hutchinsdatastrategy.com?subject=' + subject + '&body=' + body;
+            mailLink.target = '_blank';
+            mailLink.click();
+
+            // Close modal and redirect to LinkedIn newsletter
+            document.getElementById('newsletter-modal').style.display = 'none';
+            window.open(NEWSLETTER_LINKEDIN_URL, '_blank');
+        });
+    </script>
+</body>
+</html>
