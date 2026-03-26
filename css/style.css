@@ -279,13 +279,19 @@ p:last-child { margin-bottom: 0; }
 .hero-image {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-primary) 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  min-height: 420px;
 }
 
 .hero-image img {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  max-height: 460px;
-  object-fit: cover;
+  max-height: 440px;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.3));
 }
 
 /* --- Buttons --- */
