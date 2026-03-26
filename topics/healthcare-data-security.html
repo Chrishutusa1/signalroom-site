@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://signalroompodcast.com/topics/healthcare-data-security.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Data Quality & Security - The Signal Room Podcast</title>
+  <meta name="description" content="Data quality, cybersecurity, and the infrastructure that makes healthcare AI trustworthy. Episodes on data governance, AI verification, explainability, and security threats.">
+  <meta name="keywords" content="healthcare data, data quality, healthcare cybersecurity, healthcare data security, AI verification, healthcare data governance">
+  <link rel="icon" type="image/jpeg" href="../assets/logos/sr-logo-purple.jpg">
+  <link rel="apple-touch-icon" href="../assets/logos/sr-square.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Healthcare Data Quality & Security - The Signal Room Podcast">
+  <meta property="og:description" content="Data quality, cybersecurity, and the infrastructure that makes healthcare AI trustworthy.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+  <meta property="og:url" content="https://signalroompodcast.com/topics/healthcare-data-security.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+  </script>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+  <!-- Fonts -->
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Healthcare Data Quality & Security",
+    "description": "Topic hub for episodes about healthcare data quality, governance, cybersecurity, and the infrastructure foundations for trustworthy AI",
+    "url": "https://signalroompodcast.com/topics/healthcare-data-security.html",
+    "isPartOf": {
+      "@type": "PodcastSeries",
+      "name": "The Signal Room",
+      "url": "https://signalroompodcast.com"
+    },
+    "hasPart": [
+      {
+        "@type": "PodcastEpisode",
+        "name": "Data Quality and AI Strategy",
+        "episodeNumber": 6,
+        "url": "https://signalroompodcast.com/episodes/data-quality-ai-strategy.html"
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "Authentic Intelligence: Explainability and Bias",
+        "episodeNumber": 8,
+        "url": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html"
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "AI Security Risks",
+        "episodeNumber": 9,
+        "url": "https://signalroompodcast.com/episodes/ai-security-risks-cybersecurity.html"
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "The Hidden Infrastructure of Trust",
+        "episodeNumber": 10,
+        "url": "https://signalroompodcast.com/episodes/hidden-infrastructure-of-trust.html"
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "No Alerts, Still Breached",
+        "episodeNumber": 16,
+        "url": "https://signalroompodcast.com/episodes/cybersecurity-ethical-leadership-ai.html"
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "Why AI Verification is the Real Bottleneck",
+        "episodeNumber": 17,
+        "url": "https://signalroompodcast.com/episodes/ai-verification-pharma-discovery.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../episodes.html">Episodes</a></li>
+        <li><a href="../guests.html">Guests</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../newsletter.html">Newsletter</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="main-content">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-tagline">Topic Hub</span>
+          <h1>Healthcare Data <span class="accent">Security</span></h1>
+          <p class="hero-desc">Healthcare AI cannot be more trustworthy than the data it learns from and the systems that protect it. These conversations explore the unsexy but essential foundations that make AI reliable: data governance, cybersecurity threats specific to healthcare AI, verification bottlenecks, and the infrastructure transparency that patients and clinicians need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Intro Essay -->
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto 3rem;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">The Unglamorous Work That Determines AI Reliability</h2>
+
+        <p>Healthcare AI succeeds or fails before the first model trains. Data quality, governance structures, and security measures determine what problems models can solve and what risks they introduce. Yet organizations often treat these foundational elements as constraints to overcome rather than requirements to satisfy. Teams excited about innovative AI applications resist investing in data governance that feels administrative. Security professionals flag vulnerabilities in AI systems that business leaders want to deploy. Verification teams discover edge cases where models behave unexpectedly. These tensions between speed and rigor are real and consequential.</p>
+
+        <p>Data quality in healthcare extends beyond technical measures like completeness and accuracy. Clinical data quality reflects the reality that medical records document clinical thinking and billing coding, not the totality of patient experience. Medication lists may omit over-the-counter drugs or supplements patients use. Allergy records might not capture severity or reaction type. Diagnostic codes may lag weeks behind actual diagnoses. AI models trained on this incomplete data learn patterns based on available documentation rather than clinical reality. This gap becomes especially problematic when patterns learned from documentation reflect not actual disease patterns but documentation practices, potentially amplifying biases that existed in prior care delivery.</p>
+
+        <p>Explainability and interpretability matter because healthcare requires humans to understand why systems make recommendations. A black-box model that accurately predicts readmission risk provides no information about what factors drive the prediction. A clinician cannot adjust their behavior or challenge the prediction without understanding its basis. This creates a false choice between accuracy and interpretability. Better framed, organizations must accept that interpretability sometimes requires accepting lower statistical performance, and that trade-off is necessary in healthcare. Models so complex that no human can understand their reasoning should not be deployed in clinical contexts.</p>
+
+        <p>Healthcare cybersecurity faces novel threats from AI deployment itself. Large language models trained on patient data or integrated into clinical workflows become attractive targets for attackers. Model poisoning, where training data is subtly manipulated to cause systematic errors during deployment, could alter clinical decisions without leaving obvious signatures. Adversarial examples, inputs designed to fool AI systems, might cause models to misclassify conditions or recommend inappropriate treatments. Healthcare organizations must understand these threats before deploying models in clinical environments, which means security teams need expertise in AI-specific attack vectors, not just traditional cybersecurity.</p>
+
+        <p>Verification emerges as the real bottleneck in healthcare AI. Clinical deployment requires evidence that models perform as expected in diverse patient populations, that edge cases have been identified and handled, that failure modes have been characterized, and that drift over time can be detected and addressed. Verification is slower and more thorough than validation because healthcare tolerates no surprises. This reality means that healthcare AI development timelines must account for verification complexity, and attempts to skip verification steps to accelerate deployment create risks that no organization should accept.</p>
+      </div>
+
+      <!-- Episode Grid -->
+      <div class="section-header" style="margin-bottom:2rem;">
+        <h2>Featured Episodes</h2>
+      </div>
+
+      <div class="episodes-grid">
+        <a href="../episodes/data-quality-ai-strategy.html" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/NGBbYZSdcLs/hqdefault.jpg" alt="Danette episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Danette Fleming</div>
+            <div class="episode-card-title">Data Quality and AI Strategy</div>
+            <div class="episode-card-desc">Why data quality forms the foundation of viable AI strategy and what it takes to improve it at scale.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 6</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="../episodes/authentic-intelligence-explainability.html" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/UpJJejIHN-4/hqdefault.jpg" alt="Keshavan episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Bhakti Keshavan</div>
+            <div class="episode-card-title">Authentic Intelligence: Explainability and Bias</div>
+            <div class="episode-card-desc">How to build AI systems that clinicians can understand and identify when bias is present.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 8</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="../episodes/ai-security-risks-cybersecurity.html" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/FhmwMJsVPB8/hqdefault.jpg" alt="Anitha episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Anitha Renjith</div>
+            <div class="episode-card-title">AI Security Risks</div>
+            <div class="episode-card-desc">Novel security threats introduced by AI systems and how healthcare organizations should prepare.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 9</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="../episodes/hidden-infrastructure-of-trust.html" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/SY9xtWnOSOE/hqdefault.jpg" alt="Amit Patel episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Amit Patel</div>
+            <div class="episode-card-title">The Hidden Infrastructure of Trust</div>
+            <div class="episode-card-desc">The unglamorous data and security infrastructure that makes trustworthy healthcare AI possible.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 10</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="../episodes/cybersecurity-ethical-leadership-ai.html" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/gR6OXuIxIOY/hqdefault.jpg" alt="Guman episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Sameer Guman</div>
+            <div class="episode-card-title">No Alerts, Still Breached</div>
+            <div class="episode-card-desc">Healthcare cybersecurity realities and why traditional monitoring may miss AI-specific threats.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 16</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="../episodes/ai-verification-pharma-discovery.html" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/TvaEQ87vgpo/hqdefault.jpg" alt="David Finkelshteyn episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">David Finkelshteyn</div>
+            <div class="episode-card-title">Why AI Verification is the Real Bottleneck</div>
+            <div class="episode-card-desc">How verification and validation slowdown healthcare AI deployment and why those constraints matter.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 17</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Matters -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Why This Matters</h2>
+        <p>Healthcare AI failures often trace back to inadequate data governance, insufficient verification, or missed security threats, not to limitations of the AI technology itself. Organizations that invest in these foundations early identify and resolve problems before they reach clinical deployment. This approach proves slower and more expensive than rushing to deployment but creates AI systems that clinicians can trust and organizations can defend. Building sustainable healthcare AI requires accepting that infrastructure matters as much as innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="../episodes.html">All Episodes</a></li>
+            <li><a href="../guests.html">Guests</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../newsletter.html">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366" target="_blank" rel="noopener noreferrer">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3MulxnnPp7yRnChGu9LBNY" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://theaihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="../privacy-policy.html" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+			document.getElementById('navToggle').setAttribute('aria-expanded', document.getElementById('navLinks').classList.contains('open'));
+    });
+  </script>
+</body>
+</html>
