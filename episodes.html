@@ -26,27 +26,24 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-brand">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">The Signal Room</span>
-                </a>
-            </div>
-
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="episodes.html" class="nav-link active">Episodes</a></li>
-                <li><a href="guests.html" class="nav-link">Guests</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">
+                <img src="assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
+                <span>The Signal Room</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="episodes.html" class="active">Episodes</a></li>
+                <li><a href="guests.html">Guests</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="/#be-a-guest">Be a Guest</a></li>
+                <li><a href="https://www.chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
             </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -410,48 +407,51 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>The Signal Room</h4>
-                    <p>Leadership, ethics, and innovation, amplified.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
+                    <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="episodes.html">Episodes</a></li>
+                <div>
+                    <h4>Podcast</h4>
+                    <ul class="footer-links">
+                        <li><a href="episodes.html">All Episodes</a></li>
                         <li><a href="guests.html">Guests</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="/#be-a-guest">Be a Guest</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div>
+                    <h4>Listen &amp; Watch</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">Apple Podcasts</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">Spotify</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">Buzzsprout</a></li>
+                    </ul>
+                </div>
+                <div>
                     <h4>Connect</h4>
-                    <p>
-                        <a href="https://linkedin.com/in/chutchins-healthcare/" target="_blank">LinkedIn</a> |
-                        <a href="https://chrisjhutchins.com" target="_blank">Speaking</a>
-                    </p>
+                    <ul class="footer-links">
+                        <li><a href="https://www.hutchinsdatastrategy.com" target="_blank" rel="noopener">HDSC</a></li>
+                        <li><a href="https://www.chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+                        <li><a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://theaihealthpulse.beehiiv.com" target="_blank" rel="noopener">AI Health Pulse</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 The Signal Room. All rights reserved.</p>
+                <span>&copy; 2025 The Signal Room. All rights reserved.</span>
             </div>
         </div>
     </footer>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+        document.getElementById('navToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('open');
         });
     </script>
 </body>
