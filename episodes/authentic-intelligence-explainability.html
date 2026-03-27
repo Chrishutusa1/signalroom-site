@@ -2,120 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <link rel="canonical" href="https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop | The Signal Room Podcast</title>
-  <meta name="description" content="Keshavan Seshadri on AI explainability, bias detection, and human-in-the-loop AI design for responsible healthcare deployment.">
-  <link rel="icon" type="image/jpeg" href="../assets/logos/sr-logo-purple.jpg">
+  <meta name="description" content="Context, explainability, bias, and the case for keeping humans in the loop.">
+  <link rel="icon" href="../assets/logos/sr-logo-purple.jpg" type="image/jpeg">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop with Keshavan Seshadri">
   <meta property="og:description" content="Context, explainability, bias, and the case for keeping humans in the loop.">
-  <meta property="og:image" content="https://img.youtube.com/vi/UpJJejIHN-4/maxresdefault.jpg">
+  <meta property="og:image" content="https://img.youtube.com/vi/maxresdefault.jpg">
   <meta property="og:url" content="https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html">
   <meta name="twitter:card" content="summary_large_image">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-RZNHLJSRW3');</script>
-  <meta name="theme-color" content="#6C5CE7">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <meta name="theme-color" content="#6C5CE7">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="dns-prefetch" href="//www.googletagmanager.com">
-  <link rel="preconnect" href="https://www.youtube.com">
   <link rel="stylesheet" href="../css/style.css">
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "PodcastEpisode",
-      "name": "Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop",
-      "description": "Context, explainability, bias, and the case for keeping humans in the loop.",
-      "url": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html",
-      "partOfSeries": {
-            "@type": "PodcastSeries",
-            "name": "The Signal Room",
-            "url": "https://signalroompodcast.com"
-      },
-      "associatedMedia": {
-            "@type": "VideoObject",
-            "url": "https://www.youtube.com/embed/UpJJejIHN-4",
-            "embedUrl": "https://www.youtube.com/embed/UpJJejIHN-4"
-      },
-      "episodeNumber": 8,
-      "keywords": [
-            "AI explainability",
-            "algorithmic bias",
-            "human-in-the-loop",
-            "model transparency",
-            "responsible AI"
-      ],
-      "author": {
-            "@type": "Person",
-            "name": "Chris Hutchins",
-            "jobTitle": "Founder and CEO",
-            "worksFor": {
-                  "@type": "Organization",
-                  "name": "Hutchins Data Strategy Consultants"
-            }
-      },
-      "guest": {
-            "@type": "Person",
-            "name": "Keshavan Seshadri",
-            "jobTitle": "Senior ML Engineer, Prudential Financial"
-      }
-}
-    </script>
-
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-            {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://signalroompodcast.com/"
-            },
-            {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Episodes",
-                  "item": "https://signalroompodcast.com/episodes.html"
-            },
-            {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop",
-                  "item": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html"
-            }
-      ]
-}
-    </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
   <nav class="nav" id="navbar">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-brand">
+      <a href="../" class="nav-brand">
         <img src="../assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
         <span>The Signal Room</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="../">Home</a></li>
         <li><a href="../episodes.html" class="active">Episodes</a></li>
         <li><a href="../guests.html">Guests</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../newsletter.html">Newsletter</a></li>
+        <li><a href="https://www.chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <section class="episode-hero" id="main-content">
+  <section class="episode-hero">
     <div class="container">
-      <span class="section-label">Episode 8</span>
+      <span class="section-label">Episode 7</span>
       <h1>Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop</h1>
       <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">with <strong style="color:var(--purple-primary)">Keshavan Seshadri</strong></p>
     </div>
@@ -123,63 +48,34 @@
 
   <section class="section" style="padding-top:var(--space-lg);">
     <div class="container">
-      <div class="episode-video">
-        <iframe src="https://www.youtube.com/embed/UpJJejIHN-4" title="Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop with Keshavan Seshadri" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="episode-content-expanded">
-        <h2>About This Episode</h2>
-        <p>Keshavan Seshadri, a Senior ML Engineer at Prudential Financial, makes the case that intelligence without transparency is not intelligence at all. The conversation covers explainability requirements for AI systems, how bias creeps into models and what it takes to detect it, and why human-in-the-loop design is not a limitation yet a feature that strengthens AI deployments.</p>
-
-        <h2>Key Insights</h2>
-        <p>Explainability in AI is not a nice-to-have; it is a prerequisite for any deployment where decisions affect people's lives or livelihoods. When healthcare AI systems make recommendations that clinicians cannot understand, clinicians cannot defend them to patients, cannot override them when appropriate, and cannot improve them when they fail.</p>
-        <p>Bias in machine learning models is a systemic issue that requires ongoing monitoring, not a one-time audit. Bias emerges from training data, can amplify during deployment, and changes as the population using the system evolves. Organizations that treat bias detection as a launch criteria rather than continuous practice will continue to experience failures.</p>
-        <p>Human-in-the-loop approaches strengthen AI systems by introducing accountability at the points where models are most likely to fail. Rather than viewing human involvement as a necessary evil, effective organizations recognize it as a design feature that improves outcomes and maintains trustworthiness.</p>
-
-        <h2>Topics Explored</h2>
-        <p>The episode covers AI explainability techniques, algorithmic bias detection methods, human-in-the-loop AI system design, model transparency and accountability practices, responsible AI deployment frameworks, and the engineering practices that separate trustworthy AI from black-box automation. Discussion includes specific techniques for making models interpretable and strategies for ongoing bias monitoring.</p>
-
-        <h2>About the Guest</h2>
-        <p>Keshavan Seshadri is a Senior ML Engineer at Prudential Financial, where he works on building machine learning systems that are transparent, fair, and operationally reliable. His technical depth informs a practical perspective on responsible AI.</p>
-
-        <h2>Questions This Episode Answers</h2>
-        <div class="episode-qa">
-            <h3>Why does AI explainability matter in healthcare?</h3>
-            <p>Clinicians and patients need to understand why an AI system made a particular recommendation before they can trust or act on it. Explainability is not just a technical feature; it is a requirement for clinical adoption, regulatory compliance, and patient consent. Black-box models that cannot explain their reasoning face justified resistance from healthcare professionals.</p>
-            <h3>How do you detect and mitigate bias in AI models?</h3>
-            <p>Bias detection requires systematic evaluation across demographic groups, clinical populations, and data sources throughout the model lifecycle. Mitigation is not a one-time fix but an ongoing process of monitoring, testing, and adjusting as populations and data distributions change. Responsible AI development treats bias detection as a core engineering practice.</p>
-            <h3>What is the case for keeping humans in the loop with AI?</h3>
-            <p>Human oversight ensures that AI recommendations are evaluated against clinical context, patient preferences, and situational factors that models cannot fully capture. The human-in-the-loop approach also provides a critical safety net for catching errors before they reach patients. Removing human oversight to gain efficiency creates risks that far outweigh the benefits.</p>
+      <div class="episode-video" style="background:var(--purple-mist);display:flex;align-items:center;justify-content:center;padding-top:0;height:400px;">
+        <div style="text-align:center;padding:2rem;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--purple-primary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--purple-primary)"/></svg>
+          <p style="margin-top:1rem;color:var(--text-muted);">Listen on your favorite podcast platform</p>
+          <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-primary" style="margin-top:1rem;">Watch on YouTube</a>
         </div>
       </div>
 
-      <blockquote class="episode-pullquote" style="max-width:800px;margin:0 auto 2rem;padding:1.5rem 2rem;border-left:4px solid var(--purple-primary);background:var(--bg-secondary);border-radius:0 8px 8px 0;font-size:1.05rem;line-height:1.7;color:var(--text-primary);">
-        <p>"Authentic intelligence requires transparency. If a model cannot explain why it made a recommendation, clinicians have every right to reject it."</p>
-        <footer style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">— <strong>Keshavan Seshadri</strong>, Senior ML Engineer, Prudential Financial, on The Signal Room Podcast</footer>
-      </blockquote>
-
-      <div class="related-episodes" style="max-width:800px;margin:0 auto 2rem;">
-    <h2 style="font-size:1.3rem;margin-bottom:1rem;">Related Episodes</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-        <a href="hidden-infrastructure-of-trust.html" style="display:block;padding:1rem;background:var(--bg-secondary);border-radius:8px;text-decoration:none;color:inherit;transition:transform 0.2s;">
-            <strong style="display:block;color:var(--purple-primary);font-size:0.85rem;">Episode 10</strong>
-            <span style="font-size:0.95rem;">The Hidden Infrastructure of Trust</span>
-        </a>
-        <a href="ai-ethics-ethical-leadership.html" style="display:block;padding:1rem;background:var(--bg-secondary);border-radius:8px;text-decoration:none;color:inherit;transition:transform 0.2s;">
-            <strong style="display:block;color:var(--purple-primary);font-size:0.85rem;">Episode 12</strong>
-            <span style="font-size:0.95rem;">AI Ethics and Ethical Leadership in Healthcare</span>
-        </a>
-    </div>
-</div>
+      <!-- Buzzsprout Audio Player (Podcast ID: 2550733) -->
+      <!-- To use an episode-specific player, replace the src URL with:
+           https://www.buzzsprout.com/2550733/EPISODE_ID.js?container_id=buzzsprout-player-EPISODE_ID&player=small
+           and update the container div id to match. Find the episode ID in your Buzzsprout dashboard. -->
+      <div class="buzzsprout-player-wrap">
+        <p class="buzzsprout-player-label">Listen on Buzzsprout</p>
+        <div id='buzzsprout-small-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2550733.js?container_id=buzzsprout-small-player&player=small'></script>
+      </div>
 
       <div class="episode-layout">
         <div class="episode-main">
+          <h2>About This Episode</h2>
+          <p>Context, explainability, bias, and the case for keeping humans in the loop.</p>
+
           <h2>Listen & Subscribe</h2>
           <p>Catch every episode of The Signal Room on your preferred platform.</p>
           <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
-            <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">YouTube</a>
-            <a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Apple Podcasts</a>
-            <a href="https://open.spotify.com/show/3MulxnnPp7yRnChGu9LBNY" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Spotify</a>
+            <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">YouTube</a>
+            <a href="#" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Apple Podcasts</a>
+            <a href="#" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Spotify</a>
           </div>
         </div>
 
@@ -210,11 +106,6 @@
     </div>
   </section>
 
-  <div class="episode-host-bio" style="max-width:800px;margin:0 auto 2rem;padding:1.5rem;background:var(--bg-secondary);border-radius:12px;">
-    <h3 style="margin-bottom:0.5rem;color:var(--purple-primary);">About the Host</h3>
-    <p style="font-size:0.95rem;color:var(--text-secondary);">Chris Hutchins is the Founder and CEO of Hutchins Data Strategy Consultants, where he helps healthcare organizations unlock the value of their data and AI investments through practical, responsible strategies. With deep experience integrating data, analytics, and AI across complex healthcare systems, he hosts The Signal Room to surface the leadership decisions, ethical questions, and operational realities that shape healthcare's data-driven future.</p>
-  </div>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -234,28 +125,29 @@
         <div>
           <h4>Listen</h4>
           <ul class="footer-links">
-            <li><a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366" target="_blank" rel="noopener noreferrer">Apple Podcasts</a></li>
-            <li><a href="https://open.spotify.com/show/3MulxnnPp7yRnChGu9LBNY" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+            <li><a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank">YouTube</a></li>
+            <li><a href="#" target="_blank">Apple Podcasts</a></li>
+            <li><a href="#" target="_blank">Spotify</a></li>
           </ul>
         </div>
         <div>
           <h4>Connect</h4>
           <ul class="footer-links">
-            <li><a href="https://www.hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
-            <li><a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://www.chrisjhutchins.com" target="_blank">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank">LinkedIn</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span><a href="../privacy-policy.html" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+        <span>&copy; 2025 The Signal Room. All rights reserved.</span>
       </div>
     </div>
   </footer>
 
   <script>
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
-    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open');document.getElementById('navToggle').setAttribute('aria-expanded',document.getElementById('navLinks').classList.contains('open'))});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
 </body>
 </html>
