@@ -2,21 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="canonical" href="https://signalroompodcast.com/episodes.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Episodes - The Signal Room Podcast</title>
     <meta name="description" content="Explore all episodes of The Signal Room podcast featuring leaders in healthcare AI, data strategy, and digital transformation.">
     <meta property="og:title" content="Episodes - The Signal Room Podcast">
     <meta property="og:description" content="Explore all episodes of The Signal Room podcast featuring leaders in healthcare AI, data strategy, and digital transformation.">
-    <meta property="og:url" content="https://signalroompodcast.com/episodes.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/jpeg" href="assets/logos/sr-logo-purple.jpg">
-    <meta name="theme-color" content="#6C5CE7">
-
-    <!-- Performance: Resource Hints -->
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <meta property="og:image" content="assets/og-image.png">
+    <meta name="theme-color" content="#1e40af">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,499 +25,381 @@
     </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
     <!-- Navigation -->
-    <nav class="nav" id="navbar">
-        <div class="nav-inner">
-            <a href="index.html" class="nav-brand">
-                <img src="assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
-                <span>The Signal Room</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="episodes.html" class="active">Episodes</a></li>
-                <li><a href="guests.html">Guests</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="newsletter.html">Newsletter</a></li>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">The Signal Room</span>
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="episodes.html" class="nav-link active">Episodes</a></li>
+                <li><a href="guests.html" class="nav-link">Guests</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main id="main-content">
+    <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero hero-smaller">
             <div class="container">
-                <div class="hero-inner">
-                    <div class="hero-content">
-                        <div class="hero-tagline">Episodes</div>
-                        <h1>All Episodes</h1>
-                        <p class="hero-desc">Conversations with leaders shaping the future of healthcare AI and data strategy</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Start Here -->
-        <section class="section" style="padding-bottom:0;">
-            <div class="container">
-                <div class="start-here">
-                    <div>
-                        <span class="start-here-badge">Latest Episode</span>
-                        <div class="episode-card-guest">MarKeisha Snaith</div>
-                        <h3>Healthcare Leadership, Operational Reality, and System Signals</h3>
-                        <p>Leadership inside complex healthcare systems and how strategic decisions shape the way organizations actually function.</p>
-                        <a href="episodes/healthcare-leadership-operational-reality.html" class="btn">Watch This Episode</a>
-                    </div>
-                    <div class="start-here-thumb">
-                        <img src="https://img.youtube.com/vi/MhHS4drVihM/hqdefault.jpg" alt="Episode 22: MarKeisha Snaith" loading="eager">
-                    </div>
-                </div>
+                <h1>All Episodes</h1>
+                <p>Conversations with leaders shaping the future of healthcare AI and data strategy</p>
             </div>
         </section>
 
         <!-- Episodes Grid -->
-        <section class="section">
+        <section class="episodes-section">
             <div class="container">
                 <div class="episodes-grid">
                     <!-- Episode 22 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
+                        <div class="episode-thumbnail">
                             <img src="https://img.youtube.com/vi/MhHS4drVihM/hqdefault.jpg" alt="Episode 22: MarKeisha Snaith">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Leadership</span><span class="episode-tag">AI Governance</span></div>
-                            <div class="episode-card-guest">Ep 22 - MarKeisha Snaith</div>
-                            <h3 class="episode-card-title">Healthcare Leadership, Operational Reality, and System Signals</h3>
-                            <p class="episode-card-desc">A deep conversation with MarKeisha Snaith about leadership in healthcare AI, operational realities, and the signals that matter most in complex systems.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 22</span>
-                                <a href="episodes/healthcare-leadership-operational-reality.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 22</div>
+                            <h3>MarKeisha Snaith</h3>
+                            <p class="episode-title">Healthcare Leadership, Operational Reality, and System Signals</p>
+                            <a href="episodes/healthcare-leadership-operational-reality.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 21 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
+                        <div class="episode-thumbnail">
                             <img src="https://img.youtube.com/vi/0QC5nLRY5fs/hqdefault.jpg" alt="Episode 21: Amanda Roser">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Leadership</span><span class="episode-tag">Clinical AI</span></div>
-                            <div class="episode-card-guest">Ep 21 - Amanda Roser</div>
-                            <h3 class="episode-card-title">Caregivers as the Connective Tissue of Healthcare</h3>
-                            <p class="episode-card-desc">Exploring how caregivers serve as the connective tissue in healthcare systems and the critical role they play in patient care and organizational health.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 21</span>
-                                <a href="episodes/caregivers-connective-tissue-healthcare.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 21</div>
+                            <h3>Amanda Roser</h3>
+                            <p class="episode-title">Caregivers as the Connective Tissue of Healthcare</p>
+                            <a href="episodes/caregivers-connective-tissue-healthcare.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 20 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
+                        <div class="episode-thumbnail">
                             <img src="https://img.youtube.com/vi/wizfkLwkIYw/hqdefault.jpg" alt="Episode 20: Dr. Natasha Dole">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Clinical AI</span><span class="episode-tag">Ethics &amp; Trust</span></div>
-                            <div class="episode-card-guest">Ep 20 - Dr. Natasha Dole</div>
-                            <h3 class="episode-card-title">The Scary Truth About AI in the ER and Why Clinical Judgment Still Wins</h3>
-                            <p class="episode-card-desc">A critical look at AI applications in emergency medicine, the real challenges of implementation, and why human clinical judgment remains irreplaceable.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 20</span>
-                                <a href="episodes/ai-in-the-er-clinical-judgment.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 20</div>
+                            <h3>Dr. Natasha Dole</h3>
+                            <p class="episode-title">The Scary Truth About AI in the ER and Why Clinical Judgment Still Wins</p>
+                            <a href="episodes/ai-in-the-er-clinical-judgment.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 19 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
+                        <div class="episode-thumbnail">
                             <img src="https://img.youtube.com/vi/iKiG5L005Fg/hqdefault.jpg" alt="Episode 19: Gary Cao">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Data Strategy</span><span class="episode-tag">AI Implementation</span></div>
-                            <div class="episode-card-guest">Ep 19 - Gary Cao</div>
-                            <h3 class="episode-card-title">The Enterprise AI Journey</h3>
-                            <p class="episode-card-desc">Understanding the enterprise path to AI adoption, from data foundations through generative and agentic AI applications in healthcare.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 19</span>
-                                <a href="episodes/enterprise-ai-journey.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 19</div>
+                            <h3>Gary Cao</h3>
+                            <p class="episode-title">The Enterprise AI Journey: From Data Foundations to Generative and Agentic AI</p>
+                            <a href="episodes/enterprise-ai-journey.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 18 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
+                        <div class="episode-thumbnail">
                             <img src="https://img.youtube.com/vi/7lsO0GK-UK4/hqdefault.jpg" alt="Episode 18: Brian Sutherland">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Leadership</span><span class="episode-tag">AI Implementation</span></div>
-                            <div class="episode-card-guest">Ep 18 - Brian Sutherland</div>
-                            <h3 class="episode-card-title">From AI Strategy to Execution: Trust, Leadership, and Operational Reality</h3>
-                            <p class="episode-card-desc">A comprehensive discussion on healthcare data strategy, moving from infrastructure thinking to intelligence-first approaches that drive organizational impact.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 18</span>
-                                <a href="episodes/ai-strategy-to-execution.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 18</div>
+                            <h3>Brian Sutherland</h3>
+                            <p class="episode-title">From AI Strategy to Execution: Trust, Leadership, and Operational Reality</p>
+                            <a href="episodes/ai-strategy-to-execution.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 17 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/TvaEQ87vgpo/hqdefault.jpg" alt="Episode 17: David Finkelshteyn">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <div class="episode-thumbnail">
+                            <img src="https://img.youtube.com/vi/bkbxIKm_5Sc/hqdefault.jpg" alt="Episode 17: Brian Sutherland">
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">AI Implementation</span><span class="episode-tag">Ethics &amp; Trust</span></div>
-                            <div class="episode-card-guest">Ep 17 - David Finkelshteyn</div>
-                            <h3 class="episode-card-title">Why AI Verification is the Real Bottleneck</h3>
-                            <p class="episode-card-desc">Examining AI verification challenges in pharmaceutical discovery and why verification remains the true limiting factor in AI adoption.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 17</span>
-                                <a href="episodes/ai-verification-pharma-discovery.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 17</div>
+                            <h3>Brian Sutherland</h3>
+                            <p class="episode-title">Rethinking Healthcare Data Strategy: From Infrastructure to Intelligence</p>
+                            <a href="episodes/rethinking-healthcare-data-strategy.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 16 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/gR6OXuIxIOY/hqdefault.jpg" alt="Episode 16: Guman Chauhan">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <div class="episode-thumbnail">
+                            <img src="https://img.youtube.com/vi/TvaEQ87vgpo/hqdefault.jpg" alt="Episode 16: David Finkelshteyn">
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Cybersecurity</span><span class="episode-tag">Leadership</span></div>
-                            <div class="episode-card-guest">Ep 16 - Guman Chauhan</div>
-                            <h3 class="episode-card-title">No Alerts, Still Breached</h3>
-                            <p class="episode-card-desc">Exploring cybersecurity risks in healthcare AI, ethical leadership in security decisions, and why traditional alerts are no longer enough.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 16</span>
-                                <a href="episodes/cybersecurity-ethical-leadership-ai.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 16</div>
+                            <h3>David Finkelshteyn</h3>
+                            <p class="episode-title">Why AI Verification is the Real Bottleneck in Pharmaceutical Drug Discovery</p>
+                            <a href="episodes/ai-verification-pharma-discovery.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 15 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/iNkDlnwZcMc/hqdefault.jpg" alt="Episode 15: Dr. Mark Gendreau">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <div class="episode-thumbnail">
+                            <img src="https://img.youtube.com/vi/gR6OXuIxIOY/hqdefault.jpg" alt="Episode 15: Guman Chauhan">
+                            <div class="play-button-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Clinical AI</span><span class="episode-tag">Ethics &amp; Trust</span></div>
-                            <div class="episode-card-guest">Ep 15 - Dr. Mark Gendreau</div>
-                            <h3 class="episode-card-title">Balancing Human Judgment and Clinical Trust</h3>
-                            <p class="episode-card-desc">A deep dive into how emergency medicine physicians balance AI tools with clinical judgment and maintain trust in clinical decision-making.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 15</span>
-                                <a href="episodes/balancing-human-judgment-clinical-trust.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 15</div>
+                            <h3>Guman Chauhan</h3>
+                            <p class="episode-title">No Alerts, Still Breached: Cybersecurity Risks and Ethical Leadership in Healthcare AI</p>
+                            <a href="episodes/cybersecurity-ethical-leadership-ai.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 14 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/mMtwcZBCzb8/hqdefault.jpg" alt="Episode 14: Parth Gargish">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">AI Implementation</span><span class="episode-tag">Data Strategy</span></div>
-                            <div class="episode-card-guest">Ep 14 - Parth Gargish</div>
-                            <h3 class="episode-card-title">From AI Hype to Real Value</h3>
-                            <p class="episode-card-desc">Cutting through the hype around AI to understand what actually delivers value in SaaS and AI product development in healthcare.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 14</span>
-                                <a href="episodes/ai-hype-to-real-value.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 14</div>
+                            <h3>Dr. Mark Gendreau</h3>
+                            <p class="episode-title">Balancing Human Judgment and Clinical Trust in Healthcare</p>
+                            <a href="episodes/balancing-human-judgment-clinical-trust.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 13 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/8Yyji02GH7c/hqdefault.jpg" alt="Episode 13: Aleida Lanza">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Data Strategy</span><span class="episode-tag">Clinical AI</span></div>
-                            <div class="episode-card-guest">Ep 13 - Aleida Lanza</div>
-                            <h3 class="episode-card-title">Healthcare AI Fails Without Complete Medical Records</h3>
-                            <p class="episode-card-desc">Understanding why data completeness is foundational to healthcare AI success and the systemic challenges that make it difficult.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 13</span>
-                                <a href="episodes/healthcare-ai-complete-medical-records.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 13</div>
+                            <h3>Parth Gargish</h3>
+                            <p class="episode-title">From AI Hype to Real Value</p>
+                            <a href="episodes/ai-hype-to-real-value.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 12 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/qYeC8dMRmJ4/hqdefault.jpg" alt="Episode 12: Asha Mahesh">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Ethics &amp; Trust</span><span class="episode-tag">Leadership</span></div>
-                            <div class="episode-card-guest">Ep 12 - Asha Mahesh</div>
-                            <h3 class="episode-card-title">AI Ethics and Ethical Leadership</h3>
-                            <p class="episode-card-desc">Exploring the intersection of AI ethics and ethical leadership in healthcare, and why leaders must model the values they expect in AI systems.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 12</span>
-                                <a href="episodes/ai-ethics-ethical-leadership.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 12</div>
+                            <h3>Aleida Lanza</h3>
+                            <p class="episode-title">Healthcare AI Fails Without Complete Medical Records</p>
+                            <a href="episodes/healthcare-ai-complete-medical-records.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 11 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/s4ghn6k-t-8/hqdefault.jpg" alt="Episode 11: Susie Brannigan">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">AI Governance</span><span class="episode-tag">Clinical AI</span></div>
-                            <div class="episode-card-guest">Ep 11 - Susie Brannigan</div>
-                            <h3 class="episode-card-title">Why Human-Centered AI Governance is Non-Negotiable</h3>
-                            <p class="episode-card-desc">A case for human-centered governance approaches to AI in healthcare that prioritize people first and technology as enabler.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 11</span>
-                                <a href="episodes/human-centered-ai-governance.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 11</div>
+                            <h3>Asha Mahesh</h3>
+                            <p class="episode-title">AI Ethics and Ethical Leadership in Healthcare</p>
+                            <a href="episodes/ai-ethics-ethical-leadership.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 10 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/SY9xtWnOSOE/hqdefault.jpg" alt="Episode 10: Amit Shivpuja">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Data Strategy</span><span class="episode-tag">Ethics &amp; Trust</span></div>
-                            <div class="episode-card-guest">Ep 10 - Amit Shivpuja</div>
-                            <h3 class="episode-card-title">The Hidden Infrastructure of Trust</h3>
-                            <p class="episode-card-desc">Uncovering the often-invisible systems and practices that build and maintain trust in data and AI infrastructure.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 10</span>
-                                <a href="episodes/hidden-infrastructure-of-trust.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 10</div>
+                            <h3>Susie Brannigan</h3>
+                            <p class="episode-title">Why Human-Centered AI Governance is Non-Negotiable</p>
+                            <a href="episodes/human-centered-ai-governance.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 9 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/FhmwMJsVPB8/hqdefault.jpg" alt="Episode 9: Anitha Mareedu">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Cybersecurity</span><span class="episode-tag">AI Governance</span></div>
-                            <div class="episode-card-guest">Ep 9 - Anitha Mareedu</div>
-                            <h3 class="episode-card-title">AI Security Risks</h3>
-                            <p class="episode-card-desc">Examining the cybersecurity challenges and national implications of AI adoption in healthcare systems.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 9</span>
-                                <a href="episodes/ai-security-risks-cybersecurity.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 9</div>
+                            <h3>Amit Shivpuja</h3>
+                            <p class="episode-title">The Hidden Infrastructure of Trust</p>
+                            <a href="episodes/hidden-infrastructure-of-trust.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 8 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/UpJJejIHN-4/hqdefault.jpg" alt="Episode 8: Keshavan Seshadri">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Ethics &amp; Trust</span><span class="episode-tag">AI Implementation</span></div>
-                            <div class="episode-card-guest">Ep 8 - Keshavan Seshadri</div>
-                            <h3 class="episode-card-title">Authentic Intelligence</h3>
-                            <p class="episode-card-desc">Exploring explainability, bias detection, and human-in-the-loop approaches that create authentic intelligence in healthcare AI.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 8</span>
-                                <a href="episodes/authentic-intelligence-explainability.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 8</div>
+                            <h3>Anitha Mareedu</h3>
+                            <p class="episode-title">AI Security Risks: Cybersecurity, National Risk, and the Future of Work</p>
+                            <a href="episodes/ai-security-risks-cybersecurity.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 7 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/ghk8jZeWw1k/hqdefault.jpg" alt="Episode 7: Carol Velandia">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Clinical AI</span><span class="episode-tag">Ethics &amp; Trust</span></div>
-                            <div class="episode-card-guest">Ep 7 - Carol Velandia</div>
-                            <h3 class="episode-card-title">AI Can't Replace Language Access</h3>
-                            <p class="episode-card-desc">Why language access remains a human imperative that AI cannot fully replace in healthcare delivery.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 7</span>
-                                <a href="episodes/ai-cant-replace-language-access.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 7</div>
+                            <h3>Keshavan Seshadri</h3>
+                            <p class="episode-title">Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop</p>
+                            <a href="episodes/authentic-intelligence-explainability.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 6 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/NGBbYZSdcLs/hqdefault.jpg" alt="Episode 6: Danette McGilvray">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Data Strategy</span><span class="episode-tag">AI Governance</span></div>
-                            <div class="episode-card-guest">Ep 6 - Danette McGilvray</div>
-                            <h3 class="episode-card-title">Data Quality and AI Strategy</h3>
-                            <p class="episode-card-desc">Understanding why data quality is the foundation of effective AI strategy, not an afterthought in implementation.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 6</span>
-                                <a href="episodes/data-quality-ai-strategy.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 6</div>
+                            <h3>Carol Velandia</h3>
+                            <p class="episode-title">AI Can't Replace Language Access</p>
+                            <a href="episodes/ai-cant-replace-language-access.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 5 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/fwVp0NsSFSI/hqdefault.jpg" alt="Episode 5: Ritu Chakrawarty">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">AI Implementation</span><span class="episode-tag">Data Strategy</span></div>
-                            <div class="episode-card-guest">Ep 5 - Ritu Chakrawarty</div>
-                            <h3 class="episode-card-title">Healthcare AI is Not One-Size-Fits-All</h3>
-                            <p class="episode-card-desc">Why healthcare organizations need tailored AI strategies that match their unique context, culture, and capabilities.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 5</span>
-                                <a href="episodes/healthcare-ai-not-one-size-fits-all.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 5</div>
+                            <h3>Danette McGilvray</h3>
+                            <p class="episode-title">Data Quality and AI Strategy: Garbage In, Gen AI Out</p>
+                            <a href="episodes/data-quality-ai-strategy.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
                     <!-- Episode 4 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/HAlocvYL0do/hqdefault.jpg" alt="Episode 4: Larry Kuhn">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Leadership</span><span class="episode-tag">AI Implementation</span></div>
-                            <div class="episode-card-guest">Ep 4 - Larry Kuhn</div>
-                            <h3 class="episode-card-title">The Human-AI Leadership Equation</h3>
-                            <p class="episode-card-desc">Exploring how leaders can leverage AI while maintaining the human elements that make leadership effective in healthcare.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 4</span>
-                                <a href="episodes/human-ai-leadership-equation.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 4</div>
+                            <h3>Ritu Chakrawarty</h3>
+                            <p class="episode-title">Healthcare AI is Not One-Size-Fits-All</p>
+                            <a href="episodes/healthcare-ai-not-one-size-fits-all.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
 
-                    <!-- Episode 2 - Dr. Barry Chaiken -->
-                    <a href="episodes/ai-redefines-patient-physician-pt2.html" class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/H2sY21MyKgQ/hqdefault.jpg" alt="Dr. Barry Chaiken Part 2">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                        </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Clinical AI</span><span class="episode-tag">Data Strategy</span></div>
-                            <div class="episode-card-guest">Dr. Barry Chaiken</div>
-                            <h3 class="episode-card-title">How AI Redefines the Patient-Physician Journey (Part 2)</h3>
-                            <p class="episode-card-desc">Continuing the conversation on AI's role in transforming patient-physician dynamics and the future of healthcare delivery.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 2</span>
-                                <span class="episode-card-link">Watch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Episode 1 - Dr. Barry Chaiken -->
-                    <a href="episodes/ai-clinical-guardrails.html" class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/Lhtm0LffY84/hqdefault.jpg" alt="Dr. Barry Chaiken Part 1">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                        </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">Clinical AI</span><span class="episode-tag">AI Governance</span></div>
-                            <div class="episode-card-guest">Dr. Barry Chaiken</div>
-                            <h3 class="episode-card-title">How AI Redefines the Patient-Physician Journey (Part 1)</h3>
-                            <p class="episode-card-desc">How AI is redefining the patient-physician journey, the promise and peril of clinical AI, and what healthcare gets wrong about technology adoption.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 1</span>
-                                <span class="episode-card-link">Watch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                            </div>
-                        </div>
-                    </a>
-
                     <!-- Episode 3 -->
                     <div class="episode-card">
-                        <div class="episode-card-thumb">
-                            <img src="https://img.youtube.com/vi/oy7Q_tHzAng/hqdefault.jpg" alt="Episode 3: Ratnadeep Bhattacharjee">
-                            <div class="episode-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
                         </div>
-                        <div class="episode-card-body">
-                            <div class="episode-tags"><span class="episode-tag">AI Implementation</span><span class="episode-tag">Leadership</span></div>
-                            <div class="episode-card-guest">Ep 3 - Ratnadeep Bhattacharjee</div>
-                            <h3 class="episode-card-title">Scaling AI Without Losing the Human Touch</h3>
-                            <p class="episode-card-desc">The inaugural episode explores how organizations can scale AI adoption while preserving the human elements critical to healthcare.</p>
-                            <div class="episode-card-footer">
-                                <span class="episode-card-ep">Episode 3</span>
-                                <a href="episodes/scaling-ai-human-touch.html" class="episode-card-link">Watch →</a>
-                            </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 3</div>
+                            <h3>Larry Kuhn</h3>
+                            <p class="episode-title">The Human-AI Leadership Equation</p>
+                            <a href="episodes/human-ai-leadership-equation.html" class="listen-btn">Listen Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Episode 2, Part 1 -->
+                    <div class="episode-card">
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
+                        </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 2, Part 1</div>
+                            <h3>Barry Chaiken</h3>
+                            <p class="episode-title">When AI Gets It Wrong: The Case for Clinical Guardrails</p>
+                            <a href="episodes/ai-clinical-guardrails.html" class="listen-btn">Listen Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Episode 2, Part 2 -->
+                    <div class="episode-card">
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
+                        </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 2, Part 2</div>
+                            <h3>Barry Chaiken</h3>
+                            <p class="episode-title">How AI Redefines the Patient-Physician Journey, Part 2</p>
+                            <a href="episodes/patient-physician-journey-part-2.html" class="listen-btn">Listen Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Episode 1 -->
+                    <div class="episode-card">
+                        <div class="episode-thumbnail">
+                            <div class="thumbnail-placeholder"></div>
+                        </div>
+                        <div class="episode-card-content">
+                            <div class="episode-number">Ep 1</div>
+                            <h3>Ratnadeep Bhattacharjee</h3>
+                            <p class="episode-title">Scaling AI Without Losing the Human Touch</p>
+                            <a href="episodes/scaling-ai-human-touch.html" class="listen-btn">Listen Now</a>
                         </div>
                     </div>
                 </div>
@@ -535,54 +410,49 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="assets/logos/sr-logo-purple.jpg" alt="The Signal Room">
-                    <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Signal Room</h4>
+                    <p>Leadership, ethics, and innovation, amplified.</p>
                 </div>
-                <div>
-                    <h4>Podcast</h4>
-                    <ul class="footer-links">
-                        <li><a href="episodes.html">All Episodes</a></li>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="episodes.html">Episodes</a></li>
                         <li><a href="guests.html">Guests</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="newsletter.html">Newsletter</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Listen</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                        <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366" target="_blank" rel="noopener noreferrer">Apple Podcasts</a></li>
-                        <li><a href="https://open.spotify.com/show/3MulxnnPp7yRnChGu9LBNY" target="_blank" rel="noopener noreferrer">Spotify</a></li>
-                    </ul>
-                </div>
-                <div>
+                <div class="footer-section">
                     <h4>Connect</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://www.hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
-                        <li><a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                        <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
-                    </ul>
+                    <p>
+                        <a href="https://linkedin.com/in/chutchins-healthcare/" target="_blank">LinkedIn</a> |
+                        <a href="https://chrisjhutchins.com" target="_blank">Speaking</a>
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span><a href="privacy-policy.html" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
-                <div class="footer-social">
-                    <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
-                    </a>
-                </div>
+                <p>&copy; 2024 The Signal Room. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
-        document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open');document.getElementById('navToggle').setAttribute('aria-expanded',document.getElementById('navLinks').classList.contains('open'))});
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
