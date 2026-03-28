@@ -48,39 +48,30 @@
 
   <section class="section" style="padding-top:var(--space-lg);">
     <div class="container">
-      <div class="episode-video" style="background:var(--purple-mist);display:flex;align-items:center;justify-content:center;padding-top:0;height:400px;">
-        <div style="text-align:center;padding:2rem;">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--purple-primary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--purple-primary)"/></svg>
-          <p style="margin-top:1rem;color:var(--text-muted);">Listen on your favorite podcast platform</p>
-          <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-primary" style="margin-top:1rem;">Watch on YouTube</a>
-        </div>
-      </div>
-
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/SY9xtWnOSOE" title="The Hidden Infrastructure of Trust" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="episode-video" style="max-width: 640px; margin: 0 auto 1.5rem;">
+                            <iframe src="https://www.youtube.com/embed/SY9xtWnOSOE" title="The Hidden Infrastructure of Trust" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
                         </div>
-      <!-- Buzzsprout Audio Player (Podcast ID: 2550733) -->
+
+                        <!-- Episode Info -->
+                        <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+                                <span style="background: #1a1a2e; color: #fff; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Episode 11</span>
+                                <span style="color: #666; font-size: 0.85rem;">January 7, 2026</span>
+                                <span style="color: #666; font-size: 0.85rem;">15 min</span>
+                            </div>
+                            <h2 style="margin: 0 0 0.5rem; font-size: 1.2rem; color: #1a1a2e;">The Hidden Infrastructure of Trust</h2>
+                            <p style="margin: 0 0 1rem; color: #555; font-size: 0.95rem; font-style: italic;">with Amit Shivpuja</p>
+                            <p style="margin: 0; color: #444; font-size: 0.9rem; line-height: 1.6;">Amit Shivpuja uncovers the hidden infrastructure of trust that underpins effective healthcare AI deployment and data strategy.</p>
+                        </div>
+
+                        <!-- Buzzsprout Audio Player -->
+                        <div style="max-width: 640px; margin: 0 auto;">
+                            <div id="buzzsprout-small-player-18464077"></div><script type="text/javascript" charset="utf-8" src="https://www.buzzsprout.com/2550733/18464077.js?container_id=buzzsprout-small-player-18464077&player=small"></script>
+                        </div>
       <!-- To use an episode-specific player, replace the src URL with:
            https://www.buzzsprout.com/2550733/18464077.js?container_id=buzzsprout-player-18464077&player=small
            and update the container div id to match. Find the episode ID in your Buzzsprout dashboard. -->
-      <div class="buzzsprout-player-wrap">
-        <p class="buzzsprout-player-label">Listen on Buzzsprout</p>
-        <div id='buzzsprout-small-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2550733.js?container_id=buzzsprout-small-player&player=small'></script>
-      </div>
-
-      <div class="episode-layout">
-        <div class="episode-main">
-          <h2>About This Episode</h2>
-          <p>AI ethics, responsible data practices, and the leadership required to get healthcare AI right.</p>
-
-          <h2>Listen & Subscribe</h2>
-          <p>Catch every episode of The Signal Room on your preferred platform.</p>
-          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
-            <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">YouTube</a>
-            <a href="#" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Apple Podcasts</a>
-            <a href="#" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Spotify</a>
-          </div>
-        </div>
+      
 
         <div class="episode-sidebar">
           <div class="sidebar-card">
