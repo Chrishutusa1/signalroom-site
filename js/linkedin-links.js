@@ -11,6 +11,7 @@
         'MarKeisha Snaith': 'https://www.linkedin.com/in/markeishasnaith/',
         'Natasha Dole': 'https://www.linkedin.com/in/natashadole/',
         'David Finkelshteyn': 'https://www.linkedin.com/in/david-finkelshteyn-03191a130/',
+        'Danette McGilvray': 'https://www.linkedin.com/in/danette-mcgilvray/',
         'Guman Chauhan': 'https://www.linkedin.com/in/guman-chauhan-m-s-cissp-cism-600824103/',
         'Amit Shivpuja': 'https://www.linkedin.com/in/amitshivpuja/',
         'Anitha Mareedu': 'https://www.linkedin.com/in/anithamareedu/',
