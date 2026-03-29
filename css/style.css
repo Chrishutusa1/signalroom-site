@@ -1167,3 +1167,46 @@ p:last-child { margin-bottom: 0; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .quote-callout { padding: var(--space-lg) var(--space-md); }
 }
+
+/* ========================================
+   LinkedIn Profile Links
+   ======================================== */
+
+.guest-card-wrapper {
+  position: relative;
+}
+
+.guest-linkedin {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #0A66C2;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+  line-height: 1;
+}
+
+.guest-linkedin:hover {
+  opacity: 1;
+}
+
+.sidebar-guest {
+  position: relative;
+}
+
+.sidebar-guest-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0A66C2;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-guest-linkedin:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
