@@ -1,0 +1,7 @@
+# 301 redirects for renamed episode slugs
+/episodes/ai-verification-pharma-discovery    /episodes/data-readiness-ai-adoption    301
+/episodes/ai-verification-pharma-discovery.html    /episodes/data-readiness-ai-adoption.html    301
+/episodes/healthcare-leadership-system-transformation    /episodes/enterprise-ai-journey-data-foundations    301
+/episodes/healthcare-leadership-system-transformation.html    /episodes/enterprise-ai-journey-data-foundations.html    301
+/episodes/scaling-ai-human-touch    /episodes/patient-physician-journey-part-1    301
+/episodes/scaling-ai-human-touch.html    /episodes/patient-physician-journey-part-1.html    301
