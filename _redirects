@@ -5,3 +5,13 @@
 /episodes/healthcare-leadership-system-transformation.html    /episodes/enterprise-ai-journey-data-foundations.html    301
 /episodes/scaling-ai-human-touch    /episodes/patient-physician-journey-part-1    301
 /episodes/scaling-ai-human-touch.html    /episodes/patient-physician-journey-part-1.html    301
+
+# 301 redirects for legacy sitemap slugs (404 ghost URLs)
+/episodes/ai-clinical-guardrails    /episodes/ai-in-the-er-clinical-judgment    301
+/episodes/ai-clinical-guardrails.html    /episodes/ai-in-the-er-clinical-judgment.html    301
+/episodes/ai-redefines-patient-physician-pt2    /episodes/patient-physician-journey-part-2    301
+/episodes/ai-redefines-patient-physician-pt2.html    /episodes/patient-physician-journey-part-2.html    301
+/episodes/ai-strategy-to-execution    /episodes/rethinking-healthcare-data-strategy    301
+/episodes/ai-strategy-to-execution.html    /episodes/rethinking-healthcare-data-strategy.html    301
+/episodes/enterprise-ai-journey    /episodes/enterprise-ai-journey-data-foundations    301
+/episodes/enterprise-ai-journey.html    /episodes/enterprise-ai-journey-data-foundations.html    301
