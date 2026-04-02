@@ -15,3 +15,9 @@
 /episodes/ai-strategy-to-execution.html    /episodes/rethinking-healthcare-data-strategy.html    301
 /episodes/enterprise-ai-journey    /episodes/enterprise-ai-journey-data-foundations    301
 /episodes/enterprise-ai-journey.html    /episodes/enterprise-ai-journey-data-foundations.html    301
+
+# 301 redirects for stray duplicate files
+/good-people-quietly-quitting    /episodes/good-people-quietly-quitting    301
+/good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting.html    301
+/episodes/episodes    /episodes    301
+/episodes/episodes.html    /episodes.html    301
