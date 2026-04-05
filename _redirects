@@ -17,6 +17,10 @@
 /episodes/enterprise-ai-journey.html    /episodes/enterprise-ai-journey-data-foundations.html    301
 
 # 301 redirects for stray duplicate files
+
+# Rewrite lowercase /articles/ to /Articles/ (case-sensitive fix)
+/articles/healthcare-data-strategy.html    /Articles/healthcare-data-strategy.html    200
+/articles/data-governance-healthcare.html    /Articles/data-governance-healthcare.html    200
 /good-people-quietly-quitting    /episodes/good-people-quietly-quitting    301
 /good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting.html    301
 /episodes/episodes    /episodes    301
