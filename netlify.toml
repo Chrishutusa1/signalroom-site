@@ -1,17 +1,17 @@
 [build]
   publish = "."
 
-[[redirects]]
   # Disable Pretty URLs: force extensionless requests to the .html version
   # This prevents Netlify from serving duplicate content at both /page and /page.html
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
+  [[headers]]
+    for = "/*"
+      [headers.values]
+          X-Content-Type-Options = "nosniff"
 
-[build.processing]
-  skip_processing = false
+          [build.processing]
+            skip_processing = false
 
-[build.processing.html]
-  pretty_urls = false
+            [build.processing.html]
+              pretty_urls = false
+              
