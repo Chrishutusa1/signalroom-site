@@ -591,14 +591,11 @@
     }
   </script>
   <script>
-    // Auto-update stats from page content
+    // Auto-update episode count from page content
+    // Guest count is maintained manually (homepage cards show only recent episodes,
+    // so counting guests here would undercount). Updated via add-podcast-episode task.
     (function(){
       var cards = document.querySelectorAll('.episodes-grid .episode-card');
-      var guests = [];
-      cards.forEach(function(c){
-        var g = c.querySelector('.episode-card-guest');
-        if(g && guests.indexOf(g.textContent.trim()) === -1) guests.push(g.textContent.trim());
-      });
       var epNums = [];
       cards.forEach(function(c){
         var ep = c.querySelector('.episode-card-ep');
@@ -609,9 +606,7 @@
       });
       var maxEp = epNums.length ? Math.max.apply(null, epNums) : 0;
       var epEl = document.getElementById('episode-count');
-      var guestEl = document.getElementById('guest-count');
       if(epEl && maxEp > 0) epEl.textContent = maxEp;
-      if(guestEl && guests.length > 0) guestEl.textContent = guests.length + '+';
     })();
   </script>
 </body>
