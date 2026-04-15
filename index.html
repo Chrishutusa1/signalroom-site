@@ -87,12 +87,12 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-number">25+</div>
+          <div class="stat-number" id="guest-count">25+</div>
           <div class="stat-label">Expert Guests</div>
           <div class="stat-desc">CMOs, CISOs, AI officers, data executives, and clinicians accountable for real-world outcomes</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">23</div>
+          <div class="stat-number" id="episode-count">25</div>
           <div class="stat-label">Episodes Published</div>
           <div class="stat-desc">Deep conversations on governance, data strategy, clinical AI, and operational leadership</div>
         </div>
@@ -589,6 +589,30 @@
       document.getElementById('guest-apply-form').style.display = 'none';
       document.getElementById('apply-success').style.display = 'block';
     }
+  </script>
+  <script>
+    // Auto-update stats from page content
+    (function(){
+      var cards = document.querySelectorAll('.episodes-grid .episode-card');
+      var guests = [];
+      cards.forEach(function(c){
+        var g = c.querySelector('.episode-card-guest');
+        if(g && guests.indexOf(g.textContent.trim()) === -1) guests.push(g.textContent.trim());
+      });
+      var epNums = [];
+      cards.forEach(function(c){
+        var ep = c.querySelector('.episode-card-ep');
+        if(ep){
+          var m = ep.textContent.match(/\d+/);
+          if(m) epNums.push(parseInt(m[0]));
+        }
+      });
+      var maxEp = epNums.length ? Math.max.apply(null, epNums) : 0;
+      var epEl = document.getElementById('episode-count');
+      var guestEl = document.getElementById('guest-count');
+      if(epEl && maxEp > 0) epEl.textContent = maxEp;
+      if(guestEl && guests.length > 0) guestEl.textContent = guests.length + '+';
+    })();
   </script>
 </body>
 </html>
