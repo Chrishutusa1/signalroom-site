@@ -1,17 +1,81 @@
+# The Signal Room - Netlify Configuration
 [build]
   publish = "."
 
-  # Disable Pretty URLs: force extensionless requests to the .html version
-  # This prevents Netlify from serving duplicate content at both /page and /page.html
+[build.processing]
+  skip_processing = false
 
-  [[headers]]
-    for = "/*"
-      [headers.values]
-          X-Content-Type-Options = "nosniff"
+[build.processing.html]
+  pretty_urls = false
 
-          [build.processing]
-            skip_processing = false
+# --- Asset caching (1 year, immutable) ---
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
-            [build.processing.html]
-              pretty_urls = false
-              
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/logos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/guests/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# --- HTML caching (1 hour, revalidate) ---
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# --- Security headers ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# --- Redirects ---
+[[redirects]]
+  from = "/episodes"
+  to = "/episodes.html"
+  status = 301
+
+[[redirects]]
+  from = "/guests"
+  to = "/guests.html"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 301
+
+[[redirects]]
+  from = "/newsletter"
+  to = "/newsletter.html"
+  status = 301
