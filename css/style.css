@@ -593,6 +593,28 @@ p:last-child { margin-bottom: 0; }
 
 .newsletter-form button:hover { transform: translateY(-1px); }
 
+/* --- BeeHiiv Subscribe Form Embed --- */
+.newsletter-form-embed {
+  max-width: 560px;
+  margin: var(--space-md) auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form-embed iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 340px;
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form-embed iframe { height: 380px; }
+}
+
 /* --- Buzzsprout Audio Player --- */
 .buzzsprout-player-wrap {
   margin: var(--space-md) 0 var(--space-lg);
