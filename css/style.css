@@ -667,6 +667,13 @@ p:last-child { margin-bottom: 0; }
 
 .episode-sidebar {
   position: static;
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: 0 var(--space-md);
+}
+
+.episode-sidebar .sidebar-card {
+  max-width: 800px;
 }
 
 .sidebar-card {
