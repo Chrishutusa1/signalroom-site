@@ -604,7 +604,7 @@ p:last-child { margin-bottom: 0; }
 .newsletter-form-embed iframe {
   width: 100%;
   max-width: 560px;
-  height: 340px;
+  height: 420px;
   border: 0;
   margin: 0;
   background-color: transparent;
@@ -612,7 +612,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 @media (max-width: 600px) {
-  .newsletter-form-embed iframe { height: 380px; }
+  .newsletter-form-embed iframe { height: 460px; }
 }
 
 /* --- Buzzsprout Audio Player --- */
