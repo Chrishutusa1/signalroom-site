@@ -666,8 +666,14 @@ p:last-child { margin-bottom: 0; }
 .episode-main p { font-size: 1.05rem; line-height: 1.75; }
 
 .episode-sidebar {
-  position: sticky;
-  top: calc(var(--nav-height) + var(--space-md));
+  position: static;
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: 0 var(--space-md);
+}
+
+.episode-sidebar .sidebar-card {
+  max-width: 800px;
 }
 
 .sidebar-card {
