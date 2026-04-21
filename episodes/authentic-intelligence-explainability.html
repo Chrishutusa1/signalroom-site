@@ -19,6 +19,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "name": "Authentic Intelligence: Context, Explainability, Bias, and Human-in-the-Loop",
+  "episodeNumber": 9,
+  "datePublished": "2025-12-24",
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com"
+  },
+  "url": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://www.buzzsprout.com/2550733/episodes/18401916"
+  },
+  "actor": {
+    "@type": "Person",
+    "name": "Keshavan Seshadri"
+  },
+  "timeRequired": "PT28M"
+}
+</script>
 </head>
 <body>
   <nav class="nav" id="navbar">
@@ -73,7 +97,55 @@
           <div class="show-notes-section" style="max-width: 800px; margin: 1.5rem auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
 <h3 style="margin: 0 0 1rem; font-size: 1.15rem; color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 0.5rem;">Show Notes</h3>
 <div style="color: #444; font-size: 0.95rem; line-height: 1.7;">
-<p>Keshavan Seshadri, a Senior ML Engineer at Prudential Financial, makes the case that intelligence without transparency is not intelligence at all. The conversation covers explainability requirements for AI systems, how bias creeps into models and what it takes to detect it, and why human-in-the-loop design is not a limitation but a feature that strengthens AI deployments.</p><p>Explainability in AI is not a nice-to-have; it is a prerequisite for any deployment where decisions affect people's lives. Bias in machine learning models is a systemic issue that requires ongoing monitoring, not a one-time audit. Organizations that treat bias detection as a launch criteria rather than a continuous practice will continue to experience failures.</p><p>Topics covered: AI explainability requirements, algorithmic bias detection and monitoring, human-in-the-loop design principles, model transparency for clinical trust, and why authentic intelligence demands that humans remain accountable for AI-driven decisions.</p>
+<p>Responsible AI in healthcare starts with one question: what context does the model actually have? Keshavan Seshadri, Senior ML Engineer at Prudential Financial and an architect of generative AI platforms and agentic frameworks, argues that without deep context, intelligence is neither authentic nor safe. The conversation, recorded at the Put Data First Conference, lays out what explainability, bias detection, and human-in-the-loop design look like when built correctly from the start.</p>
+<h2>What We Cover</h2>
+<ul>
+  <li>The 4 types of context healthcare AI needs: patient context, task context, operational context, and institutional context, and why general-purpose LLMs fail without all 4.</li>
+  <li>Why explainability must be designed into models from the start rather than bolted on after delivery.</li>
+  <li>How confidence scores and risk metrics create meaningful human-in-the-loop checkpoints rather than rubber-stamp approvals.</li>
+  <li>The asymmetric cost of diagnostic errors and what that means for model calibration in clinical settings.</li>
+  <li>How reinforcement learning from human feedback creates feedback loops that help models correct for bias over time.</li>
+</ul>
+<h2>Key Takeaways</h2>
+<p><strong>Context is not optional; it is the foundation.</strong> A healthcare AI system without patient, task, operational, and institutional context is not intelligent. It is a pattern matcher operating outside its training distribution.</p>
+<p><strong>The cost of errors is not symmetric in clinical settings.</strong> Telling a patient they have cancer when they do not triggers additional tests. Telling a patient they do not have cancer when they do is catastrophic. Models must be calibrated to that asymmetry.</p>
+<p><strong>Bias detection is a continuous practice, not a launch audit.</strong> Organizations that treat bias as a one-time check will continue shipping models that drift the moment their training data becomes stale.</p>
+<h2>Frameworks & Tools Mentioned</h2>
+<ul>
+  <li>Four-context framework (patient / task / operational / institutional)</li>
+  <li>Reinforcement Learning from Human Feedback (RLHF)</li>
+  <li>Confidence scoring for human-in-the-loop checkpoints</li>
+  <li>LLMs, machine learning platforms, agentic AI frameworks</li>
+</ul>
+<h2>Timestamps</h2>
+<ul>
+  <li>00:00 – Authentic intelligence and context awareness</li>
+  <li>00:45 – Live from Data First Conference (Las Vegas)</li>
+  <li>02:20 – What authentic intelligence means in practice</li>
+  <li>03:30 – Four types of context in healthcare AI</li>
+  <li>06:25 – Training, fine-tuning, and context engineering</li>
+  <li>08:15 – Specialty workflows and domain-specific models</li>
+  <li>09:50 – Why AI is not a doctor (yet)</li>
+  <li>12:00 – Confidence scores, risk, and human deferral</li>
+  <li>15:05 – Bias, explainability, and transparency requirements</li>
+  <li>18:00 – Logging, tool tracing, and auditability</li>
+  <li>20:10 – Technically correct but contextually wrong examples</li>
+  <li>24:20 – What builders should focus on now</li>
+  <li>26:20 – Guardrails, evals, and regulated environments</li>
+  <li>27:10 – How to reach Keshavon</li>
+</ul>
+<h2>About Keshavan Seshadri</h2>
+<p>Keshavan Seshadri is Senior Machine Learning Engineer at Prudential Financial, where he builds machine learning platforms, generative AI solutions, and agentic frameworks. He writes and speaks on authentic intelligence, the role of context in ML design, and the gap between what current models can do and what healthcare demands.</p>
+<h2>Related Resources</h2>
+<p>Related episodes:</p>
+<ul>
+  <li><a href="https://signalroompodcast.com/episodes/human-centered-ai-governance.html">Why Human-Centered AI Governance is Non-Negotiable</a></li>
+  <li><a href="https://signalroompodcast.com/episodes/ai-ethics-ethical-leadership.html">AI Ethics and Ethical Leadership</a></li>
+  <li><a href="https://signalroompodcast.com/episodes/balancing-human-judgment-clinical-trust.html">Balancing Human Judgment and Clinical Trust</a></li>
+</ul>
+<p>Related topic: <a href="https://signalroompodcast.com/topics/ai-ethics-governance.html">AI Ethics & Governance</a></p>
+<p>Related article: <a href="https://signalroompodcast.com/articles/healthcare-data-strategy.html">Healthcare Data Strategy</a></p>
+<p>Stay connected: <a href="https://signalroompodcast.com/newsletter.html">The AI Health Pulse newsletter</a></p>
 </div>
 </div>
         </div>
