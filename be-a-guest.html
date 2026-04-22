@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/be-a-guest.html">
+  <title>Be a Guest | The Signal Room</title>
+  <meta name="description" content="Share your signal with The Signal Room. Submit your information to be considered as a guest on the healthcare AI leadership podcast.">
+  <link rel="icon" href="assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">
+  <link rel="apple-touch-icon" href="assets/logos/sr-square.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Be a Guest | The Signal Room">
+  <meta property="og:description" content="Share your signal with The Signal Room. Submit your information to be considered as a guest.">
+  <meta property="og:url" content="https://signalroompodcast.com/be-a-guest.html">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Banner_Wide.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index, follow">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260422r3">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="https://signalroompodcast.com/" class="nav-brand">
+        <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room" width="40" height="40">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://signalroompodcast.com/">Home</a></li>
+        <li><a href="https://signalroompodcast.com/episodes.html">Episodes</a></li>
+        <li><a href="https://signalroompodcast.com/guests.html">Guests</a></li>
+        <li><a href="https://signalroompodcast.com/about.html">About</a></li>
+        <li><a href="https://signalroompodcast.com/be-a-guest.html" class="active">Be a Guest</a></li>
+        <li><a href="https://signalroompodcast.com/faq.html">FAQ</a></li>
+        <li><a href="https://www.chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-tagline">Be a Guest</span>
+          <h1>Share Your Signal</h1>
+          <p class="hero-desc">Tell us about yourself and the work you would bring to the show. We review every submission and respond directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section">
+    <div class="container">
+      <div class="apply-section">
+        <form id="guest-apply-form" class="form-grid" onsubmit="handleApply(event)">
+          <div class="form-group">
+            <label for="guest-name">Full Name</label>
+            <input type="text" id="guest-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="guest-email">Email</label>
+            <input type="email" id="guest-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="guest-title">Title &amp; Organization</label>
+            <input type="text" id="guest-title" name="title">
+          </div>
+          <div class="form-group">
+            <label for="guest-linkedin">LinkedIn Profile</label>
+            <input type="url" id="guest-linkedin" name="linkedin">
+          </div>
+          <div class="form-group full">
+            <label for="guest-theme">Primary Theme</label>
+            <select id="guest-theme" name="theme">
+              <option value="">Select a theme</option>
+              <option value="governance">Governance</option>
+              <option value="clinical">Clinical AI</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="workforce">Workforce</option>
+              <option value="policy">Policy &amp; Regulation</option>
+              <option value="data-strategy">Data Strategy</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="guest-topics">What topics would you bring to The Signal Room?</label>
+            <textarea id="guest-topics" name="topics" rows="3"></textarea>
+          </div>
+          <div class="form-group full">
+            <label for="guest-context">Anything else we should know?</label>
+            <textarea id="guest-context" name="context" rows="2"></textarea>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-privacy-note">We only use this information to evaluate fit and schedule your appearance. No spam, ever.</p>
+          </div>
+        </form>
+        <div id="apply-success" style="display:none;text-align:center;padding:2rem;">
+          <h3 style="color:var(--purple-primary);">Thank You</h3>
+          <p>We received your message and will respond shortly.</p>
+          <div class="apply-value-props" style="margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+            <p>The Signal Room reaches CMIOs, CISOs, chief data officers, and AI governance leads at academic medical centers, health systems, payers, and health tech firms. This is a practitioner-to-practitioner conversation. Most guests leave with a sharper articulation of their own perspective and new peer relationships.</p>
+            <p>The show's currency is hard-won lessons from real AI deployments inside real health systems. That includes AI governance frameworks, clinical validation workflows, and data strategy calls.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room" width="48" height="48">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="https://signalroompodcast.com/episodes.html">All Episodes</a></li>
+            <li><a href="https://signalroompodcast.com/guests.html">Guests</a></li>
+            <li><a href="https://signalroompodcast.com/about.html">About</a></li>
+            <li><a href="https://signalroompodcast.com/be-a-guest.html">Be a Guest</a></li>
+            <li><a href="https://signalroompodcast.com/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen &amp; Watch</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-strategy-ethical-ai-regulation/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="https://signalroompodcast.com/topics/healthcare-ai-strategy.html">Healthcare AI Strategy</a></li>
+            <li><a href="https://signalroompodcast.com/topics/ai-ethics-governance.html">AI Ethics &amp; Governance</a></li>
+            <li><a href="https://signalroompodcast.com/topics/healthcare-data-security.html">Data Quality &amp; Security</a></li>
+            <li><a href="https://signalroompodcast.com/topics/clinical-ai-patient-care.html">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.hutchinsdatastrategy.com" target="_blank" rel="noopener">HDSC</a></li>
+            <li><a href="https://www.chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@ChrisHutchinsAi" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Guest apply form
+    function handleApply(e) {
+      e.preventDefault();
+      document.getElementById('guest-apply-form').style.display = 'none';
+      document.getElementById('apply-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

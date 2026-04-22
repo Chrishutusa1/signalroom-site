@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260422r3">
 </head>
 <body>
   <!-- Navigation -->
@@ -49,7 +49,7 @@
         <li><a href="https://signalroompodcast.com/episodes.html">Episodes</a></li>
         <li><a href="https://signalroompodcast.com/guests.html">Guests</a></li>
         <li><a href="https://signalroompodcast.com/about.html">About</a></li>
-        <li><a href="#be-a-guest">Be a Guest</a></li>
+        <li><a href="https://signalroompodcast.com/be-a-guest.html">Be a Guest</a></li>
             <li><a href="https://signalroompodcast.com/faq.html">FAQ</a></li>
         <li><a href="https://www.chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
       </ul>
@@ -442,71 +442,6 @@
     </div>
   </section>
 
-  <!-- Share Your Signal / Apply -->
-  <section class="section" id="be-a-guest">
-    <div class="container">
-      <div class="apply-section">
-        <div class="section-header">
-          <span class="section-label">Be a Guest</span>
-          <h2>Share Your Signal</h2>
-          <p>Tell us about yourself and the work you would bring to the show. We review every submission and respond directly.</p>
-        </div>
-
-        <form id="guest-apply-form" class="form-grid" onsubmit="handleApply(event)">
-          <div class="form-group">
-            <label for="guest-name">Full Name</label>
-            <input type="text" id="guest-name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="guest-email">Email</label>
-            <input type="email" id="guest-email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="guest-title">Title &amp; Organization</label>
-            <input type="text" id="guest-title" name="title">
-          </div>
-          <div class="form-group">
-            <label for="guest-linkedin">LinkedIn Profile</label>
-            <input type="url" id="guest-linkedin" name="linkedin">
-          </div>
-          <div class="form-group full">
-            <label for="guest-theme">Primary Theme</label>
-            <select id="guest-theme" name="theme">
-              <option value="">Select a theme</option>
-              <option value="governance">Governance</option>
-              <option value="clinical">Clinical AI</option>
-              <option value="cybersecurity">Cybersecurity</option>
-              <option value="workforce">Workforce</option>
-              <option value="policy">Policy &amp; Regulation</option>
-              <option value="data-strategy">Data Strategy</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group full">
-            <label for="guest-topics">What topics would you bring to The Signal Room?</label>
-            <textarea id="guest-topics" name="topics" rows="3"></textarea>
-          </div>
-          <div class="form-group full">
-            <label for="guest-context">Anything else we should know?</label>
-            <textarea id="guest-context" name="context" rows="2"></textarea>
-          </div>
-          <div class="form-group full">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <p class="form-privacy-note">We only use this information to evaluate fit and schedule your appearance. No spam, ever.</p>
-          </div>
-        </form>
-        <div id="apply-success" style="display:none;text-align:center;padding:2rem;">
-          <h3 style="color:var(--purple-primary);">Thank You</h3>
-          <p>We received your message and will respond shortly.</p>
-          <div class="apply-value-props" style="margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
-            <p>The Signal Room reaches CMIOs, CISOs, chief data officers, and AI governance leads at academic medical centers, health systems, payers, and health tech firms. This is a practitioner-to-practitioner conversation. Most guests leave with a sharper articulation of their own perspective and new peer relationships.</p>
-            <p>The show's currency is hard-won lessons from real AI deployments inside real health systems. That includes AI governance frameworks, clinical validation workflows, and data strategy calls.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -521,7 +456,7 @@
             <li><a href="https://signalroompodcast.com/episodes.html">All Episodes</a></li>
             <li><a href="https://signalroompodcast.com/guests.html">Guests</a></li>
             <li><a href="https://signalroompodcast.com/about.html">About</a></li>
-            <li><a href="#be-a-guest">Be a Guest</a></li>
+            <li><a href="https://signalroompodcast.com/be-a-guest.html">Be a Guest</a></li>
             <li><a href="https://signalroompodcast.com/faq.html">FAQ</a></li>
           </ul>
         </div>
@@ -577,13 +512,6 @@
     document.getElementById('navToggle').addEventListener('click', () => {
       document.getElementById('navLinks').classList.toggle('open');
     });
-
-    // Guest apply form
-    function handleApply(e) {
-      e.preventDefault();
-      document.getElementById('guest-apply-form').style.display = 'none';
-      document.getElementById('apply-success').style.display = 'block';
-    }
   </script>
   <script>
     // Auto-update episode count from page content
