@@ -483,6 +483,9 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .guest-card:hover {
@@ -491,12 +494,43 @@ p:last-child { margin-bottom: 0; }
 }
 
 .guest-card-photo {
-  width: 110px;
-  height: 110px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto var(--space-sm);
   border: 3px solid var(--purple-mist);
+  transition: border-color 0.25s;
+}
+
+.guest-card:hover .guest-card-photo {
+  border-color: var(--purple-primary);
+}
+
+.guest-card-photo-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto var(--space-sm);
+}
+
+.guest-card-photo-wrap .guest-card-photo {
+  margin: 0;
+  display: block;
+}
+
+.guest-card-episode-badge {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
 }
 
 .guest-card-name {
@@ -518,6 +552,95 @@ p:last-child { margin-bottom: 0; }
   color: var(--purple-primary);
   font-weight: 500;
   font-style: italic;
+}
+
+.guest-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  color: var(--purple-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.guest-card:hover .guest-card-cta,
+.guest-card:focus .guest-card-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.guest-card-cta svg {
+  transition: transform 0.2s ease;
+}
+
+.guest-card:hover .guest-card-cta svg {
+  transform: translateX(3px);
+}
+
+/* --- Guest Filter Chips --- */
+.guests-filter-section {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-xs);
+}
+
+.guest-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.guest-chip {
+  background: transparent;
+  border: 1.5px solid rgba(108, 92, 231, 0.25);
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--navy);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.guest-chip:hover {
+  border-color: var(--purple-primary);
+  background: rgba(108, 92, 231, 0.05);
+}
+
+.guest-chip.active {
+  background: var(--purple-primary);
+  border-color: var(--purple-primary);
+  color: #fff;
+}
+
+.guest-chip:focus-visible {
+  outline: 2px solid var(--purple-primary);
+  outline-offset: 2px;
+}
+
+.guests-grid-section {
+  padding-top: var(--space-md);
+}
+
+.guests-context {
+  max-width: 680px;
+  margin: var(--space-lg) auto 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.guests-empty-state {
+  display: none;
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-secondary);
 }
 
 /* --- About / Host --- */
