@@ -1414,17 +1414,24 @@ p:last-child { margin-bottom: 0; }
 
 .guest-linkedin {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  color: #0A66C2;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  top: 10px;
+  right: 10px;
   z-index: 2;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  color: #0A66C2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .guest-linkedin:hover {
-  opacity: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
 }
 
 .sidebar-guest {
