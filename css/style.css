@@ -1453,3 +1453,85 @@ p:last-child { margin-bottom: 0; }
   opacity: 0.8;
   text-decoration: underline;
 }
+
+/* ========================================
+   Hero Platform Follow Strip
+   ======================================== */
+
+.hero-follow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.hero-follow-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.platform-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid currentColor;
+  transition: opacity 0.15s ease, background 0.15s ease;
+  opacity: 0.8;
+}
+
+.platform-follow-btn:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.platform-follow-btn.spotify  { color: #1DB954; }
+.platform-follow-btn.apple    { color: #872EC4; }
+.platform-follow-btn.youtube  { color: #FF0000; }
+
+/* ========================================
+   Episode Sidebar — Follow the Show Card
+   ======================================== */
+
+.sidebar-follow-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-follow-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid currentColor;
+  transition: opacity 0.15s ease, background 0.15s ease;
+  opacity: 0.8;
+}
+
+.sidebar-follow-btn:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-follow-btn.spotify  { color: #1DB954; }
+.sidebar-follow-btn.apple    { color: #872EC4; }
+.sidebar-follow-btn.youtube  { color: #FF0000; }
+
+.sidebar-follow-card p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.85rem;
+}
