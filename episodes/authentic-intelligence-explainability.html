@@ -13,11 +13,31 @@
   <meta property="og:image" content="https://img.youtube.com/vi/maxresdefault.jpg">
   <meta property="og:url" content="https://signalroompodcast.com/episodes/authentic-intelligence-explainability.html">
   <meta name="twitter:card" content="summary_large_image">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-RZNHLJSRW3');</script>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../css/style.css?v=20260422r3">
 <script type="application/ld+json">
 {
