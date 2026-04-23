@@ -178,12 +178,32 @@
 </div>
         </div>
         
-<section class="episode-transcript" style="grid-column: 1 / -1; max-width:800px;margin:2rem auto;padding:2rem;background:#f9f9fb;border-radius:12px;border:1px solid #e0e0e0;">
+<div class="episode-sidebar">
+<div class="sidebar-card" id="guest-section">
+<h4>Guest</h4>
+<div class="sidebar-guest">
+<img alt="David Finkelshteyn" src="../assets/guests/david-finkelshteyn.jpg"/>
+<div class="sidebar-guest-info">
+<h3>David Finkelshteyn</h3>
+<p>CEO, Pivotal AI</p>
+<a href="https://www.linkedin.com/in/david-finkelshteyn-03191a130/" class="sidebar-guest-linkedin" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn Profile</a>
+</div>
+</div>
+</div>
+<div class="sidebar-card sponsor-slot">
+<h4>Sponsor</h4>
+<p>Interested in reaching healthcare AI leaders? <a href="mailto:chris@hutchinsdatastrategy.com">Get in touch</a>.</p>
+</div>
+</div>
+      </div>
+<section class="episode-transcript" style="max-width:800px;margin:2.5rem auto 0;padding:1.75rem 2rem;background:#F4F1F7;border-radius:12px;border:1px solid #E0DBE5;">
   <details>
-    <summary style="cursor:pointer;font-size:1.1rem;font-weight:700;color:#1a1a2e;padding:0.5rem 0;list-style:none;display:flex;align-items:center;gap:0.5rem;">
-      <span>&#9654;</span> Full Episode Transcript (~6,382 words)
+    <summary style="cursor:pointer;font-size:1rem;font-weight:700;color:#1A1A2E;padding:0.25rem 0;list-style:none;display:flex;align-items:center;gap:0.75rem;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;background:#6C5CE7;border-radius:50%;color:#fff;font-size:0.65rem;flex-shrink:0;">&#9654;</span>
+      Full Episode Transcript
+      <span style="margin-left:auto;font-weight:400;color:#7A7489;font-size:0.875rem;">~6,382 words</span>
     </summary>
-    <div class="transcript-body" style="margin-top:1.5rem;color:#333;font-size:0.93rem;line-height:1.8;max-height:600px;overflow-y:auto;padding-right:0.5rem;">
+    <div class="transcript-body" style="margin-top:1.25rem;border-top:1px solid #E0DBE5;padding-top:1.25rem;color:#4A4458;font-size:0.925rem;line-height:1.85;max-height:560px;overflow-y:auto;padding-right:0.5rem;">
 <p>tagline for my company is humanizing AI for care. We've talked about how healthcare needs to be emotionally ready before it can be technologically ready. Help people feel safe, seen, and empowered as that change happens. latchment on something which is already there and bend on that >> and hundreds of thousands of dollars on the data that powers the technology. >> Why is verification not model accuracy the hardest problem that you actually have to solve? >> But AI what gives us ability to kind of search through the much wider grid of possible compounds and molecules and biomolelecules. The whole idea of AI now is to be able to fail in faster so we can get faster to and actually correct result. And >> today's guest is David Finkelstein, CEO of Pivotal AI, where he focuses on building AI systems for pharmaceutical life sciences use cases that can actually be verified, defended, and trusted.</p>
 <p>We're going to go beyond the hype today to talk about the real bottleneck in pharma AI verification. Not making models faster, but making their outputs defensible enough to survive regulators, audits, and real world consequences. David, welcome to the signal room. We're looking forward to having this conversation with you for a while now. We're we're in some pretty interesting times, and I know you're doing a lot of great work in in in the pharmaceutical industry right now, among other things that you're working on. But if you don't mind, I'd love to just kind of jump right in with some some questions. cuz I know I've got a lot to learn and I'm sure my listeners are going to be very interested in what you have to say today. So let's talk about pharma AI. When people talk about it, they focus on discovery speed more often than almost anything else.</p>
 <p>Why is verification not model accuracy the hardest problem that you actually have to solve? >> Um yeah, thank you first of all. Thank you for having me here. Yeah, I'm I'm excited to excited to be here and to share some uh of my uh experience. It's always pleasure to have an conversation with uh smart people. So, >> let me go get one for you. >> Oh, come on. So, answering your question, I don't think is one of the more is more important than another. I think they tied together and the discovery itself just doesn't make sense without verification because we should be able to get something a molecule the drug that will fit some requirement parameters. So it should be pleasurable in terms of like phocinetics phramics uh it should uh fulfill admin parameters. Um so in this sense how like yes we discovered something but what is it we discovered right and this this this our discovery should be tightened together with verification uh uh in our computer and then we want to get down to 5 10 50 100 molecules and we want to actually synthesize them in the lab and we want to test them >> and like it this this can be we can start we should start with uh purely invittor test because it's the cheapest one and we this way we will cut off a lot of uncertainty because again our model regardless how good is it and how accurate is it how model itself how verified is it we need a ground truth and ground truth is like actual physical molecules being synthesized >> right >> regardless of small molecules and big molecules so here it's just generating molecule without verification just doesn't make sense, >> right?</p>
@@ -223,24 +243,6 @@
     </div>
   </details>
 </section>
-<div class="episode-sidebar">
-<div class="sidebar-card" id="guest-section">
-<h4>Guest</h4>
-<div class="sidebar-guest">
-<img alt="David Finkelshteyn" src="../assets/guests/david-finkelshteyn.jpg"/>
-<div class="sidebar-guest-info">
-<h3>David Finkelshteyn</h3>
-<p>CEO, Pivotal AI</p>
-<a href="https://www.linkedin.com/in/david-finkelshteyn-03191a130/" class="sidebar-guest-linkedin" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn Profile</a>
-</div>
-</div>
-</div>
-<div class="sidebar-card sponsor-slot">
-<h4>Sponsor</h4>
-<p>Interested in reaching healthcare AI leaders? <a href="mailto:chris@hutchinsdatastrategy.com">Get in touch</a>.</p>
-</div>
-</div>
-      </div>
     </div>
   </section>
 <footer class="footer">
