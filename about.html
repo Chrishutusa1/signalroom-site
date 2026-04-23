@@ -185,51 +185,14 @@
             </div>
         </section>
 
-        <!-- Guest Application Section -->
+        <!-- Be a Guest CTA — the actual application form lives on /be-a-guest.html -->
         <section class="section section-alt">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <div class="apply-section">
-                        <div style="margin-bottom: 2rem;">
-                            <h2>Share Your Signal</h2>
-                            <p>Are you a leader, innovator, or expert with insights on healthcare AI, data strategy, or organizational transformation? We'd love to feature you on The Signal Room.</p>
-                            <p>Tell us about your experience, your perspective, and the conversations you think need to happen in healthcare.</p>
-                        </div>
-                        <form id="guestForm" name="guest-application-about" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="guest-application-about">
-                            <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label for="about-name">Your Name <span aria-hidden="true" style="color: var(--purple-primary);">*</span></label>
-                                    <input type="text" id="about-name" name="name" placeholder="Full Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="about-email">Email Address <span aria-hidden="true" style="color: var(--purple-primary);">*</span></label>
-                                    <input type="email" id="about-email" name="email" placeholder="your@email.com" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="about-title">Your Title/Role <span aria-hidden="true" style="color: var(--purple-primary);">*</span></label>
-                                    <input type="text" id="about-title" name="title" placeholder="Your Title" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="about-org">Organization/Company <span aria-hidden="true" style="color: var(--purple-primary);">*</span></label>
-                                    <input type="text" id="about-org" name="organization" placeholder="Organization" required>
-                                </div>
-                                <div class="form-group full">
-                                    <label for="about-linkedin">LinkedIn Profile URL</label>
-                                    <input type="url" id="about-linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
-                                </div>
-                                <div class="form-group full">
-                                    <label for="about-expertise">Tell us about your expertise <span aria-hidden="true" style="color: var(--purple-primary);">*</span></label>
-                                    <textarea id="about-expertise" name="expertise" placeholder="Tell us about your expertise and why you'd be great for The Signal Room" rows="5" required></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Submit Application</button>
-                        </form>
-                        <div id="about-apply-success" style="display:none;text-align:center;padding:2rem;">
-                            <h3 style="color:var(--purple-primary);">Application Received</h3>
-                            <p>Thank you for your interest. We'll review your submission and be in touch.</p>
-                        </div>
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2>Share Your Signal</h2>
+                    <p>Are you a healthcare AI practitioner with a perspective worth amplifying? Tell us about your experience and the conversation you think needs to happen.</p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://signalroompodcast.com/be-a-guest.html" class="btn btn-primary">Apply to Be a Guest</a>
                     </div>
                 </div>
             </div>
@@ -303,22 +266,6 @@
             navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
         });
 
-        const guestForm = document.getElementById('guestForm');
-        guestForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(guestForm);
-            fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString()
-            }).then(() => {
-                guestForm.style.display = 'none';
-                document.getElementById('about-apply-success').style.display = 'block';
-            }).catch(() => {
-                guestForm.style.display = 'none';
-                document.getElementById('about-apply-success').style.display = 'block';
-            });
-        });
     </script>
 </body>
 </html>
