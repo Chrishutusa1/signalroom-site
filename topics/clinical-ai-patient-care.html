@@ -61,6 +61,12 @@
     "@type": "CollectionPage",
     "name": "Clinical AI & Patient Care",
     "description": "Topic hub for episodes about AI's intersection with clinical care delivery, patient outcomes, and physician practice",
+    "keywords": "clinical AI, AI in healthcare, physician AI trust, clinical decision support, AI in emergency medicine, patient safety, healthcare AI explainability, FDA SaMD, EHR data quality",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Emergency physicians, primary care clinicians, clinical informaticists, chief medical information officers (CMIOs), and patient-safety leaders at hospitals, academic medical centers, and ambulatory networks"
+    },
     "url": "https://signalroompodcast.com/topics/clinical-ai-patient-care.html",
     "isPartOf": {
       "@type": "PodcastSeries",
@@ -152,6 +158,23 @@
     </div>
   </section>
 
+  <!-- TL;DR Summary Block -->
+  <section class="section summary-block">
+    <div class="container">
+      <div class="summary-block-inner">
+        <span class="section-label">TL;DR</span>
+        <h2>Clinical AI &amp; Patient Care at a Glance</h2>
+        <p class="summary-block-lede">Clinical AI is AI deployed at the point of care &mdash; emergency departments, clinics, hospital floors &mdash; where speed, judgment, and patient safety matter more than model accuracy in isolation. The trust gap between physicians and AI systems determines whether deployments stick or stall.</p>
+        <ul class="summary-block-facts">
+          <li><strong>Who this matters to:</strong> emergency physicians, primary care clinicians, clinical informaticists, chief medical information officers (CMIOs), and patient-safety leaders at hospitals, academic medical centers, and ambulatory networks</li>
+          <li><strong>7 featured episodes below:</strong> physician-patient dynamics (EPs 1 &amp; 2, Dr. Joshua Chaiken), language access (EP 7, Carol Castillo), complete medical records (EP 13, Aleida Navas), human judgment (EP 15, Louise Gendreau), AI in the ER (EP 20, Dr. Natasha Dole), and caregivers as connective tissue (EP 21, Amanda Roser)</li>
+          <li><strong>Frameworks referenced across these episodes:</strong> <a href="https://www.fda.gov/medical-devices/software-medical-device-samd" target="_blank" rel="noopener">FDA Software as a Medical Device (SaMD) guidance</a>, <a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener">WHO Ethics and Governance of AI for Health</a>, <a href="https://www.ahrq.gov/" target="_blank" rel="noopener">AHRQ patient-safety standards</a>, and the AMA's clinical AI principles</li>
+          <li><strong>Why it matters:</strong> Models trained on incomplete EHR data and deployed without clinician explainability create silent failure modes that no AUROC metric catches at validation time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- Content Section -->
   <section class="section">
     <div class="container">
@@ -163,7 +186,7 @@
 
         <p>The physician-AI trust gap emerges from this reality. Clinicians adopt AI when it demonstrably reduces their burden, when they understand why the system makes particular recommendations, and when they retain agency to override the system when clinical judgment demands it. Trust breaks when AI recommendations come without explanation, when systems fail silently in edge cases, or when organizations implement AI in ways that increase administrative burden while claiming to increase efficiency. Rebuilding broken trust requires transparency about what models can and cannot do, demonstrated reliability over time, and genuine respect for clinician expertise.</p>
 
-        <p>Emergency medicine reveals the tensions at maximum intensity. Emergency physicians make rapid decisions with high consequences using incomplete information while managing patient flow, staffing constraints, and real-world chaos. An AI system that works perfectly in academic evaluation may fail spectacularly when deployed in a real emergency department where patients don't fit classification schemas cleanly and clinicians must adjust recommendations based on unfolding events. Real emergency care demands systems that support rapid decision-making rather than systems that constrain physician autonomy during high-stakes moments.</p>
+        <p>Emergency medicine reveals the tensions at maximum intensity. Emergency physicians make rapid decisions with high consequences using incomplete information while managing patient flow, staffing constraints, and real-world chaos. An AI system that scores 95%+ AUROC in academic evaluation may fail spectacularly when deployed in a real emergency department running 80+ patients per shift, where patients don't fit classification schemas cleanly and clinicians must adjust recommendations based on unfolding events. Real emergency care demands systems that support rapid decision-making rather than systems that constrain physician autonomy during high-stakes moments.</p>
 
         <p>Complete medical records form a prerequisite for trustworthy clinical AI that almost no healthcare organization has achieved. Clinical decision-making depends on historical context, medication lists, allergy information, prior test results, and specialist notes scattered across multiple systems, many of which don't communicate. AI systems trained on incomplete records learn patterns based on the data available rather than the data that matters clinically. This gap between available data and clinically complete data creates a hidden reliability problem that model metrics never capture.</p>
 

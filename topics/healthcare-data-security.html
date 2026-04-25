@@ -61,6 +61,12 @@
     "@type": "CollectionPage",
     "name": "Healthcare Data Quality & Security",
     "description": "Topic hub for episodes about healthcare data quality, governance, cybersecurity, and the infrastructure foundations for trustworthy AI",
+    "keywords": "healthcare data security, healthcare cybersecurity, AI security risks, model poisoning, data quality, HIPAA, NIST Cybersecurity Framework, AI verification, healthcare CISO, EHR data governance",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Chief information security officers (CISOs), chief data officers, data governance leads, and AI security architects at health systems, payers, and health tech firms"
+    },
     "url": "https://signalroompodcast.com/topics/healthcare-data-security.html",
     "isPartOf": {
       "@type": "PodcastSeries",
@@ -146,6 +152,23 @@
     </div>
   </section>
 
+  <!-- TL;DR Summary Block -->
+  <section class="section summary-block">
+    <div class="container">
+      <div class="summary-block-inner">
+        <span class="section-label">TL;DR</span>
+        <h2>Healthcare Data Quality &amp; Security at a Glance</h2>
+        <p class="summary-block-lede">Healthcare data security and quality are the foundations that determine whether AI is safe to deploy. Models trained on incomplete records inherit the gaps; AI systems integrated into clinical workflows expand the cybersecurity attack surface beyond traditional perimeter controls.</p>
+        <ul class="summary-block-facts">
+          <li><strong>Who this matters to:</strong> chief information security officers (CISOs), chief data officers, data governance leads, and AI security architects at health systems, payers, and health tech firms</li>
+          <li><strong>6 featured episodes below:</strong> data quality (EP 6, Danette Fleming), explainability and bias (EP 8, Bhakti Keshavan), AI-specific security risks (EP 9, Anitha Renjith), the hidden infrastructure of trust (EP 10, Amit Patel), cybersecurity ethics under breach (EP 16), and AI verification as the real bottleneck (EP 17)</li>
+          <li><strong>Frameworks referenced across these episodes:</strong> <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST AI Risk Management Framework</a>, <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener">NIST Cybersecurity Framework (CSF) 2.0</a>, <a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html" target="_blank" rel="noopener">HIPAA Security Rule</a>, <a href="https://405d.hhs.gov/" target="_blank" rel="noopener">HHS 405(d) HICP</a>, and FDA Software as a Medical Device (SaMD) guidance</li>
+          <li><strong>Why it matters:</strong> AI-specific attack vectors &mdash; model poisoning, adversarial inputs, and data exfiltration via prompt injection &mdash; require security teams trained beyond traditional cybersecurity. Every LLM that touches an EHR expands the protected health information (PHI) attack surface</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- Content Section -->
   <section class="section">
     <div class="container">
@@ -159,7 +182,7 @@
 
         <p>Explainability and interpretability matter because healthcare requires humans to understand why systems make recommendations. A black-box model that accurately predicts readmission risk provides no information about what factors drive the prediction. A clinician cannot adjust their behavior or challenge the prediction without understanding its basis. This creates a false choice between accuracy and interpretability. Better framed, organizations must accept that interpretability sometimes requires accepting lower statistical performance, and that trade-off is necessary in healthcare. Models so complex that no human can understand their reasoning should not be deployed in clinical contexts.</p>
 
-        <p>Healthcare cybersecurity faces novel threats from AI deployment itself. Large language models trained on patient data or integrated into clinical workflows become attractive targets for attackers. Model poisoning, where training data is subtly manipulated to cause systematic errors during deployment, could alter clinical decisions without leaving obvious signatures. Adversarial examples, inputs designed to fool AI systems, might cause models to misclassify conditions or recommend inappropriate treatments. Healthcare organizations must understand these threats before deploying models in clinical environments, which means security teams need expertise in AI-specific attack vectors, not just traditional cybersecurity.</p>
+        <p>Healthcare cybersecurity faces threats AI deployment makes worse: model poisoning, prompt injection, and the expansion of the protected health information (PHI) attack surface every time a large language model touches an EHR. Large language models trained on patient data or integrated into clinical workflows become attractive targets for attackers. Model poisoning, where training data is subtly manipulated to cause systematic errors during deployment, could alter clinical decisions without leaving obvious signatures. Adversarial examples, inputs designed to fool AI systems, might cause models to misclassify conditions or recommend inappropriate treatments. Healthcare organizations must understand these threats before deploying models in clinical environments, which means security teams need expertise in AI-specific attack vectors, not just traditional cybersecurity.</p>
 
         <p>Verification emerges as the real bottleneck in healthcare AI. Clinical deployment requires evidence that models perform as expected in diverse patient populations, that edge cases have been identified and handled, that failure modes have been characterized, and that drift over time can be detected and addressed. Verification is slower and more thorough than validation because healthcare tolerates no surprises. This reality means that healthcare AI development timelines must account for verification complexity, and attempts to skip verification steps to accelerate deployment create risks that no organization should accept.</p>
       </div>
