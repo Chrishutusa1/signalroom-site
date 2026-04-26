@@ -25,13 +25,14 @@
     <link rel="stylesheet" href="css/style.css?v=20260422r3">
 
     <!-- JSON-LD Structured Data -->
-    <!-- Minimal Person schema: the canonical Chris Hutchins surfaces live at
-         chrisjhutchins.com (speaking) and hutchinsdatastrategy.com (consulting).
-         We outlink via sameAs rather than duplicating the full bio here. -->
+    <!-- Both entities anchor to canonical @id values used on the homepage block
+         and on chrisjhutchins.com / hutchinsdatastrategy.com so search engines
+         reconcile them as a single Person + PodcastSeries across surfaces. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://www.chrisjhutchins.com/#person",
       "name": "Chris Hutchins",
       "jobTitle": "Host, The Signal Room",
       "url": "https://www.chrisjhutchins.com",
@@ -47,17 +48,21 @@
     {
       "@context": "https://schema.org",
       "@type": "PodcastSeries",
+      "@id": "https://signalroompodcast.com/#podcast",
       "name": "The Signal Room",
       "description": "A healthcare AI podcast exploring leadership, ethics, and innovation with executives, clinicians, and strategists shaping data-driven healthcare.",
       "url": "https://signalroompodcast.com",
-      "author": {
-        "@type": "Person",
-        "name": "Chris Hutchins"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Hutchins Data Strategy Consultants"
-      }
+      "identifier": [
+        { "@type": "PropertyValue", "propertyID": "Wikidata", "value": "Q139555656" },
+        { "@type": "PropertyValue", "propertyID": "Apple Podcasts", "value": "1850988366" },
+        { "@type": "PropertyValue", "propertyID": "Spotify Show", "value": "3zUsHNLvnGE90gUaNULucZ" },
+        { "@type": "PropertyValue", "propertyID": "YouTube Channel", "value": "UCk7qyfPFVyJCMsmQHX8b7mw" }
+      ],
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q139555656"
+      ],
+      "author": { "@id": "https://www.chrisjhutchins.com/#person" },
+      "publisher": { "@id": "https://hutchinsdatastrategy.com/#organization" }
     }
     </script>
 
