@@ -1,2 +1,15 @@
 __pycache__/
 *.pyc
+
+# Local Netlify folder
+.netlify
+
+# Local Claude tooling scratch
+_STATUS.md
+.claude/*.py
+
+# One-shot helper scripts in repo root
+/*.py
+
+# Buzzsprout transcript/chapter build artifacts
+buzzsprout-chapters/out/
