@@ -30,6 +30,46 @@
 /episodes/episodes         /episodes         301
 /episodes/episodes.html    /episodes         301
 
-# Wildcard: 301 every remaining .html URL to its extensionless canonical.
-# Must be last (Netlify matches top-to-bottom, first match wins).
-/*.html    /:splat    301!
+# Explicit .html -> extensionless 301s (Netlify splat wildcards do not match
+# arbitrary path-with-suffix patterns reliably; enumerate every page instead).
+# /index.html redirects to root, not /index.
+/index.html                                                  /                                                            301!
+/about.html                                                  /about                                                       301!
+/be-a-guest.html                                             /be-a-guest                                                  301!
+/episodes.html                                               /episodes                                                    301!
+/faq.html                                                    /faq                                                         301!
+/guests.html                                                 /guests                                                      301!
+/newsletter.html                                             /newsletter                                                  301!
+/privacy-policy.html                                         /privacy-policy                                              301!
+/topics/ai-ethics-governance.html                            /topics/ai-ethics-governance                                 301!
+/topics/clinical-ai-patient-care.html                        /topics/clinical-ai-patient-care                             301!
+/topics/healthcare-ai-strategy.html                          /topics/healthcare-ai-strategy                               301!
+/topics/healthcare-data-security.html                        /topics/healthcare-data-security                             301!
+/episodes/ai-cant-replace-language-access.html               /episodes/ai-cant-replace-language-access                    301!
+/episodes/ai-ethics-ethical-leadership.html                  /episodes/ai-ethics-ethical-leadership                       301!
+/episodes/ai-hype-to-real-value.html                         /episodes/ai-hype-to-real-value                              301!
+/episodes/ai-in-the-er-clinical-judgment.html                /episodes/ai-in-the-er-clinical-judgment                     301!
+/episodes/ai-literacy-crisis-killing-healthcare.html         /episodes/ai-literacy-crisis-killing-healthcare              301!
+/episodes/ai-security-risks-cybersecurity.html               /episodes/ai-security-risks-cybersecurity                    301!
+/episodes/ai-shutdown-governance-privacy.html                /episodes/ai-shutdown-governance-privacy                     301!
+/episodes/ai-verification-drug-discovery-ep17.html           /episodes/ai-verification-drug-discovery-ep17                301!
+/episodes/authentic-intelligence-explainability.html         /episodes/authentic-intelligence-explainability              301!
+/episodes/balancing-human-judgment-clinical-trust.html       /episodes/balancing-human-judgment-clinical-trust            301!
+/episodes/caregivers-connective-tissue-healthcare.html       /episodes/caregivers-connective-tissue-healthcare            301!
+/episodes/cybersecurity-ethical-leadership-ai.html           /episodes/cybersecurity-ethical-leadership-ai                301!
+/episodes/dark-side-ai-medical-boom.html                     /episodes/dark-side-ai-medical-boom                          301!
+/episodes/data-quality-ai-strategy.html                      /episodes/data-quality-ai-strategy                           301!
+/episodes/data-readiness-ai-adoption.html                    /episodes/data-readiness-ai-adoption                         301!
+/episodes/enterprise-ai-journey-data-foundations.html        /episodes/enterprise-ai-journey-data-foundations             301!
+/episodes/good-people-quietly-quitting.html                  /episodes/good-people-quietly-quitting                       301!
+/episodes/healthcare-ai-complete-medical-records.html        /episodes/healthcare-ai-complete-medical-records             301!
+/episodes/healthcare-ai-data-layer-privacy-governance.html   /episodes/healthcare-ai-data-layer-privacy-governance        301!
+/episodes/healthcare-ai-not-one-size-fits-all.html           /episodes/healthcare-ai-not-one-size-fits-all                301!
+/episodes/healthcare-leadership-operational-reality.html     /episodes/healthcare-leadership-operational-reality          301!
+/episodes/healthcare-losing-best-people.html                 /episodes/healthcare-losing-best-people                      301!
+/episodes/hidden-infrastructure-of-trust.html                /episodes/hidden-infrastructure-of-trust                     301!
+/episodes/human-ai-leadership-equation.html                  /episodes/human-ai-leadership-equation                       301!
+/episodes/human-centered-ai-governance.html                  /episodes/human-centered-ai-governance                       301!
+/episodes/patient-physician-journey-part-1.html              /episodes/patient-physician-journey-part-1                   301!
+/episodes/patient-physician-journey-part-2.html              /episodes/patient-physician-journey-part-2                   301!
+/episodes/rethinking-healthcare-data-strategy.html           /episodes/rethinking-healthcare-data-strategy                301!
