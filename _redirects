@@ -1,27 +1,31 @@
-# 301 redirects for renamed episode slugs
-/episodes/ai-verification-pharma-discovery    /episodes/data-readiness-ai-adoption    301
-/episodes/ai-verification-pharma-discovery.html    /episodes/data-readiness-ai-adoption.html    301
-/episodes/healthcare-leadership-system-transformation    /episodes/enterprise-ai-journey-data-foundations    301
-/episodes/healthcare-leadership-system-transformation.html    /episodes/enterprise-ai-journey-data-foundations.html    301
-/episodes/scaling-ai-human-touch    /episodes/patient-physician-journey-part-1    301
-/episodes/scaling-ai-human-touch.html    /episodes/patient-physician-journey-part-1.html    301
+# 301 redirects for renamed episode slugs (target the extensionless canonical)
+/episodes/ai-verification-pharma-discovery         /episodes/data-readiness-ai-adoption         301
+/episodes/ai-verification-pharma-discovery.html    /episodes/data-readiness-ai-adoption         301
+/episodes/healthcare-leadership-system-transformation         /episodes/enterprise-ai-journey-data-foundations    301
+/episodes/healthcare-leadership-system-transformation.html    /episodes/enterprise-ai-journey-data-foundations    301
+/episodes/scaling-ai-human-touch         /episodes/patient-physician-journey-part-1         301
+/episodes/scaling-ai-human-touch.html    /episodes/patient-physician-journey-part-1         301
 
 # 301 redirects for legacy sitemap slugs (404 ghost URLs)
-/episodes/ai-clinical-guardrails    /episodes/ai-in-the-er-clinical-judgment    301
-/episodes/ai-clinical-guardrails.html    /episodes/ai-in-the-er-clinical-judgment.html    301
-/episodes/ai-redefines-patient-physician-pt2    /episodes/patient-physician-journey-part-2    301
-/episodes/ai-redefines-patient-physician-pt2.html    /episodes/patient-physician-journey-part-2.html    301
-/episodes/ai-strategy-to-execution    /episodes/rethinking-healthcare-data-strategy    301
-/episodes/ai-strategy-to-execution.html    /episodes/rethinking-healthcare-data-strategy.html    301
-/episodes/enterprise-ai-journey    /episodes/enterprise-ai-journey-data-foundations    301
-/episodes/enterprise-ai-journey.html    /episodes/enterprise-ai-journey-data-foundations.html    301
+/episodes/ai-clinical-guardrails         /episodes/ai-in-the-er-clinical-judgment         301
+/episodes/ai-clinical-guardrails.html    /episodes/ai-in-the-er-clinical-judgment         301
+/episodes/ai-redefines-patient-physician-pt2         /episodes/patient-physician-journey-part-2         301
+/episodes/ai-redefines-patient-physician-pt2.html    /episodes/patient-physician-journey-part-2         301
+/episodes/ai-strategy-to-execution         /episodes/rethinking-healthcare-data-strategy         301
+/episodes/ai-strategy-to-execution.html    /episodes/rethinking-healthcare-data-strategy         301
+/episodes/enterprise-ai-journey         /episodes/enterprise-ai-journey-data-foundations         301
+/episodes/enterprise-ai-journey.html    /episodes/enterprise-ai-journey-data-foundations         301
 
-# 301 redirects for stray duplicate files
+# Articles directory: filesystem is /Articles/ (capital A), canonical URL is /articles/ (lowercase).
+# Status 200 = internal rewrite, URL bar stays lowercase. Two articles only.
+/articles/data-governance-healthcare         /Articles/data-governance-healthcare.html         200
+/articles/healthcare-data-strategy           /Articles/healthcare-data-strategy.html           200
+# Legacy .html requests 301 to extensionless canonical
+/articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301
+/articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301
 
-# Rewrite lowercase /articles/ to /Articles/ (case-sensitive fix)
-/articles/healthcare-data-strategy.html    /Articles/healthcare-data-strategy.html    200
-/articles/data-governance-healthcare.html    /Articles/data-governance-healthcare.html    200
-/good-people-quietly-quitting    /episodes/good-people-quietly-quitting    301
-/good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting.html    301
-/episodes/episodes    /episodes    301
-/episodes/episodes.html    /episodes.html    301
+# Misc legacy redirects (target extensionless canonical)
+/good-people-quietly-quitting         /episodes/good-people-quietly-quitting         301
+/good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting         301
+/episodes/episodes         /episodes         301
+/episodes/episodes.html    /episodes         301
