@@ -29,3 +29,7 @@
 /good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting         301
 /episodes/episodes         /episodes         301
 /episodes/episodes.html    /episodes         301
+
+# Wildcard: 301 every remaining .html URL to its extensionless canonical.
+# Must be last (Netlify matches top-to-bottom, first match wins).
+/*.html    /:splat    301!
