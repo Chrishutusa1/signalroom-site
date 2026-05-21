@@ -20,9 +20,12 @@
 # Status 200 = internal rewrite, URL bar stays lowercase. Two articles only.
 /articles/data-governance-healthcare         /Articles/data-governance-healthcare.html         200
 /articles/healthcare-data-strategy           /Articles/healthcare-data-strategy.html           200
-# Legacy .html requests 301 to extensionless canonical
-/articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301
-/articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301
+# Legacy .html requests 301 to extensionless canonical (force flag required;
+# pretty_urls treats /articles/foo.html as servable even though file is at /Articles/).
+/articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301!
+/articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301!
+/Articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301!
+/Articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301!
 
 # Misc legacy redirects (target extensionless canonical)
 /good-people-quietly-quitting         /episodes/good-people-quietly-quitting         301
