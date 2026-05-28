@@ -78,6 +78,9 @@
           <h1>Share Your Signal</h1>
           <p class="hero-desc">Tell us about yourself and the work you would bring to the show. We review every submission and respond directly.</p>
         </div>
+        <div class="hero-image">
+          <img src="assets/heroes/guest-mosaic.jpg" alt="A mosaic of past Signal Room guests — healthcare AI leaders" width="600" height="600" loading="eager">
+        </div>
       </div>
     </div>
   </section>
@@ -86,7 +89,11 @@
   <section class="section">
     <div class="container">
       <div class="apply-section">
-        <form id="guest-apply-form" class="form-grid" onsubmit="handleApply(event)">
+        <form id="guest-apply-form" class="form-grid" name="guest-application" method="POST" action="/be-a-guest?submitted=1" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="guest-application">
+          <p style="display:none;">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
           <div class="form-group">
             <label for="guest-name">Full Name</label>
             <input type="text" id="guest-name" name="name" required>
@@ -210,11 +217,17 @@
       document.getElementById('navLinks').classList.toggle('open');
     });
 
-    // Guest apply form
-    function handleApply(e) {
-      e.preventDefault();
-      document.getElementById('guest-apply-form').style.display = 'none';
-      document.getElementById('apply-success').style.display = 'block';
+    // Reveal success banner when redirected back with ?submitted=1
+    // (Netlify Forms posts to the form's action URL on successful submission,
+    // which carries the submitted=1 query param and re-serves this page.)
+    if (/[?&]submitted=1\b/.test(window.location.search)) {
+      var form = document.getElementById('guest-apply-form');
+      var success = document.getElementById('apply-success');
+      if (form) form.style.display = 'none';
+      if (success) {
+        success.style.display = 'block';
+        success.scrollIntoView({ block: 'center' });
+      }
     }
   </script>
 </body>

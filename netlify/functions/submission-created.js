@@ -1,0 +1,196 @@
+/**
+ * submission-created
+ *
+ * Netlify's reserved handler name — invoked automatically on every Netlify Forms
+ * submission. Filters to the `guest-application` form and forwards it into
+ * Airtable Content Intelligence Hub → `Guest Applications` table
+ * (app3hF8k8ZGXvf9XF / tbloZMd3IzXNo20jY), then fires a best-effort
+ * new-application notification + on-brand auto-reply.
+ *
+ * Required env vars (Netlify → Environment variables, scope: functions):
+ *   AIRTABLE_PAT                - personal access token w/ data.records:write on the base
+ *   AIRTABLE_BASE_ID            - app3hF8k8ZGXvf9XF
+ *   AIRTABLE_GUEST_APPS_TABLE   - "Guest Applications" (table name or table ID)
+ *
+ * Optional env vars (scope: functions):
+ *   LEAD_NOTIFY_WEBHOOK_URL - incoming webhook for new-application alerts. Posts
+ *       flat, form-encoded fields (summary, name, email, title, linkedin, theme,
+ *       topics, context, airtable_status). If unset, notification is skipped.
+ *   RESEND_API_KEY  - Resend API key for the on-brand auto-reply to the applicant.
+ *   AUTOREPLY_FROM  - verified sender, e.g. "The Signal Room <chris@hutchinsdatastrategy.com>".
+ *       If either is unset, the auto-reply is skipped.
+ */
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+// Best-effort new-application notification. Never throws — a notification failure
+// must not lose the application (already stored in Netlify Forms + Airtable).
+async function notifyApplication(fields, airtableStatus, recordId) {
+  const webhook = process.env.LEAD_NOTIFY_WEBHOOK_URL;
+  if (!webhook) return;
+
+  const summary = [
+    `New guest application (Signal Room) — ${fields.Name || "(no name)"}`,
+    `Email: ${fields.Email || "—"}`,
+    `Title & Org: ${fields["Title & Organization"] || "—"}`,
+    `LinkedIn: ${fields.LinkedIn || "—"}`,
+    `Theme: ${fields.Theme || "—"}`,
+    fields.Topics ? `Topics: ${fields.Topics}` : null,
+    fields.Context ? `Context: ${fields.Context}` : null,
+    `Airtable: ${airtableStatus}${recordId ? ` (${recordId})` : ""}`,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  const body = new URLSearchParams({
+    summary,
+    name: fields.Name || "",
+    email: fields.Email || "",
+    title: fields["Title & Organization"] || "",
+    linkedin: fields.LinkedIn || "",
+    theme: fields.Theme || "",
+    topics: fields.Topics || "",
+    context: fields.Context || "",
+    airtable_status: airtableStatus,
+  }).toString();
+
+  try {
+    await fetch(webhook, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body,
+    });
+  } catch (err) {
+    console.error("application notification failed (non-fatal)", err);
+  }
+}
+
+// Best-effort on-brand auto-reply to the applicant via Resend. Skipped unless
+// RESEND_API_KEY + AUTOREPLY_FROM are set and the applicant provided an email.
+async function sendAutoReply(fields) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.AUTOREPLY_FROM;
+  if (!apiKey || !from || !fields.Email) return;
+
+  const firstName = (fields.Name || "").trim().split(/\s+/)[0] || "there";
+  const subject = "Thanks for applying to The Signal Room";
+  const html =
+    `<p>Hi ${escapeHtml(firstName)},</p>` +
+    `<p>Thanks for applying to be a guest on <strong>The Signal Room</strong>. We've received your application and will review it within a few days. If your perspective and timing fit upcoming episodes, we'll reach out to schedule a recording.</p>` +
+    `<p>While you wait, a couple of episodes that show how we structure these conversations:</p>` +
+    `<ul>` +
+    `<li><a href="https://signalroompodcast.com/episodes">Recent episodes</a> — see who's been on and what we've covered</li>` +
+    `<li><a href="https://signalroompodcast.com/about">About the show</a> — the audience and the editorial point of view</li>` +
+    `</ul>` +
+    `<p>— Christopher Hutchins<br>Host, The Signal Room</p>`;
+  const text =
+    `Hi ${firstName},\n\n` +
+    `Thanks for applying to be a guest on The Signal Room. We've received your application and will review it within a few days. If your perspective and timing fit upcoming episodes, we'll reach out to schedule a recording.\n\n` +
+    `While you wait, two links worth your time:\n` +
+    `- Recent episodes: https://signalroompodcast.com/episodes\n` +
+    `- About the show: https://signalroompodcast.com/about\n\n` +
+    `— Christopher Hutchins\nHost, The Signal Room`;
+
+  try {
+    await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from,
+        to: [fields.Email],
+        reply_to: "chris@hutchinsdatastrategy.com",
+        subject,
+        html,
+        text,
+      }),
+    });
+  } catch (err) {
+    console.error("auto-reply failed (non-fatal)", err);
+  }
+}
+
+exports.handler = async (event) => {
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
+  }
+
+  const { AIRTABLE_PAT, AIRTABLE_BASE_ID, AIRTABLE_GUEST_APPS_TABLE } = process.env;
+  if (!AIRTABLE_PAT || !AIRTABLE_BASE_ID || !AIRTABLE_GUEST_APPS_TABLE) {
+    return {
+      statusCode: 500,
+      body: "Server misconfigured: missing Airtable env vars.",
+    };
+  }
+
+  let payload;
+  try {
+    payload = JSON.parse(event.body || "{}");
+  } catch {
+    return { statusCode: 400, body: "Invalid JSON" };
+  }
+
+  const submission = payload.payload || payload;
+  const data = submission.data || {};
+
+  const formName = submission.form_name || data["form-name"];
+  if (formName !== "guest-application") {
+    return { statusCode: 200, body: "Ignored non-guest-application form." };
+  }
+
+  const fields = {
+    Name: data.name || "",
+    Email: data.email || "",
+    "Title & Organization": data.title || "",
+    LinkedIn: data.linkedin || "",
+    Theme: data.theme || "",
+    Topics: data.topics || "",
+    Context: data.context || "",
+    Source: "signalroompodcast.com guest-application",
+    "Submitted At": submission.created_at || new Date().toISOString(),
+    "Submission ID": submission.id || "",
+    "User Agent": (submission.user_agent || "").slice(0, 500),
+    Referrer: submission.referrer || "",
+    Status: "New",
+  };
+
+  const url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_GUEST_APPS_TABLE)}`;
+
+  // Write to Airtable, capturing status so we can always notify (and avoid
+  // non-2xx returns that would trigger Netlify retries → duplicate alerts).
+  let airtableStatus = "ok";
+  let recordId = null;
+  try {
+    const resp = await fetch(url, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${AIRTABLE_PAT}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ records: [{ fields }], typecast: true }),
+    });
+    if (!resp.ok) {
+      airtableStatus = `error ${resp.status}`;
+      console.error("Airtable write failed", resp.status, await resp.text());
+    } else {
+      const json = await resp.json();
+      recordId = json.records?.[0]?.id || null;
+    }
+  } catch (err) {
+    airtableStatus = "exception";
+    console.error("Airtable write threw", err);
+  }
+
+  await notifyApplication(fields, airtableStatus, recordId);
+  await sendAutoReply(fields);
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ ok: airtableStatus === "ok", airtableStatus, recordId }),
+  };
+};

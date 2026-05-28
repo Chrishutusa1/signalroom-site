@@ -1,6 +1,10 @@
 # The Signal Room - Netlify Configuration
 [build]
   publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
 
 [build.processing]
   skip_processing = false
