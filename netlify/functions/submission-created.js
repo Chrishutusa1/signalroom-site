@@ -82,7 +82,7 @@ async function sendAutoReply(fields) {
   const subject = "Thanks for applying to The Signal Room";
   const html =
     `<p>Hi ${escapeHtml(firstName)},</p>` +
-    `<p>Thanks for applying to be a guest on <strong>The Signal Room</strong>. We've received your application and will review it within a few days. If your perspective and timing fit upcoming episodes, we'll reach out to schedule a recording.</p>` +
+    `<p>Thank you for your interest in being a guest on <strong>The Signal Room</strong>. We will review your information and follow up with you within a few days to coordinate a brief intro call to discuss topics and possible scheduling.</p>` +
     `<p>While you wait, a couple of episodes that show how we structure these conversations:</p>` +
     `<ul>` +
     `<li><a href="https://signalroompodcast.com/episodes">Recent episodes</a> — see who's been on and what we've covered</li>` +
@@ -91,7 +91,7 @@ async function sendAutoReply(fields) {
     `<p>— Christopher Hutchins<br>Host, The Signal Room</p>`;
   const text =
     `Hi ${firstName},\n\n` +
-    `Thanks for applying to be a guest on The Signal Room. We've received your application and will review it within a few days. If your perspective and timing fit upcoming episodes, we'll reach out to schedule a recording.\n\n` +
+    `Thank you for your interest in being a guest on The Signal Room. We will review your information and follow up with you within a few days to coordinate a brief intro call to discuss topics and possible scheduling.\n\n` +
     `While you wait, two links worth your time:\n` +
     `- Recent episodes: https://signalroompodcast.com/episodes\n` +
     `- About the show: https://signalroompodcast.com/about\n\n` +
