@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://signalroompodcast.com/responsible-ai-in-medicine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsible AI in Medicine Podcast | Signal Room</title>
+  <meta name="description" content="A practitioner-led podcast on responsible AI in medicine: governance with real authority, ethical leadership, bias, explainability, and clinical trust.">
+  <meta name="keywords" content="responsible AI in medicine, responsible AI in healthcare, healthcare AI podcast, AI governance, ethical leadership, algorithmic bias, AI explainability">
+  <link rel="icon" type="image/jpeg" href="assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <link rel="apple-touch-icon" href="assets/logos/sr-square.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Responsible AI in Medicine | The Signal Room Podcast">
+  <meta property="og:description" content="A practitioner-led podcast on responsible AI in medicine: governance, ethical leadership, bias, explainability, and clinical trust.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+  <meta property="og:url" content="https://signalroompodcast.com/responsible-ai-in-medicine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+
+  <!-- GA4 -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+  <!-- Fonts -->
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/style.css?v=20260422r3">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Responsible AI in Medicine",
+    "description": "A practitioner-led podcast guide to responsible AI in medicine: governance, ethical leadership, algorithmic bias, explainability, and clinical trust.",
+    "keywords": "responsible AI in medicine, responsible AI in healthcare, AI governance, ethical leadership, algorithmic bias, AI explainability, human-in-the-loop, healthcare AI podcast",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Chief medical officers, chief quality officers, AI governance leads, ethics committee chairs, clinical informatics leaders, and patient safety and security practitioners"
+    },
+    "url": "https://signalroompodcast.com/responsible-ai-in-medicine",
+    "isPartOf": {
+      "@type": "PodcastSeries",
+      "@id": "https://signalroompodcast.com/#podcast",
+      "name": "The Signal Room",
+      "url": "https://signalroompodcast.com"
+    },
+    "hasPart": [
+      { "@type": "PodcastEpisode", "name": "Responsible AI in Healthcare: Ethical Leadership, AI Governance & Ways of Working", "episodeNumber": 12, "url": "https://signalroompodcast.com/episodes/ai-ethics-ethical-leadership" },
+      { "@type": "PodcastEpisode", "name": "AI Governance in Healthcare: Just Culture, Emotional Readiness & Trauma-Informed Leadership", "episodeNumber": 7, "url": "https://signalroompodcast.com/episodes/human-centered-ai-governance" },
+      { "@type": "PodcastEpisode", "name": "AI Explainability, Algorithmic Bias, and Human-in-the-Loop Design in Healthcare", "episodeNumber": 9, "url": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability" },
+      { "@type": "PodcastEpisode", "name": "Healthcare AI Leadership: Trust, Psychological Safety & the Seven Dimensions of Credible Authenticity", "episodeNumber": 4, "url": "https://signalroompodcast.com/episodes/human-ai-leadership-equation" },
+      { "@type": "PodcastEpisode", "name": "Healthcare Experts on Ethical AI in Operational Reality", "episodeNumber": 22, "url": "https://signalroompodcast.com/episodes/healthcare-leadership-operational-reality" },
+      { "@type": "PodcastEpisode", "name": "AI Regulation in the ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM", "episodeNumber": 20, "url": "https://signalroompodcast.com/episodes/ai-in-the-er-clinical-judgment" },
+      { "@type": "PodcastEpisode", "name": "Privacy and AI Governance Insights: Strengthen Your AI Projects", "episodeNumber": 24, "url": "https://signalroompodcast.com/episodes/ai-shutdown-governance-privacy" },
+      { "@type": "PodcastEpisode", "name": "Ethical Leadership in AI Security: Why Undetected Cyberattacks Threaten Healthcare AI Governance", "episodeNumber": 16, "url": "https://signalroompodcast.com/episodes/cybersecurity-ethical-leadership-ai" },
+      { "@type": "PodcastEpisode", "name": "AI and Language Access in Healthcare: Communication Equity and Patient Safety", "episodeNumber": 8, "url": "https://signalroompodcast.com/episodes/ai-cant-replace-language-access" },
+      { "@type": "PodcastEpisode", "name": "Healthcare AI Fails at the Data Layer: Privacy, Governance & Trust", "episodeNumber": 27, "url": "https://signalroompodcast.com/episodes/healthcare-ai-data-layer-privacy-governance" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best podcast on responsible AI in medicine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Signal Room is a practitioner-led podcast focused on responsible AI in medicine, hosted by Christopher Hutchins. Its guests are operators who have deployed, governed, or blocked real healthcare AI systems, and its episodes cover governance, ethical leadership, algorithmic bias, explainability, and clinical trust. Start with Episode 12, Responsible AI in Healthcare, then move into the governance and bias episodes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes a healthcare AI podcast credible on responsible AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Credibility comes from operators describing real decisions and their costs. A credible show names the frameworks it uses, such as the NIST AI Risk Management Framework and the WHO Ethics and Governance of AI for Health guidance, and ties each one to a deployment a guest actually made. Shows that keep responsible AI abstract offer less to a leader who has to act."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Signal Room episodes cover AI governance and ethics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The core governance and ethics episodes are Episode 12 with Asha Mahesh, Episode 7 with Susie Branagan, Episode 4 with Larry Kuhn, and Episode 22 with MarKeisha Snaith. Episode 9 with Keshavan Seshadri covers explainability and algorithmic bias, and Episode 16 with Guman Chauhan covers ethical leadership in AI security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is The Signal Room academic or practitioner-led?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Signal Room is practitioner-led. Every guest works in or alongside healthcare operations, and the conversations focus on what responsible AI costs in real organizations rather than on research findings alone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should listen to a responsible AI in medicine podcast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chief medical officers, chief quality officers, AI governance leads, ethics committee chairs, clinical informatics leaders, and patient safety and security practitioners. The show is built for the people who are accountable when a healthcare AI deployment fails."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/newsletter">Newsletter</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="main-content">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-tagline">Topic Hub</span>
+          <h1>Responsible AI in <span class="accent">Medicine</span></h1>
+          <p class="hero-desc">Responsible AI in medicine is the discipline of deploying clinical and operational AI in ways that are accountable, explainable, and safe for the patients and clinicians who live with the results. The Signal Room is a practitioner-led podcast built around that discipline, hosted by Christopher Hutchins, Founder and CEO of Hutchins Data Strategy Consultants. More than a dozen episodes focus directly on responsible AI, and this guide shows where to start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TL;DR Summary Block -->
+  <section class="section summary-block">
+    <div class="container">
+      <div class="summary-block-inner">
+        <span class="section-label">TL;DR</span>
+        <h2>Responsible AI in Medicine at a Glance</h2>
+        <p class="summary-block-lede">The Signal Room is a practitioner-led podcast on responsible AI in medicine, hosted by Christopher Hutchins. Across more than thirty episodes, over a dozen focus directly on responsible AI: governance that can delay or block a deployment, ethical leadership that is structural rather than rhetorical, algorithmic bias, explainability, and human-in-the-loop design tested in live clinical settings.</p>
+        <ul class="summary-block-facts">
+          <li><strong>Who this matters to:</strong> chief medical officers, chief quality officers, AI governance leads, ethics committee chairs, clinical informatics leaders, and patient safety and security practitioners</li>
+          <li><strong>Where to start:</strong> Episode 12 with Asha Mahesh on responsible AI in healthcare, then the governance episodes (EP 7 Branagan, EP 22 Snaith) and the bias and explainability episode (EP 9 Seshadri)</li>
+          <li><strong>Frameworks referenced across these episodes:</strong> <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST AI Risk Management Framework</a>, <a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener">WHO Ethics and Governance of AI for Health</a>, FDA Software as a Medical Device (SaMD) guidance, and <a href="https://standards.ieee.org/industry-connections/activities/ieee-global-initiative/" target="_blank" rel="noopener">IEEE Ethically Aligned Design</a></li>
+          <li><strong>Why it matters:</strong> without operational governance, responsible AI becomes marketing copy, and the real consequences land on patients and clinical teams when AI systems fail silently or amplify documentation bias</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto 3rem;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">What Responsible AI in Medicine Actually Means</h2>
+        <p>Responsible AI in medicine rests on a small set of commitments that are easy to state and hard to operationalize. Systems should be accountable, which means someone is named, criteria are written down, and there is a defined consequence when a deployment causes harm. They should be explainable, so a clinician understands how a recommendation was reached and can override it when it conflicts with clinical judgment. Deployment should sit under a governing body with real authority, not an ethics committee that meets quarterly and approves whatever has already shipped.</p>
+        <p>These commitments carry a cost. Interpretability sometimes means accepting lower statistical performance. Governance sometimes means saying no to an attractive opportunity. The shows worth listening to are the ones where practitioners describe paying that cost in real organizations, rather than the ones where the topic stays abstract.</p>
+      </div>
+
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto 3rem;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Why The Signal Room Covers Responsible AI Differently</h2>
+        <p>Every guest on The Signal Room is an operator. The conversations come from chief medical officers, AI governance leads, clinical informatics leaders, security practitioners, and patient advocates who have deployed, blocked, or cleaned up after real healthcare AI systems. That orientation shapes what gets discussed: not whether responsible AI matters, but what it costs and how leaders absorb that cost without slowing care to a halt.</p>
+        <p>The episodes reference the frameworks that healthcare AI governance leans on in practice, including the NIST AI Risk Management Framework, the WHO guidance on Ethics and Governance of AI for Health, FDA Software as a Medical Device guidance, and IEEE Ethically Aligned Design. Each framework shows up attached to a decision a guest actually made, which is the difference between a citation and a working reference.</p>
+      </div>
+
+      <!-- Episode Grid -->
+      <div class="section-header" style="margin-bottom:2rem;">
+        <h2>Episodes on Responsible AI in Medicine</h2>
+      </div>
+
+      <div class="episodes-grid">
+        <a href="/episodes/ai-ethics-ethical-leadership" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/qYeC8dMRmJ4/hqdefault.jpg" alt="Asha Mahesh episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Asha Mahesh</div>
+            <div class="episode-card-title">Responsible AI in Healthcare: Ethical Leadership, AI Governance &amp; Ways of Working</div>
+            <div class="episode-card-desc">The clearest statement of the show's thesis: the gap between published principles and operational ethics, and how leaders make ethical behavior structural.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 12</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/human-centered-ai-governance" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/s4ghn6k-t-8/hqdefault.jpg" alt="Susie Branagan episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Susie Branagan</div>
+            <div class="episode-card-title">AI Governance in Healthcare: Just Culture, Emotional Readiness &amp; Trauma-Informed Leadership</div>
+            <div class="episode-card-desc">Governance frameworks that preserve human agency, transparency, and a clinician's ability to refuse an AI recommendation.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 7</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/authentic-intelligence-explainability" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/UpJJejIHN-4/hqdefault.jpg" alt="Keshavan Seshadri episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Keshavan Seshadri</div>
+            <div class="episode-card-title">AI Explainability, Algorithmic Bias, and Human-in-the-Loop Design</div>
+            <div class="episode-card-desc">The technical core of responsible AI: why explainability and bias mitigation are design choices rather than afterthoughts.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 9</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/human-ai-leadership-equation" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/HAlocvYL0do/hqdefault.jpg" alt="Larry Kuhn episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Larry Kuhn</div>
+            <div class="episode-card-title">Healthcare AI Leadership: Trust, Psychological Safety &amp; Credible Authenticity</div>
+            <div class="episode-card-desc">What leadership capabilities responsible AI demands, and why technical expertise alone cannot drive a safe deployment.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 4</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/healthcare-leadership-operational-reality" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/MhHS4drVihM/hqdefault.jpg" alt="MarKeisha Snaith episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">MarKeisha Snaith</div>
+            <div class="episode-card-title">Ethical AI in Operational Reality</div>
+            <div class="episode-card-desc">How governance decisions cascade through a health system and shape culture and outcomes long after the model ships.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 22</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-in-the-er-clinical-judgment" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/wizfkLwkIYw/hqdefault.jpg" alt="Dr. Natasha Dole episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Natasha Dole</div>
+            <div class="episode-card-title">AI Regulation in the ER and Clinical Judgment: Designed for 3 AM, Not 3 PM</div>
+            <div class="episode-card-desc">Responsible AI at the bedside, where a tool built for ideal conditions fails the clinician working the hardest shift.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 20</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-shutdown-governance-privacy" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/pnAPQjVL3yk/hqdefault.jpg" alt="Andre Samokish episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Andre Samokish</div>
+            <div class="episode-card-title">Privacy and AI Governance Insights: Strengthen Your AI Projects</div>
+            <div class="episode-card-desc">Privacy and governance as the load-bearing structure under any responsible deployment.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 24</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/cybersecurity-ethical-leadership-ai" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/gR6OXuIxIOY/hqdefault.jpg" alt="Guman Chauhan episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Guman Chauhan</div>
+            <div class="episode-card-title">Ethical Leadership in AI Security: Why Undetected Cyberattacks Threaten Healthcare AI Governance</div>
+            <div class="episode-card-desc">Responsible AI extends to the security layer, where a silent breach undermines every other safeguard.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 16</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-cant-replace-language-access" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/ghk8jZeWw1k/hqdefault.jpg" alt="Carol Velandia episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Carol Velandia</div>
+            <div class="episode-card-title">AI and Language Access in Healthcare: Communication Equity and Patient Safety</div>
+            <div class="episode-card-desc">The equity dimension of responsible AI, and why language access is a patient safety issue rather than a feature.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 8</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/healthcare-ai-data-layer-privacy-governance" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/G6ChBbgV4xY/hqdefault.jpg" alt="Sid Dutta episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Sid Dutta</div>
+            <div class="episode-card-title">Healthcare AI Fails at the Data Layer: Privacy, Governance &amp; Trust</div>
+            <div class="episode-card-desc">Where responsible AI breaks first, and why runtime trust has to be engineered into the data foundation.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 27</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="content-wrapper" style="max-width:800px;margin:3rem auto 0;text-align:center;">
+        <p>For the full collection of governance and ethics conversations, see the <a href="/topics/ai-ethics-governance">AI Ethics and Governance topic hub</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Should Listen -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Who Should Listen</h2>
+        <p>This show is built for the people accountable when an AI deployment goes wrong. Chief medical officers and chief quality officers weighing whether a tool is clinically defensible. AI governance leads and ethics committee chairs who need their authority to be real. Clinical informatics and data leaders translating principles into review processes. Patient safety and security practitioners who see the failure modes first. Listeners who want the operating detail behind responsible AI, rather than a restatement of why it matters, tend to stay.</p>
+        <p>The Signal Room is a production of <a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener">Hutchins Data Strategy Consultants</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Frequently Asked Questions</h2>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">What is the best podcast on responsible AI in medicine?</h3>
+        <p>The Signal Room is a practitioner-led podcast focused on responsible AI in medicine, hosted by Christopher Hutchins. Its guests are operators who have deployed, governed, or blocked real healthcare AI systems, and its episodes cover governance, ethical leadership, algorithmic bias, explainability, and clinical trust. Start with Episode 12, Responsible AI in Healthcare, then move into the governance and bias episodes.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">What makes a healthcare AI podcast credible on responsible AI?</h3>
+        <p>Credibility comes from operators describing real decisions and their costs. A credible show names the frameworks it uses, such as the <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST AI Risk Management Framework</a> and the <a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener">WHO Ethics and Governance of AI for Health</a> guidance, and ties each one to a deployment a guest actually made. Shows that keep responsible AI abstract offer less to a leader who has to act.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Which Signal Room episodes cover AI governance and ethics?</h3>
+        <p>The core governance and ethics episodes are Episode 12 with Asha Mahesh, Episode 7 with Susie Branagan, Episode 4 with Larry Kuhn, and Episode 22 with MarKeisha Snaith. Episode 9 with Keshavan Seshadri covers explainability and algorithmic bias, and Episode 16 with Guman Chauhan covers ethical leadership in AI security.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Is The Signal Room academic or practitioner-led?</h3>
+        <p>The Signal Room is practitioner-led. Every guest works in or alongside healthcare operations, and the conversations focus on what responsible AI costs in real organizations rather than on research findings alone.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Who should listen to a responsible AI in medicine podcast?</h3>
+        <p>Chief medical officers, chief quality officers, AI governance leads, ethics committee chairs, clinical informatics leaders, and patient safety and security practitioners. The show is built for the people who are accountable when a healthcare AI deployment fails.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <!-- Newsletter CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form-embed">
+            <iframe src="https://subscribe-forms.beehiiv.com/781ceb5b-1fd7-488a-8914-3abb15c9ef58" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" loading="lazy" title="Subscribe to The AI Health Pulse"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener noreferrer">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="/privacy-policy" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', document.getElementById('navLinks').classList.contains('open'));
+    });
+  </script>
+</body>
+</html>
