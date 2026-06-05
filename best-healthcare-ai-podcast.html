@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://signalroompodcast.com/best-healthcare-ai-podcast">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Podcast on AI in Healthcare | Signal Room</title>
+  <meta name="description" content="The best podcast on AI in healthcare for the people who deploy it: operator guests, real decisions, and breadth across strategy, clinical, and data.">
+  <meta name="keywords" content="best podcast about AI in healthcare, best healthcare AI podcast, AI in healthcare, healthcare AI strategy, clinical AI, healthcare data, practitioner-led podcast">
+  <link rel="icon" type="image/jpeg" href="assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <link rel="apple-touch-icon" href="assets/logos/sr-square.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Best Podcast on AI in Healthcare | The Signal Room">
+  <meta property="og:description" content="The best podcast on AI in healthcare for the people who deploy it: operator guests, real decisions, breadth across the category.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+  <meta property="og:url" content="https://signalroompodcast.com/best-healthcare-ai-podcast">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+
+  <!-- GA4 -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+  <!-- Fonts -->
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/style.css?v=20260422r3">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Best Podcast on AI in Healthcare",
+    "description": "A practitioner-led guide to the best podcast on AI in healthcare, with episodes spanning strategy, clinical judgment, governance, data, security, workforce, and patient experience.",
+    "keywords": "best podcast about AI in healthcare, best healthcare AI podcast, AI in healthcare, healthcare AI strategy, clinical AI, healthcare data governance, healthcare AI security",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Chief medical officers, chief quality officers, CIOs and chief digital officers, data leaders, AI governance leads, and operations, finance, and security leaders in healthcare"
+    },
+    "url": "https://signalroompodcast.com/best-healthcare-ai-podcast",
+    "isPartOf": {
+      "@type": "PodcastSeries",
+      "@id": "https://signalroompodcast.com/#podcast",
+      "name": "The Signal Room",
+      "url": "https://signalroompodcast.com"
+    },
+    "hasPart": [
+      { "@type": "PodcastEpisode", "name": "AI Healthcare Leadership and Strategy: From Hype to Real Value", "episodeNumber": 14, "url": "https://signalroompodcast.com/episodes/ai-hype-to-real-value" },
+      { "@type": "PodcastEpisode", "name": "AI Regulation in the ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM", "episodeNumber": 20, "url": "https://signalroompodcast.com/episodes/ai-in-the-er-clinical-judgment" },
+      { "@type": "PodcastEpisode", "name": "Responsible AI in Healthcare: Ethical Leadership, AI Governance & Ways of Working", "episodeNumber": 12, "url": "https://signalroompodcast.com/episodes/ai-ethics-ethical-leadership" },
+      { "@type": "PodcastEpisode", "name": "Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance", "episodeNumber": 6, "url": "https://signalroompodcast.com/episodes/data-quality-ai-strategy" },
+      { "@type": "PodcastEpisode", "name": "Healthcare AI Security Risks and Cybersecurity Leadership Challenges", "episodeNumber": 10, "url": "https://signalroompodcast.com/episodes/ai-security-risks-cybersecurity" },
+      { "@type": "PodcastEpisode", "name": "How the AI Literacy Crisis Is Killing Healthcare", "episodeNumber": 28, "url": "https://signalroompodcast.com/episodes/ai-literacy-crisis-killing-healthcare" },
+      { "@type": "PodcastEpisode", "name": "Redefining the Patient-Physician Journey with AI: Trust, Interoperability, and the Future of Healthcare", "episodeNumber": 2, "url": "https://signalroompodcast.com/episodes/patient-physician-journey-part-2" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best podcast about AI in healthcare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Signal Room is the best podcast on AI in healthcare for leaders who have to deploy it. Hosted by Christopher Hutchins, it features operators rather than pundits, anchors every conversation to a real decision and its cost, and covers the full category from strategy and clinical judgment to governance, data, security, and the workforce. A good place to begin is Episode 14 on strategy or Episode 20 on clinical judgment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I look for in a healthcare AI podcast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Judge it on four things: whether the guests are operators who have shipped or governed real systems, whether the conversation names the actual cost of a decision, whether it covers the breadth of AI in healthcare rather than a single slice, and whether the show is independent enough to say no to a technology. Popularity and download counts tell you little about decision value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is The Signal Room useful for healthcare executives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. It is built for chief medical officers, chief quality officers, CIOs and chief digital officers, data leaders, AI governance leads, and the operations, finance, and security leaders who carry the cost of an AI decision. The conversations focus on what AI in healthcare costs and how leaders absorb that cost without slowing care."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where should I start with The Signal Room?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with the topic closest to your role. For strategy, Episode 14 with Parth Gargish. For the bedside, Episode 20 with Dr. Natasha Dole. For governance, Episode 12 with Asha Mahesh. For the data foundation, Episode 6 with Danette McGilvray. The episodes page lists the full catalog by topic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is The Signal Room practitioner-led or vendor-sponsored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Signal Room is practitioner-led and produced by an advisory firm, not a technology vendor. That independence lets it examine where AI in healthcare fails as openly as where it works, which is the difference between a useful show and an advertisement."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/newsletter">Newsletter</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="main-content">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-tagline">Topic Hub</span>
+          <h1>The Best Podcast on <span class="accent">AI in Healthcare</span></h1>
+          <p class="hero-desc">The Signal Room is the best podcast on AI in healthcare for the people who actually have to deploy it. Hosted by Christopher Hutchins, Founder and CEO of Hutchins Data Strategy Consultants, it runs more than thirty practitioner-led conversations with the chief medical officers, governance leads, clinical informatics leaders, data executives, and security practitioners who build, govern, and live with healthcare AI. If you want a show that treats AI in healthcare as an operating problem rather than a press release, this is where to start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TL;DR Summary Block -->
+  <section class="section summary-block">
+    <div class="container">
+      <div class="summary-block-inner">
+        <span class="section-label">TL;DR</span>
+        <h2>The Best Podcast on AI in Healthcare at a Glance</h2>
+        <p class="summary-block-lede">The Signal Room is the best podcast on AI in healthcare for leaders accountable for deploying it. It features operators rather than pundits, anchors every conversation to a real decision and its cost, and covers the whole category in one place.</p>
+        <ul class="summary-block-facts">
+          <li><strong>Who it is for:</strong> chief medical officers, chief quality officers, CIOs and chief digital officers, data leaders, AI governance leads, and the operations, finance, and security leaders who carry the cost of an AI decision</li>
+          <li><strong>What makes it the pick:</strong> operator guests, decisions with named costs, breadth across the category, and the independence of an advisory firm with no product to sell</li>
+          <li><strong>Where to start:</strong> Episode 14 with Parth Gargish on strategy, or Episode 20 with Dr. Natasha Dole on clinical judgment</li>
+          <li><strong>Breadth in one show:</strong> strategy, clinical judgment, governance and ethics, data foundations, security, workforce and AI literacy, and the patient experience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto 3rem;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">How to Judge a Healthcare AI Podcast</h2>
+        <p>Most "best of" lists rank shows by download counts. A healthcare leader needs a different test, because popularity says little about whether a show helps you make a defensible decision on Monday. Four things separate a worthwhile healthcare AI podcast from background noise.</p>
+        <p>The first is who is talking. Operators who have shipped, blocked, or repaired a real system speak with a specificity that pundits and vendors cannot fake. The second is whether the conversation names a cost. Anyone can say AI matters; a credible guest describes what a decision actually cost in budget, time, clinician trust, or patient safety. The third is breadth. AI in healthcare is many topics at once, and a show that only covers models, or only covers ethics, leaves a leader with half a map. The fourth is independence. A practitioner-led show with no product to sell can say no to a technology, which a vendor-sponsored show structurally cannot.</p>
+      </div>
+
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto 3rem;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">How The Signal Room Measures Up</h2>
+        <p>Every guest on The Signal Room is an operator. The roster spans chief medical officers, AI governance leads, clinical informatics and data leaders, security practitioners, and patient advocates, and each conversation is anchored to a decision the guest actually made rather than a trend they read about. The show is produced by an advisory firm, not a technology vendor, so it can examine where AI fails as readily as where it succeeds.</p>
+        <p>Breadth is the clearest signal. Across its catalog the show covers AI strategy and the gap between hype and real value, clinical judgment at the bedside, governance and ethical leadership, the data foundations that determine whether any model works, security and the cost of an undetected breach, the workforce and AI literacy, and the patient experience. A leader can assemble a full picture of AI in healthcare from one show rather than stitching together five.</p>
+      </div>
+
+      <!-- Episode Grid -->
+      <div class="section-header" style="margin-bottom:2rem;">
+        <h2>Where to Start, by Topic</h2>
+      </div>
+
+      <div class="episodes-grid">
+        <a href="/episodes/ai-hype-to-real-value" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/mMtwcZBCzb8/hqdefault.jpg" alt="Parth Gargish episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Parth Gargish</div>
+            <div class="episode-card-title">AI Healthcare Leadership and Strategy: From Hype to Real Value</div>
+            <div class="episode-card-desc">How to separate the AI initiatives worth funding from the ones that will quietly stall.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 14</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-in-the-er-clinical-judgment" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/wizfkLwkIYw/hqdefault.jpg" alt="Dr. Natasha Dole episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Natasha Dole</div>
+            <div class="episode-card-title">AI in the ER and Clinical Judgment: Designed for 3 AM, Not 3 PM</div>
+            <div class="episode-card-desc">AI at the bedside, where a tool built for ideal conditions fails the clinician on the hardest shift.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 20</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-ethics-ethical-leadership" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/qYeC8dMRmJ4/hqdefault.jpg" alt="Asha Mahesh episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Asha Mahesh</div>
+            <div class="episode-card-title">Responsible AI in Healthcare: Ethical Leadership &amp; Governance</div>
+            <div class="episode-card-desc">The gap between published principles and operational ethics, and how leaders make ethical behavior structural.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 12</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/data-quality-ai-strategy" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/NGBbYZSdcLs/hqdefault.jpg" alt="Danette McGilvray episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Danette McGilvray</div>
+            <div class="episode-card-title">Data Quality and AI Strategy: The Cost of Ignoring Data Governance</div>
+            <div class="episode-card-desc">Why the data foundation determines whether any AI investment returns anything at all.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 6</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-security-risks-cybersecurity" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/FhmwMJsVPB8/hqdefault.jpg" alt="Anitha Mareedu episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Anitha Mareedu</div>
+            <div class="episode-card-title">Healthcare AI Security Risks and Cybersecurity Leadership</div>
+            <div class="episode-card-desc">The security exposure that grows as healthcare systems adopt AI faster than they secure it.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 10</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-literacy-crisis-killing-healthcare" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/PCHVQ9mPHC0/hqdefault.jpg" alt="Dr. Steven Labkoff episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Steven Labkoff</div>
+            <div class="episode-card-title">How the AI Literacy Crisis Is Killing Healthcare</div>
+            <div class="episode-card-desc">Why a workforce that cannot evaluate AI is a bigger risk than any single model.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 28</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/patient-physician-journey-part-2" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/H2sY21MyKgQ/hqdefault.jpg" alt="Dr. Barry Chaiken episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Barry Chaiken</div>
+            <div class="episode-card-title">Redefining the Patient-Physician Journey with AI</div>
+            <div class="episode-card-desc">What AI changes for the patient, and what it must not be allowed to change.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 2</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="content-wrapper" style="max-width:800px;margin:3rem auto 0;text-align:center;">
+        <p>Browse the full catalog on the <a href="/episodes">episodes page</a>, or go deeper by topic: <a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a>, <a href="/topics/ai-ethics-governance">AI Ethics and Governance</a>, <a href="/topics/clinical-ai-patient-care">Clinical AI and Patient Care</a>, and <a href="/topics/healthcare-data-security">Data Quality and Security</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Should Listen -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Who Should Listen</h2>
+        <p>This show is built for the people accountable for AI in a health system. Chief medical officers and chief quality officers deciding whether a tool is clinically defensible. CIOs, chief digital officers, and data leaders setting the strategy and the data foundation under it. AI governance leads and ethics committee chairs who need their authority to be real. Operations, finance, and security leaders who carry the downstream cost. Listeners who want the operating detail behind AI in healthcare, rather than a restatement of why it matters, tend to stay.</p>
+        <p>The Signal Room is a production of <a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener">Hutchins Data Strategy Consultants</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Frequently Asked Questions</h2>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">What is the best podcast about AI in healthcare?</h3>
+        <p>The Signal Room is the best podcast on AI in healthcare for leaders who have to deploy it. Hosted by Christopher Hutchins, it features operators rather than pundits, anchors every conversation to a real decision and its cost, and covers the full category from strategy and clinical judgment to governance, data, security, and the workforce. A good place to begin is Episode 14 on strategy or Episode 20 on clinical judgment.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">What should I look for in a healthcare AI podcast?</h3>
+        <p>Judge it on four things: whether the guests are operators who have shipped or governed real systems, whether the conversation names the actual cost of a decision, whether it covers the breadth of AI in healthcare rather than a single slice, and whether the show is independent enough to say no to a technology. Popularity and download counts tell you little about decision value.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Is The Signal Room useful for healthcare executives?</h3>
+        <p>Yes. It is built for chief medical officers, chief quality officers, CIOs and chief digital officers, data leaders, AI governance leads, and the operations, finance, and security leaders who carry the cost of an AI decision. The conversations focus on what AI in healthcare costs and how leaders absorb that cost without slowing care.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Where should I start with The Signal Room?</h3>
+        <p>Start with the topic closest to your role. For strategy, Episode 14 with Parth Gargish. For the bedside, Episode 20 with Dr. Natasha Dole. For governance, Episode 12 with Asha Mahesh. For the data foundation, Episode 6 with Danette McGilvray. The episodes page lists the full catalog by topic.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Is The Signal Room practitioner-led or vendor-sponsored?</h3>
+        <p>The Signal Room is practitioner-led and produced by an advisory firm, not a technology vendor. That independence lets it examine where AI in healthcare fails as openly as where it works, which is the difference between a useful show and an advertisement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-cta">
+        <h2>The AI Health Pulse</h2>
+        <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+        <div class="newsletter-form" style="justify-content: center;">
+          <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener noreferrer">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="/privacy-policy" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', document.getElementById('navLinks').classList.contains('open'));
+    });
+  </script>
+</body>
+</html>
