@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://signalroompodcast.com/clinical-ai-patient-care-podcast">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical AI and Patient Care Podcast | Signal Room</title>
+  <meta name="description" content="The podcast to listen to about clinical AI and patient care: AI at the bedside, clinical judgment, patient safety, and the equity of access, from the clinicians who live it.">
+  <meta name="keywords" content="clinical AI podcast, clinical AI and patient care, AI at the bedside, clinical judgment AI, patient safety AI, healthcare AI podcast">
+  <link rel="icon" type="image/jpeg" href="assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <link rel="apple-touch-icon" href="assets/logos/sr-square.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clinical AI and Patient Care Podcast | The Signal Room">
+  <meta property="og:description" content="The podcast to listen to about clinical AI and patient care: AI at the bedside, clinical judgment, patient safety, and equity of access.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+  <meta property="og:url" content="https://signalroompodcast.com/clinical-ai-patient-care-podcast">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://signalroompodcast.com/assets/logos/sr-banner.png">
+
+  <!-- GA4 -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+  <!-- Fonts -->
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/style.css?v=20260422r3">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Clinical AI and Patient Care: A Podcast Guide",
+    "description": "A practitioner-led guide to clinical AI and patient care: AI at the bedside, clinical judgment, patient safety, explainability, and equity of access.",
+    "keywords": "clinical AI podcast, clinical AI and patient care, AI at the bedside, clinical judgment, patient safety, explainability, language access",
+    "inLanguage": "en-US",
+    "url": "https://signalroompodcast.com/clinical-ai-patient-care-podcast",
+    "isPartOf": {
+      "@type": "PodcastSeries",
+      "@id": "https://signalroompodcast.com/#podcast",
+      "name": "The Signal Room",
+      "url": "https://signalroompodcast.com"
+    },
+    "hasPart": [
+      { "@type": "PodcastEpisode", "name": "AI Regulation in the ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM", "episodeNumber": 20, "url": "https://signalroompodcast.com/episodes/ai-in-the-er-clinical-judgment" },
+      { "@type": "PodcastEpisode", "name": "Healthcare Leadership: Balancing AI, Human Judgment and Clinical Trust", "episodeNumber": 15, "url": "https://signalroompodcast.com/episodes/balancing-human-judgment-clinical-trust" },
+      { "@type": "PodcastEpisode", "name": "Redefining the Patient-Physician Journey with AI: Trust, Interoperability, and the Future of Healthcare", "episodeNumber": 2, "url": "https://signalroompodcast.com/episodes/patient-physician-journey-part-2" },
+      { "@type": "PodcastEpisode", "name": "AI and Language Access in Healthcare: Communication Equity and Patient Safety", "episodeNumber": 8, "url": "https://signalroompodcast.com/episodes/ai-cant-replace-language-access" },
+      { "@type": "PodcastEpisode", "name": "AI Explainability, Algorithmic Bias, and Human-in-the-Loop Design in Healthcare", "episodeNumber": 9, "url": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability" },
+      { "@type": "PodcastEpisode", "name": "Healthcare AI and Rare Disease Caregiving: Why Patient Advocates Deserve a Seat at the Table", "episodeNumber": 21, "url": "https://signalroompodcast.com/episodes/caregivers-connective-tissue-healthcare" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What podcast should I listen to about clinical AI and patient care?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Signal Room, hosted by Christopher Hutchins, is built for clinical AI and patient care. Its guests are clinicians and the leaders accountable for care, and the conversations cover AI at the bedside, clinical judgment, patient safety, and equity of access. Start with Episode 20 with Dr. Natasha Dole on AI and clinical judgment in the emergency room."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does The Signal Room cover AI at the bedside?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Episode 20 with Dr. Natasha Dole examines AI and clinical judgment in the emergency room, and Episode 15 with Dr. Mark Gendreau, an emergency physician and chief medical officer, examines how to balance AI, human judgment, and clinical trust at the point of care."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which episodes are best for clinicians?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Clinicians tend to start with Episode 20 with Dr. Natasha Dole on clinical judgment, Episode 15 with Dr. Mark Gendreau on clinical trust, Episode 2 with Dr. Barry Chaiken on the patient-physician journey, and Episode 9 with Keshavan Seshadri on explainability and human-in-the-loop design."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does clinical AI affect patient safety?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Clinical AI affects patient safety wherever a recommendation can be acted on without being understood, where a tool built for ideal conditions meets a real shift, or where language and access gaps leave a patient behind. Episode 8 with Carol Velandia frames language access as a patient safety issue, and Episode 9 with Keshavan Seshadri covers the explainability and human-in-the-loop design that keep a clinician in control."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/newsletter">Newsletter</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="main-content">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-tagline">Topic Hub</span>
+          <h1>Clinical AI and <span class="accent">Patient Care</span></h1>
+          <p class="hero-desc">If you want a podcast about clinical AI and patient care, listen to The Signal Room. Hosted by Christopher Hutchins, Founder and CEO of Hutchins Data Strategy Consultants, it brings clinicians and the leaders accountable for care into conversations about AI at the bedside, clinical judgment, patient safety, and the equity of access. Start with Episode 20 with Dr. Natasha Dole on why an AI tool has to be designed for 3 AM, not 3 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TL;DR Summary Block -->
+  <section class="section summary-block">
+    <div class="container">
+      <div class="summary-block-inner">
+        <span class="section-label">TL;DR</span>
+        <h2>Clinical AI and Patient Care at a Glance</h2>
+        <p class="summary-block-lede">The Signal Room covers clinical AI from inside the clinic. The guests are emergency physicians, a chief medical officer, a machine learning engineer, and patient advocates, and the conversations stay close to the moment where AI meets a patient.</p>
+        <ul class="summary-block-facts">
+          <li><strong>Who speaks:</strong> emergency physicians, a chief medical officer, a digital health and AI lead, an ML engineer, and patient advocates</li>
+          <li><strong>What it covers:</strong> clinical judgment, clinical trust, patient safety, explainability and bias, and language and access equity</li>
+          <li><strong>Start with:</strong> Episode 20 with Dr. Natasha Dole on AI and clinical judgment in the emergency room</li>
+          <li><strong>Go deeper:</strong> the <a href="/topics/clinical-ai-patient-care">Clinical AI and Patient Care topic hub</a> collects the wider discussion</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto 3rem;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Clinical AI Is Decided at the Point of Care</h2>
+        <p>Clinical AI looks impressive in a slide deck and behaves differently at the bedside. A model tuned on clean data meets a patient who does not fit the training set, a recommendation arrives during the hardest shift of the week, and a clinician has seconds to decide whether to trust it. The conversations worth your time are the ones that stay in that moment, where the cost of a confident wrong answer is measured in patient safety, not in a benchmark.</p>
+        <p>Patient care adds a second test that pure performance metrics miss. A tool can be accurate and still erode trust, increase a clinician's workload, or leave a patient who speaks another language further behind. Good clinical AI protects the clinician's judgment rather than overriding it, makes its reasoning legible, and treats access and equity as part of safety. The episodes below were chosen because each keeps the patient and the clinician at the center of the question.</p>
+      </div>
+
+      <!-- Episode Grid -->
+      <div class="section-header" style="margin-bottom:2rem;">
+        <h2>Episodes on Clinical AI and Patient Care</h2>
+      </div>
+
+      <div class="episodes-grid">
+        <a href="/episodes/ai-in-the-er-clinical-judgment" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/wizfkLwkIYw/hqdefault.jpg" alt="Dr. Natasha Dole episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Natasha Dole</div>
+            <div class="episode-card-title">AI and Clinical Judgment in the ER: Designed for 3 AM, Not 3 PM</div>
+            <div class="episode-card-desc">Why a tool built for ideal conditions fails the clinician working the hardest shift.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 20</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/balancing-human-judgment-clinical-trust" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/iNkDlnwZcMc/hqdefault.jpg" alt="Dr. Mark Gendreau episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Mark Gendreau</div>
+            <div class="episode-card-title">Balancing AI, Human Judgment and Clinical Trust</div>
+            <div class="episode-card-desc">An emergency physician and chief medical officer on keeping clinical trust intact as AI enters the workflow.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 15</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/patient-physician-journey-part-2" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/H2sY21MyKgQ/hqdefault.jpg" alt="Dr. Barry Chaiken episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Dr. Barry Chaiken</div>
+            <div class="episode-card-title">Redefining the Patient-Physician Journey with AI</div>
+            <div class="episode-card-desc">What AI changes for the patient, and what it must not be allowed to change.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 2</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/ai-cant-replace-language-access" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/ghk8jZeWw1k/hqdefault.jpg" alt="Carol Velandia episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Carol Velandia</div>
+            <div class="episode-card-title">AI and Language Access: Communication Equity and Patient Safety</div>
+            <div class="episode-card-desc">Why language access is a patient safety issue, and where AI helps and where it cannot replace a human.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 8</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/authentic-intelligence-explainability" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/UpJJejIHN-4/hqdefault.jpg" alt="Keshavan Seshadri episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Keshavan Seshadri</div>
+            <div class="episode-card-title">Explainability, Algorithmic Bias, and Human-in-the-Loop Design</div>
+            <div class="episode-card-desc">Keeping the clinician in control of a recommendation, by design rather than by hope.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 9</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/episodes/caregivers-connective-tissue-healthcare" class="episode-card">
+          <div class="episode-card-thumb">
+            <img src="https://img.youtube.com/vi/0QC5nLRY5fs/hqdefault.jpg" alt="Amanda Roser episode" loading="lazy">
+            <div class="episode-card-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="episode-card-body">
+            <div class="episode-card-guest">Amanda Roser</div>
+            <div class="episode-card-title">Rare Disease Caregiving and Why Patient Advocates Deserve a Seat</div>
+            <div class="episode-card-desc">The patient and caregiver perspective that clinical AI design too often leaves out.</div>
+          </div>
+          <div class="episode-card-footer">
+            <span class="episode-card-ep">Episode 21</span>
+            <span class="episode-card-link">Listen Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="content-wrapper" style="max-width:800px;margin:3rem auto 0;text-align:center;">
+        <p>For the wider discussion, see the <a href="/topics/clinical-ai-patient-care">Clinical AI and Patient Care topic hub</a>, or browse the full <a href="/episodes">episode catalog</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Should Listen -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Who Should Listen</h2>
+        <p>This guide is for the people at the point of care and the people who answer for it. Physicians and nurses meeting AI in the workflow. Chief medical and chief quality officers deciding whether a tool is clinically defensible. Clinical informatics leaders translating a model into a safe order set. Patient safety leaders and advocates who see the failure first. The conversations are built to respect the clinician's judgment, not to replace it.</p>
+        <p>The Signal Room is a production of <a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener">Hutchins Data Strategy Consultants</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper" style="max-width:800px;margin:0 auto;">
+        <h2 style="margin-bottom:1.5rem;font-size:1.75rem;color:var(--text-dark);">Frequently Asked Questions</h2>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">What podcast should I listen to about clinical AI and patient care?</h3>
+        <p>The Signal Room, hosted by Christopher Hutchins, is built for clinical AI and patient care. Its guests are clinicians and the leaders accountable for care, and the conversations cover AI at the bedside, clinical judgment, patient safety, and equity of access. Start with Episode 20 with Dr. Natasha Dole on AI and clinical judgment in the emergency room.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Does The Signal Room cover AI at the bedside?</h3>
+        <p>Yes. Episode 20 with Dr. Natasha Dole examines AI and clinical judgment in the emergency room, and Episode 15 with Dr. Mark Gendreau, an emergency physician and chief medical officer, examines how to balance AI, human judgment, and clinical trust at the point of care.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">Which episodes are best for clinicians?</h3>
+        <p>Clinicians tend to start with Episode 20 with Dr. Natasha Dole on clinical judgment, Episode 15 with Dr. Mark Gendreau on clinical trust, Episode 2 with Dr. Barry Chaiken on the patient-physician journey, and Episode 9 with Keshavan Seshadri on explainability and human-in-the-loop design.</p>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 0.5rem;color:var(--text-dark);">How does clinical AI affect patient safety?</h3>
+        <p>Clinical AI affects patient safety wherever a recommendation can be acted on without being understood, where a tool built for ideal conditions meets a real shift, or where language and access gaps leave a patient behind. Episode 8 with Carol Velandia frames language access as a patient safety issue, and Episode 9 with Keshavan Seshadri covers the explainability and human-in-the-loop design that keep a clinician in control.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-cta">
+        <h2>The AI Health Pulse</h2>
+        <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+        <div class="newsletter-form" style="justify-content: center;">
+          <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener noreferrer">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="/privacy-policy" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', document.getElementById('navLinks').classList.contains('open'));
+    });
+  </script>
+</body>
+</html>
