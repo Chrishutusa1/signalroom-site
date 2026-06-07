@@ -8,9 +8,10 @@ __pycache__/
 _STATUS.md
 .claude/*.py
 
-# One-shot helper scripts in repo root (permanent generator is excepted below)
+# One-shot helper scripts in repo root (permanent scripts are excepted below)
 /*.py
 !/_generate_topic_cards.py
+!/signalroom-airtable-bridge.py
 
 # Buzzsprout transcript/chapter build artifacts
 buzzsprout-chapters/out/
