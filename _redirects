@@ -1,3 +1,13 @@
+# --- Canonical host: force www -> apex (non-www, https) ---
+# Belt-and-suspenders. www is registered as a Netlify domain alias, and Netlify
+# already 301s the alias -> primary (apex) at the edge. This explicit rule makes
+# the www->apex intent visible in version control and survives an accidental
+# alias removal. Apex requests (Host: signalroompodcast.com) don't match this
+# host-scoped rule, so there is no loop. http://www is upgraded to https://www at
+# the TLS edge first, then caught here. Verified live 2026-06-11: www/ -> apex/
+# is a single 301; every variant terminates at a clean 200 apex extensionless URL.
+https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    301!
+
 # 301 redirects for renamed episode slugs (target the extensionless canonical)
 /episodes/ai-verification-pharma-discovery         /episodes/data-readiness-ai-adoption         301
 /episodes/ai-verification-pharma-discovery.html    /episodes/data-readiness-ai-adoption         301
