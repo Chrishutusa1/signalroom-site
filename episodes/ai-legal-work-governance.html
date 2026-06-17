@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/episodes/ai-legal-work-governance">
+  <title>80% of Legal Work Could Be Done by AI | Bennett Borden</title>
+  <meta name="description" content="Bennett Borden — ex-CIA analyst, AI lawyer, and founder of Clarion AI Partners — on AI governance in practice and how AI is reshaping the work of lawyers.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ex-Intelligence Officer: 80% of Legal Work Could Be Done by AI | Bennett Borden">
+  <meta property="og:description" content="From AI governance theory to operational reality: Bennett Borden of Clarion AI Partners on governance on paper vs in practice, NIST and the EU AI Act, risk and defensibility, and responsible deployment in high-consequence environments.">
+  <meta property="og:image" content="https://img.youtube.com/vi/h1VkrBwx5qw/maxresdefault.jpg">
+  <meta property="og:url" content="https://signalroompodcast.com/episodes/ai-legal-work-governance">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "name": "Ex-Intelligence Officer: 80% of Legal Work Could Be Done by AI",
+  "episodeNumber": 32,
+  "datePublished": "2026-06-17",
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com"
+  },
+  "url": "https://signalroompodcast.com/episodes/ai-legal-work-governance",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://www.buzzsprout.com/2550733/episodes/19359921"
+  },
+  "actor": {
+    "@type": "Person",
+    "name": "Bennett Borden"
+  },
+  "timeRequired": "PT49M38S"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does AI governance actually mean in practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI governance is one of the most misunderstood topics in AI because most of it lives on paper. Bennett Borden, founder of Clarion AI Partners and a former CIA intelligence analyst turned AI lawyer, distinguishes governance documents from governance in practice — the difference between published principles and systems that actually stay explainable, measurable, and defensible when scrutinized. He grounds it in work involving NIST and the EU AI Act and in what boards and executive teams should really be asking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes an AI system defensible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A defensible AI system is one that remains explainable, measurable, and accountable as it scales — where human judgment is preserved rather than automated away, risk is understood as both reduced and newly created, and decisions can be evidenced after the fact. Borden frames defensibility as the practical test that separates mature AI programs from experimentation."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes" class="active">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+</ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Episode 32</span>
+      <h1>Ex-Intelligence Officer: 80% of Legal Work Could Be Done by AI | Bennett Borden</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">with <a href="#guest-section" style="color: #6c63ff; text-decoration: none;">Bennett Borden</a></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <div class="episode-layout">
+        <div class="episode-main">
+          <div class="episode-video" style="max-width: 800px; margin: 0 auto 1.5rem; padding: 0; position: static;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/h1VkrBwx5qw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Ex-Intelligence Officer: 80% of Legal Work Could Be Done by AI | Bennett Borden"></iframe>
+</div>
+</div>
+          <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
+<div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+<span style="background: #1a1a2e; color: #fff; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Episode 32</span>
+<span style="color: #666; font-size: 0.85rem;">June 17, 2026</span>
+<span style="color: #666; font-size: 0.85rem;">50 min</span>
+</div>
+<div class="episode-listen-row">
+<span class="episode-listen-label">Listen on:</span>
+<a href="https://podcasts.apple.com/us/podcast/ex-intelligence-officer-80-of-legal-work-could-be/id1850988366?i=1000773092472" target="_blank" rel="noopener" class="episode-listen-btn">Apple Podcasts</a>
+<a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener" class="episode-listen-btn">Spotify</a>
+<a href="https://www.buzzsprout.com/2550733/episodes/19359921" target="_blank" rel="noopener" class="episode-listen-btn">Buzzsprout</a>
+</div>
+<p style="margin: 0 0 0.5rem; font-size: 1.2rem; color: #1a1a2e; font-weight: 700;">Ex-Intelligence Officer: 80% of Legal Work Could Be Done by AI | Bennett Borden</p>
+<p style="margin: 0 0 1rem; color: #555; font-size: 0.95rem; font-style: italic;">with Bennett Borden</p>
+<p style="margin: 0; color: #444; font-size: 0.9rem; line-height: 1.6;">From AI governance theory to operational reality. Bennett Borden — former CIA intelligence analyst, AI lawyer, and founder of Clarion AI Partners — on what governance looks like when it leaves the page: risk, trust, defensibility, and the human judgment that scaling automation must preserve.</p>
+</div>
+          <div class="show-notes-section" style="max-width: 800px; margin: 1.5rem auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+<h3 style="margin: 0 0 1rem; font-size: 1.15rem; color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 0.5rem;">Show Notes</h3>
+<div style="color: #444; font-size: 0.95rem; line-height: 1.7;">
+<p>A significant portion of repetitive legal work can now be performed more effectively through AI-assisted workflows — but the interesting question is not the technology, it is what that shift means for the professionals, firms, and organizations navigating it. Bennett Borden, founder and CEO of Clarion AI Partners, came to that question by an unusual route: from intelligence analysis at the CIA, to practicing law, to building an AI-native law and technology practice. He joins Chris Hutchins to move AI governance from theory to operational reality.</p>
+<h2>What We Cover</h2>
+<ul>
+  <li><strong>An unusual career path</strong> — from CIA intelligence analysis to law, how analytics shaped his approach, and why he chose to build rather than simply advise</li>
+  <li><strong>What AI governance actually means</strong> — governance on paper vs in practice, lessons from work involving NIST and the EU AI Act, and what boards and executive teams should really be asking</li>
+  <li><strong>Risk, trust, and defensibility</strong> — where AI reduces risk vs creates new exposure, preserving human judgment while scaling automation, and building systems that stay explainable, measurable, and defensible</li>
+  <li><strong>Legal work in the age of AI</strong> — contract review and document analysis, where AI creates measurable value today, what remains uniquely human, and how the attorney role is changing</li>
+  <li><strong>Public interest and human impact</strong> — child-safety and suicide-prevention initiatives, the Utah Office of AI Policy and its mitigation-sandbox work, and responsible deployment in high-consequence environments</li>
+</ul>
+<h2>Key Takeaways</h2>
+<ul>
+  <li><strong>The future belongs to neither the AI maximalists nor the avoiders.</strong> It belongs to those who can tell where automation creates value, where judgment remains essential, and how trust is built between the two.</li>
+  <li><strong>Governance on paper is not governance.</strong> The test is whether an AI program stays explainable, measurable, and defensible in practice — not whether principles were published.</li>
+  <li><strong>Defensibility is the bridge from experimentation to adoption</strong> — systems whose decisions can be evidenced, measured, and stood behind after the fact.</li>
+</ul>
+<h2>Frameworks &amp; Initiatives Mentioned</h2>
+<ul>
+  <li>NIST AI Risk Management Framework</li>
+  <li>EU AI Act</li>
+  <li>Utah Office of AI Policy — AI mitigation sandbox</li>
+  <li>Governance-on-paper vs governance-in-practice; explainable / measurable / defensible AI systems</li>
+</ul>
+<h2>About Bennett Borden</h2>
+<p>Bennett Borden is the Founder and CEO of <a href="https://clarionai.com/" target="_blank" rel="noopener">Clarion AI Partners</a>, an integrated law, technology, and strategy firm helping organizations deliver AI the right way. A former Big Law partner and Chief Data Scientist whose path runs from intelligence analysis to the practice of law, he works with executives and AI leaders to move from experimentation to production with systems that are practical, scalable, and legally durable. His public-interest work includes child-safety and suicide-prevention initiatives and the Utah Office of AI Policy's AI mitigation sandbox.</p>
+<h2>Related Resources</h2>
+<ul>
+  <li>Topic: <a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+  <li>Episode: <a href="/episodes/human-centered-ai-governance">Human-Centered AI Governance</a></li>
+  <li>Episode: <a href="/episodes/ai-ethics-ethical-leadership">Responsible AI in Healthcare: Ethical Leadership &amp; Governance</a> with Asha Mahesh</li>
+  <li>From Hutchins Data Strategy Consultants: <a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener">Responsible AI in Healthcare</a></li>
+</ul>
+</div>
+</div>
+        </div>
+
+<div class="episode-sidebar" id="guest-section">
+<div class="sidebar-card">
+<h4>Guest</h4>
+<div class="sidebar-guest">
+<img alt="Bennett Borden" src="../assets/guests/bennett-borden.jpg"/>
+<div class="sidebar-guest-info">
+<h3>Bennett Borden</h3>
+<p>Founder &amp; CEO, Clarion AI Partners</p>
+<a href="https://www.linkedin.com/in/bennett-borden/" class="sidebar-guest-linkedin" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn Profile</a>
+</div>
+</div>
+</div>
+<div class="sidebar-card sidebar-follow-card">
+<h4>Follow the Show</h4>
+<p>Never miss an episode.</p>
+<div class="sidebar-follow-links">
+<a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" class="sidebar-follow-btn spotify" target="_blank" rel="noopener" aria-label="Follow on Spotify">Spotify</a>
+<a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" class="sidebar-follow-btn apple" target="_blank" rel="noopener" aria-label="Follow on Apple Podcasts">Apple Podcasts</a>
+<a href="https://www.youtube.com/@SignalRoomPodcast?sub_confirmation=1" class="sidebar-follow-btn youtube" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">YouTube</a>
+</div>
+</div>
+</div>
+      </div>
+<section class="episode-transcript" style="max-width:800px;margin:2.5rem auto 0;padding:1.75rem 2rem;background:#F4F1F7;border-radius:12px;border:1px solid #E0DBE5;">
+  <details>
+    <summary style="cursor:pointer;font-size:1rem;font-weight:700;color:#1A1A2E;padding:0.25rem 0;list-style:none;display:flex;align-items:center;gap:0.75rem;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;background:#6C5CE7;border-radius:50%;color:#fff;font-size:0.65rem;flex-shrink:0;">&#9654;</span>
+      Full Episode Transcript
+    </summary>
+    <div class="transcript-body" style="margin-top:1.25rem;border-top:1px solid #E0DBE5;padding-top:1.25rem;color:#4A4458;font-size:0.925rem;line-height:1.85;max-height:560px;overflow-y:auto;padding-right:0.5rem;">
+<p><strong>Chris Hutchins:</strong> Welcome back to the Signal Room. One of the recurring themes on this show is that we spend an awful lot of time and conversations starting in the wrong place. We spend enormous amounts of time talking about models, vendors, platforms, and capabilities while spending less time discussing the systems, decisions, and people that ultimately determine whether these tools create value or create problems. Today&#x27;s guest has spent his career operating at the intersection of those questions. Bennett Borden is the founder and CEO of Clarion AI Partners. His background spans intelligence analysis, law, software development, AI governance, and public policy. He&#x27;s advised organizations on some of the most complex questions surrounding responsible AI, risk management, compliance, and implementation, while also contributing to national and international conversations around AI standards and policy. What makes Bennett particularly interesting to me? Is that he approaches AI neither as a technologist looking only at capability nor as a lawyer focused solely on regulation? His work says in the space where operational reality, risk, trust, and decision making converge. Today we&#x27;re going to explore what AI governance actually looks like. Beyond the policy document, how organizations can think about risk and defensibility, where AI is already transforming legal and compliance work, and what responsible deployment looks like when the consequences extend far beyond efficiency gains. Bennett, welcome to the Signal Room.</p>
+<p><strong>Bennett Borden:</strong> Thank you very much, Chris. I&#x27;m delighted to be here.</p>
+<p><strong>Chris Hutchins:</strong> Well before we go too far into some really f fun issues, you know, when we&#x27;re talking about governance, risk compliance, and all these other things, I want to kind of start with something that caught my attention right away when we we first connected. You&#x27;ve talked about analyzing years of legal work and finding that roughly eighty percent of recurring attorney tasks could potentially be handled more effectively through AI assisted workflows. Tell me a little bit about that analysis and what you discover, &#x27;cause I think it really speaks to the the the amazing work that you&#x27;ve been doing you know th over over the last you know several years. but really kind of ahead of the curve from everything that I I can see. What what did you discover?</p>
+<p><strong>Bennett Borden:</strong> Well thank you. Yeah, you know, I I spent my career, as you said, I started out in US intelligence and was there for eight years before going on to law school and then getting a graduate degree in data analytics. And so I&#x27;ve been at this cross-section of of the law, technology, data, how do you get insights out of data for all kinds of applications across just about every industry you can imagine? And I was at my prior law firm. I&#x27;ve always spent my career in kind of big law, you know, kind of one of the top ten firms. And I was chief data scientist and a partner and and helped lead the global AI practice at this firm. And it&#x27;s when Jen AI came out and and we were able to represent those companies. And I had s represented, you know, Microsoft and Amazon and Google for years and years. But this was an entirely new technology. This is something that the world had never seen before. And the head of the firm asked me to do an analysis on what I thought the effect of generative AI would be on how we practice law today. And luckily we had this massive data set, right? Because lawyers write down what we do every tenth of a minute or hour, right? And so we had we took</p>
+<p><strong>Chris Hutchins:</strong> Right. Right.</p>
+<p><strong>Bennett Borden:</strong> ten years worth of fourteen thousand attorneys time entries to analyze what are the steps that lawyers take to put together their legal product, whether they&#x27;re a a litigator or contracts or, you know, investment documents, whatever they were. and it really turned out that that every lawyer, no matter what their practice area, does six or seven things over and over and over again. And very conservatively, about eighty percent of what a lawyer does today is better done by AI. And so it was interesting because here I was at the pinnacle of my career, you know, of at and two things occurred to me at once. One is that generative AI is an existential threat to how we practice law traditionally. that throwing bodies at a problem and charging by the hour, that is just just simply it&#x27;s the same way we did in the 1700, right? and so I decided that I didn&#x27;t want to spend my the last 10 years of my career trying to turn the Titanic, right? Because the billable hour is deeply embedded into law firm culture. It&#x27;s the metric by which everything is judged. But also this new technology can at the same time utterly transform how we practice law. And so I decided to take some of my team and come and form Clarion, which is a very unique little AI boutique law firm. I was very fortunate that a great number of my clients came with me. and so we Give advice on AI. So a a cus the client will call up and be like, hey, we&#x27;re thinking about doing this. And we talk through the risks and how to mitigate those risks and is that acceptable? And you know, but the things I think the two things that I love the most about what we do are one is is AI strategy, like really helping boards and C suites. decide how to decide to use AI. and really taking it from this policy layer, you know, down to how do I operationalize this? And how do I decide where to deploy AI in my company? And then we&#x27;re a dev shop. Like we we literally build AI-based solutions for clients. and that being at the cutting edge of how do you design point solutions and agents and multiagentic systems with orchestration layers. And I I think one of my favorite things to say to CEOs is that you can control the behavior of AI systems perfectly. And they always that that&#x27;s that&#x27;s a very provocative statement, right? Like they&#x27;re they read all the headlines, all the, you know, people have gotten into trouble and AI going kind of crazy. But that just means they didn&#x27;t build it right. And so really unlocking the special sauce that makes a company distinct through this utterly almost magical technology is what really drives me.</p>
+<p><strong>Chris Hutchins:</strong> That is that that&#x27;s quite an a tr a transition you you you you&#x27;ve made. it strikes me just listening to you for the last minute or two. I&#x27;m not hearing a lot of terms that I typically would expect to hear from a from a lawyer. It&#x27;s I think your I think your your career trajectory is fascinating to me. I mean you you mentioned w you know, work in the intelligence space.</p>
+<p><strong>Bennett Borden:</strong> Thank you.</p>
+<p><strong>Chris Hutchins:</strong> in really establishing data science practices and things like that. What are some of the things that you you learned there that helped really help you to think about how the technology can be be brought to bear in a in a in a way that&#x27;s really, really data supported and driven and and helping people to really understand the utility of of these tools and technologies. I mean all the buzzwords are just they&#x27;re just that unfortunately. I don&#x27;t think a lot of people really have a high level of understanding. Yeah I don&#x27;t think you can get it being a a hobbyist.</p>
+<p><strong>Bennett Borden:</strong> You know, I I think I have a somewhat unique perspective on data just because of how my career developed. I had no intention of being a data scientist. in fact, you know, in at university, I had kind of put together my own degree studying turning points in history. Like how do societies go about forming themselves and why do they have</p>
+<p><strong>Chris Hutchins:</strong> Yeah.</p>
+<p><strong>Bennett Borden:</strong> one form of government over another, how do they decide to go to war or have a revolution or respond to economic or ecological pressures? And specifically really focusing on technological revolutions, everything from the wheel to the saddle to gunpowder, right, all the way through to the second industrial revolution. And &#x27;cause each of those things had just tremendous impact on the societies that they affected.</p>
+<p><strong>Chris Hutchins:</strong> Right.</p>
+<p><strong>Bennett Borden:</strong> And so when I was approached by the agency to come work for them, this is the early nineties, right? So 1992. And they said, hey, we&#x27;re s we&#x27;re setting up this new kind of data analysis shop and we want you to come work with us. And I&#x27;m like, I&#x27;m not sure you got the right guy. Like I don&#x27;t really do data. I&#x27;m not particularly fond of math. I hate statistics. I failed calculus.</p>
+<p><strong>Chris Hutchins:</strong> Yeah.</p>
+<p><strong>Bennett Borden:</strong> and they&#x27;re like, Yeah, we know. but what we want you for is to understand movements in societies. And so because I had studied things like history and philosophy and economics and sociology and anthropology and and and I had a view that data is a reflection of human conduct. And so if you&#x27;ll remember in the early nineties, what was going on is the World Wide Web and email was just coming out of academia, cell phones were just coming on the market. And so we were we were creating a new kind of data that really didn&#x27;t exist in the world before, a very personalized data contrail that individuals were giving off. And the agency rightfully saw that that that</p>
+<p><strong>Chris Hutchins:</strong> Yeah.</p>
+<p><strong>Bennett Borden:</strong> Pondrail has only become more voluminous and more enriched of a different variety as time went by. And so what I was responsible for was helping take the incredible data talent of these people and look for signals. you know, who&#x27;s a good guy, who&#x27;s a bad guy, whatever that meant that particular time. Could we understand their behavior? Could we predict their behavior? And could we influence their behavior? Now, this is what every social media company, every cookie, every app, everybody does it now. But at the time it was pretty cool technology. But it&#x27;s because I came out of the kind of studying all the ologies, I&#x27;ve always felt that data.</p>
+<p><strong>Chris Hutchins:</strong> Right. It was certainly new.</p>
+<p><strong>Bennett Borden:</strong> is a reflection of humanity, like how we go about being humans. And so it&#x27;s it&#x27;s given me a very different perspective than someone who was raised tech or someone who was raised lawyer, right? It&#x27;s kind of the combination of those things that I think has been the unusual part of my career.</p>
+<p><strong>Chris Hutchins:</strong> Th that is amazing. I I never really would have imagined that you know they recruit the way that they they do. They clearly had a a good idea who you were and what you were all about. amazing.</p>
+<p><strong>Bennett Borden:</strong> they keep a pretty good eye on the universities and and who they might be interested in.</p>
+<p><strong>Chris Hutchins:</strong> Yeah, well it&#x27;s I I&#x27;m I&#x27;m I don&#x27;t know. It like I said, it&#x27;s it&#x27;s fascinating and I I&#x27;m I&#x27;m really kinda psyched that they found somebody like you &#x27;cause you know, th that gives you a perspective. I think s right now is pr pretty pretty well needed everywhere. And I know that there&#x27;s a lot of executive teams that are under a lot of pressure to to deal with this AI transformation and get it right. I I don&#x27;t I don&#x27;t know. if I&#x27;ve actually met a whole lot of people that really understand the differences between the different types of AI that we&#x27;re we&#x27;re dealing with. but you know you you kind of made a transfer transition to you know from the doing the data science thing and doing the law thing and you&#x27;re you&#x27;re doing some advising and things like that. But what are some of the things that motivated you to really go down the the pathway of starting to do some development in in building No, I I understand what you&#x27;re talking about in terms of the the the shift in the the I guess we call it the money model, going from billable hours to some other thing. but I I&#x27;d love to hear a little bit what what really drew you into the to d this space where you wanted to do some development as well.</p>
+<p><strong>Bennett Borden:</strong> You know, honestly, it was my frustration with constantly being the interpretive layer between the business, the tech, and the lawyers. Right. Because I found that you know, like what we do here at Clarion, we you know, we are AI advisors, like I said, but this AI strategy, like I love helping a company</p>
+<p><strong>Chris Hutchins:</strong> Okay.</p>
+<p><strong>Bennett Borden:</strong> take itself apart and figure out w what it&#x27;s really about and where to bring AI in. but the development is one of my favorite parts because it&#x27;s taking the years, sometimes decades or even centuries of experience and data that lies dark within the siloed areas of a company and finding artifacts of its</p>
+<p><strong>Chris Hutchins:</strong> Yeah.</p>
+<p><strong>Bennett Borden:</strong> speciality, right? Like what makes it truly unique and being able to harness those things to create true transformative solutions, right? And it&#x27;s interesting because the tech people are very talented, right? And they know how to build a function. and but they they aren&#x27;t necessarily trained in the risk side, right? Like on on d on identifying How this could go wrong, or or especially legally. and the lawyers are flummoxed because you know lawyers really, really like to have an one answer, right? That there&#x27;s they can point to a law or a regulation or a court opinion and then say, that&#x27;s the answer. We don&#x27;t live in that world with AI regulation right now. it is all over the place and it&#x27;s gonna remain very unsettled for years. And so</p>
+<p><strong>Chris Hutchins:</strong> Right.</p>
+<p><strong>Bennett Borden:</strong> Being able to communicate to a company that you can absolutely take advantage of AI properly, control it perfectly, and be defensible regardless of where regulation heads. and so that&#x27;s what really motivated me to create this little company this little strange animal that we are that are lawyers and also advisors and builders, because it brings together these disciplines that are so essential to make really great decisions about how to use AI.</p>
+<p><strong>Chris Hutchins:</strong> I I I love how you explain it. I know I&#x27;ve been thinking a lot recently about the the end to end solutions that are being designed and and deployed in different places. And you&#x27;re talking about some of the connective tissue in between major areas that people aren&#x27;t seeing and they don&#x27;t necessarily even know about it. It&#x27;s like the relationship of one particular data silo to the one next to it. you know, I I could see where th this is a really important asset to have available is is is people that really understand how to observe those things and how to put the the right controls in place. we have heard governance tossed around a lot, particularly since the beginning of the year. I it seems like I&#x27;m hearing it multiple times a day. I don&#x27;t I don&#x27;t know that everyone really understands what it is, but I&#x27;d love to hear your your how you would d define it. I mean what does it actually mean in re in reality to you?</p>
+<p><strong>Bennett Borden:</strong> So there&#x27;s there&#x27;s many different layers of governance, right? And and so if you think about all the way up to the board level, right, the board has a responsibility to derive sufficient information from management to guide the strategy of the company, to to know that the company&#x27;s in compliance, that risks are being understood and addressed, right? management is meant to carry out that strategy. And so it&#x27;s beyond policies, like we the very best kind of form of governance that I have found in in larger institutions is like an AI working group or an AI committee. and the reason that for that is be is because AI doesn&#x27;t naturally live in our current structure of the C suite, right? If it&#x27;s if it lives in tech, it&#x27;s too to tech forward. If it lives in compliance, it&#x27;s way it&#x27;s this massive breaking mechanism. if it lives with a business, it it has a potential of being really transformative. But you have to have all of those perspectives. And so creating a AI working group, a committee, a steering committee that&#x27;s properly represented from all of those perspectives, because all of those perspectives are valid. Where we find the problem is that when that group is unbalanced. So if you&#x27;ve got it led by the business, sometimes the risk and the tech side are less represented. If it&#x27;s compliance led, then all you&#x27;re talking is about risk and not opportunity. And so it&#x27;s really important to get that group right and who sits on it and how it does its business. and it&#x27;s important to have policies, right? Like we will do this, we won&#x27;t do that. This is kind of our ethos around how we use AI. But all of that is just table stakes, right? It&#x27;s just the beginning layer because what you really need to do is have a way to understand and evaluate the risks and the benefits of a particular AI use case. And so this can be anything from enterprise wide, so copilot, chat GPT, Claude, whatever, right? how do you use that? How do you not use that? and that&#x27;s really great. Like using these broad enterprise level tools are good. You will get really decent efficiency gains, 20, 30% across all kinds of workflows. The problem is that those tools are available to everybody. And so you&#x27;ll get this first mover advantage, but basically then everybody catches up and when everybody&#x27;s special, nobody&#x27;s special. Right. And so what really</p>
+<p><strong>Chris Hutchins:</strong> Right. That&#x27;s a</p>
+<p><strong>Bennett Borden:</strong> is critical to taking advantage of this almost magical technology is to realize that just like we figured out in practicing law, there are certain tasks that are better done by AI and there are tasks that are essentially human. And so I say companies do stuff, right? And they do stuff in a series of steps. And Those steps are made up of tasks and a workflow. And so figuring out which one is better to my AI, building a point solution, which is very easy to do, put the controls around it, prove that it&#x27;s reasonable and that it&#x27;s acting the way it should, handle the handoffs between the human and the AI, right? And all of a sudden you are we call it supersuiting your company. And so we use this analogy all the time, right? Think the Iron Man, not the Terminator, right? So you&#x27;re not gonna unplug a person and plug in an AI solution and it take over all the the work. That&#x27;s that&#x27;s just really not typically how it works. What you&#x27;re doing is taking people who you have spent years training their experience, the experience of the company and that&#x27;s hidden within the people, but also within the data. And you&#x27;re gathering that together and building these point solutions so that all of a sudden everybody&#x27;s got an Iron Man suit or a Superman cape, right? Like and so if you can imagine augmenting and extending the natural acumen that you&#x27;ve developed in your company, wherever that acumen lies, that is how you truly transform. And that gets us back to the governance, right? Because you have to be able to understand the risks that you&#x27;re cr introducing by using AI in a particular situation. How do you reasonably mitigate those risks? How do you prove it? And it&#x27;s that proving layer that will keep you safe and defensible and agile, regardless of where regulation ends up.</p>
+<p><strong>Chris Hutchins:</strong> This is a a challenge that that I&#x27;ve I&#x27;ve seen people struggling with and it&#x27;s it comes down to you know how do you get a common understanding from all the disciplines that you need to to have in place to d to do do this governance activity. people have committed their entire careers to their professions, to this the areas that they&#x27;re they own, but it&#x27;s not necessarily a natural leaning for for people to want to get involved so heavily in in data now and in in AI technology, it&#x27;s kind of complicated. I mean I imagine that&#x27;s probably a r one of the challenges that you you helped to solve, right?</p>
+<p><strong>Bennett Borden:</strong> Yes, and we always start the same way. Like we meet with the board and or the kind of C suite and get everybody on the same page. What do we mean by AI? What does AI governance look like? What regulatory rubric are or industry are you in? What controls already exist? Like it it surprises me so many times when I talk to management and they&#x27;ll say, Man, I feel such pressure to do something with AI. And but I I just don&#x27;t know how to think about it. And I&#x27;m like, of course you do. You run a company and that company is in an industry, and the industry has laws, regulations, industry best practices, whatever it is, and you already have controls in place to monitor those things so that you&#x27;re in compliance. So you&#x27;re not inventing governance out of whole cloth, right? You&#x27;re the questions are if I introduce AI into this particular workflow, what how does my risk profile change? What new risks am I introducing? Can I reasonably mitigate those risks? Which of course you can. AI being a technological solution, it means it can be technologically controlled. And then the the part that everybody leaves out is while you&#x27;re building these systems. build in compliance by design so that like when we build a point solution, we build in sensors for lack of a better term that measure the stuff that matters and spit out metrics to prove that you&#x27;re following the law or the rules or industry practices or the ethos of the company, whatever it is. And so at any moment you can prove to courts, to regulators, to the court of public opinion, that these solutions are working precisely as you designed them to.</p>
+<p><strong>Chris Hutchins:</strong> Right. The the the the the tendency that I&#x27;ve that I&#x27;ve noticed is that I I&#x27;ve worked primarily in healthcare for the majority of my career, but governance has been more of a an academic kind of exercise that people that you know usually get approached with long before there&#x27;s something to be governed, they get they our eyes gloss over and then you know, people just don&#x27;t wanna be involved. And but now we&#x27;re in a very different place and then I I think what you&#x27;re doing is incredibly important. one of the things that that you&#x27;ve mentioned a couple of times now is, you know, the the defensibility aspect of it. you know, I think that&#x27;s an important part of the the work that that you&#x27;re doing. Can you talk a little bit about w you know what that looks like in practice to you?</p>
+<p><strong>Bennett Borden:</strong> So the the thing to understand is that this technology is so advanced and is advancing so quickly that regulation and law just simply cannot keep up. Right. But when the pace of technological change is so fast, we there&#x27;s just almost no hope. And so y you come up with these broad based principles, you know, fair, accurate, reliable, transparent, you know, but it&#x27;s really difficult to get beyond that abstraction layer down to specifically how do I put that into practice, right? And so the the idea of of governance, I try to help leaders understand that it&#x27;s like when you&#x27;re driving down a road, like I live in Northern Utah and there&#x27;s lots of mountainous round w windy roads with cliff drop up drop-offs and all those things. And it&#x27;s the governance that actually makes you allows you to go faster and move more nimbly. If there weren&#x27;t lines on the road, if there weren&#x27;t warning curve ahead, if there weren&#x27;t speed limits, if there weren&#x27;t guardrails, you would actually move slower through that environment.</p>
+<p><strong>Chris Hutchins:</strong> Right.</p>
+<p><strong>Bennett Borden:</strong> But with the correct governance pieces in place, it actually protects your momentum. It allows you to move faster instead of jerking and starting and what&#x27;s around this corner and I gotta stop and look at it, right? And so if you can see governance principles, especially down to the actual application, like how I&#x27;m using, building, deploying AI, it speeds up innovation. It speeds up your transformation. And governance has always been like a ugh governance. Right? Like nobody wants to hear about, you know Going to another governance training. But this is where it really matters because the law is very unsettled. But luckily, there is this principle in the law that l all our Western society&#x27;s legal system is based upon is this idea of reasonableness. It&#x27;s a common law principle from the 1700s that basically the reasonable person standard, the reasonable company standard that says. What would a reasonable company do based on the information they had at the time? And what we see coming out of the federal government in the US, from like the EUA Act, from state government legislation, is this idea that what that means is When you&#x27;re using AI, what reasonably foreseeable risks did you identify? What did you do to reasonably mitigate those risks? And how can you prove it? And you can use the those three questions on every whether it&#x27;s a point solution, an enterprise solution, whether it&#x27;s an internal facing or external facing, if you fall back on this idea of reasonableness, you can build AI multi-agent systems with orchestration layers. Always coming back to Did I act reasonably? And that will always keep you out of trouble with courts, public opinion, the regulators, whatever it is.</p>
+<p><strong>Chris Hutchins:</strong> you know, and I know I know there&#x27;s a lot of push for efficiency and you know, there&#x27;s there&#x27;s definitely some massive opportunities there. But one of the things that caught my attention is is something that you know, it&#x27;s it&#x27;s been kind of an important part of my own career path. And it&#x27;s really because of the of the ability to try to make things better for people. you&#x27;ve done a significant amount of work in in things that are more public interest to human impact related. some of your most important work has focused on issues that I care about. I&#x27;m I&#x27;m sure all the listeners care about. Talk about child safety, suicide prevention, public policy. talk about some of the work that you&#x27;re you&#x27;re doing in that space. &#x27;Cause I think it that to me that&#x27;s a really unique layer that that that you ha that you bring to the table. We we&#x27;re talking about technology and Law and this is so many different parts of the society around us. But this is this is a whole different thing. I&#x27;d love to hear about this.</p>
+<p><strong>Bennett Borden:</strong> Thanks, Chris. It&#x27;s it&#x27;s one of my passions. and it&#x27;s one of the things that Claire works on quite a bit because this really is the world&#x27;s most transformative and disruptive technology that we&#x27;ve literally ever experienced. And there&#x27;s not an area of our society that it&#x27;s not going to impact, and we are just at the very beginning of what that impact is going to be. But it has tremendous potential. in education, in life sciences, in pharmaceuticals, in access to justice. And you know, for the first time in in human history, we have the ability to place world class education at the hands of every child on the planet with AI. And th but we&#x27;ve got to get that right. And so have done we do quite a lot of work with State and local governments with K-312 academic institutions, higher ed, lots of access to justice. How do you bring AI to make courts more efficient, to make the justice system more available, but especially around child safety? We are you know within the next few years. 75% of the workforce is going to be millennials or younger, people who have grown up in this very technological screen-driven attention economy. and that has had some really negative effects. it is not a coincidence that the world&#x27;s most connected generations are also the loneliness and have the largest mental health crisis. and so working around public policy on how to make this technology different is incredibly important. and the the the piece that&#x27;s missing, and this is one thing that we work on a lot around the world with consortia and responsible AI groups, everybody kind of agrees on these broad principles. If you look at the NIST AI risk management framework or the EU AI Act or some of the state laws. these ideas of be fair, accurate, reliable, transparent, explainable, great. But what does that mean? and what does that mean in my specific industry? You know, fair or accurate means something very different in a credit underwriting algorithm, or you&#x27;re measuring risk to what I&#x27;m going to charge somebody. to compare that to a social media post. Like what is fair or accurate or not harmful? What does that mean? And how, more importantly, do I mathematically measure that? There&#x27;s not agreement in the world about that next layer down. And so one of the things that we are heavily involved with is research around how are different ways to design AI based systems and measure and monitor their behavior, what&#x27;s most effective and what is it I&#x27;m measuring and how can I do it mathematically, right? Because you can&#x27;t have a person looking at everything that we create. And so that&#x27;s going to be the next real breakthrough in AI is how do we monitor and test its behavior so that we know that it is acting precisely how we want it to.</p>
+<p><strong>Chris Hutchins:</strong> Right. Yeah, this is a this is such a i important topic and I I don&#x27;t know that the generally speaking, people are thinking this far ahead and and I I I love to I love what you&#x27;re doing, how you&#x27;re connecting it to you know, you talk about the stakes of you know for human beings. this is this goes way beyond, you know, just a technology conversation and it&#x27;s really we&#x27;re not trying to put solutions in there to take care of a one part of the world. I mean this is this is a all of humanity kind of thing that we we need to kind of coordinate. And I&#x27;d I&#x27;d love to hear just your thoughts around how you see things evolving f from the from a global perspective, since you you really have a lot of a lot of background to in and you I&#x27;m sure have studied this extensively. But where do you where do you see things evolving and and how do we start to see the kinda cohesive or collaborative approach to some of the some of these important issues. &#x27;Cause I I I think about the ethical c pieces of it. People define ethical differently, unfortunately.</p>
+<p><strong>Bennett Borden:</strong> Yes, and it&#x27;s been one of the the real blessings of my life to be able to have worked in all sorts of situations in industry in the federal government in the US with people in the EU over the EU AI Act in many different countries, AI ministries that are developing. And the nice thing is that everybody is focused on this problem, right? Everybody is is recognizes the power of this technology for both good and ill. And just like every piece of technology, you&#x27;re going to have people who are fighting to use it for good, and you&#x27;re going to have people fighting to use it for evil. And like always that that that tension is going to be there. But fortunately, I&#x27;m a huge AI optimist. Like I really do believe that the benefits to health education, how we educate people, all of these things are are going to be more efficient, more accessible, more available. it&#x27;s a wonderful democratizing technology. and so I do see some of the greatest minds and hearts on the planet working To try to define and try to understand how to control the behavior of this technology. It will be interesting. There will always be this battle between good and evil. There always has been, right? And so watching how countries, nation-states, non-nation-state actors are using this technology and defending against the evil uses of this technology. But I think It will make Government more efficient, all of government services more efficient, it will make like we said, education, healthcare, financial services, employment, there&#x27;s just so much potential here. I do see it unfolding that there are going to be leaders, business industry, NGO leaders who are leading from a moral perspective, that we can then quantify and translate down to the actual place where the AI touches the world. You know, one of the things that I hear all the time from business leaders is, this AI thing is just a big black box. I don&#x27;t understand if people who make it don&#x27;t understand how it works. Well, yeah, but I don&#x27;t know how my washing machine works, but I, you know, I know how to make my clothes clean. But you can always</p>
+<p><strong>Chris Hutchins:</strong> Great. Fair point.</p>
+<p><strong>Bennett Borden:</strong> Always measure where AI touches the world. And so if you think and that&#x27;s really where it matters. That&#x27;s where the the goodness happens or where you get in trouble. And so, like, pick an example like HR Tech. so a lot of companies are using HR platforms that sort through resumes and decide these people should be interviewed and these people shouldn&#x27;t. Well, I can take that.</p>
+<p><strong>Chris Hutchins:</strong> Yes.</p>
+<p><strong>Bennett Borden:</strong> pile of yeses and pile of no&#x27;s and I can compare them and look for discriminatory risk or am I missing something and you know are there unicorns out there that don&#x27;t fit a pattern. And so no matter what your application is, you can always measure where AI touches the world. And there&#x27;s usually laws or regulations or guidance about that. And that&#x27;s where you focus your governance layer. It&#x27;s where you focus your monitoring and testing And that&#x27;s how you kind of stay out of trouble. And so that&#x27;s how I see this kind of unfolding in the world, is that the responsible use of AI, especially in government and in business, in human rights and civil rights, is is that is where you&#x27;re going to see how this developed.</p>
+<p><strong>Chris Hutchins:</strong> So if we can kind of take another swing at you know what what we should be expecting in the future. if first what are some of the things that that that you see that organizations might be missing right now that they need to be thinking differently about? &#x27;Cause I I I think we get we see a headline, we respond to that. sometimes it&#x27;s i i it&#x27;s the right thing to focus on, sometimes it&#x27;s just not. What what are some of the things that you&#x27;re seeing that that people need to be aware of and and start to focus on as they&#x27;re leading their organizations?</p>
+<p><strong>Bennett Borden:</strong> I see a lot of organizations kind of stuck at the enterprise level tools, right? Like how do we use open AI, how do we use Nthropic? How do we use Copilot? That&#x27;s great. You do need acceptable use policies, do this, don&#x27;t do that. Yep, those are but those are just table stakes questions, right? it&#x27;s thinking one layer down. What is it that truly distinguishes you as a company? What is it that sets you apart from your peers? Where are the artifacts of that that I can access? Because they reside in two places. They reside in your data. So you you know, everything from email and documents and PowerPoints or research or you know, wherever they&#x27;re at, but they&#x27;re also in the heads of your people. Now the really cool thing is that. AI, especially agentic AI, can capture both of those things. So what we tell companies is that the best use cases for AI are where a task is data centric, so it&#x27;s it&#x27;s based on data information, it is highly repetitive, you do it all the time, and you&#x27;re applying the same kind of judgments to it over and over and over again. Well, you can capture that data. and you can capture the judgments e whether in written policies or programs or whether they&#x27;re in the heads of people. So there&#x27;s this fantastic concept that Anthropic developed called constitutional AI, right? And it basically the idea is that you take an AI system that is this glob of all of human knowledge, and you contain it within a constitution. And so you give it a an identity. I I talk to technologists all the time. I&#x27;m like, you are not programming these systems, you&#x27;re not coding these systems, you&#x27;re forming the psychology of these systems. And so giving it a purpose. You are a chatbot that is going to interact with customers about this product, right? Give it it it it hones its focus. into on this is what I am, right? It&#x27;s prime directive. And then you you use very simple code. These are all just plain language prompts. This is how you are to act, right? These are the constitutional laws by which you will behave. Things like accuracy, compassion, empathy, whatever they are. And sometimes those laws are driven, those the laws you give it are driven by actual law.</p>
+<p><strong>Chris Hutchins:</strong> Right.</p>
+<p><strong>Bennett Borden:</strong> Like especially healthcare is one of the most regulated industries, right? And so i if you&#x27;re using an agent to do a thing and there&#x27;s rules around that thing, well you program those rules in. but then there&#x27;s this that&#x27;s where you can also put the judgment, the acumen into these bots, right? And so And then you know the quality control is you put scoring mechanisms around each of those. And those scoring mechanisms are related to the metrics we talked about that you need to prove that it&#x27;s defensibility. so what I see happening in the future is us finally getting beyond the question of should we use AI or should we shouldn&#x27;t? Of of course you should. 99% of the times AI augmenting humans is the way this is going to to unfold in in the future. Learning how to contain that acumen, take advantage of that acumen, and then using it to augment and extend it, that is what good governance is, but it&#x27;s good operationalization of that governance to watch your company put on a big old supersuit and be a next generation company.</p>
+<p><strong>Chris Hutchins:</strong> I I love the the the Iron Man analogy that you use. Are you gonna like build a platform that that will you know just create a a suit like that that I can put on? &#x27;Cause I I I&#x27;d like to be the first.</p>
+<p><strong>Bennett Borden:</strong> We do it all the time. we just basically take you and expand what you&#x27;re able to do. it&#x27;s really actually one of the most satisfying things that we do as a company is to watch the vision of a company play out. What The one of the most important things we say to companies all the time is that when you think about AI, it&#x27;s only 20% of that problem is a technological problem, right? Like where are you going to apply it? Are you going to get a technology control it? 80% of it is a psychological or sociological problem. You&#x27;ve got people in your company who feel all kinds of things about AI. A lot of it, some of them are, you know, at the right side of the bell curve. They&#x27;re just like rearing to go. This is fantastic. You&#x27;ve got the People on the other side who are scared to death that this is just replacing me, right? But the truth of it is, everybody wants to have a supersuit, right? And so the the communication and the the training and the change management that you do is the really critical piece to making the technology work in combination with the humanity.</p>
+<p><strong>Chris Hutchins:</strong> Yeah, that&#x27;s a that&#x27;s a great a great point, isn&#x27;t it? And I I I&#x27;ve been talking to people that do coaching and other things a lot in the last few months and you know, th there is a common theme that that I&#x27;m hearing and you know, I just I think it&#x27;s just an important factor f for for leaders just to really take a look at how you&#x27;re how you&#x27;re doing with the communication end of it and how but how well are you equipping that first layer of supervision. out on the front lines of the organization, because oftentimes it&#x27;s these frontline people who are not feeling it. They are they they may have f unspoken fears or whatever. The conversations need to be happening. And I think we&#x27;ve we&#x27;ve not done a great job across every industry in terms of cr creating the right career ladders that allow someone to be an individual contributor and and and are a rock star at several levels in the in their career. but oftentimes the only way to retain and promote somebody is to put in a an oversight role. And not every organization does a great job, you know, training those people and teaching them about creating psychological safety, for example. but s so many other really important things.</p>
+<p><strong>Bennett Borden:</strong> Yeah, and Yeah. Yeah. And you know what&#x27;s so interesting, Chris, is that so when we start to work with a company, we do what we call this discovery phase where we go in and we talk to the leaders, the leaders of functional areas, but then talk to the middle management and the frontline people. Because what we&#x27;re trying to find are where are your pain points? Where are your choke points? Right. But then we always ask this magic wand question, right? If you could poof into existence tomorrow. some new capability or some new insight, what would that be? Because it&#x27;s it&#x27;s the middle and frontline people who deal with this the process, whatever the process is, every day. They know where the problems are and they almost always know what the solutions could be, right? And so finding those pain points or clog points and using AI to solve the pain</p>
+<p><strong>Chris Hutchins:</strong> Right.</p>
+<p><strong>Bennett Borden:</strong> or to unclog the decision making process or portfol or process workflow, whatever it is, right? That&#x27;s where you just start to see this this machine that is a company. A company is just a it&#x27;s a bunch of cogs working together. And you see the friction start to go away. You see the interaction start to increase. You learn across departments where you&#x27;ve got great understanding in one place and not another where you can spread that around. and all of a sudden as a management layer, you&#x27;re seeing much more deeply into the company and much more information and insight where you can guide strategically where you want your company to go.</p>
+<p><strong>Chris Hutchins:</strong> I I I love that. It is such a it&#x27;s a key point that we we just need to make sure people are g are hearing it enough. So I mean I really appre appreciate how you address that. As we kind of wrap, listeners could re will remember only one thing from our conversation today. What what do you hope it is?</p>
+<p><strong>Bennett Borden:</strong> Is absolutely think Iron Man, not the Terminator, right? So how is it do we take humans, the acumen, the compassion, the moral compass, the creative spark of humans, and and that&#x27;s what we want to magnify, right? So many people are worried about the replacement of people with AI. Yeah, there&#x27;s thank goodness the drudgery tasks are gonna go away. They just simply are. AI&#x27;s better at it. but that&#x27;s great. It it frees up the Essentially human characteristics of what we bring to things. I work with a lot of creatives, like even in the fine arts, right? And they were some of the earliest concerns, like, well, if somebody can put in a prompt and get a picture, they don&#x27;t need a graphic designer. I&#x27;m like, but they do because what they&#x27;re hiring is not. What they&#x27;re hiring is your creativity. You were born blessed with this creative talent. And it&#x27;s not just can you be replaced? Right? But there are some amazing artists out there who have taken AI as an additional tool in their toolbox, like a new brush or a new musical capability and creating entirely new kinds of art.</p>
+<p><strong>Chris Hutchins:</strong> Yeah.</p>
+<p><strong>Bennett Borden:</strong> entirely new to kinds of creativity. And there are always, we&#x27;re already seeing this kind of pendulum swing back to I want a human-made thing, right? I I appreciate even more that which is truly human. And so what I want to leave is this message of great hope. There are things that we can do today That we could have never ever done before. And tomorrow is going to be even more new things. And so it is this combination of things that are beautifully, uniquely human that we can make flourish by this utterly magical transformative technology.</p>
+<p><strong>Chris Hutchins:</strong> Beautifully said. I&#x27;ll speak for myself. I I&#x27;m inspired. it&#x27;s really it&#x27;s tremendous work that you&#x27;re doing. And I you know, clearly there&#x27;s a a passion for it and a passion for people. I I really love that. It it occurs to me, having heard our conversation today, that there&#x27;s there&#x27;s probably a fair number of people out there that th that would love to know how to get how to get a hold of you and a little more about your work and connect with you.</p>
+<p><strong>Bennett Borden:</strong> Hate you. Ha ha ha.</p>
+<p><strong>Chris Hutchins:</strong> well tell tell us how they can find you and what what what modes do you like to work with?</p>
+<p><strong>Bennett Borden:</strong> So our website, Clarionai dot com. you can reach out to through stayer, find me on LinkedIn, Bennett Borden. my email address is Bennett.borden at clarionai law dot com. I love having conversations with people. I love just answering questions. It you know, if it leads to a project together, God bless. but if but really what I want more than anything else is to help people understand. And and whatever they cherish and believe in that leads to human flourishing, that&#x27;s what we want to forward.</p>
+<p><strong>Chris Hutchins:</strong> That&#x27;s fantastic. Well for for our listeners, d definitely look in the in the show notes. We&#x27;ll make sure that you have all of the information that you need to be able to reach out to to Bennett and his team. Bennett, this has been fantastic. I I really have appreciated your your perspectives and I learned a lot. So thank you so much for for sharing your your your stories with with me today and for joining me on the single room.</p>
+<p><strong>Bennett Borden:</strong> Thank you, Chris. It&#x27;s it&#x27;s been a true delight to be here.</p>
+</div>
+  </details>
+</section>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-cta">
+        <h2>The AI Health Pulse</h2>
+        <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+        <div class="newsletter-form-embed">
+          <iframe src="https://subscribe-forms.beehiiv.com/781ceb5b-1fd7-488a-8914-3abb15c9ef58" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" loading="lazy" title="Subscribe to The AI Health Pulse"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="/privacy-policy" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+</body>
+</html>
