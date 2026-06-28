@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+  <link rel="stylesheet" href="../css/style.css?v=20260628shorts2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,6 +63,9 @@
   "timeRequired": "PT43M"
 }
 </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/"}, {"@type": "ListItem", "position": 2, "name": "Episodes", "item": "https://signalroompodcast.com/episodes"}, {"@type": "ListItem", "position": 3, "name": "Strengthen your AI Projects in 2026. Privacy and AI Governance Insights", "item": "https://signalroompodcast.com/episodes/ai-shutdown-governance-privacy"}]}
+  </script>
 </head>
 <body>
   <nav class="nav" id="navbar">
@@ -176,6 +179,22 @@
         </div>
         
 <div class="episode-sidebar">
+<div class="sidebar-card episode-shorts-card" aria-labelledby="andre-samokish-episode-shorts-title">
+<h4 id="andre-samokish-episode-shorts-title">Andre Samokish Shorts</h4>
+<p>Short clips featuring Andre Samokish from this Signal Room episode.</p>
+<div class="episode-shorts-player">
+<iframe title="Andre Samokish Shorts reel" src="https://www.youtube-nocookie.com/embed/4FJhnWF1nH8?autoplay=1&amp;loop=1&amp;playlist=4FJhnWF1nH8,lZbj85Gkp0k,zWrGzzmKNs4,1_aPEU2igu4,fFBdCzlEmck,FB5xCuB_5Vw&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="4FJhnWF1nH8,lZbj85Gkp0k,zWrGzzmKNs4,1_aPEU2igu4,fFBdCzlEmck,FB5xCuB_5Vw"></iframe>
+</div>
+<div class="episode-shorts-list" aria-label="Shorts featuring Andre Samokish">
+<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/4FJhnWF1nH8" target="_blank" rel="noopener" data-video-id="4FJhnWF1nH8" data-short-title="How to Master AI Governance in 5 Minutes"><img src="https://img.youtube.com/vi/4FJhnWF1nH8/mqdefault.jpg" alt="" loading="lazy"><span>How to Master AI Governance in 5 Minutes</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/lZbj85Gkp0k" target="_blank" rel="noopener" data-video-id="lZbj85Gkp0k" data-short-title="Privacy vs. AI Governance"><img src="https://img.youtube.com/vi/lZbj85Gkp0k/mqdefault.jpg" alt="" loading="lazy"><span>Privacy vs. AI Governance</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/zWrGzzmKNs4" target="_blank" rel="noopener" data-video-id="zWrGzzmKNs4" data-short-title="50 STATES, 50 TRAPS #ai #shorts"><img src="https://img.youtube.com/vi/zWrGzzmKNs4/mqdefault.jpg" alt="" loading="lazy"><span>50 STATES, 50 TRAPS #ai #shorts</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/1_aPEU2igu4" target="_blank" rel="noopener" data-video-id="1_aPEU2igu4" data-short-title="AI Healthcare Liability Loophole Exposed"><img src="https://img.youtube.com/vi/1_aPEU2igu4/mqdefault.jpg" alt="" loading="lazy"><span>AI Healthcare Liability Loophole Exposed</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/fFBdCzlEmck" target="_blank" rel="noopener" data-video-id="fFBdCzlEmck" data-short-title="The Speed Trap: Why Governance is an Enabler"><img src="https://img.youtube.com/vi/fFBdCzlEmck/mqdefault.jpg" alt="" loading="lazy"><span>The Speed Trap: Why Governance is an Enabler</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/FB5xCuB_5Vw" target="_blank" rel="noopener" data-video-id="FB5xCuB_5Vw" data-short-title="AI Distrust: Beyond Skynet Fears"><img src="https://img.youtube.com/vi/FB5xCuB_5Vw/mqdefault.jpg" alt="" loading="lazy"><span>AI Distrust: Beyond Skynet Fears</span></a>
+</div>
+<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
+</div>
 <div class="sidebar-card">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -313,5 +332,25 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
+<script>
+  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
+    const player = card.querySelector('.episode-shorts-player iframe');
+    const items = card.querySelectorAll('.episode-shorts-item');
+    if (!player || !items.length) return;
+    items.forEach((item) => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        const videoId = item.dataset.videoId;
+        if (!videoId) return;
+        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
+        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.title = item.dataset.shortTitle || player.title;
+        items.forEach((link) => link.classList.remove('is-active'));
+        item.classList.add('is-active');
+      });
+    });
+  });
+</script>
 </body>
 </html>

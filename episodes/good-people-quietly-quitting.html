@@ -95,7 +95,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+  <link rel="stylesheet" href="../css/style.css?v=20260628shorts2">
 </head>
 <body>
   <nav class="nav" id="navbar">
@@ -207,6 +207,19 @@
         </div>
         
 <div class="episode-sidebar">
+<div class="sidebar-card episode-shorts-card" aria-labelledby="carly-caminiti-episode-shorts-title">
+<h4 id="carly-caminiti-episode-shorts-title">Carly Caminiti Shorts</h4>
+<p>Short clips featuring Carly Caminiti from this Signal Room episode.</p>
+<div class="episode-shorts-player">
+<iframe title="Carly Caminiti Shorts reel" src="https://www.youtube-nocookie.com/embed/aygmE6lZ0Ys?autoplay=1&amp;loop=1&amp;playlist=aygmE6lZ0Ys,ouS8xPb4qSU,NiJIfx7u6Pc&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="aygmE6lZ0Ys,ouS8xPb4qSU,NiJIfx7u6Pc"></iframe>
+</div>
+<div class="episode-shorts-list" aria-label="Shorts featuring Carly Caminiti">
+<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/aygmE6lZ0Ys" target="_blank" rel="noopener" data-video-id="aygmE6lZ0Ys" data-short-title="TOXIC Boss and TOXIC Workplace"><img src="https://img.youtube.com/vi/aygmE6lZ0Ys/mqdefault.jpg" alt="" loading="lazy"><span>TOXIC Boss and TOXIC Workplace</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/ouS8xPb4qSU" target="_blank" rel="noopener" data-video-id="ouS8xPb4qSU" data-short-title="Why Your Promotion is Actually a Trap #impostersyndrome"><img src="https://img.youtube.com/vi/ouS8xPb4qSU/mqdefault.jpg" alt="" loading="lazy"><span>Why Your Promotion is Actually a Trap #impostersyndrome</span></a>
+<a class="episode-shorts-item" href="https://www.youtube.com/shorts/NiJIfx7u6Pc" target="_blank" rel="noopener" data-video-id="NiJIfx7u6Pc" data-short-title="Burnout: A Workplace Solution"><img src="https://img.youtube.com/vi/NiJIfx7u6Pc/mqdefault.jpg" alt="" loading="lazy"><span>Burnout: A Workplace Solution</span></a>
+</div>
+<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
+</div>
 <div class="sidebar-card" id="guest-section">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -341,5 +354,25 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
+<script>
+  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
+    const player = card.querySelector('.episode-shorts-player iframe');
+    const items = card.querySelectorAll('.episode-shorts-item');
+    if (!player || !items.length) return;
+    items.forEach((item) => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        const videoId = item.dataset.videoId;
+        if (!videoId) return;
+        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
+        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.title = item.dataset.shortTitle || player.title;
+        items.forEach((link) => link.classList.remove('is-active'));
+        item.classList.add('is-active');
+      });
+    });
+  });
+</script>
 </body>
 </html>

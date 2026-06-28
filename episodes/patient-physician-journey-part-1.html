@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+  <link rel="stylesheet" href="../css/style.css?v=20260628shorts2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,6 +63,9 @@
   "timeRequired": "PT40M"
 }
 </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/"}, {"@type": "ListItem", "position": 2, "name": "Episodes", "item": "https://signalroompodcast.com/episodes"}, {"@type": "ListItem", "position": 3, "name": "Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT", "item": "https://signalroompodcast.com/episodes/patient-physician-journey-part-1"}]}
+  </script>
 </head>
 <body>
   <nav class="nav" id="navbar">
@@ -173,6 +176,17 @@
         </div>
         
 <div class="episode-sidebar">
+<div class="sidebar-card episode-shorts-card" aria-labelledby="dr-barry-chaiken-episode-shorts-title">
+<h4 id="dr-barry-chaiken-episode-shorts-title">Dr. Barry Chaiken Shorts</h4>
+<p>Short clips featuring Dr. Barry Chaiken from this Signal Room episode.</p>
+<div class="episode-shorts-player">
+<iframe title="Dr. Barry Chaiken Shorts reel" src="https://www.youtube-nocookie.com/embed/Tc4Rt5bVUZk?autoplay=1&amp;loop=1&amp;playlist=Tc4Rt5bVUZk&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="Tc4Rt5bVUZk"></iframe>
+</div>
+<div class="episode-shorts-list" aria-label="Shorts featuring Dr. Barry Chaiken">
+<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/Tc4Rt5bVUZk" target="_blank" rel="noopener" data-video-id="Tc4Rt5bVUZk" data-short-title="97% Accurate?! This AI Just Replaced the Scribe"><img src="https://img.youtube.com/vi/Tc4Rt5bVUZk/mqdefault.jpg" alt="" loading="lazy"><span>97% Accurate?! This AI Just Replaced the Scribe</span></a>
+</div>
+<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
+</div>
 <div class="sidebar-card" id="guest-section">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -289,5 +303,25 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
+<script>
+  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
+    const player = card.querySelector('.episode-shorts-player iframe');
+    const items = card.querySelectorAll('.episode-shorts-item');
+    if (!player || !items.length) return;
+    items.forEach((item) => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        const videoId = item.dataset.videoId;
+        if (!videoId) return;
+        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
+        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.title = item.dataset.shortTitle || player.title;
+        items.forEach((link) => link.classList.remove('is-active'));
+        item.classList.add('is-active');
+      });
+    });
+  });
+</script>
 </body>
 </html>

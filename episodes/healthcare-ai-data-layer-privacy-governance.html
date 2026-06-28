@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+  <link rel="stylesheet" href="../css/style.css?v=20260628shorts3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,6 +63,9 @@
   "timeRequired": "PT1H2M"
 }
 </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/"}, {"@type": "ListItem", "position": 2, "name": "Episodes", "item": "https://signalroompodcast.com/episodes"}, {"@type": "ListItem", "position": 3, "name": "Healthcare AI Fails at the Data Layer: Privacy, Governance & Trust | Sid Dutta", "item": "https://signalroompodcast.com/episodes/healthcare-ai-data-layer-privacy-governance"}]}
+  </script>
 </head>
 <body>
   <nav class="nav" id="navbar">
@@ -186,6 +189,17 @@
         </div>
 
 <div class="episode-sidebar">
+<div class="sidebar-card episode-shorts-card" aria-labelledby="sid-dutta-episode-shorts-title">
+<h4 id="sid-dutta-episode-shorts-title">Sid Dutta Shorts</h4>
+<p>Short clips featuring Sid Dutta from this Signal Room episode.</p>
+<div class="episode-shorts-player">
+<iframe title="Sid Dutta Shorts reel" src="https://www.youtube-nocookie.com/embed/G6ChBbgV4xY?autoplay=1&amp;loop=1&amp;playlist=G6ChBbgV4xY&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="G6ChBbgV4xY"></iframe>
+</div>
+<div class="episode-shorts-list" aria-label="Shorts featuring Sid Dutta">
+<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/G6ChBbgV4xY" target="_blank" rel="noopener" data-video-id="G6ChBbgV4xY" data-short-title="The Biggest Data Gap That Breaks Healthcare AI"><img src="https://img.youtube.com/vi/G6ChBbgV4xY/mqdefault.jpg" alt="" loading="lazy"><span>The Biggest Data Gap That Breaks Healthcare AI</span></a>
+</div>
+<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
+</div>
 <div class="sidebar-card">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -344,5 +358,25 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
+<script>
+  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
+    const player = card.querySelector('.episode-shorts-player iframe');
+    const items = card.querySelectorAll('.episode-shorts-item');
+    if (!player || !items.length) return;
+    items.forEach((item) => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        const videoId = item.dataset.videoId;
+        if (!videoId) return;
+        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
+        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.title = item.dataset.shortTitle || player.title;
+        items.forEach((link) => link.classList.remove('is-active'));
+        item.classList.add('is-active');
+      });
+    });
+  });
+</script>
 </body>
 </html>
