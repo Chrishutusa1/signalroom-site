@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/episodes/ai-security-risk-governance-gap">
+  <title>AI Security Risk: The Massive Mistake Companies Make | Aaron Puckett</title>
+  <meta name="description" content="MSP/MSSP exec Aaron Puckett on the AI security risk most companies miss: governing AI on infrastructure never built for it, shadow AI and PHI in public LLMs, and SOC 2 compliance without margin pain.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI Security Risk: The Massive Mistake Companies Make | Aaron Puckett">
+  <meta property="og:description" content="MSP/MSSP executive Aaron Puckett on the AI security risk no one owns — governing AI on infrastructure that was never built for it, shadow AI with PHI, and SOC 2 compliance without margin pain.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/episodes/ai-security-risk-governance-gap">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "name": "AI Security Risk: The Massive Mistake Companies Make",
+  "episodeNumber": 34,
+  "datePublished": "2026-07-01",
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com"
+  },
+  "url": "https://signalroompodcast.com/episodes/ai-security-risk-governance-gap",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://www.buzzsprout.com/2550733/episodes/19423363"
+  },
+  "actor": {
+    "@type": "Person",
+    "name": "Aaron Puckett"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the biggest mistake companies make with AI security?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "According to Aaron Puckett, EVP at Managed Services Group, the mistake is deploying an AI policy with no controls underneath it. AI governance arrived after the infrastructure was already built, so most organizations have a policy document that says the right thing but an environment that cannot actually enforce it. The policy is the easy part; the real question is whether anything underneath it can govern how AI is used."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is shadow AI and why is it a risk in healthcare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shadow AI is the everyday use of consumer AI tools — ChatGPT, Claude, Gemini — that no organization formally procured or approved. Frontline staff paste sensitive data, including PHI, into public models to get work done faster. Banning the tools drives the behavior underground, so governance has to assume the tools are already in use and wrap technical controls and clear accountability around them."
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/"}, {"@type": "ListItem", "position": 2, "name": "Episodes", "item": "https://signalroompodcast.com/episodes"}, {"@type": "ListItem", "position": 3, "name": "AI Security Risk: The Massive Mistake Companies Make", "item": "https://signalroompodcast.com/episodes/ai-security-risk-governance-gap"}]}
+  </script>
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes" class="active">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+</ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Episode 34</span>
+      <h1>AI Security Risk: The Massive Mistake Companies Make</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">with <a href="#guest-section" style="color: #6c63ff; text-decoration: none;">Aaron Puckett</a></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <div class="episode-layout">
+        <div class="episode-main">
+          <div class="episode-audio" style="max-width: 800px; margin: 0 auto 1.5rem; padding: 0;">
+<div id="buzzsprout-player-19423363"></div>
+<script src="https://www.buzzsprout.com/2550733/episodes/19423363-ai-security-risk-the-massive-mistake-companies-make-cyber-security-expert-aaron-puckett.js?container_id=buzzsprout-player-19423363&player=small" type="text/javascript" charset="utf-8"></script>
+</div>
+          <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
+<div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+<span style="background: #1a1a2e; color: #fff; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Episode 34</span>
+<span style="color: #666; font-size: 0.85rem;">July 1, 2026</span>
+</div>
+<div class="episode-listen-row">
+<span class="episode-listen-label">Listen on:</span>
+<a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener" class="episode-listen-btn">Apple Podcasts</a>
+<a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener" class="episode-listen-btn">Spotify</a>
+<a href="https://www.buzzsprout.com/2550733/episodes/19423363" target="_blank" rel="noopener" class="episode-listen-btn">Buzzsprout</a>
+</div>
+<p style="margin: 0 0 0.5rem; font-size: 1.2rem; color: #1a1a2e; font-weight: 700;">AI Security Risk: The Massive Mistake Companies Make</p>
+<p style="margin: 0 0 1rem; color: #555; font-size: 0.95rem; font-style: italic;">with Aaron Puckett &middot; EVP, Managed Services Group</p>
+<p style="margin: 0; color: #444; font-size: 0.9rem; line-height: 1.6;">Most AI-governance conversations happen in the boardroom. Aaron Puckett spends his days one layer beneath it — in the security controls and infrastructure that were built years before anyone said the word &ldquo;AI.&rdquo; His argument: the mistake most companies make isn&rsquo;t writing the wrong AI policy, it&rsquo;s having nothing underneath it to enforce one.</p>
+</div>
+          <div class="show-notes-section" style="max-width: 800px; margin: 1.5rem auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+<h3 style="margin: 0 0 1rem; font-size: 1.15rem; color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 0.5rem;">Show Notes</h3>
+<div style="color: #444; font-size: 0.95rem; line-height: 1.7;">
+<p>Most of the AI-governance conversation happens in the boardroom &mdash; the policy, the committee, the framework. Aaron Puckett spends his days one layer beneath all of that: the actual infrastructure and security controls that were built years before anyone said the word &ldquo;AI.&rdquo; As Executive Vice President at <strong>Managed Services Group</strong>, a security-first MSP/MSSP running SOC 2 Type 2, HIPAA, and NIST environments for organizations in regulated industries, he argues the mistake most companies make isn&rsquo;t writing the wrong AI policy &mdash; it&rsquo;s having nothing underneath it to enforce one. He joins Chris Hutchins to name who actually owns the gap between an AI policy and the systems that were never built to govern it.</p>
+<h2>What We Cover</h2>
+<ul>
+  <li><strong>The operator&rsquo;s seat</strong> &mdash; what an MSP/MSSP sees that boards and vendors both miss, and why Aaron ties cybersecurity and compliance to risk, operations, and EBITDA instead of treating them as a cost center</li>
+  <li><strong>Policy vs. controls</strong> &mdash; the gap between what an AI policy says and what an environment can actually enforce, and who inside an organization is supposed to own it</li>
+  <li><strong>Shadow AI and the real risk</strong> &mdash; frontline staff pasting PHI into public LLMs to move faster, what actually happens to that data, and what stops it when a policy email clearly doesn&rsquo;t</li>
+  <li><strong>Compliance without margin pain</strong> &mdash; getting audit-ready for AI on top of SOC 2, HIPAA, and NIST without burning out an already-stretched team, and the highest-leverage move to make first</li>
+  <li><strong>The features you didn&rsquo;t turn on</strong> &mdash; how to think about the AI capabilities your existing vendors are quietly switching on inside tools you already trust</li>
+</ul>
+<h2>Key Takeaways</h2>
+<ul>
+  <li><strong>The policy is the easy part.</strong> The real question is whether anything underneath it can actually enforce how AI gets used.</li>
+  <li><strong>You cannot ban your way out of shadow AI.</strong> Prohibition drives the behavior underground; governance has to assume the tools are already in use and make that use safer.</li>
+  <li><strong>Security and compliance are a business decision, not a cost center.</strong> Tied to risk, operations, and EBITDA, AI governance becomes something a board will actually move on.</li>
+</ul>
+<h2>Frameworks &amp; Ideas Mentioned</h2>
+<ul>
+  <li>SOC 2 Type 2, HIPAA, and NIST as the control environment that has to sit underneath any AI policy</li>
+  <li>&ldquo;Shadow AI&rdquo; &mdash; ungoverned consumer LLMs (ChatGPT, Claude, Gemini) handling sensitive data, including PHI</li>
+  <li>Tying cybersecurity and compliance directly to EBITDA to get board-level movement</li>
+  <li>Resource-aware compliance: the 20% of controls that deliver 80% of the protection for a stretched team</li>
+</ul>
+<h2>About Aaron Puckett</h2>
+<p>Aaron Puckett is Executive Vice President at Managed Services Group, a security-first MSP/MSSP that runs SOC 2 Type 2, HIPAA, and NIST environments for organizations in regulated industries. He advises leaders on how cybersecurity, compliance, and AI strategy affect risk, operations, and EBITDA, and completed the University of Central Florida Cyber Defense Professional Program.</p>
+<h2>Related Resources</h2>
+<ul>
+  <li>Episode: <a href="/episodes/ai-eroding-workplace-communication">Why AI Is Ruining the Way Your Employees Communicate</a> with Katherine Tuominen &mdash; the shadow-AI and frontline-trust callback</li>
+  <li>Episode: <a href="/episodes/healthcare-ai-data-layer-privacy-governance">Healthcare AI Fails at the Data Layer</a> with Sid Dutta</li>
+  <li>Topic: <a href="/topics/healthcare-data-security">Healthcare Data Security &amp; Governance</a></li>
+  <li>Topic: <a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+</ul>
+</div>
+</div>
+        </div>
+
+<div class="episode-sidebar" id="guest-section">
+<div class="sidebar-card">
+<h4>Guest</h4>
+<div class="sidebar-guest">
+<img alt="Aaron Puckett" src="../assets/guests/aaron-puckett.jpg"/>
+<div class="sidebar-guest-info">
+<h3>Aaron Puckett</h3>
+<p>EVP, Managed Services Group &middot; Cybersecurity &amp; Compliance</p>
+<a href="https://www.linkedin.com/in/aaronwpuckett/" class="sidebar-guest-linkedin" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn Profile</a>
+</div>
+</div>
+</div>
+<div class="sidebar-card sidebar-follow-card">
+<h4>Follow the Show</h4>
+<p>Never miss an episode.</p>
+<div class="sidebar-follow-links">
+<a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" class="sidebar-follow-btn spotify" target="_blank" rel="noopener" aria-label="Follow on Spotify">Spotify</a>
+<a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" class="sidebar-follow-btn apple" target="_blank" rel="noopener" aria-label="Follow on Apple Podcasts">Apple Podcasts</a>
+<a href="https://www.youtube.com/@SignalRoomPodcast?sub_confirmation=1" class="sidebar-follow-btn youtube" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">YouTube</a>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-cta">
+        <h2>The AI Health Pulse</h2>
+        <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+        <div class="newsletter-form-embed">
+          <iframe src="https://subscribe-forms.beehiiv.com/781ceb5b-1fd7-488a-8914-3abb15c9ef58" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" loading="lazy" title="Subscribe to The AI Health Pulse"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="/privacy-policy" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+</body>
+</html>
