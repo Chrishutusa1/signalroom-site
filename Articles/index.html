@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/">
+  <title>Articles — The Signal Room</title>
+  <meta name="description" content="Long-form articles from The Signal Room on healthcare AI — data governance, data strategy, and what leaders learn deploying AI in real clinical environments.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Articles from The Signal Room",
+    "description": "Long-form articles on healthcare AI drawn from conversations on The Signal Room podcast.",
+    "url": "https://signalroompodcast.com/articles/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Signal Room",
+      "url": "https://signalroompodcast.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://signalroompodcast.com/articles/data-governance-healthcare",
+          "name": "Data Governance in Healthcare: What AI Leaders Really Talk About"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://signalroompodcast.com/articles/healthcare-data-strategy",
+          "name": "Healthcare Data Strategy in Practice: How Leading Health Systems Make It Work"
+        }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://signalroompodcast.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles"
+      }
+    ]
+  }
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Articles — The Signal Room">
+  <meta property="og:description" content="Long-form articles from The Signal Room on healthcare AI — data governance, data strategy, and what leaders learn deploying AI in real clinical environments.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        // Production-only: never load GA on staging/preview/localhost
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+  <style>
+    .articles-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+    @media (max-width: 700px) { .articles-grid { grid-template-columns: 1fr; } }
+    .article-card { display: flex; flex-direction: column; background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.75rem; transition: box-shadow .2s ease, transform .2s ease; }
+    .article-card:hover { box-shadow: 0 8px 24px rgba(26,26,46,.08); transform: translateY(-2px); }
+    .article-card h2 { font-size: 1.25rem; line-height: 1.35; color: #1a1a2e; margin: 0 0 .5rem; }
+    .article-card h2 a { color: #1a1a2e; text-decoration: none; }
+    .article-card h2 a:hover { color: #6c63ff; }
+    .article-card .article-meta { font-size: .85rem; color: var(--text-muted); margin: 0 0 .9rem; }
+    .article-card p.article-dek { font-size: .95rem; line-height: 1.7; color: #444; margin: 0 0 1.25rem; }
+    .article-card .read-link { margin-top: auto; font-weight: 600; font-size: .95rem; color: #6c63ff; text-decoration: none; }
+    .article-card .read-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Articles</span>
+      <h1>Articles from The Signal Room</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;max-width:640px;">In-depth pieces drawn from conversations on The Signal Room — the practical realities healthcare AI leaders face as they move from strategy to deployment in real clinical environments.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <div class="articles-grid">
+
+        <article class="article-card">
+          <h2><a href="/articles/data-governance-healthcare">Data Governance in Healthcare: What AI Leaders Really Talk About</a></h2>
+          <p class="article-meta">By Christopher Hutchins &middot; April 5, 2026</p>
+          <p class="article-dek">Healthcare AI leaders discuss data governance, data quality, and trust infrastructure. Discover what's actually required before AI deployment succeeds.</p>
+          <a class="read-link" href="/articles/data-governance-healthcare">Read article &rarr;</a>
+        </article>
+
+        <article class="article-card">
+          <h2><a href="/articles/healthcare-data-strategy">Healthcare Data Strategy in Practice: How Leading Health Systems Make It Work</a></h2>
+          <p class="article-meta">By Christopher Hutchins &middot; April 5, 2026</p>
+          <p class="article-dek">How healthcare organizations build effective data strategies — real examples of data governance, AI readiness, and clinical implementation.</p>
+          <a class="read-link" href="/articles/healthcare-data-strategy">Read article &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Newsletter CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form-embed">
+            <iframe src="https://subscribe-forms.beehiiv.com/781ceb5b-1fd7-488a-8914-3abb15c9ef58" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" loading="lazy" title="Subscribe to The AI Health Pulse"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js"></script>
+</body>
+</html>
