@@ -83,6 +83,8 @@
       var loaded = false;
       function loadGA(){
         if (loaded) return; loaded = true;
+        // Production-only: never load GA on staging/preview/localhost
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
         var s = document.createElement('script');
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
