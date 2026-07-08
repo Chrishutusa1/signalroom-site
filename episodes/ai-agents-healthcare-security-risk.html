@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/episodes/ai-agents-healthcare-security-risk">
+  <title>Why AI Agents Are Healthcare's Next Biggest Security Risk | Pranava Adduri</title>
+  <meta name="description" content="Bedrock Security co-founder Pranava Adduri on why agentic AI is healthcare's next biggest security risk: autonomous systems that inherit access to PHI, run on ungoverned non-human identities, and move data at machine speed.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Why AI Agents Are Healthcare's Next Biggest Security Risk | Pranava Adduri">
+  <meta property="og:description" content="Bedrock Security's Pranava Adduri on securing agentic AI in healthcare — the access agents inherit, the non-human identities no one governs, and a data-centric approach to protecting PHI.">
+  <meta property="og:image" content="https://img.youtube.com/vi/DlFna8wQghg/maxresdefault.jpg">
+  <meta property="og:url" content="https://signalroompodcast.com/episodes/ai-agents-healthcare-security-risk">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260422r3">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "name": "Why AI Agents Are Healthcare's Next Biggest Security Risk",
+  "episodeNumber": 35,
+  "datePublished": "2026-07-08",
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com"
+  },
+  "url": "https://signalroompodcast.com/episodes/ai-agents-healthcare-security-risk",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://www.buzzsprout.com/2550733/episodes/19459223"
+  },
+  "actor": {
+    "@type": "Person",
+    "name": "Pranava Adduri"
+  },
+  "timeRequired": "PT30M14S"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are AI agents a security risk in healthcare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI agents are autonomous systems that take actions and move data on their own, not just answer questions. In healthcare that means software running under machine identities can inherit broad access to protected health information (PHI) and act on it at machine speed — often faster than anyone is monitoring. According to Bedrock Security co-founder Pranava Adduri, the risk isn't the model's answers; it's the access the agent inherits and the sensitive data it can reach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should healthcare organizations secure AI agents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a data-centric approach: know where sensitive data lives, know which identities — human and non-human — can reach it, and apply least-privilege access to the machine accounts and tokens that agents run on. Securing agentic AI is less about controlling the model's prompts and more about governing the data and identities underneath it, and monitoring what agents actually access."
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/"}, {"@type": "ListItem", "position": 2, "name": "Episodes", "item": "https://signalroompodcast.com/episodes"}, {"@type": "ListItem", "position": 3, "name": "Why AI Agents Are Healthcare's Next Biggest Security Risk", "item": "https://signalroompodcast.com/episodes/ai-agents-healthcare-security-risk"}]}
+  </script>
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes" class="active">Episodes</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+</ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Episode 35</span>
+      <h1>Why AI Agents Are Healthcare's Next Biggest Security Risk</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">with <a href="#guest-section" style="color: #6c63ff; text-decoration: none;">Pranava Adduri</a></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <div class="episode-layout">
+        <div class="episode-main">
+          <div class="episode-video" style="max-width: 800px; margin: 0 auto 1.5rem; padding: 0; position: static;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/DlFna8wQghg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Why AI Agents Are Healthcare's Next Biggest Security Risk"></iframe>
+</div>
+</div>
+          <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
+<div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+<span style="background: #1a1a2e; color: #fff; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Episode 35</span>
+<span style="color: #666; font-size: 0.85rem;">July 8, 2026</span>
+<span style="color: #666; font-size: 0.85rem;">30 min</span>
+</div>
+<div class="episode-listen-row">
+<span class="episode-listen-label">Listen on:</span>
+<a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener" class="episode-listen-btn">Apple Podcasts</a>
+<a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener" class="episode-listen-btn">Spotify</a>
+<a href="https://www.buzzsprout.com/2550733/episodes/19459223" target="_blank" rel="noopener" class="episode-listen-btn">Buzzsprout</a>
+</div>
+<p style="margin: 0 0 0.5rem; font-size: 1.2rem; color: #1a1a2e; font-weight: 700;">Why AI Agents Are Healthcare's Next Biggest Security Risk</p>
+<p style="margin: 0 0 1rem; color: #555; font-size: 0.95rem; font-style: italic;">with Pranava Adduri &middot; Co-Founder &amp; CTO, Bedrock Security</p>
+<p style="margin: 0; color: #444; font-size: 0.9rem; line-height: 1.6;">AI agents don&rsquo;t just answer questions &mdash; they take actions, call tools, and move data on their own. Bedrock Security&rsquo;s Pranava Adduri makes the case that agentic AI is healthcare&rsquo;s next biggest security risk, and that securing it starts with the data and identities underneath, not the model on top.</p>
+</div>
+          <div class="show-notes-section" style="max-width: 800px; margin: 1.5rem auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+<h3 style="margin: 0 0 1rem; font-size: 1.15rem; color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 0.5rem;">Show Notes</h3>
+<div style="color: #444; font-size: 0.95rem; line-height: 1.7;">
+<p>AI agents &mdash; systems that don&rsquo;t just answer questions but take actions, call tools, and move data on their own &mdash; are arriving in healthcare faster than the controls meant to govern them. <strong>Pranava Adduri</strong>, Co-Founder and CTO of the data-security company <strong>Bedrock Security</strong>, joins Chris Hutchins to explain why agentic AI may be healthcare&rsquo;s next biggest security risk: autonomous software that inherits broad access to PHI, operates under non-human identities no one is watching, and can move sensitive data at machine speed. The conversation is about what changes when the thing using your data isn&rsquo;t a person &mdash; and what a data-centric approach to securing it actually looks like.</p>
+<h2>What We Cover</h2>
+<ul>
+  <li><strong>Agent vs. chatbot</strong> &mdash; what makes an &ldquo;AI agent&rdquo; different: autonomy, tool use, and the ability to act on data rather than just describe it</li>
+  <li><strong>Agents inherit access</strong> &mdash; an agent can reach everything the identity behind it can reach, and most organizations have no map of what that is</li>
+  <li><strong>Non-human identities</strong> &mdash; the machine accounts, API keys, and service tokens agents run on, and why they&rsquo;re the least-governed part of the stack</li>
+  <li><strong>PHI at machine speed</strong> &mdash; how autonomous systems can expose or move sensitive data far faster than a human could, and why detection has to keep pace</li>
+  <li><strong>Secure the data, not just the model</strong> &mdash; a data-centric view of governance: knowing where sensitive data lives, who (and what) can touch it, and least-privilege for agents</li>
+  <li><strong>Before you deploy</strong> &mdash; what healthcare leaders should put in place before turning agentic AI loose on their systems</li>
+</ul>
+<h2>Key Takeaways</h2>
+<ul>
+  <li><strong>An AI agent is only as safe as the access it inherits.</strong> Govern the identity and the data, not just the prompt.</li>
+  <li><strong>The least-watched risk is the non-human one</strong> &mdash; the service accounts and tokens agents run on, which almost no one is monitoring.</li>
+  <li><strong>Data-centric security is the foundation.</strong> Knowing where your sensitive data is and what can reach it is what agentic AI has to stand on.</li>
+</ul>
+<h2>Frameworks &amp; Ideas Mentioned</h2>
+<ul>
+  <li>Agentic AI and autonomous tool use as an emerging attack surface</li>
+  <li>Non-human / machine identities and least-privilege access for agents</li>
+  <li>Data-centric security and governance &mdash; knowing where PHI lives and what can reach it</li>
+  <li>AI-native data security for the cloud and GenAI era</li>
+</ul>
+<h2>About Pranava Adduri</h2>
+<p>Pranava Adduri is Co-Founder and CTO of Bedrock Security, an AI-native data security and governance platform built for the cloud and GenAI era. Before Bedrock, he was a founding engineer and engineering manager at Rubrik and a software development manager at Amazon Web Services, where he worked on securing large-scale data systems for Fortune 500 organizations. His focus is defending an organization&rsquo;s most critical data against modern adversaries &mdash; increasingly including autonomous AI.</p>
+<h2>Related Resources</h2>
+<ul>
+  <li>Episode: <a href="/episodes/ai-security-risk-governance-gap">AI Security Risk: The Massive Mistake Companies Make</a> with Aaron Puckett</li>
+  <li>Episode: <a href="/episodes/healthcare-ai-data-layer-privacy-governance">Healthcare AI Fails at the Data Layer</a> with Sid Dutta</li>
+  <li>Topic: <a href="/topics/healthcare-data-security">Healthcare Data Security &amp; Governance</a></li>
+  <li>Topic: <a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+</ul>
+</div>
+</div>
+        </div>
+
+<div class="episode-sidebar" id="guest-section">
+<div class="sidebar-card">
+<h4>Guest</h4>
+<div class="sidebar-guest">
+<img alt="Pranava Adduri" src="../assets/guests/pranava-adduri.jpg"/>
+<div class="sidebar-guest-info">
+<h3>Pranava Adduri</h3>
+<p>Co-Founder &amp; CTO, Bedrock Security &middot; Data Security &amp; AI</p>
+</div>
+</div>
+</div>
+<div class="sidebar-card sidebar-follow-card">
+<h4>Follow the Show</h4>
+<p>Never miss an episode.</p>
+<div class="sidebar-follow-links">
+<a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" class="sidebar-follow-btn spotify" target="_blank" rel="noopener" aria-label="Follow on Spotify">Spotify</a>
+<a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" class="sidebar-follow-btn apple" target="_blank" rel="noopener" aria-label="Follow on Apple Podcasts">Apple Podcasts</a>
+<a href="https://www.youtube.com/@SignalRoomPodcast?sub_confirmation=1" class="sidebar-follow-btn youtube" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">YouTube</a>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-cta">
+        <h2>The AI Health Pulse</h2>
+        <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+        <div class="newsletter-form-embed">
+          <iframe src="https://subscribe-forms.beehiiv.com/781ceb5b-1fd7-488a-8914-3abb15c9ef58" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" loading="lazy" title="Subscribe to The AI Health Pulse"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener noreferrer">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="/privacy-policy" style="color:var(--text-light);text-decoration:underline;">Privacy Policy</a> &middot; &copy; 2026 The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+</body>
+</html>
