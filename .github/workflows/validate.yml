@@ -50,9 +50,9 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           # Every non-comment, non-blank line must be: pattern  target  status
-          # where status is 200, 301, 301! or 404! (404! rules keep repo docs
-          # off the served site — see the block at the top of _redirects).
-          bad=$(grep -vE '^\s*(#|$)' _redirects | grep -vE '^\S+\s+\S+\s+(200|301!?|404!)\s*$' || true)
+          # where status is 200, 301, 301!, 404 or 404! (the 404! rules keep
+          # repo docs off the served site — see the block in _redirects).
+          bad=$(grep -vE '^\s*(#|$)' _redirects | grep -vE '^\S+\s+\S+\s+(200|301!?|404!?)\s*$' || true)
           if [ -n "$bad" ]; then
             echo "::error::malformed _redirects line(s):"
             echo "$bad"
