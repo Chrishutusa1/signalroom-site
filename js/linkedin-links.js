@@ -25,7 +25,16 @@
         'Carly Caminiti': 'https://www.linkedin.com/in/carlycaminiti/',
         'Andre Samokish': 'https://www.linkedin.com/in/andresamokish/',
         'Lorraine Fernandes': 'https://www.linkedin.com/in/lorraine-fernandes-07723b1/',
-        'Poonam Patel': 'https://www.linkedin.com/in/poonam-patel-430134b4/'
+        'Poonam Patel': 'https://www.linkedin.com/in/poonam-patel-430134b4/',
+        'Sid Dutta': 'https://www.linkedin.com/in/sid-dutta/',
+        'Steven Labkoff': 'https://www.linkedin.com/in/stevelabkoff/',
+        'Diane Weaver': 'https://www.linkedin.com/in/diane-weaver-67379b8/',
+        'Katherine Tuominen': 'https://www.linkedin.com/in/katherine-tuominen',
+        'Angela Millan': 'https://www.linkedin.com/in/angela-milan',
+        'Bennett Borden': 'https://www.linkedin.com/in/bennett-borden/',
+        '\u00D6mer Atl\u0131': 'https://www.linkedin.com/in/dromeratli', // key renders as 'Omer Atli' with O-umlaut + dotless i (matches the guest-card name)
+        'Aaron Puckett': 'https://www.linkedin.com/in/aaronwpuckett/',
+        'Pranava Adduri': 'https://www.linkedin.com/in/padduri/'
     };
 
     var linkedInSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>';
