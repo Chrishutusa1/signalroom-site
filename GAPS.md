@@ -20,7 +20,7 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 
 **FIXED 2026-07-12:** `.github/workflows/validate.yml` added (episode gates, alt-normalize dry-run, single-CSS-version check, `_redirects` line-shape check). **KNOWN RED:** 17 pre-existing episode pages fail the title/meta gates (mostly titles 58–61 chars; EP35 at title 74 / meta 294) — the job stays red until those are trimmed. That trim is editorial SEO-surface work: run `gsc-change-preflight`, get Chris's sign-off on reworded titles.
 
-**RED CLEARED 2026-07-12 (pending sign-off):** all 17 pages trimmed to gate limits — 13 `<title>` rewordings (suffix swap/drop or one-word tighten; URLs, canonicals, H1s, og:title, JSON-LD untouched), 6 meta trims, plus a mojibake fix (23× `â€”`/`â€“`) in `ai-literacy-crisis-killing-healthcare.html`. All 36 episode pages now PASS locally. Committed on a worktree branch; push to main only after Chris approves the reworded titles.
+**RED CLEARED 2026-07-12 (pending sign-off):** all 17 pages trimmed to gate limits — 13 `<title>` rewordings (suffix swap/drop or one-word tighten; URLs, canonicals, H1s, og:title, JSON-LD untouched), 6 meta trims, plus a mojibake fix (23× `â€”`/`â€“`) in `ai-literacy-crisis-killing-healthcare.html`. All 36 episode pages now PASS. Chris signed off on the reworded titles 2026-07-12; pushed to main (`c1106ed`) and the validate.yml run on that commit is green. Gap #2 fully closed.
 
 ## 3. Production deploys are manual directory pushes that can diverge from git
 
