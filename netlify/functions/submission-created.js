@@ -21,6 +21,14 @@
  *       If either is unset, the auto-reply is skipped.
  */
 
+// A hostile submission can push multi-KB strings into Airtable and the
+// notification webhook (GAPS #10) — clip every user-supplied field.
+const clip = (s, n = 1000) => String(s ?? "").slice(0, n);
+
+// Trivial shape check only — full validation is not the goal; this just keeps
+// the auto-reply from mailing garbage addresses.
+const looksLikeEmail = (s) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, "&amp;")
@@ -144,20 +152,24 @@ exports.handler = async (event) => {
   }
 
   const fields = {
-    Name: data.name || "",
-    Email: data.email || "",
-    "Title & Organization": data.title || "",
-    LinkedIn: data.linkedin || "",
-    Theme: data.theme || "",
-    Topics: data.topics || "",
-    Context: data.context || "",
+    Name: clip(data.name, 200),
+    Email: clip(data.email, 320),
+    "Title & Organization": clip(data.title, 300),
+    LinkedIn: clip(data.linkedin, 500),
+    Theme: clip(data.theme, 300),
+    Topics: clip(data.topics),
+    Context: clip(data.context, 2000),
     Source: "signalroompodcast.com guest-application",
     "Submitted At": submission.created_at || new Date().toISOString(),
-    "Submission ID": submission.id || "",
-    "User Agent": (submission.user_agent || "").slice(0, 500),
-    Referrer: submission.referrer || "",
+    "Submission ID": clip(submission.id, 100),
+    "User Agent": clip(submission.user_agent, 500),
+    Referrer: clip(submission.referrer, 500),
     Status: "New",
   };
+
+  // Netlify normally filters honeypot hits before invoking this function;
+  // belt-and-suspenders in case a bot POSTs the form action directly.
+  const honeypotTripped = Boolean(data["bot-field"]);
 
   const url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_GUEST_APPS_TABLE)}`;
 
@@ -187,7 +199,11 @@ exports.handler = async (event) => {
   }
 
   await notifyApplication(fields, airtableStatus, recordId);
-  await sendAutoReply(fields);
+  // Never auto-reply to a honeypot hit or a malformed address — the reply is an
+  // open sender of Signal-Room-branded mail to whatever address was typed (GAPS #10).
+  if (!honeypotTripped && looksLikeEmail(fields.Email)) {
+    await sendAutoReply(fields);
+  }
 
   return {
     statusCode: 200,

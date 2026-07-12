@@ -6,7 +6,14 @@ insight pulled from that episode page's <meta name="description">. The "more" ca
 shows the live unique-guest count. Idempotent. Run from the repo root (the homepage
 refresh routine runs this alongside _update_stats.py)."""
 import re
+import sys
 from pathlib import Path
+
+# Guest names carry non-cp1252 characters (e.g. the dotless i in "Atlı");
+# without this the summary print crashes on a default Windows console AFTER
+# the files were already written.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).parent
 GUESTS = (ROOT / "guests.html").read_text(encoding="utf-8")

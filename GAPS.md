@@ -54,6 +54,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Why it matters:** Two implementations of the same guard will drift; a future template change could pass one and fail the other, producing confusing "gate says PASS but normalize wants changes" states.
 **Fix (single task):** Make `_validate_episode.py` import/replicate exactly the normalize behavior for the alt check (or have it shell out to `signalroom-publish-normalize.py --fix-alt` for the fix path), and note in both docstrings which one is authoritative (normalize, since it also runs in the cloud flow).
 
+**FIXED 2026-07-12:** `_validate_episode.py` now imports `fix_alt_in_html` + the shorts regexes from `signalroom-publish-normalize.py` (spec loader — hyphenated filename) and carries no alt logic of its own; both docstrings name normalize as authoritative. Verified end-to-end: gate fails on an emptied alt, `--fix` fills it via the normalize implementation, revalidation passes.
+
 ## 7. Regex-driven generators are brittle to harmless-looking HTML edits
 
 **What:** All maintenance scripts parse HTML with regexes anchored to exact formatting:
@@ -64,6 +66,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Where:** the four scripts named above.
 **Why it matters:** The most likely editor of these HTML files is a smaller model doing a copy tweak, which is exactly the actor least likely to know the markup doubles as a machine interface.
 **Fix (single task):** Make the silent cases loud: in `_update_stats.py`, exit non-zero if any `re.subn` count is 0; in `_generate_topic_cards.py`, the WARNING-and-skip on incomplete JSON-LD should become a hard failure when `--apply` is passed. (Documenting the fragile patterns in CLAUDE.md — done — is the other half.)
+
+**FIXED 2026-07-12:** `_update_stats.py` exits non-zero and writes NOTHING if any anchor pattern matches 0 times; `_generate_topic_cards.py` hard-fails on incomplete JSON-LD when `--apply` is passed (still a warning in dry-run). The new guard immediately caught real drift on its first run: "See All N Episodes" had been reworded to the count-less "View All Episodes" in `07bbd28` (June 28), so that pattern was silently dead — removed as a sync target. Bonus fix: all three printing scripts now reconfigure stdout to UTF-8, because `_update_featured_guests.py` crashed printing "Dr. Ömer Atlı" on a cp1252 Windows console AFTER writing its files (exit != 0 with work done — the worst kind of failure).
 
 ## 8. `sitemap.xml` is fully manual and already missing one page
 
@@ -83,6 +87,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Why it matters:** Dead scripts get mistaken for current process by smaller models ("run finalize_ep27"); stale worktrees waste disk and confuse `grep -r`.
 **Fix (single task):** Delete the two scripts after moving the site ID + deploy command into CLAUDE.md (done in this transfer); remove merged/stale worktrees with `git worktree remove`; delete local branches whose work is merged. Leave unmerged `claude/nervous-williams-1f1569` for Chris to review before deletion.
 
+**FIXED 2026-07-12** (Chris confirmed the nervous-williams review): both one-shot scripts deleted (site ID confirmed present in CLAUDE.md's deploy command first); `nervous-williams` worktree reviewed — its "unmerged" content (the normalize script + a gitignore line) was byte-identical to what later landed on main, so nothing was lost — and removed; `dazzling-curie`/`festive-mendel` deregistered from git (their now-empty directory husks are held open by other running Claude sessions and will delete once those exit). Local branches removed: 6 merged `claude/*` + `fix/episode-shorts-alt` (patch-equivalent per `git cherry` — squash-merged as PR #4). Kept: `main`, the active session branches. Remote branches (`Chrishutusa1-patch-1/2`, `seo/canonicalization-hardening`) left untouched — deleting remote refs is Chris's call.
+
 ## 10. Guest-application function: minor robustness/security notes (severity: low)
 
 **What:** `netlify/functions/submission-created.js`:
@@ -93,6 +99,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Where:** `netlify/functions/submission-created.js`.
 **Why it matters:** Spam/abuse annoyance and Airtable data hygiene rather than a real breach risk; there is no PII exposure beyond what the submitter provides.
 **Fix (single task):** Add a `clip = (s, n=1000) => String(s ?? "").slice(0, n)` applied to every field, and skip the auto-reply when the honeypot field is present or the email fails a trivial format check. Keep the always-200 contract.
+
+**FIXED 2026-07-12:** every user-supplied field clipped (per-field caps: name 200, email 320, context 2000, etc.); auto-reply skipped when `bot-field` (the form's honeypot) is non-empty or the email fails a trivial format regex; the notification webhook still fires for every submission so no lead is hidden. Always-200 contract untouched.
 
 ## 11. Inconsistencies (cosmetic-to-minor, batchable)
 

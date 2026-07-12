@@ -16,6 +16,11 @@ To update guest name or YT ID: edit /episodes/{slug}.html and re-run --apply.
 from pathlib import Path
 import re, sys
 
+# Guest names carry non-cp1252 characters (e.g. "Atlı") — keep prints from
+# crashing on a default Windows console.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 REPO      = Path(__file__).resolve().parent
 EP_DIR    = REPO / "episodes"
 TOPIC_DIR = REPO / "topics"
@@ -28,6 +33,7 @@ TOPIC_DIR = REPO / "topics"
 
 def build_ep_index():
     index = {}
+    skipped = []
     for f in sorted(EP_DIR.glob("*.html")):
         text = f.read_text(encoding="utf-8")
         ep_m    = re.search(r'"episodeNumber":\s*(\d+)', text)
@@ -35,13 +41,14 @@ def build_ep_index():
         yt_m    = re.search(r'youtube\.com/embed/([A-Za-z0-9_\-]+)', text)
         if not (ep_m and guest_m and yt_m):
             print(f"WARNING: incomplete JSON-LD/embed in {f.name} — skipping")
+            skipped.append(f.name)
             continue
         index[f.stem] = {
             "ep":    int(ep_m.group(1)),
             "guest": guest_m.group(1),
             "yt_id": yt_m.group(1),
         }
-    return index
+    return index, skipped
 
 
 # ── Per-topic card configs ────────────────────────────────────────────────────
@@ -207,11 +214,17 @@ def apply_replacement(html, topic_slug, new_content):
 def main():
     do_apply = len(sys.argv) > 1 and sys.argv[1] == "--apply"
 
-    ep_index = build_ep_index()
+    ep_index, skipped = build_ep_index()
     print(f"Episode index: {len(ep_index)} episodes loaded\n")
 
     errors  = []
     results = {}
+
+    # A skipped episode means broken/reordered JSON-LD (GAPS #7). Tolerable to
+    # note in a dry-run; a hard failure when actually writing files.
+    if skipped and do_apply:
+        errors.append(f"incomplete JSON-LD/embed in: {', '.join(skipped)} - "
+                      "fix the episode page(s); refusing to --apply")
 
     for topic_slug, cards_config in TOPICS.items():
         topic_file = TOPIC_DIR / f"{topic_slug}.html"

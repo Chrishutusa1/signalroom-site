@@ -85,7 +85,7 @@ Each `episodes/<slug>.html` contains, in order: canonical + meta (description �
 | `_update_featured_guests.py` | **NO (gitignored)** | Rebuilds the homepage Featured Guests block from the newest 3 cards in `guests.html`. |
 | `_generate_topic_cards.py` | yes | Regenerates topic-page episode grids. Episode facts (number/guest/YT id) come from the episode HTML's JSON-LD; card titles/descriptions are curated in the script's `TOPICS` dict. To add an episode to a topic: add a dict entry, run `--apply`. |
 | `signalroom-airtable-bridge.py` | yes | Syncs Buzzsprout API → both Airtable tables; resolves YouTube video IDs by guest-name + publish-date proximity (never by title — YouTube re-headlines episodes). Reads secrets from `C:\Users\PC\Desktop\HDSC\SignalRoom\.env` (outside the repo). Dry-run by default. |
-| `.claude/finalize_ep27.py`, `.claude/rollout_perf_edits.py` | yes | Historical one-shots (EP27 scaffold finalizer; site-wide GA/fonts perf rollout). Useful as pattern references only. `finalize_ep27.py` is where the prod Netlify site ID is written down: `98c71b47-cb1e-4eb2-8255-963349df8ccf`. |
+| ~~`.claude/finalize_ep27.py`, `.claude/rollout_perf_edits.py`~~ | deleted 2026-07-12 | Historical one-shots (EP27 scaffold finalizer; GA/fonts perf rollout) — removed in the GAPS #9 cleanup. The prod Netlify site ID they recorded lives in CLAUDE.md's deploy command: `98c71b47-cb1e-4eb2-8255-963349df8ccf`. |
 
 The gitignore rule `/*.py` (with two exceptions) is why four load-bearing scripts are untracked — see GAPS.md #1.
 

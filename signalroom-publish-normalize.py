@@ -45,6 +45,10 @@ Publish sequence (manual netlify-drop prod deploy model — see signal-room-site
 Dry-run by default (matches signalroom-airtable-bridge.py). Pass --apply to act.
 Standard library only (no third-party deps) so it runs identically locally and in
 the cloud routine.
+
+This file is the AUTHORITATIVE shorts-alt implementation (GAPS #6):
+_validate_episode.py imports fix_alt_in_html/SHORTS_ITEM_RE from here rather than
+carrying its own copy. Change alt semantics HERE only.
 """
 
 import argparse

@@ -7,13 +7,34 @@
 Gates: (1) <meta name="description"> <=155 chars (ONLY this surface);
 (2) every shorts-carousel <img> alt is non-empty and == its data-short-title;
 (3) <title> <=57 chars. IndexNow submission is a deploy-time step, not here.
+
+The shorts-alt FIX logic is NOT implemented here: signalroom-publish-normalize.py
+is the authoritative alt implementation (it also runs in the cloud flow), and this
+validator imports fix_alt_in_html/SHORTS_ITEM_RE from it (GAPS #6). This file only
+gates; anything the normalize fixer can't cure (e.g. a missing alt attribute or an
+empty data-short-title) stays a FAIL for a human to look at.
 """
 import argparse
+import importlib.util
 import re
 import sys
+from pathlib import Path
+
+# Failure messages quote page text (titles, alt text) that can carry
+# non-cp1252 characters — keep prints from crashing on a Windows console.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 META_MAX = 155
 TITLE_MAX = 57
+
+# The one authoritative shorts-alt implementation lives in the normalize script
+# (hyphenated filename, hence the spec loader).
+_norm_spec = importlib.util.spec_from_file_location(
+    "signalroom_publish_normalize",
+    Path(__file__).resolve().parent / "signalroom-publish-normalize.py")
+_normalize = importlib.util.module_from_spec(_norm_spec)
+_norm_spec.loader.exec_module(_normalize)
 
 
 def word_trim(text, limit):
@@ -56,24 +77,18 @@ def main():
             else:
                 fails.append(f'meta description {len(desc)} chars > {META_MAX}: "{desc}"')
 
-    for a in re.finditer(r'<a class="episode-shorts-item[^"]*"[^>]*>.*?</a>', src, re.S):
+    if args.fix:
+        src, n_alt = _normalize.fix_alt_in_html(src)
+        if n_alt:
+            print(f'[fix] filled {n_alt} empty shorts alt(s) via signalroom-publish-normalize')
+
+    for a in _normalize.SHORTS_ITEM_RE.finditer(src):
         block = a.group(0)
-        dt = re.search(r'data-short-title="([^"]*)"', block)
+        dt = _normalize.DATA_SHORT_TITLE_RE.search(block)
         title = dt.group(1) if dt else ''
-        img = re.search(r'<img\b[^>]*>', block)
-        alt = None
-        if img:
-            am = re.search(r'\balt="([^"]*)"', img.group(0))
-            alt = am.group(1) if am else None
-        if not alt:
-            if args.fix and title and img:
-                oi = img.group(0)
-                ni = re.sub(r'\balt="[^"]*"', f'alt="{title}"', oi, count=1) if 'alt=' in oi \
-                    else oi.replace('<img', f'<img alt="{title}"', 1)
-                src = src.replace(block, block.replace(oi, ni, 1), 1)
-                print(f'[fix] shorts alt set to "{title}"')
-            else:
-                fails.append(f'shorts-carousel thumbnail has empty/missing alt (should be "{title}")')
+        am = re.search(r'<img\b[^>]*\balt="([^"]*)"', block)
+        if not (am and am.group(1)):
+            fails.append(f'shorts-carousel thumbnail has empty/missing alt (should be "{title}")')
 
     if args.fix and src != orig:
         with open(args.path, 'w', encoding='utf-8') as fh:
