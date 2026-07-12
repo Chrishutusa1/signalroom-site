@@ -1,0 +1,55 @@
+# Publish-gate enforcement (GAPS.md #2). Runs the same checks the local
+# publish flow relies on, so a merged episode page can never carry the
+# recurring defect classes (meta >155, title >57, empty shorts alt),
+# a mixed style.css?v= cache-bust, or a malformed _redirects line.
+# Both scripts are stdlib-only Python — no pip install.
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Episode publish gates (_validate_episode.py)
+        run: |
+          rc=0
+          for f in episodes/*.html; do
+            python _validate_episode.py "$f" || rc=1
+          done
+          exit $rc
+
+      - name: Shorts alt normalize is a no-op (dry-run)
+        run: |
+          out=$(python signalroom-publish-normalize.py --fix-alt)
+          echo "$out"
+          if echo "$out" | grep -q "WOULD FIX"; then
+            echo "::error::signalroom-publish-normalize.py --fix-alt has pending fixes — run it with --apply and commit"
+            exit 1
+          fi
+
+      - name: Single style.css cache-bust version
+        run: |
+          versions=$(grep -rho 'style.css?v=[^"]*' --include='*.html' . | sort -u)
+          echo "$versions"
+          if [ "$(echo "$versions" | wc -l)" -ne 1 ]; then
+            echo "::error::multiple style.css?v= values live across pages — normalize to one (GAPS.md #4)"
+            exit 1
+          fi
+
+      - name: _redirects line shape
+        run: |
+          # Every non-comment, non-blank line must be: pattern  target  status
+          # where status is 200, 301, 301! or 404! (404! rules keep repo docs
+          # off the served site — see the block at the top of _redirects).
+          bad=$(grep -vE '^\s*(#|$)' _redirects | grep -vE '^\S+\s+\S+\s+(200|301!?|404!)\s*$' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::malformed _redirects line(s):"
+            echo "$bad"
+            exit 1
+          fi
+          echo "_redirects OK"
