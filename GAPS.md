@@ -20,6 +20,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 
 **FIXED 2026-07-12:** `.github/workflows/validate.yml` added (episode gates, alt-normalize dry-run, single-CSS-version check, `_redirects` line-shape check). **KNOWN RED:** 17 pre-existing episode pages fail the title/meta gates (mostly titles 58–61 chars; EP35 at title 74 / meta 294) — the job stays red until those are trimmed. That trim is editorial SEO-surface work: run `gsc-change-preflight`, get Chris's sign-off on reworded titles.
 
+**RED CLEARED 2026-07-12 (pending sign-off):** all 17 pages trimmed to gate limits — 13 `<title>` rewordings (suffix swap/drop or one-word tighten; URLs, canonicals, H1s, og:title, JSON-LD untouched), 6 meta trims, plus a mojibake fix (23× `â€”`/`â€“`) in `ai-literacy-crisis-killing-healthcare.html`. All 36 episode pages now PASS locally. Committed on a worktree branch; push to main only after Chris approves the reworded titles.
+
 ## 3. Production deploys are manual directory pushes that can diverge from git
 
 **What:** Prod is published with `netlify deploy --prod --site=98c71b47-cb1e-4eb2-8255-963349df8ccf --dir=.` from whatever is currently on this machine's disk; only staging tracks `origin/main`.
