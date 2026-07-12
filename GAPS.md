@@ -74,6 +74,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 
 **PARTIALLY FIXED 2026-07-12** (`d86c357`): the `/articles/` entry added (preflight run; loc matches the trailing-slash canonical in `Articles/index.html`). The `_generate_sitemap.py` automation remains open — the sitemap is still fully manual.
 
+**FULLY FIXED 2026-07-12:** `_generate_sitemap.py` added (tracked; dry-run default / `--apply` / `--check`). Derives all URLs from the files on disk (only exclusion: `404.html`) — the URL rules were verified to reproduce all 56 existing locs with zero drift before the first `--apply`, which only reordered entries into a canonical stable order (entry content proven set-identical). `lastmod` is preserved on regeneration (never mass-bumped); new pages get their file's git commit date; `--touch <url>` resets one deliberately. `changefreq`/`priority` are curated in the script (`PAGE_META` + `SECTION_DEFAULTS`). CI (`validate.yml`) now runs `--check` on every push, so a page added without a sitemap entry turns the build red — the "forgot the sitemap" failure mode is dead.
+
 ## 9. Historical one-shot scripts are tracked; current worktree/branch litter
 
 **What:** `.claude/finalize_ep27.py` (EP27 shipped in April) and `.claude/rollout_perf_edits.py` (rollout completed — every page now has the deferred GA loader) are dead code, but `finalize_ep27.py` is also the only in-repo record of the prod site ID. Additionally `.claude/worktrees/` contains three stale worktrees (`dazzling-curie`, `festive-mendel`, `nervous-williams` — the last on an unmerged local branch), and local branches `claude/*`, `fix/episode-shorts-alt` plus remote branches `Chrishutusa1-patch-1/2`, `seo/canonicalization-hardening`, etc. linger.

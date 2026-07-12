@@ -46,6 +46,13 @@ jobs:
             exit 1
           fi
 
+      - name: sitemap.xml matches the pages on disk
+        if: ${{ !cancelled() }}
+        run: |
+          # git history is needed for lastmod dates of new pages
+          git fetch --unshallow --quiet 2>/dev/null || true
+          python _generate_sitemap.py --check
+
       - name: _redirects line shape
         if: ${{ !cancelled() }}
         run: |
