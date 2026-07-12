@@ -23,7 +23,11 @@ jobs:
           done
           exit $rc
 
+      # if: !cancelled() on the remaining checks so one failing gate doesn't
+      # hide the others' results (17 legacy pages fail the episode gates today
+      # — see GAPS.md #2 — and the other guards must keep reporting meanwhile).
       - name: Shorts alt normalize is a no-op (dry-run)
+        if: ${{ !cancelled() }}
         run: |
           out=$(python signalroom-publish-normalize.py --fix-alt)
           echo "$out"
@@ -33,6 +37,7 @@ jobs:
           fi
 
       - name: Single style.css cache-bust version
+        if: ${{ !cancelled() }}
         run: |
           versions=$(grep -rho 'style.css?v=[^"]*' --include='*.html' . | sort -u)
           echo "$versions"
@@ -42,6 +47,7 @@ jobs:
           fi
 
       - name: _redirects line shape
+        if: ${{ !cancelled() }}
         run: |
           # Every non-comment, non-blank line must be: pattern  target  status
           # where status is 200, 301, 301! or 404! (404! rules keep repo docs
