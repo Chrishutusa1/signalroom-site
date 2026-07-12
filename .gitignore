@@ -12,6 +12,11 @@ _STATUS.md
 /*.py
 !/_generate_topic_cards.py
 !/signalroom-airtable-bridge.py
+!/_validate_episode.py
+!/signalroom-publish-normalize.py
+!/_update_stats.py
+!/_update_featured_guests.py
+!/_predeploy_check.py
 
 # Buzzsprout transcript/chapter build artifacts
 buzzsprout-chapters/out/
