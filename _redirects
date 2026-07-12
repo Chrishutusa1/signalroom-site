@@ -40,6 +40,12 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /Articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301!
 /Articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301!
 
+# Repo docs: keep out of the served site (publish=".", so root files are public).
+# Force flag required — the files exist in the deploy and would shadow a plain rule.
+/PROJECT.md    /404.html    404!
+/GAPS.md       /404.html    404!
+/CLAUDE.md     /404.html    404!
+
 # Misc legacy redirects (target extensionless canonical)
 /good-people-quietly-quitting         /episodes/good-people-quietly-quitting         301
 /good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting         301
