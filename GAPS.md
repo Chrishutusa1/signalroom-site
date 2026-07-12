@@ -45,6 +45,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Why it matters:** Guest-relations optics; guests notice. Also nothing in the publish flow reminds anyone to update this file.
 **Fix (single task):** For each guest card in `guests.html` lacking a map entry, pull the LinkedIn URL from the guest's own episode page sidebar (`sidebar-guest-linkedin` href) and add it to the map. Add "update js/linkedin-links.js" to the new-episode checklist in CLAUDE.md. (Better long-term: generate the map from episode pages the way `_generate_topic_cards.py` works.)
 
+**FIXED 2026-07-12** (`d86c357`): all 9 missing guests added from their episode-page sidebars (map now 34 entries); `?v=20260712` added to the 4 script references. Note the map's live consumers shifted since this was written: `guests.html` no longer loads the script (its cards carry hardcoded `guest-linkedin` anchors); the script now serves `index.html` Featured Guests (verified badges render for all 5) and loads as a no-op on `Articles/*`. The CLAUDE.md checklist line already existed. The long-term "generate the map" idea remains open.
+
 ## 6. Duplicated shorts-alt fixing logic in two scripts
 
 **What:** `_validate_episode.py --fix` and `signalroom-publish-normalize.py --fix-alt` both implement filling shorts-thumbnail `alt` from `data-short-title`, with *different* regexes and different semantics (the validator also replaces wrong non-empty alts and injects missing attributes; normalize only ever fills `alt=""`).
@@ -70,6 +72,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Why it matters:** Manual sitemap + manual redirects + manual canonical = three chances to forget per new page. The repo's own history (`_redirects` "legacy sitemap slugs (404 ghost URLs)" block) shows sitemap drift has caused indexing junk before.
 **Fix (single task):** Add `<url><loc>https://signalroompodcast.com/articles/</loc>...</url>` now. Then (separate task) write `_generate_sitemap.py` that derives the sitemap from the files on disk + a small exclusion list, using each file's git last-commit date for `<lastmod>`; run it in the publish flow. **Caution:** any sitemap change is an SEO surface — the `gsc-change-preflight` skill applies.
 
+**PARTIALLY FIXED 2026-07-12** (`d86c357`): the `/articles/` entry added (preflight run; loc matches the trailing-slash canonical in `Articles/index.html`). The `_generate_sitemap.py` automation remains open — the sitemap is still fully manual.
+
 ## 9. Historical one-shot scripts are tracked; current worktree/branch litter
 
 **What:** `.claude/finalize_ep27.py` (EP27 shipped in April) and `.claude/rollout_perf_edits.py` (rollout completed — every page now has the deferred GA loader) are dead code, but `finalize_ep27.py` is also the only in-repo record of the prod site ID. Additionally `.claude/worktrees/` contains three stale worktrees (`dazzling-curie`, `festive-mendel`, `nervous-williams` — the last on an unmerged local branch), and local branches `claude/*`, `fix/episode-shorts-alt` plus remote branches `Chrishutusa1-patch-1/2`, `seo/canonicalization-hardening`, etc. linger.
@@ -90,7 +94,7 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 
 ## 11. Inconsistencies (cosmetic-to-minor, batchable)
 
-- **Favicon MIME mismatch:** every page declares `<link rel="icon" href=".../Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">` — a PNG labeled `image/jpeg`. Browsers sniff past it; still wrong. Fix: site-wide replace to `type="image/png"`.
+- **Favicon MIME mismatch:** every page declares `<link rel="icon" href=".../Signal_Room_Cover_FINAL_v2.png" type="image/jpeg">` — a PNG labeled `image/jpeg`. Browsers sniff past it; still wrong. Fix: site-wide replace to `type="image/png"`. **FIXED 2026-07-12** (`d86c357`): all 56 pages now `type="image/png"`; asset verified as real PNG.
 - **Inline styles vs stylesheet:** episode-page bodies rely heavily on inline `style=""` (colors hardcoded, e.g. `#6c63ff` vs the palette's `--purple-primary: #6C5CE7`), while chrome uses CSS variables. Cosmetic drift; don't "clean it up" wholesale (the markup doubles as script interface — gap #7), but new pages should prefer the variables.
 - **`meta name="keywords"`** on `index.html` — obsolete, ignored by engines; harmless. Remove on next homepage touch.
 - **`_redirects` alignment drift** at lines 102–103 (the two newest episode lines break the column alignment) — pure cosmetics, but it signals the file is appended to under time pressure; a malformed future append is the real risk. The CI check in #2 could validate `_redirects` line shape (`^\S+\s+\S+\s+(200|301!?)$`).
