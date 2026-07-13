@@ -24,12 +24,13 @@ python _generate_topic_cards.py --apply
 # Regenerate sitemap.xml from the pages on disk (CI fails if it's stale)
 python _generate_sitemap.py --apply
 
-# Deploy: staging = just push to origin/main (auto-deploys to signalroom-staging.netlify.app)
-# Deploy: PRODUCTION (manual, deploys current disk state). MUST pass the gate first:
-python _predeploy_check.py   # requires clean tree AND HEAD == origin/main
-netlify deploy --prod --site=98c71b47-cb1e-4eb2-8255-963349df8ccf --dir=.
+# Deploy: STAGING = push to origin/main -> auto-deploys signalroom-staging.netlify.app (site 75176784)
+# Deploy: PRODUCTION = after review/approval on staging, promote main to the `production` branch:
+git push origin main:production   # signalroompodcast.com (site 98c71b47) deploys ONLY from `production`
+# (Gate added 2026-07-12: prod's deploy branch was switched main->production so main pushes hit
+#  staging first for approval. Do NOT `netlify deploy --prod --dir=.` — it bypasses the branch/gate.)
 
-# After prod deploy: ping IndexNow for new/changed URLs
+# After prod promote: ping IndexNow for new/changed URLs
 python signalroom-publish-normalize.py --indexnow --url https://signalroompodcast.com/episodes/<slug> --apply
 
 # Airtable sync from Buzzsprout (secrets in C:\Users\PC\Desktop\HDSC\SignalRoom\.env)
@@ -58,7 +59,7 @@ New **episode** additionally: run `_validate_episode.py`, `_update_stats.py`, ad
 
 ## Gotchas
 
-- **Prod ≠ git.** Production is a manual directory deploy; staging follows origin/main. When debugging "prod shows X", curl the live site — don't trust the repo, and don't trust prod to have the latest commit.
+- **Prod = the `production` branch; staging = `main`.** signalroompodcast.com (site 98c71b47) auto-deploys from `production`; signalroom-staging.netlify.app (site 75176784) auto-deploys from `main`. So a push to `main` goes to STAGING only; prod updates when you `git push origin main:production`. When debugging "prod shows X", curl the live site — and remember prod lags `main` until it's promoted to `production`.
 - **The HTML is a machine interface.** Scripts locate content by exact regex on markup: `class="guest-card-name"`, `id="episode-count"`, the phrases "N episodes published to date" / "N healthcare AI practitioners", JSON-LD key order (`episodeNumber`, Person `name`), `data-short-title`, and the `<div class="guests-grid">` block in index.html. Reformatting or rewording these breaks `_update_stats.py`, `_update_featured_guests.py`, and `_generate_topic_cards.py` — since the GAPS #7 hardening they fail loudly (non-zero exit) instead of silently doing nothing.
 - **Don't hand-edit script-owned blocks:** homepage stat counters, Featured Guests grid, topic-page episode grids. Edit the source (guests.html cards, episode JSON-LD, the TOPICS dict) and rerun the script.
 - **Four root scripts are gitignored** (`/*.py` rule): `_validate_episode.py`, `signalroom-publish-normalize.py`, `_update_stats.py`, `_update_featured_guests.py`. `git status` looks clean without them; a fresh clone won't have them (GAPS.md #1 has the fix).
