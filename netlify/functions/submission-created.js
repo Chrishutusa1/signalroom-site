@@ -204,27 +204,40 @@ exports.handler = async (event) => {
 
   // Write to Airtable, capturing status so we can always notify (and avoid
   // non-2xx returns that would trigger Netlify retries → duplicate alerts).
+  // A transient 429/5xx or network blip is retried before we declare failure —
+  // an unretried transient error is the most likely cause of the 2026-06-29
+  // silent lost-application (Boris Berenberg). A 4xx (bad token/schema) won't
+  // heal on retry, so we stop immediately and let sendFailureAlert fire.
+  const isRetryable = (status) => status === 429 || (status >= 500 && status <= 599);
   let airtableStatus = "ok";
   let recordId = null;
-  try {
-    const resp = await fetch(url, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${AIRTABLE_PAT}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ records: [{ fields }], typecast: true }),
-    });
-    if (!resp.ok) {
+  const MAX_ATTEMPTS = 3;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      const resp = await fetch(url, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${AIRTABLE_PAT}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ records: [{ fields }], typecast: true }),
+      });
+      if (resp.ok) {
+        const json = await resp.json();
+        recordId = json.records?.[0]?.id || null;
+        airtableStatus = "ok";
+        break;
+      }
       airtableStatus = `error ${resp.status}`;
-      console.error("Airtable write failed", resp.status, await resp.text());
-    } else {
-      const json = await resp.json();
-      recordId = json.records?.[0]?.id || null;
+      console.error(`Airtable write failed (attempt ${attempt}/${MAX_ATTEMPTS})`, resp.status, await resp.text());
+      if (!isRetryable(resp.status)) break;
+    } catch (err) {
+      airtableStatus = "exception";
+      console.error(`Airtable write threw (attempt ${attempt}/${MAX_ATTEMPTS})`, err);
     }
-  } catch (err) {
-    airtableStatus = "exception";
-    console.error("Airtable write threw", err);
+    if (attempt < MAX_ATTEMPTS) {
+      await new Promise((r) => setTimeout(r, 400 * attempt)); // 400ms, 800ms backoff
+    }
   }
 
   await notifyApplication(fields, airtableStatus, recordId);
