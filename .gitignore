@@ -18,6 +18,7 @@ _STATUS.md
 !/_update_featured_guests.py
 !/_predeploy_check.py
 !/_generate_sitemap.py
+!/_reconcile_leads.py
 
 # Buzzsprout transcript/chapter build artifacts
 buzzsprout-chapters/out/
