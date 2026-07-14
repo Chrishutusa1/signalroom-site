@@ -123,6 +123,35 @@ async function sendAutoReply(fields) {
   }
 }
 
+// Second alert channel (2026-07-14): email Chris directly via Resend when the
+// Airtable write fails. The Zapier webhook is the primary alert, but two June
+// submissions proved a run can lose the lead with no webhook delivery — this
+// path only shares fate with the auto-reply (Resend), not with Zapier.
+async function sendFailureAlert(fields, airtableStatus) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.AUTOREPLY_FROM;
+  if (!apiKey || !from) return;
+  try {
+    await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from,
+        to: ["chris@hutchinsdatastrategy.com"],
+        subject: `LEAD WRITE FAILED (Signal Room guest form): ${fields.Name || "(no name)"}`,
+        text:
+          `The Airtable write for a guest application FAILED (${airtableStatus}). ` +
+          `The submission is safe in Netlify Forms; re-create the record or wait for the weekly reconciliation.\n\n` +
+          `Name: ${fields.Name || "—"}\nEmail: ${fields.Email || "—"}\n` +
+          `Title & Org: ${fields["Title & Organization"] || "—"}\n` +
+          `Submitted At: ${fields["Submitted At"] || "—"}`,
+      }),
+    });
+  } catch (err) {
+    console.error("failure alert email failed (non-fatal)", err);
+  }
+}
+
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
@@ -199,6 +228,9 @@ exports.handler = async (event) => {
   }
 
   await notifyApplication(fields, airtableStatus, recordId);
+  if (airtableStatus !== "ok") {
+    await sendFailureAlert(fields, airtableStatus);
+  }
   // Never auto-reply to a honeypot hit or a malformed address — the reply is an
   // open sender of Signal-Room-branded mail to whatever address was typed (GAPS #10).
   if (!honeypotTripped && looksLikeEmail(fields.Email)) {
