@@ -1,0 +1,160 @@
+# Episode Ops — cloud port of the local episode-publish lane.
+#
+# Replaces the "computer-on" scheduled tasks (episode-prep-check /
+# episode-publish-cascade / episode-publish-verify from scheduled-tasks.json)
+# with a cloud-native GitHub Actions cron, modeled on the podcast-stats-cloud
+# pipeline (the one task that already runs with no local dependency).
+#
+# SCOPE / SAFETY (v1):
+#   - READ-ONLY + verification only. No Airtable writes, no deploys.
+#   - Respects the confirmed gate model (see docs/CONTENT-OPS-PIPELINE.md §8):
+#       * G4 production go-live stays a MANUAL Netlify "Trigger deploy".
+#         This workflow NEVER publishes prod — it only emits a prod-ready notice.
+#       * Page build / staging publish stays the agent + PR flow (not automated here).
+#   - Every step is guarded so a missing secret degrades to a warning, not a red run.
+#
+# REQUIRED SECRET (repo → Settings → Secrets and variables → Actions):
+#   AIRTABLE_TOKEN   Personal access token with data.records:read on base
+#                    app3hF8k8ZGXvf9XF (Content Intelligence Hub).
+#
+# Cadence mirrors the local tasks (CT → UTC, CT = UTC-5):
+#   prep-check   Tue 16:00 CT = 21:00 UTC
+#   cascade gate Wed 01:00 CT = 06:00 UTC
+#   verify       Wed 08:00 CT = 13:00 UTC
+name: episode-ops
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Episode slug to verify (e.g. ai-agents-healthcare-security-risk). Blank = latest checks only."
+        required: false
+        default: ""
+  schedule:
+    - cron: "0 21 * * 2"   # Tue 16:00 CT — prep check
+    - cron: "0 6 * * 3"    # Wed 01:00 CT — cascade / prod-ready gate
+    - cron: "0 13 * * 3"   # Wed 08:00 CT — publish verify
+
+permissions:
+  contents: read
+
+env:
+  AIRTABLE_BASE: app3hF8k8ZGXvf9XF
+  T_BUZZSPROUT: tblrji2ivwJQYE6Rg   # Buzzsprout Episode Data
+  T_EPISODES: tblzKDGrxDnhFqQUU     # Podcast Episodes
+  STAGING: https://signalroom-staging.netlify.app
+  PROD: https://signalroompodcast.com
+
+jobs:
+  # ── episode-prep-check ────────────────────────────────────────────────
+  # Tue, plus the Wed cascade run and any manual dispatch.
+  prep-check:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.schedule == '0 21 * * 2' ||
+      github.event.schedule == '0 6 * * 3'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check upcoming episode metadata in Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${AIRTABLE_TOKEN:-}" ]; then
+            echo "::warning::AIRTABLE_TOKEN not set — skipping metadata check (add the secret to enable)."
+            exit 0
+          fi
+          # Pull the most recent Buzzsprout Episode Data rows and confirm the
+          # fields the page build needs are present.
+          resp=$(curl -sf -H "Authorization: Bearer $AIRTABLE_TOKEN" \
+            "https://api.airtable.com/v0/${AIRTABLE_BASE}/${T_BUZZSPROUT}?pageSize=5&sort%5B0%5D%5Bfield%5D=Created%20At&sort%5B0%5D%5Bdirection%5D=desc" \
+            || { echo "::error::Airtable request failed"; exit 1; })
+          echo "$resp" | python3 - <<'PY'
+          import json,sys
+          data=json.load(sys.stdin)
+          recs=data.get("records",[])
+          if not recs:
+              print("::warning::no Buzzsprout Episode Data rows returned"); sys.exit(0)
+          need=["Episode Number","Episode Title","Buzzsprout Status"]
+          print(f"Checked {len(recs)} most-recent episode row(s):")
+          problems=0
+          for r in recs:
+              f=r.get("fields",{})
+              missing=[k for k in need if not f.get(k)]
+              label=f.get("Episode Title") or r["id"]
+              if missing:
+                  problems+=1
+                  print(f"  ⚠ {label}: missing {missing}")
+              else:
+                  print(f"  ✓ {label}: {f.get('Buzzsprout Status')}")
+          # Prep-check is advisory — warn, don't fail the run.
+          if problems:
+              print(f"::warning::{problems} recent episode row(s) missing required metadata")
+          PY
+
+  # ── episode-publish-verify ────────────────────────────────────────────
+  # Wed verify run, plus manual dispatch.
+  verify:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.schedule == '0 13 * * 3'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify episode is live and consistent
+        run: |
+          set -uo pipefail
+          slug="${{ github.event.inputs.slug }}"
+          if [ -z "$slug" ]; then
+            echo "No slug provided — running site-level reachability checks only."
+            for url in "$STAGING" "$PROD"; do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "$url/episodes")
+              echo "  $url/episodes → $code"
+              [ "$code" = "200" ] || echo "::warning::$url/episodes returned $code"
+            done
+            exit 0
+          fi
+          rc=0
+          for base in "$STAGING" "$PROD"; do
+            url="$base/episodes/$slug"
+            body=$(curl -sL -w '\n%{http_code}' "$url")
+            code=$(echo "$body" | tail -n1)
+            html=$(echo "$body" | sed '$d')
+            echo "== $url → $code =="
+            [ "$code" = "200" ] || { echo "::warning::$url returned $code"; rc=1; continue; }
+            echo "$html" | grep -q 'application/ld+json' \
+              && echo "  ✓ JSON-LD present" || { echo "::warning::$url missing JSON-LD"; rc=1; }
+            echo "$html" | grep -q 'PodcastEpisode' \
+              && echo "  ✓ PodcastEpisode schema" || echo "::warning::$url missing PodcastEpisode schema"
+          done
+          # Prod lag behind staging is expected until the manual deploy (G4);
+          # keep verify advisory so a not-yet-deployed prod page doesn't fail red.
+          exit 0
+
+  # ── episode-publish-cascade → prod-ready gate ─────────────────────────
+  # Wed cascade run only. Does NOT deploy. Emits the prod-ready notice so the
+  # human G4 gate (manual Netlify Trigger deploy) has a clear signal.
+  prod-ready-gate:
+    if: github.event.schedule == '0 6 * * 3'
+    needs: prep-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit prod-ready notice (no deploy — G4 is manual)
+        run: |
+          {
+            echo "## Episode prod-ready gate"
+            echo ""
+            echo "Staging auto-deploys from \`main\`. Production (**signalroompodcast.com**)"
+            echo "is the **manual** gate (G4) — deploy via Netlify → **signalroom** →"
+            echo "Deploys → **Trigger deploy → Deploy site**, then validate:"
+            echo "\`commit_ref == main HEAD\`, state \`ready\`, published today."
+            echo ""
+            echo "This job intentionally does **not** publish prod."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "Prod-ready notice written to the run summary."
+
+  # TODO (next iterations, once scheduled-tasks.json is located + secrets added):
+  #  - Port the add-podcast-episode page-build logic (currently agent + PR flow).
+  #  - Write a Schedule Heartbeats row per run (tblUmY97D6GxFFERY) for parity with
+  #    the local scheduler's observability. Needs AIRTABLE_TOKEN write scope.
+  #  - Optional: replace the manual G4 with an automated Netlify Trigger-deploy
+  #    step ONLY if the team decides to drop the manual gate (see §8 decisions).

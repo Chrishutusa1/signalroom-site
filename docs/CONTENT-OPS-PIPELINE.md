@@ -34,7 +34,10 @@ the executing agent using the Airtable records + Drive assets + the existing sit
 Scanned this session:
 
 - **Scheduled jobs (cron):** none.
-- **GitHub Actions / workflows:** none in the repo.
+- **GitHub Actions / workflows:** `validate.yml` (publish-gate CI on push/PR) and
+  `episode-ops.yml` (scheduled episode prep/verify + prod-ready gate — the cloud port of the
+  local episode lane; read-only v1). The external `signalroom-stats-pipeline` repo also runs a
+  stats Action.
 - **Deploy scripts in repo:** none (`netlify.toml` config only; `publish = "."`).
 - **Routines / scheduled triggers:** could not be read (connector instability at scan time — see §7).
 - **Evidence of existing (non-repo) automation:** the *Guest Opportunities* table carries

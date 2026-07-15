@@ -130,7 +130,7 @@ Registry. Confirming and, if local, **cloud-hosting it** is the main open task f
 | Lane | Today | To run in the cloud |
 |---|---|---|
 | **Podcast stats** | ✅ Cloud (GitHub Actions `signalroom-stats-pipeline`) | Already done — the template for everything else |
-| **Episode publish** (prep/cascade/verify) | ⚠️ Scheduled but **local** | Port to GitHub Actions / web Code-session Routines |
+| **Episode publish** (prep/cascade/verify) | 🟡 Cloud port **started** — `episode-ops.yml` (read-only prep/verify + prod-ready gate); page-build + prod deploy still manual | Fill in page-build port; keep prod deploy on the manual G4 gate |
 | **Inbound guest engine** | ⚠️ Event-driven, executor likely **local/desktop** | Host the Outlook→Opportunity flow in the cloud |
 | **Newsletter (AIHP)** | ⚠️ Local | Port cascade/verify to cloud runners |
 | **SEO/AEO + social** | ⚠️ Mostly local (Chrome MCP, AuthoredUp) | Hardest to port (browser-automation dependent) |
