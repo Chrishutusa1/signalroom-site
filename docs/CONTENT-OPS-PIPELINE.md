@@ -14,7 +14,7 @@ cloud** and be executed by **agents** with consistent, repeatable, verifiable st
 
 | System | Role in the pipeline | Key IDs |
 |---|---|---|
-| **Airtable — "Content Intelligence Hub"** | Pipeline database & single source of truth for guests + episode metadata | base `app3hF8k8ZGXvf9XF` · Buzzsprout Episode Data `tblrji2ivwJQYE6Rg` · Guest Applications (prep) `tbloZMd3IzXNo20jY` · Credential Inventory `tblQtQjrJkbk2GuEk` · Master credentials `tbldkMjFsrBSHO76q` |
+| **Airtable — "Content Intelligence Hub"** | Pipeline database & single source of truth for guests + episode metadata | base `app3hF8k8ZGXvf9XF` · **Guest Opportunities** (inbound engine) `tbl7BjmotGvcUtVa4` · **Guest Applications** (prep intake) `tbloZMd3IzXNo20jY` · **Buzzsprout Episode Data** `tblrji2ivwJQYE6Rg` · Podcast Episodes `tblzKDGrxDnhFqQUU` · Credential Inventory `tblQtQjrJkbk2GuEk` · API Keys (master creds) `tbldkMjFsrBSHO76q` |
 | **Google Drive — `GuestData/`** | Asset store: per-guest folder with headshot, bio, transcript | folder per `<Guest Name>` |
 | **GitHub — `Chrishutusa1/signalroom-site`** | The website source of truth; PR-based changes | branch `main` |
 | **Netlify — `signalroom-staging`** | Auto-deploys `main` → staging preview | site `75176784-…` (staging URL + PR deploy previews) |
@@ -37,9 +37,15 @@ Scanned this session:
 - **GitHub Actions / workflows:** none in the repo.
 - **Deploy scripts in repo:** none (`netlify.toml` config only; `publish = "."`).
 - **Routines / scheduled triggers:** could not be read (connector instability at scan time — see §7).
-- **Net effect:** there is currently **no scheduled or event-driven automation**. Every stage
-  below is driven manually inside a single working session. Making this "run in the cloud"
-  means converting the stages into scheduled/triggered agent runs (§6).
+- **Evidence of existing (non-repo) automation:** the *Guest Opportunities* table carries
+  machine states (`needs_dedupe`, `needs_enrichment`, `draft_created`) and the base has
+  `Schedule Heartbeats` and `Status Events` tables — so an **inbound-intake automation already
+  runs somewhere outside this repo** (Airtable automations / another Code session / external
+  script). It just isn't versioned here and wasn't inventoried this session.
+- **Net effect:** the *website-publishing* half (Stages 4–6) has **no scheduled automation** and
+  is driven manually per session; the *inbound* half (Stage 1) appears partly automated already.
+  Making the whole thing "run in the cloud" means (a) locating and documenting the existing
+  intake automation, and (b) converting Stages 2–7 into scheduled/triggered agent runs (§6).
 
 ---
 
@@ -49,29 +55,34 @@ Each stage names its **trigger**, the **agent work**, the **human gate**, and th
 **system-of-record update** so any cloud session can execute it identically.
 
 ### Stage 1 — Guest Opportunity Assessment
-- **Trigger:** new inbound guest (Airtable *Guest Applications* row / intake form).
-- **Agent work:** enrich the applicant (role, company, LinkedIn, relevance to healthcare-AI
-  audience); score against ICP using prior episodes as the yardstick; write a recommendation.
-- **System update:** write score + rationale + status (`assess`) back to the applicant's
-  Airtable row.
-- **Human gate:** host accepts / declines.
-- **Output:** qualified guest with a decision recorded in Airtable.
+- **Trigger:** new inbound row in *Guest Opportunities* (`tbl7BjmotGvcUtVa4`),
+  `Current Status = new_unreviewed`.
+- **Agent work:** dedupe → enrich (role, company, LinkedIn, healthcare-AI relevance) → classify
+  (`Classification`) → score fit against ICP using prior episodes → set `Priority` and
+  `Recommended Next Action`; optionally pre-draft a reply (`Draft Status = recommended`).
+  This mirrors the existing machine states (`needs_dedupe → needs_enrichment → ready_for_review`).
+- **System update:** `Current Status → strong_fit | conditional_fit | not_a_fit | hold_for_later`.
+- **Human gate (G1):** host confirms the recommendation; approving a drafted reply moves
+  `Draft Status → approved_to_create`; booking moves `Current Status → booking_in_progress → booked`.
+- **Output:** a qualified, booked guest.
 
 ### Stage 2 — Guest Prep Review
 - **Trigger:** guest accepted + recording scheduled.
 - **Agent work:** gather bio + headshot + company from Drive `GuestData/<Guest>` and Airtable;
   fill gaps from the web; draft a **prep brief** (angle, 8–10 question outline, risk/verify
   notes — e.g. exact company/title); ensure the Drive guest folder exists and is populated.
-- **System update:** prep brief saved to the guest's Drive folder + linked in Airtable;
-  status → `prepped`.
-- **Human gate:** host reviews/edits the prep brief before recording.
+- **System update:** prep brief saved to the guest's Drive folder + linked in *Guest
+  Applications*; `Status → Reviewing`, then `Scheduled` once the recording is booked.
+- **Human gate (G2):** host reviews/edits the prep brief before recording.
 
 ### Stage 3 — Record  *(future: Riverside FM MCP)*
 - **Trigger:** recording completed in Riverside.
 - **Agent work:** pull the recording + **auto-transcript** via the Riverside MCP; store the
   transcript in `GuestData/<Guest>` and attach to the Airtable episode record.
-- **System update:** episode row gets transcript + raw asset links; status → `recorded`.
-- *Until Riverside MCP exists:* transcript is added manually when supplied (Stage 5).
+- **System update:** *Guest Applications* `Status → Recorded`; *Buzzsprout Episode Data*
+  `Transcript Source → Third-Party Integration` (the field already anticipates this path).
+- *Until Riverside MCP exists:* `Transcript Source = Manual Upload` and the transcript is added
+  manually when supplied (Stage 5).
 
 ### Stage 4 — Publish to site (staging)
 - **Trigger:** episode live on Buzzsprout + YouTube (or its scheduled go-live date).
@@ -89,7 +100,9 @@ Each stage names its **trigger**, the **agent work**, the **human gate**, and th
      `sitemap.xml`. *(See §4 for the efficiency fix that collapses this into one checked step.)*
 - **PR flow:** commit to `claude/…` branch → push → **draft PR** → verify Netlify deploy
   preview → mark ready → **squash-merge** to `main`.
-- **System update:** merge to `main` **auto-deploys to staging**; episode status → `staged`.
+- **System update:** merge to `main` **auto-deploys to staging**. *Buzzsprout Episode Data*
+  `Buzzsprout Status` tracks the audio side (`Scheduled → Published`); the site-`staged` state
+  lives in Netlify, not Airtable (see the `Site Status` recommendation in §8).
 
 ### Stage 5 — Transcript
 - **Trigger:** transcript available (Stage 3 output, or supplied by host).
@@ -106,10 +119,10 @@ Each stage names its **trigger**, the **agent work**, the **human gate**, and th
   it promotes all of current `main`, not one page.
 - **Validate:** confirm the new prod deploy has **state `ready`**, **`commit_ref` == `main`
   HEAD**, **`build_id` present**, published today. (This is how deploy `4299bfb` was validated.)
-- **System update:** episode status → `live`.
+- **System update:** site is live (Netlify); if the `Site Status` field is added (§8), set `live`.
 
 ### Stage 7 — Distribution & visibility
-- **Trigger:** episode `live`.
+- **Trigger:** episode live on prod.
 - **Agent work:** newsletter feature (Beehiiv), social posts (LinkedIn, YouTube community),
   internal notify (Slack); optional SEO/answer-engine check (Ahrefs/Ubersuggest connectors).
 - **System update:** distribution status recorded in Airtable.
@@ -230,7 +243,39 @@ The human-in-the-loop model is settled. **Four human gates**, everything else au
 Everything between the gates (enrichment, page build, staging merge, transcript, deploy
 validation, draft generation) runs automatically.
 
-### Still to confirm
-- The Airtable status vocabulary (`assess → accepted → prepped → recorded → staged → live`)
-  against the real field values in *Guest Applications* / *Buzzsprout Episode Data* — pending a
-  stable Airtable connector to read the table schemas.
+### Airtable status vocabulary (confirmed from schema)
+
+Pulled from the live base schema. The earlier assumed vocabulary was wrong — the real system
+uses **two front-door tables** plus the episode table, each with its own field:
+
+**`Guest Opportunities` (`tbl7BjmotGvcUtVa4`) → `Current Status`** — the inbound/opportunity
+engine (the machine states — `needs_dedupe`, `needs_enrichment`, `draft_created` — indicate an
+existing automation already populates this):
+```
+new_unreviewed → needs_dedupe → needs_enrichment → ready_for_review
+   → strong_fit | conditional_fit | not_a_fit | hold_for_later   (← G1 assessment output)
+   → needs_reply → draft_created → replied_waiting
+   → booking_in_progress → booked → archived | error
+```
+Supporting selects on the same table:
+- **`Classification`**: guest_pitch · podcast_invite · media_query · warm_intro · scheduling · follow_up · newsletter · sales_spam · irrelevant
+- **`Priority`**: immediate · this_week · normal · low
+- **`Recommended Next Action`**: reply_now · ask_for_more_info · add_to_review_queue · decline · archive · schedule · hold
+- **`Draft Status`**: none → recommended → approved_to_create → created → stale · rejected  *(this is the G3 auto-draft-and-hold gate in field form)*
+
+**`Guest Applications` (`tbloZMd3IzXNo20jY`) → `Status`** — the simpler guest-intake track:
+```
+New → Reviewing → Contacted → Scheduled → Recorded   (terminal: Declined · Spam)
+```
+
+**`Buzzsprout Episode Data` (`tblrji2ivwJQYE6Rg`)**:
+- **`Buzzsprout Status`**: Draft → Scheduled → Published  (terminal: Deleted)
+- **`Transcript Source`**: Buzzsprout · Manual Upload · **Third-Party Integration** *(← the future Riverside path)*
+
+**Mapping to the pipeline gates:** G1 assessment writes `Guest Opportunities.Current Status`
+(strong/conditional/not_a_fit) + `Recommended Next Action`; G3 draft-and-hold is
+`Guest Opportunities.Draft Status` (`recommended` → host approves → `approved_to_create`).
+The "staged" / "live" **site**-deploy states are *not* Airtable fields today — they live in
+Netlify (staging = merged to `main`; live = prod deploy). If you want them tracked in Airtable,
+add a `Site Status` select to `Buzzsprout Episode Data` (`staged` / `live`); flagged as a
+recommendation, not built.
