@@ -191,7 +191,9 @@ Orchestrator (per episode / per guest)
   → kicks Page Builder.
 - **Event-driven:** PR webhooks already wake this session for CI/review; the same mechanism
   can carry the publish loop.
-- **Human gates** stay human: the agent prepares and notifies (Slack/email), a person approves.
+- **Human gates** stay human — four of them (§8): opportunity accept (G1), prep review (G2),
+  newsletter/social approval (G3, auto-draft-and-hold), and prod go-live (G4, manual Trigger
+  deploy). The agent prepares and notifies (Slack/email); a person approves.
 
 ---
 
@@ -214,11 +216,21 @@ These must be resolved for the pipeline to run unattended:
 
 ---
 
-## 8. Open questions for review
+## 8. Decisions (confirmed)
 
-- Which stages should be **fully automated** vs kept **human-gated** beyond the two named?
-- Newsletter/social: auto-draft-and-hold for approval, or auto-publish?
-- Prod go-live: keep the manual **Trigger deploy** gate, or enable auto-publish on merge to
-  `main` (with "Stop auto publishing" off)?
-- Confirm the Airtable status vocabulary (`assess → accepted → prepped → recorded → staged →
-  live`) matches the real field values in *Guest Applications* / *Buzzsprout Episode Data*.
+The human-in-the-loop model is settled. **Four human gates**, everything else automated:
+
+| # | Gate | Who approves | What the agent does |
+|---|---|---|---|
+| G1 | **Opportunity accept/decline** | Host | Scores the guest, writes rationale to Airtable, notifies — then waits |
+| G2 | **Prep brief review** | Host | Drafts the prep brief to Drive, notifies — then waits |
+| G3 | **Newsletter + social** | Host | **Auto-drafts and holds for approval** — never auto-publishes distribution content |
+| G4 | **Production go-live** | Host | **Manual Netlify "Trigger deploy"** stays the gate; no auto-publish on merge to `main` |
+
+Everything between the gates (enrichment, page build, staging merge, transcript, deploy
+validation, draft generation) runs automatically.
+
+### Still to confirm
+- The Airtable status vocabulary (`assess → accepted → prepped → recorded → staged → live`)
+  against the real field values in *Guest Applications* / *Buzzsprout Episode Data* — pending a
+  stable Airtable connector to read the table schemas.
