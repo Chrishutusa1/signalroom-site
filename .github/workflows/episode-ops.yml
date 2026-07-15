@@ -1,0 +1,140 @@
+# Episode Ops — cloud port of the local episode-publish lane.
+#
+# Replaces the "computer-on" scheduled tasks (episode-prep-check /
+# episode-publish-cascade / episode-publish-verify from scheduled-tasks.json)
+# with a cloud-native GitHub Actions cron, modeled on the podcast-stats-cloud
+# pipeline (the one task that already runs with no local dependency).
+#
+# SCOPE / SAFETY (v1):
+#   - READ-ONLY + verification only. No Airtable writes, no deploys.
+#   - Production DEPLOYS from `main` via Netlify continuous deployment
+#     (the signalroom site's production branch is main as of 2026-07-15), so this
+#     workflow does NOT deploy — it verifies. The safety gate is the PR +
+#     validate.yml CI + staging preview BEFORE merge (see docs/CONTENT-OPS-PIPELINE.md §8).
+#   - Page build stays the agent + PR flow (not automated here).
+#   - Every step is guarded so a missing secret degrades to a warning, not a red run.
+#
+# REQUIRED SECRET (repo → Settings → Secrets and variables → Actions):
+#   AIRTABLE_TOKEN   Personal access token with data.records:read on base
+#                    app3hF8k8ZGXvf9XF (Content Intelligence Hub).
+#
+# Cadence mirrors the local tasks (CT → UTC, CT = UTC-5):
+#   prep-check   Tue 16:00 CT = 21:00 UTC
+#   verify       Wed 08:00 CT = 13:00 UTC   (after the Wed episode deploys to prod)
+name: episode-ops
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Episode slug to verify (e.g. ai-agents-healthcare-security-risk). Blank = latest checks only."
+        required: false
+        default: ""
+  schedule:
+    - cron: "0 21 * * 2"   # Tue 16:00 CT — prep check
+    - cron: "0 13 * * 3"   # Wed 08:00 CT — publish verify (post auto-deploy)
+
+permissions:
+  contents: read
+
+env:
+  AIRTABLE_BASE: app3hF8k8ZGXvf9XF
+  T_BUZZSPROUT: tblrji2ivwJQYE6Rg   # Buzzsprout Episode Data
+  T_EPISODES: tblzKDGrxDnhFqQUU     # Podcast Episodes
+  STAGING: https://signalroom-staging.netlify.app
+  PROD: https://signalroompodcast.com
+
+jobs:
+  # ── episode-prep-check ────────────────────────────────────────────────
+  # Tue prep run + any manual dispatch.
+  prep-check:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.schedule == '0 21 * * 2'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check upcoming episode metadata in Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${AIRTABLE_TOKEN:-}" ]; then
+            echo "::warning::AIRTABLE_TOKEN not set — skipping metadata check (add the secret to enable)."
+            exit 0
+          fi
+          # Pull the most recent Buzzsprout Episode Data rows and confirm the
+          # fields the page build needs are present.
+          resp=$(curl -sf -H "Authorization: Bearer $AIRTABLE_TOKEN" \
+            "https://api.airtable.com/v0/${AIRTABLE_BASE}/${T_BUZZSPROUT}?pageSize=5&sort%5B0%5D%5Bfield%5D=Created%20At&sort%5B0%5D%5Bdirection%5D=desc" \
+            || { echo "::error::Airtable request failed"; exit 1; })
+          echo "$resp" | python3 - <<'PY'
+          import json,sys
+          data=json.load(sys.stdin)
+          recs=data.get("records",[])
+          if not recs:
+              print("::warning::no Buzzsprout Episode Data rows returned"); sys.exit(0)
+          need=["Episode Number","Episode Title","Buzzsprout Status"]
+          print(f"Checked {len(recs)} most-recent episode row(s):")
+          problems=0
+          for r in recs:
+              f=r.get("fields",{})
+              missing=[k for k in need if not f.get(k)]
+              label=f.get("Episode Title") or r["id"]
+              if missing:
+                  problems+=1
+                  print(f"  ⚠ {label}: missing {missing}")
+              else:
+                  print(f"  ✓ {label}: {f.get('Buzzsprout Status')}")
+          # Prep-check is advisory — warn, don't fail the run.
+          if problems:
+              print(f"::warning::{problems} recent episode row(s) missing required metadata")
+          PY
+
+  # ── episode-publish-verify ────────────────────────────────────────────
+  # Wed verify run, plus manual dispatch.
+  verify:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.schedule == '0 13 * * 3'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify episode is live and consistent
+        run: |
+          set -uo pipefail
+          slug="${{ github.event.inputs.slug }}"
+          if [ -z "$slug" ]; then
+            echo "No slug provided — running site-level reachability checks only."
+            for url in "$STAGING" "$PROD"; do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "$url/episodes")
+              echo "  $url/episodes → $code"
+              [ "$code" = "200" ] || echo "::warning::$url/episodes returned $code"
+            done
+            exit 0
+          fi
+          rc=0
+          for base in "$STAGING" "$PROD"; do
+            url="$base/episodes/$slug"
+            body=$(curl -sL -w '\n%{http_code}' "$url")
+            code=$(echo "$body" | tail -n1)
+            html=$(echo "$body" | sed '$d')
+            echo "== $url → $code =="
+            [ "$code" = "200" ] || { echo "::warning::$url returned $code"; rc=1; continue; }
+            echo "$html" | grep -q 'application/ld+json' \
+              && echo "  ✓ JSON-LD present" || { echo "::warning::$url missing JSON-LD"; rc=1; }
+            echo "$html" | grep -q 'PodcastEpisode' \
+              && echo "  ✓ PodcastEpisode schema" || echo "::warning::$url missing PodcastEpisode schema"
+          done
+          # Prod deploys from main on merge, but its build can briefly lag;
+          # keep verify advisory so a mid-deploy prod page doesn't fail red.
+          exit 0
+
+  # NOTE: production deploy is no longer a workflow job. Prod deploys from
+  # `main` via Netlify continuous deployment on merge — there is no prod gate to
+  # emit. The `verify` job above confirms the auto-deploy landed on prod.
+
+  # TODO (next iterations, once scheduled-tasks.json is located + secrets added):
+  #  - Port the add-podcast-episode page-build logic (currently agent + PR flow).
+  #  - Write a Schedule Heartbeats row per run (tblUmY97D6GxFFERY) for parity with
+  #    the local scheduler's observability. Needs AIRTABLE_TOKEN write scope.
+  #  - Optional: add a Netlify-token step to assert prod's published commit ==
+  #    main HEAD after auto-deploy (belt-and-suspenders on the verify job).

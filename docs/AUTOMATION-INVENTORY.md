@@ -42,14 +42,14 @@ into the cloud.
 | Task | Cadence | State | What it does |
 |---|---|---|---|
 | `episode-prep-check` | Tue 16:00 | **Active** | Pre-episode check: Buzzsprout + YouTube + Airtable metadata for the upcoming **Wed** episode |
-| `episode-publish-cascade` | Wed 01:00 | **Active** | Post-publish cascade: **site deploy, JSON-LD, prod approval gate** |
+| `episode-publish-cascade` | Wed 01:00 | **Active** | Post-publish cascade: site deploy + JSON-LD, **verify-only** (prod approval gate removed — prod deploys from `main`, see §5) |
 | `episode-publish-verify` | Wed 08:00 | **Active** | Verifies BZ + YT + site URLs all live and consistent |
 | `add-podcast-episode` | Manual | Disabled | Builds the episode page on **staging** from Airtable (the "add-podcast-episode routine") |
-| `signal-room-prod-sync` | Manual | Disabled | **OUTDATED** — manual prod deploy via **Netlify Drop zip** (see §5) |
+| `signal-room-prod-sync` | — | **Retired** | Prod deploys from `main`; no manual deploy step remains (see §5) |
 | `signal-room-episode-sync-check` | Wed 09:03 | Disabled | Validates BZ/YT episode data vs *Podcast Episodes*, creates missing rows |
 
-> Episodes drop **weekly on Wednesdays**; the cascade already includes a **prod approval gate**
-> — this is the "entire workflow" referenced earlier.
+> Episodes drop **weekly on Wednesdays**. Prod go-live is **automatic** (deploys on merge to
+> `main`); the cascade is now verify-only.
 
 ### Newsletter — AI Health Pulse (Beehiiv)
 | Task | Cadence | State | What it does |
@@ -130,7 +130,7 @@ Registry. Confirming and, if local, **cloud-hosting it** is the main open task f
 | Lane | Today | To run in the cloud |
 |---|---|---|
 | **Podcast stats** | ✅ Cloud (GitHub Actions `signalroom-stats-pipeline`) | Already done — the template for everything else |
-| **Episode publish** (prep/cascade/verify) | ⚠️ Scheduled but **local** | Port to GitHub Actions / web Code-session Routines |
+| **Episode publish** (prep/verify) | 🟢 Prod deploy **automatic** (deploys on merge to `main`); cloud verify via `episode-ops.yml`; page-build still agent+PR | Fill in the page-build port |
 | **Inbound guest engine** | ⚠️ Event-driven, executor likely **local/desktop** | Host the Outlook→Opportunity flow in the cloud |
 | **Newsletter (AIHP)** | ⚠️ Local | Port cascade/verify to cloud runners |
 | **SEO/AEO + social** | ⚠️ Mostly local (Chrome MCP, AuthoredUp) | Hardest to port (browser-automation dependent) |
@@ -143,26 +143,39 @@ Schedule-Heartbeats logging so the cloud runs remain observable.
 
 ---
 
-## 5. Reconciliation — what today's work changed
+## 5. Reconciliation — the prod-deploy mechanism (corrected 2026-07-15)
 
-**`signal-room-prod-sync` is now outdated.** Its documented method is *"Production is Netlify
-Drop (not git-connected) … build a clean zip from git HEAD of main and drop it on the Netlify
-production site."* As of this session, the prod site **`signalroom` is git-linked to `main`** and
-was deployed via **Netlify Trigger deploy** (validated: commit `4299bfb`, then current `main`).
-So:
+**How prod actually deployed (the real history):**
+- Prod site `signalroom` is git-connected. Between **2026-07-12 and 2026-07-15** its **production
+  branch was `production`** (not `main`) — a deliberate gate: staging auto-deployed from `main`,
+  and prod updated only when someone promoted with **`git push origin main:production`**. (An even
+  earlier "Netlify Drop zip" method — still described in the stale `signal-room-prod-sync` task —
+  had already been replaced by that branch gate.)
 
-- The **manual zip-drop workflow is superseded** by the git-connected Trigger-deploy path.
-- `signal-room-prod-sync` in `scheduled-tasks.json` / Operations Registry should be **updated**
-  to the new method (or retired), and the `episode-publish-cascade` prod-approval-gate step
-  repointed at Trigger-deploy instead of zip-drop.
-- This removes a local, error-prone step (hand-built zips on the Desktop) from the prod path —
-  a direct win for the cloud/repeatability goal.
+**The decision (2026-07-15): drop the gate.** The prod site's **production branch is switched
+`production` → `main`**, so every merge to `main` deploys to signalroompodcast.com automatically —
+same as staging. The old `production` branch and the `git push origin main:production` promotion
+are retired. Consequences:
+
+- **`signal-room-prod-sync` → RETIRED.** No manual prod deploy step remains (neither zip-drop nor
+  branch-promotion).
+- **`episode-publish-cascade` → prod approval gate removed.** Verify-only;
+  `episode-publish-verify` confirms the deploy landed (`commit_ref == main HEAD`).
+- The safety gate moves to **merge time** (PR + `validate.yml` CI + staging preview).
+- **Enabling change (dashboard-only):** Netlify **`signalroom`** → Site configuration → Build &
+  deploy → Continuous deployment → **Production branch: `production` → `main`**. The Netlify MCP
+  cannot change branch config, so this is a manual dashboard step.
 
 ---
 
 ## 6. Open tasks
 
-1. Locate `scheduled-tasks.json` and confirm the executor/host (local machine vs cloud runner).
-2. Confirm the inbound guest engine's executor; cloud-host it if local.
-3. Update/retire `signal-room-prod-sync` to the git-connected Trigger-deploy method (§5).
-4. Port the episode-publish and inbound lanes to the `podcast-stats-cloud` (GitHub Actions) model.
+1. **Netlify (dashboard):** switch `signalroom` production branch `production` → `main`; then the
+   old `production` branch can be deleted.
+2. Edit `scheduled-tasks.json` on the host: retire `signal-room-prod-sync`, drop the prod gate in
+   `episode-publish-cascade` (see §5). The nightly `operations-registry-mirror` then self-heals
+   the Airtable mirror.
+3. Locate `scheduled-tasks.json` and confirm the executor/host (local machine vs cloud runner).
+4. Confirm the inbound guest engine's executor; cloud-host it if local.
+5. Port the remaining episode-publish + inbound lanes to the `podcast-stats-cloud` (GitHub
+   Actions) model. (The verify lane is already ported — `episode-ops.yml`.)

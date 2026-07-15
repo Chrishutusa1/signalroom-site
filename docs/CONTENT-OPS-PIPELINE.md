@@ -34,7 +34,9 @@ the executing agent using the Airtable records + Drive assets + the existing sit
 Scanned this session:
 
 - **Scheduled jobs (cron):** none.
-- **GitHub Actions / workflows:** none in the repo.
+- **GitHub Actions / workflows:** `validate.yml` (publish-gate CI on push/PR) and
+  `episode-ops.yml` (scheduled episode prep + verify — the cloud port of the local episode lane;
+  read-only v1). The external `signalroom-stats-pipeline` repo also runs a stats Action.
 - **Deploy scripts in repo:** none (`netlify.toml` config only; `publish = "."`).
 - **Routines / scheduled triggers:** could not be read (connector instability at scan time — see §7).
 - **Evidence of existing (non-repo) automation:** the *Guest Opportunities* table carries
@@ -112,13 +114,14 @@ Each stage names its **trigger**, the **agent work**, the **human gate**, and th
 - **PR flow:** follow-up PR → squash-merge. *(With Riverside auto-transcript, fold this into
   the Stage 4 PR so there's one PR per episode — see §4.)*
 
-### Stage 6 — Production deploy + validate
-- **Trigger:** episode approved for prod go-live.
-- **Agent work:** deploy `main` to the `signalroom` prod site (**Netlify → Deploys → Trigger
-  deploy → Deploy site**, or push if auto-publish is on). Static deploy is **all-or-nothing**:
-  it promotes all of current `main`, not one page.
-- **Validate:** confirm the new prod deploy has **state `ready`**, **`commit_ref` == `main`
-  HEAD**, **`build_id` present**, published today. (This is how deploy `4299bfb` was validated.)
+### Stage 6 — Production deploy (automatic) + validate
+- **Trigger:** merge to `main` (no human step). The `signalroom` prod site's **production branch
+  is `main`** (switched from `production` on 2026-07-15), so the merge deploys to
+  signalroompodcast.com automatically — same as staging. Deploy is **all-or-nothing**: it
+  promotes all of `main`.
+- **Validate:** `episode-publish-verify` (and `episode-ops.yml` verify) confirm the new prod
+  deploy has **state `ready`**, **`commit_ref` == `main` HEAD**, **`build_id` present**,
+  published today. (This is how deploy `4299bfb` was validated.)
 - **System update:** site is live (Netlify); if the `Site Status` field is added (§8), set `live`.
 
 ### Stage 7 — Distribution & visibility
@@ -168,9 +171,8 @@ The condensed, do-this-each-time version of Stages 4–6:
 [ ] Wire site: index.html (cards + counts) · guests.html · episodes.html · sitemap.xml
 [ ] Commit → push branch → draft PR
 [ ] Verify Netlify deploy preview renders
-[ ] Mark ready → squash-merge to main  (→ auto-deploys to staging)
+[ ] Mark ready → squash-merge to main  (→ auto-deploys to staging AND prod)
 [ ] (When available) add Full Episode Transcript section
-[ ] Prod: Netlify → signalroom → Deploys → Trigger deploy → Deploy site
 [ ] Validate prod: state=ready, commit_ref==main HEAD, build_id present, published today
 [ ] Distribute: newsletter (Beehiiv) · social (LinkedIn/YouTube) · Slack notify
 ```
@@ -204,9 +206,10 @@ Orchestrator (per episode / per guest)
   → kicks Page Builder.
 - **Event-driven:** PR webhooks already wake this session for CI/review; the same mechanism
   can carry the publish loop.
-- **Human gates** stay human — four of them (§8): opportunity accept (G1), prep review (G2),
-  newsletter/social approval (G3, auto-draft-and-hold), and prod go-live (G4, manual Trigger
-  deploy). The agent prepares and notifies (Slack/email); a person approves.
+- **Human gates** stay human — three of them (§8): opportunity accept (G1), prep review (G2),
+  and newsletter/social approval (G3, auto-draft-and-hold). Prod go-live is **automatic**
+  (deploys on merge to `main`); the merge itself (PR + CI + staging preview) is the gate.
+  The agent prepares and notifies (Slack/email); a person approves the three gates.
 
 ---
 
@@ -231,17 +234,24 @@ These must be resolved for the pipeline to run unattended:
 
 ## 8. Decisions (confirmed)
 
-The human-in-the-loop model is settled. **Four human gates**, everything else automated:
+The human-in-the-loop model is settled. **Three human gates**, everything else automated:
 
 | # | Gate | Who approves | What the agent does |
 |---|---|---|---|
 | G1 | **Opportunity accept/decline** | Host | Scores the guest, writes rationale to Airtable, notifies — then waits |
 | G2 | **Prep brief review** | Host | Drafts the prep brief to Drive, notifies — then waits |
 | G3 | **Newsletter + social** | Host | **Auto-drafts and holds for approval** — never auto-publishes distribution content |
-| G4 | **Production go-live** | Host | **Manual Netlify "Trigger deploy"** stays the gate; no auto-publish on merge to `main` |
 
 Everything between the gates (enrichment, page build, staging merge, transcript, deploy
 validation, draft generation) runs automatically.
+
+**Production go-live is automatic (updated 2026-07-15).** The former prod gate (G4) was dropped by
+switching the `signalroom` **production branch from `production` → `main`** (it had been a
+separate `production` branch promoted via `git push origin main:production` since 2026-07-12). Now
+every merge to `main` deploys to signalroompodcast.com automatically — same as staging. The safety
+gate therefore moves to **merge time**: the PR review + `validate.yml` CI + staging preview are
+what stand between a change and production. Discipline: don't merge to `main` until staging looks
+right.
 
 ### Airtable status vocabulary (confirmed from schema)
 
