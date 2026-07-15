@@ -7,10 +7,11 @@
 #
 # SCOPE / SAFETY (v1):
 #   - READ-ONLY + verification only. No Airtable writes, no deploys.
-#   - Respects the confirmed gate model (see docs/CONTENT-OPS-PIPELINE.md §8):
-#       * G4 production go-live stays a MANUAL Netlify "Trigger deploy".
-#         This workflow NEVER publishes prod — it only emits a prod-ready notice.
-#       * Page build / staging publish stays the agent + PR flow (not automated here).
+#   - Production AUTO-PUBLISHES from `main` via Netlify continuous deployment
+#     (the signalroom site is git-linked to main with auto-publishing on), so this
+#     workflow does NOT deploy — it verifies. The safety gate is the PR +
+#     validate.yml CI + staging preview BEFORE merge (see docs/CONTENT-OPS-PIPELINE.md §8).
+#   - Page build stays the agent + PR flow (not automated here).
 #   - Every step is guarded so a missing secret degrades to a warning, not a red run.
 #
 # REQUIRED SECRET (repo → Settings → Secrets and variables → Actions):
@@ -19,8 +20,7 @@
 #
 # Cadence mirrors the local tasks (CT → UTC, CT = UTC-5):
 #   prep-check   Tue 16:00 CT = 21:00 UTC
-#   cascade gate Wed 01:00 CT = 06:00 UTC
-#   verify       Wed 08:00 CT = 13:00 UTC
+#   verify       Wed 08:00 CT = 13:00 UTC   (after prod auto-publishes the Wed episode)
 name: episode-ops
 
 on:
@@ -32,8 +32,7 @@ on:
         default: ""
   schedule:
     - cron: "0 21 * * 2"   # Tue 16:00 CT — prep check
-    - cron: "0 6 * * 3"    # Wed 01:00 CT — cascade / prod-ready gate
-    - cron: "0 13 * * 3"   # Wed 08:00 CT — publish verify
+    - cron: "0 13 * * 3"   # Wed 08:00 CT — publish verify (post auto-deploy)
 
 permissions:
   contents: read
@@ -51,8 +50,7 @@ jobs:
   prep-check:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      github.event.schedule == '0 21 * * 2' ||
-      github.event.schedule == '0 6 * * 3'
+      github.event.schedule == '0 21 * * 2'
     runs-on: ubuntu-latest
     steps:
       - name: Check upcoming episode metadata in Airtable
@@ -126,35 +124,17 @@ jobs:
             echo "$html" | grep -q 'PodcastEpisode' \
               && echo "  ✓ PodcastEpisode schema" || echo "::warning::$url missing PodcastEpisode schema"
           done
-          # Prod lag behind staging is expected until the manual deploy (G4);
-          # keep verify advisory so a not-yet-deployed prod page doesn't fail red.
+          # Prod auto-publishes from main, but its build can briefly lag the merge;
+          # keep verify advisory so a mid-deploy prod page doesn't fail red.
           exit 0
 
-  # ── episode-publish-cascade → prod-ready gate ─────────────────────────
-  # Wed cascade run only. Does NOT deploy. Emits the prod-ready notice so the
-  # human G4 gate (manual Netlify Trigger deploy) has a clear signal.
-  prod-ready-gate:
-    if: github.event.schedule == '0 6 * * 3'
-    needs: prep-check
-    runs-on: ubuntu-latest
-    steps:
-      - name: Emit prod-ready notice (no deploy — G4 is manual)
-        run: |
-          {
-            echo "## Episode prod-ready gate"
-            echo ""
-            echo "Staging auto-deploys from \`main\`. Production (**signalroompodcast.com**)"
-            echo "is the **manual** gate (G4) — deploy via Netlify → **signalroom** →"
-            echo "Deploys → **Trigger deploy → Deploy site**, then validate:"
-            echo "\`commit_ref == main HEAD\`, state \`ready\`, published today."
-            echo ""
-            echo "This job intentionally does **not** publish prod."
-          } >> "$GITHUB_STEP_SUMMARY"
-          echo "Prod-ready notice written to the run summary."
+  # NOTE: production deploy is no longer a workflow job. Prod auto-publishes from
+  # `main` via Netlify continuous deployment on merge — there is no prod gate to
+  # emit. The `verify` job above confirms the auto-deploy landed on prod.
 
   # TODO (next iterations, once scheduled-tasks.json is located + secrets added):
   #  - Port the add-podcast-episode page-build logic (currently agent + PR flow).
   #  - Write a Schedule Heartbeats row per run (tblUmY97D6GxFFERY) for parity with
   #    the local scheduler's observability. Needs AIRTABLE_TOKEN write scope.
-  #  - Optional: replace the manual G4 with an automated Netlify Trigger-deploy
-  #    step ONLY if the team decides to drop the manual gate (see §8 decisions).
+  #  - Optional: add a Netlify-token step to assert prod's published commit ==
+  #    main HEAD after auto-deploy (belt-and-suspenders on the verify job).
