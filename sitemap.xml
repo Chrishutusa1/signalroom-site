@@ -253,6 +253,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/episodes/hospital-ai-pilots-fail</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/episodes/human-ai-leadership-equation</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
