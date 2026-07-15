@@ -62,14 +62,17 @@ jobs:
             echo "::warning::AIRTABLE_TOKEN not set — skipping metadata check (add the secret to enable)."
             exit 0
           fi
-          # Pull the most recent Buzzsprout Episode Data rows and confirm the
-          # fields the page build needs are present.
-          resp=$(curl -sf -H "Authorization: Bearer $AIRTABLE_TOKEN" \
-            "https://api.airtable.com/v0/${AIRTABLE_BASE}/${T_BUZZSPROUT}?pageSize=5&sort%5B0%5D%5Bfield%5D=Created%20At&sort%5B0%5D%5Bdirection%5D=desc" \
-            || { echo "::error::Airtable request failed"; exit 1; })
-          echo "$resp" | python3 - <<'PY'
+          # Pull the most recent Buzzsprout Episode Data rows (by Publish Date)
+          # and confirm the fields the page build needs are present.
+          code=$(curl -s -o /tmp/at.json -w '%{http_code}' -H "Authorization: Bearer $AIRTABLE_TOKEN" \
+            "https://api.airtable.com/v0/${AIRTABLE_BASE}/${T_BUZZSPROUT}?pageSize=5&sort%5B0%5D%5Bfield%5D=Publish%20Date&sort%5B0%5D%5Bdirection%5D=desc")
+          if [ "$code" != "200" ]; then
+            echo "::error::Airtable request failed (HTTP $code): $(head -c 400 /tmp/at.json)"
+            exit 1
+          fi
+          python3 - <<'PY'
           import json,sys
-          data=json.load(sys.stdin)
+          data=json.load(open("/tmp/at.json"))
           recs=data.get("records",[])
           if not recs:
               print("::warning::no Buzzsprout Episode Data rows returned"); sys.exit(0)
