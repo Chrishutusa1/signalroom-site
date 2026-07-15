@@ -115,9 +115,10 @@ Each stage names its **trigger**, the **agent work**, the **human gate**, and th
   the Stage 4 PR so there's one PR per episode — see §4.)*
 
 ### Stage 6 — Production deploy (automatic) + validate
-- **Trigger:** merge to `main` (no human step). The `signalroom` prod site is git-linked to
-  `main` with **auto-publishing on**, so the merge deploys to signalroompodcast.com
-  automatically — same as staging. Deploy is **all-or-nothing**: it promotes all of `main`.
+- **Trigger:** merge to `main` (no human step). The `signalroom` prod site's **production branch
+  is `main`** (switched from `production` on 2026-07-15), so the merge deploys to
+  signalroompodcast.com automatically — same as staging. Deploy is **all-or-nothing**: it
+  promotes all of `main`.
 - **Validate:** `episode-publish-verify` (and `episode-ops.yml` verify) confirm the new prod
   deploy has **state `ready`**, **`commit_ref` == `main` HEAD**, **`build_id` present**,
   published today. (This is how deploy `4299bfb` was validated.)
@@ -207,7 +208,7 @@ Orchestrator (per episode / per guest)
   can carry the publish loop.
 - **Human gates** stay human — three of them (§8): opportunity accept (G1), prep review (G2),
   and newsletter/social approval (G3, auto-draft-and-hold). Prod go-live is **automatic**
-  (auto-publish on merge to `main`); the merge itself (PR + CI + staging preview) is the gate.
+  (deploys on merge to `main`); the merge itself (PR + CI + staging preview) is the gate.
   The agent prepares and notifies (Slack/email); a person approves the three gates.
 
 ---
@@ -244,9 +245,10 @@ The human-in-the-loop model is settled. **Three human gates**, everything else a
 Everything between the gates (enrichment, page build, staging merge, transcript, deploy
 validation, draft generation) runs automatically.
 
-**Production go-live is automatic (updated 2026-07-15).** The former manual prod gate (G4) was
-dropped: the `signalroom` site is git-linked to `main` with **auto-publishing on**, so every
-merge to `main` deploys to signalroompodcast.com automatically — same as staging. The safety
+**Production go-live is automatic (updated 2026-07-15).** The former prod gate (G4) was dropped by
+switching the `signalroom` **production branch from `production` → `main`** (it had been a
+separate `production` branch promoted via `git push origin main:production` since 2026-07-12). Now
+every merge to `main` deploys to signalroompodcast.com automatically — same as staging. The safety
 gate therefore moves to **merge time**: the PR review + `validate.yml` CI + staging preview are
 what stand between a change and production. Discipline: don't merge to `main` until staging looks
 right.

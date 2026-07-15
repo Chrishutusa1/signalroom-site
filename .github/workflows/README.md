@@ -15,7 +15,7 @@ Add under **Settings → Secrets and variables → Actions**:
 
 ## What `episode-ops.yml` intentionally does **not** do
 
-- **No production deploy.** Production **auto-publishes** from `main` via Netlify continuous
+- **No production deploy.** Production **deploys** from `main` via Netlify continuous
   deployment on merge — deploying is Netlify's job, not the workflow's. This lane only
   **verifies** the deploy landed. The safety gate is the PR + `validate.yml` CI + staging
   preview *before* merge (`docs/CONTENT-OPS-PIPELINE.md` §8).

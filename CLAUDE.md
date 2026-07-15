@@ -25,12 +25,15 @@ python _generate_topic_cards.py --apply
 python _generate_sitemap.py --apply
 
 # Deploy: STAGING = push to origin/main -> auto-deploys signalroom-staging.netlify.app (site 75176784)
-# Deploy: PRODUCTION = after review/approval on staging, promote main to the `production` branch:
-git push origin main:production   # signalroompodcast.com (site 98c71b47) deploys ONLY from `production`
-# (Gate added 2026-07-12: prod's deploy branch was switched main->production so main pushes hit
-#  staging first for approval. Do NOT `netlify deploy --prod --dir=.` — it bypasses the branch/gate.)
+# Deploy: PRODUCTION = merge to `main` -> auto-deploys signalroompodcast.com (site 98c71b47).
+#   As of 2026-07-15 the prod site's production branch is `main` (the 2026-07-12 main->production
+#   gate was DROPPED), so every merge to main deploys straight to prod, same as staging. The
+#   approval gate is now merge-time: PR review + validate.yml CI + staging preview BEFORE merge.
+#   Do NOT `netlify deploy --prod --dir=.` — let the git-connected build publish.
+#   (History: prod deployed from a separate `production` branch via `git push origin main:production`
+#    between 2026-07-12 and 2026-07-15; that branch/promotion is retired.)
 
-# After prod promote: ping IndexNow for new/changed URLs
+# After a merge to main reaches prod: ping IndexNow for new/changed URLs
 python signalroom-publish-normalize.py --indexnow --url https://signalroompodcast.com/episodes/<slug> --apply
 
 # Airtable sync from Buzzsprout (secrets in C:\Users\PC\Desktop\HDSC\SignalRoom\.env)
@@ -59,7 +62,7 @@ New **episode** additionally: run `_validate_episode.py`, `_update_stats.py`, ad
 
 ## Gotchas
 
-- **Prod = the `production` branch; staging = `main`.** signalroompodcast.com (site 98c71b47) auto-deploys from `production`; signalroom-staging.netlify.app (site 75176784) auto-deploys from `main`. So a push to `main` goes to STAGING only; prod updates when you `git push origin main:production`. When debugging "prod shows X", curl the live site — and remember prod lags `main` until it's promoted to `production`.
+- **Prod and staging both deploy from `main`.** signalroompodcast.com (site 98c71b47) and signalroom-staging.netlify.app (site 75176784) both auto-deploy from `main` (prod's production branch was switched back to `main` on 2026-07-15, dropping the 2026-07-12 gate). A merge to `main` now deploys to BOTH; the approval gate is the PR + CI + staging-preview *before* merge. When debugging "prod shows X", curl the live site — prod may briefly lag `main` during the build. (The old `production` branch is retired; do not `git push origin main:production`.)
 - **The HTML is a machine interface.** Scripts locate content by exact regex on markup: `class="guest-card-name"`, `id="episode-count"`, the phrases "N episodes published to date" / "N healthcare AI practitioners", JSON-LD key order (`episodeNumber`, Person `name`), `data-short-title`, and the `<div class="guests-grid">` block in index.html. Reformatting or rewording these breaks `_update_stats.py`, `_update_featured_guests.py`, and `_generate_topic_cards.py` — since the GAPS #7 hardening they fail loudly (non-zero exit) instead of silently doing nothing.
 - **Don't hand-edit script-owned blocks:** homepage stat counters, Featured Guests grid, topic-page episode grids. Edit the source (guests.html cards, episode JSON-LD, the TOPICS dict) and rerun the script.
 - **Four root scripts are gitignored** (`/*.py` rule): `_validate_episode.py`, `signalroom-publish-normalize.py`, `_update_stats.py`, `_update_featured_guests.py`. `git status` looks clean without them; a fresh clone won't have them (GAPS.md #1 has the fix).

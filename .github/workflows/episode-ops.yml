@@ -7,8 +7,8 @@
 #
 # SCOPE / SAFETY (v1):
 #   - READ-ONLY + verification only. No Airtable writes, no deploys.
-#   - Production AUTO-PUBLISHES from `main` via Netlify continuous deployment
-#     (the signalroom site is git-linked to main with auto-publishing on), so this
+#   - Production DEPLOYS from `main` via Netlify continuous deployment
+#     (the signalroom site's production branch is main as of 2026-07-15), so this
 #     workflow does NOT deploy — it verifies. The safety gate is the PR +
 #     validate.yml CI + staging preview BEFORE merge (see docs/CONTENT-OPS-PIPELINE.md §8).
 #   - Page build stays the agent + PR flow (not automated here).
@@ -20,7 +20,7 @@
 #
 # Cadence mirrors the local tasks (CT → UTC, CT = UTC-5):
 #   prep-check   Tue 16:00 CT = 21:00 UTC
-#   verify       Wed 08:00 CT = 13:00 UTC   (after prod auto-publishes the Wed episode)
+#   verify       Wed 08:00 CT = 13:00 UTC   (after the Wed episode deploys to prod)
 name: episode-ops
 
 on:
@@ -46,7 +46,7 @@ env:
 
 jobs:
   # ── episode-prep-check ────────────────────────────────────────────────
-  # Tue, plus the Wed cascade run and any manual dispatch.
+  # Tue prep run + any manual dispatch.
   prep-check:
     if: >-
       github.event_name == 'workflow_dispatch' ||
@@ -124,11 +124,11 @@ jobs:
             echo "$html" | grep -q 'PodcastEpisode' \
               && echo "  ✓ PodcastEpisode schema" || echo "::warning::$url missing PodcastEpisode schema"
           done
-          # Prod auto-publishes from main, but its build can briefly lag the merge;
+          # Prod deploys from main on merge, but its build can briefly lag;
           # keep verify advisory so a mid-deploy prod page doesn't fail red.
           exit 0
 
-  # NOTE: production deploy is no longer a workflow job. Prod auto-publishes from
+  # NOTE: production deploy is no longer a workflow job. Prod deploys from
   # `main` via Netlify continuous deployment on merge — there is no prod gate to
   # emit. The `verify` job above confirms the auto-deploy landed on prod.
 
