@@ -14,14 +14,17 @@
 //                        fresh fork can never expose an open endpoint.
 //   AIRTABLE_TOKEN       personal access token scoped to the base
 //                        (data.records:read + data.records:write).
-//   AIRTABLE_BASE_ID     optional override of the default base below.
+//   PROPERTIES_AIRTABLE_BASE_ID  optional override of the default base below.
+//                        (Deliberately NOT plain AIRTABLE_BASE_ID — that env
+//                        var already exists on these sites and points at the
+//                        guest-leads base used by submission-created.js.)
 
 import { timingSafeEqual, createHash } from "node:crypto";
 
 export const config = { path: "/api/properties-data" };
 
 const API = () => process.env.AIRTABLE_API_URL || "https://api.airtable.com";
-const BASE = () => process.env.AIRTABLE_BASE_ID || "appgNkAc7lFFUi086";
+const BASE = () => process.env.PROPERTIES_AIRTABLE_BASE_ID || "appgNkAc7lFFUi086";
 const MAX_BYTES = 512 * 1024;
 const T_PROPS = "Properties";
 const T_AGENTS = "Agents";
