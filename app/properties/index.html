@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Internal ops tool — deliberately noindexed, not in sitemap.xml, no canonical. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+<title>Property Manager</title>
+<style>
+  :root {
+    --purple-primary: #6C5CE7;
+    --purple-soft: #8B7EF0;
+    --navy: #1A1A2E;
+    --navy-2: #232342;
+    --navy-3: #2C2C52;
+    --ink: #EAEAF5;
+    --ink-dim: #A6A6C4;
+    --line: rgba(255, 255, 255, 0.10);
+    --ok: #2ECC71;
+    --warn: #F5B041;
+    --err: #E74C3C;
+    --idle: #7F8C9B;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--navy);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  header.app { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; justify-content: space-between; margin-bottom: 24px; }
+  header.app h1 { font-size: 1.6rem; letter-spacing: 0.2px; }
+  header.app h1 span { color: var(--purple-soft); }
+  header.app p { color: var(--ink-dim); font-size: 0.9rem; margin-top: 4px; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  button {
+    font: inherit; cursor: pointer; border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--navy-2); color: var(--ink);
+    padding: 8px 14px; font-size: 0.88rem;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  button:hover { background: var(--navy-3); border-color: rgba(255,255,255,0.22); }
+  button.primary { background: var(--purple-primary); border-color: var(--purple-primary); font-weight: 600; }
+  button.primary:hover { background: var(--purple-soft); border-color: var(--purple-soft); }
+  button.danger:hover { border-color: var(--err); color: var(--err); }
+  button.small { padding: 4px 10px; font-size: 0.8rem; }
+
+  /* Tabs — one per property */
+  .tabs { display: flex; gap: 6px; overflow-x: auto; border-bottom: 1px solid var(--line); padding-bottom: 0; margin-bottom: 0; }
+  .tab {
+    border: 1px solid transparent; border-bottom: none;
+    border-radius: 10px 10px 0 0; background: transparent;
+    color: var(--ink-dim); padding: 10px 18px; white-space: nowrap;
+  }
+  .tab:hover { background: var(--navy-2); color: var(--ink); }
+  .tab.active {
+    background: var(--navy-2); color: var(--ink);
+    border-color: var(--line); font-weight: 600;
+    box-shadow: inset 0 3px 0 var(--purple-primary);
+  }
+  .tab .count { color: var(--ink-dim); font-weight: 400; font-size: 0.8em; margin-left: 6px; }
+
+  .panel {
+    background: var(--navy-2); border: 1px solid var(--line); border-top: none;
+    border-radius: 0 0 12px 12px; padding: 24px;
+  }
+  .prop-head { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
+  .prop-head h2 { font-size: 1.25rem; }
+  .prop-url { color: var(--purple-soft); text-decoration: none; font-size: 0.9rem; word-break: break-all; }
+  .prop-url:hover { text-decoration: underline; }
+  .prop-notes { color: var(--ink-dim); font-size: 0.88rem; margin: 8px 0 18px; max-width: 70ch; }
+  .prop-actions { display: flex; gap: 8px; }
+
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink-dim); font-weight: 600; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  td.agent-name { font-weight: 600; }
+  td .agent-role { display: block; font-weight: 400; color: var(--ink-dim); font-size: 0.82rem; margin-top: 2px; }
+  td.actions { white-space: nowrap; text-align: right; }
+  td.actions button { margin-left: 6px; }
+
+  .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 999px;
+    font-size: 0.76rem; font-weight: 600; letter-spacing: 0.02em;
+    border: 1px solid;
+  }
+  .badge.active { color: var(--ok);   border-color: var(--ok);   background: rgba(46, 204, 113, 0.10); }
+  .badge.paused { color: var(--warn); border-color: var(--warn); background: rgba(245, 176, 65, 0.10); }
+  .badge.error  { color: var(--err);  border-color: var(--err);  background: rgba(231, 76, 60, 0.10); }
+  .badge.idle   { color: var(--idle); border-color: var(--idle); background: rgba(127, 140, 155, 0.10); }
+
+  .run-time { display: block; }
+  .run-ago { color: var(--ink-dim); font-size: 0.8rem; }
+  .run-note { color: var(--ink-dim); font-size: 0.82rem; display: block; margin-top: 2px; max-width: 34ch; }
+  .outcome-success { color: var(--ok); font-weight: 600; }
+  .outcome-failure { color: var(--err); font-weight: 600; }
+  .never { color: var(--ink-dim); font-style: italic; }
+
+  .panel-foot { margin-top: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .saved-note { color: var(--ink-dim); font-size: 0.78rem; }
+
+  .empty {
+    text-align: center; color: var(--ink-dim); padding: 48px 20px;
+    border: 1px dashed var(--line); border-radius: 12px; margin-top: 16px;
+  }
+  .empty p { margin-bottom: 16px; }
+
+  /* Dialog forms */
+  dialog {
+    background: var(--navy-2); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 12px;
+    padding: 24px; width: min(440px, 92vw);
+  }
+  dialog::backdrop { background: rgba(10, 10, 20, 0.7); }
+  dialog h3 { margin-bottom: 16px; font-size: 1.05rem; }
+  dialog label { display: block; font-size: 0.8rem; color: var(--ink-dim); margin: 12px 0 4px; }
+  dialog input[type="text"], dialog input[type="url"], dialog input[type="datetime-local"],
+  dialog select, dialog textarea {
+    width: 100%; font: inherit; font-size: 0.9rem;
+    background: var(--navy); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+  }
+  dialog textarea { resize: vertical; min-height: 60px; }
+  dialog input:focus, dialog select:focus, dialog textarea:focus {
+    outline: none; border-color: var(--purple-primary);
+  }
+  dialog .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+
+  @media (max-width: 640px) {
+    .panel { padding: 16px 12px; }
+    th, td { padding: 8px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="app">
+    <div>
+      <h1>Property <span>Manager</span></h1>
+      <p>One tab per property &middot; each agent with its status and latest run</p>
+    </div>
+    <div class="toolbar">
+      <button class="primary" id="btn-add-property">+ Add property</button>
+      <button id="btn-export">Export JSON</button>
+      <button id="btn-import">Import JSON</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Properties"></nav>
+  <main id="panel"></main>
+</div>
+
+<!-- Property add/edit -->
+<dialog id="dlg-property">
+  <form method="dialog" id="form-property">
+    <h3 id="dlg-property-title">Add property</h3>
+    <label for="prop-name">Name *</label>
+    <input type="text" id="prop-name" required maxlength="80" placeholder="e.g. signalroompodcast.com">
+    <label for="prop-url">URL</label>
+    <input type="url" id="prop-url" placeholder="https://...">
+    <label for="prop-notes">Notes</label>
+    <textarea id="prop-notes" maxlength="500" placeholder="What this property is, who owns it, anything useful"></textarea>
+    <div class="dialog-actions">
+      <button type="button" data-close>Cancel</button>
+      <button type="submit" class="primary" id="dlg-property-save">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- Agent add/edit -->
+<dialog id="dlg-agent">
+  <form method="dialog" id="form-agent">
+    <h3 id="dlg-agent-title">Add agent</h3>
+    <label for="agent-name">Agent name *</label>
+    <input type="text" id="agent-name" required maxlength="80" placeholder="e.g. Sitemap generator">
+    <label for="agent-role">What it does</label>
+    <input type="text" id="agent-role" maxlength="120" placeholder="e.g. Regenerates sitemap.xml from pages on disk">
+    <label for="agent-status">Status</label>
+    <select id="agent-status">
+      <option value="active">Active</option>
+      <option value="paused">Paused</option>
+      <option value="error">Error</option>
+      <option value="idle">Idle</option>
+    </select>
+    <div class="dialog-actions">
+      <button type="button" data-close>Cancel</button>
+      <button type="submit" class="primary">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- Log a run -->
+<dialog id="dlg-run">
+  <form method="dialog" id="form-run">
+    <h3 id="dlg-run-title">Log run</h3>
+    <label for="run-at">Ran at</label>
+    <input type="datetime-local" id="run-at">
+    <label for="run-outcome">Outcome</label>
+    <select id="run-outcome">
+      <option value="success">Success</option>
+      <option value="failure">Failure</option>
+    </select>
+    <label for="run-note">Note</label>
+    <input type="text" id="run-note" maxlength="140" placeholder="e.g. 42 pages, no changes">
+    <div class="dialog-actions">
+      <button type="button" data-close>Cancel</button>
+      <button type="submit" class="primary">Save run</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+(function () {
+  "use strict";
+
+  var STORE_KEY = "property-manager-v1";
+  var STATUSES = { active: "Active", paused: "Paused", error: "Error", idle: "Idle" };
+
+  // ---------- state ----------
+
+  function uid() {
+    return "id-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+  }
+
+  function seedData() {
+    return {
+      version: 1,
+      activePropertyId: null,
+      properties: [
+        {
+          id: uid(),
+          name: "signalroompodcast.com",
+          url: "https://signalroompodcast.com",
+          notes: "The Signal Room podcast site (Netlify, deploys from main).",
+          agents: [
+            { id: uid(), name: "Episode validator", role: "Publish gates: meta ≤155, title ≤57, shorts alt", status: "active", lastRun: null },
+            { id: uid(), name: "Sitemap generator", role: "Regenerates sitemap.xml from pages on disk", status: "active", lastRun: null },
+            { id: uid(), name: "Stats updater", role: "Homepage episode/practitioner counters + Featured Guests", status: "active", lastRun: null },
+            { id: uid(), name: "Topic card generator", role: "Rebuilds topic-page episode grids", status: "active", lastRun: null },
+            { id: uid(), name: "IndexNow ping", role: "Notifies search engines after prod deploys", status: "idle", lastRun: null },
+            { id: uid(), name: "Airtable bridge", role: "Syncs Buzzsprout episode data into Airtable", status: "idle", lastRun: null }
+          ]
+        }
+      ]
+    };
+  }
+
+  function normalize(data) {
+    if (!data || typeof data !== "object" || !Array.isArray(data.properties)) return null;
+    var clean = { version: 1, activePropertyId: null, properties: [] };
+    data.properties.forEach(function (p) {
+      if (!p || typeof p.name !== "string" || !p.name.trim()) return;
+      var prop = {
+        id: typeof p.id === "string" ? p.id : uid(),
+        name: p.name.trim().slice(0, 80),
+        url: typeof p.url === "string" ? p.url.trim().slice(0, 300) : "",
+        notes: typeof p.notes === "string" ? p.notes.trim().slice(0, 500) : "",
+        agents: []
+      };
+      (Array.isArray(p.agents) ? p.agents : []).forEach(function (a) {
+        if (!a || typeof a.name !== "string" || !a.name.trim()) return;
+        var run = null;
+        if (a.lastRun && typeof a.lastRun.at === "string" && !isNaN(Date.parse(a.lastRun.at))) {
+          run = {
+            at: a.lastRun.at,
+            outcome: a.lastRun.outcome === "failure" ? "failure" : "success",
+            note: typeof a.lastRun.note === "string" ? a.lastRun.note.slice(0, 140) : ""
+          };
+        }
+        prop.agents.push({
+          id: typeof a.id === "string" ? a.id : uid(),
+          name: a.name.trim().slice(0, 80),
+          role: typeof a.role === "string" ? a.role.trim().slice(0, 120) : "",
+          status: STATUSES.hasOwnProperty(a.status) ? a.status : "idle",
+          lastRun: run
+        });
+      });
+      clean.properties.push(prop);
+    });
+    if (typeof data.activePropertyId === "string") clean.activePropertyId = data.activePropertyId;
+    return clean;
+  }
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(STORE_KEY);
+      if (raw) {
+        var parsed = normalize(JSON.parse(raw));
+        if (parsed) return parsed;
+      }
+    } catch (e) { /* corrupted store falls through to seed */ }
+    return seedData();
+  }
+
+  var state = load();
+
+  function save() {
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    } catch (e) { /* quota exceeded: keep running in-memory */ }
+  }
+
+  function activeProperty() {
+    var found = null;
+    state.properties.forEach(function (p) { if (p.id === state.activePropertyId) found = p; });
+    if (!found && state.properties.length) {
+      found = state.properties[0];
+      state.activePropertyId = found.id;
+    }
+    return found;
+  }
+
+  function findAgent(prop, agentId) {
+    var found = null;
+    prop.agents.forEach(function (a) { if (a.id === agentId) found = a; });
+    return found;
+  }
+
+  // ---------- rendering ----------
+
+  var elTabs = document.getElementById("tabs");
+  var elPanel = document.getElementById("panel");
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function fmtWhen(iso) {
+    var d = new Date(iso);
+    return d.toLocaleString(undefined, {
+      year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"
+    });
+  }
+
+  function fmtAgo(iso) {
+    var s = Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
+    if (s < 0) return "scheduled";
+    if (s < 60) return "just now";
+    var m = Math.floor(s / 60);
+    if (m < 60) return m + "m ago";
+    var h = Math.floor(m / 60);
+    if (h < 48) return h + "h ago";
+    var days = Math.floor(h / 24);
+    if (days < 60) return days + "d ago";
+    return Math.floor(days / 30) + "mo ago";
+  }
+
+  function render() {
+    renderTabs();
+    renderPanel();
+  }
+
+  function renderTabs() {
+    elTabs.innerHTML = "";
+    var current = activeProperty();
+    state.properties.forEach(function (p) {
+      var b = document.createElement("button");
+      b.className = "tab" + (current && p.id === current.id ? " active" : "");
+      b.setAttribute("role", "tab");
+      b.setAttribute("aria-selected", current && p.id === current.id ? "true" : "false");
+      b.innerHTML = esc(p.name) + '<span class="count">' + p.agents.length + "</span>";
+      b.addEventListener("click", function () {
+        state.activePropertyId = p.id;
+        save();
+        render();
+      });
+      elTabs.appendChild(b);
+    });
+  }
+
+  function renderPanel() {
+    var p = activeProperty();
+    if (!p) {
+      elPanel.innerHTML =
+        '<div class="empty"><p>No properties yet.</p>' +
+        '<button class="primary" id="empty-add">+ Add your first property</button></div>';
+      document.getElementById("empty-add").addEventListener("click", function () { openPropertyDialog(null); });
+      return;
+    }
+
+    var rows = p.agents.map(function (a) {
+      var runCell;
+      if (a.lastRun) {
+        runCell =
+          '<span class="run-time">' + esc(fmtWhen(a.lastRun.at)) +
+          ' <span class="run-ago">(' + esc(fmtAgo(a.lastRun.at)) + ")</span></span>" +
+          '<span class="run-note">' +
+          '<span class="outcome-' + a.lastRun.outcome + '">' +
+          (a.lastRun.outcome === "failure" ? "Failed" : "Success") + "</span>" +
+          (a.lastRun.note ? " &middot; " + esc(a.lastRun.note) : "") +
+          "</span>";
+      } else {
+        runCell = '<span class="never">No runs yet</span>';
+      }
+      return (
+        "<tr>" +
+        '<td class="agent-name">' + esc(a.name) +
+        (a.role ? '<span class="agent-role">' + esc(a.role) + "</span>" : "") + "</td>" +
+        '<td><span class="badge ' + a.status + '">' + STATUSES[a.status] + "</span></td>" +
+        "<td>" + runCell + "</td>" +
+        '<td class="actions">' +
+        '<button class="small" data-act="log" data-id="' + a.id + '">Log run</button>' +
+        '<button class="small" data-act="edit" data-id="' + a.id + '">Edit</button>' +
+        '<button class="small danger" data-act="del" data-id="' + a.id + '">Delete</button>' +
+        "</td></tr>"
+      );
+    }).join("");
+
+    elPanel.innerHTML =
+      '<section class="panel" role="tabpanel">' +
+      '<div class="prop-head"><h2>' + esc(p.name) + "</h2>" +
+      '<div class="prop-actions">' +
+      '<button class="small" id="prop-edit">Edit property</button>' +
+      '<button class="small danger" id="prop-del">Delete property</button>' +
+      "</div></div>" +
+      (p.url ? '<a class="prop-url" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.url) + "</a>" : "") +
+      (p.notes ? '<p class="prop-notes">' + esc(p.notes) + "</p>" : '<p class="prop-notes"></p>') +
+      (p.agents.length
+        ? '<div class="table-scroll"><table><thead><tr>' +
+          "<th>Agent</th><th>Status</th><th>Latest run</th><th></th>" +
+          "</tr></thead><tbody>" + rows + "</tbody></table></div>"
+        : '<div class="empty"><p>No agents on this property yet.</p></div>') +
+      '<div class="panel-foot">' +
+      '<button class="primary" id="agent-add">+ Add agent</button>' +
+      '<span class="saved-note">Saved in this browser &middot; use Export JSON to back up or move devices</span>' +
+      "</div></section>";
+
+    document.getElementById("prop-edit").addEventListener("click", function () { openPropertyDialog(p); });
+    document.getElementById("prop-del").addEventListener("click", function () {
+      if (!confirm('Delete property "' + p.name + '" and its ' + p.agents.length + " agent(s)?")) return;
+      state.properties = state.properties.filter(function (x) { return x.id !== p.id; });
+      state.activePropertyId = state.properties.length ? state.properties[0].id : null;
+      save();
+      render();
+    });
+    document.getElementById("agent-add").addEventListener("click", function () { openAgentDialog(p, null); });
+
+    elPanel.querySelectorAll("td.actions button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var agent = findAgent(p, btn.getAttribute("data-id"));
+        if (!agent) return;
+        var act = btn.getAttribute("data-act");
+        if (act === "log") openRunDialog(p, agent);
+        if (act === "edit") openAgentDialog(p, agent);
+        if (act === "del") {
+          if (!confirm('Delete agent "' + agent.name + '"?')) return;
+          p.agents = p.agents.filter(function (x) { return x.id !== agent.id; });
+          save();
+          render();
+        }
+      });
+    });
+  }
+
+  // ---------- dialogs ----------
+
+  document.querySelectorAll("dialog [data-close]").forEach(function (btn) {
+    btn.addEventListener("click", function () { btn.closest("dialog").close("cancel"); });
+  });
+
+  var dlgProperty = document.getElementById("dlg-property");
+  var editingPropertyId = null;
+
+  function openPropertyDialog(prop) {
+    editingPropertyId = prop ? prop.id : null;
+    document.getElementById("dlg-property-title").textContent = prop ? "Edit property" : "Add property";
+    document.getElementById("prop-name").value = prop ? prop.name : "";
+    document.getElementById("prop-url").value = prop ? prop.url : "";
+    document.getElementById("prop-notes").value = prop ? prop.notes : "";
+    dlgProperty.showModal();
+  }
+
+  document.getElementById("form-property").addEventListener("submit", function (e) {
+    var name = document.getElementById("prop-name").value.trim();
+    if (!name) { e.preventDefault(); return; }
+    var url = document.getElementById("prop-url").value.trim();
+    var notes = document.getElementById("prop-notes").value.trim();
+    if (editingPropertyId) {
+      state.properties.forEach(function (p) {
+        if (p.id === editingPropertyId) { p.name = name; p.url = url; p.notes = notes; }
+      });
+    } else {
+      var prop = { id: uid(), name: name, url: url, notes: notes, agents: [] };
+      state.properties.push(prop);
+      state.activePropertyId = prop.id;
+    }
+    save();
+    render();
+  });
+
+  var dlgAgent = document.getElementById("dlg-agent");
+  var agentCtx = null; // { propertyId, agentId|null }
+
+  function openAgentDialog(prop, agent) {
+    agentCtx = { propertyId: prop.id, agentId: agent ? agent.id : null };
+    document.getElementById("dlg-agent-title").textContent = agent ? "Edit agent" : "Add agent";
+    document.getElementById("agent-name").value = agent ? agent.name : "";
+    document.getElementById("agent-role").value = agent ? agent.role : "";
+    document.getElementById("agent-status").value = agent ? agent.status : "active";
+    dlgAgent.showModal();
+  }
+
+  document.getElementById("form-agent").addEventListener("submit", function (e) {
+    if (!agentCtx) return;
+    var name = document.getElementById("agent-name").value.trim();
+    if (!name) { e.preventDefault(); return; }
+    var role = document.getElementById("agent-role").value.trim();
+    var status = document.getElementById("agent-status").value;
+    state.properties.forEach(function (p) {
+      if (p.id !== agentCtx.propertyId) return;
+      if (agentCtx.agentId) {
+        var a = findAgent(p, agentCtx.agentId);
+        if (a) { a.name = name; a.role = role; a.status = status; }
+      } else {
+        p.agents.push({ id: uid(), name: name, role: role, status: status, lastRun: null });
+      }
+    });
+    save();
+    render();
+  });
+
+  var dlgRun = document.getElementById("dlg-run");
+  var runCtx = null; // { propertyId, agentId }
+
+  function localDatetimeValue(d) {
+    var pad = function (n) { return (n < 10 ? "0" : "") + n; };
+    return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()) +
+      "T" + pad(d.getHours()) + ":" + pad(d.getMinutes());
+  }
+
+  function openRunDialog(prop, agent) {
+    runCtx = { propertyId: prop.id, agentId: agent.id };
+    document.getElementById("dlg-run-title").textContent = "Log run — " + agent.name;
+    document.getElementById("run-at").value = localDatetimeValue(new Date());
+    document.getElementById("run-outcome").value = "success";
+    document.getElementById("run-note").value = "";
+    dlgRun.showModal();
+  }
+
+  document.getElementById("form-run").addEventListener("submit", function () {
+    if (!runCtx) return;
+    var atValue = document.getElementById("run-at").value;
+    var at = atValue ? new Date(atValue) : new Date();
+    if (isNaN(at.getTime())) at = new Date();
+    var outcome = document.getElementById("run-outcome").value === "failure" ? "failure" : "success";
+    var note = document.getElementById("run-note").value.trim();
+    state.properties.forEach(function (p) {
+      if (p.id !== runCtx.propertyId) return;
+      var a = findAgent(p, runCtx.agentId);
+      if (a) {
+        a.lastRun = { at: at.toISOString(), outcome: outcome, note: note };
+        // A failed run flips the agent to Error; a successful run clears a
+        // previous Error back to Active. Paused/Idle are manual states — keep them.
+        if (outcome === "failure") a.status = "error";
+        else if (a.status === "error") a.status = "active";
+      }
+    });
+    save();
+    render();
+  });
+
+  // ---------- toolbar ----------
+
+  document.getElementById("btn-add-property").addEventListener("click", function () {
+    openPropertyDialog(null);
+  });
+
+  document.getElementById("btn-export").addEventListener("click", function () {
+    var blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "property-manager-backup.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(a.href);
+  });
+
+  var importInput = document.getElementById("import-file");
+  document.getElementById("btn-import").addEventListener("click", function () {
+    importInput.value = "";
+    importInput.click();
+  });
+  importInput.addEventListener("change", function () {
+    var file = importInput.files && importInput.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      var parsed = null;
+      try { parsed = normalize(JSON.parse(reader.result)); } catch (e) { /* falls through */ }
+      if (!parsed) {
+        alert("That file isn't a valid Property Manager export.");
+        return;
+      }
+      if (!confirm("Replace everything with the imported data (" + parsed.properties.length + " properties)?")) return;
+      state = parsed;
+      save();
+      render();
+    };
+    reader.readAsText(file);
+  });
+
+  // Refresh the "Xm ago" labels once a minute.
+  setInterval(function () { if (activeProperty()) renderPanel(); }, 60000);
+
+  render();
+})();
+</script>
+</body>
+</html>
