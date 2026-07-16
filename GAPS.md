@@ -11,6 +11,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Why it matters:** A disk failure, machine swap, or any cloud/worktree checkout silently loses the entire publish-gate tooling. The `signal-room-site` skill and memory notes instruct sessions to *run* these scripts — in a fresh clone they simply won't exist and a less capable model may conclude "no gate exists" and publish unvalidated pages.
 **Fix (single task):** Add four `!` exception lines to `.gitignore` (`!/_validate_episode.py`, `!/signalroom-publish-normalize.py`, `!/_update_stats.py`, `!/_update_featured_guests.py`), `git add` the four files, commit. No code changes needed.
 
+**FIXED (confirmed 2026-07-16):** the prescribed `.gitignore` exception lines exist (plus `!/_predeploy_check.py`, `!/_generate_sitemap.py`, `!/_reconcile_leads.py`) and all the scripts are tracked — verified present and runnable in a fresh cloud clone.
+
 ## 2. No CI and no automated enforcement of the publish gates
 
 **What:** There are no tests, no GitHub Actions, nothing that runs `_validate_episode.py` automatically. The gates (meta ≤155, title ≤57, shorts alt) rely on a human/AI remembering to run a local script. Git history proves the failure mode is real: commits `359da6a` and `4a9925a` are both after-the-fact fixes of over-length metas that had already been merged.
@@ -77,6 +79,8 @@ Ordered by severity, most important first. Each item: what / where / why it matt
 **Fix (single task):** Add `<url><loc>https://signalroompodcast.com/articles/</loc>...</url>` now. Then (separate task) write `_generate_sitemap.py` that derives the sitemap from the files on disk + a small exclusion list, using each file's git last-commit date for `<lastmod>`; run it in the publish flow. **Caution:** any sitemap change is an SEO surface — the `gsc-change-preflight` skill applies.
 
 **PARTIALLY FIXED 2026-07-12** (`d86c357`): the `/articles/` entry added (preflight run; loc matches the trailing-slash canonical in `Articles/index.html`). The `_generate_sitemap.py` automation remains open — the sitemap is still fully manual.
+
+**FULLY FIXED (confirmed 2026-07-16):** `_generate_sitemap.py` now exists, is tracked, and is the documented owner of `sitemap.xml` (URL rules + changefreq/priority in the script, lastmod preserved on regeneration, `--touch` to reset one); CI fails if the sitemap is stale (`--check`). Hand-editing entries is no longer the process — see CLAUDE.md's new-page checklist.
 
 **FULLY FIXED 2026-07-12:** `_generate_sitemap.py` added (tracked; dry-run default / `--apply` / `--check`). Derives all URLs from the files on disk (only exclusion: `404.html`) — the URL rules were verified to reproduce all 56 existing locs with zero drift before the first `--apply`, which only reordered entries into a canonical stable order (entry content proven set-identical). `lastmod` is preserved on regeneration (never mass-bumped); new pages get their file's git commit date; `--touch <url>` resets one deliberately. `changefreq`/`priority` are curated in the script (`PAGE_META` + `SECTION_DEFAULTS`). CI (`validate.yml`) now runs `--check` on every push, so a page added without a sitemap entry turns the build red — the "forgot the sitemap" failure mode is dead.
 
