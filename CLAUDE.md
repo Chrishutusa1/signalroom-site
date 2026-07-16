@@ -74,6 +74,12 @@ New **episode** additionally: run `_validate_episode.py`, `_update_stats.py`, ad
 - YouTube video IDs are matched to episodes by **guest name + publish date**, never by title (YouTube titles diverge from Buzzsprout titles) — see `signalroom-airtable-bridge.py`.
 - `data/*.csv` are stale March–April 2026 exports; nothing reads them at runtime.
 
+## Property Manager app (internal tool)
+
+- `app/properties/index.html` (noindex; deliberately NOT in sitemap.xml or `_redirects` — the new-page checklist does not apply to it) + `netlify/functions/properties-data.mjs` (Functions v2, served at `/api/properties-data`). The function is **zero-dependency by design** (plain `fetch` against the Airtable REST API) — the repo still has no package.json; keep it that way.
+- Storage: Airtable base `appgNkAc7lFFUi086` ("Property Manager": Properties / Agents / Meta tables). Rows may be edited directly in Airtable; the app picks them up on next load.
+- Env vars on BOTH Netlify sites (prod 98c71b47, staging 75176784): `PROPERTIES_SYNC_KEY` (shared secret the app sends as `X-Sync-Key`; set 2026-07-16) and `AIRTABLE_TOKEN` (PAT scoped to that base, `data.records:read`+`write`). If either is missing the endpoint returns 503 and the app runs local-only.
+
 ## Never change without care
 
 - `_redirects` — the canonical-URL contract; a bad line can loop or 404 the site. Append-only in practice; keep the `pattern  target  301!` shape.
