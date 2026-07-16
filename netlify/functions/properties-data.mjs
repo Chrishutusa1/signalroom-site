@@ -269,6 +269,12 @@ export default async (req) => {
     return json({ error: "method not allowed" }, 405);
   } catch (err) {
     console.error("properties-data:", err);
-    return json({ error: "storage backend error" }, 502);
+    const msg = String((err && err.message) || "");
+    const detail = /-> 40[13]/.test(msg)
+      ? "Airtable rejected the token - check the PAT's scopes and base access"
+      : /-> 404/.test(msg)
+        ? "Airtable base or table not found"
+        : "storage backend error";
+    return json({ error: detail }, 502);
   }
 };

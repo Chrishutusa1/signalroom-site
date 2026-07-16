@@ -659,6 +659,15 @@
     });
   }
 
+  // Turn a non-ok response into an Error carrying the server's own message
+  // (e.g. "sync is not configured on this site (503)") so the Sync settings
+  // dialog can show the real cause instead of a generic failure.
+  function syncError(res) {
+    return res.json().catch(function () { return {}; }).then(function (body) {
+      throw new Error((body && body.error ? body.error : "unexpected response") + " (" + res.status + ")");
+    });
+  }
+
   function schedulePush() {
     if (!syncKey) return;
     clearTimeout(pushTimer);
@@ -673,12 +682,12 @@
     api("PUT", JSON.stringify(state))
       .then(function (res) {
         if (res.status === 401) { setSyncStatus("auth", "The sync key was rejected by the server."); return; }
-        if (!res.ok) throw new Error("HTTP " + res.status);
+        if (!res.ok) return syncError(res);
         clearDirty();
         setSyncStatus("ok");
       })
-      .catch(function () {
-        setSyncStatus("err", "Could not reach the sync endpoint. Changes are kept locally and retried on the next edit or page focus.");
+      .catch(function (e) {
+        setSyncStatus("err", "Sync failed: " + e.message + ". Changes are kept locally and retried on the next edit or page focus.");
       })
       .then(function () { pushing = false; });
   }
@@ -701,7 +710,7 @@
     api("GET")
       .then(function (res) {
         if (res.status === 401) { setSyncStatus("auth", "The sync key was rejected by the server."); return null; }
-        if (!res.ok) throw new Error("HTTP " + res.status);
+        if (!res.ok) return syncError(res);
         return res.json();
       })
       .then(function (server) {
@@ -715,8 +724,8 @@
           push(); // server empty, or local has newer unpushed changes
         }
       })
-      .catch(function () {
-        setSyncStatus("err", "Could not reach the sync endpoint. Working from the local copy.");
+      .catch(function (e) {
+        setSyncStatus("err", "Sync failed: " + e.message + ". Working from the local copy.");
       });
   }
 
