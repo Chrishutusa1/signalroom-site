@@ -133,6 +133,14 @@
   }
   dialog .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
 
+  .sync-pill { border-radius: 999px; }
+  .sync-pill.off  { color: var(--ink-dim); }
+  .sync-pill.busy { color: var(--purple-soft); border-color: var(--purple-primary); }
+  .sync-pill.ok   { color: var(--ok); border-color: rgba(46, 204, 113, 0.5); }
+  .sync-pill.err, .sync-pill.auth { color: var(--err); border-color: rgba(231, 76, 60, 0.5); }
+  .sync-help { color: var(--ink-dim); font-size: 0.8rem; margin-top: 10px; line-height: 1.45; }
+  .sync-help a { color: var(--purple-soft); }
+
   @media (max-width: 640px) {
     .panel { padding: 16px 12px; }
     th, td { padding: 8px 8px; }
@@ -150,6 +158,7 @@
       <button class="primary" id="btn-add-property">+ Add property</button>
       <button id="btn-export">Export JSON</button>
       <button id="btn-import">Import JSON</button>
+      <button id="btn-sync" class="sync-pill off" title="Sync settings">Sync off</button>
       <input type="file" id="import-file" accept="application/json,.json" hidden>
     </div>
   </header>
@@ -190,6 +199,27 @@
       <option value="error">Error</option>
       <option value="idle">Idle</option>
     </select>
+    <div class="dialog-actions">
+      <button type="button" data-close>Cancel</button>
+      <button type="submit" class="primary">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- Sync settings -->
+<dialog id="dlg-sync">
+  <form method="dialog" id="form-sync">
+    <h3>Sync settings</h3>
+    <label for="sync-key-input">Sync key</label>
+    <input type="password" id="sync-key-input" maxlength="120" placeholder="Paste the shared sync key" autocomplete="off">
+    <p class="sync-help" id="sync-status-detail"></p>
+    <p class="sync-help">
+      With a key set, changes save to the shared
+      <a href="https://airtable.com/appgNkAc7lFFUi086" target="_blank" rel="noopener">Property Manager base in Airtable</a>
+      and every device sees the same data (last write wins). The key is the
+      <code>PROPERTIES_SYNC_KEY</code> value configured on the Netlify site.
+      Leave it empty to keep data in this browser only.
+    </p>
     <div class="dialog-actions">
       <button type="button" data-close>Cancel</button>
       <button type="submit" class="primary">Save</button>
@@ -255,7 +285,10 @@
 
   function normalize(data) {
     if (!data || typeof data !== "object" || !Array.isArray(data.properties)) return null;
-    var clean = { version: 1, activePropertyId: null, properties: [] };
+    var clean = { version: 1, activePropertyId: null, updatedAt: null, properties: [] };
+    if (typeof data.updatedAt === "string" && !isNaN(Date.parse(data.updatedAt))) {
+      clean.updatedAt = data.updatedAt;
+    }
     data.properties.forEach(function (p) {
       if (!p || typeof p.name !== "string" || !p.name.trim()) return;
       var prop = {
@@ -302,10 +335,18 @@
 
   var state = load();
 
-  function save() {
+  function persist() {
     try {
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
     } catch (e) { /* quota exceeded: keep running in-memory */ }
+  }
+
+  // Every data mutation goes through save(): stamp, cache locally, sync up.
+  function save() {
+    state.updatedAt = new Date().toISOString();
+    persist();
+    markDirty();
+    schedulePush();
   }
 
   function activeProperty() {
@@ -432,7 +473,11 @@
         : '<div class="empty"><p>No agents on this property yet.</p></div>') +
       '<div class="panel-foot">' +
       '<button class="primary" id="agent-add">+ Add agent</button>' +
-      '<span class="saved-note">Saved in this browser &middot; use Export JSON to back up or move devices</span>' +
+      '<span class="saved-note">' +
+      (syncKey
+        ? "Shared via Airtable sync &middot; Export JSON for backups"
+        : "Saved in this browser only &middot; set a sync key (Sync off button) to share across devices") +
+      "</span>" +
       "</div></section>";
 
     document.getElementById("prop-edit").addEventListener("click", function () { openPropertyDialog(p); });
@@ -569,6 +614,143 @@
     render();
   });
 
+  // ---------- server sync (Netlify Function -> Airtable) ----------
+  //
+  // Whole-document, last-write-wins sync against /api/properties-data.
+  // localStorage stays the offline cache; a "dirty" flag marks unpushed
+  // local changes so they survive a closed tab and retry on next load.
+
+  var SYNC_KEY_STORE = "property-manager-sync-key";
+  var DIRTY_STORE = "property-manager-dirty";
+  var API_URL = "/api/properties-data";
+
+  function lsGet(k) { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } }
+  function lsSet(k, v) { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch (e) {} }
+
+  var syncKey = lsGet(SYNC_KEY_STORE);
+  var syncDirty = lsGet(DIRTY_STORE) === "1";
+  var pushTimer = null;
+  var pushing = false;
+
+  function markDirty() { syncDirty = true; lsSet(DIRTY_STORE, "1"); }
+  function clearDirty() { syncDirty = false; lsSet(DIRTY_STORE, ""); }
+
+  var pill = document.getElementById("btn-sync");
+  var PILL_TEXT = { off: "Sync off", busy: "Syncing…", ok: "Synced", err: "Sync error", auth: "Key rejected" };
+  var syncStatus = "off";
+  var syncDetail = "";
+
+  function setSyncStatus(code, detail) {
+    syncStatus = code;
+    syncDetail = detail || "";
+    pill.className = "sync-pill " + code;
+    pill.textContent = code === "ok"
+      ? "Synced " + new Date().toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })
+      : PILL_TEXT[code];
+    var el = document.getElementById("sync-status-detail");
+    if (el) el.textContent = syncDetail;
+  }
+
+  function api(method, body) {
+    return fetch(API_URL, {
+      method: method,
+      headers: { "X-Sync-Key": syncKey, "Content-Type": "application/json" },
+      body: body || undefined,
+    });
+  }
+
+  function schedulePush() {
+    if (!syncKey) return;
+    clearTimeout(pushTimer);
+    pushTimer = setTimeout(push, 1200);
+  }
+
+  function push() {
+    if (!syncKey) return;
+    if (pushing) { schedulePush(); return; }
+    pushing = true;
+    setSyncStatus("busy");
+    api("PUT", JSON.stringify(state))
+      .then(function (res) {
+        if (res.status === 401) { setSyncStatus("auth", "The sync key was rejected by the server."); return; }
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        clearDirty();
+        setSyncStatus("ok");
+      })
+      .catch(function () {
+        setSyncStatus("err", "Could not reach the sync endpoint. Changes are kept locally and retried on the next edit or page focus.");
+      })
+      .then(function () { pushing = false; });
+  }
+
+  // Replace local state with a server document, keeping this device's
+  // selected tab. Does NOT bump updatedAt or push (server is the source).
+  function adopt(serverDoc) {
+    var clean = normalize(serverDoc);
+    if (!clean) return false;
+    clean.activePropertyId = state.activePropertyId;
+    state = clean;
+    persist();
+    render();
+    return true;
+  }
+
+  function initSync() {
+    if (!syncKey) { setSyncStatus("off"); return; }
+    setSyncStatus("busy");
+    api("GET")
+      .then(function (res) {
+        if (res.status === 401) { setSyncStatus("auth", "The sync key was rejected by the server."); return null; }
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (server) {
+        if (server === null || syncStatus === "auth") return;
+        var localNewer = syncDirty && (state.updatedAt || "") > (server && server.updatedAt || "");
+        if (server && server.properties && server.properties.length && !localNewer) {
+          adopt(server);
+          clearDirty();
+          setSyncStatus("ok");
+        } else {
+          push(); // server empty, or local has newer unpushed changes
+        }
+      })
+      .catch(function () {
+        setSyncStatus("err", "Could not reach the sync endpoint. Working from the local copy.");
+      });
+  }
+
+  // Pick up other devices' (or Airtable-side) changes when returning to the tab.
+  function refreshFromServer() {
+    api("GET")
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (server) {
+        if (server && server.properties && server.updatedAt !== state.updatedAt) {
+          adopt(server);
+          setSyncStatus("ok");
+        }
+      })
+      .catch(function () { /* silent; next interaction will surface errors */ });
+  }
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible" && syncKey && !syncDirty && !pushing) refreshFromServer();
+  });
+  window.addEventListener("online", function () { if (syncKey && syncDirty) push(); });
+
+  var dlgSync = document.getElementById("dlg-sync");
+  pill.addEventListener("click", function () {
+    document.getElementById("sync-key-input").value = syncKey;
+    document.getElementById("sync-status-detail").textContent = syncDetail;
+    dlgSync.showModal();
+  });
+  document.getElementById("form-sync").addEventListener("submit", function () {
+    syncKey = document.getElementById("sync-key-input").value.trim();
+    lsSet(SYNC_KEY_STORE, syncKey);
+    if (!syncKey) { setSyncStatus("off"); return; }
+    if (syncDirty) push(); else initSync();
+  });
+
   // ---------- toolbar ----------
 
   document.getElementById("btn-add-property").addEventListener("click", function () {
@@ -614,6 +796,7 @@
   setInterval(function () { if (activeProperty()) renderPanel(); }, 60000);
 
   render();
+  initSync();
 })();
 </script>
 </body>
