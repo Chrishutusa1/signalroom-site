@@ -1,6 +1,7 @@
 // LinkedIn profile links for Signal Room Podcast guests
 (function() {
     var linkedInUrls = {
+        'Angel Mena': 'https://www.linkedin.com/in/angeljmenamd/',
         'Ratnadeep Bhattacharjee': 'https://www.linkedin.com/in/ratnadeepbhattacharjee/',
         'Susie Branagan': 'https://www.linkedin.com/in/susie-branagan/',
         'Gary Cao': 'https://www.linkedin.com/in/garycao/',
