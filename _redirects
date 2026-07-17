@@ -27,18 +27,21 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /episodes/enterprise-ai-journey.html    /episodes/enterprise-ai-journey-data-foundations         301
 
 # Articles directory: filesystem is /Articles/ (capital A), canonical URL is /articles/ (lowercase).
-# Status 200 = internal rewrite, URL bar stays lowercase. Two articles only.
+# Status 200 = internal rewrite, URL bar stays lowercase.
 # Articles index (hub). Canonical is /articles/ (trailing slash) to match the article-page breadcrumbs.
 /articles/                                   /Articles/index.html                              200
 /articles                                    /articles/                                        301!
 /articles/data-governance-healthcare         /Articles/data-governance-healthcare.html         200
 /articles/healthcare-data-strategy           /Articles/healthcare-data-strategy.html           200
+/articles/healthcare-ai-governance-reality   /Articles/healthcare-ai-governance-reality.html   200
 # Legacy .html requests 301 to extensionless canonical (force flag required;
 # pretty_urls treats /articles/foo.html as servable even though file is at /Articles/).
 /articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301!
 /articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301!
+/articles/healthcare-ai-governance-reality.html  /articles/healthcare-ai-governance-reality    301!
 /Articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301!
 /Articles/healthcare-data-strategy.html      /articles/healthcare-data-strategy                301!
+/Articles/healthcare-ai-governance-reality.html  /articles/healthcare-ai-governance-reality    301!
 
 # Repo docs: keep out of the served site (publish=".", so root files are public).
 # Force flag required — the files exist in the deploy and would shadow a plain rule.

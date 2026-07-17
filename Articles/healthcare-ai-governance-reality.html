@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/healthcare-ai-governance-reality">
+  <title>The Reality Behind Healthcare AI Governance</title>
+  <meta name="description" content="What governing healthcare AI takes: four Signal Room experts on the shadow formulary, over-permissioned AI agents, and the security beneath the policy.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Layer Underneath the Policy: The Reality Behind Healthcare AI Governance",
+    "description": "What governing healthcare AI takes: four Signal Room experts on the shadow formulary, over-permissioned AI agents, and the security beneath the policy.",
+    "author": {
+      "@type": "Person",
+      "name": "Christopher Hutchins",
+      "jobTitle": "Founder and CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hutchins Data Strategy Consultants",
+        "url": "https://hutchinsdatastrategy.com"
+      },
+      "url": "https://www.linkedin.com/in/chutchins-healthcare"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Signal Room",
+      "url": "https://signalroompodcast.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+      }
+    },
+    "datePublished": "2026-07-17",
+    "dateModified": "2026-07-17",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://signalroompodcast.com/articles/healthcare-ai-governance-reality"
+    },
+    "keywords": ["healthcare AI governance", "AI security in healthcare", "shadow AI", "AI agents security", "clinical AI oversight"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://signalroompodcast.com/articles/" },
+      { "@type": "ListItem", "position": 3, "name": "The Reality Behind Healthcare AI Governance" }
+    ]
+  }
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Reality Behind Healthcare AI Governance">
+  <meta property="og:description" content="What governing healthcare AI takes: four Signal Room experts on the shadow formulary, over-permissioned AI agents, and the security beneath the policy.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/healthcare-ai-governance-reality">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>The Layer Underneath the Policy: The Reality Behind Healthcare AI Governance</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; July 17, 2026</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p>In most discussions regarding healthcare governance, most of the same elements are present: a policy with a steward, a framework (typically a slide deck signed off on months prior) and general agreement from stakeholders and participants to proceed to the next agenda item. The process lacks a sense of urgency.</p>
+
+          <p>Four recent conversations on The Signal Room depict the situation more clearly. They cover the work of governance professionals operating at a different level than most of the attendees in this meeting. One is a healthcare professional providing services. Another works in healthcare IT. The third is an operations professional designing AI systems to automate decisions and tasks. None of them coordinated to arrive at the same conclusion: governance is more than policy making. Oversight is the issue of the document. It is the true application of the policy and the decisions it describes when AI meets the health professional, the health record, and the healthcare system.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">The policy is the easy part. Can you prove it?</h2>
+
+          <p><a href="https://www.linkedin.com/in/bennett-borden/" target="_blank" rel="noopener" style="color:#6c63ff;">Bennett Borden</a> has a unique vantage point from where he can answer this question. Before founding Clarion AI Partners, Borden spent 8 years as a US intelligence analyst, and then as a chief data scientist and equity partner at a top 10 law firm. After analyzing 10 years of time entries for 14,000 attorneys, he estimated that 80% of repetitive legal tasks will be performed faster and better by AI. What concerns healthcare leaders the most, however, is <a href="/episodes/ai-legal-work-governance" style="color:#6c63ff;">his argument on the issue of defensibility</a>.</p>
+
+          <p>Borden believes that the fact that everyone recognizes the importance of fairness, accuracy, and reliability (the repeated keywords in all frameworks) and then proceeds to do nothing is unacceptable. He incorporates the common law of the 1700s in his argument, which is reasonableness. The standard that will protect you, since the law cannot keep up with technology, is whether a reasonable company, based on the information available to them at the time, identified the potential risks, took precautionary measures, and has the ability to prove it. He says that layer is what will protect you and will keep you defensible as the laws continue to change. Borden believes that oversight is not a brake to innovation, but rather the system of painted lines and guardrails on a mountain road that enables you to drive faster. As a whole, his systems of oversight are closer to Iron Man than the Terminator.</p>
+
+          <p><a href="https://www.linkedin.com/in/aaronwpuckett/" target="_blank" rel="noopener" style="color:#6c63ff;">Aaron Puckett</a> accessed the same test from the operator seat. He is the executive of a security-first managed services subsidiary, and he was the guest for <a href="/episodes/ai-security-risk-governance-gap" style="color:#6c63ff;">our episode on the AI security gap most companies miss</a>. Most of the organizations Puckett enters have a policy. What is almost always missing is anything under the policy, no data loss prevention, no permission reviews, no policies that would survive an audit. He breaks the work into three steps, and notes that most people only concern themselves with the first. You decide what you want to do. Security goes under the policy to safeguard the decision. The last step is where most people are the most empty, and you have to show that you did. He finished the summary of the episode. I said the policy is the easy part. You show you did it. The lawyer and the engineer land on the same word. You have to show.</p>
+
+          <p>Why a six month old PDF cannot govern anything. The most ubiquitous AI tool in most buildings (nearly) never came in through the front door. Dr. <a href="https://www.linkedin.com/in/dromeratli" target="_blank" rel="noopener" style="color:#6c63ff;">Ömer Atlı</a> is a solo on-call emergency physician at a rural district hospital, with two nurses, a midwife, and about eighty patients per shift, with the nearest scanner eighty-five kilometers away. He builds and red teams clinical AI tools. He calls the ungoverned tools already in clinical use, and the ones no one approved, <a href="/episodes/clinical-ai-shadow-formulary" style="color:#6c63ff;">the shadow formulary</a>.</p>
+
+          <p>Every hospital runs a drug formulary, a list of medications voted on for the hospital use and dispensed only after the orders are signed. ChatGPT, Gemini, and Claude operate as a shadow formulary. They are in clinical use, are in no formulary, and no one oversees them. Atlı includes himself. He reaches for a model while he waits on bloods. His committee cannot see any of it. This is because no one purchased the model. Therefore, no contract or procurement trace exists. It is located in his and every other pocket in the building.</p>
+
+          <p>Atlı graded 60 model answers against emergency scenarios. What he feared the most in their model was not a wrong answer. Models, in contrast, correctly identified the danger. What they failed to answer was the next instruction. A patient, who describes textbook aortic dissection, with sudden tearing pain and who asks if he just pulled a muscle, is correctly identified as an emergency by the model. And then the model fails. It does not say call an ambulance. Nothing says for the patient not to drive himself. The answer that could kill someone was the answer that was correct, but the action was omitted.</p>
+
+          <p>His conclusion for leaders is the analytical element of the problem as such. You cannot eliminate the shadow formulary. Its prohibition only serves to deepen the problem. Thus, you will have to assume its existence and work towards making that existence less harmful. This problem is the easiest to solve as it merely requires the investment of a weekend. Maintain a standing set of the scenarios your clinicians face, re-run that set every time a model updates, similar to how a drug interaction check is performed every time a prescription is updated. A committee sign-off is a PDF you received six months ago. The set of scenarios you re-run is a continually updated control. Further, ensure that the risk is given a name, a single person who answers for that risk, because when it is shared, ownership of the risk is lost.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Oversight lives or dies in the infrastructure</h2>
+
+          <p>The layer that Puckett works in is the one that the boardroom never sees. It is the identity grants, the permissions that go unchecked and the systems that were configured years, if not decades, before generative AI was even a concept. This is his most important sentence for any of the people that will be deploying AI assistants. Whatever access you have as a user, that is the access your AI will be granted. If guardrails are not implemented, that AI will have free access to everything you have access to. If you implement an AI assistant that lacks permissions in a system where permissions are never checked, you have not added a new tool to your systems. You have effectively increased all the problems and gaps that were already present, to an even greater magnitude.</p>
+
+          <p>Those gaps are common and all around us. Someone moves from operations to finance to HR and their access expands. No one retracts old access. Files get shared too much with anyone with the link. A vendor still has an entry point the same way an air-conditioning vendor once became how Target got breached. The nice employee, who is overwhelmed, pastes PHI into a free chatbot to automate a claim denial to push it through faster. Puckett says AI is already in your organization. The question is who is in control of it, the answer is not you. His first step for a leader who does not know where to start is intentionally not exciting. Where does my sensitive data exist? If you cannot answer that, do not roll anything out. The blank stare is your warning.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">The agents are not able to think</h2>
+
+          <p><a href="https://www.linkedin.com/in/padduri/" target="_blank" rel="noopener" style="color:#6c63ff;">Pranava Adduri</a>, co-founder, and CTO of Bedrock Data and a former founding engineer at Rubrik, drags the infrastructure problem to its next stage, the autonomous agent. His framing of the era is the thread that links all four of the conversations. AI did not ruin healthcare data security, in <a href="/episodes/ai-agents-healthcare-security-risk" style="color:#6c63ff;">our episode on why AI agents are the next security threat</a>, he says. It showed what has always not functioned, and it gave attackers a new playground.</p>
+
+          <p>The new surface is judgment or the lack thereof. He states agents do not have judgment. They have commands. He observed an agent from a Fortune 500 company, who was assigned to create a dashboard, discretely copy a file containing sensitive information to a shared space, as that was the quickest way. It completed the assignment, and in the process, disseminated the information to the entire company. Agents receive every broad invitation that their human possesses, and their access keeps expanding. Adduri states this is a giant, scary forest of permissions that no one can read. His proposal is in accordance with the scenario sets that Atlı utilizes and the data mapping of Puckett. Start with the information that would ruin the company if it were made known. Find out where it is located. Work backward to reduce the radius of damage. The keycards that give access to the operating room should be few in number, monitored, and easy to cancel, and a lost one should result in a completely empty room.</p>
+
+          <p>He then modifies the goal. As the models get better, the probability of a breach increases, so the real goal changes from an impenetrable wall to being able to breach as effectively as possible, so when it does get breached, it does not impact the company as much.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">What the four conversations have in common</h2>
+
+          <p>Taking a lawyer, a rural doctor, a security operator, and an infrastructure engineer together, you will hear one argument from many angles. Prior to the advent of generative AI, the unsupervised tool, old-fashioned consent, the exaggerated trusting concession, and the monopolistic, ownership-seeking committees revealed a steadfast blindness to the metaphorical walls. Generative AI merely slackened the grip on a structural support that made the walls invisible.</p>
+
+          <p>Because the policy can not and should not be the objective. The common factor in the four arguments is the necessity to make the decision concrete at the place where the actual work is performed. Bennett Borden wishes it to be reasonable and verifiable; Ömer Atlı desires it to be re-evaluated, with the model author personally bearing responsibility; Aaron Puckett desires it to be enforced; and Pranava Adduri wishes it to be legitimated before a judgment-free agent fails to exert control. They all advocate for the presence of human beings and argue that it is not merely a matter of courtesy. You will hear the question, "Is there anything supporting it, and can it be demonstrated?" in four different corners of the same room. Judgment is the one thing a machine cannot offer.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+
+          <p>For more on the themes in this piece, see <a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color: #6c63ff;">Data Governance in Healthcare: From Policy to Operational Reality</a>, <a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener" style="color: #6c63ff;">Responsible AI in Healthcare</a>, and <a href="https://hutchinsdatastrategy.com/insight/healthcare-data-strategy" target="_blank" rel="noopener" style="color: #6c63ff;">Healthcare Data Strategy</a>.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Subscribe to Deep Conversations About Healthcare AI</h2>
+
+          <p>The Signal Room brings healthcare AI leaders into direct conversation about what actually works and what fails in real clinical environments. These are discussions rooted in operational experience, not theoretical possibility. If your role involves building or deploying AI in healthcare, understanding what practitioners are learning from their own experiences is essential.</p>
+
+          <p>Subscribe to <a href="/" style="color: #6c63ff;">The Signal Room</a> and the <a href="/newsletter" style="color: #6c63ff;">AI Health Pulse newsletter</a> to receive conversations with healthcare leaders and insights from organizations learning to manage AI at scale.</p>
+
+          <p>Visit <a href="/" style="color: #6c63ff;">signalroompodcast.com</a> to subscribe.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Never Miss an Episode</h4>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0.75rem;">Get the AI Health Pulse newsletter with episode highlights and healthcare AI insights.</p>
+          <a href="/newsletter" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.9rem;">Subscribe to Newsletter</a>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-legal-work-governance" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Governance From Theory to Practice</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/clinical-ai-shadow-formulary" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Clinical Shadow Formulary</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-security-risk-governance-gap" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The AI Security Gap Companies Miss</a></li>
+            <li><a href="/episodes/ai-agents-healthcare-security-risk" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Why AI Agents Are Healthcare's Next Security Risk</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form-embed">
+            <iframe src="https://subscribe-forms.beehiiv.com/781ceb5b-1fd7-488a-8914-3abb15c9ef58" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" loading="lazy" title="Subscribe to The AI Health Pulse"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260712"></script>
+</body>
+</html>
