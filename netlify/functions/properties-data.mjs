@@ -173,8 +173,25 @@ async function handleGet() {
   );
 }
 
-async function handlePut(doc) {
-  const [propRecs, agentRecs] = await Promise.all([listAll(T_PROPS), listAll(T_AGENTS)]);
+async function handlePut(doc, clientBase) {
+  const [propRecs, agentRecs, metaRecs] = await Promise.all([
+    listAll(T_PROPS),
+    listAll(T_AGENTS),
+    listAll(T_META),
+  ]);
+
+  // Optimistic concurrency: if the store has ever been written, the client
+  // must present the updatedAt it last pulled. A mismatch means another
+  // device (or a direct Airtable edit) wrote since — refuse the overwrite
+  // instead of silently deleting whatever the stale client doesn't know about.
+  const meta = metaRecs.find((r) => r.fields["Key"] === "updatedAt");
+  const serverBase = meta ? meta.fields["Value"] || "" : "";
+  if (serverBase && clientBase !== serverBase) {
+    return json(
+      { error: "conflict: the shared data changed since this device last pulled", updatedAt: serverBase },
+      409
+    );
+  }
 
   const propRows = doc.properties.map((p, i) => ({
     fields: {
@@ -263,7 +280,7 @@ export default async (req) => {
             p.agents.every((a) => a && typeof a.id === "string" && typeof a.name === "string")
         );
       if (!shapeOk) return json({ error: "not a property-manager document" }, 422);
-      return await handlePut(doc);
+      return await handlePut(doc, req.headers.get("x-base-updated-at") || "");
     }
 
     return json({ error: "method not allowed" }, 405);

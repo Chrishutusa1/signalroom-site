@@ -138,6 +138,7 @@
   .sync-pill.busy { color: var(--purple-soft); border-color: var(--purple-primary); }
   .sync-pill.ok   { color: var(--ok); border-color: rgba(46, 204, 113, 0.5); }
   .sync-pill.err, .sync-pill.auth { color: var(--err); border-color: rgba(231, 76, 60, 0.5); }
+  .sync-pill.warn { color: var(--warn); border-color: rgba(245, 176, 65, 0.5); }
   .sync-help { color: var(--ink-dim); font-size: 0.8rem; margin-top: 10px; line-height: 1.45; }
   .sync-help a { color: var(--purple-soft); }
 
@@ -411,8 +412,10 @@
       b.setAttribute("aria-selected", current && p.id === current.id ? "true" : "false");
       b.innerHTML = esc(p.name) + '<span class="count">' + p.agents.length + "</span>";
       b.addEventListener("click", function () {
+        // Tab selection is device-local UI state: remember it, but never mark
+        // the data dirty or push — a stale tab click must not trigger a sync.
         state.activePropertyId = p.id;
-        save();
+        persist();
         render();
       });
       elTabs.appendChild(b);
@@ -622,6 +625,8 @@
 
   var SYNC_KEY_STORE = "property-manager-sync-key";
   var DIRTY_STORE = "property-manager-dirty";
+  var BASE_STORE = "property-manager-base";     // last server updatedAt this device saw
+  var SYNCED_STORE = "property-manager-synced"; // "1" once this device has synced successfully
   var API_URL = "/api/properties-data";
 
   function lsGet(k) { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } }
@@ -629,14 +634,21 @@
 
   var syncKey = lsGet(SYNC_KEY_STORE);
   var syncDirty = lsGet(DIRTY_STORE) === "1";
+  var syncBase = lsGet(BASE_STORE);
+  var syncedOnce = lsGet(SYNCED_STORE) === "1";
   var pushTimer = null;
   var pushing = false;
 
   function markDirty() { syncDirty = true; lsSet(DIRTY_STORE, "1"); }
   function clearDirty() { syncDirty = false; lsSet(DIRTY_STORE, ""); }
+  function markSynced(base) {
+    syncedOnce = true;
+    lsSet(SYNCED_STORE, "1");
+    if (base) { syncBase = base; lsSet(BASE_STORE, base); }
+  }
 
   var pill = document.getElementById("btn-sync");
-  var PILL_TEXT = { off: "Sync off", busy: "Syncing…", ok: "Synced", err: "Sync error", auth: "Key rejected" };
+  var PILL_TEXT = { off: "Sync off", busy: "Syncing…", ok: "Synced", err: "Sync error", auth: "Key rejected", warn: "Updated elsewhere" };
   var syncStatus = "off";
   var syncDetail = "";
 
@@ -652,9 +664,14 @@
   }
 
   function api(method, body) {
+    var headers = { "X-Sync-Key": syncKey, "Content-Type": "application/json" };
+    // Optimistic concurrency: tell the server which version this device last
+    // pulled. A mismatch means someone else wrote since — the server answers
+    // 409 instead of letting this device clobber the newer data.
+    if (method === "PUT") headers["X-Base-Updated-At"] = syncBase;
     return fetch(API_URL, {
       method: method,
-      headers: { "X-Sync-Key": syncKey, "Content-Type": "application/json" },
+      headers: headers,
       body: body || undefined,
     });
   }
@@ -682,9 +699,13 @@
     api("PUT", JSON.stringify(state))
       .then(function (res) {
         if (res.status === 401) { setSyncStatus("auth", "The sync key was rejected by the server."); return; }
+        if (res.status === 409) return handleConflict();
         if (!res.ok) return syncError(res);
-        clearDirty();
-        setSyncStatus("ok");
+        return res.json().then(function (body) {
+          clearDirty();
+          markSynced(body && body.updatedAt);
+          setSyncStatus("ok");
+        });
       })
       .catch(function (e) {
         setSyncStatus("err", "Sync failed: " + e.message + ". Changes are kept locally and retried on the next edit or page focus.");
@@ -700,8 +721,25 @@
     clean.activePropertyId = state.activePropertyId;
     state = clean;
     persist();
+    markSynced(clean.updatedAt);
     render();
     return true;
+  }
+
+  // The server refused our push because another device (or Airtable itself)
+  // wrote since we last pulled: take the server's version, tell the user.
+  function handleConflict() {
+    return api("GET")
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (server) {
+        if (server && server.properties) {
+          adopt(server);
+          clearDirty();
+          setSyncStatus("warn", "The shared data changed on another device, so your last change here was not saved. The latest data has been loaded — redo the change if you still want it.");
+        } else {
+          setSyncStatus("err", "Sync conflict, and the latest data could not be loaded. Retrying on the next edit or page focus.");
+        }
+      });
   }
 
   function initSync() {
@@ -715,13 +753,17 @@
       })
       .then(function (server) {
         if (server === null || syncStatus === "auth") return;
-        var localNewer = syncDirty && (state.updatedAt || "") > (server && server.updatedAt || "");
+        // A device that has NEVER synced may only push into an EMPTY server —
+        // its local data is just the seed/scratch, and pushing it over real
+        // shared data is how data gets destroyed. Only a device that has
+        // synced before may treat its dirty local copy as newer.
+        var localNewer = syncedOnce && syncDirty && (state.updatedAt || "") > ((server && server.updatedAt) || "");
         if (server && server.properties && server.properties.length && !localNewer) {
           adopt(server);
           clearDirty();
           setSyncStatus("ok");
         } else {
-          push(); // server empty, or local has newer unpushed changes
+          push(); // server empty, or a previously-synced device has newer unpushed changes
         }
       })
       .catch(function (e) {
@@ -757,7 +799,10 @@
     syncKey = document.getElementById("sync-key-input").value.trim();
     lsSet(SYNC_KEY_STORE, syncKey);
     if (!syncKey) { setSyncStatus("off"); return; }
-    if (syncDirty) push(); else initSync();
+    // Always go through initSync: it pulls when the server has data and only
+    // pushes into an empty server (or when a previously-synced device is
+    // genuinely ahead). Never blind-push just because the local copy is dirty.
+    initSync();
   });
 
   // ---------- toolbar ----------
