@@ -80,6 +80,10 @@ TOPICS = {
     ],
 
     "clinical-ai-patient-care": [
+        dict(slug="dont-upload-medical-records-to-chatgpt",
+             card_title="Don't Upload Your Medical Record to ChatGPT",
+             card_desc="Why your full medical record should never go into a general AI chatbot, who's accountable when AI enters the exam room, and how to be a prepared patient.",
+             guest_display="Dr. Terry Adirim"),
         dict(slug="patient-physician-journey-part-1",
              card_title="How AI Redefines the Patient-Physician Journey Part 1",
              card_desc="Exploring how AI reshapes the relationship between physicians, patients, and clinical decision-making."),
