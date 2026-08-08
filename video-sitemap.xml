@@ -300,4 +300,64 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-roi-parth-gargish</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/mMtwcZBCzb8/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Most Healthcare AI Never Delivers ROI | Parth Gargish</video:title>
+      <video:description>Parth Gargish explains how product discipline, people-first change, and measurable outcomes separate useful healthcare AI from expensive experimentation.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/mMtwcZBCzb8</video:player_loc>
+      <video:duration>1549</video:duration>
+      <video:publication_date>2026-01-28T06:00:44Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-complete-medical-records-aleida-lanza</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/8Yyji02GH7c/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Healthcare AI Fails Without Complete Medical Records | Aleida Lanza</video:title>
+      <video:description>Aleida Lanza explains why clinical notes, imaging, claims, and billing history must be in scope before healthcare AI can make defensible recommendations.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/8Yyji02GH7c</video:player_loc>
+      <video:duration>981</video:duration>
+      <video:publication_date>2026-01-21T06:00:07Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/responsible-ai-healthcare-asha-mahesh</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/qYeC8dMRmJ4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Responsible AI in Healthcare: How Leaders Build Trust | Asha Mahesh</video:title>
+      <video:description>Asha Mahesh explains why ethical AI succeeds when leadership, culture, and everyday decisions remain centered on patients and human judgment.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/qYeC8dMRmJ4</video:player_loc>
+      <video:duration>1318</video:duration>
+      <video:publication_date>2026-01-14T06:00:46Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-trust-infrastructure-amit-shivpuja</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/SY9xtWnOSOE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>You Can't Scale AI Without Scaling Trust | Amit Shivpuja</video:title>
+      <video:description>Amit Shivpuja explains the hidden data-governance infrastructure beneath scalable, accountable, and trustworthy AI.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/SY9xtWnOSOE</video:player_loc>
+      <video:duration>929</video:duration>
+      <video:publication_date>2026-01-07T06:00:24Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-security-cybersecurity-anitha-mareedu</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/FhmwMJsVPB8/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Security Is Expanding the Attack Surface | Anitha Mareedu</video:title>
+      <video:description>Anitha Mareedu explains how AI changes application security, autonomous access, sensitive-data exposure, and the cybersecurity skills leaders need now.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/FhmwMJsVPB8</video:player_loc>
+      <video:duration>1139</video:duration>
+      <video:publication_date>2026-01-02T21:36:10Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
