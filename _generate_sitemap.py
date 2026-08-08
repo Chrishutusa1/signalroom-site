@@ -62,6 +62,7 @@ PAGE_META = {
 }
 SECTION_DEFAULTS = {
     "episodes":     ("weekly", "0.8"),
+    "watch":        ("weekly", "0.8"),
     "topics":       ("monthly", "0.7"),
     "articles":     ("monthly", "0.7"),
     "articles-hub": ("monthly", "0.6"),
@@ -112,7 +113,7 @@ def git_lastmod(rel):
 
 def discover():
     pages = []
-    for pattern in ("*.html", "episodes/*.html", "topics/*.html", "Articles/*.html"):
+    for pattern in ("*.html", "episodes/*.html", "watch/*.html", "topics/*.html", "Articles/*.html"):
         for p in sorted(ROOT.glob(pattern)):
             rel = p.relative_to(ROOT).as_posix()
             url = url_for(rel)
@@ -142,12 +143,14 @@ def sort_key(url):
         return (0, "")
     if path.startswith("episodes/"):
         return (2, path)
-    if path.startswith("topics/"):
+    if path.startswith("watch/"):
         return (3, path)
+    if path.startswith("topics/"):
+        return (4, path)
     if path == "articles":
-        return (4, "")
+        return (5, "")
     if path.startswith("articles/"):
-        return (5, path)
+        return (6, path)
     return (1, path)
 
 
