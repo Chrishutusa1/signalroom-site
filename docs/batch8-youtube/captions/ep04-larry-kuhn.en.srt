@@ -1,0 +1,3111 @@
+1
+00:00:00,160 --> 00:00:03,200
+Today's episode is one I've [music] been
+
+2
+00:00:01,600 --> 00:00:04,799
+looking forward to for a while because
+
+3
+00:00:03,200 --> 00:00:06,480
+it gets at the heart of something every
+
+4
+00:00:04,799 --> 00:00:09,480
+organization is grappling with right
+
+5
+00:00:06,480 --> 00:00:09,480
+now.
+
+6
+00:00:23,519 --> 00:00:26,519
+Heat.
+
+7
+00:00:36,239 --> 00:00:39,239
+Heat.
+
+8
+00:00:44,719 --> 00:00:47,719
+Heat.
+
+9
+00:01:00,640 --> 00:01:03,640
+Heat.
+
+10
+00:01:21,220 --> 00:01:23,240
+>> [music]
+
+11
+00:01:27,115 --> 00:01:29,135
+[music]
+
+12
+00:01:32,000 --> 00:01:36,680
+>> I think I'll say say the first one.
+
+13
+00:01:38,000 --> 00:01:42,000
+Hello and welcome to another episode of
+
+14
+00:01:39,759 --> 00:01:43,600
+the Signal Room podcast. Today's episode
+
+15
+00:01:42,000 --> 00:01:45,280
+is one I've been looking forward to for
+
+16
+00:01:43,600 --> 00:01:46,799
+a while because it gets at the heart of
+
+17
+00:01:45,280 --> 00:01:48,479
+something every organization is
+
+18
+00:01:46,799 --> 00:01:50,640
+grappling with right now. Not just
+
+19
+00:01:48,479 --> 00:01:53,600
+what's changing, but how we help people
+
+20
+00:01:50,640 --> 00:01:55,600
+feel safe, seen, and empowered as that
+
+21
+00:01:53,600 --> 00:01:57,600
+change happens. The topic for today's
+
+22
+00:01:55,600 --> 00:01:59,759
+discussion is leading through AI with
+
+23
+00:01:57,600 --> 00:02:01,680
+trust, the AI transformation, and the
+
+24
+00:01:59,759 --> 00:02:03,520
+human leadership it demands. That's
+
+25
+00:02:01,680 --> 00:02:05,439
+exactly why I'm thrilled to be joined by
+
+26
+00:02:03,520 --> 00:02:06,880
+Dr. Larry Dr. Bakun is an
+
+27
+00:02:05,439 --> 00:02:08,560
+organizational psychologist and
+
+28
+00:02:06,880 --> 00:02:11,360
+executive coach. He helps leaders
+
+29
+00:02:08,560 --> 00:02:13,200
+navigate the complex change environment
+
+30
+00:02:11,360 --> 00:02:15,040
+that we're in with clarity, trust, and
+
+31
+00:02:13,200 --> 00:02:16,959
+authenticity. As a founder of AspireVue
+
+32
+00:02:15,040 --> 00:02:19,280
+AspireVue, president of Prepare to Change and
+
+33
+00:02:16,959 --> 00:02:21,360
+as trusted adviser, he's advised Fortune
+
+34
+00:02:19,280 --> 00:02:23,280
+500 companies and leaders, nonprofit
+
+35
+00:02:21,360 --> 00:02:25,040
+executives, government agencies, and
+
+36
+00:02:23,280 --> 00:02:26,560
+many others. And his specialty is
+
+37
+00:02:25,040 --> 00:02:28,239
+guiding leaders through transformation
+
+38
+00:02:26,560 --> 00:02:29,920
+without losing what makes them human.
+
+39
+00:02:28,239 --> 00:02:31,840
+With over 30 years helping healthcare
+
+40
+00:02:29,920 --> 00:02:33,920
+organizations navigate an everanging
+
+41
+00:02:31,840 --> 00:02:35,680
+landscape, he provides expertise in
+
+42
+00:02:33,920 --> 00:02:38,080
+succession planning, leadership
+
+43
+00:02:35,680 --> 00:02:39,760
+development, talent management, and many
+
+44
+00:02:38,080 --> 00:02:42,480
+others. So, our conversation this
+
+45
+00:02:39,760 --> 00:02:44,160
+morning is going to start with a topic
+
+46
+00:02:42,480 --> 00:02:45,360
+that I think is near and dear to a lot
+
+47
+00:02:44,160 --> 00:02:47,440
+of people's hearts, and hopefully
+
+48
+00:02:45,360 --> 00:02:49,599
+they'll be inspired once once they hear
+
+49
+00:02:47,440 --> 00:02:51,840
+the conversation this morning. Dr.
+
+50
+00:02:49,599 --> 00:02:53,760
+has recently published a paper. It's
+
+51
+00:02:51,840 --> 00:02:56,319
+called Trust at Work: The Seven
+
+52
+00:02:53,760 --> 00:02:58,000
+Dimensions of Credible Authenticity, a
+
+53
+00:02:56,319 --> 00:03:00,640
+powerful framework that is now making
+
+54
+00:02:58,000 --> 00:03:01,440
+waves in leadership circles. Dr.
+
+55
+00:03:00,640 --> 00:03:02,879
+welcome to the show.
+
+56
+00:03:01,440 --> 00:03:03,200
+>> Well, thank you, Chris. I'm glad to be
+
+57
+00:03:02,879 --> 00:03:05,440
+here.
+
+58
+00:03:03,200 --> 00:03:07,360
+>> Well, I really want to jump right in.
+
+59
+00:03:05,440 --> 00:03:10,000
+So, why don't we start where the white
+
+60
+00:03:07,360 --> 00:03:11,680
+paper begins. You write that trust isn't
+
+61
+00:03:10,000 --> 00:03:13,920
+just a soft skill. It's actually a
+
+62
+00:03:11,680 --> 00:03:16,720
+measurable business driver. And you talk
+
+63
+00:03:13,920 --> 00:03:18,560
+about something called trust tax and the
+
+64
+00:03:16,720 --> 00:03:20,800
+trust dividend. Can you break that down
+
+65
+00:03:18,560 --> 00:03:22,800
+for us a little? You know, many Yeah,
+
+66
+00:03:20,800 --> 00:03:25,840
+thank you. Uh, many years ago, Stephen
+
+67
+00:03:22,800 --> 00:03:28,000
+Cubby actually wrote a book that
+
+68
+00:03:25,840 --> 00:03:30,480
+business travels at the speed of trust.
+
+69
+00:03:28,000 --> 00:03:33,200
+And I rediscovered that, you know, years
+
+70
+00:03:30,480 --> 00:03:35,519
+later, and I'm like, wow, it really goes
+
+71
+00:03:33,200 --> 00:03:37,760
+back to the heart of things. There is so
+
+72
+00:03:35,519 --> 00:03:40,319
+much change that's happening today. And
+
+73
+00:03:37,760 --> 00:03:42,720
+when change happens, one of the natural
+
+74
+00:03:40,319 --> 00:03:44,879
+reactions that people have is they go
+
+75
+00:03:42,720 --> 00:03:47,040
+back to their very most fundamental
+
+76
+00:03:44,879 --> 00:03:50,319
+need. And this goes back to Maslow and
+
+77
+00:03:47,040 --> 00:03:53,280
+and Herzberg that we need safety, we
+
+78
+00:03:50,319 --> 00:03:56,159
+need security. Even Erikson talked about
+
+79
+00:03:53,280 --> 00:03:58,000
+a developmental need that a child has.
+
+80
+00:03:56,159 --> 00:04:00,959
+One of the very first things that they
+
+81
+00:03:58,000 --> 00:04:02,640
+have to establish is can I trust you?
+
+82
+00:04:00,959 --> 00:04:03,120
+Will you drop me
+
+83
+00:04:02,640 --> 00:04:05,599
+>> right
+
+84
+00:04:03,120 --> 00:04:08,239
+>> or not? And I mean it goes back to a
+
+85
+00:04:05,599 --> 00:04:10,239
+very primal place. And I think that's
+
+86
+00:04:08,239 --> 00:04:12,480
+what a lot of people really are facing
+
+87
+00:04:10,239 --> 00:04:14,400
+now with all of the I guess what we
+
+88
+00:04:12,480 --> 00:04:16,000
+would call it, you know, disruptive
+
+89
+00:04:14,400 --> 00:04:18,720
+innovation that's happening.
+
+90
+00:04:16,000 --> 00:04:20,880
+Organizations struggle number one to
+
+91
+00:04:18,720 --> 00:04:23,440
+stay ahead of the pace. I mean, it's
+
+92
+00:04:20,880 --> 00:04:25,440
+like the train is leaving the station
+
+93
+00:04:23,440 --> 00:04:28,000
+and here we are running because it's
+
+94
+00:04:25,440 --> 00:04:30,400
+going at a much faster pace than what
+
+95
+00:04:28,000 --> 00:04:32,320
+our normal relationships and functioning
+
+96
+00:04:30,400 --> 00:04:34,560
+can manage. And I think that's what
+
+97
+00:04:32,320 --> 00:04:36,880
+leaders are trying to grapple with is
+
+98
+00:04:34,560 --> 00:04:38,639
+how can they maintain just those basic
+
+99
+00:04:36,880 --> 00:04:40,479
+needs when they don't even know
+
+100
+00:04:38,639 --> 00:04:42,880
+themselves exactly what's going to
+
+101
+00:04:40,479 --> 00:04:43,520
+happen. So that trust is a big issue for
+
+102
+00:04:42,880 --> 00:04:45,680
+folks.
+
+103
+00:04:43,520 --> 00:04:47,360
+>> It's striking how tangible the numbers
+
+104
+00:04:45,680 --> 00:04:49,440
+are. As I was looking at your your
+
+105
+00:04:47,360 --> 00:04:51,840
+paper, I think it's even more striking
+
+106
+00:04:49,440 --> 00:04:54,000
+when you think about the fact that only
+
+107
+00:04:51,840 --> 00:04:56,320
+25% of employees say they trust their
+
+108
+00:04:54,000 --> 00:04:58,560
+CEO. This isn't just a PR problem. It's
+
+109
+00:04:56,320 --> 00:05:01,040
+a culture and performance issue. As
+
+110
+00:04:58,560 --> 00:05:04,320
+we're going into a period of time where
+
+111
+00:05:01,040 --> 00:05:06,479
+disruption is absolutely a certainty, if
+
+112
+00:05:04,320 --> 00:05:08,320
+we can't trust the the people that are
+
+113
+00:05:06,479 --> 00:05:10,400
+are setting the course, this is a really
+
+114
+00:05:08,320 --> 00:05:12,880
+uncomfortable place for people to be.
+
+115
+00:05:10,400 --> 00:05:14,720
+Which kind of gets into the really this
+
+116
+00:05:12,880 --> 00:05:16,639
+the whole concept of psychological
+
+117
+00:05:14,720 --> 00:05:17,840
+safety that you talk about. You lay out
+
+118
+00:05:16,639 --> 00:05:19,680
+what I think is one of the most
+
+119
+00:05:17,840 --> 00:05:21,120
+practical frameworks I've seen in in
+
+120
+00:05:19,680 --> 00:05:23,120
+your seven dimensions of credible
+
+121
+00:05:21,120 --> 00:05:24,560
+authenticity. Let's walk through those a
+
+122
+00:05:23,120 --> 00:05:26,639
+little bit and give the listeners a
+
+123
+00:05:24,560 --> 00:05:28,639
+quick tour of what they are and why they
+
+124
+00:05:26,639 --> 00:05:31,039
+matter. Yeah, I I think that's a good
+
+125
+00:05:28,639 --> 00:05:34,000
+idea. You know, the foundation of it, I
+
+126
+00:05:31,039 --> 00:05:36,000
+mean, just first defining the problem,
+
+127
+00:05:34,000 --> 00:05:38,479
+you mentioned a statistic. When you
+
+128
+00:05:36,000 --> 00:05:41,039
+think about it, just the problem itself.
+
+129
+00:05:38,479 --> 00:05:44,160
+I think within organizations, people are
+
+130
+00:05:41,039 --> 00:05:47,600
+dealing with processes, technology, and
+
+131
+00:05:44,160 --> 00:05:49,759
+people. And the processes and technology
+
+132
+00:05:47,600 --> 00:05:51,600
+are kind of operational. I mean, we can
+
+133
+00:05:49,759 --> 00:05:53,520
+kind of stay ahead of that. And we think
+
+134
+00:05:51,600 --> 00:05:55,360
+we can check the boxes on those. We got
+
+135
+00:05:53,520 --> 00:05:57,120
+our process right and our tech right.
+
+136
+00:05:55,360 --> 00:05:59,440
+But the people thing is where the
+
+137
+00:05:57,120 --> 00:06:01,280
+problems happen. People are the areas
+
+138
+00:05:59,440 --> 00:06:02,880
+where there's the greatest asset.
+
+139
+00:06:01,280 --> 00:06:04,639
+They're the greatest expense often
+
+140
+00:06:02,880 --> 00:06:06,960
+within an organization with direct
+
+141
+00:06:04,639 --> 00:06:09,120
+labor. They are the greatest headache
+
+142
+00:06:06,960 --> 00:06:12,000
+and the greatest risk particularly for
+
+143
+00:06:09,120 --> 00:06:15,039
+HR and senior leaders whenever you have
+
+144
+00:06:12,000 --> 00:06:17,759
+a risk of turnover and that's huge cost.
+
+145
+00:06:15,039 --> 00:06:20,319
+So the people side of things is what
+
+146
+00:06:17,759 --> 00:06:23,440
+often gets neglected when we're focusing
+
+147
+00:06:20,319 --> 00:06:25,199
+on tech and processes. Now, when you're
+
+148
+00:06:23,440 --> 00:06:27,759
+dealing with the people, and this is
+
+149
+00:06:25,199 --> 00:06:29,520
+kind of defining what the environment is
+
+150
+00:06:27,759 --> 00:06:31,600
+that we're actually dealing with here
+
+151
+00:06:29,520 --> 00:06:33,680
+when we think about trust, you think
+
+152
+00:06:31,600 --> 00:06:38,319
+about it. There was a stat I found that
+
+153
+00:06:33,680 --> 00:06:42,400
+said uh back in in the 1960s
+
+154
+00:06:38,319 --> 00:06:44,000
+um I think it was 1972 they identified
+
+155
+00:06:42,400 --> 00:06:46,639
+that
+
+156
+00:06:44,000 --> 00:06:51,039
+uh only about
+
+157
+00:06:46,639 --> 00:06:54,800
+um 60 or 70% of the population actually
+
+158
+00:06:51,039 --> 00:06:57,520
+said yes I would trust the average
+
+159
+00:06:54,800 --> 00:06:59,520
+person that I meet. That was about
+
+160
+00:06:57,520 --> 00:07:02,160
+>> one out of two. Well, that has dropped
+
+161
+00:06:59,520 --> 00:07:05,840
+significantly now to 2025 where we're
+
+162
+00:07:02,160 --> 00:07:08,319
+at. Only about one out of three actually
+
+163
+00:07:05,840 --> 00:07:09,680
+would say I trust people that I meet.
+
+164
+00:07:08,319 --> 00:07:12,960
+So, you've got a couple of things going
+
+165
+00:07:09,680 --> 00:07:16,319
+on here apart from the AI issue. Number
+
+166
+00:07:12,960 --> 00:07:16,880
+one, people's trust has dropped in other
+
+167
+00:07:16,319 --> 00:07:17,280
+people.
+
+168
+00:07:16,880 --> 00:07:19,599
+>> Right?
+
+169
+00:07:17,280 --> 00:07:21,440
+>> The second thing is imagine that you're
+
+170
+00:07:19,599 --> 00:07:24,000
+working with a team and you're a senior
+
+171
+00:07:21,440 --> 00:07:26,000
+leader and this struck me as well. Not
+
+172
+00:07:24,000 --> 00:07:28,880
+only do people just fundamentally not
+
+173
+00:07:26,000 --> 00:07:31,680
+trust as much in general, but also
+
+174
+00:07:28,880 --> 00:07:34,000
+you're dealing with people here who 50%
+
+175
+00:07:31,680 --> 00:07:36,639
+of them, as a clinical psychologist, I
+
+176
+00:07:34,000 --> 00:07:39,199
+understand this that 50% of the
+
+177
+00:07:36,639 --> 00:07:41,120
+population when they're asked a question
+
+178
+00:07:39,199 --> 00:07:43,919
+like this, and I often pose this
+
+179
+00:07:41,120 --> 00:07:46,080
+question. Can you remember a time when a
+
+180
+00:07:43,919 --> 00:07:49,759
+primary caregiver or someone like your
+
+181
+00:07:46,080 --> 00:07:52,880
+parent was available and responsive to
+
+182
+00:07:49,759 --> 00:07:55,599
+meet your either physical or emotional
+
+183
+00:07:52,880 --> 00:07:57,520
+pain and they responded to it? Can you
+
+184
+00:07:55,599 --> 00:08:00,479
+remember a time that that happened? And
+
+185
+00:07:57,520 --> 00:08:03,440
+I'm struck. I mean at the low end about
+
+186
+00:08:00,479 --> 00:08:05,440
+50% of the population says I can't
+
+187
+00:08:03,440 --> 00:08:07,599
+really remember somebody that was there
+
+188
+00:08:05,440 --> 00:08:10,639
+to meet my need. I was there to meet
+
+189
+00:08:07,599 --> 00:08:12,879
+their need. Well, in my just anecdotal
+
+190
+00:08:10,639 --> 00:08:16,080
+evidence of people that I ask that in a
+
+191
+00:08:12,879 --> 00:08:18,319
+clinical setting, about 70% say, "I
+
+192
+00:08:16,080 --> 00:08:20,240
+really can't remember my parent or
+
+193
+00:08:18,319 --> 00:08:22,479
+someone being there to meet my needs."
+
+194
+00:08:20,240 --> 00:08:22,800
+So, imagine you're sitting with a team,
+
+195
+00:08:22,479 --> 00:08:25,680
+>> right?
+
+196
+00:08:22,800 --> 00:08:27,360
+>> You've already got one out of three say
+
+197
+00:08:25,680 --> 00:08:30,240
+they're going to trust people to begin
+
+198
+00:08:27,360 --> 00:08:32,159
+with. And then about 50% of those at
+
+199
+00:08:30,240 --> 00:08:35,039
+this point, even at the conservative
+
+200
+00:08:32,159 --> 00:08:37,599
+side, would say, "Yes, I have a secure
+
+201
+00:08:35,039 --> 00:08:39,760
+attachment." meaning I'm not anxious,
+
+202
+00:08:37,599 --> 00:08:41,680
+avoidant or disorganized when I'm
+
+203
+00:08:39,760 --> 00:08:44,959
+connecting with others. Right? So, we've
+
+204
+00:08:41,680 --> 00:08:47,519
+already got a very, very few people that
+
+205
+00:08:44,959 --> 00:08:50,080
+really have the capability of truly
+
+206
+00:08:47,519 --> 00:08:52,560
+trusting and being authentic just to
+
+207
+00:08:50,080 --> 00:08:54,800
+begin with, let alone throw in the AI
+
+208
+00:08:52,560 --> 00:08:57,920
+piece. So I mean it really is
+
+209
+00:08:54,800 --> 00:09:00,399
+underscoring I think the need for
+
+210
+00:08:57,920 --> 00:09:02,320
+leaders to understand the core
+
+211
+00:09:00,399 --> 00:09:03,360
+fundamental needs that people have
+
+212
+00:09:02,320 --> 00:09:03,839
+relationally
+
+213
+00:09:03,360 --> 00:09:06,080
+>> right
+
+214
+00:09:03,839 --> 00:09:08,000
+>> to establish trust and that's why I
+
+215
+00:09:06,080 --> 00:09:11,040
+wrote the paper you know what is it that
+
+216
+00:09:08,000 --> 00:09:12,640
+we can do to increase trust with others
+
+217
+00:09:11,040 --> 00:09:13,920
+and I think there are some steps that
+
+218
+00:09:12,640 --> 00:09:16,399
+people can take
+
+219
+00:09:13,920 --> 00:09:18,480
+>> that's that's really a it's a sobering
+
+220
+00:09:16,399 --> 00:09:20,560
+fact that you you bring up because in
+
+221
+00:09:18,480 --> 00:09:23,440
+the health care space we're already
+
+222
+00:09:20,560 --> 00:09:25,519
+starting from a a place where we're uh
+
+223
+00:09:23,440 --> 00:09:27,440
+we're we're swimming upstream. Most
+
+224
+00:09:25,519 --> 00:09:29,920
+people aren't going to get their care
+
+225
+00:09:27,440 --> 00:09:31,440
+and excited to go to the doctor. They've
+
+226
+00:09:29,920 --> 00:09:33,600
+already got some things going on that
+
+227
+00:09:31,440 --> 00:09:36,640
+are concerning to them. And if there's
+
+228
+00:09:33,600 --> 00:09:38,160
+trust in that rel that's not there in
+
+229
+00:09:36,640 --> 00:09:39,600
+that relationship, that can be
+
+230
+00:09:38,160 --> 00:09:41,839
+problematic. But what we're talking
+
+231
+00:09:39,600 --> 00:09:43,920
+about is something even more basic that
+
+232
+00:09:41,839 --> 00:09:46,160
+everyone is dealing with on some level.
+
+233
+00:09:43,920 --> 00:09:48,320
+And probably I don't know that we're
+
+234
+00:09:46,160 --> 00:09:49,839
+talking about it. We certainly aren't.
+
+235
+00:09:48,320 --> 00:09:51,360
+Unless someone like you ask those
+
+236
+00:09:49,839 --> 00:09:54,160
+questions, I don't think we're really
+
+237
+00:09:51,360 --> 00:09:56,480
+considering just how significant this is
+
+238
+00:09:54,160 --> 00:09:59,200
+and the the lack of trust is really
+
+239
+00:09:56,480 --> 00:10:01,519
+ingrained in who we've become. Um, we've
+
+240
+00:09:59,200 --> 00:10:04,160
+got generations now that are, you know,
+
+241
+00:10:01,519 --> 00:10:06,080
+much much further down uh what I would
+
+242
+00:10:04,160 --> 00:10:08,160
+call the spectrum in terms of the
+
+243
+00:10:06,080 --> 00:10:09,760
+influences that that are now really
+
+244
+00:10:08,160 --> 00:10:10,320
+driving how they think and what they
+
+245
+00:10:09,760 --> 00:10:12,240
+value.
+
+246
+00:10:10,320 --> 00:10:13,920
+>> Well, think how bad it's gotten. I mean,
+
+247
+00:10:12,240 --> 00:10:15,839
+just, you know, cuz I think we have to
+
+248
+00:10:13,920 --> 00:10:18,320
+really get a a tangible sense of the
+
+249
+00:10:15,839 --> 00:10:21,360
+problem. In the 1970s, people said they
+
+250
+00:10:18,320 --> 00:10:22,079
+trusted the government about 70 70% of
+
+251
+00:10:21,360 --> 00:10:22,560
+the time.
+
+252
+00:10:22,079 --> 00:10:24,320
+>> Wow.
+
+253
+00:10:22,560 --> 00:10:27,120
+>> Think about what, you know, in terms of
+
+254
+00:10:24,320 --> 00:10:29,519
+other institutions like the church and
+
+255
+00:10:27,120 --> 00:10:30,000
+law enforcement. It was really pretty
+
+256
+00:10:29,519 --> 00:10:30,560
+high,
+
+257
+00:10:30,000 --> 00:10:33,360
+>> right?
+
+258
+00:10:30,560 --> 00:10:35,680
+>> At this point, the sources that we
+
+259
+00:10:33,360 --> 00:10:37,519
+typically would think you could trust,
+
+260
+00:10:35,680 --> 00:10:40,399
+the government, institutions, law
+
+261
+00:10:37,519 --> 00:10:43,440
+enforcement, physicians, organizations,
+
+262
+00:10:40,399 --> 00:10:47,519
+that's dropped now from about 70% down
+
+263
+00:10:43,440 --> 00:10:49,519
+to 25%. And it and currently 21% of
+
+264
+00:10:47,519 --> 00:10:50,079
+employees strongly agree
+
+265
+00:10:49,519 --> 00:10:52,880
+>> Mhm.
+
+266
+00:10:50,079 --> 00:10:55,600
+>> that they can trust the organization. So
+
+267
+00:10:52,880 --> 00:10:57,120
+that means that there's about 80% that
+
+268
+00:10:55,600 --> 00:11:00,320
+don't fundamentally trust the
+
+269
+00:10:57,120 --> 00:11:04,320
+organization. 43% trust their manager to
+
+270
+00:11:00,320 --> 00:11:05,920
+act with integrity. 25% trust their a
+
+271
+00:11:04,320 --> 00:11:09,279
+CEO.
+
+272
+00:11:05,920 --> 00:11:12,640
+And uh even at this point, 24% of
+
+273
+00:11:09,279 --> 00:11:14,160
+employees report trusting colleagues to
+
+274
+00:11:12,640 --> 00:11:15,680
+actually do what they're said they're
+
+275
+00:11:14,160 --> 00:11:16,000
+going to do if they're working at home,
+
+276
+00:11:15,680 --> 00:11:18,880
+right?
+
+277
+00:11:16,000 --> 00:11:21,040
+>> I mean, the it's it's really gone down.
+
+278
+00:11:18,880 --> 00:11:23,680
+And and I think, okay,
+
+279
+00:11:21,040 --> 00:11:25,440
+>> you know, certain positions
+
+280
+00:11:23,680 --> 00:11:27,600
+you're not necessarily going to trust.
+
+281
+00:11:25,440 --> 00:11:29,920
+The car salesman, not likely going to
+
+282
+00:11:27,600 --> 00:11:31,360
+trust them. Why? Because they have, you
+
+283
+00:11:29,920 --> 00:11:33,680
+know, a dog in the fight. They're
+
+284
+00:11:31,360 --> 00:11:36,240
+they're trying to make some money. But
+
+285
+00:11:33,680 --> 00:11:38,800
+even these types of positions like
+
+286
+00:11:36,240 --> 00:11:41,040
+pastors, physicians, right, police
+
+287
+00:11:38,800 --> 00:11:44,399
+officers, other family members,
+
+288
+00:11:41,040 --> 00:11:46,959
+co-workers, that has extremely eroded.
+
+289
+00:11:44,399 --> 00:11:49,040
+It's a I mean, it is really a high need,
+
+290
+00:11:46,959 --> 00:11:51,279
+I think. And we're not just dealing with
+
+291
+00:11:49,040 --> 00:11:51,839
+processes and technology here with AI.
+
+292
+00:11:51,279 --> 00:11:54,560
+>> That's right.
+
+293
+00:11:51,839 --> 00:11:56,640
+>> It's a it's a relational thing. So, I
+
+294
+00:11:54,560 --> 00:11:58,800
+have several ideas that I've passed
+
+295
+00:11:56,640 --> 00:12:00,079
+along as I've studied this over the
+
+296
+00:11:58,800 --> 00:12:01,040
+years.
+
+297
+00:12:00,079 --> 00:12:03,040
+>> Yeah. I I I think
+
+298
+00:12:01,040 --> 00:12:05,200
+>> I'll say I'll say the first one is
+
+299
+00:12:03,040 --> 00:12:07,519
+reliability. One of the most important
+
+300
+00:12:05,200 --> 00:12:09,279
+things that a person can do is basically
+
+301
+00:12:07,519 --> 00:12:10,880
+do what you say you're going to do,
+
+302
+00:12:09,279 --> 00:12:13,360
+follow through on it. And I think
+
+303
+00:12:10,880 --> 00:12:16,480
+sometimes we're so busy
+
+304
+00:12:13,360 --> 00:12:18,000
+u I I've seen people who it used to be
+
+305
+00:12:16,480 --> 00:12:20,240
+that if somebody said they were going to
+
+306
+00:12:18,000 --> 00:12:22,160
+do something, they'd do it. Now, I'll
+
+307
+00:12:20,240 --> 00:12:24,720
+drop the ball sometimes, and I think we
+
+308
+00:12:22,160 --> 00:12:26,959
+all do. But I think it's becoming more
+
+309
+00:12:24,720 --> 00:12:28,560
+and more common that, well, you know, we
+
+310
+00:12:26,959 --> 00:12:31,120
+did our best and as long as our
+
+311
+00:12:28,560 --> 00:12:33,519
+intentions were good, then it's it's
+
+312
+00:12:31,120 --> 00:12:35,760
+defensible. If we want to follow
+
+313
+00:12:33,519 --> 00:12:37,839
+through, if we want to build trust, then
+
+314
+00:12:35,760 --> 00:12:40,079
+I think we need to follow through on
+
+315
+00:12:37,839 --> 00:12:41,760
+what we do. I I don't know, Chris, what
+
+316
+00:12:40,079 --> 00:12:44,320
+has it been like for you? How do you see
+
+317
+00:12:41,760 --> 00:12:46,880
+it? Are people following through or or
+
+318
+00:12:44,320 --> 00:12:49,120
+not? I I think increasingly
+
+319
+00:12:46,880 --> 00:12:52,000
+um I'm finding it's not as reliable as
+
+320
+00:12:49,120 --> 00:12:53,760
+it as it was a few years ago for sure in
+
+321
+00:12:52,000 --> 00:12:56,320
+my own experience. But I think we have
+
+322
+00:12:53,760 --> 00:12:59,120
+kind of shifted a little bit away from
+
+323
+00:12:56,320 --> 00:13:00,480
+experience when it comes to trust and we
+
+324
+00:12:59,120 --> 00:13:02,320
+were thinking we've been thinking about
+
+325
+00:13:00,480 --> 00:13:04,160
+it more as the promise and you know the
+
+326
+00:13:02,320 --> 00:13:07,040
+intention as you mentioned but in
+
+327
+00:13:04,160 --> 00:13:08,800
+reality how we're deciding what risks
+
+328
+00:13:07,040 --> 00:13:11,839
+we're going to take or you know what
+
+329
+00:13:08,800 --> 00:13:13,519
+decisions we make it really is weighted
+
+330
+00:13:11,839 --> 00:13:15,839
+on the experience side no matter what
+
+331
+00:13:13,519 --> 00:13:19,040
+someone says and you know I think we
+
+332
+00:13:15,839 --> 00:13:21,600
+don't often articulate what our real
+
+333
+00:13:19,040 --> 00:13:23,600
+trust level is in in a in the workforce
+
+334
+00:13:21,600 --> 00:13:25,519
+environment for a variety of reasons.
+
+335
+00:13:23,600 --> 00:13:26,880
+And I think that's something that we
+
+336
+00:13:25,519 --> 00:13:29,040
+really need to talk about a little bit
+
+337
+00:13:26,880 --> 00:13:31,200
+more. I mean, if we want to pivot over
+
+338
+00:13:29,040 --> 00:13:33,360
+for a second and talk about the the fear
+
+339
+00:13:31,200 --> 00:13:35,600
+that's out there just because of the the
+
+340
+00:13:33,360 --> 00:13:37,440
+AI discussions that are being had, what
+
+341
+00:13:35,600 --> 00:13:39,519
+we're talking about, we're we have no
+
+342
+00:13:37,440 --> 00:13:42,480
+shot at getting AI right. If we can't
+
+343
+00:13:39,519 --> 00:13:44,639
+address the underlying fears and trust
+
+344
+00:13:42,480 --> 00:13:46,399
+issues that exist, I think we're on a
+
+345
+00:13:44,639 --> 00:13:48,880
+really bad trajectory if we can't
+
+346
+00:13:46,399 --> 00:13:51,120
+actually course correct. So, if we're
+
+347
+00:13:48,880 --> 00:13:52,639
+talking about what AI can do, that's
+
+348
+00:13:51,120 --> 00:13:54,959
+great. But
+
+349
+00:13:52,639 --> 00:13:56,560
+>> how does that really help a person
+
+350
+00:13:54,959 --> 00:13:58,079
+that's really dealing with a level of
+
+351
+00:13:56,560 --> 00:13:59,920
+uncertainty that they've never had to
+
+352
+00:13:58,079 --> 00:14:02,160
+deal with before? How does a leader go
+
+353
+00:13:59,920 --> 00:14:03,600
+about creating psychological safety in a
+
+354
+00:14:02,160 --> 00:14:05,680
+time where so many people are afraid of
+
+355
+00:14:03,600 --> 00:14:08,320
+being automated out of their job or
+
+356
+00:14:05,680 --> 00:14:10,160
+heaven forbid they identify a workflow
+
+357
+00:14:08,320 --> 00:14:11,600
+that could be automated, but they're
+
+358
+00:14:10,160 --> 00:14:12,720
+scared to actually raise their hand
+
+359
+00:14:11,600 --> 00:14:13,040
+because they don't want to lose their
+
+360
+00:14:12,720 --> 00:14:15,040
+job.
+
+361
+00:14:13,040 --> 00:14:17,600
+>> I think that's right. I think fear is
+
+362
+00:14:15,040 --> 00:14:20,160
+probably one of the core just visceral
+
+363
+00:14:17,600 --> 00:14:22,639
+reactions that people have. When an
+
+364
+00:14:20,160 --> 00:14:25,199
+individual feels threatened, either
+
+365
+00:14:22,639 --> 00:14:27,199
+their life or something that they value,
+
+366
+00:14:25,199 --> 00:14:30,959
+something they that they care about. I
+
+367
+00:14:27,199 --> 00:14:33,120
+mean, I have a motorcycle. If I lend my
+
+368
+00:14:30,959 --> 00:14:35,920
+motorcycle to someone else, if they're
+
+369
+00:14:33,120 --> 00:14:38,800
+an experienced rider, I'm okay. But if
+
+370
+00:14:35,920 --> 00:14:41,680
+if they're not, I'm feeling a high level
+
+371
+00:14:38,800 --> 00:14:43,920
+of anxiety simply because something that
+
+372
+00:14:41,680 --> 00:14:46,000
+I care about is threatened. And when
+
+373
+00:14:43,920 --> 00:14:48,320
+people are fearful, they'll usually
+
+374
+00:14:46,000 --> 00:14:51,519
+respond in one of three ways. They'll
+
+375
+00:14:48,320 --> 00:14:52,959
+either go aggressive and move against.
+
+376
+00:14:51,519 --> 00:14:54,639
+So that means they become more
+
+377
+00:14:52,959 --> 00:14:57,040
+controlling, kind of what we would say
+
+378
+00:14:54,639 --> 00:14:59,279
+today. It's a popular term,
+
+379
+00:14:57,040 --> 00:15:01,839
+narcissistic, where they become very
+
+380
+00:14:59,279 --> 00:15:03,440
+manipulative and forceful, blustery if
+
+381
+00:15:01,839 --> 00:15:05,279
+they're ever challenged. They just
+
+382
+00:15:03,440 --> 00:15:08,480
+double down. Sometimes they'll
+
+383
+00:15:05,279 --> 00:15:10,800
+overpromise and underdel. So that's one
+
+384
+00:15:08,480 --> 00:15:13,120
+way that people respond. But not
+
+385
+00:15:10,800 --> 00:15:16,079
+everybody's the same way. Some people
+
+386
+00:15:13,120 --> 00:15:18,480
+instead they instead of moving against
+
+387
+00:15:16,079 --> 00:15:20,959
+they'll move away. So they'll they'll
+
+388
+00:15:18,480 --> 00:15:23,920
+shut down, they'll avoid, they'll
+
+389
+00:15:20,959 --> 00:15:26,000
+distract, and they'll disengage. And
+
+390
+00:15:23,920 --> 00:15:27,519
+this is kind of what we see happening.
+
+391
+00:15:26,000 --> 00:15:29,199
+Who's going to raise their hand,
+
+392
+00:15:27,519 --> 00:15:31,279
+>> right?
+
+393
+00:15:29,199 --> 00:15:32,959
+>> Because when you do, it's like standing
+
+394
+00:15:31,279 --> 00:15:35,440
+up. You're more likely to be a really
+
+395
+00:15:32,959 --> 00:15:37,920
+good target of getting shot. And this is
+
+396
+00:15:35,440 --> 00:15:40,160
+the fundamental thing. I mean, there are
+
+397
+00:15:37,920 --> 00:15:42,160
+two primary motivations. And I'll come
+
+398
+00:15:40,160 --> 00:15:44,560
+back to the third piece that people
+
+399
+00:15:42,160 --> 00:15:46,480
+often behave when they're threatened.
+
+400
+00:15:44,560 --> 00:15:48,639
+But there's two primary motivations that
+
+401
+00:15:46,480 --> 00:15:50,880
+people have. One is they're really
+
+402
+00:15:48,639 --> 00:15:53,920
+motivated to look good. And the only
+
+403
+00:15:50,880 --> 00:15:57,440
+thing that like exceeds that is they're
+
+404
+00:15:53,920 --> 00:16:00,079
+even more strongly motivated to not look
+
+405
+00:15:57,440 --> 00:16:03,040
+bad, to not be embarrassed and
+
+406
+00:16:00,079 --> 00:16:05,279
+humiliated and ashamed. Well, here we
+
+407
+00:16:03,040 --> 00:16:07,360
+have a situation like let's say we're in
+
+408
+00:16:05,279 --> 00:16:10,399
+a team environment. People sitting
+
+409
+00:16:07,360 --> 00:16:12,800
+around that table are highly motivated
+
+410
+00:16:10,399 --> 00:16:15,040
+to not look bad. And so what they'll
+
+411
+00:16:12,800 --> 00:16:17,600
+often do is move away, right? They'll
+
+412
+00:16:15,040 --> 00:16:19,279
+pull back. They have shame because they
+
+413
+00:16:17,600 --> 00:16:21,680
+think that, hey, I don't know what
+
+414
+00:16:19,279 --> 00:16:23,680
+really might be going on here. The worst
+
+415
+00:16:21,680 --> 00:16:25,839
+fear that I have is that someone will
+
+416
+00:16:23,680 --> 00:16:28,399
+discover that and then what they'll do
+
+417
+00:16:25,839 --> 00:16:30,800
+is either move away or move to control
+
+418
+00:16:28,399 --> 00:16:33,199
+situations and become aggressive. So
+
+419
+00:16:30,800 --> 00:16:35,199
+those those are patterns that people
+
+420
+00:16:33,199 --> 00:16:37,360
+typically will develop and we sit and
+
+421
+00:16:35,199 --> 00:16:39,680
+wonder well why is it that people are
+
+422
+00:16:37,360 --> 00:16:41,920
+reluctant to engage. I think it does
+
+423
+00:16:39,680 --> 00:16:44,320
+like you say go back to that core thing
+
+424
+00:16:41,920 --> 00:16:47,120
+of fear and people will either move
+
+425
+00:16:44,320 --> 00:16:48,959
+against and aggress move away or the
+
+426
+00:16:47,120 --> 00:16:50,880
+third thing that they do Chris is
+
+427
+00:16:48,959 --> 00:16:54,399
+they'll move toward and when they move
+
+428
+00:16:50,880 --> 00:16:57,360
+toward they try to fix it they try to
+
+429
+00:16:54,399 --> 00:17:00,160
+make everything okay as if it is not a
+
+430
+00:16:57,360 --> 00:17:02,320
+problem and so they minimize the problem
+
+431
+00:17:00,160 --> 00:17:04,559
+and and it and just say well we're all
+
+432
+00:17:02,320 --> 00:17:05,760
+good and they they move to this kind of
+
+433
+00:17:04,559 --> 00:17:06,240
+phony posture
+
+434
+00:17:05,760 --> 00:17:08,240
+>> right
+
+435
+00:17:06,240 --> 00:17:10,319
+>> where often underneath that are hidden
+
+436
+00:17:08,240 --> 00:17:12,640
+agenda is where people have their own
+
+437
+00:17:10,319 --> 00:17:15,120
+stuff going on, but they're not likely
+
+438
+00:17:12,640 --> 00:17:17,520
+to disclose how they really think or
+
+439
+00:17:15,120 --> 00:17:20,240
+feel. And so there they set. So here
+
+440
+00:17:17,520 --> 00:17:22,240
+comes management along with an AI idea.
+
+441
+00:17:20,240 --> 00:17:24,160
+We're going to do something. And you've
+
+442
+00:17:22,240 --> 00:17:26,480
+got a whole lot of people that are
+
+443
+00:17:24,160 --> 00:17:28,240
+either going to respond aggressively,
+
+444
+00:17:26,480 --> 00:17:30,960
+they're going to shut down, or they're
+
+445
+00:17:28,240 --> 00:17:33,120
+going to act as if it's all okay and not
+
+446
+00:17:30,960 --> 00:17:35,039
+say anything because they're afraid that
+
+447
+00:17:33,120 --> 00:17:38,320
+if they say something, they're going to
+
+448
+00:17:35,039 --> 00:17:39,919
+get humiliated and maybe lose even more.
+
+449
+00:17:38,320 --> 00:17:42,640
+So, I mean, I think it just really
+
+450
+00:17:39,919 --> 00:17:45,600
+underscores to me the dilemma that this
+
+451
+00:17:42,640 --> 00:17:48,720
+poses for supervisors and leaders. How
+
+452
+00:17:45,600 --> 00:17:50,799
+do we create some of that space that we
+
+453
+00:17:48,720 --> 00:17:53,120
+can increase trust? Because we have to
+
+454
+00:17:50,799 --> 00:17:54,799
+pay attention to these core fundamental
+
+455
+00:17:53,120 --> 00:17:57,120
+needs. And I think the first one really
+
+456
+00:17:54,799 --> 00:17:57,840
+is, hey, just do what you said you were
+
+457
+00:17:57,120 --> 00:17:58,320
+going to do.
+
+458
+00:17:57,840 --> 00:18:00,960
+>> Yes.
+
+459
+00:17:58,320 --> 00:18:03,360
+>> Don't underpromise and and don't
+
+460
+00:18:00,960 --> 00:18:03,840
+overpromise and underdel,
+
+461
+00:18:03,360 --> 00:18:06,720
+>> right?
+
+462
+00:18:03,840 --> 00:18:09,440
+>> Instead, I think we need to underpromise
+
+463
+00:18:06,720 --> 00:18:11,520
+and overd deliver when it comes time to
+
+464
+00:18:09,440 --> 00:18:13,440
+keep our commitments so that we can be
+
+465
+00:18:11,520 --> 00:18:15,520
+reliable. That's the first one,
+
+466
+00:18:13,440 --> 00:18:16,080
+>> right?
+
+467
+00:18:15,520 --> 00:18:18,160
+Yeah.
+
+468
+00:18:16,080 --> 00:18:20,960
+>> So, it brings up a really interesting
+
+469
+00:18:18,160 --> 00:18:23,200
+dilemma now because how do you do you
+
+470
+00:18:20,960 --> 00:18:25,600
+trust what you're hearing from the top?
+
+471
+00:18:23,200 --> 00:18:27,039
+For example, if you're the CEO and you
+
+472
+00:18:25,600 --> 00:18:28,480
+get out front of your team and you're
+
+473
+00:18:27,039 --> 00:18:30,960
+saying, "Hey, no one's going to lose
+
+474
+00:18:28,480 --> 00:18:32,720
+their job." That's about as big of a
+
+475
+00:18:30,960 --> 00:18:34,880
+risk that you could take because deep
+
+476
+00:18:32,720 --> 00:18:36,320
+down you understand that disruptive
+
+477
+00:18:34,880 --> 00:18:38,480
+innovation is going to change things
+
+478
+00:18:36,320 --> 00:18:41,360
+dramatically in the types of work that
+
+479
+00:18:38,480 --> 00:18:43,200
+we can do. Now, it changes. So, if you
+
+480
+00:18:41,360 --> 00:18:45,440
+can empower your workforce to to be able
+
+481
+00:18:43,200 --> 00:18:47,520
+to do more meaningful work and eliminate
+
+482
+00:18:45,440 --> 00:18:49,919
+some of the more routine and monotonous
+
+483
+00:18:47,520 --> 00:18:52,000
+tasks, while while that's an exciting
+
+484
+00:18:49,919 --> 00:18:54,320
+thing from a technology and innovation
+
+485
+00:18:52,000 --> 00:18:56,240
+standpoint, you still have to get get
+
+486
+00:18:54,320 --> 00:18:57,919
+past that trust barrier so people can
+
+487
+00:18:56,240 --> 00:19:00,160
+really open up their thinking because
+
+488
+00:18:57,919 --> 00:19:02,320
+the reality is if you want people to
+
+489
+00:19:00,160 --> 00:19:04,320
+really be part of, you know, this
+
+490
+00:19:02,320 --> 00:19:05,919
+evolution and bring value particularly
+
+491
+00:19:04,320 --> 00:19:07,919
+in healthcare because we know that the
+
+492
+00:19:05,919 --> 00:19:10,640
+resources we're talking about there's a
+
+493
+00:19:07,919 --> 00:19:13,440
+scarcity. there's not a surplus in a lot
+
+494
+00:19:10,640 --> 00:19:15,919
+of particularly in clinical roles um you
+
+495
+00:19:13,440 --> 00:19:18,000
+know whether it's nursing or providers.
+
+496
+00:19:15,919 --> 00:19:20,559
+So this is a really big obstacle that
+
+497
+00:19:18,000 --> 00:19:21,840
+we've got to be able to overcome um and
+
+498
+00:19:20,559 --> 00:19:25,200
+it's not even the technology
+
+499
+00:19:21,840 --> 00:19:27,840
+conversation right now. This is are we
+
+500
+00:19:25,200 --> 00:19:29,440
+are we setting out to do something that
+
+501
+00:19:27,840 --> 00:19:31,919
+we can actually stand by their
+
+502
+00:19:29,440 --> 00:19:34,960
+commitment that we are this is all about
+
+503
+00:19:31,919 --> 00:19:37,600
+empowering our workforce not replacing
+
+504
+00:19:34,960 --> 00:19:40,240
+them. But what's the balance? Because
+
+505
+00:19:37,600 --> 00:19:42,400
+the numbers probably do change. I know
+
+506
+00:19:40,240 --> 00:19:44,640
+IT transformations I've seen have
+
+507
+00:19:42,400 --> 00:19:46,400
+dropped workforce by over 50% over a
+
+508
+00:19:44,640 --> 00:19:49,360
+period of four or five years. Well, this
+
+509
+00:19:46,400 --> 00:19:52,080
+is this is to me one of the most
+
+510
+00:19:49,360 --> 00:19:55,440
+important pieces in terms of strategies
+
+511
+00:19:52,080 --> 00:19:58,799
+that leaders can have to build trust and
+
+512
+00:19:55,440 --> 00:20:01,280
+that is to be real. Authenticity
+
+513
+00:19:58,799 --> 00:20:03,200
+requires full disclosures. And that
+
+514
+00:20:01,280 --> 00:20:05,919
+means that leaders can one of the
+
+515
+00:20:03,200 --> 00:20:09,200
+fastest ways you can undermine trust is
+
+516
+00:20:05,919 --> 00:20:12,000
+to not give the full picture. I'll give
+
+517
+00:20:09,200 --> 00:20:14,799
+you an example. As a founder within my
+
+518
+00:20:12,000 --> 00:20:17,360
+own company, I go out and meet with
+
+519
+00:20:14,799 --> 00:20:19,760
+investors. And I heard an investor just
+
+520
+00:20:17,360 --> 00:20:22,880
+last last week say to me, "One of the
+
+521
+00:20:19,760 --> 00:20:25,679
+things that can shoot somebody's boat
+
+522
+00:20:22,880 --> 00:20:27,840
+and sink their boat is if they have a
+
+523
+00:20:25,679 --> 00:20:30,240
+founder who comes and they don't tell
+
+524
+00:20:27,840 --> 00:20:32,320
+the whole picture. They paint the rosy
+
+525
+00:20:30,240 --> 00:20:34,799
+picture, but they don't disclose the
+
+526
+00:20:32,320 --> 00:20:36,400
+problems because then what happens when
+
+527
+00:20:34,799 --> 00:20:38,640
+I mean everybody kind of knows, well,
+
+528
+00:20:36,400 --> 00:20:40,720
+there's another side to that coin and
+
+529
+00:20:38,640 --> 00:20:41,200
+they're only showing me the rosy side,
+
+530
+00:20:40,720 --> 00:20:43,520
+right?
+
+531
+00:20:41,200 --> 00:20:46,080
+>> Don't shine me on. What we really need
+
+532
+00:20:43,520 --> 00:20:48,799
+to do is have authenticity and that
+
+533
+00:20:46,080 --> 00:20:51,520
+means to both present both sides of the
+
+534
+00:20:48,799 --> 00:20:53,679
+coin. Here are the upsides and here are
+
+535
+00:20:51,520 --> 00:20:55,679
+the challenges that we're facing. I know
+
+536
+00:20:53,679 --> 00:20:57,520
+that a lot of times when leaders
+
+537
+00:20:55,679 --> 00:20:59,600
+particularly in healthcare, I've got
+
+538
+00:20:57,520 --> 00:21:01,919
+some clients now that they're facing
+
+539
+00:20:59,600 --> 00:21:05,039
+these same types of challenges that you
+
+540
+00:21:01,919 --> 00:21:08,240
+outlined and it's very tempting for a
+
+541
+00:21:05,039 --> 00:21:11,039
+new leader or even a current leader
+
+542
+00:21:08,240 --> 00:21:13,440
+>> to not want to appear bad, right? So
+
+543
+00:21:11,039 --> 00:21:15,360
+they'll shine them on and make it look
+
+544
+00:21:13,440 --> 00:21:17,760
+like it's a little bit better. They'll
+
+545
+00:21:15,360 --> 00:21:20,080
+embellish. They'll paint a rosier
+
+546
+00:21:17,760 --> 00:21:22,640
+picture. All the while, the big question
+
+547
+00:21:20,080 --> 00:21:24,400
+in everybody's mind is you're coming in
+
+548
+00:21:22,640 --> 00:21:26,559
+and something's going to change. How is
+
+549
+00:21:24,400 --> 00:21:29,039
+it going to affect me? So what I'm
+
+550
+00:21:26,559 --> 00:21:31,919
+seeing, particularly with some leaders
+
+551
+00:21:29,039 --> 00:21:34,000
+that I'm working with, is a very strong
+
+552
+00:21:31,919 --> 00:21:38,080
+and intentional dedication and
+
+553
+00:21:34,000 --> 00:21:40,799
+commitment to providing the full truth.
+
+554
+00:21:38,080 --> 00:21:43,120
+See, this is the thing. If if I don't
+
+555
+00:21:40,799 --> 00:21:46,400
+trust you, if I'm the leader and I don't
+
+556
+00:21:43,120 --> 00:21:49,280
+trust you to be able to handle the whole
+
+557
+00:21:46,400 --> 00:21:50,640
+story and I shine that on,
+
+558
+00:21:49,280 --> 00:21:53,200
+>> right,
+
+559
+00:21:50,640 --> 00:21:55,600
+>> then how can I expect that you're going
+
+560
+00:21:53,200 --> 00:21:57,039
+to trust me? It just doesn't happen.
+
+561
+00:21:55,600 --> 00:21:59,039
+>> Right?
+
+562
+00:21:57,039 --> 00:22:02,000
+>> Years ago, I mean, it's a simple little
+
+563
+00:21:59,039 --> 00:22:04,960
+story. Years ago, I used to need to drop
+
+564
+00:22:02,000 --> 00:22:07,760
+off my kids, right? And years ago, I was
+
+565
+00:22:04,960 --> 00:22:10,080
+married before and I would need to drop
+
+566
+00:22:07,760 --> 00:22:11,679
+off my kids at a particular time and
+
+567
+00:22:10,080 --> 00:22:14,480
+there were times that I'd be running
+
+568
+00:22:11,679 --> 00:22:17,520
+late, even if it was 5 minutes late.
+
+569
+00:22:14,480 --> 00:22:20,159
+>> So, what I do is I know this. I would
+
+570
+00:22:17,520 --> 00:22:21,919
+call and I'd say, "I'll be there on
+
+571
+00:22:20,159 --> 00:22:24,080
+time. You know, I'm sure I'll make it."
+
+572
+00:22:21,919 --> 00:22:27,840
+And then I drive as fast as I could to
+
+573
+00:22:24,080 --> 00:22:29,840
+make it only to then, you know, be a
+
+574
+00:22:27,840 --> 00:22:32,240
+couple minutes late and there there my
+
+575
+00:22:29,840 --> 00:22:35,360
+ex would be going, "I knew it." Right?
+
+576
+00:22:32,240 --> 00:22:37,360
+you always, you know, I can't trust you
+
+577
+00:22:35,360 --> 00:22:39,919
+to tell the truth. And there was an
+
+578
+00:22:37,360 --> 00:22:42,960
+element of truth to that because I
+
+579
+00:22:39,919 --> 00:22:44,960
+feared what the repercussions would be.
+
+580
+00:22:42,960 --> 00:22:47,120
+So I thought, well, if I can just kind
+
+581
+00:22:44,960 --> 00:22:50,240
+of finagle a little bit and I even had
+
+582
+00:22:47,120 --> 00:22:52,080
+told myself, convinced myself that I was
+
+583
+00:22:50,240 --> 00:22:54,400
+still being truthful, right? And I had
+
+584
+00:22:52,080 --> 00:22:57,200
+to take a hard look at myself and say,
+
+585
+00:22:54,400 --> 00:22:59,919
+look, I need to be willing to deliver
+
+586
+00:22:57,200 --> 00:23:02,480
+the bad news as well as the good news.
+
+587
+00:22:59,919 --> 00:23:05,120
+And that is hard for anybody
+
+588
+00:23:02,480 --> 00:23:07,360
+>> right now. That's such a great example
+
+589
+00:23:05,120 --> 00:23:09,760
+because
+
+590
+00:23:07,360 --> 00:23:12,240
+it it is it's really ingrained in us
+
+591
+00:23:09,760 --> 00:23:13,039
+even on a on a personal level like that.
+
+592
+00:23:12,240 --> 00:23:14,559
+I mean
+
+593
+00:23:13,039 --> 00:23:16,559
+>> fast forward into a workplace and
+
+594
+00:23:14,559 --> 00:23:19,679
+environment. How much more likely are we
+
+595
+00:23:16,559 --> 00:23:22,320
+to be uh overly concerned about the
+
+596
+00:23:19,679 --> 00:23:24,640
+repercussions like that? I mean
+
+597
+00:23:22,320 --> 00:23:27,679
+>> it's remarkable. I think as we're we're
+
+598
+00:23:24,640 --> 00:23:29,440
+starting to you know kind of wrap our
+
+599
+00:23:27,679 --> 00:23:32,960
+conversation. I think what would be
+
+600
+00:23:29,440 --> 00:23:34,559
+really um helpful I think is get give me
+
+601
+00:23:32,960 --> 00:23:36,799
+some of your what's your what kind of
+
+602
+00:23:34,559 --> 00:23:40,080
+advice would would you give uh leaders
+
+603
+00:23:36,799 --> 00:23:42,400
+who are trying to navigate and you get
+
+604
+00:23:40,080 --> 00:23:45,280
+get their organization through such a
+
+605
+00:23:42,400 --> 00:23:47,679
+massive AI shift? I mean back in the '9s
+
+606
+00:23:45,280 --> 00:23:49,840
+we all of a sudden had jobs that were
+
+607
+00:23:47,679 --> 00:23:53,200
+impacted by the internet. I think this
+
+608
+00:23:49,840 --> 00:23:55,760
+is I I don't even know from a order of
+
+609
+00:23:53,200 --> 00:23:58,400
+magnitude standpoint how how I mean this
+
+610
+00:23:55,760 --> 00:23:59,760
+is a what is it a 100x a 1000x I don't
+
+611
+00:23:58,400 --> 00:24:01,760
+know it's crazy.
+
+612
+00:23:59,760 --> 00:24:04,159
+>> Yeah. Well these are the things that it
+
+613
+00:24:01,760 --> 00:24:06,640
+boils down for me. Number one be
+
+614
+00:24:04,159 --> 00:24:09,120
+reliable. Follow through on what you
+
+615
+00:24:06,640 --> 00:24:11,360
+said you're going to do. Number two be
+
+616
+00:24:09,120 --> 00:24:13,120
+real and authentic. Give as much you
+
+617
+00:24:11,360 --> 00:24:15,600
+mean you can't tell everything but give
+
+618
+00:24:13,120 --> 00:24:17,120
+as much of the picture as you can and
+
+619
+00:24:15,600 --> 00:24:20,159
+don't hold back. We don't want to do
+
+620
+00:24:17,120 --> 00:24:21,600
+that with with clients or patients. We
+
+621
+00:24:20,159 --> 00:24:24,000
+don't want to do that with colleagues
+
+622
+00:24:21,600 --> 00:24:26,240
+either. Number three, I think that it's
+
+623
+00:24:24,000 --> 00:24:28,400
+important for people to see us,
+
+624
+00:24:26,240 --> 00:24:31,360
+particularly as leaders, as being
+
+625
+00:24:28,400 --> 00:24:34,240
+relatable. The more that we can conjure
+
+626
+00:24:31,360 --> 00:24:36,240
+this feeling of we're similar to them.
+
+627
+00:24:34,240 --> 00:24:38,559
+We're not really different. And the
+
+628
+00:24:36,240 --> 00:24:40,559
+truth is, I really don't know right now
+
+629
+00:24:38,559 --> 00:24:42,640
+exactly what's going to happen either.
+
+630
+00:24:40,559 --> 00:24:45,200
+See, we think that as leaders we have to
+
+631
+00:24:42,640 --> 00:24:48,320
+present this facade that we've got all
+
+632
+00:24:45,200 --> 00:24:49,679
+of it figured out and that does not
+
+633
+00:24:48,320 --> 00:24:50,080
+engender trust,
+
+634
+00:24:49,679 --> 00:24:52,080
+>> right?
+
+635
+00:24:50,080 --> 00:24:54,400
+>> If we can just be honest and say, "Hey,
+
+636
+00:24:52,080 --> 00:24:56,880
+I don't know." And I will keep you
+
+637
+00:24:54,400 --> 00:24:57,919
+posted as much as I can,
+
+638
+00:24:56,880 --> 00:25:01,279
+>> right?
+
+639
+00:24:57,919 --> 00:25:03,520
+>> Let's have actually let's have some
+
+640
+00:25:01,279 --> 00:25:06,080
+space that we can carve out. And I think
+
+641
+00:25:03,520 --> 00:25:09,520
+this is important to carve out space
+
+642
+00:25:06,080 --> 00:25:11,120
+where people it's okay for them to weigh
+
+643
+00:25:09,520 --> 00:25:11,520
+in with their concerns.
+
+644
+00:25:11,120 --> 00:25:13,200
+>> Right?
+
+645
+00:25:11,520 --> 00:25:15,279
+>> See, if we say, "Hey, we've got our
+
+646
+00:25:13,200 --> 00:25:17,679
+story all sewed up and we're selling
+
+647
+00:25:15,279 --> 00:25:20,240
+that." If people feel like they're being
+
+648
+00:25:17,679 --> 00:25:23,679
+sold something, there's no space for
+
+649
+00:25:20,240 --> 00:25:25,919
+them to have concerns or to raise
+
+650
+00:25:23,679 --> 00:25:27,840
+issues. So, what do they do with that?
+
+651
+00:25:25,919 --> 00:25:29,520
+They won't raise it because they don't
+
+652
+00:25:27,840 --> 00:25:31,679
+want to look bad. So, then they go and
+
+653
+00:25:29,520 --> 00:25:33,919
+talk about it with everybody else. So I
+
+654
+00:25:31,679 --> 00:25:37,120
+think that's the piece of relatability.
+
+655
+00:25:33,919 --> 00:25:39,679
+Can we be you know active and proactive
+
+656
+00:25:37,120 --> 00:25:41,840
+about creating space? The other thing I
+
+657
+00:25:39,679 --> 00:25:45,039
+think is we have to be ready. By
+
+658
+00:25:41,840 --> 00:25:47,679
+readiness I think about that story you
+
+659
+00:25:45,039 --> 00:25:49,760
+know that most people a lot of people
+
+660
+00:25:47,679 --> 00:25:52,320
+unfortunately can't even remember an
+
+661
+00:25:49,760 --> 00:25:54,640
+experience where there was a person who
+
+662
+00:25:52,320 --> 00:25:56,880
+was responsive and available to them.
+
+663
+00:25:54,640 --> 00:25:59,760
+>> Right? So that's about creating that
+
+664
+00:25:56,880 --> 00:26:02,640
+space so that you can be available to
+
+665
+00:25:59,760 --> 00:26:05,120
+respond to what somebody needs. So being
+
+666
+00:26:02,640 --> 00:26:08,080
+real, being receptive so that you can
+
+667
+00:26:05,120 --> 00:26:10,480
+create the space to hear the challenges
+
+668
+00:26:08,080 --> 00:26:12,720
+that people have. And then finally, I
+
+669
+00:26:10,480 --> 00:26:15,919
+think we need to do our homework. We
+
+670
+00:26:12,720 --> 00:26:19,440
+need to be able to provide a rational
+
+671
+00:26:15,919 --> 00:26:22,559
+explanation for what's going on. Not to
+
+672
+00:26:19,440 --> 00:26:25,440
+minimize that or just kind of polish it
+
+673
+00:26:22,559 --> 00:26:28,480
+off. No, let's let's get our facts and
+
+674
+00:26:25,440 --> 00:26:30,720
+deal with facts and not just conjecture
+
+675
+00:26:28,480 --> 00:26:32,880
+and not just being salesy about it.
+
+676
+00:26:30,720 --> 00:26:34,799
+People can smell it a mile away when
+
+677
+00:26:32,880 --> 00:26:36,799
+there's something fake. Let's be
+
+678
+00:26:34,799 --> 00:26:39,039
+rational and provide some good evidence
+
+679
+00:26:36,799 --> 00:26:40,640
+for what is going on, what we know and
+
+680
+00:26:39,039 --> 00:26:43,200
+what we don't know. That's what I like
+
+681
+00:26:40,640 --> 00:26:45,440
+to use. Here's what I know. Here's what
+
+682
+00:26:43,200 --> 00:26:48,400
+I don't know. Here's what we know for
+
+683
+00:26:45,440 --> 00:26:50,720
+sure. We're committed to everybody being
+
+684
+00:26:48,400 --> 00:26:52,320
+successful here as best we can,
+
+685
+00:26:50,720 --> 00:26:53,760
+>> right? But we're not going to be your
+
+686
+00:26:52,320 --> 00:26:55,919
+sugar daddy. We're not going to take
+
+687
+00:26:53,760 --> 00:26:58,000
+care of everything. You may have some
+
+688
+00:26:55,919 --> 00:26:59,039
+challenges here and we we really are
+
+689
+00:26:58,000 --> 00:27:01,120
+facing challenges.
+
+690
+00:26:59,039 --> 00:27:03,840
+>> No, that's incredibly powerful advice.
+
+691
+00:27:01,120 --> 00:27:06,080
+And I I think the message really needs
+
+692
+00:27:03,840 --> 00:27:08,720
+to get out there loud and clear. This is
+
+693
+00:27:06,080 --> 00:27:10,880
+not a driveby kind of fix we're talking
+
+694
+00:27:08,720 --> 00:27:12,799
+about. This is going to take a
+
+695
+00:27:10,880 --> 00:27:15,039
+commitment. You can't create that space
+
+696
+00:27:12,799 --> 00:27:18,080
+by having a an open town hall meeting
+
+697
+00:27:15,039 --> 00:27:20,480
+every six months or something.
+
+698
+00:27:18,080 --> 00:27:22,480
+No, it is fundamentally trust is a
+
+699
+00:27:20,480 --> 00:27:25,200
+relational thing. It's not something
+
+700
+00:27:22,480 --> 00:27:27,679
+that you can solve with information. And
+
+701
+00:27:25,200 --> 00:27:30,240
+that's been the challenge recently is we
+
+702
+00:27:27,679 --> 00:27:32,080
+think that the problems that we're
+
+703
+00:27:30,240 --> 00:27:34,559
+facing can be solved with more
+
+704
+00:27:32,080 --> 00:27:36,720
+information, more internet, and more
+
+705
+00:27:34,559 --> 00:27:39,760
+chat GPT. Just solve it with
+
+706
+00:27:36,720 --> 00:27:40,640
+information. We can't. It has to be that
+
+707
+00:27:39,760 --> 00:27:40,960
+connection.
+
+708
+00:27:40,640 --> 00:27:42,799
+>> Yeah.
+
+709
+00:27:40,960 --> 00:27:43,440
+>> And that means vulnerability on both
+
+710
+00:27:42,799 --> 00:27:45,840
+sides.
+
+711
+00:27:43,440 --> 00:27:47,279
+>> Dr. I I think as we wrap, it
+
+712
+00:27:45,840 --> 00:27:48,880
+occurs to me that there's probably a lot
+
+713
+00:27:47,279 --> 00:27:50,799
+of listeners out there that are in a
+
+714
+00:27:48,880 --> 00:27:52,720
+situation where they're having to make
+
+715
+00:27:50,799 --> 00:27:55,600
+these kind of leadership calls. How can
+
+716
+00:27:52,720 --> 00:27:56,559
+someone reach out to you because I'm
+
+717
+00:27:55,600 --> 00:27:58,559
+certain that there's going to be people
+
+718
+00:27:56,559 --> 00:28:00,559
+who will really need your expertise. I
+
+719
+00:27:58,559 --> 00:28:01,600
+know I'm inspired by it and I know I
+
+720
+00:28:00,559 --> 00:28:03,760
+have to start thinking a little bit
+
+721
+00:28:01,600 --> 00:28:05,520
+differently about how I even influence
+
+722
+00:28:03,760 --> 00:28:07,679
+things in my own family, but this is
+
+723
+00:28:05,520 --> 00:28:09,360
+important. And you know, if you could
+
+724
+00:28:07,679 --> 00:28:11,679
+just tell folks how they can they can
+
+725
+00:28:09,360 --> 00:28:14,640
+get in touch with you. I I find myself I
+
+726
+00:28:11,679 --> 00:28:17,120
+guess wearing two hats most of the time.
+
+727
+00:28:14,640 --> 00:28:19,760
+One is as a clinician and I'm working
+
+728
+00:28:17,120 --> 00:28:21,919
+with people on on deeper issues you know
+
+729
+00:28:19,760 --> 00:28:24,320
+relating to anxiety and depression and
+
+730
+00:28:21,919 --> 00:28:26,000
+things like that or relationships but
+
+731
+00:28:24,320 --> 00:28:28,159
+then I spend most of my other time and
+
+732
+00:28:26,000 --> 00:28:30,480
+this is most of the time is working with
+
+733
+00:28:28,159 --> 00:28:33,200
+leaders and uh so how can people reach
+
+734
+00:28:30,480 --> 00:28:35,520
+me? We have our website is AspireVue
+
+735
+00:28:33,200 --> 00:28:37,919
+that's Aspire
+
+736
+00:28:35,520 --> 00:28:39,840
+Vue, aspirevue.com
+
+737
+00:28:37,919 --> 00:28:44,159
+and they can connect with me there
+
+738
+00:28:39,840 --> 00:28:46,399
+drkcoon d r l a r r y k uh hnas
+
+739
+00:28:44,159 --> 00:28:48,159
+aspirevue.com and I would be more than
+
+740
+00:28:46,399 --> 00:28:49,760
+happy we've got a team of coaches and
+
+741
+00:28:48,159 --> 00:28:52,799
+this is these are the type of things
+
+742
+00:28:49,760 --> 00:28:55,120
+that we just provide another set of eyes
+
+743
+00:28:52,799 --> 00:28:56,960
+to help people often I have CEOs who
+
+744
+00:28:55,120 --> 00:28:59,039
+just call me and they say I need to
+
+745
+00:28:56,960 --> 00:29:01,200
+bounce something off of you
+
+746
+00:28:59,039 --> 00:29:03,919
+>> and sometimes it's an ethic ical type of
+
+747
+00:29:01,200 --> 00:29:06,720
+dilemma and working through that with a
+
+748
+00:29:03,919 --> 00:29:08,559
+lens to look at the relational side that
+
+749
+00:29:06,720 --> 00:29:10,320
+can make a huge difference.
+
+750
+00:29:08,559 --> 00:29:12,159
+>> Dr. thank you so much for your
+
+751
+00:29:10,320 --> 00:29:13,679
+time and and sharing your insight and
+
+752
+00:29:12,159 --> 00:29:15,600
+your leadership in this space. For all
+
+753
+00:29:13,679 --> 00:29:17,520
+of our listeners, if you're navigating
+
+754
+00:29:15,600 --> 00:29:19,039
+change, thinking about AI or just
+
+755
+00:29:17,520 --> 00:29:20,960
+wondering how to make your workplace
+
+756
+00:29:19,039 --> 00:29:22,799
+more human, go and read the seven
+
+757
+00:29:20,960 --> 00:29:24,880
+dimensions of credible authenticity.
+
+758
+00:29:22,799 --> 00:29:27,919
+It's a must. the link you'll find in the
+
+759
+00:29:24,880 --> 00:29:29,760
+show notes and again I will make sure
+
+760
+00:29:27,919 --> 00:29:31,600
+that you have all the material that you
+
+761
+00:29:29,760 --> 00:29:34,240
+need in the show notes to be able to
+
+762
+00:29:31,600 --> 00:29:36,559
+follow up with Dr. and hopefully
+
+763
+00:29:34,240 --> 00:29:38,320
+we'll all get on get on the this the
+
+764
+00:29:36,559 --> 00:29:41,120
+same train and we will get through this
+
+765
+00:29:38,320 --> 00:29:43,520
+together and have amazing success and
+
+766
+00:29:41,120 --> 00:29:43,840
+look back in amazement but that's going
+
+767
+00:29:43,520 --> 00:29:45,520
+to
+
+768
+00:29:43,840 --> 00:29:47,120
+>> that's what we hope. Thanks Chris for
+
+769
+00:29:45,520 --> 00:29:48,720
+the opportunity today.
+
+770
+00:29:47,120 --> 00:29:50,720
+>> Well folks that's that's going to do it
+
+771
+00:29:48,720 --> 00:29:52,640
+for this episode of the Signal Room. As
+
+772
+00:29:50,720 --> 00:29:53,919
+always, if this conversation resonated
+
+773
+00:29:52,640 --> 00:29:55,600
+with you, please share it with a
+
+774
+00:29:53,919 --> 00:29:57,679
+colleague or your leadership team
+
+775
+00:29:55,600 --> 00:30:00,000
+because the future of work, it really
+
+776
+00:29:57,679 --> 00:30:03,279
+starts with trust. So until next time,
+
+777
+00:30:00,000 --> 00:30:07,000
+stay tuned, stay curious, stay human,
+
+778
+00:30:03,279 --> 00:30:07,000
+and thanks for listening.
