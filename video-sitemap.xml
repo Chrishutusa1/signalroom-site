@@ -132,4 +132,65 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-context-keshavan-seshadri</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/UpJJejIHN-4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Healthcare AI Fails Without Context | Keshavan Seshadri</video:title>
+      <video:description>Keshavan Seshadri explains why healthcare AI fails without patient, task, operational, and institutional context, and how explainability and human oversight should be designed in.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/UpJJejIHN-4</video:player_loc>
+      <video:duration>1704</video:duration>
+      <video:publication_date>2025-12-24T06:00:24Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/google-translate-healthcare-carol-velandia</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/ghk8jZeWw1k/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Google Translate Fails in Healthcare | Carol Velandia</video:title>
+      <video:description>Carol Velandia explains why machine translation cannot replace professional language access in healthcare and how human review protects safety, dignity, and compliance.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ghk8jZeWw1k</video:player_loc>
+      <video:duration>1836</video:duration>
+      <video:publication_date>2025-12-17T16:39:05Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/clinical-ai-readiness-susie-branagan</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/RWrbko3Uo60/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Clinical AI Fails When Healthcare Workers Aren&#x27;t Ready | Susie Branagan</video:title>
+      <video:description>Susie Branagan explains why clinical AI rollouts fail when healthcare workers lack trust, emotional readiness, psychological safety, and leadership support.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/RWrbko3Uo60</video:player_loc>
+      <video:duration>2310</video:duration>
+      <video:publication_date>2025-12-10T06:45:17Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/data-quality-healthcare-ai-danette-mcgilvray</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/NGBbYZSdcLs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Bad Data Is Why Healthcare AI Fails | Danette McGilvray</video:title>
+      <video:description>Danette McGilvray explains why data quality debt, bias, and weak governance undermine healthcare AI, and how her Ten Steps approach builds trusted information.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/NGBbYZSdcLs</video:player_loc>
+      <video:duration>2802</video:duration>
+      <video:publication_date>2025-12-05T05:28:08Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-adoption-ritu-chakrawarty</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/fwVp0NsSFSI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Healthcare AI Fails at Adoption | Ritu Chakrawarty</video:title>
+      <video:description>Ritu Chakrawarty explains why healthcare AI fails at adoption and how leaders can test value, workflow fit, AI literacy, and organizational readiness before scaling.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/fwVp0NsSFSI</video:player_loc>
+      <video:duration>1436</video:duration>
+      <video:publication_date>2025-11-26T06:00:42Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
