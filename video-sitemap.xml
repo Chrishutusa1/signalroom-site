@@ -72,4 +72,64 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/chatgpt-medical-record-privacy</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/ATp-HtxgNyw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Don&apos;t Upload Your Medical Record to ChatGPT — Here&apos;s Why</video:title>
+      <video:description>Dr. Terry Adirim explains why patients should never upload a complete medical record to a general-purpose LLM and how to use AI health information safely.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ATp-HtxgNyw</video:player_loc>
+      <video:duration>2945</video:duration>
+      <video:publication_date>2026-08-05T15:59:11Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/unsupervised-ai-human-oversight</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/SIamsBgGsZ4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The AI Governance Problem Nobody&apos;s Talking About</video:title>
+      <video:description>Ethan Seib explains where unsupervised AI agents fail, how operational governance works, and which business decisions must remain human-controlled.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/SIamsBgGsZ4</video:player_loc>
+      <video:duration>2490</video:duration>
+      <video:publication_date>2026-07-29T16:54:40Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-addiction-treatment-3am-call</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/pkX7oNrda6E/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Addiction Treatment Crisis No One&apos;s Talking About</video:title>
+      <video:description>David Sichel explains why a missed 3 AM addiction-treatment call can be a patient-safety event and how responsible AI can support a safe human handoff.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/pkX7oNrda6E</video:player_loc>
+      <video:duration>1875</video:duration>
+      <video:publication_date>2026-07-22T18:00:22Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/hospital-ai-governance-signoff</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/xaNBfCmMjrs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Healthcare: The Hidden Reason It&apos;s Not Scaling</video:title>
+      <video:description>Dr. Angel Mena explains why hospital AI pilots fail to scale and what clinical, operational, legal, and governance leaders must settle first.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/xaNBfCmMjrs</video:player_loc>
+      <video:duration>2820</video:duration>
+      <video:publication_date>2026-07-15T16:45:18Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-agent-healthcare-ransomware</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/DlFna8wQghg/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why AI Agents Are Healthcare&apos;s Biggest Security Risk</video:title>
+      <video:description>Pranava Adduri explains how autonomous AI agents enlarge healthcare security risk, permission drift, and the potential blast radius of a breach.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/DlFna8wQghg</video:player_loc>
+      <video:duration>1815</video:duration>
+      <video:publication_date>2026-07-07T18:15:16Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>

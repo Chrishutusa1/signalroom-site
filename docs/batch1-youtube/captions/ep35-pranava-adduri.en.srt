@@ -1,0 +1,3415 @@
+1
+00:00:00,000 --> 00:00:03,760
+People's lives are at stake and the
+
+2
+00:00:01,600 --> 00:00:05,680
+problem gets very real. People might
+
+3
+00:00:03,760 --> 00:00:07,680
+know about Gen AI and they know it
+
+4
+00:00:05,680 --> 00:00:09,200
+exists but not much beyond that. But
+
+5
+00:00:07,680 --> 00:00:11,200
+part of the threat landscape are they
+
+6
+00:00:09,200 --> 00:00:13,120
+most likely to be missing right now. I
+
+7
+00:00:11,200 --> 00:00:14,639
+think it's the how the work gets done.
+
+8
+00:00:13,120 --> 00:00:16,640
+That is something that is not obvious.
+
+9
+00:00:14,639 --> 00:00:18,080
+We have to assume that the likelihood of
+
+10
+00:00:16,640 --> 00:00:20,320
+getting breached is higher. If you
+
+11
+00:00:18,080 --> 00:00:21,760
+assume that you will be breached and you
+
+12
+00:00:20,320 --> 00:00:24,240
+take the directive of how do I get
+
+13
+00:00:21,760 --> 00:00:27,039
+better at being breached, that changes
+
+14
+00:00:24,240 --> 00:00:29,279
+the playbook. No, honeys are one part of
+
+15
+00:00:27,039 --> 00:00:29,599
+a broader way of approaching the
+
+16
+00:00:29,279 --> 00:00:31,439
+problem.
+
+17
+00:00:29,599 --> 00:00:33,200
+Where do you see leaders getting a false
+
+18
+00:00:31,439 --> 00:00:35,760
+security and safety right now?
+
+19
+00:00:33,200 --> 00:00:38,320
+I think um there's a comforting story we
+
+20
+00:00:35,760 --> 00:00:40,160
+tell about AI and security. That same
+
+21
+00:00:38,320 --> 00:00:41,920
+frontier, tools defending the hospital
+
+22
+00:00:40,160 --> 00:00:43,840
+are always a step ahead of whoever is
+
+23
+00:00:41,920 --> 00:00:44,879
+attacking it. My guest today spent his
+
+24
+00:00:43,840 --> 00:00:46,800
+career on the other side of that
+
+25
+00:00:44,879 --> 00:00:48,640
+assumption. He'd tell you AI didn't
+
+26
+00:00:46,800 --> 00:00:50,960
+break healthcare's data security. It
+
+27
+00:00:48,640 --> 00:00:52,800
+exposed what it was never really working
+
+28
+00:00:50,960 --> 00:00:54,399
+and it handed attackers a brand new
+
+29
+00:00:52,800 --> 00:00:56,399
+surface to go after. Welcome to the
+
+30
+00:00:54,399 --> 00:00:59,120
+Signal Room. I'm Chris Hutchins and my guest
+
+31
+00:00:56,399 --> 00:01:01,920
+today is Prrenava Aduri, co-founder and
+
+32
+00:00:59,120 --> 00:01:04,000
+CTO of Bedrock Data, a data security and
+
+33
+00:01:01,920 --> 00:01:07,040
+governance platform built for the cloud,
+
+34
+00:01:04,000 --> 00:01:08,960
+software as a service and AI era.
+
+35
+00:01:07,040 --> 00:01:10,640
+Prrenavo was a founding engineer at
+
+36
+00:01:08,960 --> 00:01:13,040
+Rubric where he cut his teeth on
+
+37
+00:01:10,640 --> 00:01:14,640
+ransomware and backup recovery. He led
+
+38
+00:01:13,040 --> 00:01:18,000
+data risk and compliance products to
+
+39
+00:01:14,640 --> 00:01:20,240
+AWS, scaling a new line past 200 million
+
+40
+00:01:18,000 --> 00:01:23,360
+in revenue working directly with Fortune
+
+41
+00:01:20,240 --> 00:01:25,520
+500 CISOs. And he incubated modern data
+
+42
+00:01:23,360 --> 00:01:27,680
+governance ideas as an entrepreneur in
+
+43
+00:01:25,520 --> 00:01:29,520
+residence at Greylock. So when he talks
+
+44
+00:01:27,680 --> 00:01:31,280
+about securing AI inside a hospital,
+
+45
+00:01:29,520 --> 00:01:33,600
+it's from the engineer seat, not the
+
+46
+00:01:31,280 --> 00:01:34,240
+slide deck. Peravo, welcome to the Sigma
+
+47
+00:01:33,600 --> 00:01:35,680
+Room.
+
+48
+00:01:34,240 --> 00:01:37,920
+Thank you very much. Great to be here
+
+49
+00:01:35,680 --> 00:01:39,439
+today. Well, before we get dig in too
+
+50
+00:01:37,920 --> 00:01:41,119
+much, uh, I'd love for you to just get
+
+51
+00:01:39,439 --> 00:01:43,200
+tell the people a little bit about who
+
+52
+00:01:41,119 --> 00:01:44,720
+you are and tell us a little bit about
+
+53
+00:01:43,200 --> 00:01:46,479
+what Bedrock does.
+
+54
+00:01:44,720 --> 00:01:47,680
+Absolutely. A little bit about me. We
+
+55
+00:01:46,479 --> 00:01:49,600
+immigrated to the states when I was
+
+56
+00:01:47,680 --> 00:01:52,640
+five, grew up in California most of my
+
+57
+00:01:49,600 --> 00:01:54,079
+life. And uh, I think ever since uh,
+
+58
+00:01:52,640 --> 00:01:56,399
+ever since I started working, I've
+
+59
+00:01:54,079 --> 00:01:58,479
+always been in some some flavor of data.
+
+60
+00:01:56,399 --> 00:02:00,479
+uh whether it was scale out data
+
+61
+00:01:58,479 --> 00:02:03,200
+storage, whether it was uh scale out
+
+62
+00:02:00,479 --> 00:02:04,880
+data backup uh or ransomware and data
+
+63
+00:02:03,200 --> 00:02:06,640
+security for companies that have the
+
+64
+00:02:04,880 --> 00:02:08,239
+most critical data sets, it's always
+
+65
+00:02:06,640 --> 00:02:10,319
+been some form of data and including
+
+66
+00:02:08,239 --> 00:02:12,400
+Bedrock now as well. And a little bit
+
+67
+00:02:10,319 --> 00:02:14,640
+about what Bedrock does. Bedrock is a
+
+68
+00:02:12,400 --> 00:02:16,640
+sec data security platform. Bedrock was
+
+69
+00:02:14,640 --> 00:02:19,760
+built for enterprises of the largest
+
+70
+00:02:16,640 --> 00:02:21,120
+scales to understand their data,
+
+71
+00:02:19,760 --> 00:02:23,599
+especially as they're collecting this
+
+72
+00:02:21,120 --> 00:02:25,599
+data in this AI era more than ever as
+
+73
+00:02:23,599 --> 00:02:26,959
+that data is rapidly expanding. being
+
+74
+00:02:25,599 --> 00:02:28,640
+able to make sense of the data that
+
+75
+00:02:26,959 --> 00:02:30,080
+people are creating and transacting with
+
+76
+00:02:28,640 --> 00:02:32,319
+and then being able to make sure that
+
+77
+00:02:30,080 --> 00:02:34,160
+that data is being used correctly. Uh
+
+78
+00:02:32,319 --> 00:02:36,160
+it's not being used in a way that puts
+
+79
+00:02:34,160 --> 00:02:39,040
+the company at risk, the c customers
+
+80
+00:02:36,160 --> 00:02:42,319
+companies at risk. And so where Bedrock
+
+81
+00:02:39,040 --> 00:02:44,800
+is really at is the intersection of data
+
+82
+00:02:42,319 --> 00:02:46,480
+and how that data is being used by the
+
+83
+00:02:44,800 --> 00:02:48,800
+business on a day-to-day basis and now
+
+84
+00:02:46,480 --> 00:02:50,319
+especially as AI agents come online and
+
+85
+00:02:48,800 --> 00:02:52,160
+agents are transacting on behalf of
+
+86
+00:02:50,319 --> 00:02:53,680
+humans, how those agents are making use
+
+87
+00:02:52,160 --> 00:02:55,680
+of that data as well. We sit at the
+
+88
+00:02:53,680 --> 00:02:57,519
+center of all of that. And the way we
+
+89
+00:02:55,680 --> 00:03:00,319
+like to think about it is if you can
+
+90
+00:02:57,519 --> 00:03:02,319
+ensure that the correct guard rails are
+
+91
+00:03:00,319 --> 00:03:04,319
+in place, then the company can actually
+
+92
+00:03:02,319 --> 00:03:06,239
+move fast and realize the value of AI
+
+93
+00:03:04,319 --> 00:03:06,800
+properly. So that in a nutshell, that's
+
+94
+00:03:06,239 --> 00:03:08,800
+what we're doing.
+
+95
+00:03:06,800 --> 00:03:11,120
+Well, you make it sound easy, but I'm
+
+96
+00:03:08,800 --> 00:03:12,879
+I'm certain that it's not.
+
+97
+00:03:11,120 --> 00:03:14,560
+Fair enough.
+
+98
+00:03:12,879 --> 00:03:16,239
+You you spent your early career on
+
+99
+00:03:14,560 --> 00:03:19,040
+ransomware and backup recovery at
+
+100
+00:03:16,239 --> 00:03:20,640
+Rubert. What changed about the problem
+
+101
+00:03:19,040 --> 00:03:22,319
+once the target was a hospital instead
+
+102
+00:03:20,640 --> 00:03:24,000
+of an ordinary business? The short
+
+103
+00:03:22,319 --> 00:03:27,040
+answer is uh people's lives are at
+
+104
+00:03:24,000 --> 00:03:30,799
+stake. Uh and the problem gets very real
+
+105
+00:03:27,040 --> 00:03:33,200
+very fast. If an adversary performs a
+
+106
+00:03:30,799 --> 00:03:35,599
+ransom hospital system, they are doing
+
+107
+00:03:33,200 --> 00:03:37,120
+reconnaissance of what anyone doing a
+
+108
+00:03:35,599 --> 00:03:40,400
+ransom will do reconnaissance on
+
+109
+00:03:37,120 --> 00:03:42,560
+figuring out where it will hurt the
+
+110
+00:03:40,400 --> 00:03:44,000
+target the most such that they have the
+
+111
+00:03:42,560 --> 00:03:45,680
+maximum likelihood of getting the
+
+112
+00:03:44,000 --> 00:03:47,519
+successful ransom payment. And in
+
+113
+00:03:45,680 --> 00:03:49,599
+healthcare, unfortunately, those are
+
+114
+00:03:47,519 --> 00:03:52,480
+operationally critical systems that may
+
+115
+00:03:49,599 --> 00:03:54,480
+administer actual medical devices uh and
+
+116
+00:03:52,480 --> 00:03:56,879
+that are giving life-saving support. It
+
+117
+00:03:54,480 --> 00:03:58,879
+could be the medical systems. Anything
+
+118
+00:03:56,879 --> 00:04:01,840
+that gets in the way of a patient
+
+119
+00:03:58,879 --> 00:04:03,680
+getting care is something that can
+
+120
+00:04:01,840 --> 00:04:05,680
+affect the outcome of a patient, right?
+
+121
+00:04:03,680 --> 00:04:07,599
+And unfortunately, there have been
+
+122
+00:04:05,680 --> 00:04:09,280
+instances where because of ransomware
+
+123
+00:04:07,599 --> 00:04:10,879
+attacks, people have been impacted very
+
+124
+00:04:09,280 --> 00:04:12,640
+severely. And so, yeah, the the short
+
+125
+00:04:10,879 --> 00:04:14,720
+answer to to your question is uh lives
+
+126
+00:04:12,640 --> 00:04:16,079
+are at stake. uh when when when an
+
+127
+00:04:14,720 --> 00:04:16,560
+adversary decides to target a hospital
+
+128
+00:04:16,079 --> 00:04:18,400
+like this.
+
+129
+00:04:16,560 --> 00:04:20,079
+Yeah. I don't know what makes people
+
+130
+00:04:18,400 --> 00:04:22,479
+think of the these types of nefarious
+
+131
+00:04:20,079 --> 00:04:24,240
+things, but it it's just it's alarming
+
+132
+00:04:22,479 --> 00:04:25,680
+and I'm I'm really glad there's people
+
+133
+00:04:24,240 --> 00:04:27,280
+like you that are they're that are
+
+134
+00:04:25,680 --> 00:04:29,840
+really on the front line making sure
+
+135
+00:04:27,280 --> 00:04:31,919
+that we're constantly monitoring and and
+
+136
+00:04:29,840 --> 00:04:34,720
+hardening that surface. Um let's bring
+
+137
+00:04:31,919 --> 00:04:36,080
+this up to today up to today for a
+
+138
+00:04:34,720 --> 00:04:38,160
+leader who's just starting to pay
+
+139
+00:04:36,080 --> 00:04:40,320
+attention. People might know about Gen
+
+140
+00:04:38,160 --> 00:04:42,320
+AI and they know it exists but not much
+
+141
+00:04:40,320 --> 00:04:44,000
+beyond that. what part of the threat
+
+142
+00:04:42,320 --> 00:04:44,960
+landscape are they most likely to be
+
+143
+00:04:44,000 --> 00:04:48,080
+missing right now
+
+144
+00:04:44,960 --> 00:04:50,479
+when it comes to leaders that are kind
+
+145
+00:04:48,080 --> 00:04:52,000
+of exploring genai for the whether for
+
+146
+00:04:50,479 --> 00:04:53,360
+the purposes of transforming their
+
+147
+00:04:52,000 --> 00:04:57,040
+business or bringing operational
+
+148
+00:04:53,360 --> 00:04:59,040
+efficiencies I think the part that I
+
+149
+00:04:57,040 --> 00:05:01,199
+think it's easy for people to kind of
+
+150
+00:04:59,040 --> 00:05:02,479
+start seeing the light in the sense that
+
+151
+00:05:01,199 --> 00:05:04,880
+uh oh these are all the ways we can
+
+152
+00:05:02,479 --> 00:05:07,039
+bring automation these are all the all
+
+153
+00:05:04,880 --> 00:05:08,960
+the backend processes that uh took
+
+154
+00:05:07,039 --> 00:05:11,520
+forever in a day that someone had to do
+
+155
+00:05:08,960 --> 00:05:13,600
+that can now a set of agents can handle,
+
+156
+00:05:11,520 --> 00:05:17,360
+right? I think the part that's easy to
+
+157
+00:05:13,600 --> 00:05:19,199
+miss though is you have these actors
+
+158
+00:05:17,360 --> 00:05:21,120
+that are operating on instructions that
+
+159
+00:05:19,199 --> 00:05:21,840
+you've given them. But
+
+160
+00:05:21,120 --> 00:05:24,160
+yeah,
+
+161
+00:05:21,840 --> 00:05:26,479
+in in terms of making sure that they are
+
+162
+00:05:24,160 --> 00:05:28,479
+aligned and making sure that they're
+
+163
+00:05:26,479 --> 00:05:30,560
+acting in a way that exercises the
+
+164
+00:05:28,479 --> 00:05:32,800
+judgment that a human operator would,
+
+165
+00:05:30,560 --> 00:05:34,800
+that's the part where it's not obvious
+
+166
+00:05:32,800 --> 00:05:37,600
+all the ways these things can go rogue.
+
+167
+00:05:34,800 --> 00:05:40,320
+It's not obvious all the ways that an
+
+168
+00:05:37,600 --> 00:05:41,919
+agent might in the service of trying to
+
+169
+00:05:40,320 --> 00:05:43,680
+be helpful and do what you asked it to
+
+170
+00:05:41,919 --> 00:05:46,479
+do, it might do things that you didn't
+
+171
+00:05:43,680 --> 00:05:47,759
+want it to do, like keeping the data
+
+172
+00:05:46,479 --> 00:05:49,360
+somewhere uh where it shouldn't be
+
+173
+00:05:47,759 --> 00:05:50,639
+because it was it was easier for it to
+
+174
+00:05:49,360 --> 00:05:52,960
+work off of the data in that new
+
+175
+00:05:50,639 --> 00:05:54,960
+location that having to uh do it in a
+
+176
+00:05:52,960 --> 00:05:57,199
+more secure route, right? Uh at the end
+
+177
+00:05:54,960 --> 00:05:59,759
+of the day, these agents are trying to
+
+178
+00:05:57,199 --> 00:06:01,759
+get the job done, but how the path that
+
+179
+00:05:59,759 --> 00:06:03,199
+they take to get the job done, that's
+
+180
+00:06:01,759 --> 00:06:04,960
+the part that's the unknown. That's the
+
+181
+00:06:03,199 --> 00:06:06,560
+part that's hard to fathom for people,
+
+182
+00:06:04,960 --> 00:06:08,720
+right? And so to to answer your question
+
+183
+00:06:06,560 --> 00:06:11,840
+about where uh what people might be
+
+184
+00:06:08,720 --> 00:06:13,600
+missing, I think it's the the um the how
+
+185
+00:06:11,840 --> 00:06:15,520
+the work gets done that is something
+
+186
+00:06:13,600 --> 00:06:16,880
+that is not obvious when when when
+
+187
+00:06:15,520 --> 00:06:20,319
+you're when you're setting these agents
+
+188
+00:06:16,880 --> 00:06:22,880
+to go do a task. There's so many ways
+
+189
+00:06:20,319 --> 00:06:24,400
+that this is uh similar to other things
+
+190
+00:06:22,880 --> 00:06:25,919
+that we've we've gone through from a
+
+191
+00:06:24,400 --> 00:06:28,160
+transformation standpoint. I remember
+
+192
+00:06:25,919 --> 00:06:30,400
+the first time I used the ways app on my
+
+193
+00:06:28,160 --> 00:06:31,840
+phone. After first couple times I got to
+
+194
+00:06:30,400 --> 00:06:33,759
+where I needed to go and then all of a
+
+195
+00:06:31,840 --> 00:06:35,680
+sudden I started to trust it and then I
+
+196
+00:06:33,759 --> 00:06:37,360
+get went to a new city things were a
+
+197
+00:06:35,680 --> 00:06:39,520
+little more compressed and I would start
+
+198
+00:06:37,360 --> 00:06:41,120
+to miss turns because it couldn't it
+
+199
+00:06:39,520 --> 00:06:42,720
+wasn't moving that fast. But you know
+
+200
+00:06:41,120 --> 00:06:45,440
+it's just one of those scenarios where
+
+201
+00:06:42,720 --> 00:06:47,520
+constantly seeing evolution and adoption
+
+202
+00:06:45,440 --> 00:06:49,759
+of technologies and it's at a pace where
+
+203
+00:06:47,520 --> 00:06:51,600
+it's it's just getting a little bit too
+
+204
+00:06:49,759 --> 00:06:53,280
+fast for people to be able to keep up
+
+205
+00:06:51,600 --> 00:06:55,360
+and understand what the risks are. I
+
+206
+00:06:53,280 --> 00:06:57,360
+think there's an assumption that
+
+207
+00:06:55,360 --> 00:06:59,599
+Frontier AI capability stays on the
+
+208
+00:06:57,360 --> 00:07:02,080
+defender side. Is that actually true?
+
+209
+00:06:59,599 --> 00:07:04,720
+I think that it's uh I think despite the
+
+210
+00:07:02,080 --> 00:07:06,639
+safeguards that Frontier Labs try to put
+
+211
+00:07:04,720 --> 00:07:08,880
+on these models, I think the consensus
+
+212
+00:07:06,639 --> 00:07:12,000
+is that it's only a matter of time
+
+213
+00:07:08,880 --> 00:07:15,680
+before open- source models also catch up
+
+214
+00:07:12,000 --> 00:07:17,919
+in capabilities, right? And so while the
+
+215
+00:07:15,680 --> 00:07:20,560
+frontier labs themselves can try to be
+
+216
+00:07:17,919 --> 00:07:22,240
+responsible with respect to the controls
+
+217
+00:07:20,560 --> 00:07:24,080
+that they put the vetting that they put
+
+218
+00:07:22,240 --> 00:07:26,160
+on these models to ensure that only
+
+219
+00:07:24,080 --> 00:07:27,680
+defenders get the advantage. Take Mythos
+
+220
+00:07:26,160 --> 00:07:30,639
+for example.
+
+221
+00:07:27,680 --> 00:07:33,120
+While they can do that while while
+
+222
+00:07:30,639 --> 00:07:35,520
+they're putting effort into doing that
+
+223
+00:07:33,120 --> 00:07:38,080
+it's only a matter of time before the
+
+224
+00:07:35,520 --> 00:07:39,759
+open source community uh and and and
+
+225
+00:07:38,080 --> 00:07:41,759
+models that are more public available to
+
+226
+00:07:39,759 --> 00:07:44,080
+the public domain catch up in that in
+
+227
+00:07:41,759 --> 00:07:46,240
+that tier of capability. And once they
+
+228
+00:07:44,080 --> 00:07:48,720
+do, the adversary will have just as
+
+229
+00:07:46,240 --> 00:07:51,680
+powerful tools. Right? So unfortunately,
+
+230
+00:07:48,720 --> 00:07:54,160
+as as much as uh one would want these to
+
+231
+00:07:51,680 --> 00:07:55,599
+be used from for one would want these
+
+232
+00:07:54,160 --> 00:07:57,360
+advanced capabilities on the defensive
+
+233
+00:07:55,599 --> 00:08:00,000
+side, we have to assume that our
+
+234
+00:07:57,360 --> 00:08:01,840
+adversaries also in a in a in a matter
+
+235
+00:08:00,000 --> 00:08:04,479
+of um in a matter of time and that too
+
+236
+00:08:01,840 --> 00:08:06,879
+soon will have similar capabilities. the
+
+237
+00:08:04,479 --> 00:08:09,440
+uptick in AI assisted attacks has
+
+238
+00:08:06,879 --> 00:08:12,160
+already uh it can already be if you look
+
+239
+00:08:09,440 --> 00:08:14,879
+at uh uh IBM's data breach report uh and
+
+240
+00:08:12,160 --> 00:08:17,599
+so on and so forth the number of I I
+
+241
+00:08:14,879 --> 00:08:20,000
+think the the first time in in a while
+
+242
+00:08:17,599 --> 00:08:21,680
+it's not stol it's not stolen identities
+
+243
+00:08:20,000 --> 00:08:23,759
+that are the top that are the top cause
+
+244
+00:08:21,680 --> 00:08:25,919
+for for breaches right it's actually
+
+245
+00:08:23,759 --> 00:08:28,479
+it's actually um other tactics now that
+
+246
+00:08:25,919 --> 00:08:30,319
+that that are that are more feasible for
+
+247
+00:08:28,479 --> 00:08:32,159
+adversaries to leverage because of AI
+
+248
+00:08:30,319 --> 00:08:34,159
+you it's interesting I I did some
+
+249
+00:08:32,159 --> 00:08:36,800
+research a couple a few months ago for
+
+250
+00:08:34,159 --> 00:08:40,640
+the story is and we're just looking at
+
+251
+00:08:36,800 --> 00:08:42,320
+the fraud and and uh the the cost of
+
+252
+00:08:40,640 --> 00:08:45,920
+some of the social media fraud that goes
+
+253
+00:08:42,320 --> 00:08:48,399
+on and I really hadn't thought about it
+
+254
+00:08:45,920 --> 00:08:49,920
+but I I discovered in that there's the
+
+255
+00:08:48,399 --> 00:08:52,160
+versions of this technology that we use
+
+256
+00:08:49,920 --> 00:08:54,320
+like a chat GPT they have their own
+
+257
+00:08:52,160 --> 00:08:56,959
+version that they're using they're aimed
+
+258
+00:08:54,320 --> 00:08:58,640
+to they're constant constantly going
+
+259
+00:08:56,959 --> 00:09:00,399
+back and forth and back and forth we're
+
+260
+00:08:58,640 --> 00:09:03,120
+trying to increase our ability to detect
+
+261
+00:09:00,399 --> 00:09:06,240
+they're trying to sub subvert that I I
+
+262
+00:09:03,120 --> 00:09:08,640
+had no idea. But I I think it's it
+
+263
+00:09:06,240 --> 00:09:11,279
+raises an an interesting question. The
+
+264
+00:09:08,640 --> 00:09:14,240
+advantage is not guaranteed this point.
+
+265
+00:09:11,279 --> 00:09:16,720
+So if both are getting better, I mean
+
+266
+00:09:14,240 --> 00:09:18,959
+the honest goal we want to get better at
+
+267
+00:09:16,720 --> 00:09:22,720
+being at not being breached, I think,
+
+268
+00:09:18,959 --> 00:09:26,240
+but if someone's determined to get to a
+
+269
+00:09:22,720 --> 00:09:29,040
+hospital can really get hurt um and the
+
+270
+00:09:26,240 --> 00:09:32,240
+data might actually get penetrated or
+
+271
+00:09:29,040 --> 00:09:33,600
+worse it leaks out. what's what is
+
+272
+00:09:32,240 --> 00:09:34,560
+really the honest goal that we have to
+
+273
+00:09:33,600 --> 00:09:37,360
+think about there
+
+274
+00:09:34,560 --> 00:09:40,640
+to to your point. I think that um as
+
+275
+00:09:37,360 --> 00:09:43,200
+these models get more advanced for for
+
+276
+00:09:40,640 --> 00:09:44,959
+uh I think the the stark reality that
+
+277
+00:09:43,200 --> 00:09:46,640
+people have to accept is that the
+
+278
+00:09:44,959 --> 00:09:49,360
+likelihood of getting breached is going
+
+279
+00:09:46,640 --> 00:09:54,320
+to be higher than a than than than it
+
+280
+00:09:49,360 --> 00:09:55,839
+was preai. And this is in in spite of
+
+281
+00:09:54,320 --> 00:09:58,000
+all the investments people might be
+
+282
+00:09:55,839 --> 00:10:00,000
+making to do better detection and
+
+283
+00:09:58,000 --> 00:10:02,720
+response, better patching, even with all
+
+284
+00:10:00,000 --> 00:10:05,279
+that in place. I think the likelihood of
+
+285
+00:10:02,720 --> 00:10:08,240
+a motivated adversar's ability to get in
+
+286
+00:10:05,279 --> 00:10:10,240
+is now higher. And so I think
+
+287
+00:10:08,240 --> 00:10:12,560
+organizations have to start adopting the
+
+288
+00:10:10,240 --> 00:10:14,480
+mentality of the likelihood of getting
+
+289
+00:10:12,560 --> 00:10:15,600
+breached is higher. How do I get better
+
+290
+00:10:14,480 --> 00:10:17,600
+at being breached?
+
+291
+00:10:15,600 --> 00:10:20,880
+That that's an interesting way to frame
+
+292
+00:10:17,600 --> 00:10:23,040
+that. It sounds kind of backwards, but
+
+293
+00:10:20,880 --> 00:10:24,640
+It's a it's it's a little bit of a it's
+
+294
+00:10:23,040 --> 00:10:27,839
+a little bit of a neck turner when I say
+
+295
+00:10:24,640 --> 00:10:31,519
+this, but I I I think you have to assume
+
+296
+00:10:27,839 --> 00:10:33,360
+that for a motivated adversary with all
+
+297
+00:10:31,519 --> 00:10:35,360
+the tools at their disposal, and we're
+
+298
+00:10:33,360 --> 00:10:38,720
+still, mind you, we're still in the very
+
+299
+00:10:35,360 --> 00:10:40,240
+early arc of all of this, the types of
+
+300
+00:10:38,720 --> 00:10:41,600
+evolutions of these models that we're
+
+301
+00:10:40,240 --> 00:10:43,120
+going to be seeing in the coming years
+
+302
+00:10:41,600 --> 00:10:44,640
+are going to be are going to make what
+
+303
+00:10:43,120 --> 00:10:47,920
+what we have right now look like child's
+
+304
+00:10:44,640 --> 00:10:49,440
+play. And so we have to assume that that
+
+305
+00:10:47,920 --> 00:10:53,040
+the likelihood of getting breached is
+
+306
+00:10:49,440 --> 00:10:54,720
+higher. And so and and and it's it's not
+
+307
+00:10:53,040 --> 00:10:57,120
+all doom and gloom, right? If you if you
+
+308
+00:10:54,720 --> 00:10:58,640
+assume that you will be breached and you
+
+309
+00:10:57,120 --> 00:11:01,680
+take the directive of how do I get
+
+310
+00:10:58,640 --> 00:11:03,360
+better at being breached, that changes
+
+311
+00:11:01,680 --> 00:11:04,800
+the playbook now, right? It changes the
+
+312
+00:11:03,360 --> 00:11:06,240
+playbook in terms of okay, I need to
+
+313
+00:11:04,800 --> 00:11:09,120
+take a risk based approach to how I'm
+
+314
+00:11:06,240 --> 00:11:11,200
+doing this. I need to figure out like if
+
+315
+00:11:09,120 --> 00:11:13,200
+if someone did get in, what are the most
+
+316
+00:11:11,200 --> 00:11:15,519
+likely places that they could get in?
+
+317
+00:11:13,200 --> 00:11:17,519
+what are the most valuable targets that
+
+318
+00:11:15,519 --> 00:11:19,920
+they might be going after? And if I work
+
+319
+00:11:17,519 --> 00:11:23,120
+backwards from there, I can really start
+
+320
+00:11:19,920 --> 00:11:26,880
+playing the book from or I can really
+
+321
+00:11:23,120 --> 00:11:28,320
+start making my moves assuming like
+
+322
+00:11:26,880 --> 00:11:30,079
+assuming that, right? I can basically
+
+323
+00:11:28,320 --> 00:11:32,320
+start with for example the the the
+
+324
+00:11:30,079 --> 00:11:33,680
+heristic that I like to think about is
+
+325
+00:11:32,320 --> 00:11:36,640
+start with the data that is most
+
+326
+00:11:33,680 --> 00:11:38,240
+valuable to you. Like if if this data
+
+327
+00:11:36,640 --> 00:11:40,079
+were compromised, it would be company
+
+328
+00:11:38,240 --> 00:11:42,560
+ending, right? So what what would the
+
+329
+00:11:40,079 --> 00:11:44,000
+top five categories of data be if you
+
+330
+00:11:42,560 --> 00:11:46,160
+just sat down and did that exercise?
+
+331
+00:11:44,000 --> 00:11:47,680
+Okay, next step. Where is that data
+
+332
+00:11:46,160 --> 00:11:49,519
+sitting right now? If I know where that
+
+333
+00:11:47,680 --> 00:11:51,360
+data is sitting right now, I can start
+
+334
+00:11:49,519 --> 00:11:53,040
+there. Instead of doing an infinite
+
+335
+00:11:51,360 --> 00:11:55,200
+search of all possible risks, I can
+
+336
+00:11:53,040 --> 00:11:57,040
+start there and I can start modeling.
+
+337
+00:11:55,200 --> 00:11:58,720
+Well, if an adversary were to get to
+
+338
+00:11:57,040 --> 00:12:00,800
+this, what are the roads that they could
+
+339
+00:11:58,720 --> 00:12:03,040
+take to get to this data? Okay, now
+
+340
+00:12:00,800 --> 00:12:04,480
+let's focus on those roads. What are the
+
+341
+00:12:03,040 --> 00:12:05,600
+what are the entry points that that
+
+342
+00:12:04,480 --> 00:12:07,279
+would allow them to leverage those
+
+343
+00:12:05,600 --> 00:12:08,480
+roads? And then you can systematically
+
+344
+00:12:07,279 --> 00:12:10,800
+start hardening and layering the
+
+345
+00:12:08,480 --> 00:12:14,079
+compensating controls that way. Right?
+
+346
+00:12:10,800 --> 00:12:15,680
+So for me, a a good way to get better at
+
+347
+00:12:14,079 --> 00:12:16,959
+getting breached is to start with what
+
+348
+00:12:15,680 --> 00:12:18,880
+matters the most and work working
+
+349
+00:12:16,959 --> 00:12:22,399
+backwards from there. It it wasn't
+
+350
+00:12:18,880 --> 00:12:25,440
+obvious to me u start to look look at
+
+351
+00:12:22,399 --> 00:12:27,680
+what you've been talking about. I wonder
+
+352
+00:12:25,440 --> 00:12:29,600
+and maybe this is crazy but if you know
+
+353
+00:12:27,680 --> 00:12:31,360
+that that's going to happen obviously we
+
+354
+00:12:29,600 --> 00:12:34,720
+want to harden places that you that you
+
+355
+00:12:31,360 --> 00:12:37,519
+know about but do you think about ways
+
+356
+00:12:34,720 --> 00:12:40,240
+to essentially lead the witness so to
+
+357
+00:12:37,519 --> 00:12:42,320
+speak set some traps for them they take
+
+358
+00:12:40,240 --> 00:12:43,519
+them off on a tangent way away from
+
+359
+00:12:42,320 --> 00:12:46,959
+what's really important
+
+360
+00:12:43,519 --> 00:12:48,720
+so in in in the sense of potentially
+
+361
+00:12:46,959 --> 00:12:50,639
+having honeypotss that that you can
+
+362
+00:12:48,720 --> 00:12:52,880
+deploy that is that is one way to go
+
+363
+00:12:50,639 --> 00:12:56,480
+about it as well right but I think I
+
+364
+00:12:52,880 --> 00:12:59,200
+think Honey pots are one part of a of a
+
+365
+00:12:56,480 --> 00:13:01,600
+broader way of approaching the problem,
+
+366
+00:12:59,200 --> 00:13:03,600
+right? Which is, you know, you can think
+
+367
+00:13:01,600 --> 00:13:04,959
+about it like, you know, well, since we
+
+368
+00:13:03,600 --> 00:13:06,560
+were talking about hospitals, right? Key
+
+369
+00:13:04,959 --> 00:13:08,720
+cards, right? Key cards lead to
+
+370
+00:13:06,560 --> 00:13:10,399
+hospitals, but
+
+371
+00:13:08,720 --> 00:13:12,160
+and and you could let's assume that
+
+372
+00:13:10,399 --> 00:13:14,399
+there's a lot of key cards.
+
+373
+00:13:12,160 --> 00:13:16,160
+Well, some not all key cards should be
+
+374
+00:13:14,399 --> 00:13:18,399
+leading to the operational uh theater
+
+375
+00:13:16,160 --> 00:13:19,839
+rooms. And so if if every key card can
+
+376
+00:13:18,399 --> 00:13:21,440
+lead there, well, you should probably
+
+377
+00:13:19,839 --> 00:13:22,959
+start start with what key cards can lead
+
+378
+00:13:21,440 --> 00:13:24,399
+to these operational rooms and do those
+
+379
+00:13:22,959 --> 00:13:26,639
+people really need to have access to
+
+380
+00:13:24,399 --> 00:13:28,720
+those rooms and let's let's let's work
+
+381
+00:13:26,639 --> 00:13:31,920
+backwards from there, right? And so in
+
+382
+00:13:28,720 --> 00:13:33,440
+the ideal state, you're monitoring what
+
+383
+00:13:31,920 --> 00:13:34,959
+are the most critical assets. You're
+
+384
+00:13:33,440 --> 00:13:36,959
+monitoring the key cards that lead to
+
+385
+00:13:34,959 --> 00:13:38,959
+them. And if any key cards end up
+
+386
+00:13:36,959 --> 00:13:40,480
+getting access to these operational data
+
+387
+00:13:38,959 --> 00:13:42,720
+rooms, you're able to immediately detect
+
+388
+00:13:40,480 --> 00:13:44,320
+that and respond to it. The the
+
+389
+00:13:42,720 --> 00:13:46,240
+situation that most organizations find
+
+390
+00:13:44,320 --> 00:13:48,880
+themselves right now is that because
+
+391
+00:13:46,240 --> 00:13:51,600
+there's so much data and there's so much
+
+392
+00:13:48,880 --> 00:13:53,839
+identity in grants, figuring out what
+
+393
+00:13:51,600 --> 00:13:55,839
+data is most sensitive and what key
+
+394
+00:13:53,839 --> 00:13:58,160
+cards lead to these the these sensitive
+
+395
+00:13:55,839 --> 00:14:01,199
+rooms in and of itself is a giant manual
+
+396
+00:13:58,160 --> 00:14:02,720
+exercise. So imagine instead you have
+
+397
+00:14:01,199 --> 00:14:04,240
+the ability to continuously keep up with
+
+398
+00:14:02,720 --> 00:14:05,920
+the data. You have the ability to
+
+399
+00:14:04,240 --> 00:14:07,440
+understand what that data means to the
+
+400
+00:14:05,920 --> 00:14:09,440
+business and the impact that that data
+
+401
+00:14:07,440 --> 00:14:11,839
+has. And you also have the ability to
+
+402
+00:14:09,440 --> 00:14:14,160
+continuously monitor who who's getting
+
+403
+00:14:11,839 --> 00:14:16,160
+access, how is this data being used.
+
+404
+00:14:14,160 --> 00:14:17,760
+Then you can actually start you you can
+
+405
+00:14:16,160 --> 00:14:20,079
+actually kind of take control of this
+
+406
+00:14:17,760 --> 00:14:21,920
+now, which is these key cards shouldn't
+
+407
+00:14:20,079 --> 00:14:23,680
+be having this access anymore. Right? In
+
+408
+00:14:21,920 --> 00:14:25,120
+the ideal world, if if there's a key
+
+409
+00:14:23,680 --> 00:14:27,519
+card that's randomly dropped and an
+
+410
+00:14:25,120 --> 00:14:29,440
+adversary finds it and they they scan it
+
+411
+00:14:27,519 --> 00:14:30,720
+to get in, they lead to a storage closet
+
+412
+00:14:29,440 --> 00:14:32,240
+and there's nothing of value there,
+
+413
+00:14:30,720 --> 00:14:33,360
+right? That's the ideal that's the ideal
+
+414
+00:14:32,240 --> 00:14:34,560
+situation, right? It should not be
+
+415
+00:14:33,360 --> 00:14:37,760
+leading to an operating theater room.
+
+416
+00:14:34,560 --> 00:14:39,120
+Well, it's a it's a natural way for I
+
+417
+00:14:37,760 --> 00:14:41,920
+mean it helps me to understand to think
+
+418
+00:14:39,120 --> 00:14:44,320
+think about things differently. But what
+
+419
+00:14:41,920 --> 00:14:48,800
+does this mean in terms of how AI gets
+
+420
+00:14:44,320 --> 00:14:50,480
+access and how where where the handoffs
+
+421
+00:14:48,800 --> 00:14:52,240
+are happening? You know, where the keys
+
+422
+00:14:50,480 --> 00:14:53,920
+are we're handing the keys and they're
+
+423
+00:14:52,240 --> 00:14:57,600
+moving around inside and maybe we're not
+
+424
+00:14:53,920 --> 00:14:59,440
+even aware of it. Um a lot of AI agents
+
+425
+00:14:57,600 --> 00:15:01,360
+are getting hit in broad access just to
+
+426
+00:14:59,440 --> 00:15:03,360
+make them work in a clinical setting.
+
+427
+00:15:01,360 --> 00:15:05,120
+Why is that a real problem?
+
+428
+00:15:03,360 --> 00:15:06,240
+What does governing an agent's access
+
+429
+00:15:05,120 --> 00:15:08,079
+actually look like?
+
+430
+00:15:06,240 --> 00:15:09,839
+In order to make an agent useful, in
+
+431
+00:15:08,079 --> 00:15:12,000
+order for an agent to give you time back
+
+432
+00:15:09,839 --> 00:15:14,320
+in your day, you the agent needs to be
+
+433
+00:15:12,000 --> 00:15:16,800
+able to do useful things and to do those
+
+434
+00:15:14,320 --> 00:15:18,800
+useful things, it needs access. And and
+
+435
+00:15:16,800 --> 00:15:20,720
+it's exactly as you mentioned earlier,
+
+436
+00:15:18,800 --> 00:15:22,800
+you started using ways for a while and
+
+437
+00:15:20,720 --> 00:15:24,720
+after a first couple of touch points
+
+438
+00:15:22,800 --> 00:15:26,720
+where it didn't where where it took you
+
+439
+00:15:24,720 --> 00:15:28,320
+got you to point B in a good amount of
+
+440
+00:15:26,720 --> 00:15:31,040
+time, you started trusting it. The same
+
+441
+00:15:28,320 --> 00:15:32,560
+thing happens here. The agent does a
+
+442
+00:15:31,040 --> 00:15:33,839
+couple of jobs for you. Well, and you
+
+443
+00:15:32,560 --> 00:15:35,360
+start trusting it and you give you start
+
+444
+00:15:33,839 --> 00:15:36,800
+giving it more and more access,
+
+445
+00:15:35,360 --> 00:15:38,880
+right? And that's how that's how the
+
+446
+00:15:36,800 --> 00:15:41,440
+access extends. The big difference
+
+447
+00:15:38,880 --> 00:15:43,839
+between agents and humans with access is
+
+448
+00:15:41,440 --> 00:15:46,000
+agents don't have judgment. Agents have
+
+449
+00:15:43,839 --> 00:15:48,000
+instructions that they've been given
+
+450
+00:15:46,000 --> 00:15:50,240
+that they should do certain things and
+
+451
+00:15:48,000 --> 00:15:52,000
+should not do certain things. But the
+
+452
+00:15:50,240 --> 00:15:53,680
+judgment of how to evaluate a certain
+
+453
+00:15:52,000 --> 00:15:55,680
+situation and whether they should or
+
+454
+00:15:53,680 --> 00:15:57,920
+should not take this path to get into a
+
+455
+00:15:55,680 --> 00:15:59,839
+certain outcome, that's not guaranteed,
+
+456
+00:15:57,920 --> 00:16:01,680
+right? And that that's not there either.
+
+457
+00:15:59,839 --> 00:16:04,399
+And that's the fundamental gap. And so
+
+458
+00:16:01,680 --> 00:16:07,040
+in a hospital setting for example, if
+
+459
+00:16:04,399 --> 00:16:09,920
+you are using agents to update records,
+
+460
+00:16:07,040 --> 00:16:12,399
+you're using agents to perform actions,
+
+461
+00:16:09,920 --> 00:16:14,800
+the risk can be that in the service of
+
+462
+00:16:12,399 --> 00:16:18,000
+trying to get the goal done, it might uh
+
+463
+00:16:14,800 --> 00:16:20,720
+it might take a a set of intermediate
+
+464
+00:16:18,000 --> 00:16:22,240
+steps that are not aligned with uh how
+
+465
+00:16:20,720 --> 00:16:24,320
+hospital should be conducting itself,
+
+466
+00:16:22,240 --> 00:16:25,519
+right? It can go off path, right? Even
+
+467
+00:16:24,320 --> 00:16:27,759
+in the service of coming back to their
+
+468
+00:16:25,519 --> 00:16:30,560
+original goal, that's the risk, right?
+
+469
+00:16:27,759 --> 00:16:32,639
+And so I'll give you an example. We've
+
+470
+00:16:30,560 --> 00:16:35,759
+we've seen instances where people have
+
+471
+00:16:32,639 --> 00:16:38,320
+tried to use their agents to build
+
+472
+00:16:35,759 --> 00:16:41,519
+dashboards to see how um certain metrics
+
+473
+00:16:38,320 --> 00:16:43,759
+are performing. But in in to build that
+
+474
+00:16:41,519 --> 00:16:45,519
+dashboard, the data in the source
+
+475
+00:16:43,759 --> 00:16:46,959
+location wasn't this is actually
+
+476
+00:16:45,519 --> 00:16:49,279
+something that a Fortune 500 was
+
+477
+00:16:46,959 --> 00:16:51,759
+experiencing. The source data was not in
+
+478
+00:16:49,279 --> 00:16:54,800
+an ideal form. So the agent very simply
+
+479
+00:16:51,759 --> 00:16:56,720
+created a temporary location in a shared
+
+480
+00:16:54,800 --> 00:16:58,639
+space that a bunch of people had access
+
+481
+00:16:56,720 --> 00:17:00,560
+to and started copying the information
+
+482
+00:16:58,639 --> 00:17:02,160
+there because it was easier for it to
+
+483
+00:17:00,560 --> 00:17:03,680
+use the data in that new location to
+
+484
+00:17:02,160 --> 00:17:05,600
+build that dashboard in that in that
+
+485
+00:17:03,680 --> 00:17:07,360
+combined location. And so yeah, it got
+
+486
+00:17:05,600 --> 00:17:08,640
+the job done, but at the expense of
+
+487
+00:17:07,360 --> 00:17:10,160
+making that data accessible to everyone
+
+488
+00:17:08,640 --> 00:17:11,919
+else in the company, right? These are
+
+489
+00:17:10,160 --> 00:17:14,319
+the types of judgment calls that an
+
+490
+00:17:11,919 --> 00:17:17,280
+agent wouldn't be able to make unless it
+
+491
+00:17:14,319 --> 00:17:18,559
+had a scaffolding that in that basically
+
+492
+00:17:17,280 --> 00:17:20,959
+told it, "Oh, you're about to go off the
+
+493
+00:17:18,559 --> 00:17:23,039
+guard rails. Don't do that. Right. No,
+
+494
+00:17:20,959 --> 00:17:24,480
+it's interesting just you doing some
+
+495
+00:17:23,039 --> 00:17:26,160
+basic stuff that I've been playing
+
+496
+00:17:24,480 --> 00:17:27,679
+around with. I I see that kind of
+
+497
+00:17:26,160 --> 00:17:28,880
+behavior and it all of a sudden they
+
+498
+00:17:27,679 --> 00:17:31,520
+discover it's got off and doing
+
+499
+00:17:28,880 --> 00:17:35,600
+something that I either a have told it
+
+500
+00:17:31,520 --> 00:17:37,200
+explicitly not to do or B I I it never
+
+501
+00:17:35,600 --> 00:17:40,480
+occurred to me that they would do it.
+
+502
+00:17:37,200 --> 00:17:42,559
+But often times I think we because we
+
+503
+00:17:40,480 --> 00:17:45,039
+trust so easily we we forget that human
+
+504
+00:17:42,559 --> 00:17:46,400
+beings make these things. So there's
+
+505
+00:17:45,039 --> 00:17:48,640
+going to have some tendencies that we
+
+506
+00:17:46,400 --> 00:17:50,400
+have to be aware and that's right and
+
+507
+00:17:48,640 --> 00:17:53,600
+the rule that clinical AI has to pass
+
+508
+00:17:50,400 --> 00:17:55,120
+the tests and it's really doesn't give
+
+509
+00:17:53,600 --> 00:17:57,840
+time back. And I love that you say that
+
+510
+00:17:55,120 --> 00:17:59,520
+because I've swung to so many clinicians
+
+511
+00:17:57,840 --> 00:18:01,600
+that have been so frustrated with with
+
+512
+00:17:59,520 --> 00:18:03,440
+how we develop technology for them
+
+513
+00:18:01,600 --> 00:18:05,919
+because we're we've done the opposite of
+
+514
+00:18:03,440 --> 00:18:07,360
+that. We've been taking time away from
+
+515
+00:18:05,919 --> 00:18:09,280
+what they went to medical school for
+
+516
+00:18:07,360 --> 00:18:11,200
+which is really to take care of people.
+
+517
+00:18:09,280 --> 00:18:14,400
+Does security ever pass that test or
+
+518
+00:18:11,200 --> 00:18:16,400
+does it always work? Well, I think I
+
+519
+00:18:14,400 --> 00:18:18,559
+there's no reason security doesn't have
+
+520
+00:18:16,400 --> 00:18:21,120
+to pass that test. Uh, in security, we
+
+521
+00:18:18,559 --> 00:18:24,640
+have a rule that that says in order for
+
+522
+00:18:21,120 --> 00:18:27,280
+someone to truly do the secure thing,
+
+523
+00:18:24,640 --> 00:18:29,840
+the secured path has to be easier than
+
+524
+00:18:27,280 --> 00:18:31,360
+the default path because people will
+
+525
+00:18:29,840 --> 00:18:34,000
+ultimately choose the path of least
+
+526
+00:18:31,360 --> 00:18:37,760
+resistance to get something done. So, I
+
+527
+00:18:34,000 --> 00:18:39,679
+think the the onus is on leaders and
+
+528
+00:18:37,760 --> 00:18:42,720
+uh security innovators to build
+
+529
+00:18:39,679 --> 00:18:44,880
+solutions that are easy to use. So the
+
+530
+00:18:42,720 --> 00:18:47,200
+way I think about it is you should still
+
+531
+00:18:44,880 --> 00:18:48,880
+use the AI to go do a certain task, but
+
+532
+00:18:47,200 --> 00:18:51,840
+there should be a layer that's guiding
+
+533
+00:18:48,880 --> 00:18:54,080
+the AI, a scaffolding that is guiding
+
+534
+00:18:51,840 --> 00:18:55,440
+the AI to if it's about to go do
+
+535
+00:18:54,080 --> 00:18:57,200
+something off the rails, like keep the
+
+536
+00:18:55,440 --> 00:18:59,280
+data in a in a shared location for ease
+
+537
+00:18:57,200 --> 00:19:01,440
+of use, something should say no, that's
+
+538
+00:18:59,280 --> 00:19:03,200
+not allowed, right? And so AI is very
+
+539
+00:19:01,440 --> 00:19:04,720
+robust. If you say that's not allowed,
+
+540
+00:19:03,200 --> 00:19:06,240
+it'll say, "Oh, I guess I can't do that.
+
+541
+00:19:04,720 --> 00:19:08,480
+Let me figure out what else I can do."
+
+542
+00:19:06,240 --> 00:19:10,799
+Right? So it is a self-reovering system.
+
+543
+00:19:08,480 --> 00:19:13,840
+it can handle you saying no to it but
+
+544
+00:19:10,799 --> 00:19:16,880
+you need that guidance right and so that
+
+545
+00:19:13,840 --> 00:19:19,280
+that is where um good AI governance good
+
+546
+00:19:16,880 --> 00:19:22,080
+AI security comes into play right some
+
+547
+00:19:19,280 --> 00:19:23,520
+system needs to be aware of the data it
+
+548
+00:19:22,080 --> 00:19:25,200
+needs to be aware of the corporate
+
+549
+00:19:23,520 --> 00:19:27,200
+policies it needs to be aware of the
+
+550
+00:19:25,200 --> 00:19:30,080
+actions that are allowed and it needs to
+
+551
+00:19:27,200 --> 00:19:32,799
+work in hand with the agents to guide
+
+552
+00:19:30,080 --> 00:19:34,720
+them right and that and and that that
+
+553
+00:19:32,799 --> 00:19:35,840
+that is where that is exactly the
+
+554
+00:19:34,720 --> 00:19:36,559
+problem domain that we are thinking
+
+555
+00:19:35,840 --> 00:19:39,360
+about as well
+
+556
+00:19:36,559 --> 00:19:42,880
+yeah so let's talk Oh, where this all
+
+557
+00:19:39,360 --> 00:19:44,720
+goes wrong quietly. There's that I think
+
+558
+00:19:42,880 --> 00:19:46,559
+we frequently get into this false sense
+
+559
+00:19:44,720 --> 00:19:48,240
+of comfort and security that we've kind
+
+560
+00:19:46,559 --> 00:19:49,679
+of touched on it a little bit, but where
+
+561
+00:19:48,240 --> 00:19:52,480
+do you see leaders getting a false sense
+
+562
+00:19:49,679 --> 00:19:54,240
+of security and in safety right now?
+
+563
+00:19:52,480 --> 00:19:56,000
+I think there's a couple of areas. one
+
+564
+00:19:54,240 --> 00:19:58,559
+is
+
+565
+00:19:56,000 --> 00:20:01,039
+I think when um these models first came
+
+566
+00:19:58,559 --> 00:20:04,400
+out, everyone was uh freaked out about
+
+567
+00:20:01,039 --> 00:20:07,679
+sending data uh to um to third party
+
+568
+00:20:04,400 --> 00:20:10,320
+Frontier Labs and they they they assumed
+
+569
+00:20:07,679 --> 00:20:13,679
+that okay well once Amazon hosts it on
+
+570
+00:20:10,320 --> 00:20:15,200
+the on the Amazon uh Bedrock ecosystem
+
+571
+00:20:13,679 --> 00:20:17,760
+not to be confused with bedrock data
+
+572
+00:20:15,200 --> 00:20:20,080
+once Amazon hosts it uh well now now
+
+573
+00:20:17,760 --> 00:20:22,080
+it's within my uh now it's within my uh
+
+574
+00:20:20,080 --> 00:20:25,760
+corporate environment so it's safe right
+
+575
+00:20:22,080 --> 00:20:28,720
+yeah you like the the the
+
+576
+00:20:25,760 --> 00:20:31,600
+in a way yes the the model now resides
+
+577
+00:20:28,720 --> 00:20:32,880
+in in a in a VPC that you control but at
+
+578
+00:20:31,600 --> 00:20:35,039
+the end of the day like if there's
+
+579
+00:20:32,880 --> 00:20:36,240
+agents getting powered off of that model
+
+580
+00:20:35,039 --> 00:20:38,240
+everything that we talked about earlier
+
+581
+00:20:36,240 --> 00:20:40,400
+is still a risk right in terms of the
+
+582
+00:20:38,240 --> 00:20:42,559
+judgment calls of these agents all of
+
+583
+00:20:40,400 --> 00:20:44,880
+that is still at risk so I think there's
+
+584
+00:20:42,559 --> 00:20:46,480
+maybe a a gap where people assume that
+
+585
+00:20:44,880 --> 00:20:48,720
+okay well we've bought the model within
+
+586
+00:20:46,480 --> 00:20:50,320
+within our four walls and so the big
+
+587
+00:20:48,720 --> 00:20:52,000
+risk is over right that's like saying I
+
+588
+00:20:50,320 --> 00:20:53,919
+put a firewall so I'm good to go not
+
+589
+00:20:52,000 --> 00:20:56,960
+really right there's
+
+590
+00:20:53,919 --> 00:20:59,840
+the like there there's still all the
+
+591
+00:20:56,960 --> 00:21:02,159
+downstream the the model is the engine
+
+592
+00:20:59,840 --> 00:21:04,320
+right but there's all the downstream act
+
+593
+00:21:02,159 --> 00:21:05,840
+like uh agents and other workloads that
+
+594
+00:21:04,320 --> 00:21:08,720
+are using that model that now have
+
+595
+00:21:05,840 --> 00:21:11,120
+access I think again getting a handle on
+
+596
+00:21:08,720 --> 00:21:13,360
+what the blast radius is what these
+
+597
+00:21:11,120 --> 00:21:15,200
+things can do and then reigning the
+
+598
+00:21:13,360 --> 00:21:18,320
+blast radius in reducing that blast
+
+599
+00:21:15,200 --> 00:21:20,799
+radius uh making it so that one if an
+
+600
+00:21:18,320 --> 00:21:22,960
+adversary or an agent is doing something
+
+601
+00:21:20,799 --> 00:21:24,880
+you're minimizing the harm that it can
+
+602
+00:21:22,960 --> 00:21:26,559
+And then two also monitoring the agents,
+
+603
+00:21:24,880 --> 00:21:28,000
+right? I'll give you an example of of
+
+604
+00:21:26,559 --> 00:21:31,360
+another Fortune 500 that we're working
+
+605
+00:21:28,000 --> 00:21:32,880
+with. They had an enormous data
+
+606
+00:21:31,360 --> 00:21:35,200
+analytics environment. This is a
+
+607
+00:21:32,880 --> 00:21:37,280
+multipetabyte data analytics environment
+
+608
+00:21:35,200 --> 00:21:39,840
+and it's also an environment where
+
+609
+00:21:37,280 --> 00:21:41,280
+because it's an analytics environment by
+
+610
+00:21:39,840 --> 00:21:42,640
+design a lot of people have to have
+
+611
+00:21:41,280 --> 00:21:43,200
+access to it. There's a lot of key cards
+
+612
+00:21:42,640 --> 00:21:46,480
+as well.
+
+613
+00:21:43,200 --> 00:21:47,919
+Yeah. And so to kind of one reduce the
+
+614
+00:21:46,480 --> 00:21:49,039
+likelihood that an adversary picking up
+
+615
+00:21:47,919 --> 00:21:50,960
+a key card could get to something
+
+616
+00:21:49,039 --> 00:21:53,200
+dangerous and to also get themselves
+
+617
+00:21:50,960 --> 00:21:55,919
+ready for agentic operations as well.
+
+618
+00:21:53,200 --> 00:21:58,400
+The exercise that they went went down
+
+619
+00:21:55,919 --> 00:21:59,919
+was one, what is all the sensitive
+
+620
+00:21:58,400 --> 00:22:02,480
+customer identifiable information in
+
+621
+00:21:59,919 --> 00:22:04,799
+here, right? Let's find that data and
+
+622
+00:22:02,480 --> 00:22:06,240
+let's first figure out why that data is
+
+623
+00:22:04,799 --> 00:22:07,919
+there, right? Is someone actually
+
+624
+00:22:06,240 --> 00:22:09,600
+actually using it? If they're not, well,
+
+625
+00:22:07,919 --> 00:22:11,280
+let's decommission that data, right?
+
+626
+00:22:09,600 --> 00:22:12,960
+Let's reduce that blast radius. That's
+
+627
+00:22:11,280 --> 00:22:14,400
+let's and in the process they're getting
+
+628
+00:22:12,960 --> 00:22:16,320
+better at getting breached, right?
+
+629
+00:22:14,400 --> 00:22:18,320
+They're reducing the footprint that an
+
+630
+00:22:16,320 --> 00:22:20,720
+adversary could get to. And then what
+
+631
+00:22:18,320 --> 00:22:22,400
+are the key cards leading to it? Who has
+
+632
+00:22:20,720 --> 00:22:25,760
+key cards that they're not even using?
+
+633
+00:22:22,400 --> 00:22:27,679
+Right? Again, a very great a great
+
+634
+00:22:25,760 --> 00:22:29,200
+starting point to just reduce the key
+
+635
+00:22:27,679 --> 00:22:30,720
+cards that an adversary could pick up,
+
+636
+00:22:29,200 --> 00:22:32,080
+right? And then for the remaining key
+
+637
+00:22:30,720 --> 00:22:34,320
+cards that need to be there that are
+
+638
+00:22:32,080 --> 00:22:35,679
+actively being used are do these key
+
+639
+00:22:34,320 --> 00:22:37,600
+cards have access to rooms that the
+
+640
+00:22:35,679 --> 00:22:40,400
+person's never using? Well, if so, keep
+
+641
+00:22:37,600 --> 00:22:41,600
+the key card, but reduce the grant from
+
+642
+00:22:40,400 --> 00:22:43,520
+of that key card to get into that
+
+643
+00:22:41,600 --> 00:22:45,280
+particular room, right? And so, in this
+
+644
+00:22:43,520 --> 00:22:47,840
+way, they've significantly hardened
+
+645
+00:22:45,280 --> 00:22:50,000
+their environment. And so, now all SA
+
+646
+00:22:47,840 --> 00:22:52,080
+except for a couple of admins, everyone
+
+647
+00:22:50,000 --> 00:22:54,880
+has a safe view to that data, right? And
+
+648
+00:22:52,080 --> 00:22:57,120
+so this is an example of coming back to
+
+649
+00:22:54,880 --> 00:22:58,640
+now agents are giving people time back
+
+650
+00:22:57,120 --> 00:23:00,400
+and they're they're they're comfortable
+
+651
+00:22:58,640 --> 00:23:01,760
+letting it run in these environments
+
+652
+00:23:00,400 --> 00:23:03,440
+because they've reduced the scope of
+
+653
+00:23:01,760 --> 00:23:05,360
+what these agents can do in the form of
+
+654
+00:23:03,440 --> 00:23:06,960
+even if they went off the walls. The
+
+655
+00:23:05,360 --> 00:23:09,280
+fundamental what they can do with the
+
+656
+00:23:06,960 --> 00:23:10,320
+data is safe. So that's an example of
+
+657
+00:23:09,280 --> 00:23:11,760
+kind of putting it all together.
+
+658
+00:23:10,320 --> 00:23:13,679
+You touched on something that that I
+
+659
+00:23:11,760 --> 00:23:15,440
+think is interesting because it it's it
+
+660
+00:23:13,679 --> 00:23:17,760
+was the same kind of thing that happened
+
+661
+00:23:15,440 --> 00:23:19,840
+when we started seeing these visual data
+
+662
+00:23:17,760 --> 00:23:21,200
+visualization platforms come out and
+
+663
+00:23:19,840 --> 00:23:23,760
+they kept leaprogging each other. that
+
+664
+00:23:21,200 --> 00:23:26,080
+still goes on. But the the piece that's
+
+665
+00:23:23,760 --> 00:23:28,799
+that was disturbing to me as a chief
+
+666
+00:23:26,080 --> 00:23:31,520
+data officer was every once in a while I
+
+667
+00:23:28,799 --> 00:23:34,080
+would see a beautiful looking dashboard
+
+668
+00:23:31,520 --> 00:23:37,280
+and the data was just wrong. And what
+
+669
+00:23:34,080 --> 00:23:39,039
+what worries me is is the the same
+
+670
+00:23:37,280 --> 00:23:41,760
+caution that I would I was giving the
+
+671
+00:23:39,039 --> 00:23:44,080
+leaders that one of the organizations I
+
+672
+00:23:41,760 --> 00:23:46,559
+was at was that these things may look
+
+673
+00:23:44,080 --> 00:23:49,120
+official that that's the danger of it.
+
+674
+00:23:46,559 --> 00:23:52,240
+uh it can make an average Excel jockey
+
+675
+00:23:49,120 --> 00:23:53,840
+look like a design wizard and the
+
+676
+00:23:52,240 --> 00:23:55,360
+prettier it is the more they trust it
+
+677
+00:23:53,840 --> 00:23:57,919
+unfortunately and that's that's the
+
+678
+00:23:55,360 --> 00:24:00,960
+problem they flip that over and look at
+
+679
+00:23:57,919 --> 00:24:02,799
+the data access layer um I've always
+
+680
+00:24:00,960 --> 00:24:05,280
+been bothered by the fact that I would
+
+681
+00:24:02,799 --> 00:24:07,520
+have developers having full database
+
+682
+00:24:05,280 --> 00:24:09,600
+level access you know from a clinical
+
+683
+00:24:07,520 --> 00:24:11,600
+system that sits on top of it we we have
+
+684
+00:24:09,600 --> 00:24:12,880
+privilege account controls for that but
+
+685
+00:24:11,600 --> 00:24:14,320
+people dealing with the data
+
+686
+00:24:12,880 --> 00:24:15,679
+architecture in the back end I felt like
+
+687
+00:24:14,320 --> 00:24:16,960
+there there was always a level of
+
+688
+00:24:15,679 --> 00:24:18,960
+exposure
+
+689
+00:24:16,960 --> 00:24:22,080
+from your experiences, what do you what
+
+690
+00:24:18,960 --> 00:24:23,600
+you see now, you still see a lot of risk
+
+691
+00:24:22,080 --> 00:24:24,240
+and exposure because that's just not
+
+692
+00:24:23,600 --> 00:24:27,440
+understood.
+
+693
+00:24:24,240 --> 00:24:31,120
+I think that the short answer is yes.
+
+694
+00:24:27,440 --> 00:24:33,919
+The when we go into accounts, we do see
+
+695
+00:24:31,120 --> 00:24:36,960
+a lot of privileged access. It's not and
+
+696
+00:24:33,919 --> 00:24:39,039
+and it's the enemy tends to be it's
+
+697
+00:24:36,960 --> 00:24:41,120
+because at a certain point in time that
+
+698
+00:24:39,039 --> 00:24:42,240
+access was warranted when the system was
+
+699
+00:24:41,120 --> 00:24:44,240
+getting set up
+
+700
+00:24:42,240 --> 00:24:47,279
+or during the time of a certain
+
+701
+00:24:44,240 --> 00:24:49,279
+maintenance. The problem is afterwards
+
+702
+00:24:47,279 --> 00:24:52,000
+people forget to recycle that, right?
+
+703
+00:24:49,279 --> 00:24:54,960
+People forget to reduce that back down.
+
+704
+00:24:52,000 --> 00:24:58,320
+And so over time access tends to grow.
+
+705
+00:24:54,960 --> 00:25:00,240
+It doesn't it doesn't decrease. And so I
+
+706
+00:24:58,320 --> 00:25:04,559
+I think the the problem that a lot of
+
+707
+00:25:00,240 --> 00:25:05,840
+teams find themselves in is like when
+
+708
+00:25:04,559 --> 00:25:08,559
+the problem that a lot of teams find
+
+709
+00:25:05,840 --> 00:25:11,360
+themselves in is over time because these
+
+710
+00:25:08,559 --> 00:25:13,600
+ent these access and entitlements grow
+
+711
+00:25:11,360 --> 00:25:15,039
+when it does come time where all of a
+
+712
+00:25:13,600 --> 00:25:18,080
+sudden this problem needs to be reckoned
+
+713
+00:25:15,039 --> 00:25:21,520
+with they they have this forest of
+
+714
+00:25:18,080 --> 00:25:23,760
+permissions and and it's not even clear
+
+715
+00:25:21,520 --> 00:25:26,640
+what are all the ways uh someone gets
+
+716
+00:25:23,760 --> 00:25:29,520
+access to something right and So yeah,
+
+717
+00:25:26,640 --> 00:25:32,880
+absolutely right. I think people grant
+
+718
+00:25:29,520 --> 00:25:35,200
+the privilege so that work can get done
+
+719
+00:25:32,880 --> 00:25:37,919
+but because they don't necessarily
+
+720
+00:25:35,200 --> 00:25:40,000
+always go redacted after after the fact.
+
+721
+00:25:37,919 --> 00:25:42,880
+These things grow and become these giant
+
+722
+00:25:40,000 --> 00:25:44,000
+scary forests over time that that and
+
+723
+00:25:42,880 --> 00:25:46,400
+that's how people find themselves in
+
+724
+00:25:44,000 --> 00:25:48,880
+these situations. And now is exactly
+
+725
+00:25:46,400 --> 00:25:51,279
+when you want these agents to go do work
+
+726
+00:25:48,880 --> 00:25:53,600
+for you. If you're letting that agent
+
+727
+00:25:51,279 --> 00:25:55,840
+act as you, that's when that comes back
+
+728
+00:25:53,600 --> 00:25:58,320
+to to to to
+
+729
+00:25:55,840 --> 00:26:00,159
+bite because now these again these
+
+730
+00:25:58,320 --> 00:26:01,520
+agents don't have your judgment. So if
+
+731
+00:26:00,159 --> 00:26:02,960
+you set them out to do a task and they
+
+732
+00:26:01,520 --> 00:26:04,080
+have all the grants that you have,
+
+733
+00:26:02,960 --> 00:26:06,559
+that's when they can start creating
+
+734
+00:26:04,080 --> 00:26:08,240
+these unintended side effects. It's a I
+
+735
+00:26:06,559 --> 00:26:10,960
+don't know it's a whole another level of
+
+736
+00:26:08,240 --> 00:26:12,400
+uh risk that I I've not I never
+
+737
+00:26:10,960 --> 00:26:14,640
+anticipated seeing anything like this
+
+738
+00:26:12,400 --> 00:26:16,159
+but but it's always bothered me because
+
+739
+00:26:14,640 --> 00:26:17,919
+when we I couldn't protect my team
+
+740
+00:26:16,159 --> 00:26:21,440
+members for example in the healthcare
+
+741
+00:26:17,919 --> 00:26:24,720
+sector um often times there are these
+
+742
+00:26:21,440 --> 00:26:26,880
+break the glass or alerts that fire if
+
+743
+00:26:24,720 --> 00:26:28,960
+you access a privileged account. Uh
+
+744
+00:26:26,880 --> 00:26:30,400
+great examples colleague he's
+
+745
+00:26:28,960 --> 00:26:31,919
+informatics he knew what he was doing.
+
+746
+00:26:30,400 --> 00:26:33,600
+He's actually just doing some
+
+747
+00:26:31,919 --> 00:26:35,520
+reconciliation and he wasn't paying
+
+748
+00:26:33,600 --> 00:26:37,200
+attention where he's you know the
+
+749
+00:26:35,520 --> 00:26:39,919
+numbers or anything. He just making sure
+
+750
+00:26:37,200 --> 00:26:41,279
+the fields matched up and uh all of a
+
+751
+00:26:39,919 --> 00:26:43,440
+sudden the security showed up at his
+
+752
+00:26:41,279 --> 00:26:44,720
+door and they asked him what is he what
+
+753
+00:26:43,440 --> 00:26:47,679
+is he doing accessing one of the
+
+754
+00:26:44,720 --> 00:26:49,200
+executives records and and it was like
+
+755
+00:26:47,679 --> 00:26:50,960
+reality check for him right then and
+
+756
+00:26:49,200 --> 00:26:52,559
+there. It's like, okay, we need to make
+
+757
+00:26:50,960 --> 00:26:54,640
+sure that our team understands how all
+
+758
+00:26:52,559 --> 00:26:56,159
+this stuff works and we need to make
+
+759
+00:26:54,640 --> 00:26:58,159
+sure we've got safeguards built in at
+
+760
+00:26:56,159 --> 00:27:00,000
+the database level that prevents this
+
+761
+00:26:58,159 --> 00:27:01,200
+kind of thing cuz I mean, at the very
+
+762
+00:27:00,000 --> 00:27:03,200
+least, it's frightening to have a
+
+763
+00:27:01,200 --> 00:27:05,279
+security person show up at your at your
+
+764
+00:27:03,200 --> 00:27:06,640
+door when you're just doing your job.
+
+765
+00:27:05,279 --> 00:27:08,159
+But if it's really got me, it's more the
+
+766
+00:27:06,640 --> 00:27:09,840
+protection of the team that's having to
+
+767
+00:27:08,159 --> 00:27:11,520
+work with this stuff that has always
+
+768
+00:27:09,840 --> 00:27:13,039
+been a concern. I mean, I I really
+
+769
+00:27:11,520 --> 00:27:15,200
+appreciate you kind of laying this out
+
+770
+00:27:13,039 --> 00:27:16,720
+because I think leadership needs to have
+
+771
+00:27:15,200 --> 00:27:18,960
+a better understanding and think of it
+
+772
+00:27:16,720 --> 00:27:22,480
+from that context because no one wants
+
+773
+00:27:18,960 --> 00:27:24,559
+to be the one that allows a breach uh
+
+774
+00:27:22,480 --> 00:27:26,720
+let alone you know does an organization
+
+775
+00:27:24,559 --> 00:27:28,400
+want that but you know for me it's
+
+776
+00:27:26,720 --> 00:27:30,320
+investment to really protect your your
+
+777
+00:27:28,400 --> 00:27:32,640
+team members as much as it is data. If
+
+778
+00:27:30,320 --> 00:27:35,440
+if one CEO listening takes away a single
+
+779
+00:27:32,640 --> 00:27:38,080
+thing from our conversation today what
+
+780
+00:27:35,440 --> 00:27:40,240
+should it be and where could people find
+
+781
+00:27:38,080 --> 00:27:42,480
+you and Bedrock? I'm quite sure there's
+
+782
+00:27:40,240 --> 00:27:43,840
+going to be a lot of folks uh that will
+
+783
+00:27:42,480 --> 00:27:45,279
+have some interest in having a
+
+784
+00:27:43,840 --> 00:27:46,880
+conversation with you. I think you've
+
+785
+00:27:45,279 --> 00:27:49,360
+raised some really good concerns.
+
+786
+00:27:46,880 --> 00:27:51,840
+Yeah. Well, I think if there's one thing
+
+787
+00:27:49,360 --> 00:27:54,960
+to remember, I think these marbles are
+
+788
+00:27:51,840 --> 00:27:59,279
+only going to get better. And so the
+
+789
+00:27:54,960 --> 00:28:01,279
+likelihood of the likelihood of an event
+
+790
+00:27:59,279 --> 00:28:02,559
+occurring where whether it's a breach,
+
+791
+00:28:01,279 --> 00:28:06,000
+whether it's an agent going off the
+
+792
+00:28:02,559 --> 00:28:09,919
+rails, that will only go up. And so
+
+793
+00:28:06,000 --> 00:28:12,159
+I think um as uh as the founder of uh
+
+794
+00:28:09,919 --> 00:28:14,720
+reflex security said the phrase I was
+
+795
+00:28:12,159 --> 00:28:16,720
+using earlier uh learn to get better at
+
+796
+00:28:14,720 --> 00:28:19,039
+being breached right and I really liked
+
+797
+00:28:16,720 --> 00:28:21,360
+that phrase that he used right assume
+
+798
+00:28:19,039 --> 00:28:24,000
+something will happen and so then how do
+
+799
+00:28:21,360 --> 00:28:25,440
+you prepare for it for my advice is to
+
+800
+00:28:24,000 --> 00:28:28,799
+start with the data and then work
+
+801
+00:28:25,440 --> 00:28:30,880
+backwards right data is a data is the
+
+802
+00:28:28,799 --> 00:28:32,960
+ultimate anchoring function for taking a
+
+803
+00:28:30,880 --> 00:28:36,080
+riskbased view to cyber start with the
+
+804
+00:28:32,960 --> 00:28:38,080
+data work backwards And then I think um
+
+805
+00:28:36,080 --> 00:28:40,320
+I think that that would be the one thing
+
+806
+00:28:38,080 --> 00:28:41,679
+uh if uh if someone had to remember
+
+807
+00:28:40,320 --> 00:28:43,760
+something right get better at getting
+
+808
+00:28:41,679 --> 00:28:45,039
+breached start with the data uh and then
+
+809
+00:28:43,760 --> 00:28:45,600
+and then work backwards to harden your
+
+810
+00:28:45,039 --> 00:28:49,600
+environment.
+
+811
+00:28:45,600 --> 00:28:52,240
+I love it Dur co-founder and CEO CTO of
+
+812
+00:28:49,600 --> 00:28:55,360
+Bedrock Data the line I'm taking with me
+
+813
+00:28:52,240 --> 00:28:57,360
+is the goal is never to be unreachable
+
+814
+00:28:55,360 --> 00:28:58,559
+is to get good at being breached. I I'll
+
+815
+00:28:57,360 --> 00:29:01,039
+that's going to stay on you for a long
+
+816
+00:28:58,559 --> 00:29:03,200
+time because it's not it's not uh it's
+
+817
+00:29:01,039 --> 00:29:04,720
+not obvious for for people who are
+
+818
+00:29:03,200 --> 00:29:07,279
+living this in this world that you're
+
+819
+00:29:04,720 --> 00:29:09,440
+living in dealing with this. So it's you
+
+820
+00:29:07,279 --> 00:29:11,520
+got to get good at being breached so the
+
+821
+00:29:09,440 --> 00:29:12,720
+day it happens isn't the day everything
+
+822
+00:29:11,520 --> 00:29:16,880
+stops.
+
+823
+00:29:12,720 --> 00:29:19,200
+Y being on the room I really really
+
+824
+00:29:16,880 --> 00:29:20,799
+appreciate your your time today and um
+
+825
+00:29:19,200 --> 00:29:22,080
+just briefly I want to just give you a
+
+826
+00:29:20,799 --> 00:29:23,760
+chance to kind of let people know where
+
+827
+00:29:22,080 --> 00:29:24,320
+to find you online if they want to reach
+
+828
+00:29:23,760 --> 00:29:26,399
+out to you.
+
+829
+00:29:24,320 --> 00:29:28,399
+Absolutely. We post regularly on
+
+830
+00:29:26,399 --> 00:29:30,399
+LinkedIn with what we're our learnings
+
+831
+00:29:28,399 --> 00:29:32,240
+from the field are think where we see
+
+832
+00:29:30,399 --> 00:29:34,159
+the industry going. So find us on
+
+833
+00:29:32,240 --> 00:29:35,679
+LinkedIn and you can also find us at
+
+834
+00:29:34,159 --> 00:29:37,360
+byrockdata.ai.
+
+835
+00:29:35,679 --> 00:29:39,120
+So so yeah would love to hear from you
+
+836
+00:29:37,360 --> 00:29:41,039
+guys and thank you as well Christian.
+
+837
+00:29:39,120 --> 00:29:42,880
+Thank you. Well thank you and for
+
+838
+00:29:41,039 --> 00:29:44,240
+listeners. I'll make sure everything's
+
+839
+00:29:42,880 --> 00:29:46,480
+in the show notes. If you want to follow
+
+840
+00:29:44,240 --> 00:29:47,760
+up you can definitely uh I'll leave a
+
+841
+00:29:46,480 --> 00:29:50,720
+trail there for you to find him very
+
+842
+00:29:47,760 --> 00:29:53,120
+very easily because we're at a time
+
+843
+00:29:50,720 --> 00:29:55,520
+where we need this kind of expertise uh
+
+844
+00:29:53,120 --> 00:29:56,960
+on speed the house. So again, thanks so
+
+845
+00:29:55,520 --> 00:29:58,720
+much for getting on the Signal Room and
+
+846
+00:29:56,960 --> 00:30:00,559
+to to my guest. I'm Chris Hutchins and
+
+847
+00:29:58,720 --> 00:30:02,480
+we'll see you next time. That's it for
+
+848
+00:30:00,559 --> 00:30:04,000
+this episode of the Signal Room. If
+
+849
+00:30:02,480 --> 00:30:06,159
+today's conversation sparked something
+
+850
+00:30:04,000 --> 00:30:08,080
+in you, an idea, a challenge, or
+
+851
+00:30:06,159 --> 00:30:10,159
+perspective worth amplifying, I'd love
+
+852
+00:30:08,080 --> 00:30:12,159
+to hear from you. Message me on LinkedIn
+
+853
+00:30:10,159 --> 00:30:16,159
+or visit sigaroompodcast.com
+
+854
+00:30:12,159 --> 00:30:16,159
+to explore being a guest on an upcoming

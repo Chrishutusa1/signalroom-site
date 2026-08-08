@@ -1,0 +1,4771 @@
+1
+00:00:00,080 --> 00:00:03,600
+My guest today has seen healthc care
+
+2
+00:00:01,680 --> 00:00:06,240
+from three places. Most people never get
+
+3
+00:00:03,600 --> 00:00:07,919
+to stand in the exam room, the Pentagon,
+
+4
+00:00:06,240 --> 00:00:11,040
+and the federal policy table.
+
+5
+00:00:07,919 --> 00:00:14,559
+What you see or what you get from
+
+6
+00:00:11,040 --> 00:00:16,800
+ChatgBT CLA or any of these other large
+
+7
+00:00:14,559 --> 00:00:18,960
+language models, LLMs, is not the
+
+8
+00:00:16,800 --> 00:00:22,160
+definitive answer. It may not be
+
+9
+00:00:18,960 --> 00:00:24,080
+accurate. They don't have the context.
+
+10
+00:00:22,160 --> 00:00:25,680
+They don't know you. You may not give
+
+11
+00:00:24,080 --> 00:00:27,680
+all the right information. When you sit
+
+12
+00:00:25,680 --> 00:00:29,840
+with your doctor and you come with that
+
+13
+00:00:27,680 --> 00:00:32,719
+information, it's the start of the
+
+14
+00:00:29,840 --> 00:00:37,840
+conversation. It's not the I found on
+
+15
+00:00:32,719 --> 00:00:39,680
+chat GPT only 12% of people are fully
+
+16
+00:00:37,840 --> 00:00:41,200
+health [music] literate. Well, let that
+
+17
+00:00:39,680 --> 00:00:43,120
+sink in for a second. We don't know
+
+18
+00:00:41,200 --> 00:00:46,000
+where that information is going. [music]
+
+19
+00:00:43,120 --> 00:00:48,399
+It's has your identifiers. A physician
+
+20
+00:00:46,000 --> 00:00:51,440
+has the relationship with the patient.
+
+21
+00:00:48,399 --> 00:00:53,840
+If you're using AI and it tells you
+
+22
+00:00:51,440 --> 00:00:56,640
+something or it [music] does something
+
+23
+00:00:53,840 --> 00:00:58,960
+autonomously for the patient, you are
+
+24
+00:00:56,640 --> 00:01:01,840
+still that practice, that physician is
+
+25
+00:00:58,960 --> 00:01:04,239
+still responsible. Do not upload your
+
+26
+00:01:01,840 --> 00:01:07,119
+medical record in total [music]
+
+27
+00:01:04,239 --> 00:01:08,880
+up into a general LLM. Just don't do it.
+
+28
+00:01:07,119 --> 00:01:11,040
+Welcome back to the Signal Room. I'm Chris
+
+29
+00:01:08,880 --> 00:01:12,640
+Hutchins. My guest today has seen
+
+30
+00:01:11,040 --> 00:01:14,880
+healthc care from three places most
+
+31
+00:01:12,640 --> 00:01:17,439
+people never get to stand in at once.
+
+32
+00:01:14,880 --> 00:01:20,640
+the exam room, the Pentagon, and the
+
+33
+00:01:17,439 --> 00:01:22,080
+federal policy table. Dr. Terry Adirim,
+
+34
+00:01:20,640 --> 00:01:23,920
+welcome to the Sigma Room. I'm very
+
+35
+00:01:22,080 --> 00:01:25,520
+excited to have you on this morning.
+
+36
+00:01:23,920 --> 00:01:26,880
+It's just been an extraordinary few
+
+37
+00:01:25,520 --> 00:01:29,040
+days, and I really enjoyed our
+
+38
+00:01:26,880 --> 00:01:31,680
+conversation last week and am very happy
+
+39
+00:01:29,040 --> 00:01:33,520
+to let some folks in on some of the
+
+40
+00:01:31,680 --> 00:01:35,759
+amazing work that you're doing. Uh you
+
+41
+00:01:33,520 --> 00:01:38,320
+you spent more than 25 years as a pediat
+
+42
+00:01:35,759 --> 00:01:41,119
+pediatric emergency physician. You've
+
+43
+00:01:38,320 --> 00:01:43,119
+led health IT overhauls at the VA. He
+
+44
+00:01:41,119 --> 00:01:45,439
+served as acting assistant secretary of
+
+45
+00:01:43,119 --> 00:01:47,600
+defense for health affairs. This is just
+
+46
+00:01:45,439 --> 00:01:49,280
+amazing. Before we get into too much,
+
+47
+00:01:47,600 --> 00:01:51,439
+I'd like to hear a little bit about your
+
+48
+00:01:49,280 --> 00:01:53,680
+your personal story and a bit about your
+
+49
+00:01:51,439 --> 00:01:55,680
+why. I know that people don't just
+
+50
+00:01:53,680 --> 00:01:57,520
+stumble into a kind of career that
+
+51
+00:01:55,680 --> 00:01:59,680
+you've had, not only as a physician, but
+
+52
+00:01:57,520 --> 00:02:02,640
+involved in so many different aspects of
+
+53
+00:01:59,680 --> 00:02:04,399
+of policym and education and and
+
+54
+00:02:02,640 --> 00:02:06,000
+writing. Uh definitely want to make sure
+
+55
+00:02:04,399 --> 00:02:07,920
+we take take a chance to take a minute
+
+56
+00:02:06,000 --> 00:02:09,679
+to show to really get into your new
+
+57
+00:02:07,920 --> 00:02:11,760
+book. I'm very excited to hear about
+
+58
+00:02:09,679 --> 00:02:13,280
+this, but if you could just just start
+
+59
+00:02:11,760 --> 00:02:15,599
+us off with a little bit of background
+
+60
+00:02:13,280 --> 00:02:17,200
+and what makes you tick.
+
+61
+00:02:15,599 --> 00:02:18,720
+Yeah. Well, thank you very much and
+
+62
+00:02:17,200 --> 00:02:23,920
+thank you very much, Chris, for inviting
+
+63
+00:02:18,720 --> 00:02:26,319
+me on uh for uh this discussion. So,
+
+64
+00:02:23,920 --> 00:02:28,239
+what makes me tick? I've always wanted
+
+65
+00:02:26,319 --> 00:02:30,800
+to be a physician. I've always wanted to
+
+66
+00:02:28,239 --> 00:02:34,560
+be a doctor. I've always been curious
+
+67
+00:02:30,800 --> 00:02:37,360
+about health and health care. And most
+
+68
+00:02:34,560 --> 00:02:40,160
+especially like all my colleagues, we
+
+69
+00:02:37,360 --> 00:02:42,480
+very much wanted to help people. And as
+
+70
+00:02:40,160 --> 00:02:44,800
+I was going through the process of
+
+71
+00:02:42,480 --> 00:02:48,160
+becoming a physician through education
+
+72
+00:02:44,800 --> 00:02:52,000
+and my years of training, I realized
+
+73
+00:02:48,160 --> 00:02:55,920
+that I could make a difference by
+
+74
+00:02:52,000 --> 00:03:00,800
+treating patients one onone or I could
+
+75
+00:02:55,920 --> 00:03:04,319
+treat larger populations by moving into
+
+76
+00:03:00,800 --> 00:03:07,360
+academia and then into the federal
+
+77
+00:03:04,319 --> 00:03:09,680
+policy sphere. So that has been my
+
+78
+00:03:07,360 --> 00:03:12,480
+career trajectory. I've been very
+
+79
+00:03:09,680 --> 00:03:15,680
+fortunate to work with a good number of
+
+80
+00:03:12,480 --> 00:03:19,680
+great colleagues across the spectrum
+
+81
+00:03:15,680 --> 00:03:22,879
+from clinical care, academia, and
+
+82
+00:03:19,680 --> 00:03:25,360
+federal, I would say, uh, health
+
+83
+00:03:22,879 --> 00:03:28,720
+agencies that I've worked in. So,
+
+84
+00:03:25,360 --> 00:03:30,879
+amazing. So, I want to kind of get into
+
+85
+00:03:28,720 --> 00:03:33,519
+some of the the interesting stuff for
+
+86
+00:03:30,879 --> 00:03:35,440
+for folks because right now when we're
+
+87
+00:03:33,519 --> 00:03:38,239
+almost every conversation that comes up
+
+88
+00:03:35,440 --> 00:03:40,959
+about AI, there's a there's some policy
+
+89
+00:03:38,239 --> 00:03:42,640
+and uh regulatory kind of aspects that
+
+90
+00:03:40,959 --> 00:03:44,879
+seem to be coming up, governance a bit
+
+91
+00:03:42,640 --> 00:03:46,640
+too. I mean, you've sat where some of
+
+92
+00:03:44,879 --> 00:03:48,239
+these big decisions actually get made
+
+93
+00:03:46,640 --> 00:03:51,200
+like in the VA, the Department of
+
+94
+00:03:48,239 --> 00:03:53,760
+Defense, federal health policy. Where's
+
+95
+00:03:51,200 --> 00:03:55,920
+the widest gap right now from your
+
+96
+00:03:53,760 --> 00:03:58,239
+perspective between what leadership
+
+97
+00:03:55,920 --> 00:03:59,920
+believes is happening with AI and and
+
+98
+00:03:58,239 --> 00:04:02,239
+the clinical encounter and what's
+
+99
+00:03:59,920 --> 00:04:04,879
+actually true out on the floor?
+
+100
+00:04:02,239 --> 00:04:07,519
+Sure. Uh thanks for that question. I
+
+101
+00:04:04,879 --> 00:04:12,400
+think right now there's a tension
+
+102
+00:04:07,519 --> 00:04:16,400
+between how much regulation, how much uh
+
+103
+00:04:12,400 --> 00:04:19,919
+policym to ensure that AI used in health
+
+104
+00:04:16,400 --> 00:04:23,440
+care is safe with innovation. There is
+
+105
+00:04:19,919 --> 00:04:24,960
+that tension and prior to this current
+
+106
+00:04:23,440 --> 00:04:27,600
+administration
+
+107
+00:04:24,960 --> 00:04:31,199
+there was an appetite for coming up with
+
+108
+00:04:27,600 --> 00:04:33,280
+frameworks on ethics and regulation and
+
+109
+00:04:31,199 --> 00:04:35,919
+governance. But when this new
+
+110
+00:04:33,280 --> 00:04:41,600
+administration uh came in, they wanted
+
+111
+00:04:35,919 --> 00:04:44,320
+to unleash AI and in to ensure that
+
+112
+00:04:41,600 --> 00:04:47,199
+innovators can innovate. I think it has
+
+113
+00:04:44,320 --> 00:04:49,600
+to be somewhere in between. I think in a
+
+114
+00:04:47,199 --> 00:04:52,479
+current environment, we're not quite
+
+115
+00:04:49,600 --> 00:04:56,160
+getting it right because I think the
+
+116
+00:04:52,479 --> 00:04:59,600
+health care field uh health care
+
+117
+00:04:56,160 --> 00:05:03,040
+community as well as patients need that
+
+118
+00:04:59,600 --> 00:05:06,080
+guidance. Um and it's just not happening
+
+119
+00:05:03,040 --> 00:05:09,680
+really right now. And hopefully because
+
+120
+00:05:06,080 --> 00:05:12,720
+we're in this transitional period, we'll
+
+121
+00:05:09,680 --> 00:05:15,680
+get to a place where we strike that
+
+122
+00:05:12,720 --> 00:05:17,840
+right balance because you don't want to
+
+123
+00:05:15,680 --> 00:05:19,919
+hinder innovation.
+
+124
+00:05:17,840 --> 00:05:23,840
+But in health care, it's very different
+
+125
+00:05:19,919 --> 00:05:27,199
+than other sectors in that we need to
+
+126
+00:05:23,840 --> 00:05:29,520
+make sure that we protect patients. So
+
+127
+00:05:27,199 --> 00:05:31,600
+that's where we are right now on a
+
+128
+00:05:29,520 --> 00:05:33,680
+national scale.
+
+129
+00:05:31,600 --> 00:05:35,199
+Can we I want to double click on that
+
+130
+00:05:33,680 --> 00:05:38,000
+just for a minute. if if I could could
+
+131
+00:05:35,199 --> 00:05:39,840
+you speak about uh some of the specific
+
+132
+00:05:38,000 --> 00:05:42,160
+things that that you know people should
+
+133
+00:05:39,840 --> 00:05:44,240
+be aware of uh you know from your your
+
+134
+00:05:42,160 --> 00:05:46,479
+perspectives like one of the reasons I
+
+135
+00:05:44,240 --> 00:05:48,320
+love having this this platform is for
+
+136
+00:05:46,479 --> 00:05:51,039
+when for someone like you who comes on
+
+137
+00:05:48,320 --> 00:05:52,720
+you you can actually send some really uh
+
+138
+00:05:51,039 --> 00:05:54,720
+clear messages out there so that people
+
+139
+00:05:52,720 --> 00:05:57,120
+that may not be paying attention have
+
+140
+00:05:54,720 --> 00:05:59,440
+some idea what they should be doing and
+
+141
+00:05:57,120 --> 00:06:02,000
+how to lean in and maybe hope push push
+
+142
+00:05:59,440 --> 00:06:04,080
+the influence uh in the in the right
+
+143
+00:06:02,000 --> 00:06:06,560
+direction. Well, I think there's uh kind
+
+144
+00:06:04,080 --> 00:06:10,319
+of could look at it in two ways. There
+
+145
+00:06:06,560 --> 00:06:13,840
+is what individuals need to do and then
+
+146
+00:06:10,319 --> 00:06:15,840
+there is actually three. There's what we
+
+147
+00:06:13,840 --> 00:06:18,319
+need to be doing nationally with regard
+
+148
+00:06:15,840 --> 00:06:20,560
+to the federal environment. Um there is
+
+149
+00:06:18,319 --> 00:06:23,360
+stuff being done on the state level and
+
+150
+00:06:20,560 --> 00:06:26,400
+then there's what the industry should be
+
+151
+00:06:23,360 --> 00:06:29,919
+looking out for. I think there with
+
+152
+00:06:26,400 --> 00:06:32,960
+technology in of itself is not ethical
+
+153
+00:06:29,919 --> 00:06:36,800
+or unethical but how we use it brings up
+
+154
+00:06:32,960 --> 00:06:39,680
+the issues of ethics. I think privacy in
+
+155
+00:06:36,800 --> 00:06:41,919
+health care is huge and I think there
+
+156
+00:06:39,680 --> 00:06:44,960
+are a number of things that that for
+
+157
+00:06:41,919 --> 00:06:48,720
+example an individual can do to protect
+
+158
+00:06:44,960 --> 00:06:51,440
+their privacy when AI and AI tools are
+
+159
+00:06:48,720 --> 00:06:54,319
+being used like one of them being don't
+
+160
+00:06:51,440 --> 00:06:58,160
+upload your entire medical record into
+
+161
+00:06:54,319 --> 00:07:00,560
+chat GBT. uh with regard to you know the
+
+162
+00:06:58,160 --> 00:07:05,360
+federal sphere I really think they need
+
+163
+00:07:00,560 --> 00:07:09,120
+to update a lot of the regulations and
+
+164
+00:07:05,360 --> 00:07:12,880
+policies around patient privacy that
+
+165
+00:07:09,120 --> 00:07:16,479
+brings in AI some of them these policies
+
+166
+00:07:12,880 --> 00:07:19,919
+and regulations didn't even think about
+
+167
+00:07:16,479 --> 00:07:22,240
+AI it came before you know AI became a
+
+168
+00:07:19,919 --> 00:07:24,400
+thing in healthcare so I think we that
+
+169
+00:07:22,240 --> 00:07:27,919
+that could be attended to and then
+
+170
+00:07:24,400 --> 00:07:31,039
+lastly I think the industry too needs to
+
+171
+00:07:27,919 --> 00:07:33,759
+respect um health care and needs to
+
+172
+00:07:31,039 --> 00:07:36,319
+understand it differently than some of
+
+173
+00:07:33,759 --> 00:07:40,560
+the other sectors. So let me give you an
+
+174
+00:07:36,319 --> 00:07:43,120
+example. When you people who uh you know
+
+175
+00:07:40,560 --> 00:07:46,240
+for lack of better term tech bros they
+
+176
+00:07:43,120 --> 00:07:49,120
+like to move fast and break things in
+
+177
+00:07:46,240 --> 00:07:53,440
+health care the culture is very much
+
+178
+00:07:49,120 --> 00:07:56,000
+about do no harm don't hurt patients. So
+
+179
+00:07:53,440 --> 00:07:59,840
+there could be conflicts between those
+
+180
+00:07:56,000 --> 00:08:02,800
+two ethos which um I think it's
+
+181
+00:07:59,840 --> 00:08:05,840
+important to reconcile and I think um
+
+182
+00:08:02,800 --> 00:08:07,360
+health tech companies have a
+
+183
+00:08:05,840 --> 00:08:10,560
+responsibility
+
+184
+00:08:07,360 --> 00:08:13,199
+to understand the do no harm and to
+
+185
+00:08:10,560 --> 00:08:15,680
+respect that and understand that those
+
+186
+00:08:13,199 --> 00:08:17,120
+of us who want to use these tools very
+
+187
+00:08:15,680 --> 00:08:19,199
+much are looking forward to all these
+
+188
+00:08:17,120 --> 00:08:21,440
+innovations want to make sure that
+
+189
+00:08:19,199 --> 00:08:23,039
+there's that respect and I think that
+
+190
+00:08:21,440 --> 00:08:24,960
+tension will be there for a while
+
+191
+00:08:23,039 --> 00:08:27,360
+longer, but I think that something that
+
+192
+00:08:24,960 --> 00:08:29,120
+could be paid attention to.
+
+193
+00:08:27,360 --> 00:08:30,879
+That's amazing. And I I really
+
+194
+00:08:29,120 --> 00:08:33,120
+appreciate you bringing some clarity to
+
+195
+00:08:30,879 --> 00:08:36,080
+to this stuff because it's just such a
+
+196
+00:08:33,120 --> 00:08:37,839
+unbelievably fastm moving transformation
+
+197
+00:08:36,080 --> 00:08:41,120
+that's going on. To your point, the
+
+198
+00:08:37,839 --> 00:08:43,599
+innovations definitely outpacing uh the
+
+199
+00:08:41,120 --> 00:08:45,600
+responsible and ethical use and a lot of
+
+200
+00:08:43,599 --> 00:08:47,279
+the policy and guardrail things that
+
+201
+00:08:45,600 --> 00:08:49,680
+really need to be put in place to
+
+202
+00:08:47,279 --> 00:08:52,080
+protect patients. Well, like like you
+
+203
+00:08:49,680 --> 00:08:53,600
+said, I mean, first do no harp. We we
+
+204
+00:08:52,080 --> 00:08:55,120
+didn't all go to medical school and take
+
+205
+00:08:53,600 --> 00:08:56,640
+that oath, but we need to support that
+
+206
+00:08:55,120 --> 00:08:58,880
+oath and make sure that we're backing it
+
+207
+00:08:56,640 --> 00:09:00,320
+up by what we deliver. No question about
+
+208
+00:08:58,880 --> 00:09:04,240
+that. We have a lot of opportunities to
+
+209
+00:09:00,320 --> 00:09:07,519
+do better. This kind of nicely steps
+
+210
+00:09:04,240 --> 00:09:09,839
+over into the topic of your book, which
+
+211
+00:09:07,519 --> 00:09:12,160
+I'm really excited to hear about, but
+
+212
+00:09:09,839 --> 00:09:14,480
+the prepared patient. Talk to me about
+
+213
+00:09:12,160 --> 00:09:18,160
+that. What does that phrase mean to you?
+
+214
+00:09:14,480 --> 00:09:21,040
+and and you know how did you how did you
+
+215
+00:09:18,160 --> 00:09:22,959
+come up with this particular title based
+
+216
+00:09:21,040 --> 00:09:24,480
+on all your experiences in what's
+
+217
+00:09:22,959 --> 00:09:26,720
+happening now and I suspect it's not
+
+218
+00:09:24,480 --> 00:09:28,080
+about an AI but an unveiling type of
+
+219
+00:09:26,720 --> 00:09:30,000
+thing and trying to prepare patients for
+
+220
+00:09:28,080 --> 00:09:31,760
+that but I mean I'll leave it there and
+
+221
+00:09:30,000 --> 00:09:35,120
+just I just want to hear all about it.
+
+222
+00:09:31,760 --> 00:09:37,040
+Yeah. No, thank you. Um it's a broader
+
+223
+00:09:35,120 --> 00:09:38,959
+uh topic and and the book is called the
+
+224
+00:09:37,040 --> 00:09:41,680
+prepared patient your guide to surviving
+
+225
+00:09:38,959 --> 00:09:44,880
+the health care system. And I was
+
+226
+00:09:41,680 --> 00:09:48,800
+inspired by two things. One was the
+
+227
+00:09:44,880 --> 00:09:51,279
+statistic that only 12% of people are
+
+228
+00:09:48,800 --> 00:09:53,440
+fully health literate. Now, let that
+
+229
+00:09:51,279 --> 00:09:55,600
+sink in for a second. That is a really
+
+230
+00:09:53,440 --> 00:09:59,120
+astounding statistic. And what does that
+
+231
+00:09:55,600 --> 00:10:01,760
+mean? That means that if you don't know
+
+232
+00:09:59,120 --> 00:10:04,720
+fully about your health coverage, what
+
+233
+00:10:01,760 --> 00:10:07,279
+to expect, and how to navigate the
+
+234
+00:10:04,720 --> 00:10:10,080
+system, that could have impacts on your
+
+235
+00:10:07,279 --> 00:10:13,040
+health outcomes and on your finances.
+
+236
+00:10:10,080 --> 00:10:15,760
+So, that's number one. But what really
+
+237
+00:10:13,040 --> 00:10:18,000
+inspired me was early in my career, I
+
+238
+00:10:15,760 --> 00:10:20,000
+took care of a lot of families with
+
+239
+00:10:18,000 --> 00:10:22,560
+children who have special health care
+
+240
+00:10:20,000 --> 00:10:24,320
+needs, medically complex children. And
+
+241
+00:10:22,560 --> 00:10:26,560
+what impressed me about them is that
+
+242
+00:10:24,320 --> 00:10:29,760
+they came to the emergency department,
+
+243
+00:10:26,560 --> 00:10:32,399
+which is where I spent uh my clinical
+
+244
+00:10:29,760 --> 00:10:34,800
+part of my career. They always came with
+
+245
+00:10:32,399 --> 00:10:37,200
+these white binders that had all of
+
+246
+00:10:34,800 --> 00:10:39,040
+their information. And as a physician
+
+247
+00:10:37,200 --> 00:10:42,079
+who didn't necessarily know this
+
+248
+00:10:39,040 --> 00:10:44,160
+patient, fully appreciated having all
+
+249
+00:10:42,079 --> 00:10:46,640
+their medications with their dosages,
+
+250
+00:10:44,160 --> 00:10:48,880
+their medical diagnosis, who their
+
+251
+00:10:46,640 --> 00:10:51,920
+specialists were, and just all the
+
+252
+00:10:48,880 --> 00:10:54,959
+information um that I needed to care for
+
+253
+00:10:51,920 --> 00:10:57,120
+that child. Now, we of course scroll
+
+254
+00:10:54,959 --> 00:10:59,200
+ahead 25 years later. We don't
+
+255
+00:10:57,120 --> 00:11:01,519
+necessarily have a white binder, though
+
+256
+00:10:59,200 --> 00:11:03,040
+you can put it in paper. You could do it
+
+257
+00:11:01,519 --> 00:11:05,120
+electronically.
+
+258
+00:11:03,040 --> 00:11:07,760
+But um the point I'm trying to make is
+
+259
+00:11:05,120 --> 00:11:10,000
+that they wanted the best outcomes for
+
+260
+00:11:07,760 --> 00:11:11,920
+their children. So they were fully
+
+261
+00:11:10,000 --> 00:11:14,399
+prepared. So that's the inspiration for
+
+262
+00:11:11,920 --> 00:11:16,480
+this book. Our health system, no matter
+
+263
+00:11:14,399 --> 00:11:19,200
+how smart you are, no matter how
+
+264
+00:11:16,480 --> 00:11:23,120
+educated you are, could be challenging
+
+265
+00:11:19,200 --> 00:11:25,680
+to navigate and difficult to understand.
+
+266
+00:11:23,120 --> 00:11:28,720
+That challenge is this is strangely
+
+267
+00:11:25,680 --> 00:11:30,959
+enough. I actually had had someone on
+
+268
+00:11:28,720 --> 00:11:33,200
+probably six or eight weeks ago. I'm not
+
+269
+00:11:30,959 --> 00:11:36,079
+really sure timing wise, but she she she
+
+270
+00:11:33,200 --> 00:11:38,560
+had a a child who had really really rare
+
+271
+00:11:36,079 --> 00:11:40,240
+disease and she talked about this exact
+
+272
+00:11:38,560 --> 00:11:41,760
+thing that you just mentioned where
+
+273
+00:11:40,240 --> 00:11:43,839
+she's constantly having to keep
+
+274
+00:11:41,760 --> 00:11:45,839
+everything updated and you know how
+
+275
+00:11:43,839 --> 00:11:47,360
+difficult it is that every time you got
+
+276
+00:11:45,839 --> 00:11:49,760
+you want to go see a new specialist,
+
+277
+00:11:47,360 --> 00:11:51,600
+it's Groundhog Day and I mean from your
+
+278
+00:11:49,760 --> 00:11:53,360
+perspective um isn't are there some
+
+279
+00:11:51,600 --> 00:11:55,760
+things that we should be challenging our
+
+280
+00:11:53,360 --> 00:12:00,399
+our technology companies to do because I
+
+281
+00:11:55,760 --> 00:12:02,399
+that's a pretty big part of what to care
+
+282
+00:12:00,399 --> 00:12:04,320
+just seems like that's a a a risk
+
+283
+00:12:02,399 --> 00:12:05,920
+because we not we might not even have it
+
+284
+00:12:04,320 --> 00:12:07,760
+for for the physician when they need
+
+285
+00:12:05,920 --> 00:12:10,639
+they were going to treat the patient,
+
+286
+00:12:07,760 --> 00:12:12,079
+right? And 25 years ago, I would have
+
+287
+00:12:10,639 --> 00:12:16,240
+kind of hoped that we would have been
+
+288
+00:12:12,079 --> 00:12:18,880
+further along, you know, in 2026. Um,
+
+289
+00:12:16,240 --> 00:12:21,920
+but there are several factors that have
+
+290
+00:12:18,880 --> 00:12:25,120
+been challenges to make it more of a
+
+291
+00:12:21,920 --> 00:12:27,600
+smooth, super well-connected health care
+
+292
+00:12:25,120 --> 00:12:29,440
+system. I mean, even just a few years
+
+293
+00:12:27,600 --> 00:12:32,800
+back, I was working in the emergency
+
+294
+00:12:29,440 --> 00:12:35,200
+department and I got a a a patient, a
+
+295
+00:12:32,800 --> 00:12:38,240
+young patient and family was transferred
+
+296
+00:12:35,200 --> 00:12:41,200
+from another hospital. So, as I'm asking
+
+297
+00:12:38,240 --> 00:12:43,040
+the father questions, he's like, "Yeah,
+
+298
+00:12:41,200 --> 00:12:44,639
+we just we just answered all these
+
+299
+00:12:43,040 --> 00:12:46,639
+questions and we had all these tests
+
+300
+00:12:44,639 --> 00:12:48,959
+done. Isn't it in your" and he pointed
+
+301
+00:12:46,639 --> 00:12:50,959
+to the electronic health record, right?
+
+302
+00:12:48,959 --> 00:12:52,560
+And I said, "You know, I'm really sorry,
+
+303
+00:12:50,959 --> 00:12:56,079
+but you came from a different health
+
+304
+00:12:52,560 --> 00:12:58,000
+care system." Right? So within the same
+
+305
+00:12:56,079 --> 00:13:00,160
+health care system, if you're taken care
+
+306
+00:12:58,000 --> 00:13:02,800
+of at Kaiser or Mayo or Cleveland
+
+307
+00:13:00,160 --> 00:13:04,320
+Clinic, like sure, your records would be
+
+308
+00:13:02,800 --> 00:13:06,079
+in there and you go see a subsp
+
+309
+00:13:04,320 --> 00:13:08,560
+specialist who's affiliated with that
+
+310
+00:13:06,079 --> 00:13:10,560
+system, that information would be there.
+
+311
+00:13:08,560 --> 00:13:13,440
+So that would be step one. But that's
+
+312
+00:13:10,560 --> 00:13:16,079
+not how things operate. Just like your
+
+313
+00:13:13,440 --> 00:13:18,320
+guest on, you know, several weeks ago,
+
+314
+00:13:16,079 --> 00:13:20,079
+she may need to see different
+
+315
+00:13:18,320 --> 00:13:23,440
+specialists in different health care
+
+316
+00:13:20,079 --> 00:13:27,920
+systems. And one of the fixes has not
+
+317
+00:13:23,440 --> 00:13:30,160
+really been a a full fix has been these
+
+318
+00:13:27,920 --> 00:13:32,639
+health information exchanges. But even
+
+319
+00:13:30,160 --> 00:13:34,880
+that those are kind of clunky. You have
+
+320
+00:13:32,639 --> 00:13:37,680
+to pull the information doesn't
+
+321
+00:13:34,880 --> 00:13:40,079
+automatically populate and you know
+
+322
+00:13:37,680 --> 00:13:44,399
+people have to agree to be a part of
+
+323
+00:13:40,079 --> 00:13:45,920
+that. So we still have a very disjointed
+
+324
+00:13:44,399 --> 00:13:49,920
+fragmented
+
+325
+00:13:45,920 --> 00:13:52,959
+health care system which makes it so
+
+326
+00:13:49,920 --> 00:13:55,040
+challenging especially for the over 50%
+
+327
+00:13:52,959 --> 00:13:57,519
+of people in this country who have
+
+328
+00:13:55,040 --> 00:14:00,480
+chronic medical conditions and for that
+
+329
+00:13:57,519 --> 00:14:02,399
+child who's got multiple conditions.
+
+330
+00:14:00,480 --> 00:14:05,440
+They're seeing multiple specialists. are
+
+331
+00:14:02,399 --> 00:14:07,600
+getting multiple tests unfortunately and
+
+332
+00:14:05,440 --> 00:14:10,000
+it's not fair and it's not necessarily
+
+333
+00:14:07,600 --> 00:14:12,160
+right but the responsibility then
+
+334
+00:14:10,000 --> 00:14:14,959
+becomes on the patient or that patient's
+
+335
+00:14:12,160 --> 00:14:17,760
+family. So that's what I was trying to
+
+336
+00:14:14,959 --> 00:14:19,519
+do with this book is to help people get
+
+337
+00:14:17,760 --> 00:14:22,000
+themselves organized, get themselves
+
+338
+00:14:19,519 --> 00:14:23,920
+prepared, figure out what types of
+
+339
+00:14:22,000 --> 00:14:26,320
+information that you need, for example,
+
+340
+00:14:23,920 --> 00:14:28,639
+to bring to your appointment, what types
+
+341
+00:14:26,320 --> 00:14:31,519
+of information you need with regard to
+
+342
+00:14:28,639 --> 00:14:34,160
+your healthc care coverage. Now that
+
+343
+00:14:31,519 --> 00:14:37,440
+it's all not all doom and gloom, right?
+
+344
+00:14:34,160 --> 00:14:41,600
+AI is helping to smooth some of these
+
+345
+00:14:37,440 --> 00:14:43,760
+friction points for patients. So, for
+
+346
+00:14:41,600 --> 00:14:46,320
+example, you can collect all this
+
+347
+00:14:43,760 --> 00:14:48,399
+information electronically, right? You
+
+348
+00:14:46,320 --> 00:14:50,800
+can do that. Um, and there are companies
+
+349
+00:14:48,399 --> 00:14:53,920
+that are working on doing this for
+
+350
+00:14:50,800 --> 00:14:56,560
+people who've got complex medical needs.
+
+351
+00:14:53,920 --> 00:14:59,440
+There's also within the exam room things
+
+352
+00:14:56,560 --> 00:15:02,320
+that could help the physician, right? So
+
+353
+00:14:59,440 --> 00:15:05,760
+for example if a patient's medical
+
+354
+00:15:02,320 --> 00:15:09,199
+record is within that system the in a
+
+355
+00:15:05,760 --> 00:15:11,680
+lot of places the physician could get a
+
+356
+00:15:09,199 --> 00:15:15,199
+summary that's you know ex that is
+
+357
+00:15:11,680 --> 00:15:17,440
+created by AI right so now there's a
+
+358
+00:15:15,199 --> 00:15:19,199
+number of institutions I would I don't
+
+359
+00:15:17,440 --> 00:15:21,120
+think it's most but there's a lot of
+
+360
+00:15:19,199 --> 00:15:24,399
+institutions and doctor's offices that
+
+361
+00:15:21,120 --> 00:15:27,600
+are using something called AI ambient
+
+362
+00:15:24,399 --> 00:15:30,079
+scribes meaning that the physician isn't
+
+363
+00:15:27,600 --> 00:15:33,600
+sitting there typing way while they're
+
+364
+00:15:30,079 --> 00:15:35,760
+talking to you. A voice activated system
+
+365
+00:15:33,600 --> 00:15:38,560
+turns on while while the patient and
+
+366
+00:15:35,760 --> 00:15:41,040
+physician are talking and takes notes,
+
+367
+00:15:38,560 --> 00:15:43,839
+organizes the notes and the physician
+
+368
+00:15:41,040 --> 00:15:45,760
+can ask for a summary of that. You could
+
+369
+00:15:43,839 --> 00:15:48,240
+even do a patient summary and give that
+
+370
+00:15:45,760 --> 00:15:50,240
+to the patient about their visit. So
+
+371
+00:15:48,240 --> 00:15:52,399
+there are these things that are not
+
+372
+00:15:50,240 --> 00:15:55,440
+solving the problem, but they're really
+
+373
+00:15:52,399 --> 00:15:57,680
+reducing those friction points that you
+
+374
+00:15:55,440 --> 00:15:59,199
+brought up uh for people who have to see
+
+375
+00:15:57,680 --> 00:16:02,720
+multiple specialists.
+
+376
+00:15:59,199 --> 00:16:04,399
+Yeah, I I think um to people out there
+
+377
+00:16:02,720 --> 00:16:06,639
+who can actually develop and design
+
+378
+00:16:04,399 --> 00:16:09,680
+stuff, we're still talking about the
+
+379
+00:16:06,639 --> 00:16:12,240
+same lack of interoperability here.
+
+380
+00:16:09,680 --> 00:16:14,560
+And I don't know how many times I've
+
+381
+00:16:12,240 --> 00:16:16,000
+heard this over a decade now. And we're
+
+382
+00:16:14,560 --> 00:16:17,600
+still we still haven't solved for it.
+
+383
+00:16:16,000 --> 00:16:18,480
+And there there's just no good reasons
+
+384
+00:16:17,600 --> 00:16:20,639
+for it.
+
+385
+00:16:18,480 --> 00:16:20,959
+It's been longer than a decade.
+
+386
+00:16:20,639 --> 00:16:22,959
+Yeah,
+
+387
+00:16:20,959 --> 00:16:24,800
+you're being nice by saying a decade.
+
+388
+00:16:22,959 --> 00:16:27,279
+It's, you know, it's been fraught and
+
+389
+00:16:24,800 --> 00:16:30,240
+difficult because, you know, there's a
+
+390
+00:16:27,279 --> 00:16:34,079
+number of laws around privacy. The way
+
+391
+00:16:30,240 --> 00:16:36,000
+that EHRs were established, companies
+
+392
+00:16:34,079 --> 00:16:38,399
+establish their electronic health
+
+393
+00:16:36,000 --> 00:16:41,680
+records and they're proprietary. So,
+
+394
+00:16:38,399 --> 00:16:44,800
+they don't want to share and connect.
+
+395
+00:16:41,680 --> 00:16:47,600
+And so that took a long time to improve
+
+396
+00:16:44,800 --> 00:16:49,920
+that problem and then also develop
+
+397
+00:16:47,600 --> 00:16:54,000
+health information exchanges. They're
+
+398
+00:16:49,920 --> 00:16:57,759
+not perfect solutions, but you know,
+
+399
+00:16:54,000 --> 00:17:01,040
+it's it's a lot of regulatory issues and
+
+400
+00:16:57,759 --> 00:17:03,519
+proprietary issues and how electronic
+
+401
+00:17:01,040 --> 00:17:06,319
+health records were established that
+
+402
+00:17:03,519 --> 00:17:07,199
+have made it not easy for physicians or
+
+403
+00:17:06,319 --> 00:17:10,240
+patients.
+
+404
+00:17:07,199 --> 00:17:12,640
+Right. Well, I mean that unfortunately
+
+405
+00:17:10,240 --> 00:17:14,240
+it was it was designed to do more
+
+406
+00:17:12,640 --> 00:17:16,720
+accurate billing instead of actually
+
+407
+00:17:14,240 --> 00:17:18,319
+supporting clinical workflow and that's
+
+408
+00:17:16,720 --> 00:17:20,880
+and quite honestly it hasn't done a
+
+409
+00:17:18,319 --> 00:17:21,679
+great job with either. That's the part
+
+410
+00:17:20,880 --> 00:17:23,280
+that's unfortunate.
+
+411
+00:17:21,679 --> 00:17:26,400
+Yeah, we have such a complex health
+
+412
+00:17:23,280 --> 00:17:29,440
+system. But what the the the future is
+
+413
+00:17:26,400 --> 00:17:31,280
+going to hold and where I think um we're
+
+414
+00:17:29,440 --> 00:17:32,799
+going to see improvements is that the
+
+415
+00:17:31,280 --> 00:17:34,480
+electronic health record is not going to
+
+416
+00:17:32,799 --> 00:17:36,559
+go away. It's going to be that system of
+
+417
+00:17:34,480 --> 00:17:38,720
+record. But hopefully what we're going
+
+418
+00:17:36,559 --> 00:17:41,280
+to see are innovators, and we're
+
+419
+00:17:38,720 --> 00:17:44,640
+starting to see this, build and design
+
+420
+00:17:41,280 --> 00:17:47,600
+products that are layered above the EHR,
+
+421
+00:17:44,640 --> 00:17:51,039
+can extract stuff from the EHR, but then
+
+422
+00:17:47,600 --> 00:17:53,600
+operate kind of above it. So that from
+
+423
+00:17:51,039 --> 00:17:57,360
+the very start, let's say it's a primary
+
+424
+00:17:53,600 --> 00:17:59,919
+care practice, you have AI tools that
+
+425
+00:17:57,360 --> 00:18:02,720
+help with appointments. There'll be chat
+
+426
+00:17:59,919 --> 00:18:06,000
+box patients don't have to wait and they
+
+427
+00:18:02,720 --> 00:18:08,960
+could do all that kind of upfront work
+
+428
+00:18:06,000 --> 00:18:13,919
+automatically all the way to ambient AI
+
+429
+00:18:08,960 --> 00:18:16,480
+scribes in the exam room um to patient
+
+430
+00:18:13,919 --> 00:18:19,039
+discharge instructions. You already have
+
+431
+00:18:16,480 --> 00:18:22,320
+electronic prescribing but you know
+
+432
+00:18:19,039 --> 00:18:24,400
+really amplify that or I'd say augment
+
+433
+00:18:22,320 --> 00:18:26,799
+that. There's other tools on the back
+
+434
+00:18:24,400 --> 00:18:29,520
+end too that also help patients with
+
+435
+00:18:26,799 --> 00:18:31,360
+referrals and so on. And there's the
+
+436
+00:18:29,520 --> 00:18:34,000
+companies there are companies that are
+
+437
+00:18:31,360 --> 00:18:37,039
+doing what's called RCM, but that
+
+438
+00:18:34,000 --> 00:18:38,559
+billing kind of work. So, one day, I
+
+439
+00:18:37,039 --> 00:18:40,640
+predict we're not even going to need to
+
+440
+00:18:38,559 --> 00:18:43,360
+necessarily touch that electronic health
+
+441
+00:18:40,640 --> 00:18:46,080
+record. Maybe just the people within the
+
+442
+00:18:43,360 --> 00:18:49,039
+companies and big health systems might
+
+443
+00:18:46,080 --> 00:18:52,320
+need to touch it, but hopefully we'll
+
+444
+00:18:49,039 --> 00:18:55,120
+get to a place where we have systems in
+
+445
+00:18:52,320 --> 00:18:57,600
+place that make it with less friction
+
+446
+00:18:55,120 --> 00:18:59,039
+for patients and physicians.
+
+447
+00:18:57,600 --> 00:19:01,600
+That should be the objective right
+
+448
+00:18:59,039 --> 00:19:04,400
+there. I mean I one where one of the
+
+449
+00:19:01,600 --> 00:19:07,039
+litmus tests that I've I like to talk
+
+450
+00:19:04,400 --> 00:19:09,039
+about is first and foremost before we
+
+451
+00:19:07,039 --> 00:19:11,760
+talk about any other aspect I just want
+
+452
+00:19:09,039 --> 00:19:13,760
+to know is it going to give time back to
+
+453
+00:19:11,760 --> 00:19:16,080
+the people who need that whether it's
+
+454
+00:19:13,760 --> 00:19:19,200
+you know the the physician the nurse the
+
+455
+00:19:16,080 --> 00:19:21,200
+MA u most importantly you know the the
+
+456
+00:19:19,200 --> 00:19:23,679
+time for that encounter between a
+
+457
+00:19:21,200 --> 00:19:26,080
+physician and their patient that's got
+
+458
+00:19:23,679 --> 00:19:27,520
+to be the bar that we're shooting for I
+
+459
+00:19:26,080 --> 00:19:29,120
+just think that we do a lot of stuff
+
+460
+00:19:27,520 --> 00:19:30,320
+because we think it's cool technology
+
+461
+00:19:29,120 --> 00:19:32,160
+Unfortunately, that's happened a lot
+
+462
+00:19:30,320 --> 00:19:33,840
+latin healthcare and that's that's just
+
+463
+00:19:32,160 --> 00:19:36,799
+not been helpful. It's been disruptive
+
+464
+00:19:33,840 --> 00:19:38,160
+from everyone I've talked to, including
+
+465
+00:19:36,799 --> 00:19:40,240
+yourself. There's there's definitely
+
+466
+00:19:38,160 --> 00:19:42,320
+some some areas that have been, you
+
+467
+00:19:40,240 --> 00:19:43,440
+know, just glaring and then then they
+
+468
+00:19:42,320 --> 00:19:45,360
+haven't been touched. I mean,
+
+469
+00:19:43,440 --> 00:19:46,880
+interoperability is not a small thing.
+
+470
+00:19:45,360 --> 00:19:48,480
+And honestly, I don't think it's the
+
+471
+00:19:46,880 --> 00:19:49,440
+most complicated thing in the world, but
+
+472
+00:19:48,480 --> 00:19:52,080
+there's got to be some
+
+473
+00:19:49,440 --> 00:19:53,840
+it is to the regulations to to force
+
+474
+00:19:52,080 --> 00:19:55,840
+that to finally happen.
+
+475
+00:19:53,840 --> 00:19:59,039
+Yeah, it's it's more complicated than
+
+476
+00:19:55,840 --> 00:20:01,120
+you'd imagine. But to your point, I
+
+477
+00:19:59,039 --> 00:20:04,960
+think AI is going to be a help. I think
+
+478
+00:20:01,120 --> 00:20:07,280
+on balance, it's a positive thing and I
+
+479
+00:20:04,960 --> 00:20:09,840
+think the future um things will be
+
+480
+00:20:07,280 --> 00:20:11,760
+better. It will not solve the problems
+
+481
+00:20:09,840 --> 00:20:14,320
+of our health care system because our
+
+482
+00:20:11,760 --> 00:20:17,200
+health care system is built on policies,
+
+483
+00:20:14,320 --> 00:20:20,640
+regulations, laws, and so on that make
+
+484
+00:20:17,200 --> 00:20:23,280
+it this multi-layer, and now I'm going
+
+485
+00:20:20,640 --> 00:20:24,799
+to use a big SAT word, accreted, you
+
+486
+00:20:23,280 --> 00:20:27,280
+know, everything is just all kind of
+
+487
+00:20:24,799 --> 00:20:30,559
+glombmed together. hard to extricate all
+
+488
+00:20:27,280 --> 00:20:32,559
+the different pieces. So AI is not
+
+489
+00:20:30,559 --> 00:20:34,080
+really going to fix that. We're gonna
+
+490
+00:20:32,559 --> 00:20:35,760
+have to have the political will to want
+
+491
+00:20:34,080 --> 00:20:39,280
+to make the changes that we need in
+
+492
+00:20:35,760 --> 00:20:41,280
+order to unfragment, unopy, I don't
+
+493
+00:20:39,280 --> 00:20:43,039
+know, whatever terms you want to use of
+
+494
+00:20:41,280 --> 00:20:45,679
+our health care system. But I really
+
+495
+00:20:43,039 --> 00:20:48,799
+believe that technology
+
+496
+00:20:45,679 --> 00:20:54,000
+can improve the experience for both the
+
+497
+00:20:48,799 --> 00:20:57,600
+you know clinicians and for um patients.
+
+498
+00:20:54,000 --> 00:20:59,520
+And I I I I agree with you there. Let's
+
+499
+00:20:57,600 --> 00:21:01,840
+talk a little bit about what you the
+
+500
+00:20:59,520 --> 00:21:04,960
+dynamics there that are actually
+
+501
+00:21:01,840 --> 00:21:06,559
+changing now where uh a patient may show
+
+502
+00:21:04,960 --> 00:21:08,400
+up already having worked through their
+
+503
+00:21:06,559 --> 00:21:10,400
+own differential before they even sat
+
+504
+00:21:08,400 --> 00:21:12,080
+down. What are you seeing in in
+
+505
+00:21:10,400 --> 00:21:13,919
+practice? I in this case I'm assuming
+
+506
+00:21:12,080 --> 00:21:17,280
+it's you know the the parents who would
+
+507
+00:21:13,919 --> 00:21:19,360
+be coming in having done their own AI re
+
+508
+00:21:17,280 --> 00:21:22,720
+we'll call it research but
+
+509
+00:21:19,360 --> 00:21:25,039
+yeah well you know you pediatrics u
+
+510
+00:21:22,720 --> 00:21:27,760
+pediatric emergency medicine children
+
+511
+00:21:25,039 --> 00:21:29,760
+who are medically complex and with
+
+512
+00:21:27,760 --> 00:21:32,720
+special health care needs their parents
+
+513
+00:21:29,760 --> 00:21:35,200
+know their condition and if it's a rare
+
+514
+00:21:32,720 --> 00:21:36,880
+condition they know more than you do
+
+515
+00:21:35,200 --> 00:21:39,120
+because in the emergency department
+
+516
+00:21:36,880 --> 00:21:41,520
+you're a bit of a generalist so they've
+
+517
+00:21:39,120 --> 00:21:43,919
+done their research and I've, you know,
+
+518
+00:21:41,520 --> 00:21:46,159
+started practice when people were
+
+519
+00:21:43,919 --> 00:21:48,320
+beginning to go on the internet and
+
+520
+00:21:46,159 --> 00:21:50,400
+check, you know, Google their conditions
+
+521
+00:21:48,320 --> 00:21:52,000
+and stuff. So, it's been around for a
+
+522
+00:21:50,400 --> 00:21:53,679
+while. What I would say is different.
+
+523
+00:21:52,000 --> 00:21:56,720
+There's several differences. One of the
+
+524
+00:21:53,679 --> 00:21:58,480
+differences is that back then
+
+525
+00:21:56,720 --> 00:21:59,919
+people would Google a lot of it was
+
+526
+00:21:58,480 --> 00:22:02,720
+wrong. People didn't know how to sort
+
+527
+00:21:59,919 --> 00:22:04,720
+through that kind of stuff. And there
+
+528
+00:22:02,720 --> 00:22:08,000
+was a lot of resistance by the medical
+
+529
+00:22:04,720 --> 00:22:11,200
+community, right? And but I think scroll
+
+530
+00:22:08,000 --> 00:22:15,760
+ahead to now. I think AI could actually
+
+531
+00:22:11,200 --> 00:22:17,280
+be like a patient co-pilot or you know
+
+532
+00:22:15,760 --> 00:22:19,120
+really help patients and I think
+
+533
+00:22:17,280 --> 00:22:21,679
+physicians
+
+534
+00:22:19,120 --> 00:22:24,240
+you know uh many of them not all of them
+
+535
+00:22:21,679 --> 00:22:26,799
+are less resistant see it as an
+
+536
+00:22:24,240 --> 00:22:29,360
+opportunity right because I I really
+
+537
+00:22:26,799 --> 00:22:31,760
+like when my patients know know things
+
+538
+00:22:29,360 --> 00:22:34,559
+you know I I want them to be engaged in
+
+539
+00:22:31,760 --> 00:22:36,480
+their um health and their health care
+
+540
+00:22:34,559 --> 00:22:39,280
+but I think there's a responsibility on
+
+541
+00:22:36,480 --> 00:22:43,440
+the patients too right what you
+
+542
+00:22:39,280 --> 00:22:46,720
+or what you get from chat GBT cla or any
+
+543
+00:22:43,440 --> 00:22:49,840
+of these other um large language models
+
+544
+00:22:46,720 --> 00:22:52,640
+LLMs um may is not the definitive
+
+545
+00:22:49,840 --> 00:22:55,280
+answer. It may not be accurate. They
+
+546
+00:22:52,640 --> 00:22:57,280
+don't have the context. They don't know
+
+547
+00:22:55,280 --> 00:22:58,720
+you. You may not give it all the right
+
+548
+00:22:57,280 --> 00:23:00,559
+information. When you sit with your
+
+549
+00:22:58,720 --> 00:23:02,720
+doctor and you come with that
+
+550
+00:23:00,559 --> 00:23:05,600
+information, it's the start of the
+
+551
+00:23:02,720 --> 00:23:09,280
+conversation. It's not the I found on
+
+552
+00:23:05,600 --> 00:23:12,080
+chat GPT that I have, you know, I must
+
+553
+00:23:09,280 --> 00:23:14,640
+have lung cancer, right? No, that's not
+
+554
+00:23:12,080 --> 00:23:15,919
+that's not how that should work. It
+
+555
+00:23:14,640 --> 00:23:18,880
+should be the beginning of that
+
+556
+00:23:15,919 --> 00:23:21,440
+conversation and it takes it to a
+
+557
+00:23:18,880 --> 00:23:22,880
+different level, right? As a physician,
+
+558
+00:23:21,440 --> 00:23:24,240
+you're not starting from scratch. You're
+
+559
+00:23:22,880 --> 00:23:26,559
+like, "Oh, well, so tell me a little bit
+
+560
+00:23:24,240 --> 00:23:28,640
+about what you found." Well, here, let
+
+561
+00:23:26,559 --> 00:23:31,120
+me tell you why that's not quite right.
+
+562
+00:23:28,640 --> 00:23:33,440
+I did this test and it showed this. It
+
+563
+00:23:31,120 --> 00:23:37,039
+showed that. So I think it could be a
+
+564
+00:23:33,440 --> 00:23:39,360
+good thing as long as both physicians
+
+565
+00:23:37,039 --> 00:23:42,240
+kind of know you know how to work with
+
+566
+00:23:39,360 --> 00:23:45,280
+it and patients also know how to work
+
+567
+00:23:42,240 --> 00:23:47,039
+with it. So I think overall equals the
+
+568
+00:23:45,280 --> 00:23:49,360
+playing field a bit levels the playing
+
+569
+00:23:47,039 --> 00:23:51,600
+field which I think is good because in
+
+570
+00:23:49,360 --> 00:23:53,200
+medicine we've traditionally been a very
+
+571
+00:23:51,600 --> 00:23:55,679
+paternalistic
+
+572
+00:23:53,200 --> 00:23:58,799
+um field but I I I like the fact that it
+
+573
+00:23:55,679 --> 00:24:01,679
+can help empower patients and prepare
+
+574
+00:23:58,799 --> 00:24:03,120
+them for their care. So I see it on
+
+575
+00:24:01,679 --> 00:24:06,480
+balance as a good thing.
+
+576
+00:24:03,120 --> 00:24:11,120
+It kind of kind of gets into the, you
+
+577
+00:24:06,480 --> 00:24:13,120
+know, the it's the the edges of uh of
+
+578
+00:24:11,120 --> 00:24:15,919
+real governance. You you've written on
+
+579
+00:24:13,120 --> 00:24:17,919
+AI and accountability in care when AI
+
+580
+00:24:15,919 --> 00:24:20,559
+shapes a diagnostic recommendation or
+
+581
+00:24:17,919 --> 00:24:23,120
+flags of coverage denial, who actually
+
+582
+00:24:20,559 --> 00:24:25,360
+owns that outcome in your opinion?
+
+583
+00:24:23,120 --> 00:24:28,480
+Yeah. Okay. That's a complex issue. If
+
+584
+00:24:25,360 --> 00:24:31,200
+you're using it in your practice, you as
+
+585
+00:24:28,480 --> 00:24:36,480
+the clinician, the practice is
+
+586
+00:24:31,200 --> 00:24:41,120
+responsible for the output of that AI
+
+587
+00:24:36,480 --> 00:24:43,760
+because you as the clinician or provider
+
+588
+00:24:41,120 --> 00:24:47,600
+are the individuals or organization that
+
+589
+00:24:43,760 --> 00:24:51,120
+is delivering the care, right? The LLM,
+
+590
+00:24:47,600 --> 00:24:53,679
+the GPTs or whatever they are or the AI
+
+591
+00:24:51,120 --> 00:24:55,120
+are tools in your practice. So you have
+
+592
+00:24:53,679 --> 00:24:57,360
+to look at them as tools in your
+
+593
+00:24:55,120 --> 00:24:59,679
+practice. They are not delivering that
+
+594
+00:24:57,360 --> 00:25:02,000
+care. So it's who is responsible for the
+
+595
+00:24:59,679 --> 00:25:04,320
+delivery of the care. A physician has
+
+596
+00:25:02,000 --> 00:25:06,960
+the relationship with the patient. If
+
+597
+00:25:04,320 --> 00:25:09,360
+you're using AI and it tells you
+
+598
+00:25:06,960 --> 00:25:12,159
+something or it does something
+
+599
+00:25:09,360 --> 00:25:14,480
+autonomously for the patient, you are
+
+600
+00:25:12,159 --> 00:25:18,159
+still that practice that physician is
+
+601
+00:25:14,480 --> 00:25:21,279
+still responsible for the care. So
+
+602
+00:25:18,159 --> 00:25:25,360
+always the physician or the practice.
+
+603
+00:25:21,279 --> 00:25:28,559
+You also talk about the approach to to
+
+604
+00:25:25,360 --> 00:25:30,880
+designing AI. You know, essentially
+
+605
+00:25:28,559 --> 00:25:33,120
+you're I think that you're agreeing with
+
+606
+00:25:30,880 --> 00:25:34,559
+probably almost any any physician I've
+
+607
+00:25:33,120 --> 00:25:36,080
+had a chance to talk to in the last
+
+608
+00:25:34,559 --> 00:25:37,760
+several months. Almost everyone's
+
+609
+00:25:36,080 --> 00:25:40,080
+telling me the same thing. You said we
+
+610
+00:25:37,760 --> 00:25:42,000
+need to design AI with care providers,
+
+611
+00:25:40,080 --> 00:25:44,720
+not around them. Where have you watched
+
+612
+00:25:42,000 --> 00:25:46,240
+that step get skipped and what broke as
+
+613
+00:25:44,720 --> 00:25:48,480
+a result of it?
+
+614
+00:25:46,240 --> 00:25:52,799
+Yeah. Wow, that's a great question. I've
+
+615
+00:25:48,480 --> 00:25:57,279
+talked to a lot of well-meaning founders
+
+616
+00:25:52,799 --> 00:25:59,600
+of startups and you know not having
+
+617
+00:25:57,279 --> 00:26:03,440
+somebody that's either a co-founder with
+
+618
+00:25:59,600 --> 00:26:06,400
+you or within that leadership structure
+
+619
+00:26:03,440 --> 00:26:09,760
+who is a clinician and I believe it
+
+620
+00:26:06,400 --> 00:26:13,039
+should be a physician means that you may
+
+621
+00:26:09,760 --> 00:26:15,840
+identify a problem but there's a good
+
+622
+00:26:13,039 --> 00:26:17,679
+chance you have not found that solution
+
+623
+00:26:15,840 --> 00:26:21,520
+or you're not creating the solution.
+
+624
+00:26:17,679 --> 00:26:24,320
+solution. Physicians know how care is
+
+625
+00:26:21,520 --> 00:26:26,880
+delivered. We know our patients. We know
+
+626
+00:26:24,320 --> 00:26:31,279
+what works, right? You could be smart,
+
+627
+00:26:26,880 --> 00:26:33,039
+but a business degree or a com computer
+
+628
+00:26:31,279 --> 00:26:35,360
+or I should say software engineering
+
+629
+00:26:33,039 --> 00:26:37,840
+degree does not
+
+630
+00:26:35,360 --> 00:26:40,480
+make you an expert in healthcare.
+
+631
+00:26:37,840 --> 00:26:44,159
+So that's foundational right from the
+
+632
+00:26:40,480 --> 00:26:45,840
+start. And I have talked to founders who
+
+633
+00:26:44,159 --> 00:26:47,679
+identify the problem and I'm like that's
+
+634
+00:26:45,840 --> 00:26:49,279
+great. I know you want to solve this but
+
+635
+00:26:47,679 --> 00:26:52,240
+then they come up with a solution which
+
+636
+00:26:49,279 --> 00:26:54,960
+doesn't which probably wouldn't fit
+
+637
+00:26:52,240 --> 00:26:58,720
+right. The other thing too is physicians
+
+638
+00:26:54,960 --> 00:27:02,960
+have to use these tools right so not
+
+639
+00:26:58,720 --> 00:27:06,799
+having them in the loop is probably not
+
+640
+00:27:02,960 --> 00:27:09,679
+that probably not the wisest uh
+
+641
+00:27:06,799 --> 00:27:12,720
+approach. So and the reason why I think
+
+642
+00:27:09,679 --> 00:27:16,400
+this happens that physicians are not uh
+
+643
+00:27:12,720 --> 00:27:18,880
+brought in early in in some cases. I
+
+644
+00:27:16,400 --> 00:27:23,279
+think we may be seen because we have the
+
+645
+00:27:18,880 --> 00:27:26,320
+ethos of do no harm and people you know
+
+646
+00:27:23,279 --> 00:27:29,200
+startups have the ethos of work fast
+
+647
+00:27:26,320 --> 00:27:32,880
+break things. There could be some seen
+
+648
+00:27:29,200 --> 00:27:35,120
+as some conflict between those two. And
+
+649
+00:27:32,880 --> 00:27:38,080
+what I see is that people who are
+
+650
+00:27:35,120 --> 00:27:41,279
+inventors or innovators, I think some of
+
+651
+00:27:38,080 --> 00:27:45,039
+that speed in getting things done could
+
+652
+00:27:41,279 --> 00:27:47,600
+rub off on physicians and physicians
+
+653
+00:27:45,039 --> 00:27:50,240
+there do no harm either should rub off
+
+654
+00:27:47,600 --> 00:27:52,320
+on the innovators. So I see that as
+
+655
+00:27:50,240 --> 00:27:54,399
+really important that it's they work
+
+656
+00:27:52,320 --> 00:27:57,120
+together because at the end of the day
+
+657
+00:27:54,399 --> 00:27:58,799
+we do not want software engineers doing
+
+658
+00:27:57,120 --> 00:28:01,279
+healthcare. I don't think they want to
+
+659
+00:27:58,799 --> 00:28:03,200
+do healthcare. But that's at the end of
+
+660
+00:28:01,279 --> 00:28:05,279
+the day that's brilliant.
+
+661
+00:28:03,200 --> 00:28:07,279
+It's it's interesting. I I've seen it go
+
+662
+00:28:05,279 --> 00:28:09,679
+the other direction. I've seen some
+
+663
+00:28:07,279 --> 00:28:11,600
+brilliant uh clinicians who have
+
+664
+00:28:09,679 --> 00:28:14,799
+developed really great solutions for
+
+665
+00:28:11,600 --> 00:28:16,880
+things and that's always been like
+
+666
+00:28:14,799 --> 00:28:18,720
+beyond my ability to comprehend how
+
+667
+00:28:16,880 --> 00:28:20,960
+someone can
+
+668
+00:28:18,720 --> 00:28:23,600
+have so many different things going at
+
+669
+00:28:20,960 --> 00:28:26,559
+the same time and that creative things.
+
+670
+00:28:23,600 --> 00:28:28,720
+it it just seems to manifest itself in
+
+671
+00:28:26,559 --> 00:28:31,120
+really interesting technologies. I I had
+
+672
+00:28:28,720 --> 00:28:33,520
+a chance a number of years ago to to
+
+673
+00:28:31,120 --> 00:28:35,840
+work with a was a pediatric neurosurgeon
+
+674
+00:28:33,520 --> 00:28:39,120
+and he actually developed some software
+
+675
+00:28:35,840 --> 00:28:40,159
+in his garage. Uh I think he probably
+
+676
+00:28:39,120 --> 00:28:41,840
+used like four or five different
+
+677
+00:28:40,159 --> 00:28:43,360
+programming languages and every once in
+
+678
+00:28:41,840 --> 00:28:45,200
+a while he'd see something that inspired
+
+679
+00:28:43,360 --> 00:28:47,120
+him. He he'd go figure out how to use
+
+680
+00:28:45,200 --> 00:28:50,480
+that that language and he put it into
+
+681
+00:28:47,120 --> 00:28:54,159
+his tool. But I you know mind-blowing. I
+
+682
+00:28:50,480 --> 00:28:58,159
+think it's easier to teach physicians
+
+683
+00:28:54,159 --> 00:29:00,799
+how to be in innovators and business
+
+684
+00:28:58,159 --> 00:29:03,440
+than it is to teach you know business
+
+685
+00:29:00,799 --> 00:29:06,240
+people healthcare right because you know
+
+686
+00:29:03,440 --> 00:29:08,880
+I spent many years in school I spent
+
+687
+00:29:06,240 --> 00:29:10,159
+years in training um at extra training I
+
+688
+00:29:08,880 --> 00:29:12,880
+had at one time three board
+
+689
+00:29:10,159 --> 00:29:15,600
+certifications so learning that does not
+
+690
+00:29:12,880 --> 00:29:18,000
+happen quickly I know a lot of people
+
+691
+00:29:15,600 --> 00:29:19,600
+think you know they know healthcare I
+
+692
+00:29:18,000 --> 00:29:21,440
+think we're seeing we're in a transition
+
+693
+00:29:19,600 --> 00:29:24,320
+itional period where we're seeing a lot
+
+694
+00:29:21,440 --> 00:29:27,600
+of physicians who not only have business
+
+695
+00:29:24,320 --> 00:29:30,399
+degrees. I have a business degree but
+
+696
+00:29:27,600 --> 00:29:33,120
+also are in the innovation field
+
+697
+00:29:30,399 --> 00:29:34,799
+developing technologies. And it's
+
+698
+00:29:33,120 --> 00:29:36,720
+especially important that it's people
+
+699
+00:29:34,799 --> 00:29:39,279
+who've practiced, right? The nuros
+
+700
+00:29:36,720 --> 00:29:41,440
+surgeon that you site probably been
+
+701
+00:29:39,279 --> 00:29:43,360
+practicing for a good number of years
+
+702
+00:29:41,440 --> 00:29:45,440
+and over and over again we see the same
+
+703
+00:29:43,360 --> 00:29:47,200
+problems and we say we need to fix this.
+
+704
+00:29:45,440 --> 00:29:50,320
+Right? But there wasn't a day that went
+
+705
+00:29:47,200 --> 00:29:52,399
+by I was in the ER like why can't we fix
+
+706
+00:29:50,320 --> 00:29:55,200
+this particular thing and I would say
+
+707
+00:29:52,399 --> 00:29:58,000
+even early in my career I was like why
+
+708
+00:29:55,200 --> 00:30:01,120
+are we handwriting notes why can't we
+
+709
+00:29:58,000 --> 00:30:03,919
+have electronic records and and you know
+
+710
+00:30:01,120 --> 00:30:07,840
+I did try and create something but
+
+711
+00:30:03,919 --> 00:30:10,799
+didn't work out uh but we but that's you
+
+712
+00:30:07,840 --> 00:30:12,960
+know we want to we want to uh fix the
+
+713
+00:30:10,799 --> 00:30:15,039
+problems that are in healthcare so
+
+714
+00:30:12,960 --> 00:30:16,399
+it it is amazing I think the first
+
+715
+00:30:15,039 --> 00:30:18,880
+couple of months And when I launched my
+
+716
+00:30:16,399 --> 00:30:21,679
+my company, there were I would say it
+
+717
+00:30:18,880 --> 00:30:23,200
+was almost a third of the people I would
+
+718
+00:30:21,679 --> 00:30:25,120
+meet
+
+719
+00:30:23,200 --> 00:30:27,520
+that were founders. About a third of
+
+720
+00:30:25,120 --> 00:30:29,200
+them were were physicians. And you know,
+
+721
+00:30:27,520 --> 00:30:31,840
+it was that's one of the things that
+
+722
+00:30:29,200 --> 00:30:34,480
+motivated me to to to start this
+
+723
+00:30:31,840 --> 00:30:36,080
+platform to to give people a voice that
+
+724
+00:30:34,480 --> 00:30:39,279
+that really have something to say about
+
+725
+00:30:36,080 --> 00:30:41,360
+this stuff because you people aren't
+
+726
+00:30:39,279 --> 00:30:42,880
+inventing things because everything's
+
+727
+00:30:41,360 --> 00:30:43,279
+working for them in their electronic
+
+728
+00:30:42,880 --> 00:30:44,159
+healthare,
+
+729
+00:30:43,279 --> 00:30:46,000
+right?
+
+730
+00:30:44,159 --> 00:30:47,600
+There's there's fs
+
+731
+00:30:46,000 --> 00:30:49,520
+across the board. I think everybody
+
+732
+00:30:47,600 --> 00:30:51,840
+knows that our health system is broken
+
+733
+00:30:49,520 --> 00:30:53,600
+and and has problems. But the one thing
+
+734
+00:30:51,840 --> 00:30:56,080
+is and I don't have the statistic for
+
+735
+00:30:53,600 --> 00:30:58,320
+it, but I know it's true that the most
+
+736
+00:30:56,080 --> 00:31:00,720
+successful health startups have
+
+737
+00:30:58,320 --> 00:31:02,559
+physicians as founders or co-founders.
+
+738
+00:31:00,720 --> 00:31:05,120
+Yeah, that's that's not surprising to me
+
+739
+00:31:02,559 --> 00:31:07,919
+at all. It's it's a strange approach
+
+740
+00:31:05,120 --> 00:31:09,600
+that's I've seen it in even working in
+
+741
+00:31:07,919 --> 00:31:11,440
+revenue cycle systems years ago and I'm
+
+742
+00:31:09,600 --> 00:31:13,840
+sure I'm sure you've been around this
+
+743
+00:31:11,440 --> 00:31:15,919
+too. one of the a vendor that you've
+
+744
+00:31:13,840 --> 00:31:18,480
+you've been working with for years, they
+
+745
+00:31:15,919 --> 00:31:20,080
+want to do something uh unique to really
+
+746
+00:31:18,480 --> 00:31:21,679
+take a nice leap forward and give you
+
+747
+00:31:20,080 --> 00:31:24,080
+better capability. So, they come in,
+
+748
+00:31:21,679 --> 00:31:25,440
+they conduct a few interviews of
+
+749
+00:31:24,080 --> 00:31:27,600
+sometimes they'll do that as much as a
+
+750
+00:31:25,440 --> 00:31:30,960
+week. Uh then they go away for a while
+
+751
+00:31:27,600 --> 00:31:32,480
+and spring a new product on you that
+
+752
+00:31:30,960 --> 00:31:34,000
+doesn't even resemble the things that
+
+753
+00:31:32,480 --> 00:31:35,520
+you talked about when they did the
+
+754
+00:31:34,000 --> 00:31:37,039
+interview and they they don't understand
+
+755
+00:31:35,520 --> 00:31:38,240
+why you don't want to use it. That's why
+
+756
+00:31:37,039 --> 00:31:40,480
+you have to have the people who are
+
+757
+00:31:38,240 --> 00:31:42,399
+using it there and it's critically
+
+758
+00:31:40,480 --> 00:31:44,080
+important and I found this out when I
+
+759
+00:31:42,399 --> 00:31:46,880
+was at the VA. We were doing electronic
+
+760
+00:31:44,080 --> 00:31:50,240
+health record deployments. We did have
+
+761
+00:31:46,880 --> 00:31:53,360
+the end users there. But changing how
+
+762
+00:31:50,240 --> 00:31:57,200
+they did their work really can be
+
+763
+00:31:53,360 --> 00:32:00,559
+upsetting. It's disruptive. Um and so
+
+764
+00:31:57,200 --> 00:32:02,159
+having the clinicians there could help
+
+765
+00:32:00,559 --> 00:32:04,640
+smooth that out. They can help with
+
+766
+00:32:02,159 --> 00:32:07,279
+product design. They can help with how
+
+767
+00:32:04,640 --> 00:32:09,679
+it's being used. And that's critically
+
+768
+00:32:07,279 --> 00:32:12,399
+important because if the end user won't
+
+769
+00:32:09,679 --> 00:32:15,039
+use it or they used workarounds then
+
+770
+00:32:12,399 --> 00:32:17,840
+your efforts have gone to waste.
+
+771
+00:32:15,039 --> 00:32:19,840
+Let's talk about a couple of different
+
+772
+00:32:17,840 --> 00:32:21,120
+things. No,
+
+773
+00:32:19,840 --> 00:32:24,399
+one of the things that you've mentioned
+
+774
+00:32:21,120 --> 00:32:26,320
+to me that previously was um some of the
+
+775
+00:32:24,399 --> 00:32:27,519
+policies that are in place now that
+
+776
+00:32:26,320 --> 00:32:31,120
+rules for maintaining board
+
+777
+00:32:27,519 --> 00:32:32,880
+certification forbidding use of AI to
+
+778
+00:32:31,120 --> 00:32:34,880
+answer exam questions being one of
+
+779
+00:32:32,880 --> 00:32:36,799
+those. Yeah. In real practice, you know,
+
+780
+00:32:34,880 --> 00:32:38,880
+clinicians, you know, they consult
+
+781
+00:32:36,799 --> 00:32:40,880
+outside evidence constantly. What does
+
+782
+00:32:38,880 --> 00:32:43,440
+that tell us when the way we test
+
+783
+00:32:40,880 --> 00:32:45,039
+doctors is out of step with the way they
+
+784
+00:32:43,440 --> 00:32:47,039
+actually practice?
+
+785
+00:32:45,039 --> 00:32:48,880
+Yeah. Well, first I have to say I am
+
+786
+00:32:47,039 --> 00:32:50,480
+only aware of my board certification,
+
+787
+00:32:48,880 --> 00:32:52,320
+the American Board of Pediatrics. They
+
+788
+00:32:50,480 --> 00:32:54,960
+say you can't use AI to answer the
+
+789
+00:32:52,320 --> 00:32:57,840
+questions. But I think, you know, just
+
+790
+00:32:54,960 --> 00:33:00,320
+like other parts of of health and health
+
+791
+00:32:57,840 --> 00:33:02,880
+care, the whole environment, they're
+
+792
+00:33:00,320 --> 00:33:07,039
+going to have to catch up. And you know
+
+793
+00:33:02,880 --> 00:33:10,799
+the old way of doing things uh was to
+
+794
+00:33:07,039 --> 00:33:13,120
+memorize right we you learn a boatload
+
+795
+00:33:10,799 --> 00:33:16,240
+of stuff during medical school and
+
+796
+00:33:13,120 --> 00:33:18,159
+you're supposed to um memorize all of
+
+797
+00:33:16,240 --> 00:33:20,640
+these things and then you know memorize
+
+798
+00:33:18,159 --> 00:33:23,039
+the crab cycle and then you take board
+
+799
+00:33:20,640 --> 00:33:25,279
+exams and we take several exams. We
+
+800
+00:33:23,039 --> 00:33:27,279
+take, you know, uh, boards, you know,
+
+801
+00:33:25,279 --> 00:33:28,799
+part one, two, three, and then we take
+
+802
+00:33:27,279 --> 00:33:30,960
+our specialty boards and our subsp
+
+803
+00:33:28,799 --> 00:33:34,399
+specialty boards. And it was the
+
+804
+00:33:30,960 --> 00:33:37,200
+oldfashioned way was memorizing a lot of
+
+805
+00:33:34,399 --> 00:33:39,440
+facts and material, but that doesn't
+
+806
+00:33:37,200 --> 00:33:42,640
+align with how we practice medicine,
+
+807
+00:33:39,440 --> 00:33:45,840
+right? We've had these clinical decision
+
+808
+00:33:42,640 --> 00:33:49,200
+support tools at our fingertips for a
+
+809
+00:33:45,840 --> 00:33:51,440
+while now. uh things like up todate
+
+810
+00:33:49,200 --> 00:33:55,200
+algorithms from our professional
+
+811
+00:33:51,440 --> 00:33:57,840
+societies and now AI with uh tools like
+
+812
+00:33:55,200 --> 00:33:59,679
+open evidence and there's others as well
+
+813
+00:33:57,840 --> 00:34:02,799
+that I've used. You know when you're
+
+814
+00:33:59,679 --> 00:34:05,760
+practicing you don't have to rely on a
+
+815
+00:34:02,799 --> 00:34:09,679
+memorization necessarily to extract that
+
+816
+00:34:05,760 --> 00:34:12,000
+information. So, the testing for keeping
+
+817
+00:34:09,679 --> 00:34:15,760
+up your board certification needs to
+
+818
+00:34:12,000 --> 00:34:17,520
+kind of come up come up and be a more
+
+819
+00:34:15,760 --> 00:34:19,760
+aligned with how we really practice
+
+820
+00:34:17,520 --> 00:34:21,440
+medicine. Not that I don't think
+
+821
+00:34:19,760 --> 00:34:23,679
+memorization's important. I still think
+
+822
+00:34:21,440 --> 00:34:25,919
+in in medical school it's important to
+
+823
+00:34:23,679 --> 00:34:28,560
+memorize a lot of these facts so that
+
+824
+00:34:25,919 --> 00:34:30,079
+you have them and and have a very good
+
+825
+00:34:28,560 --> 00:34:32,000
+understanding.
+
+826
+00:34:30,079 --> 00:34:35,119
+But when it comes to later in your
+
+827
+00:34:32,000 --> 00:34:38,000
+career after you've practiced, you know,
+
+828
+00:34:35,119 --> 00:34:40,639
+asking to regurgitate facts is probably
+
+829
+00:34:38,000 --> 00:34:43,040
+not the best way uh to test physicians.
+
+830
+00:34:40,639 --> 00:34:46,800
+So, we need to think about ways that we
+
+831
+00:34:43,040 --> 00:34:49,760
+can we can use AI to update how we
+
+832
+00:34:46,800 --> 00:34:54,000
+assess uh physician uh capabilities.
+
+833
+00:34:49,760 --> 00:34:56,639
+I'm curious about the the way medical
+
+834
+00:34:54,000 --> 00:35:00,560
+the medical schools run now. Do you have
+
+835
+00:34:56,639 --> 00:35:03,599
+concerns um that they start to get
+
+836
+00:35:00,560 --> 00:35:06,560
+people using this AI early on in in
+
+837
+00:35:03,599 --> 00:35:09,119
+their training? Uh what I'm kind of
+
+838
+00:35:06,560 --> 00:35:11,200
+getting at there is there's a lot of
+
+839
+00:35:09,119 --> 00:35:12,800
+stuff that you go through. I mean, I
+
+840
+00:35:11,200 --> 00:35:15,520
+know I don't know the half of it, but
+
+841
+00:35:12,800 --> 00:35:19,119
+you go through all the all the the class
+
+842
+00:35:15,520 --> 00:35:21,280
+time, all the you know, all the uh
+
+843
+00:35:19,119 --> 00:35:23,119
+rotations with when you're doing a
+
+844
+00:35:21,280 --> 00:35:25,359
+residency, all those types of things. I
+
+845
+00:35:23,119 --> 00:35:27,200
+I wonder if there's a a [snorts] need to
+
+846
+00:35:25,359 --> 00:35:29,680
+make sure that we're not I don't want to
+
+847
+00:35:27,200 --> 00:35:31,839
+call say dumbing it down, but I mean I
+
+848
+00:35:29,680 --> 00:35:33,760
+think there's a risk maybe for for
+
+849
+00:35:31,839 --> 00:35:35,839
+inhibiting the development, the
+
+850
+00:35:33,760 --> 00:35:38,000
+reasoning and the judgment that has to
+
+851
+00:35:35,839 --> 00:35:40,000
+be be ingrained in someone when they're
+
+852
+00:35:38,000 --> 00:35:40,880
+being taught how to how to be a
+
+853
+00:35:40,000 --> 00:35:43,440
+physician.
+
+854
+00:35:40,880 --> 00:35:46,160
+Yeah. No, and I think medical educators
+
+855
+00:35:43,440 --> 00:35:48,720
+are aware of that. Um, and it is, you
+
+856
+00:35:46,160 --> 00:35:52,640
+know, a concern that those critical
+
+857
+00:35:48,720 --> 00:35:57,040
+thinking skills and, you know, I'm
+
+858
+00:35:52,640 --> 00:35:58,880
+hopeful that it'll it may change how we
+
+859
+00:35:57,040 --> 00:36:00,640
+operate and work, but that we would
+
+860
+00:35:58,880 --> 00:36:02,880
+still need those critical thinking
+
+861
+00:36:00,640 --> 00:36:06,160
+skills. Um, and we just need to figure
+
+862
+00:36:02,880 --> 00:36:08,400
+out how we uh promote that and cult
+
+863
+00:36:06,160 --> 00:36:10,720
+cultivate that, but it'll be in
+
+864
+00:36:08,400 --> 00:36:13,839
+different ways because we can't say no
+
+865
+00:36:10,720 --> 00:36:15,920
+to AI when it's being used already
+
+866
+00:36:13,839 --> 00:36:18,720
+pretty extensively. So, I think it's
+
+867
+00:36:15,920 --> 00:36:22,320
+going to be up to medical educators to
+
+868
+00:36:18,720 --> 00:36:24,320
+kind of think about how we educate for
+
+869
+00:36:22,320 --> 00:36:26,880
+the future, right? And I think they're
+
+870
+00:36:24,320 --> 00:36:28,880
+starting to do that. I want to get into
+
+871
+00:36:26,880 --> 00:36:31,040
+another area. And this one's interesting
+
+872
+00:36:28,880 --> 00:36:34,240
+for me because I because you're you're
+
+873
+00:36:31,040 --> 00:36:36,079
+um you're also heavily involved in in in
+
+874
+00:36:34,240 --> 00:36:38,720
+public policy and you obviously you've
+
+875
+00:36:36,079 --> 00:36:41,040
+worked in in government as well. The
+
+876
+00:36:38,720 --> 00:36:42,880
+concept of informed consent. Uh there's
+
+877
+00:36:41,040 --> 00:36:44,400
+a lot of conversations that are
+
+878
+00:36:42,880 --> 00:36:47,599
+happening especially now because there's
+
+879
+00:36:44,400 --> 00:36:49,119
+been some some lawsuits because of the
+
+880
+00:36:47,599 --> 00:36:51,520
+how how things have been implemented
+
+881
+00:36:49,119 --> 00:36:54,000
+with ambient listening. uh how do you
+
+882
+00:36:51,520 --> 00:36:56,720
+think about that and and what is it that
+
+883
+00:36:54,000 --> 00:36:58,480
+we need to be be doing in order to help
+
+884
+00:36:56,720 --> 00:37:00,560
+a patient to understand what it is
+
+885
+00:36:58,480 --> 00:37:02,960
+they're consenting to because I don't
+
+886
+00:37:00,560 --> 00:37:04,800
+think historically we've done a good job
+
+887
+00:37:02,960 --> 00:37:07,119
+of even explaining the the informed
+
+888
+00:37:04,800 --> 00:37:09,359
+consent even in the way that it was was
+
+889
+00:37:07,119 --> 00:37:10,640
+prior to you know this this whole
+
+890
+00:37:09,359 --> 00:37:12,160
+ambient listening thing.
+
+891
+00:37:10,640 --> 00:37:14,720
+Yeah. Um I think there's been people
+
+892
+00:37:12,160 --> 00:37:17,119
+who've criticized um informed consent,
+
+893
+00:37:14,720 --> 00:37:20,079
+but informed consent is critically
+
+894
+00:37:17,119 --> 00:37:23,119
+important, right? Because if you know
+
+895
+00:37:20,079 --> 00:37:25,040
+you're of sound mind, you're an adult,
+
+896
+00:37:23,119 --> 00:37:26,560
+you should be making decisions about
+
+897
+00:37:25,040 --> 00:37:27,040
+your care, right?
+
+898
+00:37:26,560 --> 00:37:29,680
+Right.
+
+899
+00:37:27,040 --> 00:37:32,720
+So there's different levels of consent.
+
+900
+00:37:29,680 --> 00:37:34,240
+There's consent somebody just to walk in
+
+901
+00:37:32,720 --> 00:37:36,160
+the emergency department that you
+
+902
+00:37:34,240 --> 00:37:37,920
+consent to somebody delivering your
+
+903
+00:37:36,160 --> 00:37:40,000
+care. Right. So,
+
+904
+00:37:37,920 --> 00:37:42,800
+um, I don't need extra consent for
+
+905
+00:37:40,000 --> 00:37:44,079
+drawing blood, getting X-rays, doing a
+
+906
+00:37:42,800 --> 00:37:45,440
+physical exam.
+
+907
+00:37:44,079 --> 00:37:48,640
+But if you're doing something more
+
+908
+00:37:45,440 --> 00:37:52,320
+invasive, then you need an additional
+
+909
+00:37:48,640 --> 00:37:56,160
+consent. And that always involves laying
+
+910
+00:37:52,320 --> 00:37:58,320
+out what it is that you're going to do,
+
+911
+00:37:56,160 --> 00:38:00,240
+emphasizing that this is a choice. You
+
+912
+00:37:58,320 --> 00:38:01,920
+don't have to do it, but if you don't,
+
+913
+00:38:00,240 --> 00:38:04,880
+here's what's going to happen. and the
+
+914
+00:38:01,920 --> 00:38:07,280
+pros and cons of that particular whether
+
+915
+00:38:04,880 --> 00:38:11,440
+it's surgery whether it's a procedure
+
+916
+00:38:07,280 --> 00:38:14,720
+when it comes to ambient AI scribing the
+
+917
+00:38:11,440 --> 00:38:18,000
+central issue is is privacy right and
+
+918
+00:38:14,720 --> 00:38:21,280
+being informed means that the patient
+
+919
+00:38:18,000 --> 00:38:23,680
+understands where that recording is
+
+920
+00:38:21,280 --> 00:38:27,599
+going where it's stored and what are the
+
+921
+00:38:23,680 --> 00:38:30,000
+privacy safeguards uh how long it is
+
+922
+00:38:27,599 --> 00:38:33,359
+stored uh whether or not they have a
+
+923
+00:38:30,000 --> 00:38:35,520
+choice to use AI scribe or not. So,
+
+924
+00:38:33,359 --> 00:38:37,280
+those are some of the things that
+
+925
+00:38:35,520 --> 00:38:40,079
+patients need to look out for, but
+
+926
+00:38:37,280 --> 00:38:42,880
+physicians need to really be um
+
+927
+00:38:40,079 --> 00:38:45,280
+intentional. When a patient walks into
+
+928
+00:38:42,880 --> 00:38:47,920
+their room, they need to say, "I use
+
+929
+00:38:45,280 --> 00:38:51,920
+something called an ambient AI scribe.
+
+930
+00:38:47,920 --> 00:38:54,960
+It is a recording. We keep it only for a
+
+931
+00:38:51,920 --> 00:38:58,000
+month. It is you we follow all the laws
+
+932
+00:38:54,960 --> 00:39:01,200
+with HIPPA and so on. do are you okay
+
+933
+00:38:58,000 --> 00:39:01,599
+with me using this ambient AI scribe?
+
+934
+00:39:01,200 --> 00:39:02,079
+Right.
+
+935
+00:39:01,599 --> 00:39:04,560
+Right.
+
+936
+00:39:02,079 --> 00:39:07,359
+Um that's informed. Right. That took a
+
+937
+00:39:04,560 --> 00:39:08,640
+couple that took a minute. Right. But I
+
+938
+00:39:07,359 --> 00:39:10,720
+really believe that if you're going to
+
+939
+00:39:08,640 --> 00:39:12,960
+use something like that where privacy
+
+940
+00:39:10,720 --> 00:39:14,720
+can become a concern, then I think you
+
+941
+00:39:12,960 --> 00:39:16,240
+know consent should be had. Now not
+
+942
+00:39:14,720 --> 00:39:19,040
+everybody believes that way. I've been
+
+943
+00:39:16,240 --> 00:39:21,599
+in rooms where people have said, "Oh, I
+
+944
+00:39:19,040 --> 00:39:23,599
+wouldn't ask for consent." There was a a
+
+945
+00:39:21,599 --> 00:39:27,119
+conference I went to where they were
+
+946
+00:39:23,599 --> 00:39:30,000
+talking about a chatbot that does
+
+947
+00:39:27,119 --> 00:39:33,359
+appointments and all that pre-appoint
+
+948
+00:39:30,000 --> 00:39:35,359
+work. And I asked, "Well, do you get
+
+949
+00:39:33,359 --> 00:39:37,520
+consent? Um, do you think you have to
+
+950
+00:39:35,359 --> 00:39:40,297
+get consent?" And half the room said,
+
+951
+00:39:37,520 --> 00:39:41,040
+"No." And I'm like, "Well, yes.
+
+952
+00:39:40,297 --> 00:39:43,839
+[laughter]
+
+953
+00:39:41,040 --> 00:39:45,760
+I mean, yes, you need to tell, you know,
+
+954
+00:39:43,839 --> 00:39:47,359
+you need to at least say at the start,
+
+955
+00:39:45,760 --> 00:39:48,560
+this is a chatbot and I'm going to be
+
+956
+00:39:47,359 --> 00:39:50,079
+doing, you know, making your
+
+957
+00:39:48,560 --> 00:39:52,079
+appointment." That could be enough,
+
+958
+00:39:50,079 --> 00:39:54,640
+right? Because it's not such a big deal,
+
+959
+00:39:52,079 --> 00:39:57,920
+right? But with health care, there are
+
+960
+00:39:54,640 --> 00:39:59,920
+special regulations and policies around
+
+961
+00:39:57,920 --> 00:40:01,760
+privacy and we need to respect that.
+
+962
+00:39:59,920 --> 00:40:03,359
+Yeah, absolutely right. I think one of
+
+963
+00:40:01,760 --> 00:40:07,119
+the challenges that I've been concerned
+
+964
+00:40:03,359 --> 00:40:09,440
+about is how do we make it really easy
+
+965
+00:40:07,119 --> 00:40:12,240
+and consumable so that you know as a
+
+966
+00:40:09,440 --> 00:40:14,800
+physician you you don't have to go get
+
+967
+00:40:12,240 --> 00:40:18,000
+another degree to be able to explain AI.
+
+968
+00:40:14,800 --> 00:40:19,680
+I mean, I don't I don't mean to
+
+969
+00:40:18,000 --> 00:40:20,800
+be flip about. I'm just I just think
+
+970
+00:40:19,680 --> 00:40:23,119
+it's something that we have to think
+
+971
+00:40:20,800 --> 00:40:24,560
+about as we're as we're scaling.
+
+972
+00:40:23,119 --> 00:40:26,960
+And it's going to get there. It's going
+
+973
+00:40:24,560 --> 00:40:29,520
+to get there because we use tools all
+
+974
+00:40:26,960 --> 00:40:31,680
+the time that I couldn't tell you how it
+
+975
+00:40:29,520 --> 00:40:33,680
+works, but we use it. You just need to
+
+976
+00:40:31,680 --> 00:40:36,320
+get to that level of trust. But right
+
+977
+00:40:33,680 --> 00:40:39,280
+now, we're in this transitional period,
+
+978
+00:40:36,320 --> 00:40:42,560
+right, where more asking more permission
+
+979
+00:40:39,280 --> 00:40:43,839
+and consent is probably the better
+
+980
+00:40:42,560 --> 00:40:44,640
+practice right now.
+
+981
+00:40:43,839 --> 00:40:47,359
+Right.
+
+982
+00:40:44,640 --> 00:40:50,000
+We've talked about a few of the
+
+983
+00:40:47,359 --> 00:40:52,880
+challenges in and and some of the
+
+984
+00:40:50,000 --> 00:40:55,440
+interesting benefits, but one thing that
+
+985
+00:40:52,880 --> 00:40:58,000
+um I started to see this a few years ago
+
+986
+00:40:55,440 --> 00:40:59,440
+when I was was in New York um that there
+
+987
+00:40:58,000 --> 00:41:01,200
+was this big push to make sure that
+
+988
+00:40:59,440 --> 00:41:03,599
+we're we're giving people their test
+
+989
+00:41:01,200 --> 00:41:06,240
+results as quickly as we possibly can.
+
+990
+00:41:03,599 --> 00:41:08,079
+The pace now that we can do these
+
+991
+00:41:06,240 --> 00:41:09,920
+things, AI is kind of speeding that up
+
+992
+00:41:08,079 --> 00:41:11,440
+even further. What are your thoughts
+
+993
+00:41:09,920 --> 00:41:13,839
+around that? I I think one of the things
+
+994
+00:41:11,440 --> 00:41:16,800
+that was was concerning was getting a
+
+995
+00:41:13,839 --> 00:41:18,960
+diagnosis on a Friday that's coming out
+
+996
+00:41:16,800 --> 00:41:20,800
+of a lab result going into the weekend
+
+997
+00:41:18,960 --> 00:41:22,160
+and that then the results not something
+
+998
+00:41:20,800 --> 00:41:24,240
+that someone's going to be comfortable
+
+999
+00:41:22,160 --> 00:41:25,920
+with. Uh talk a little bit about that
+
+1000
+00:41:24,240 --> 00:41:28,480
+from your perspective and what we should
+
+1001
+00:41:25,920 --> 00:41:31,520
+be thinking about in trying to make sure
+
+1002
+00:41:28,480 --> 00:41:33,760
+that we're syncing up uh the the speed
+
+1003
+00:41:31,520 --> 00:41:35,440
+with uh the the actual preparation
+
+1004
+00:41:33,760 --> 00:41:36,240
+that's required to be responsible with
+
+1005
+00:41:35,440 --> 00:41:38,319
+it.
+
+1006
+00:41:36,240 --> 00:41:40,240
+Yeah. Yeah. Sometimes when laws are
+
+1007
+00:41:38,319 --> 00:41:44,480
+passed and this law was passed in the
+
+1008
+00:41:40,240 --> 00:41:46,400
+cures act, best intentions, but then the
+
+1009
+00:41:44,480 --> 00:41:49,680
+unintended consequences are not
+
+1010
+00:41:46,400 --> 00:41:52,640
+necessarily thought about. Right? So you
+
+1011
+00:41:49,680 --> 00:41:54,480
+identified a scenario where it would not
+
+1012
+00:41:52,640 --> 00:41:56,800
+be ideal that somebody gets their test
+
+1013
+00:41:54,480 --> 00:41:58,720
+results on a Friday night, right? I
+
+1014
+00:41:56,800 --> 00:42:00,960
+think overall it's a good thing because
+
+1015
+00:41:58,720 --> 00:42:04,400
+people should have access to their test
+
+1016
+00:42:00,960 --> 00:42:06,160
+results. uh the responsibility is on the
+
+1017
+00:42:04,400 --> 00:42:08,640
+physician who ordered the test to make
+
+1018
+00:42:06,160 --> 00:42:10,160
+sure that the patient gets the test, but
+
+1019
+00:42:08,640 --> 00:42:13,040
+there may be a different way we're going
+
+1020
+00:42:10,160 --> 00:42:15,520
+to have to practice, right? So, let's
+
+1021
+00:42:13,040 --> 00:42:17,359
+say um a patient gets a test result, you
+
+1022
+00:42:15,520 --> 00:42:20,000
+know, they're going to chat GPT or one
+
+1023
+00:42:17,359 --> 00:42:23,359
+of those things to find out, you know,
+
+1024
+00:42:20,000 --> 00:42:25,359
+what it means, right? Well, how about a
+
+1025
+00:42:23,359 --> 00:42:27,440
+physician? If I'm doing a test and I
+
+1026
+00:42:25,359 --> 00:42:29,599
+said, "Look, I'm going to be doing a
+
+1027
+00:42:27,440 --> 00:42:32,000
+complete blood count. I'm anticipating
+
+1028
+00:42:29,599 --> 00:42:35,680
+you might have a low hemoglobin. That's
+
+1029
+00:42:32,000 --> 00:42:38,160
+a red red cell. If it's low, it may mean
+
+1030
+00:42:35,680 --> 00:42:39,680
+you have anemia. It may not it, you
+
+1031
+00:42:38,160 --> 00:42:41,520
+know, I'm not thinking that you have
+
+1032
+00:42:39,680 --> 00:42:44,880
+cancer or this or that. So, you may need
+
+1033
+00:42:41,520 --> 00:42:47,359
+to do a little bit of prep preparation
+
+1034
+00:42:44,880 --> 00:42:49,440
+when you're doing the tests so that when
+
+1035
+00:42:47,359 --> 00:42:52,160
+the result comes back, and that was too
+
+1036
+00:42:49,440 --> 00:42:56,800
+simple. That's a routine test. But let's
+
+1037
+00:42:52,160 --> 00:42:59,359
+say you're doing a um a biopsy, right?
+
+1038
+00:42:56,800 --> 00:43:01,599
+and you're worried that it's cancer, you
+
+1039
+00:42:59,359 --> 00:43:03,760
+should I think what best practice would
+
+1040
+00:43:01,599 --> 00:43:06,800
+be is to say, I'm doing this test
+
+1041
+00:43:03,760 --> 00:43:10,240
+because I'm concerned that you will have
+
+1042
+00:43:06,800 --> 00:43:14,880
+an abnormality like a you know a cancer
+
+1043
+00:43:10,240 --> 00:43:17,040
+or mass and discuss it pre preemptively
+
+1044
+00:43:14,880 --> 00:43:20,160
+so that when the patient does access
+
+1045
+00:43:17,040 --> 00:43:23,440
+that information it's not so much of a a
+
+1046
+00:43:20,160 --> 00:43:25,839
+surprise and in that preamble say but we
+
+1047
+00:43:23,440 --> 00:43:27,760
+have we have treatments for that so I'm
+
+1048
+00:43:25,839 --> 00:43:29,680
+happy to talk to you about it if you get
+
+1049
+00:43:27,760 --> 00:43:32,480
+that test result. So, we may need to
+
+1050
+00:43:29,680 --> 00:43:35,040
+change a little bit that you know how we
+
+1051
+00:43:32,480 --> 00:43:38,640
+practice, you know, adjust a little bit
+
+1052
+00:43:35,040 --> 00:43:41,440
+that workflow. But, um I think in
+
+1053
+00:43:38,640 --> 00:43:43,040
+general it was a good thing to do. I
+
+1054
+00:43:41,440 --> 00:43:45,520
+think it would have been good to think
+
+1055
+00:43:43,040 --> 00:43:47,680
+about it about what the repercussions
+
+1056
+00:43:45,520 --> 00:43:49,040
+and what the consequences
+
+1057
+00:43:47,680 --> 00:43:51,040
+uh were going to be beforehand. I think
+
+1058
+00:43:49,040 --> 00:43:51,680
+that law was passed like in 2018. So,
+
+1059
+00:43:51,040 --> 00:43:52,319
+hopefully
+
+1060
+00:43:51,680 --> 00:43:54,160
+yeah,
+
+1061
+00:43:52,319 --> 00:43:56,319
+practices have worked on that. But,
+
+1062
+00:43:54,160 --> 00:43:58,319
+yeah.
+
+1063
+00:43:56,319 --> 00:44:01,359
+interesting that that it comes full
+
+1064
+00:43:58,319 --> 00:44:05,119
+circle um back to where we started your
+
+1065
+00:44:01,359 --> 00:44:06,880
+book, the prepared patient. It it's I
+
+1066
+00:44:05,119 --> 00:44:09,359
+love how you just describe that that
+
+1067
+00:44:06,880 --> 00:44:12,000
+whole scenario because that's really uh
+
+1068
+00:44:09,359 --> 00:44:14,079
+what what's needed when you to res when
+
+1069
+00:44:12,000 --> 00:44:15,839
+you've got these kind of requirements uh
+
+1070
+00:44:14,079 --> 00:44:18,000
+the you got to think through this how do
+
+1071
+00:44:15,839 --> 00:44:19,359
+you prepare the patient. So I want to
+
+1072
+00:44:18,000 --> 00:44:21,040
+make sure we leave people with something
+
+1073
+00:44:19,359 --> 00:44:22,800
+that they can they can use here. So if
+
+1074
+00:44:21,040 --> 00:44:24,720
+you're talking to a patient right now
+
+1075
+00:44:22,800 --> 00:44:26,160
+who wants to bring AI into their own
+
+1076
+00:44:24,720 --> 00:44:28,319
+care, what's the one thing that they
+
+1077
+00:44:26,160 --> 00:44:29,920
+should always do and one thing they
+
+1078
+00:44:28,319 --> 00:44:33,040
+should never do?
+
+1079
+00:44:29,920 --> 00:44:35,599
+All right, let's start with never do. I
+
+1080
+00:44:33,040 --> 00:44:39,119
+advise everybody do not upload your
+
+1081
+00:44:35,599 --> 00:44:41,680
+medical record in total up into a
+
+1082
+00:44:39,119 --> 00:44:43,520
+general LLM. Just don't do it, right? Uh
+
+1083
+00:44:41,680 --> 00:44:46,160
+it's we don't know where that
+
+1084
+00:44:43,520 --> 00:44:48,319
+information is going. It's has your
+
+1085
+00:44:46,160 --> 00:44:49,839
+identifiers like don't do that. That
+
+1086
+00:44:48,319 --> 00:44:52,240
+would be one of the things. I could
+
+1087
+00:44:49,839 --> 00:44:53,839
+think of others. I would also just
+
+1088
+00:44:52,240 --> 00:44:56,640
+because this is going to get to what you
+
+1089
+00:44:53,839 --> 00:44:58,400
+should do. I would not take everything
+
+1090
+00:44:56,640 --> 00:45:00,720
+that is said. If you put your
+
+1091
+00:44:58,400 --> 00:45:03,760
+information, you'd say, "Oh, I have a
+
+1092
+00:45:00,720 --> 00:45:05,599
+mole on my arm and it comes back with
+
+1093
+00:45:03,760 --> 00:45:08,160
+what it could be and it gives you this
+
+1094
+00:45:05,599 --> 00:45:11,119
+long list." Use that as a start of your
+
+1095
+00:45:08,160 --> 00:45:14,640
+conversation. Don't automatically assume
+
+1096
+00:45:11,119 --> 00:45:16,560
+it's melanoma, right? It's not cancer.
+
+1097
+00:45:14,640 --> 00:45:18,400
+Bring that to your physician and say,
+
+1098
+00:45:16,560 --> 00:45:20,800
+"You know what? I put that into chat GPT
+
+1099
+00:45:18,400 --> 00:45:22,880
+and it gave me this differential. Let
+
+1100
+00:45:20,800 --> 00:45:26,480
+your physician talk to you, have a
+
+1101
+00:45:22,880 --> 00:45:29,839
+conversation about uh what it's more
+
+1102
+00:45:26,480 --> 00:45:32,400
+likely to be based on what you know uh
+
+1103
+00:45:29,839 --> 00:45:35,040
+her experience and what her she's
+
+1104
+00:45:32,400 --> 00:45:37,520
+looking at and all the data in order to
+
+1105
+00:45:35,040 --> 00:45:40,960
+come up with that diagnosis. I think
+
+1106
+00:45:37,520 --> 00:45:44,160
+people should understand what they get
+
+1107
+00:45:40,960 --> 00:45:45,680
+from these LLMs. There's probably a high
+
+1108
+00:45:44,160 --> 00:45:47,200
+amount of accuracy. I think we have
+
+1109
+00:45:45,680 --> 00:45:50,160
+studies that show that there's a highly
+
+1110
+00:45:47,200 --> 00:45:52,160
+accurate, but I think understand that uh
+
+1111
+00:45:50,160 --> 00:45:54,000
+general LLMs are just spewing out
+
+1112
+00:45:52,160 --> 00:45:55,599
+information, right? Physicians are not
+
+1113
+00:45:54,000 --> 00:45:58,079
+information spewers. We do more than
+
+1114
+00:45:55,599 --> 00:46:00,160
+that, right? So, the LLM does not have
+
+1115
+00:45:58,079 --> 00:46:02,079
+your context, your family history, your
+
+1116
+00:46:00,160 --> 00:46:04,319
+physical exam, all the other pieces that
+
+1117
+00:46:02,079 --> 00:46:06,960
+we put together as that puzzle to come
+
+1118
+00:46:04,319 --> 00:46:08,880
+up with a diagnosis or a plan for you.
+
+1119
+00:46:06,960 --> 00:46:10,960
+So, as I said, it needs to be the start
+
+1120
+00:46:08,880 --> 00:46:13,599
+of the conversation, something you bring
+
+1121
+00:46:10,960 --> 00:46:17,680
+to your appointment. um so that you
+
+1122
+00:46:13,599 --> 00:46:20,000
+could start at a place that is ahead of
+
+1123
+00:46:17,680 --> 00:46:21,760
+having to get you know all the basic
+
+1124
+00:46:20,000 --> 00:46:24,640
+information you could actually have a
+
+1125
+00:46:21,760 --> 00:46:27,280
+good conversation I think it's also a
+
+1126
+00:46:24,640 --> 00:46:28,720
+good tool to ask it what kind of
+
+1127
+00:46:27,280 --> 00:46:31,359
+question should I be asking at my
+
+1128
+00:46:28,720 --> 00:46:34,160
+appointment knowing that appointments
+
+1129
+00:46:31,359 --> 00:46:36,640
+are you know for routine appointments
+
+1130
+00:46:34,160 --> 00:46:38,319
+could be 15 20 minutes long you don't
+
+1131
+00:46:36,640 --> 00:46:40,480
+have a lot of time so you should
+
+1132
+00:46:38,319 --> 00:46:42,560
+prioritize what questions you're asking
+
+1133
+00:46:40,480 --> 00:46:44,000
+and that's what I talk about in I booked
+
+1134
+00:46:42,560 --> 00:46:46,400
+the prepared patient about being
+
+1135
+00:46:44,000 --> 00:46:48,640
+prepared for your appointments um would
+
+1136
+00:46:46,400 --> 00:46:51,119
+be very helpful uh to you and getting
+
+1137
+00:46:48,640 --> 00:46:53,599
+the most out of those appointments.
+
+1138
+00:46:51,119 --> 00:46:56,319
+But as we as we wrap up our
+
+1139
+00:46:53,599 --> 00:46:58,560
+conversation, uh tell tell folks where
+
+1140
+00:46:56,319 --> 00:47:00,400
+they can get a hold of you and where
+
+1141
+00:46:58,560 --> 00:47:02,640
+they can pre-order your book.
+
+1142
+00:47:00,400 --> 00:47:05,599
+Yes. No, thank you. Well, my book is
+
+1143
+00:47:02,640 --> 00:47:08,000
+available for pre-order on Amazon and
+
+1144
+00:47:05,599 --> 00:47:10,400
+the John's Hopkins University Press,
+
+1145
+00:47:08,000 --> 00:47:14,880
+which is the publisher. It's being
+
+1146
+00:47:10,400 --> 00:47:17,119
+released on August 11th, so weeks away
+
+1147
+00:47:14,880 --> 00:47:20,160
+from it actually being released, but
+
+1148
+00:47:17,119 --> 00:47:23,359
+right now you can purchase it on Amazon.
+
+1149
+00:47:20,160 --> 00:47:26,560
+Um, and if this is recorded, if this is
+
+1150
+00:47:23,359 --> 00:47:29,200
+released after August 11th, then then it
+
+1151
+00:47:26,560 --> 00:47:33,040
+it's available um on a lot of book
+
+1152
+00:47:29,200 --> 00:47:36,160
+sellers. Um, and I could be reached um
+
+1153
+00:47:33,040 --> 00:47:38,560
+I'm on LinkedIn under my name. um on
+
+1154
+00:47:36,160 --> 00:47:44,640
+TerryMD
+
+1155
+00:47:38,560 --> 00:47:45,920
+um on X um uh Instagram and I have a
+
+1156
+00:47:44,640 --> 00:47:48,920
+website called
+
+1157
+00:47:45,920 --> 00:47:48,920
+www.thepreparedpatient.com
+
+1158
+00:47:50,160 --> 00:47:54,160
+uh which has all the information about
+
+1159
+00:47:51,599 --> 00:47:56,079
+where you could get the book and so on.
+
+1160
+00:47:54,160 --> 00:47:58,079
+Fantastic. And for for listeners uh
+
+1161
+00:47:56,079 --> 00:48:00,319
+you'll find all all this information
+
+1162
+00:47:58,079 --> 00:48:02,000
+that Dr. Terry just shared and it'll be
+
+1163
+00:48:00,319 --> 00:48:04,319
+in the show notes. uh we'll make sure
+
+1164
+00:48:02,000 --> 00:48:07,200
+you know how to find her and please make
+
+1165
+00:48:04,319 --> 00:48:09,359
+sure that you you take a take a snapshot
+
+1166
+00:48:07,200 --> 00:48:12,240
+of the of the screen when you see the
+
+1167
+00:48:09,359 --> 00:48:13,839
+the pre-order link and you you
+
+1168
+00:48:12,240 --> 00:48:15,680
+definitely want to get this book. I'
+
+1169
+00:48:13,839 --> 00:48:17,680
+I've learned a lot from you this morning
+
+1170
+00:48:15,680 --> 00:48:19,040
+and I I really do appreciate you coming
+
+1171
+00:48:17,680 --> 00:48:20,880
+on this show.
+
+1172
+00:48:19,040 --> 00:48:22,559
+Thank you. Thank you so much for having
+
+1173
+00:48:20,880 --> 00:48:23,599
+this conversation with me. I truly
+
+1174
+00:48:22,559 --> 00:48:25,839
+appreciate it.
+
+1175
+00:48:23,599 --> 00:48:28,000
+Dr. is Terry Adirim, physician, former
+
+1176
+00:48:25,839 --> 00:48:29,839
+federal health leader and author of the
+
+1177
+00:48:28,000 --> 00:48:32,400
+prepared patient out this August from
+
+1178
+00:48:29,839 --> 00:48:35,200
+John's Hopkins University Press. The
+
+1179
+00:48:32,400 --> 00:48:37,440
+thread I am taking with me today is the
+
+1180
+00:48:35,200 --> 00:48:39,280
+patient already has a co-pilot. The real
+
+1181
+00:48:37,440 --> 00:48:42,160
+question is whether the system is
+
+1182
+00:48:39,280 --> 00:48:44,960
+prepared to go meet them. Go pre-order
+
+1183
+00:48:42,160 --> 00:48:47,599
+the book. And Terry, thank you so much
+
+1184
+00:48:44,960 --> 00:48:49,280
+for joining me today. And for my
+
+1185
+00:48:47,599 --> 00:48:51,200
+audience, I'll see you next time on the
+
+1186
+00:48:49,280 --> 00:48:52,960
+Signal Room. That's it for this episode
+
+1187
+00:48:51,200 --> 00:48:54,640
+of the Signal Room. If today's
+
+1188
+00:48:52,960 --> 00:48:56,720
+conversation sparked something in you,
+
+1189
+00:48:54,640 --> 00:48:58,720
+an idea, a challenge, or a perspective
+
+1190
+00:48:56,720 --> 00:49:00,720
+worth amplifying, I'd love to hear from
+
+1191
+00:48:58,720 --> 00:49:02,319
+you. Message me on LinkedIn or visit
+
+1192
+00:49:00,720 --> 00:49:06,240
+cigarroompodcast.com
+
+1193
+00:49:02,319 --> 00:49:06,240
+to explore being a guest on an upcoming
