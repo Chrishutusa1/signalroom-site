@@ -1,0 +1,6428 @@
+1
+00:00:00,080 --> 00:00:05,440
+The biggest bottleneck in healthcare AI
+
+2
+00:00:03,040 --> 00:00:06,879
+aren't the models. I think it's the data
+
+3
+00:00:05,440 --> 00:00:09,200
+and it's just not healthcare. I'm
+
+4
+00:00:06,879 --> 00:00:11,120
+talking about AI in general. Most
+
+5
+00:00:09,200 --> 00:00:13,519
+organizations, they're not struggling
+
+6
+00:00:11,120 --> 00:00:16,560
+anymore with building AI, but they're
+
+7
+00:00:13,519 --> 00:00:19,119
+struggling with using data safely. Data
+
+8
+00:00:16,560 --> 00:00:20,880
+within healthcare is uniquely hard for,
+
+9
+00:00:19,119 --> 00:00:23,600
+you know, a few reasons. First, it's
+
+10
+00:00:20,880 --> 00:00:25,119
+highly sensitive. Second, the data is
+
+11
+00:00:23,600 --> 00:00:27,199
+fragmented, right? I mean, it sits
+
+12
+00:00:25,119 --> 00:00:29,279
+across so many places within electronic
+
+13
+00:00:27,199 --> 00:00:30,720
+health record systems. But what they are
+
+14
+00:00:29,279 --> 00:00:32,800
+actually going to be doing with that
+
+15
+00:00:30,720 --> 00:00:34,559
+data and what's the intent behind that
+
+16
+00:00:32,800 --> 00:00:35,920
+that data that typically is not
+
+17
+00:00:34,559 --> 00:00:37,840
+understood within our traditional
+
+18
+00:00:35,920 --> 00:00:39,920
+security systems and gods. Today's
+
+19
+00:00:37,840 --> 00:00:41,920
+conversation is with Sid Dutta cyber
+
+20
+00:00:39,920 --> 00:00:43,840
+security veteran who has been a data
+
+21
+00:00:41,920 --> 00:00:45,680
+protection executive across various
+
+22
+00:00:43,840 --> 00:00:48,960
+large corporations such as American
+
+23
+00:00:45,680 --> 00:00:51,680
+Express Worldpay Activision Blizzard
+
+24
+00:00:48,960 --> 00:00:54,160
+King and product head of voltage data
+
+25
+00:00:51,680 --> 00:00:56,480
+security at Micro Focus which is now
+
+26
+00:00:54,160 --> 00:00:59,359
+OpenText. He is now the founder and CEO
+
+27
+00:00:56,480 --> 00:01:00,879
+of Privaclave AI which is solving some
+
+28
+00:00:59,359 --> 00:01:03,120
+of the deeprooted challenges in
+
+29
+00:01:00,879 --> 00:01:06,080
+protecting sensitive data especially now
+
+30
+00:01:03,120 --> 00:01:08,560
+in the age of AI. Sid's work focuses on
+
+31
+00:01:06,080 --> 00:01:10,640
+one of the most constrained layers in AI
+
+32
+00:01:08,560 --> 00:01:13,040
+data flows. While much of the market is
+
+33
+00:01:10,640 --> 00:01:14,720
+focused on models and algorithms, his
+
+34
+00:01:13,040 --> 00:01:17,200
+perspective centers on the runtime
+
+35
+00:01:14,720 --> 00:01:19,200
+visibility, governance and protection
+
+36
+00:01:17,200 --> 00:01:21,360
+that bakes in privacy and trust by
+
+37
+00:01:19,200 --> 00:01:23,439
+default and by design. He works on
+
+38
+00:01:21,360 --> 00:01:25,759
+enabling secure privacy preserving
+
+39
+00:01:23,439 --> 00:01:28,000
+collaboration, making it possible to
+
+40
+00:01:25,759 --> 00:01:30,080
+analyze and process sensitive data
+
+41
+00:01:28,000 --> 00:01:32,640
+within healthcare, financial services,
+
+42
+00:01:30,080 --> 00:01:35,200
+and other industry sectors across legacy
+
+43
+00:01:32,640 --> 00:01:37,280
+and AI workflows without exposing it and
+
+44
+00:01:35,200 --> 00:01:40,000
+impacting it to customer or patient
+
+45
+00:01:37,280 --> 00:01:41,439
+privacy. That shift has implications not
+
+46
+00:01:40,000 --> 00:01:43,040
+just for innovation, but for how
+
+47
+00:01:41,439 --> 00:01:45,600
+institutions think about risk,
+
+48
+00:01:43,040 --> 00:01:47,920
+partnerships, and accountability. This
+
+49
+00:01:45,600 --> 00:01:50,560
+conversation focuses on where AI efforts
+
+50
+00:01:47,920 --> 00:01:53,200
+to where AI efforts stall before they
+
+51
+00:01:50,560 --> 00:01:55,040
+begin. What is limiting progress today
+
+52
+00:01:53,200 --> 00:01:57,360
+and what needs to change for healthcare
+
+53
+00:01:55,040 --> 00:02:00,159
+data to be used safely and effectively
+
+54
+00:01:57,360 --> 00:02:02,000
+at scale. Sid, I want to start with the
+
+55
+00:02:00,159 --> 00:02:03,600
+the layer that gets the least amount of
+
+56
+00:02:02,000 --> 00:02:05,040
+attention. Before we do, just I want to
+
+57
+00:02:03,600 --> 00:02:06,000
+say thank you for being here and welcome
+
+58
+00:02:05,040 --> 00:02:08,399
+to the signal room.
+
+59
+00:02:06,000 --> 00:02:10,479
+Thank you for having me, Chris. AI gets
+
+60
+00:02:08,399 --> 00:02:13,040
+most of it the focus in healthcare right
+
+61
+00:02:10,479 --> 00:02:14,800
+now, but a lot of initiatives stall long
+
+62
+00:02:13,040 --> 00:02:16,720
+before models are ever deployed. Where
+
+63
+00:02:14,800 --> 00:02:18,560
+do organizations actually hit barriers
+
+64
+00:02:16,720 --> 00:02:20,800
+when it comes to data? And why is
+
+65
+00:02:18,560 --> 00:02:23,280
+healthcare data so difficult to access
+
+66
+00:02:20,800 --> 00:02:24,000
+and collaborate around compared to other
+
+67
+00:02:23,280 --> 00:02:26,720
+industries?
+
+68
+00:02:24,000 --> 00:02:29,840
+Oh, that's yeah, it's a loaded uh
+
+69
+00:02:26,720 --> 00:02:31,840
+question. So going to break it apart a
+
+70
+00:02:29,840 --> 00:02:33,519
+little bit. Uh but I think that's a
+
+71
+00:02:31,840 --> 00:02:35,599
+great place to start the conversation,
+
+72
+00:02:33,519 --> 00:02:38,480
+right? Because honestly the biggest
+
+73
+00:02:35,599 --> 00:02:40,480
+bottleneck uh in healthcare AI you know
+
+74
+00:02:38,480 --> 00:02:42,160
+aren't the models right I think it's
+
+75
+00:02:40,480 --> 00:02:44,720
+it's the data and it's just not
+
+76
+00:02:42,160 --> 00:02:47,200
+healthare talking about AI in general
+
+77
+00:02:44,720 --> 00:02:48,800
+most organizations you know they're not
+
+78
+00:02:47,200 --> 00:02:51,680
+struggling anymore you know with
+
+79
+00:02:48,800 --> 00:02:54,480
+building uh AI but they're struggling uh
+
+80
+00:02:51,680 --> 00:02:58,480
+you know with using uh the data safely
+
+81
+00:02:54,480 --> 00:03:01,040
+and uh comes to healthcare uh data uh
+
+82
+00:02:58,480 --> 00:03:03,040
+within healthcare is uniquely hard for
+
+83
+00:03:01,040 --> 00:03:05,280
+you a few reasons right first it's
+
+84
+00:03:03,040 --> 00:03:06,879
+highly sensitive uh you're dealing with
+
+85
+00:03:05,280 --> 00:03:10,080
+PHI, you know, protected health
+
+86
+00:03:06,879 --> 00:03:12,159
+information regulated on and the risk
+
+87
+00:03:10,080 --> 00:03:15,040
+isn't just financial, you know, it's
+
+88
+00:03:12,159 --> 00:03:17,599
+patient trust and and safety. So that
+
+89
+00:03:15,040 --> 00:03:20,000
+makes organizations extremely cautious.
+
+90
+00:03:17,599 --> 00:03:21,680
+Second, the data is fragmented, right? I
+
+91
+00:03:20,000 --> 00:03:23,680
+mean, it sits across so many places
+
+92
+00:03:21,680 --> 00:03:25,840
+within electronic health record systems
+
+93
+00:03:23,680 --> 00:03:28,239
+or electronic medical record systems,
+
+94
+00:03:25,840 --> 00:03:30,480
+imaging systems, labs, billing
+
+95
+00:03:28,239 --> 00:03:32,959
+platforms, you know, all in different
+
+96
+00:03:30,480 --> 00:03:36,000
+formats, different owners. and often you
+
+97
+00:03:32,959 --> 00:03:37,920
+know with limited interopery and then uh
+
+98
+00:03:36,000 --> 00:03:39,840
+the controls typically that are
+
+99
+00:03:37,920 --> 00:03:41,599
+implemented at these platforms you know
+
+100
+00:03:39,840 --> 00:03:43,680
+particularly with the fire systems like
+
+101
+00:03:41,599 --> 00:03:45,760
+epic and suner you know they're they're
+
+102
+00:03:43,680 --> 00:03:47,040
+very well-maintained as long as the data
+
+103
+00:03:45,760 --> 00:03:49,120
+is you know sitting within those
+
+104
+00:03:47,040 --> 00:03:51,599
+platforms but they don't travel with the
+
+105
+00:03:49,120 --> 00:03:53,440
+data the moment you know data leaves uh
+
+106
+00:03:51,599 --> 00:03:55,680
+the EHR boundary you know whether it's
+
+107
+00:03:53,440 --> 00:03:57,599
+going to an AI model a co-pilot
+
+108
+00:03:55,680 --> 00:04:00,720
+essentially accessing it or an you know
+
+109
+00:03:57,599 --> 00:04:03,040
+agentic AI framework where an agent you
+
+110
+00:04:00,720 --> 00:04:06,000
+know goes from being an MCP client who
+
+111
+00:04:03,040 --> 00:04:08,720
+talks to an MCP server to access EHR as
+
+112
+00:04:06,000 --> 00:04:10,799
+a tool resource or even for patient
+
+113
+00:04:08,720 --> 00:04:13,040
+analytics you know sending to a third
+
+114
+00:04:10,799 --> 00:04:14,640
+party or in a cloud collaboration all
+
+115
+00:04:13,040 --> 00:04:16,400
+those native protections are gone at
+
+116
+00:04:14,640 --> 00:04:18,160
+that point right it's kind of a wild
+
+117
+00:04:16,400 --> 00:04:20,160
+wild west so that's where I think
+
+118
+00:04:18,160 --> 00:04:22,400
+typically where we would find that the
+
+119
+00:04:20,160 --> 00:04:25,120
+initiatives will stall because now
+
+120
+00:04:22,400 --> 00:04:26,960
+security and compliance teams um uh you
+
+121
+00:04:25,120 --> 00:04:28,560
+know they are concerned about that we
+
+122
+00:04:26,960 --> 00:04:30,720
+don't really have visibility and and
+
+123
+00:04:28,560 --> 00:04:32,400
+control uh and we also don't understand
+
+124
+00:04:30,720 --> 00:04:34,880
+some of the intent Because typically
+
+125
+00:04:32,400 --> 00:04:37,520
+when it gets to the non-deterministic
+
+126
+00:04:34,880 --> 00:04:39,840
+aspect of you know AI identities you
+
+127
+00:04:37,520 --> 00:04:42,479
+know what we call as nonhuman identities
+
+128
+00:04:39,840 --> 00:04:44,960
+uh that we know who is accessing and
+
+129
+00:04:42,479 --> 00:04:46,560
+what they are allowed to access but what
+
+130
+00:04:44,960 --> 00:04:48,800
+they are actually going to be doing with
+
+131
+00:04:46,560 --> 00:04:50,639
+that data and what's the intent behind
+
+132
+00:04:48,800 --> 00:04:52,000
+that data that typically is not
+
+133
+00:04:50,639 --> 00:04:54,400
+understood with you know traditional
+
+134
+00:04:52,000 --> 00:04:57,040
+security systems and guardrails. So that
+
+135
+00:04:54,400 --> 00:04:59,600
+kind of leads to you know delays of
+
+136
+00:04:57,040 --> 00:05:03,360
+projects and and typically you're not
+
+137
+00:04:59,600 --> 00:05:05,360
+moving past you know pilots and PC's and
+
+138
+00:05:03,360 --> 00:05:07,759
+compared to other industries you know
+
+139
+00:05:05,360 --> 00:05:10,160
+healthcare has a much lower tolerance of
+
+140
+00:05:07,759 --> 00:05:11,680
+risk right so uh but it's still relying
+
+141
+00:05:10,160 --> 00:05:15,039
+on security models that were designed
+
+142
+00:05:11,680 --> 00:05:17,039
+for static systems and not dic AI
+
+143
+00:05:15,039 --> 00:05:18,960
+workflows and that's probably what the
+
+144
+00:05:17,039 --> 00:05:20,720
+gap is you know between data access and
+
+145
+00:05:18,960 --> 00:05:22,080
+data protection slowing down
+
+146
+00:05:20,720 --> 00:05:24,240
+that's an important point you just
+
+147
+00:05:22,080 --> 00:05:26,320
+mentioned too it was Because healthc
+
+148
+00:05:24,240 --> 00:05:29,199
+care by definition has never been
+
+149
+00:05:26,320 --> 00:05:30,960
+static, but we've always measured things
+
+150
+00:05:29,199 --> 00:05:33,840
+like it is. You know, the pace things
+
+151
+00:05:30,960 --> 00:05:35,360
+are moving at this point. It it's really
+
+152
+00:05:33,840 --> 00:05:37,440
+kind of imperative that what you're
+
+153
+00:05:35,360 --> 00:05:38,800
+talking about, we are bringing that
+
+154
+00:05:37,440 --> 00:05:40,160
+bringing it to the forefront and having
+
+155
+00:05:38,800 --> 00:05:42,320
+these conversations and people are
+
+156
+00:05:40,160 --> 00:05:43,919
+understanding how urgent it is that we
+
+157
+00:05:42,320 --> 00:05:46,240
+start to think about this differently
+
+158
+00:05:43,919 --> 00:05:48,400
+because of the fact that pace is what it
+
+159
+00:05:46,240 --> 00:05:50,160
+is. And it's not static. the practice of
+
+160
+00:05:48,400 --> 00:05:51,840
+medicine is has always been considered a
+
+161
+00:05:50,160 --> 00:05:53,680
+practice and unfortunately we keep
+
+162
+00:05:51,840 --> 00:05:55,840
+discovering new things probably because
+
+163
+00:05:53,680 --> 00:05:57,600
+we're they're self-imposed in terms of
+
+164
+00:05:55,840 --> 00:06:01,440
+the the health conditions that seem to
+
+165
+00:05:57,600 --> 00:06:04,000
+be popping up every so often co 19 and I
+
+166
+00:06:01,440 --> 00:06:06,400
+think we all heard about SARS but um
+
+167
+00:06:04,000 --> 00:06:08,800
+that was a whole another level that we'd
+
+168
+00:06:06,400 --> 00:06:10,560
+never seen before and I I don't think
+
+169
+00:06:08,800 --> 00:06:12,800
+there's any shortage of those things in
+
+170
+00:06:10,560 --> 00:06:15,440
+the future and that'll mean epidemics or
+
+171
+00:06:12,800 --> 00:06:17,039
+pandemics but just new conditions
+
+172
+00:06:15,440 --> 00:06:18,800
+because of all the crazy things that we
+
+173
+00:06:17,039 --> 00:06:21,360
+think are improving our lives, whether
+
+174
+00:06:18,800 --> 00:06:24,160
+it's chemicals or whatever that go into
+
+175
+00:06:21,360 --> 00:06:25,440
+food processes. But but getting to some
+
+176
+00:06:24,160 --> 00:06:27,199
+of the the challenges from an
+
+177
+00:06:25,440 --> 00:06:29,199
+organizational standpoint and when
+
+178
+00:06:27,199 --> 00:06:30,479
+you're talking about interoperability,
+
+179
+00:06:29,199 --> 00:06:32,479
+it's always been a complaint that
+
+180
+00:06:30,479 --> 00:06:34,319
+physicians have had um that I've talked
+
+181
+00:06:32,479 --> 00:06:36,160
+to, but there's a lot of legitimate
+
+182
+00:06:34,319 --> 00:06:38,319
+reasons organizations actually need to
+
+183
+00:06:36,160 --> 00:06:39,840
+collaborate and share data. What are
+
+184
+00:06:38,319 --> 00:06:42,160
+some of the concerns that you see that
+
+185
+00:06:39,840 --> 00:06:45,039
+pop up first? Yeah, I think the the
+
+186
+00:06:42,160 --> 00:06:48,000
+first concern uh I would say that will
+
+187
+00:06:45,039 --> 00:06:51,440
+pop up is what happens if that data got
+
+188
+00:06:48,000 --> 00:06:55,520
+exposed, right? So typically when the
+
+189
+00:06:51,440 --> 00:06:58,000
+collaboration is happening uh there
+
+190
+00:06:55,520 --> 00:07:01,280
+there is either a data share agreement
+
+191
+00:06:58,000 --> 00:07:04,479
+um in place in terms of ensuring that
+
+192
+00:07:01,280 --> 00:07:08,479
+you know as the data essentially is uh
+
+193
+00:07:04,479 --> 00:07:10,319
+shared with other uh entities uh the
+
+194
+00:07:08,479 --> 00:07:12,319
+protecting the data kind of lies with
+
+195
+00:07:10,319 --> 00:07:13,759
+them but that
+
+196
+00:07:12,319 --> 00:07:16,400
+at the end of the day you know
+
+197
+00:07:13,759 --> 00:07:18,639
+compliance and security and efficient
+
+198
+00:07:16,400 --> 00:07:20,400
+privacy is not really laid out on
+
+199
+00:07:18,639 --> 00:07:23,599
+documentation. and compact right where
+
+200
+00:07:20,400 --> 00:07:26,319
+there when when the security controls
+
+201
+00:07:23,599 --> 00:07:29,199
+are not in place and that's where uh
+
+202
+00:07:26,319 --> 00:07:32,080
+typically the concerns will be that okay
+
+203
+00:07:29,199 --> 00:07:34,800
+there's one aspect of thou shall protect
+
+204
+00:07:32,080 --> 00:07:36,639
+my data that I'm sharing or as we are
+
+205
+00:07:34,800 --> 00:07:41,280
+collaborating on it but the other part
+
+206
+00:07:36,639 --> 00:07:44,160
+is do I have the runtime and real time
+
+207
+00:07:41,280 --> 00:07:46,720
+security controls you implemented to
+
+208
+00:07:44,160 --> 00:07:48,960
+ensure my data you know doesn't
+
+209
+00:07:46,720 --> 00:07:52,160
+essentially get leaked and then results
+
+210
+00:07:48,960 --> 00:07:53,280
+in add scenario and then loss of you
+
+211
+00:07:52,160 --> 00:07:55,280
+know patient trust.
+
+212
+00:07:53,280 --> 00:07:56,960
+Yeah. And then there's this other aspect
+
+213
+00:07:55,280 --> 00:07:58,639
+too. You talk about the approvals for
+
+214
+00:07:56,960 --> 00:08:00,160
+for what what data movement and
+
+215
+00:07:58,639 --> 00:08:02,479
+collaboration is going to go on. There's
+
+216
+00:08:00,160 --> 00:08:04,400
+also this movement now for a regulatory
+
+217
+00:08:02,479 --> 00:08:06,479
+standpoint towards transparency and
+
+218
+00:08:04,400 --> 00:08:08,560
+explainability which adds a whole
+
+219
+00:08:06,479 --> 00:08:10,560
+another layer of complexity for the
+
+220
+00:08:08,560 --> 00:08:12,720
+whole idea about informed consent
+
+221
+00:08:10,560 --> 00:08:14,720
+because I mean if if you can't speak
+
+222
+00:08:12,720 --> 00:08:17,280
+plainly about it in in terms of the
+
+223
+00:08:14,720 --> 00:08:19,280
+non-technical it's going to understand
+
+224
+00:08:17,280 --> 00:08:21,360
+that it really can't be truly considered
+
+225
+00:08:19,280 --> 00:08:23,520
+informed. So uh definitely some
+
+226
+00:08:21,360 --> 00:08:25,919
+additional layers of of challenge on top
+
+227
+00:08:23,520 --> 00:08:27,680
+of that. Um, that kind of gets more some
+
+228
+00:08:25,919 --> 00:08:29,360
+of these privacy regulations that we're
+
+229
+00:08:27,680 --> 00:08:30,639
+hearing about around the transparency.
+
+230
+00:08:29,360 --> 00:08:32,479
+California, I think, was the first one
+
+231
+00:08:30,639 --> 00:08:34,560
+that I at least I heard about that was
+
+232
+00:08:32,479 --> 00:08:37,039
+kind of mandating this explanability and
+
+233
+00:08:34,560 --> 00:08:39,680
+transparency. But how do these
+
+234
+00:08:37,039 --> 00:08:41,440
+regulations, institutional risk and
+
+235
+00:08:39,680 --> 00:08:43,039
+governance structures shake what is
+
+236
+00:08:41,440 --> 00:08:45,120
+possible? It seems like there's probably
+
+237
+00:08:43,039 --> 00:08:46,959
+limitation or at least it feels like
+
+238
+00:08:45,120 --> 00:08:48,160
+there's more than than is comfortable.
+
+239
+00:08:46,959 --> 00:08:49,519
+Yeah. I mean, I'd love to hear your
+
+240
+00:08:48,160 --> 00:08:51,920
+perspective because I think there's
+
+241
+00:08:49,519 --> 00:08:54,480
+constraints. I mean data access
+
+242
+00:08:51,920 --> 00:08:56,240
+accessibility versus technical
+
+243
+00:08:54,480 --> 00:08:57,839
+capability those are two different
+
+244
+00:08:56,240 --> 00:08:59,839
+things. No, that's true because I think
+
+245
+00:08:57,839 --> 00:09:02,880
+there's there's obviously a lot of the
+
+246
+00:08:59,839 --> 00:09:04,800
+privacy enhancing technologies and they
+
+247
+00:09:02,880 --> 00:09:08,000
+they have existed even before you know
+
+248
+00:09:04,800 --> 00:09:11,279
+AI was was a real concern and then we've
+
+249
+00:09:08,000 --> 00:09:14,160
+actually you know had tried a lot of
+
+250
+00:09:11,279 --> 00:09:17,440
+these um you know capabilities
+
+251
+00:09:14,160 --> 00:09:19,600
+where things like homorphic encryption
+
+252
+00:09:17,440 --> 00:09:22,640
+things like differential privacy things
+
+253
+00:09:19,600 --> 00:09:24,640
+like federated learning uh and even
+
+254
+00:09:22,640 --> 00:09:27,120
+trusted execution environment where we
+
+255
+00:09:24,640 --> 00:09:30,080
+call as confidential computing or secure
+
+256
+00:09:27,120 --> 00:09:31,839
+enclaves where technically all data is
+
+257
+00:09:30,080 --> 00:09:34,720
+you know basically being accessed within
+
+258
+00:09:31,839 --> 00:09:37,279
+that you know secure enclave. So at the
+
+259
+00:09:34,720 --> 00:09:39,440
+bottom is that you can you know get the
+
+260
+00:09:37,279 --> 00:09:41,920
+value from the data without exposing the
+
+261
+00:09:39,440 --> 00:09:44,160
+data itself. But a lot of cases some of
+
+262
+00:09:41,920 --> 00:09:46,320
+these have not been you know very
+
+263
+00:09:44,160 --> 00:09:48,560
+practical or enterprisegrade
+
+264
+00:09:46,320 --> 00:09:51,760
+um and and not successfully put into
+
+265
+00:09:48,560 --> 00:09:54,399
+practice. Right? So in in those areas uh
+
+266
+00:09:51,760 --> 00:09:57,360
+the concerns around usability of the
+
+267
+00:09:54,399 --> 00:09:59,040
+data or essentially the performance um
+
+268
+00:09:57,360 --> 00:10:00,399
+um you know for those you know processes
+
+269
+00:09:59,040 --> 00:10:03,200
+that are operating under those
+
+270
+00:10:00,399 --> 00:10:05,200
+privacy-enhancing technologies um you
+
+271
+00:10:03,200 --> 00:10:07,440
+know have been under question. Uh but
+
+272
+00:10:05,200 --> 00:10:10,160
+there are like other uh methods who have
+
+273
+00:10:07,440 --> 00:10:12,000
+you know which have proved to be more
+
+274
+00:10:10,160 --> 00:10:13,920
+effective you know where data
+
+275
+00:10:12,000 --> 00:10:15,760
+deidentification or or data
+
+276
+00:10:13,920 --> 00:10:19,200
+desensitization
+
+277
+00:10:15,760 --> 00:10:21,040
+uh um you know having those data uh
+
+278
+00:10:19,200 --> 00:10:22,959
+offiscated and persistently you know
+
+279
+00:10:21,040 --> 00:10:25,279
+protected as they're moving as they're
+
+280
+00:10:22,959 --> 00:10:27,600
+being stored or being accessed or or
+
+281
+00:10:25,279 --> 00:10:29,600
+being you know analyzed. So in a lot of
+
+282
+00:10:27,600 --> 00:10:32,959
+cases those have been proven to be a
+
+283
+00:10:29,600 --> 00:10:35,760
+much better alternative but each of them
+
+284
+00:10:32,959 --> 00:10:38,560
+has its own uh effort and engineering
+
+285
+00:10:35,760 --> 00:10:41,279
+and and complexity and in a lot of cases
+
+286
+00:10:38,560 --> 00:10:44,079
+uh that you either lack you know the
+
+287
+00:10:41,279 --> 00:10:47,200
+necessary resources or the funding to
+
+288
+00:10:44,079 --> 00:10:49,839
+implement uh that and when it becomes an
+
+289
+00:10:47,200 --> 00:10:52,079
+after the fact it even gets a lot more
+
+290
+00:10:49,839 --> 00:10:54,959
+uh invasive and complex and expensive.
+
+291
+00:10:52,079 --> 00:10:57,519
+Uh so then you tend to kind of relax
+
+292
+00:10:54,959 --> 00:11:00,079
+your controls to uh something that is
+
+293
+00:10:57,519 --> 00:11:02,000
+very default and very traditional of
+
+294
+00:11:00,079 --> 00:11:04,720
+platform level you know security data
+
+295
+00:11:02,000 --> 00:11:06,320
+encryption at rest um right that
+
+296
+00:11:04,720 --> 00:11:08,399
+potentially you know puts the data at
+
+297
+00:11:06,320 --> 00:11:10,800
+risk uh but some of these other
+
+298
+00:11:08,399 --> 00:11:12,480
+techniques have been very hard uh to
+
+299
+00:11:10,800 --> 00:11:14,880
+implement and that's where I think some
+
+300
+00:11:12,480 --> 00:11:16,800
+of the the gaps actually reside. Yeah,
+
+301
+00:11:14,880 --> 00:11:18,560
+there there there's definitely some some
+
+302
+00:11:16,800 --> 00:11:21,360
+things that are unique, you know, when
+
+303
+00:11:18,560 --> 00:11:23,839
+you talk about the security and the all
+
+304
+00:11:21,360 --> 00:11:26,000
+the regulatories and policydriven things
+
+305
+00:11:23,839 --> 00:11:28,399
+that we have to deal with. Having an
+
+306
+00:11:26,000 --> 00:11:30,240
+evolving model is very it particularly
+
+307
+00:11:28,399 --> 00:11:32,640
+with AI, it's it's a whole different
+
+308
+00:11:30,240 --> 00:11:35,200
+ballgame and what you got approvals for
+
+309
+00:11:32,640 --> 00:11:36,959
+a month ago if if you don't revisit some
+
+310
+00:11:35,200 --> 00:11:39,600
+of those things, the the things that you
+
+311
+00:11:36,959 --> 00:11:41,519
+approved may mean something completely
+
+312
+00:11:39,600 --> 00:11:43,760
+different very very shortly. And I think
+
+313
+00:11:41,519 --> 00:11:45,519
+that's one of the the challenges in in
+
+314
+00:11:43,760 --> 00:11:48,160
+addition to the technology which I I
+
+315
+00:11:45,519 --> 00:11:49,519
+think why um I have so much respect for
+
+316
+00:11:48,160 --> 00:11:51,680
+the work that you and your company are
+
+317
+00:11:49,519 --> 00:11:53,760
+doing because there's so many other
+
+318
+00:11:51,680 --> 00:11:55,440
+areas that people have to worry about.
+
+319
+00:11:53,760 --> 00:11:56,800
+This is one they really they they need
+
+320
+00:11:55,440 --> 00:12:00,079
+some professionals to be paying
+
+321
+00:11:56,800 --> 00:12:02,800
+attention to it. So the great you know
+
+322
+00:12:00,079 --> 00:12:04,959
+perfect leap into a concept that I've
+
+323
+00:12:02,800 --> 00:12:07,360
+heard you use but I really love to
+
+324
+00:12:04,959 --> 00:12:08,959
+understand a little bit more about it.
+
+325
+00:12:07,360 --> 00:12:11,760
+uh you've talked about privacy
+
+326
+00:12:08,959 --> 00:12:13,040
+preserving AI in practical terms what
+
+327
+00:12:11,760 --> 00:12:15,920
+does that actually mean?
+
+328
+00:12:13,040 --> 00:12:18,079
+Yeah. So I guess I think I kind of uh
+
+329
+00:12:15,920 --> 00:12:20,720
+alluded to uh in the previous uh
+
+330
+00:12:18,079 --> 00:12:24,079
+question that you had. So privacy
+
+331
+00:12:20,720 --> 00:12:26,880
+preserving AI technically at the core it
+
+332
+00:12:24,079 --> 00:12:30,480
+means that without exposing the data
+
+333
+00:12:26,880 --> 00:12:32,720
+itself you can still use the data right
+
+334
+00:12:30,480 --> 00:12:35,839
+so that's that's where I think some of
+
+335
+00:12:32,720 --> 00:12:37,839
+these privacy uh enhancing technologies
+
+336
+00:12:35,839 --> 00:12:38,079
+and stuff like that you know come into
+
+337
+00:12:37,839 --> 00:12:39,920
+play
+
+338
+00:12:38,079 --> 00:12:43,600
+is this more in the the identification
+
+339
+00:12:39,920 --> 00:12:44,720
+process or or tokens or or tokenization
+
+340
+00:12:43,600 --> 00:12:46,560
+how do you cope with
+
+341
+00:12:44,720 --> 00:12:47,920
+a lot of it's a combination of of
+
+342
+00:12:46,560 --> 00:12:50,079
+various you know things and in a lot of
+
+343
+00:12:47,920 --> 00:12:52,240
+cases either you're picking one versus
+
+344
+00:12:50,079 --> 00:12:55,760
+the other or sometimes in combination.
+
+345
+00:12:52,240 --> 00:12:58,880
+So the shift, you know, is that from
+
+346
+00:12:55,760 --> 00:13:00,560
+moving data to AI to bringing AI to
+
+347
+00:12:58,880 --> 00:13:03,200
+control data environments. So that's
+
+348
+00:13:00,560 --> 00:13:05,920
+kind of where it all started that how do
+
+349
+00:13:03,200 --> 00:13:08,320
+you collaborate um on the data where
+
+350
+00:13:05,920 --> 00:13:10,079
+that data is actually within a very
+
+351
+00:13:08,320 --> 00:13:11,519
+secure control environment, right? It's
+
+352
+00:13:10,079 --> 00:13:14,560
+like the concept of like secure
+
+353
+00:13:11,519 --> 00:13:16,399
+enclaves, right? So you have everything
+
+354
+00:13:14,560 --> 00:13:19,440
+operating under that or within that
+
+355
+00:13:16,399 --> 00:13:22,399
+enclave. So you are bringing your AI and
+
+356
+00:13:19,440 --> 00:13:25,120
+the processing and into that rather than
+
+357
+00:13:22,399 --> 00:13:27,040
+take the data and send it to an AI model
+
+358
+00:13:25,120 --> 00:13:28,639
+you know to do the processing stuff
+
+359
+00:13:27,040 --> 00:13:30,399
+right because that that's what typically
+
+360
+00:13:28,639 --> 00:13:32,160
+happens these days is like you know
+
+361
+00:13:30,399 --> 00:13:34,959
+you're you're actually sending the data
+
+362
+00:13:32,160 --> 00:13:37,519
+to the models um and you know you know
+
+363
+00:13:34,959 --> 00:13:39,279
+do inferences and predictions and stuff
+
+364
+00:13:37,519 --> 00:13:41,920
+and in a lot of cases the guardrails
+
+365
+00:13:39,279 --> 00:13:43,839
+that you're putting in is at runtime you
+
+366
+00:13:41,920 --> 00:13:45,600
+know you're analyzing on that data that
+
+367
+00:13:43,839 --> 00:13:48,639
+you're putting into the AI and and then
+
+368
+00:13:45,600 --> 00:13:51,440
+basically making sure that the data
+
+369
+00:13:48,639 --> 00:13:54,079
+which are sensitive enough you know phi
+
+370
+00:13:51,440 --> 00:13:56,880
+PII you know that technically the model
+
+371
+00:13:54,079 --> 00:13:58,800
+doesn't really need um but everything
+
+372
+00:13:56,880 --> 00:14:01,120
+else around that data is what it is
+
+373
+00:13:58,800 --> 00:14:03,040
+analyzing and inferring on so how do you
+
+374
+00:14:01,120 --> 00:14:05,440
+at runtime ensure that they are
+
+375
+00:14:03,040 --> 00:14:08,800
+deidentified sometimes minimization of
+
+376
+00:14:05,440 --> 00:14:13,120
+the data is also a process that gets
+
+377
+00:14:08,800 --> 00:14:15,440
+into um um in practice where only expose
+
+378
+00:14:13,120 --> 00:14:18,079
+what's absolutely necessary and and then
+
+379
+00:14:15,440 --> 00:14:19,600
+after that anything that needs to be
+
+380
+00:14:18,079 --> 00:14:21,839
+sent to the AI model, make sure they are
+
+381
+00:14:19,600 --> 00:14:23,839
+masked or tokenized. Uh because one
+
+382
+00:14:21,839 --> 00:14:27,040
+thing you'll have to make sure that the
+
+383
+00:14:23,839 --> 00:14:28,480
+model is able to uh do its job and not
+
+384
+00:14:27,040 --> 00:14:30,399
+hallucinate because if you send
+
+385
+00:14:28,480 --> 00:14:32,880
+something and that doesn't make any
+
+386
+00:14:30,399 --> 00:14:34,240
+sense to uh the model, it obviously will
+
+387
+00:14:32,880 --> 00:14:36,079
+give you results that are not going to
+
+388
+00:14:34,240 --> 00:14:38,560
+be favorable for your process. Right? So
+
+389
+00:14:36,079 --> 00:14:41,199
+it's a very interesting balance that
+
+390
+00:14:38,560 --> 00:14:44,399
+needs to be struck that what you protect
+
+391
+00:14:41,199 --> 00:14:46,560
+and how much you know you protect that
+
+392
+00:14:44,399 --> 00:14:49,120
+it essentially gives you the privacy as
+
+393
+00:14:46,560 --> 00:14:51,760
+well as it doesn't make the business
+
+394
+00:14:49,120 --> 00:14:54,240
+process u you know do something that was
+
+395
+00:14:51,760 --> 00:14:55,760
+not uh you know expected and then of
+
+396
+00:14:54,240 --> 00:14:58,160
+course you know some of the other
+
+397
+00:14:55,760 --> 00:15:01,120
+technologies u you know we have used I
+
+398
+00:14:58,160 --> 00:15:04,399
+alluded to homorphic encryption trusted
+
+399
+00:15:01,120 --> 00:15:07,040
+execution all that stuff so it it has
+
+400
+00:15:04,399 --> 00:15:08,959
+been very hard to keep data and bring
+
+401
+00:15:07,040 --> 00:15:12,240
+the AI to that secure control
+
+402
+00:15:08,959 --> 00:15:14,320
+environment. So typically the uh the
+
+403
+00:15:12,240 --> 00:15:17,120
+most frequent and practice models have
+
+404
+00:15:14,320 --> 00:15:20,160
+been that ensuring how you keep the data
+
+405
+00:15:17,120 --> 00:15:22,480
+and the context secured um while you're
+
+406
+00:15:20,160 --> 00:15:24,880
+sending the data to yeah because the
+
+407
+00:15:22,480 --> 00:15:27,279
+part is a lot of cases these AI models
+
+408
+00:15:24,880 --> 00:15:29,600
+are operating externally to the
+
+409
+00:15:27,279 --> 00:15:31,600
+institutions right I mean the hospitals
+
+410
+00:15:29,600 --> 00:15:33,360
+won't have their own models that are
+
+411
+00:15:31,600 --> 00:15:35,680
+built in a lot of cases so in that case
+
+412
+00:15:33,360 --> 00:15:38,079
+you are taking advantage of a a
+
+413
+00:15:35,680 --> 00:15:40,079
+hyperscaler foundational model that they
+
+414
+00:15:38,079 --> 00:15:42,160
+are hosting and in that case even though
+
+415
+00:15:40,079 --> 00:15:45,440
+that's probably by contract or by
+
+416
+00:15:42,160 --> 00:15:47,199
+segregation or logical tenanting you're
+
+417
+00:15:45,440 --> 00:15:48,079
+keeping that within that particular
+
+418
+00:15:47,199 --> 00:15:49,519
+tenant
+
+419
+00:15:48,079 --> 00:15:52,240
+but at the end of the day you're still
+
+420
+00:15:49,519 --> 00:15:54,560
+sending it outside your own environment.
+
+421
+00:15:52,240 --> 00:15:57,199
+Yeah, I think you when we talk about
+
+422
+00:15:54,560 --> 00:16:00,240
+this that the basically having the
+
+423
+00:15:57,199 --> 00:16:02,480
+minimum of data access that you need to
+
+424
+00:16:00,240 --> 00:16:03,759
+actually accomplish something I think is
+
+425
+00:16:02,480 --> 00:16:06,800
+definitely something it's a challenge
+
+426
+00:16:03,759 --> 00:16:09,040
+but as you think about what we can do
+
+427
+00:16:06,800 --> 00:16:13,199
+from a speed and processing standpoint
+
+428
+00:16:09,040 --> 00:16:15,120
+now with AI models for me I think it you
+
+429
+00:16:13,199 --> 00:16:16,720
+know that we've talked about this a
+
+430
+00:16:15,120 --> 00:16:18,079
+little bit so I know that you're this is
+
+431
+00:16:16,720 --> 00:16:20,240
+one of the areas you're excited about.
+
+432
+00:16:18,079 --> 00:16:21,759
+So for somebody who's really protecting
+
+433
+00:16:20,240 --> 00:16:24,160
+privacy and all that, you're also
+
+434
+00:16:21,759 --> 00:16:25,680
+excited about what's possible and I this
+
+435
+00:16:24,160 --> 00:16:27,519
+is one of the things I really really
+
+436
+00:16:25,680 --> 00:16:29,120
+appreciate about what you bring to this
+
+437
+00:16:27,519 --> 00:16:31,839
+conversation and what your your
+
+438
+00:16:29,120 --> 00:16:33,839
+leadership means across the industry. So
+
+439
+00:16:31,839 --> 00:16:36,399
+when these models work, what kinds of
+
+440
+00:16:33,839 --> 00:16:38,560
+analysis or research become possible
+
+441
+00:16:36,399 --> 00:16:40,639
+that weren't feasible before? I mean
+
+442
+00:16:38,560 --> 00:16:42,720
+just positively think back just a couple
+
+443
+00:16:40,639 --> 00:16:44,560
+years now when we had all of a sudden
+
+444
+00:16:42,720 --> 00:16:46,320
+had co vaccines. There's a speed
+
+445
+00:16:44,560 --> 00:16:48,480
+involved there that was never possible
+
+446
+00:16:46,320 --> 00:16:50,399
+before. But from you, I'd love to hear
+
+447
+00:16:48,480 --> 00:16:52,800
+what you're thinking about in ter what
+
+448
+00:16:50,399 --> 00:16:53,920
+what now actually we could consider to
+
+449
+00:16:52,800 --> 00:16:54,480
+that we couldn't even think about
+
+450
+00:16:53,920 --> 00:16:57,120
+before.
+
+451
+00:16:54,480 --> 00:17:00,000
+Oh, I yeah, this this like opportunities
+
+452
+00:16:57,120 --> 00:17:01,839
+are are so many, right? Even on our side
+
+453
+00:17:00,000 --> 00:17:03,600
+of the when we actually build products
+
+454
+00:17:01,839 --> 00:17:05,760
+and and then technically how what the
+
+455
+00:17:03,600 --> 00:17:07,280
+guardrails that we put in and then take
+
+456
+00:17:05,760 --> 00:17:08,959
+advantage of these models. You know
+
+457
+00:17:07,280 --> 00:17:11,919
+there were things that probably would
+
+458
+00:17:08,959 --> 00:17:13,760
+have uh you know we would have spent a
+
+459
+00:17:11,919 --> 00:17:16,400
+significant amount of engineering effort
+
+460
+00:17:13,760 --> 00:17:18,400
+and cycles you know to get the results
+
+461
+00:17:16,400 --> 00:17:21,280
+uh that currently with these models we
+
+462
+00:17:18,400 --> 00:17:24,000
+are getting right um now in a in an
+
+463
+00:17:21,280 --> 00:17:25,760
+enterprise uh sector like healthcare you
+
+464
+00:17:24,000 --> 00:17:27,839
+know it fundamentally changes what
+
+465
+00:17:25,760 --> 00:17:30,559
+healthcare can do with that data right I
+
+466
+00:17:27,839 --> 00:17:32,880
+mean today a lot of high value use cases
+
+467
+00:17:30,559 --> 00:17:34,240
+are either you know slowed down or never
+
+468
+00:17:32,880 --> 00:17:37,039
+attempted not because they are
+
+469
+00:17:34,240 --> 00:17:40,000
+technically hard but uh because they too
+
+470
+00:17:37,039 --> 00:17:42,720
+risky from a data perspective. So with
+
+471
+00:17:40,000 --> 00:17:46,240
+privacy preserving approaches uh if they
+
+472
+00:17:42,720 --> 00:17:49,039
+are put in place and they are put in at
+
+473
+00:17:46,240 --> 00:17:51,360
+runtime and they are put in uh in a more
+
+474
+00:17:49,039 --> 00:17:54,080
+contextual and contextaware and
+
+475
+00:17:51,360 --> 00:17:56,720
+intentalized you know fashion that
+
+476
+00:17:54,080 --> 00:17:58,400
+you're making certain decisions as data
+
+477
+00:17:56,720 --> 00:18:01,360
+is moving uh you know to these AI
+
+478
+00:17:58,400 --> 00:18:04,080
+models. If you are able to successfully
+
+479
+00:18:01,360 --> 00:18:06,480
+do that, you unlock you know things like
+
+480
+00:18:04,080 --> 00:18:08,559
+cross institution you know research at
+
+481
+00:18:06,480 --> 00:18:10,480
+scale right I mean hospitals and
+
+482
+00:18:08,559 --> 00:18:12,960
+research centers can collaborate on
+
+483
+00:18:10,480 --> 00:18:14,799
+patient cohorts without actually sharing
+
+484
+00:18:12,960 --> 00:18:17,760
+raw PHI you know that means you know
+
+485
+00:18:14,799 --> 00:18:20,320
+better sites faster validation with you
+
+486
+00:18:17,760 --> 00:18:22,720
+more diverse data sets u sometimes you
+
+487
+00:18:20,320 --> 00:18:25,280
+know real time clinical decision support
+
+488
+00:18:22,720 --> 00:18:27,440
+and AI can safely assist physicians
+
+489
+00:18:25,280 --> 00:18:28,960
+using sensitive patient data in the
+
+490
+00:18:27,440 --> 00:18:31,600
+moment you know without exposing that
+
+491
+00:18:28,960 --> 00:18:34,400
+data outside the control bound and then
+
+492
+00:18:31,600 --> 00:18:36,320
+you know as back office or uh you know
+
+493
+00:18:34,400 --> 00:18:39,600
+some of the capabilities from a
+
+494
+00:18:36,320 --> 00:18:42,640
+productivity standpoint where um the you
+
+495
+00:18:39,600 --> 00:18:44,480
+know uh billing or any other you know
+
+496
+00:18:42,640 --> 00:18:47,440
+department that they're using you know
+
+497
+00:18:44,480 --> 00:18:49,200
+AI co-pilots and agents and clinicians
+
+498
+00:18:47,440 --> 00:18:50,799
+you know administrative staff and they
+
+499
+00:18:49,200 --> 00:18:52,960
+can interact with the AI system without
+
+500
+00:18:50,799 --> 00:18:55,360
+worrying that sensitive data is leaking
+
+501
+00:18:52,960 --> 00:18:57,679
+into external models right I mean like I
+
+502
+00:18:55,360 --> 00:18:59,520
+was actually talking to someone um who
+
+503
+00:18:57,679 --> 00:19:02,160
+uh was the founder of a health tech
+
+504
+00:18:59,520 --> 00:19:05,120
+company and they were solving uh that
+
+505
+00:19:02,160 --> 00:19:07,679
+how appointment setting you know within
+
+506
+00:19:05,120 --> 00:19:09,840
+hospitals you know has been a big uh
+
+507
+00:19:07,679 --> 00:19:12,480
+problem right and try to solve that
+
+508
+00:19:09,840 --> 00:19:15,039
+through AI you know analyzing you know
+
+509
+00:19:12,480 --> 00:19:17,280
+historical data in terms of uh patient
+
+510
+00:19:15,039 --> 00:19:19,360
+visits and appointments and how they are
+
+511
+00:19:17,280 --> 00:19:21,760
+staffed and across each hour of the day
+
+512
+00:19:19,360 --> 00:19:24,000
+and across each day of the week versus
+
+513
+00:19:21,760 --> 00:19:26,080
+each week month and so on so forth years
+
+514
+00:19:24,000 --> 00:19:29,600
+of data uh that they're leveraging in
+
+515
+00:19:26,080 --> 00:19:31,360
+order to help patients get you know care
+
+516
+00:19:29,600 --> 00:19:32,880
+much faster rather than having to wait
+
+517
+00:19:31,360 --> 00:19:34,720
+for an appointment or doctor to be
+
+518
+00:19:32,880 --> 00:19:35,520
+available two months down the line.
+
+519
+00:19:34,720 --> 00:19:37,760
+Right. Right.
+
+520
+00:19:35,520 --> 00:19:39,600
+So and of course you know secondary use
+
+521
+00:19:37,760 --> 00:19:42,080
+of data is those are all there like
+
+522
+00:19:39,600 --> 00:19:43,840
+population health drug drug discovery
+
+523
+00:19:42,080 --> 00:19:46,320
+operational analytics you know become
+
+524
+00:19:43,840 --> 00:19:48,799
+you know far more accessible
+
+525
+00:19:46,320 --> 00:19:49,600
+be used in a desensitized you know
+
+526
+00:19:48,799 --> 00:19:51,600
+controlled fashion.
+
+527
+00:19:49,600 --> 00:19:53,600
+Yeah. I mean to me what this is one of
+
+528
+00:19:51,600 --> 00:19:56,400
+the more exciting things because I I
+
+529
+00:19:53,600 --> 00:19:58,880
+when I was working in New York uh we had
+
+530
+00:19:56,400 --> 00:20:01,520
+a a dermatologist who was studying some
+
+531
+00:19:58,880 --> 00:20:05,280
+pretty rare conditions because of his
+
+532
+00:20:01,520 --> 00:20:08,799
+practice and when he was able to get his
+
+533
+00:20:05,280 --> 00:20:10,880
+hands on some deidentified data sets uh
+
+534
+00:20:08,799 --> 00:20:13,120
+on a larger scale he was actually able
+
+535
+00:20:10,880 --> 00:20:15,679
+to get enough of a cohort that was
+
+536
+00:20:13,120 --> 00:20:19,760
+statistically significant enough to come
+
+537
+00:20:15,679 --> 00:20:22,240
+to some really remarkable revelations in
+
+538
+00:20:19,760 --> 00:20:24,080
+terms of these rare conditions that he
+
+539
+00:20:22,240 --> 00:20:26,400
+just didn't have enough context for as
+
+540
+00:20:24,080 --> 00:20:28,640
+as a clinician to treat. That's just one
+
+541
+00:20:26,400 --> 00:20:30,080
+example. But it's to me that makes the
+
+542
+00:20:28,640 --> 00:20:32,080
+work that you guys are doing so much
+
+543
+00:20:30,080 --> 00:20:35,039
+more important because if we can
+
+544
+00:20:32,080 --> 00:20:38,159
+actually pull a single thread and
+
+545
+00:20:35,039 --> 00:20:40,320
+understand the whole uh end to end life
+
+546
+00:20:38,159 --> 00:20:42,080
+cycle of a patient's record and really
+
+547
+00:20:40,320 --> 00:20:44,000
+understand what's happening there and we
+
+548
+00:20:42,080 --> 00:20:46,559
+can put that into a larger, you know,
+
+549
+00:20:44,000 --> 00:20:49,520
+context. There's just no there's no
+
+550
+00:20:46,559 --> 00:20:52,080
+limit from from what I could see. I'm
+
+551
+00:20:49,520 --> 00:20:53,919
+excited about that. There there's some
+
+552
+00:20:52,080 --> 00:20:55,919
+unfortunate
+
+553
+00:20:53,919 --> 00:20:58,480
+ways that people think about concepts of
+
+554
+00:20:55,919 --> 00:20:59,760
+privacy and governance in particular.
+
+555
+00:20:58,480 --> 00:21:00,799
+What you're talking about doing
+
+556
+00:20:59,760 --> 00:21:02,480
+something that's a little bit different.
+
+557
+00:21:00,799 --> 00:21:05,280
+You're talking about using them as an
+
+558
+00:21:02,480 --> 00:21:06,960
+enabler. It's not a roadblock. So talk
+
+559
+00:21:05,280 --> 00:21:08,559
+about some of the misconceptions maybe
+
+560
+00:21:06,960 --> 00:21:10,720
+that people have about privacy
+
+561
+00:21:08,559 --> 00:21:13,360
+preserving technologies today.
+
+562
+00:21:10,720 --> 00:21:15,360
+Yeah. Well, I think this is you know has
+
+563
+00:21:13,360 --> 00:21:17,520
+you know existed for a long long time
+
+564
+00:21:15,360 --> 00:21:18,960
+right I mean even though my background
+
+565
+00:21:17,520 --> 00:21:21,039
+has been predominantly financial
+
+566
+00:21:18,960 --> 00:21:22,960
+services even in those you know sectors
+
+567
+00:21:21,039 --> 00:21:26,159
+whenever it came to you know
+
+568
+00:21:22,960 --> 00:21:29,919
+implementing datacentric security or
+
+569
+00:21:26,159 --> 00:21:34,559
+privacy preserving capabilities it's
+
+570
+00:21:29,919 --> 00:21:39,120
+this uh notion of losing uh utility of
+
+571
+00:21:34,559 --> 00:21:42,320
+the data because typically how uh data
+
+572
+00:21:39,120 --> 00:21:44,559
+is deidentified or desens sensitized is
+
+573
+00:21:42,320 --> 00:21:47,679
+with you know cryptographic measures um
+
+574
+00:21:44,559 --> 00:21:51,039
+whether it's encryption uh tokenization
+
+575
+00:21:47,679 --> 00:21:53,120
+sometimes more one way hash operations
+
+576
+00:21:51,039 --> 00:21:55,919
+that you anonymize that data it's a kind
+
+577
+00:21:53,120 --> 00:21:59,280
+of irreversible operation and sometimes
+
+578
+00:21:55,919 --> 00:22:00,960
+you do basic like masking and redaction
+
+579
+00:21:59,280 --> 00:22:03,600
+stuff like that right so the all of
+
+580
+00:22:00,960 --> 00:22:07,679
+these are techniques that we have used
+
+581
+00:22:03,600 --> 00:22:10,320
+um for decades uh to keep that data
+
+582
+00:22:07,679 --> 00:22:12,559
+protected um and uh you know preventing
+
+583
+00:22:10,320 --> 00:22:14,799
+you know misuse of that data but for
+
+584
+00:22:12,559 --> 00:22:18,240
+legitimate use cases when processes are
+
+585
+00:22:14,799 --> 00:22:21,360
+running um the uh concern is that I will
+
+586
+00:22:18,240 --> 00:22:23,600
+lose the ability to use the data I will
+
+587
+00:22:21,360 --> 00:22:26,480
+uh my business processes are going to
+
+588
+00:22:23,600 --> 00:22:28,720
+break uh so if you were heavily masking
+
+589
+00:22:26,480 --> 00:22:31,600
+or distorting data to a point that it's
+
+590
+00:22:28,720 --> 00:22:33,840
+no longer useful and that used to be you
+
+591
+00:22:31,600 --> 00:22:36,159
+know true in a lot of cases where very
+
+592
+00:22:33,840 --> 00:22:38,240
+rudimentary offiscation used to be done
+
+593
+00:22:36,159 --> 00:22:40,559
+like you know masking like you know make
+
+594
+00:22:38,240 --> 00:22:42,559
+everything xxx right in that case you
+
+595
+00:22:40,559 --> 00:22:44,559
+don't you lose the referential integrity
+
+596
+00:22:42,559 --> 00:22:46,159
+of of a database if there's like the
+
+597
+00:22:44,559 --> 00:22:49,520
+characters have been replaced with that
+
+598
+00:22:46,159 --> 00:22:51,280
+or you have blanked out right redacted a
+
+599
+00:22:49,520 --> 00:22:52,640
+patient social security number credit
+
+600
+00:22:51,280 --> 00:22:54,720
+card number in that case you know how do
+
+601
+00:22:52,640 --> 00:22:57,280
+you really operate that on a structured
+
+602
+00:22:54,720 --> 00:23:00,320
+data set and even with probabilistic
+
+603
+00:22:57,280 --> 00:23:02,640
+encryption methods um you you actually
+
+604
+00:23:00,320 --> 00:23:04,480
+had different outputs of cipher text
+
+605
+00:23:02,640 --> 00:23:06,559
+used to get created after you did the
+
+606
+00:23:04,480 --> 00:23:07,919
+encryption of the same data even with
+
+607
+00:23:06,559 --> 00:23:10,000
+the same key because every time you
+
+608
+00:23:07,919 --> 00:23:11,760
+would generate a different output So you
+
+609
+00:23:10,000 --> 00:23:14,080
+you are not able to search on that
+
+610
+00:23:11,760 --> 00:23:17,679
+unless you implement you know certain uh
+
+611
+00:23:14,080 --> 00:23:20,080
+tag or or like a a static uh some sort
+
+612
+00:23:17,679 --> 00:23:21,440
+of a hash uh to do the searches on that.
+
+613
+00:23:20,080 --> 00:23:23,440
+But you know with deterministic
+
+614
+00:23:21,440 --> 00:23:25,840
+encryption format preserving encryption
+
+615
+00:23:23,440 --> 00:23:28,880
+tokenization all of these capabilities
+
+616
+00:23:25,840 --> 00:23:32,880
+have enabled you to offiscate the data
+
+617
+00:23:28,880 --> 00:23:35,760
+and replace a real data with a token or
+
+618
+00:23:32,880 --> 00:23:38,000
+a surrogate of it of that and then use
+
+619
+00:23:35,760 --> 00:23:40,159
+that across your workflows. And so and
+
+620
+00:23:38,000 --> 00:23:42,880
+then you still enable people to search
+
+621
+00:23:40,159 --> 00:23:45,200
+on that data to join different tables
+
+622
+00:23:42,880 --> 00:23:46,799
+you know using that as a primary key
+
+623
+00:23:45,200 --> 00:23:49,039
+foreign key all of the database
+
+624
+00:23:46,799 --> 00:23:51,919
+operations that typically gets done and
+
+625
+00:23:49,039 --> 00:23:55,120
+sometimes you know with additional
+
+626
+00:23:51,919 --> 00:23:56,320
+uh privacy enhancing uh capabilities you
+
+627
+00:23:55,120 --> 00:23:58,320
+know there's a belief that these
+
+628
+00:23:56,320 --> 00:24:00,480
+approaches are too complex and too
+
+629
+00:23:58,320 --> 00:24:02,480
+academic right federated learning
+
+630
+00:24:00,480 --> 00:24:04,880
+homorphic encryption you know these are
+
+631
+00:24:02,480 --> 00:24:06,960
+hard to compromise and and and a lot of
+
+632
+00:24:04,880 --> 00:24:09,120
+cases that's true right because there
+
+633
+00:24:06,960 --> 00:24:11,679
+has to be certain very niche use cases
+
+634
+00:24:09,120 --> 00:24:14,400
+where these you know apply well but they
+
+635
+00:24:11,679 --> 00:24:15,760
+don't apply broadly frustrated execution
+
+636
+00:24:14,400 --> 00:24:17,200
+environments you know these like you
+
+637
+00:24:15,760 --> 00:24:20,000
+know where everything is running under
+
+638
+00:24:17,200 --> 00:24:22,720
+this encrypted uh you know memory and
+
+639
+00:24:20,000 --> 00:24:25,039
+it's all in a secure enclave even if you
+
+640
+00:24:22,720 --> 00:24:27,360
+are able to take a dump of that memory
+
+641
+00:24:25,039 --> 00:24:29,520
+and there was a memory leak u still
+
+642
+00:24:27,360 --> 00:24:32,320
+you'll find data encrypted but they they
+
+643
+00:24:29,520 --> 00:24:34,640
+they operate in very confines of certain
+
+644
+00:24:32,320 --> 00:24:37,039
+you know uh parameters but the moment
+
+645
+00:24:34,640 --> 00:24:38,799
+that data leaves you don't have uh homo
+
+646
+00:24:37,039 --> 00:24:40,559
+uh you know homogeneous ecosystem that
+
+647
+00:24:38,799 --> 00:24:42,640
+everything stays encrypted as it moves
+
+648
+00:24:40,559 --> 00:24:44,559
+and then on the other side the data gets
+
+649
+00:24:42,640 --> 00:24:46,880
+uh you know usable so I think that's
+
+650
+00:24:44,559 --> 00:24:50,720
+where probably um a lot of concern is
+
+651
+00:24:46,880 --> 00:24:53,440
+that I want to innovate but security
+
+652
+00:24:50,720 --> 00:24:56,159
+privacy is bringing me down right I mean
+
+653
+00:24:53,440 --> 00:24:58,000
+it's a barrier to innovation and in that
+
+654
+00:24:56,159 --> 00:24:59,520
+case what happens is they they try to
+
+655
+00:24:58,000 --> 00:25:01,440
+find the guardrails and that's where you
+
+656
+00:24:59,520 --> 00:25:04,720
+find a lot of the shadow AI happening as
+
+657
+00:25:01,440 --> 00:25:07,039
+well so security and privacy you know if
+
+658
+00:25:04,720 --> 00:25:09,600
+they are looked as enabling ers and that
+
+659
+00:25:07,039 --> 00:25:11,679
+that also has to be proven that they are
+
+660
+00:25:09,600 --> 00:25:14,400
+indeed enabler and can still do your job
+
+661
+00:25:11,679 --> 00:25:16,799
+and do more because now these are baked
+
+662
+00:25:14,400 --> 00:25:18,960
+into the design and by default so you
+
+663
+00:25:16,799 --> 00:25:20,720
+don't have to really implement something
+
+664
+00:25:18,960 --> 00:25:23,440
+because that's one of the friction that
+
+665
+00:25:20,720 --> 00:25:24,960
+uh typically innovators feel right oh
+
+666
+00:25:23,440 --> 00:25:27,200
+now I have to also implement something
+
+667
+00:25:24,960 --> 00:25:29,760
+to take care of privacy and security and
+
+668
+00:25:27,200 --> 00:25:32,320
+that essentially you know drags them
+
+669
+00:25:29,760 --> 00:25:33,840
+away from the innovation um and and the
+
+670
+00:25:32,320 --> 00:25:35,840
+actual business impact that they're
+
+671
+00:25:33,840 --> 00:25:37,279
+trying to make but these are some things
+
+672
+00:25:35,840 --> 00:25:39,760
+that ask you to kind of operate
+
+673
+00:25:37,279 --> 00:25:41,919
+automatically at runtime and in that
+
+674
+00:25:39,760 --> 00:25:44,240
+aspect they don't feel the pain and the
+
+675
+00:25:41,919 --> 00:25:46,559
+weight of being the ones who have to
+
+676
+00:25:44,240 --> 00:25:49,120
+implement data privacy and security and
+
+677
+00:25:46,559 --> 00:25:51,200
+if something just works then they will
+
+678
+00:25:49,120 --> 00:25:53,360
+not bypass it. So you will have less
+
+679
+00:25:51,200 --> 00:25:55,600
+amount of shadow AI you know happening
+
+680
+00:25:53,360 --> 00:26:00,000
+which puts the enterprises more at risk
+
+681
+00:25:55,600 --> 00:26:01,840
+right yeah shadow AI is a a whole whole
+
+682
+00:26:00,000 --> 00:26:04,080
+crazy topic that we could probably speak
+
+683
+00:26:01,840 --> 00:26:06,000
+on for a few days because every
+
+684
+00:26:04,080 --> 00:26:08,400
+organization's got you know some level
+
+685
+00:26:06,000 --> 00:26:10,320
+of it probably more than they think
+
+686
+00:26:08,400 --> 00:26:12,400
+based on I'm sure you've seen the same
+
+687
+00:26:10,320 --> 00:26:15,600
+kind of thing in your in your work as
+
+688
+00:26:12,400 --> 00:26:17,919
+well we're definitely in a place where
+
+689
+00:26:15,600 --> 00:26:20,240
+there's a growing need I think the
+
+690
+00:26:17,919 --> 00:26:22,240
+pandemic kind of exposed some things in
+
+691
+00:26:20,240 --> 00:26:24,480
+this regard that there's a need for
+
+692
+00:26:22,240 --> 00:26:26,720
+collaboration across institutions which
+
+693
+00:26:24,480 --> 00:26:28,960
+typically has been a little difficult.
+
+694
+00:26:26,720 --> 00:26:29,760
+Um why you think that's been so
+
+695
+00:26:28,960 --> 00:26:31,600
+difficult?
+
+696
+00:26:29,760 --> 00:26:35,360
+Yeah, I think it's it's something that
+
+697
+00:26:31,600 --> 00:26:38,000
+has been hard to execute um because I
+
+698
+00:26:35,360 --> 00:26:40,720
+think the data gravity combined you know
+
+699
+00:26:38,000 --> 00:26:44,000
+with the risk that's associated with it.
+
+700
+00:26:40,720 --> 00:26:46,880
+So every institution holds sensitive
+
+701
+00:26:44,000 --> 00:26:49,360
+patient data but the moment data leaves
+
+702
+00:26:46,880 --> 00:26:51,760
+its boundary you know you lose the
+
+703
+00:26:49,360 --> 00:26:54,480
+control on it right and once control is
+
+704
+00:26:51,760 --> 00:26:56,960
+lost uh the accountability doesn't go
+
+705
+00:26:54,480 --> 00:26:59,360
+away it actually get increased but in
+
+706
+00:26:56,960 --> 00:27:01,760
+that case you definitely do not have the
+
+707
+00:26:59,360 --> 00:27:04,960
+direct authority or control on that data
+
+708
+00:27:01,760 --> 00:27:09,120
+and and ensure safeguards in place right
+
+709
+00:27:04,960 --> 00:27:11,039
+so typically what happens that you air
+
+710
+00:27:09,120 --> 00:27:12,159
+on the side of caution Don't move the
+
+711
+00:27:11,039 --> 00:27:12,720
+data. Right.
+
+712
+00:27:12,159 --> 00:27:14,960
+Right.
+
+713
+00:27:12,720 --> 00:27:15,679
+So in that case
+
+714
+00:27:14,960 --> 00:27:17,279
+probably
+
+715
+00:27:15,679 --> 00:27:19,039
+yeah you're putting that guard rail
+
+716
+00:27:17,279 --> 00:27:21,520
+because if I can control the data once
+
+717
+00:27:19,039 --> 00:27:23,200
+it's shared I might as well not share at
+
+718
+00:27:21,520 --> 00:27:26,400
+all. Right. And then you have
+
+719
+00:27:23,200 --> 00:27:28,480
+fragmentation right different HR systems
+
+720
+00:27:26,400 --> 00:27:30,640
+different data standards different
+
+721
+00:27:28,480 --> 00:27:32,000
+governance models and if uh two
+
+722
+00:27:30,640 --> 00:27:34,880
+institutions you know want to
+
+723
+00:27:32,000 --> 00:27:37,279
+collaborate aligning on how data is
+
+724
+00:27:34,880 --> 00:27:39,279
+accessed and shared and and protected
+
+725
+00:27:37,279 --> 00:27:41,279
+becomes a project in itself right
+
+726
+00:27:39,279 --> 00:27:44,400
+because each of these institutions have
+
+727
+00:27:41,279 --> 00:27:46,559
+very differing different layers or
+
+728
+00:27:44,400 --> 00:27:49,440
+levels of maturity when it comes to
+
+729
+00:27:46,559 --> 00:27:51,760
+their um privacy program or data
+
+730
+00:27:49,440 --> 00:27:54,000
+governance or data security program and
+
+731
+00:27:51,760 --> 00:27:55,919
+in that case you you may have a gold
+
+732
+00:27:54,000 --> 00:27:57,919
+standard on this side but at the moment
+
+733
+00:27:55,919 --> 00:28:00,159
+the data is shared and they're probably
+
+734
+00:27:57,919 --> 00:28:02,880
+way less mature in that aspect. So that
+
+735
+00:28:00,159 --> 00:28:04,559
+that's where some of the challenges are
+
+736
+00:28:02,880 --> 00:28:06,960
+and
+
+737
+00:28:04,559 --> 00:28:10,080
+obviously your privacy and regulatory
+
+738
+00:28:06,960 --> 00:28:12,880
+exposure you know violation of HIPPA uh
+
+739
+00:28:10,080 --> 00:28:15,360
+can mean heavy penalties and and
+
+740
+00:28:12,880 --> 00:28:17,760
+long-term you know scrutiny data
+
+741
+00:28:15,360 --> 00:28:20,480
+breaches are happening every day you
+
+742
+00:28:17,760 --> 00:28:23,039
+know it's almost unfortunate that we are
+
+743
+00:28:20,480 --> 00:28:25,120
+kind of getting immune to these news
+
+744
+00:28:23,039 --> 00:28:27,279
+unless it does something very very
+
+745
+00:28:25,120 --> 00:28:30,399
+positive you know that uh impacts every
+
+746
+00:28:27,279 --> 00:28:32,000
+one of us right So and then of course uh
+
+747
+00:28:30,399 --> 00:28:33,760
+reputational damage all of these things
+
+748
+00:28:32,000 --> 00:28:36,000
+are there. So even a well-intentioned
+
+749
+00:28:33,760 --> 00:28:39,200
+collaboration gets slowed down because
+
+750
+00:28:36,000 --> 00:28:41,840
+of these real concerns given that uh
+
+751
+00:28:39,200 --> 00:28:45,200
+either the practices or the maturity
+
+752
+00:28:41,840 --> 00:28:48,640
+across the collaboration are are not at
+
+753
+00:28:45,200 --> 00:28:51,919
+par or all of them can't align on the
+
+754
+00:28:48,640 --> 00:28:54,240
+right way of how do we securely share
+
+755
+00:28:51,919 --> 00:28:57,279
+data? How do we collaborate without
+
+756
+00:28:54,240 --> 00:28:59,440
+exposing the data? And then uh basically
+
+757
+00:28:57,279 --> 00:29:02,559
+that's that's a model that you know
+
+758
+00:28:59,440 --> 00:29:04,480
+technically uh implementation is hard.
+
+759
+00:29:02,559 --> 00:29:07,279
+See um everybody has the right
+
+760
+00:29:04,480 --> 00:29:09,760
+intentions but sometimes economically uh
+
+761
+00:29:07,279 --> 00:29:11,200
+financially and operationally it's
+
+762
+00:29:09,760 --> 00:29:12,720
+sometimes it becomes a very big
+
+763
+00:29:11,200 --> 00:29:15,600
+challenge depending on how big you are
+
+764
+00:29:12,720 --> 00:29:17,600
+and how many you know entities uh you
+
+765
+00:29:15,600 --> 00:29:18,720
+are collaborating with and how much data
+
+766
+00:29:17,600 --> 00:29:22,559
+you're topping out
+
+767
+00:29:18,720 --> 00:29:25,120
+right yeah I think this is this sets up
+
+768
+00:29:22,559 --> 00:29:27,200
+beautifully one of the things I was
+
+769
+00:29:25,120 --> 00:29:28,960
+really excited to to get you to talk a
+
+770
+00:29:27,200 --> 00:29:32,880
+little bit about because this is really
+
+771
+00:29:28,960 --> 00:29:35,840
+complicated stuff and I've
+
+772
+00:29:32,880 --> 00:29:38,240
+living around this risk risk stuff for
+
+773
+00:29:35,840 --> 00:29:40,960
+quite some time myself. But for people
+
+774
+00:29:38,240 --> 00:29:42,960
+who might not be familiar, how does this
+
+775
+00:29:40,960 --> 00:29:44,720
+capability that you're using like for
+
+776
+00:29:42,960 --> 00:29:45,919
+example when I say tokenization, I'm not
+
+777
+00:29:44,720 --> 00:29:47,840
+sure if people understand what that
+
+778
+00:29:45,919 --> 00:29:49,919
+means for technology stand or or
+
+779
+00:29:47,840 --> 00:29:52,399
+methodology standpoint, but there's a
+
+780
+00:29:49,919 --> 00:29:54,960
+number of different ways that you are
+
+781
+00:29:52,399 --> 00:29:57,679
+are working with solutioning to be able
+
+782
+00:29:54,960 --> 00:29:59,600
+to preserve that that privacy within the
+
+783
+00:29:57,679 --> 00:30:01,279
+infrastructure. Well, this will change
+
+784
+00:29:59,600 --> 00:30:04,000
+how partnerships could be approached.
+
+785
+00:30:01,279 --> 00:30:06,559
+But but really the the role that you and
+
+786
+00:30:04,000 --> 00:30:09,279
+your your your colleagues are playing is
+
+787
+00:30:06,559 --> 00:30:11,440
+a massive massive advantage for people
+
+788
+00:30:09,279 --> 00:30:14,240
+if they can start to understand enough
+
+789
+00:30:11,440 --> 00:30:15,919
+to be comfortable and confident that you
+
+790
+00:30:14,240 --> 00:30:18,399
+you've got a way for them to actually
+
+791
+00:30:15,919 --> 00:30:20,240
+accelerate in ways that they never
+
+792
+00:30:18,399 --> 00:30:21,919
+thought were possible. So how should
+
+793
+00:30:20,240 --> 00:30:24,000
+that cause us to think differently about
+
+794
+00:30:21,919 --> 00:30:25,200
+the way we can approach partnerships?
+
+795
+00:30:24,000 --> 00:30:26,720
+No. Yeah, you're right. Right. I mean I
+
+796
+00:30:25,200 --> 00:30:29,919
+think this was another conversation that
+
+797
+00:30:26,720 --> 00:30:31,679
+I was having with uh uh two co-founders
+
+798
+00:30:29,919 --> 00:30:34,799
+um of another health tech you know
+
+799
+00:30:31,679 --> 00:30:38,240
+startup that uh they were actually
+
+800
+00:30:34,799 --> 00:30:40,960
+saying that we don't get the kind of
+
+801
+00:30:38,240 --> 00:30:43,919
+data from the hospitals that we wish we
+
+802
+00:30:40,960 --> 00:30:46,240
+did and that that would have enabled our
+
+803
+00:30:43,919 --> 00:30:48,559
+platforms and our models to actually do
+
+804
+00:30:46,240 --> 00:30:50,799
+a lot better job at the service that we
+
+805
+00:30:48,559 --> 00:30:52,720
+are offering to them. And the only
+
+806
+00:30:50,799 --> 00:30:55,039
+reason that the hospitals were not
+
+807
+00:30:52,720 --> 00:30:56,880
+sharing a lot of those data because you
+
+808
+00:30:55,039 --> 00:30:59,360
+know they just didn't have a mechanism
+
+809
+00:30:56,880 --> 00:31:01,679
+to send something that you know they
+
+810
+00:30:59,360 --> 00:31:03,600
+could um you know have a control on or
+
+811
+00:31:01,679 --> 00:31:05,840
+they would not have the concern of that
+
+812
+00:31:03,600 --> 00:31:08,480
+data getting exposed at after they have
+
+813
+00:31:05,840 --> 00:31:10,960
+shared right so I think when it comes to
+
+814
+00:31:08,480 --> 00:31:14,720
+that that it's it's a win-win situation
+
+815
+00:31:10,960 --> 00:31:18,080
+for like I'm a hospital I'm leveraging a
+
+816
+00:31:14,720 --> 00:31:21,200
+third party to provide me with a service
+
+817
+00:31:18,080 --> 00:31:23,360
+and I'm sharing certain data for them to
+
+818
+00:31:21,200 --> 00:31:25,679
+analyze so that that they can provide
+
+819
+00:31:23,360 --> 00:31:27,440
+that service but I'm not sharing enough
+
+820
+00:31:25,679 --> 00:31:29,919
+that they actually would do a superior
+
+821
+00:31:27,440 --> 00:31:32,399
+job on it and they are constrained
+
+822
+00:31:29,919 --> 00:31:34,240
+within whatever they are getting. So on
+
+823
+00:31:32,399 --> 00:31:36,960
+their side they're saying we could do a
+
+824
+00:31:34,240 --> 00:31:39,120
+lot more if you only sent us you know
+
+825
+00:31:36,960 --> 00:31:40,799
+some of these other data elements and
+
+826
+00:31:39,120 --> 00:31:42,399
+hospitals like okay I I can't really
+
+827
+00:31:40,799 --> 00:31:44,559
+send you that because in that case you
+
+828
+00:31:42,399 --> 00:31:46,080
+know I'm going to be now risking uh
+
+829
+00:31:44,559 --> 00:31:48,240
+patient privacy in a lot of cases
+
+830
+00:31:46,080 --> 00:31:50,080
+because I don't really have a way to do
+
+831
+00:31:48,240 --> 00:31:52,159
+that. So I think instead of asking you
+
+832
+00:31:50,080 --> 00:31:53,679
+know how do we securely share data you
+
+833
+00:31:52,159 --> 00:31:56,240
+know when it comes to the privacy
+
+834
+00:31:53,679 --> 00:31:57,679
+preserving infrastructure and stuff like
+
+835
+00:31:56,240 --> 00:32:00,080
+that you shift to like how do we
+
+836
+00:31:57,679 --> 00:32:02,240
+collaborate without exposing data right
+
+837
+00:32:00,080 --> 00:32:05,760
+that's a very you know different model
+
+838
+00:32:02,240 --> 00:32:07,679
+so you enable data to stay sometimes you
+
+839
+00:32:05,760 --> 00:32:09,840
+know within its home environment and you
+
+840
+00:32:07,679 --> 00:32:12,640
+have a control policydriven access you
+
+841
+00:32:09,840 --> 00:32:15,120
+know at runtime and then based on
+
+842
+00:32:12,640 --> 00:32:16,799
+context uh you you make decisions about
+
+843
+00:32:15,120 --> 00:32:18,640
+what gets revealed and what doesn't
+
+844
+00:32:16,799 --> 00:32:21,440
+right so in a lot of cases you bring it
+
+845
+00:32:18,640 --> 00:32:24,480
+home. Or on the other cases where as you
+
+846
+00:32:21,440 --> 00:32:27,919
+are sharing um then you you ensure what
+
+847
+00:32:24,480 --> 00:32:29,919
+gets shared how much you know you need
+
+848
+00:32:27,919 --> 00:32:31,760
+um and in that case uh what's the
+
+849
+00:32:29,919 --> 00:32:34,240
+context behind this data sharing because
+
+850
+00:32:31,760 --> 00:32:37,039
+all data sharing are not the same right
+
+851
+00:32:34,240 --> 00:32:39,600
+understanding that um you know context
+
+852
+00:32:37,039 --> 00:32:42,480
+the intent behind that you know sharing
+
+853
+00:32:39,600 --> 00:32:44,880
+and in that case what data I should be
+
+854
+00:32:42,480 --> 00:32:47,200
+offiscating I should actually leave it
+
+855
+00:32:44,880 --> 00:32:48,240
+you know as it is it's a runtime
+
+856
+00:32:47,200 --> 00:32:51,840
+position
+
+857
+00:32:48,240 --> 00:32:54,080
+and I think you know products solutions
+
+858
+00:32:51,840 --> 00:32:56,159
+that are able to make that runtime
+
+859
+00:32:54,080 --> 00:32:57,600
+decisions are going to enable you know
+
+860
+00:32:56,159 --> 00:32:59,840
+these partnerships to be more
+
+861
+00:32:57,600 --> 00:33:02,799
+strengthened right and in that case
+
+862
+00:32:59,840 --> 00:33:04,880
+these partnerships are entirely based on
+
+863
+00:33:02,799 --> 00:33:07,200
+these contracts right I mean it's it's
+
+864
+00:33:04,880 --> 00:33:09,120
+like this is how you know it needs to be
+
+865
+00:33:07,200 --> 00:33:11,039
+but you don't have any control after the
+
+866
+00:33:09,120 --> 00:33:13,600
+fact it's kind of more of a legal
+
+867
+00:33:11,039 --> 00:33:16,640
+document versus an implemented uh
+
+868
+00:33:13,600 --> 00:33:18,080
+security control so it with with these
+
+869
+00:33:16,640 --> 00:33:19,760
+you know private privacy preserving
+
+870
+00:33:18,080 --> 00:33:22,880
+infrastructure as well as these
+
+871
+00:33:19,760 --> 00:33:24,559
+different uh technologies and solutions.
+
+872
+00:33:22,880 --> 00:33:26,960
+uh these become less about legal
+
+873
+00:33:24,559 --> 00:33:29,039
+complexity and and data plans for
+
+874
+00:33:26,960 --> 00:33:31,519
+agreements but more about controlled
+
+875
+00:33:29,039 --> 00:33:34,480
+interoperability right and obviously the
+
+876
+00:33:31,519 --> 00:33:36,320
+impact is huge that you can move on you
+
+877
+00:33:34,480 --> 00:33:39,200
+know move from months of negotiation and
+
+878
+00:33:36,320 --> 00:33:41,679
+hesitation to enabling you know joint
+
+879
+00:33:39,200 --> 00:33:43,679
+research shared analytics and you know
+
+880
+00:33:41,679 --> 00:33:45,279
+driven insights much faster
+
+881
+00:33:43,679 --> 00:33:47,279
+right you know you you mentioned
+
+882
+00:33:45,279 --> 00:33:50,320
+infrastructure I think this is an
+
+883
+00:33:47,279 --> 00:33:52,880
+important thing too is um there's a ton
+
+884
+00:33:50,320 --> 00:33:55,519
+of focus on algorithms models
+
+885
+00:33:52,880 --> 00:33:59,440
+um you know how how many ways that could
+
+886
+00:33:55,519 --> 00:34:02,080
+go sideways and you know we can tee that
+
+887
+00:33:59,440 --> 00:34:04,399
+up another area we could talk about for
+
+888
+00:34:02,080 --> 00:34:06,159
+days but let's talk about the the
+
+889
+00:34:04,399 --> 00:34:08,079
+infrastructure itself that to support
+
+890
+00:34:06,159 --> 00:34:09,839
+what you're talking about how important
+
+891
+00:34:08,079 --> 00:34:12,159
+is the infrastructure to support this
+
+892
+00:34:09,839 --> 00:34:16,240
+so I think uh
+
+893
+00:34:12,159 --> 00:34:19,200
+today there's a lot more focus you know
+
+894
+00:34:16,240 --> 00:34:21,440
+is given on the models right like you
+
+895
+00:34:19,200 --> 00:34:23,839
+know what model I'm using and the other
+
+896
+00:34:21,440 --> 00:34:26,560
+part is there are how how good that
+
+897
+00:34:23,839 --> 00:34:28,800
+model is compared to something else. But
+
+898
+00:34:26,560 --> 00:34:30,879
+in a real, you know, world deployment,
+
+899
+00:34:28,800 --> 00:34:33,599
+infrastructure is kind of the difference
+
+900
+00:34:30,879 --> 00:34:35,919
+between a demo and something that
+
+901
+00:34:33,599 --> 00:34:38,159
+actually runs in production, right? So
+
+902
+00:34:35,919 --> 00:34:41,040
+you can you have the best model in the
+
+903
+00:34:38,159 --> 00:34:44,159
+world, but if your data layer isn't
+
+904
+00:34:41,040 --> 00:34:47,040
+secure, observable, it's not controlled,
+
+905
+00:34:44,159 --> 00:34:49,040
+um, and it's not cleaned, right? And the
+
+906
+00:34:47,040 --> 00:34:52,159
+data hygiene has been biggest problems
+
+907
+00:34:49,040 --> 00:34:54,480
+because if it's a garbage in and garbage
+
+908
+00:34:52,159 --> 00:34:56,079
+out thing, right? I mean you put you
+
+909
+00:34:54,480 --> 00:34:58,320
+know garbage into something it is going
+
+910
+00:34:56,079 --> 00:34:58,960
+to cough out garbage regardless of you
+
+911
+00:34:58,320 --> 00:35:01,920
+know what the
+
+912
+00:34:58,960 --> 00:35:04,400
+unfortunately that's the way it works.
+
+913
+00:35:01,920 --> 00:35:06,880
+So that's as a without you know having
+
+914
+00:35:04,400 --> 00:35:09,359
+that data layer you know that is uh you
+
+915
+00:35:06,880 --> 00:35:12,000
+know hygienic and and it's control it's
+
+916
+00:35:09,359 --> 00:35:13,680
+secure and and observable right you
+
+917
+00:35:12,000 --> 00:35:15,280
+simply can't use it at scale
+
+918
+00:35:13,680 --> 00:35:18,880
+particularly you know when it comes to
+
+919
+00:35:15,280 --> 00:35:22,240
+healthcare so I think the
+
+920
+00:35:18,880 --> 00:35:24,320
+underestimation has been done on the a
+
+921
+00:35:22,240 --> 00:35:26,400
+on the data layer right I mean we have
+
+922
+00:35:24,320 --> 00:35:29,280
+actually put too much of focus on the
+
+923
+00:35:26,400 --> 00:35:31,040
+models and stuff um and it's just not
+
+924
+00:35:29,280 --> 00:35:33,920
+about you know storing or accessing data
+
+925
+00:35:31,040 --> 00:35:37,040
+anymore. It's understanding you know the
+
+926
+00:35:33,920 --> 00:35:39,359
+data um like what that data is you know
+
+927
+00:35:37,040 --> 00:35:42,160
+that is being accessed. What's the
+
+928
+00:35:39,359 --> 00:35:45,280
+context intent you know behind how it's
+
+929
+00:35:42,160 --> 00:35:47,119
+being used and then enforce protection
+
+930
+00:35:45,280 --> 00:35:49,280
+dynamically you know as data flows
+
+931
+00:35:47,119 --> 00:35:51,760
+across these systems and co-pilots and
+
+932
+00:35:49,280 --> 00:35:53,760
+and agents. So right existing
+
+933
+00:35:51,760 --> 00:35:56,000
+infrastructure you know wasn't designed
+
+934
+00:35:53,760 --> 00:35:57,920
+for that right because we we it was
+
+935
+00:35:56,000 --> 00:35:59,920
+built for static applications as I was
+
+936
+00:35:57,920 --> 00:36:02,880
+talking about that deterministic world
+
+937
+00:35:59,920 --> 00:36:05,119
+right you know the application was
+
+938
+00:36:02,880 --> 00:36:07,760
+developed in this way this is what it
+
+939
+00:36:05,119 --> 00:36:10,000
+does these are the data elements it
+
+940
+00:36:07,760 --> 00:36:12,800
+takes in and this is what it does with
+
+941
+00:36:10,000 --> 00:36:16,240
+that data this is where it shared shares
+
+942
+00:36:12,800 --> 00:36:18,320
+or stores and we move to an AI um
+
+943
+00:36:16,240 --> 00:36:19,839
+nondeterministic world where data is
+
+944
+00:36:18,320 --> 00:36:22,160
+constantly moving you know being
+
+945
+00:36:19,839 --> 00:36:24,320
+recombed mind being generated being
+
+946
+00:36:22,160 --> 00:36:26,800
+interpreted in unpredictable ways and
+
+947
+00:36:24,320 --> 00:36:28,880
+then autonomous decisions are being made
+
+948
+00:36:26,800 --> 00:36:30,880
+because you have not pre-wired uh an
+
+949
+00:36:28,880 --> 00:36:32,640
+agent you know to do a certain thing I
+
+950
+00:36:30,880 --> 00:36:35,760
+mean the agent is making decisions on
+
+951
+00:36:32,640 --> 00:36:39,520
+its own so as this big shift you know
+
+952
+00:36:35,760 --> 00:36:42,240
+has happened uh in that case um we have
+
+953
+00:36:39,520 --> 00:36:44,640
+our infrastructure was not kept um uh
+
+954
+00:36:42,240 --> 00:36:46,960
+you know or or couldn't evolve at that
+
+955
+00:36:44,640 --> 00:36:48,400
+speed so that's where I think uh you
+
+956
+00:36:46,960 --> 00:36:50,720
+know some of the biggest challenges and
+
+957
+00:36:48,400 --> 00:36:52,880
+that's where you know Technologically we
+
+958
+00:36:50,720 --> 00:36:55,440
+can do a lot. We can build powerful
+
+959
+00:36:52,880 --> 00:36:58,160
+models, process massive data sets and
+
+960
+00:36:55,440 --> 00:36:58,720
+generate insights in second. But
+
+961
+00:36:58,160 --> 00:37:01,440
+right
+
+962
+00:36:58,720 --> 00:37:03,839
+operationally um when it comes to data
+
+963
+00:37:01,440 --> 00:37:06,160
+privacy, data security is the question
+
+964
+00:37:03,839 --> 00:37:08,400
+gets asked that can we do this safely
+
+965
+00:37:06,160 --> 00:37:10,720
+without losing control of our data,
+
+966
+00:37:08,400 --> 00:37:13,680
+right? And right now that answer in a
+
+967
+00:37:10,720 --> 00:37:16,320
+lot of cases is uncertain. We we're not
+
+968
+00:37:13,680 --> 00:37:18,160
+sure. So it's not really the innovation.
+
+969
+00:37:16,320 --> 00:37:20,240
+It's the confidence and control at the
+
+970
+00:37:18,160 --> 00:37:22,720
+data layer. you know that organizations
+
+971
+00:37:20,240 --> 00:37:26,320
+you know do not have and that's where I
+
+972
+00:37:22,720 --> 00:37:30,160
+think uh we we see that uh the the
+
+973
+00:37:26,320 --> 00:37:33,119
+challenges um and then how uh AI has
+
+974
+00:37:30,160 --> 00:37:35,440
+kind of outpaced the way enterprises
+
+975
+00:37:33,119 --> 00:37:36,800
+have you know built the infrastructure
+
+976
+00:37:35,440 --> 00:37:41,119
+and and their governance model
+
+977
+00:37:36,800 --> 00:37:44,560
+yeah I mean that that's obviously a gap
+
+978
+00:37:41,119 --> 00:37:46,160
+that has existed you know long before AI
+
+979
+00:37:44,560 --> 00:37:48,560
+just you know the expectations of what
+
+980
+00:37:46,160 --> 00:37:50,480
+we can do versus what we could actually
+
+981
+00:37:48,560 --> 00:37:52,240
+implement. Um I think everyone hopes
+
+982
+00:37:50,480 --> 00:37:53,520
+that there's a that was easy button on a
+
+983
+00:37:52,240 --> 00:37:54,160
+desk they can hit but
+
+984
+00:37:53,520 --> 00:37:56,000
+right
+
+985
+00:37:54,160 --> 00:37:57,280
+that's just not the way it works
+
+986
+00:37:56,000 --> 00:37:58,800
+unfortunately.
+
+987
+00:37:57,280 --> 00:38:00,640
+you know we always had this challenges
+
+988
+00:37:58,800 --> 00:38:03,119
+to your point but I think AI has just
+
+989
+00:38:00,640 --> 00:38:04,800
+kind of amplified it to uh you know
+
+990
+00:38:03,119 --> 00:38:06,480
+multiple fold right I mean that's where
+
+991
+00:38:04,800 --> 00:38:09,200
+I think the biggest pain point is
+
+992
+00:38:06,480 --> 00:38:11,280
+because we we always tried to catch up
+
+993
+00:38:09,200 --> 00:38:13,359
+with the digital transformation and has
+
+994
+00:38:11,280 --> 00:38:15,760
+things you know mature and evolve but
+
+995
+00:38:13,359 --> 00:38:17,119
+this leap has been very significant
+
+996
+00:38:15,760 --> 00:38:19,680
+right and that's where we kind of like
+
+997
+00:38:17,119 --> 00:38:21,280
+find ourselves in a um you know standing
+
+998
+00:38:19,680 --> 00:38:23,680
+at the bottom of the cliff while you
+
+999
+00:38:21,280 --> 00:38:27,599
+know something is is way up there
+
+1000
+00:38:23,680 --> 00:38:29,760
+right yeah it's just We're I don't know
+
+1001
+00:38:27,599 --> 00:38:32,480
+just so many different angles to this
+
+1002
+00:38:29,760 --> 00:38:34,400
+stuff and you know we want to talk a
+
+1003
+00:38:32,480 --> 00:38:36,160
+little bit more about you know we don't
+
+1004
+00:38:34,400 --> 00:38:37,920
+dig in on trust a whole lot yet don't I
+
+1005
+00:38:36,160 --> 00:38:39,599
+want to I want to talk about that too
+
+1006
+00:38:37,920 --> 00:38:42,800
+but you know governance trust and
+
+1007
+00:38:39,599 --> 00:38:44,160
+stewardship I I think people are coming
+
+1008
+00:38:42,800 --> 00:38:46,400
+at things with a different level of
+
+1009
+00:38:44,160 --> 00:38:49,200
+understanding of what those things are
+
+1010
+00:38:46,400 --> 00:38:52,079
+trust is another area where we have big
+
+1011
+00:38:49,200 --> 00:38:54,320
+big challenges in almost every area of
+
+1012
+00:38:52,079 --> 00:38:56,000
+life because they of the erosion of
+
+1013
+00:38:54,320 --> 00:38:57,440
+trust in human relationships
+
+1014
+00:38:56,000 --> 00:38:59,599
+But what we're what we need to be able
+
+1015
+00:38:57,440 --> 00:39:02,560
+to figure out in this kind of
+
+1016
+00:38:59,599 --> 00:39:04,079
+environment when we really do have to be
+
+1017
+00:39:02,560 --> 00:39:06,960
+able to share information that's
+
+1018
+00:39:04,079 --> 00:39:09,920
+sensitive across organizations.
+
+1019
+00:39:06,960 --> 00:39:12,240
+Um how do you even go about struct
+
+1020
+00:39:09,920 --> 00:39:15,839
+structuring the governance and and
+
+1021
+00:39:12,240 --> 00:39:17,839
+accountability uh to really enable this
+
+1022
+00:39:15,839 --> 00:39:20,720
+in in the way that we're really doing
+
+1023
+00:39:17,839 --> 00:39:22,000
+our our we're doing our our duty to to
+
+1024
+00:39:20,720 --> 00:39:22,800
+really protect and preserve that
+
+1025
+00:39:22,000 --> 00:39:25,680
+information.
+
+1026
+00:39:22,800 --> 00:39:27,280
+Yeah, I think this is a tough one. Um I
+
+1027
+00:39:25,680 --> 00:39:32,079
+think you know easier said than done
+
+1028
+00:39:27,280 --> 00:39:34,880
+right I mean the the uh evolution has to
+
+1029
+00:39:32,079 --> 00:39:36,560
+be from ownership to shared account to
+
+1030
+00:39:34,880 --> 00:39:40,240
+do with people right and with very clear
+
+1031
+00:39:36,560 --> 00:39:41,839
+boundaries. Now at a minimum you need to
+
+1032
+00:39:40,240 --> 00:39:44,160
+have few of these layers working
+
+1033
+00:39:41,839 --> 00:39:46,720
+together right one that you need to have
+
+1034
+00:39:44,160 --> 00:39:49,520
+a clarity on the policies like everyone
+
+1035
+00:39:46,720 --> 00:39:52,800
+agrees what data can be used for what
+
+1036
+00:39:49,520 --> 00:39:55,599
+purpose under what conditions right and
+
+1037
+00:39:52,800 --> 00:39:57,920
+technical enforcement you know if those
+
+1038
+00:39:55,599 --> 00:39:59,839
+policies are just like documentation
+
+1039
+00:39:57,920 --> 00:40:01,359
+they're enforced in real time as data is
+
+1040
+00:39:59,839 --> 00:40:03,280
+accessed and abused right and a lot of
+
+1041
+00:40:01,359 --> 00:40:05,200
+cases that that is the biggest pain
+
+1042
+00:40:03,280 --> 00:40:07,760
+point and people can write policies and
+
+1043
+00:40:05,200 --> 00:40:10,000
+and you know I've written myself Sanders
+
+1044
+00:40:07,760 --> 00:40:12,240
+and policies and where we found that uh
+
+1045
+00:40:10,000 --> 00:40:14,000
+the technical implementation was the
+
+1046
+00:40:12,240 --> 00:40:16,079
+biggest challenge and then typically
+
+1047
+00:40:14,000 --> 00:40:17,760
+people would pile exceptions to those
+
+1048
+00:40:16,079 --> 00:40:20,880
+polic standards and move on right
+
+1049
+00:40:17,760 --> 00:40:23,359
+because that was like one of the issues.
+
+1050
+00:40:20,880 --> 00:40:25,839
+So, so technical enforcement is like you
+
+1051
+00:40:23,359 --> 00:40:27,680
+just don't have a policy. already showed
+
+1052
+00:40:25,839 --> 00:40:30,000
+an auditor that oh we have a policy in
+
+1053
+00:40:27,680 --> 00:40:33,040
+place but are those implemented that
+
+1054
+00:40:30,000 --> 00:40:35,280
+that is the old deal and and uh next one
+
+1055
+00:40:33,040 --> 00:40:38,240
+is how do you audit and have a
+
+1056
+00:40:35,280 --> 00:40:40,400
+traceability and auditability um you
+
+1057
+00:40:38,240 --> 00:40:41,839
+know aspect right every interaction with
+
+1058
+00:40:40,400 --> 00:40:44,880
+the [clears throat] sensitive data um
+
+1059
+00:40:41,839 --> 00:40:46,720
+that's auged that's visible that's
+
+1060
+00:40:44,880 --> 00:40:48,480
+attributable uh because in a
+
+1061
+00:40:46,720 --> 00:40:50,880
+collaborative environment you know trust
+
+1062
+00:40:48,480 --> 00:40:53,760
+does doesn't come from contracts alone
+
+1063
+00:40:50,880 --> 00:40:56,079
+right it comes from veryable control
+
+1064
+00:40:53,760 --> 00:40:58,880
+uh so that's where I think u you know
+
+1065
+00:40:56,079 --> 00:41:01,280
+some of the things that has to happen uh
+
+1066
+00:40:58,880 --> 00:41:03,520
+as I put the disclaimer easier said than
+
+1067
+00:41:01,280 --> 00:41:05,359
+done uh but those are some of the
+
+1068
+00:41:03,520 --> 00:41:07,839
+foundational ones and it takes you know
+
+1069
+00:41:05,359 --> 00:41:11,040
+quite a bit of time to get get that in
+
+1070
+00:41:07,839 --> 00:41:13,599
+right I think that's a that's an area
+
+1071
+00:41:11,040 --> 00:41:15,440
+where I think probably there's there's a
+
+1072
+00:41:13,599 --> 00:41:17,440
+lot of folks out there they're really
+
+1073
+00:41:15,440 --> 00:41:20,240
+not sure where they stand what are some
+
+1074
+00:41:17,440 --> 00:41:22,400
+of the signals that the leader might be
+
+1075
+00:41:20,240 --> 00:41:24,160
+should be be maybe looking for that
+
+1076
+00:41:22,400 --> 00:41:27,359
+suggest his organization may not be
+
+1077
+00:41:24,160 --> 00:41:30,160
+ready to collaborate safely.
+
+1078
+00:41:27,359 --> 00:41:32,560
+This this is I I come across um you know
+
+1079
+00:41:30,160 --> 00:41:34,160
+a lot of these when I talk to uh you
+
+1080
+00:41:32,560 --> 00:41:36,079
+know security professionals or data
+
+1081
+00:41:34,160 --> 00:41:37,839
+governance professionals you know while
+
+1082
+00:41:36,079 --> 00:41:40,400
+talking about uh you know their risks
+
+1083
+00:41:37,839 --> 00:41:43,920
+and stuff and and you'll be surprised in
+
+1084
+00:41:40,400 --> 00:41:46,000
+a lot of cases they have still a lot of
+
+1085
+00:41:43,920 --> 00:41:48,800
+uh you know I would say reliance or over
+
+1086
+00:41:46,000 --> 00:41:51,040
+reliance on some of the static controls
+
+1087
+00:41:48,800 --> 00:41:54,079
+that have existed you know for decades
+
+1088
+00:41:51,040 --> 00:41:55,883
+and that's what is perceived to be good
+
+1089
+00:41:54,079 --> 00:41:59,920
+enough in the new world, right?
+
+1090
+00:41:55,883 --> 00:42:02,640
+[laughter] So, and it's like you you
+
+1091
+00:41:59,920 --> 00:42:04,480
+come to a point where like is this an
+
+1092
+00:42:02,640 --> 00:42:06,480
+educational moment, you know, for them
+
+1093
+00:42:04,480 --> 00:42:08,160
+that or and you don't want to obviously,
+
+1094
+00:42:06,480 --> 00:42:10,480
+you know, talk about like stuff that
+
+1095
+00:42:08,160 --> 00:42:12,319
+they personally believe in or or this is
+
+1096
+00:42:10,480 --> 00:42:15,280
+something that's their own decision,
+
+1097
+00:42:12,319 --> 00:42:17,760
+right? So, how do you you know have
+
+1098
+00:42:15,280 --> 00:42:20,000
+someone to be a a believer when they
+
+1099
+00:42:17,760 --> 00:42:24,160
+were a non-believer in in some cases,
+
+1100
+00:42:20,000 --> 00:42:27,200
+right? So here the governance is mostly
+
+1101
+00:42:24,160 --> 00:42:29,520
+like role based access control policies
+
+1102
+00:42:27,200 --> 00:42:31,839
+contracts you know there's no runtime
+
+1103
+00:42:29,520 --> 00:42:35,680
+enforcement and particularly even when
+
+1104
+00:42:31,839 --> 00:42:37,760
+data uh is stored or shared u there are
+
+1105
+00:42:35,680 --> 00:42:39,920
+two check boxes that uh you know they
+
+1106
+00:42:37,760 --> 00:42:41,520
+will check and as long as they're able
+
+1107
+00:42:39,920 --> 00:42:43,920
+to demonstrate that with their auditors
+
+1108
+00:42:41,520 --> 00:42:46,079
+and the auditors are fine with that uh
+
+1109
+00:42:43,920 --> 00:42:49,040
+like oh is your data encrypted on rest
+
+1110
+00:42:46,079 --> 00:42:50,880
+is your data encrypted in transit and
+
+1111
+00:42:49,040 --> 00:42:52,960
+basically both of those cases you know
+
+1112
+00:42:50,880 --> 00:42:54,880
+you're having TLS HTTPS you know
+
+1113
+00:42:52,960 --> 00:42:56,880
+operations that are happening which you
+
+1114
+00:42:54,880 --> 00:43:00,160
+know checks that box and anything you
+
+1115
+00:42:56,880 --> 00:43:02,480
+put in in any database or in a cloud uh
+
+1116
+00:43:00,160 --> 00:43:04,800
+storage by default it'll be encrypted at
+
+1117
+00:43:02,480 --> 00:43:07,280
+rest which technically doesn't really do
+
+1118
+00:43:04,800 --> 00:43:09,040
+anything from a security standpoint. Um
+
+1119
+00:43:07,280 --> 00:43:10,800
+so these are some of the things that you
+
+1120
+00:43:09,040 --> 00:43:13,440
+will find if you're like talking to
+
+1121
+00:43:10,800 --> 00:43:16,319
+someone about this and then they are
+
+1122
+00:43:13,440 --> 00:43:19,200
+talking these as their controls then you
+
+1123
+00:43:16,319 --> 00:43:21,119
+know there's a red flag right lack of
+
+1124
+00:43:19,200 --> 00:43:23,839
+visibility into data flows if they can't
+
+1125
+00:43:21,119 --> 00:43:26,240
+clearly answer where sensitive data is
+
+1126
+00:43:23,839 --> 00:43:29,359
+going especially you know with AI
+
+1127
+00:43:26,240 --> 00:43:33,200
+workflows they're not right you know
+
+1128
+00:43:29,359 --> 00:43:35,200
+today tools like DSPM data dis you know
+
+1129
+00:43:33,200 --> 00:43:39,119
+data security posture management they go
+
+1130
+00:43:35,200 --> 00:43:41,680
+and to scan different data stores. So
+
+1131
+00:43:39,119 --> 00:43:44,880
+it's a point in time visibility of data
+
+1132
+00:43:41,680 --> 00:43:46,319
+at rest but the moment the data leaves
+
+1133
+00:43:44,880 --> 00:43:49,599
+you know the systems and where they're
+
+1134
+00:43:46,319 --> 00:43:51,280
+going you know DSPMs and these um uh
+
+1135
+00:43:49,599 --> 00:43:54,480
+tools they can't really tell you. So
+
+1136
+00:43:51,280 --> 00:43:56,160
+your visibility into data flows um if
+
+1137
+00:43:54,480 --> 00:43:58,079
+you don't have that then you know that
+
+1138
+00:43:56,160 --> 00:43:59,599
+you know obviously they're not great and
+
+1139
+00:43:58,079 --> 00:44:02,800
+then I think one of the biggest
+
+1140
+00:43:59,599 --> 00:44:04,400
+challenges I've had when I was a
+
+1141
+00:44:02,800 --> 00:44:06,560
+security practitioner you know being
+
+1142
+00:44:04,400 --> 00:44:08,640
+part of whether it's American Express
+
+1143
+00:44:06,560 --> 00:44:14,800
+world activation blizzard or you know
+
+1144
+00:44:08,640 --> 00:44:16,560
+Micro Focus um the ownership of risk
+
+1145
+00:44:14,800 --> 00:44:17,920
+that's very unclear in a lot of
+
+1146
+00:44:16,560 --> 00:44:20,079
+enterprises and particularly the the
+
+1147
+00:44:17,920 --> 00:44:22,240
+bigger you go grow that's like one of
+
+1148
+00:44:20,079 --> 00:44:24,560
+the things that We struggle with if
+
+1149
+00:44:22,240 --> 00:44:27,839
+there was a database that's like a
+
+1150
+00:44:24,560 --> 00:44:30,160
+shared data m or a data warehouse and a
+
+1151
+00:44:27,839 --> 00:44:32,079
+lot of teams are potentially pumping
+
+1152
+00:44:30,160 --> 00:44:34,000
+data into it and then a lot of teams are
+
+1153
+00:44:32,079 --> 00:44:36,560
+taking advantage of that uh data store
+
+1154
+00:44:34,000 --> 00:44:39,359
+to you know get some information out of
+
+1155
+00:44:36,560 --> 00:44:42,400
+it. It's very hard in a lot of cases to
+
+1156
+00:44:39,359 --> 00:44:44,400
+understand who owns that data store and
+
+1157
+00:44:42,400 --> 00:44:46,400
+basically who owns the risk if that data
+
+1158
+00:44:44,400 --> 00:44:48,240
+store actually got uh you know attacked
+
+1159
+00:44:46,400 --> 00:44:50,079
+and data breaches happened. And in a lot
+
+1160
+00:44:48,240 --> 00:44:53,040
+of cases what happens is there's one guy
+
+1161
+00:44:50,079 --> 00:44:55,040
+on the IT side who manages the server is
+
+1162
+00:44:53,040 --> 00:44:56,720
+basically approving requests for access
+
+1163
+00:44:55,040 --> 00:45:00,640
+to that database and he doesn't even own
+
+1164
+00:44:56,720 --> 00:45:03,359
+the data. But for him the easiest route
+
+1165
+00:45:00,640 --> 00:45:05,520
+is to check on the approve button rather
+
+1166
+00:45:03,359 --> 00:45:07,920
+than decline and go through a series of
+
+1167
+00:45:05,520 --> 00:45:09,680
+conversation why that person requesting
+
+1168
+00:45:07,920 --> 00:45:12,000
+access should need it and whether that's
+
+1169
+00:45:09,680 --> 00:45:13,680
+a legitimate yes or no. So it so
+
+1170
+00:45:12,000 --> 00:45:15,359
+basically people taking the easy way
+
+1171
+00:45:13,680 --> 00:45:18,720
+around basically hey let's me let's let
+
+1172
+00:45:15,359 --> 00:45:21,119
+approve it but he will not be the you
+
+1173
+00:45:18,720 --> 00:45:22,960
+know steward of that data and he would
+
+1174
+00:45:21,119 --> 00:45:25,760
+not own the risk if that you know
+
+1175
+00:45:22,960 --> 00:45:27,440
+database got hacked obviously you know
+
+1176
+00:45:25,760 --> 00:45:29,440
+currently you don't even know you know
+
+1177
+00:45:27,440 --> 00:45:31,680
+who has ownership of that data so that's
+
+1178
+00:45:29,440 --> 00:45:35,119
+that's one of the you know big uh issues
+
+1179
+00:45:31,680 --> 00:45:37,119
+where it comes to um that readiness
+
+1180
+00:45:35,119 --> 00:45:39,839
+right I mean do you have
+
+1181
+00:45:37,119 --> 00:45:42,079
+uh very clear ownership of the risk and
+
+1182
+00:45:39,839 --> 00:45:45,040
+of the assets and then of I think even
+
+1183
+00:45:42,079 --> 00:45:46,720
+the answer to that question may not be
+
+1184
+00:45:45,040 --> 00:45:48,000
+sufficient if the answer is important to
+
+1185
+00:45:46,720 --> 00:45:50,880
+what you just said. It's like it's just
+
+1186
+00:45:48,000 --> 00:45:52,400
+one one person you have a risk.
+
+1187
+00:45:50,880 --> 00:45:54,800
+Yeah. Exactly. I mean and and that
+
+1188
+00:45:52,400 --> 00:45:56,720
+person has like obviously this I was
+
+1189
+00:45:54,800 --> 00:45:59,440
+told that this is a system where
+
+1190
+00:45:56,720 --> 00:46:01,359
+everything comes and and given nobody
+
+1191
+00:45:59,440 --> 00:46:03,359
+actually knew who the data owner was
+
+1192
+00:46:01,359 --> 00:46:06,720
+that that maybe oh given you own the
+
+1193
+00:46:03,359 --> 00:46:08,800
+server you're the IT person you are that
+
+1194
+00:46:06,720 --> 00:46:10,319
+and so that's a very you know
+
+1195
+00:46:08,800 --> 00:46:12,720
+unfortunate thing you know particularly
+
+1196
+00:46:10,319 --> 00:46:14,000
+in in the very complicated and matrixed
+
+1197
+00:46:12,720 --> 00:46:16,240
+organization these are some of the
+
+1198
+00:46:14,000 --> 00:46:19,119
+things that are very common and I think
+
+1199
+00:46:16,240 --> 00:46:23,440
+last but not the least when you you have
+
+1200
+00:46:19,119 --> 00:46:26,079
+the mentality of block first. If the
+
+1201
+00:46:23,440 --> 00:46:28,400
+default approach is to restrict
+
+1202
+00:46:26,079 --> 00:46:31,200
+everything because it's easier, you
+
+1203
+00:46:28,400 --> 00:46:32,720
+know, then enabling it safely, then you
+
+1204
+00:46:31,200 --> 00:46:34,720
+know, it's a clear signal that
+
+1205
+00:46:32,720 --> 00:46:36,640
+infrastructure and the and the paradigm
+
+1206
+00:46:34,720 --> 00:46:38,480
+and the governance model isn't there
+
+1207
+00:46:36,640 --> 00:46:40,160
+yet, you know, for adoption.
+
+1208
+00:46:38,480 --> 00:46:42,000
+Great. I think I think those are
+
+1209
+00:46:40,160 --> 00:46:42,400
+probably some of the ones that that I
+
+1210
+00:46:42,000 --> 00:46:44,480
+think
+
+1211
+00:46:42,400 --> 00:46:47,200
+Yeah, that's a that's a really important
+
+1212
+00:46:44,480 --> 00:46:48,960
+point.
+
+1213
+00:46:47,200 --> 00:46:51,839
+I don't think I've been in a health
+
+1214
+00:46:48,960 --> 00:46:55,359
+system if in 30 years that didn't have
+
+1215
+00:46:51,839 --> 00:46:57,280
+those kind of challenges at some point u
+
+1216
+00:46:55,359 --> 00:47:00,880
+you know as a person who's responsible
+
+1217
+00:46:57,280 --> 00:47:04,240
+to create analytics when someone is
+
+1218
+00:47:00,880 --> 00:47:05,839
+needing data that I can't go get I it it
+
+1219
+00:47:04,240 --> 00:47:08,319
+is a little frustrating because I you
+
+1220
+00:47:05,839 --> 00:47:10,720
+have to be able to explain who why you
+
+1221
+00:47:08,319 --> 00:47:13,440
+can't meet the objective and it it's
+
+1222
+00:47:10,720 --> 00:47:15,040
+really an uncomfortable thing because
+
+1223
+00:47:13,440 --> 00:47:17,839
+organizationally we ought to have our
+
+1224
+00:47:15,040 --> 00:47:19,440
+act together so that we can uh make
+
+1225
+00:47:17,839 --> 00:47:21,760
+those kind of decisions when it's really
+
+1226
+00:47:19,440 --> 00:47:24,800
+meaningful and important to do. So, you
+
+1227
+00:47:21,760 --> 00:47:26,960
+know, if you're to your point, if these
+
+1228
+00:47:24,800 --> 00:47:29,359
+are the things that you're hearing, the
+
+1229
+00:47:26,960 --> 00:47:31,599
+this is something that really needs to
+
+1230
+00:47:29,359 --> 00:47:33,760
+to get some attention, then again, a
+
+1231
+00:47:31,599 --> 00:47:37,440
+very good reason to to have my friend
+
+1232
+00:47:33,760 --> 00:47:39,280
+Sid here on standby, pick up the phone.
+
+1233
+00:47:37,440 --> 00:47:41,760
+But let's talk about the future because
+
+1234
+00:47:39,280 --> 00:47:44,800
+I know we're we're kind of coming up on
+
+1235
+00:47:41,760 --> 00:47:46,800
+time here. As these technologies evolve,
+
+1236
+00:47:44,800 --> 00:47:49,760
+how might the healthcare data ecosystem
+
+1237
+00:47:46,800 --> 00:47:54,400
+change? There'll probably be a shift you
+
+1238
+00:47:49,760 --> 00:47:56,160
+know from institutional centric to a
+
+1239
+00:47:54,400 --> 00:47:58,880
+network ccentric you know healthcare
+
+1240
+00:47:56,160 --> 00:48:01,599
+data ecosystem like I say you know given
+
+1241
+00:47:58,880 --> 00:48:05,599
+that all all the dominoes fall into
+
+1242
+00:48:01,599 --> 00:48:08,560
+place um today you know data is is
+
+1243
+00:48:05,599 --> 00:48:10,560
+siloed every hospital payer research
+
+1244
+00:48:08,560 --> 00:48:13,280
+organization operates within its own
+
+1245
+00:48:10,560 --> 00:48:14,960
+boundaries in the future data will still
+
+1246
+00:48:13,280 --> 00:48:16,720
+you know live in those environments but
+
+1247
+00:48:14,960 --> 00:48:20,160
+it'll be accessible in a controlled
+
+1248
+00:48:16,720 --> 00:48:23,040
+interoperable way across a network. Um
+
+1249
+00:48:20,160 --> 00:48:25,359
+and I instead of asking at that point of
+
+1250
+00:48:23,040 --> 00:48:27,200
+time who owns the data you know we will
+
+1251
+00:48:25,359 --> 00:48:30,079
+start asking you know how can this data
+
+1252
+00:48:27,200 --> 00:48:32,319
+be safely used across the ecosystem. Uh
+
+1253
+00:48:30,079 --> 00:48:35,040
+so I think um when it comes to
+
+1254
+00:48:32,319 --> 00:48:38,319
+collaboration my hunch is that some of
+
+1255
+00:48:35,040 --> 00:48:40,800
+the uh things are are going to be more
+
+1256
+00:48:38,319 --> 00:48:42,720
+common is where we will have a much more
+
+1257
+00:48:40,800 --> 00:48:44,720
+federated and distributed research
+
+1258
+00:48:42,720 --> 00:48:46,800
+network at multiple institutions would
+
+1259
+00:48:44,720 --> 00:48:49,359
+be contributing you know to shared
+
+1260
+00:48:46,800 --> 00:48:51,119
+insights without pooling raw data AI
+
+1261
+00:48:49,359 --> 00:48:53,040
+enabled you know clinical ecosystems
+
+1262
+00:48:51,119 --> 00:48:55,440
+where co-pilots and agents can operate
+
+1263
+00:48:53,040 --> 00:48:57,920
+across systems but obviously with strict
+
+1264
+00:48:55,440 --> 00:48:59,680
+context aware controls what can they
+
+1265
+00:48:57,920 --> 00:49:01,680
+access and reveal
+
+1266
+00:48:59,680 --> 00:49:03,119
+potentially a human in the loop. you
+
+1267
+00:49:01,680 --> 00:49:05,119
+know obviously they'll be there in a lot
+
+1268
+00:49:03,119 --> 00:49:08,720
+of cases particularly for some of the
+
+1269
+00:49:05,119 --> 00:49:11,040
+critical processes and I think uh for
+
+1270
+00:49:08,720 --> 00:49:14,240
+having data clean rooms and secure
+
+1271
+00:49:11,040 --> 00:49:16,240
+collaboration environments for players
+
+1272
+00:49:14,240 --> 00:49:19,280
+you know like pharma you know providers
+
+1273
+00:49:16,240 --> 00:49:22,960
+and players work together on analytics
+
+1274
+00:49:19,280 --> 00:49:25,680
+um trials and you know population health
+
+1275
+00:49:22,960 --> 00:49:28,240
+um and I think uh it's going to be more
+
+1276
+00:49:25,680 --> 00:49:31,760
+context aware and purposedriven data
+
+1277
+00:49:28,240 --> 00:49:34,240
+access model right rather than having
+
+1278
+00:49:31,760 --> 00:49:35,760
+role based access control or attribute
+
+1279
+00:49:34,240 --> 00:49:39,839
+based access control. It's going to
+
+1280
+00:49:35,760 --> 00:49:43,200
+reward intent based uh you know dynamic
+
+1281
+00:49:39,839 --> 00:49:44,880
+access controls on place because
+
+1282
+00:49:43,200 --> 00:49:46,880
+which means basically the same user
+
+1283
+00:49:44,880 --> 00:49:49,440
+could see different data depending on
+
+1284
+00:49:46,880 --> 00:49:49,920
+what they are trying to do right I mean
+
+1285
+00:49:49,440 --> 00:49:50,640
+SID
+
+1286
+00:49:49,920 --> 00:49:53,040
+yes
+
+1287
+00:49:50,640 --> 00:49:55,839
+essentially is you know trying to access
+
+1288
+00:49:53,040 --> 00:49:58,800
+the same data store but given the the
+
+1289
+00:49:55,839 --> 00:50:01,040
+prompt that SID is providing has a very
+
+1290
+00:49:58,800 --> 00:50:03,760
+different intent than the last time we
+
+1291
+00:50:01,040 --> 00:50:05,920
+did in the last time basically we bought
+
+1292
+00:50:03,760 --> 00:50:08,319
+some portion of the data in this the
+
+1293
+00:50:05,920 --> 00:50:09,920
+intent dynamically would be analyzed to
+
+1294
+00:50:08,319 --> 00:50:11,440
+say oh no no no no maybe this is not
+
+1295
+00:50:09,920 --> 00:50:13,839
+something I should be exposing to Sid at
+
+1296
+00:50:11,440 --> 00:50:16,160
+this point even though Sid's role is
+
+1297
+00:50:13,839 --> 00:50:18,800
+already there to access that database so
+
+1298
+00:50:16,160 --> 00:50:21,920
+I think we'll see a lot more of that
+
+1299
+00:50:18,800 --> 00:50:25,040
+getting tightened um and more
+
+1300
+00:50:21,920 --> 00:50:26,960
+contextdriven dynamic runtime decisions
+
+1301
+00:50:25,040 --> 00:50:29,920
+there's there's definitely some some
+
+1302
+00:50:26,960 --> 00:50:31,599
+noise out there when it comes to what
+
+1303
+00:50:29,920 --> 00:50:34,400
+needs to be done for governance and
+
+1304
+00:50:31,599 --> 00:50:36,480
+controls but it seems like there's some
+
+1305
+00:50:34,400 --> 00:50:39,040
+other things that maybe people aren't
+
+1306
+00:50:36,480 --> 00:50:41,839
+aware of. So from from where you where
+
+1307
+00:50:39,040 --> 00:50:43,280
+you stand, what signals are suggesting
+
+1308
+00:50:41,839 --> 00:50:45,119
+to you that the industry might be
+
+1309
+00:50:43,280 --> 00:50:45,839
+entering a new phase like it seems like
+
+1310
+00:50:45,119 --> 00:50:47,520
+it might be.
+
+1311
+00:50:45,839 --> 00:50:50,800
+Yeah, I think we kind of we're probably
+
+1312
+00:50:47,520 --> 00:50:52,720
+getting past that can we use AI mode,
+
+1313
+00:50:50,800 --> 00:50:54,640
+right? I mean it's like it's kind of in
+
+1314
+00:50:52,720 --> 00:50:56,720
+I think it's we're going to be moving
+
+1315
+00:50:54,640 --> 00:51:00,480
+from that to like how do we use it
+
+1316
+00:50:56,720 --> 00:51:03,599
+safely at scale, right? So then um you
+
+1317
+00:51:00,480 --> 00:51:06,319
+know there's going to be a a growing
+
+1318
+00:51:03,599 --> 00:51:08,160
+realization that data protection can be
+
+1319
+00:51:06,319 --> 00:51:10,480
+an afterthought right which
+
+1320
+00:51:08,160 --> 00:51:12,720
+unfortunately in a lot of cases it is
+
+1321
+00:51:10,480 --> 00:51:15,920
+and it it kind of has to be built into
+
+1322
+00:51:12,720 --> 00:51:19,040
+how AI systems operate uh and the only
+
+1323
+00:51:15,920 --> 00:51:22,240
+way that could happen is when it gets in
+
+1324
+00:51:19,040 --> 00:51:24,400
+the runtime mode uh gets into the data
+
+1325
+00:51:22,240 --> 00:51:26,400
+pipelines and the AI pipelines uh
+
+1326
+00:51:24,400 --> 00:51:28,880
+seamlessly and in a very frictionless
+
+1327
+00:51:26,400 --> 00:51:31,599
+manner uh because you you you can't
+
+1328
+00:51:28,880 --> 00:51:34,319
+pre-wire uh these AI agents and and
+
+1329
+00:51:31,599 --> 00:51:36,559
+co-pilots any longer um and which they
+
+1330
+00:51:34,319 --> 00:51:38,240
+don't operate in a you know very well-
+
+1331
+00:51:36,559 --> 00:51:40,400
+definfined scope right they they will
+
+1332
+00:51:38,240 --> 00:51:42,960
+make certain decisions so your
+
+1333
+00:51:40,400 --> 00:51:45,040
+guardrails have to be outside uh and
+
+1334
+00:51:42,960 --> 00:51:47,440
+particularly at that data layer and at
+
+1335
+00:51:45,040 --> 00:51:50,400
+the data pipeline layer and then you'll
+
+1336
+00:51:47,440 --> 00:51:52,960
+probably see some uh you know if you're
+
+1337
+00:51:50,400 --> 00:51:56,000
+seeing some early adopters shift from
+
+1338
+00:51:52,960 --> 00:51:57,839
+blocking the dment to enabling control
+
+1339
+00:51:56,000 --> 00:52:01,359
+data usage which is a
+
+1340
+00:51:57,839 --> 00:52:02,960
+different mindset because our typical uh
+
+1341
+00:52:01,359 --> 00:52:04,079
+approach has been and particularly
+
+1342
+00:52:02,960 --> 00:52:06,720
+healthcare and some of the other
+
+1343
+00:52:04,079 --> 00:52:08,160
+regulatory industry is that uh you're
+
+1344
+00:52:06,720 --> 00:52:10,079
+either in the monitoring mode or in the
+
+1345
+00:52:08,160 --> 00:52:11,760
+blocking mode and and the moment you are
+
+1346
+00:52:10,079 --> 00:52:13,680
+in the blocking mode then obviously
+
+1347
+00:52:11,760 --> 00:52:16,000
+you're stopping innovation and you're
+
+1348
+00:52:13,680 --> 00:52:17,520
+stopping or actually creating business
+
+1349
+00:52:16,000 --> 00:52:19,920
+disruption
+
+1350
+00:52:17,520 --> 00:52:23,280
+um have to shift from there is like how
+
+1351
+00:52:19,920 --> 00:52:25,520
+do I allow you know this uh pipeline and
+
+1352
+00:52:23,280 --> 00:52:27,599
+this process to go through without
+
+1353
+00:52:25,520 --> 00:52:30,079
+exposing you know my data uh in that
+
+1354
+00:52:27,599 --> 00:52:33,040
+case you're essentially enabling control
+
+1355
+00:52:30,079 --> 00:52:34,720
+data usage and control data movement. uh
+
+1356
+00:52:33,040 --> 00:52:38,240
+so that's where I think some of the
+
+1357
+00:52:34,720 --> 00:52:39,920
+signals we will find where we will see
+
+1358
+00:52:38,240 --> 00:52:43,040
+that but we are actually moving on to
+
+1359
+00:52:39,920 --> 00:52:48,079
+that new phase. Yeah, and I it's a it's
+
+1360
+00:52:43,040 --> 00:52:51,200
+definitely not an if or or should we uh
+
+1361
+00:52:48,079 --> 00:52:53,359
+I think the the sudden leap that we all
+
+1362
+00:52:51,200 --> 00:52:55,839
+learned about a month or two ago uh with
+
+1363
+00:52:53,359 --> 00:52:58,319
+regard to what Open AI and Anthropic are
+
+1364
+00:52:55,839 --> 00:53:00,240
+doing uh kind of puts lights a fire and
+
+1365
+00:52:58,319 --> 00:53:02,319
+there's a ticking
+
+1366
+00:53:00,240 --> 00:53:03,680
+ticking clock going down on us where
+
+1367
+00:53:02,319 --> 00:53:05,119
+where we have the opportunity to get
+
+1368
+00:53:03,680 --> 00:53:07,119
+some things right or we're going to be
+
+1369
+00:53:05,119 --> 00:53:10,720
+really far behind and it's going to be
+
+1370
+00:53:07,119 --> 00:53:13,040
+detrimental. Uh so as we kind of close
+
+1371
+00:53:10,720 --> 00:53:15,280
+out if leaders want to unlock the value
+
+1372
+00:53:13,040 --> 00:53:16,240
+of their data responsibly
+
+1373
+00:53:15,280 --> 00:53:18,079
+what are the things they should be
+
+1374
+00:53:16,240 --> 00:53:19,680
+paying attention to right now they may
+
+1375
+00:53:18,079 --> 00:53:22,079
+be overlooking because I think time for
+
+1376
+00:53:19,680 --> 00:53:23,760
+them is of the essence. Yeah, I mean I
+
+1377
+00:53:22,079 --> 00:53:25,440
+don't know if like whether there is one
+
+1378
+00:53:23,760 --> 00:53:28,559
+thing right. I mean that's that's one of
+
+1379
+00:53:25,440 --> 00:53:31,760
+the challenges of security leaders or or
+
+1380
+00:53:28,559 --> 00:53:35,599
+data leaders u in institutions like
+
+1381
+00:53:31,760 --> 00:53:37,920
+healthcare. Um but if they want to
+
+1382
+00:53:35,599 --> 00:53:41,040
+unlock the value of their data
+
+1383
+00:53:37,920 --> 00:53:43,200
+responsibly, I think right now they
+
+1384
+00:53:41,040 --> 00:53:45,440
+would probably want to focus on like
+
+1385
+00:53:43,200 --> 00:53:46,800
+stop thinking about the data access and
+
+1386
+00:53:45,440 --> 00:53:49,280
+the data protection as separate
+
+1387
+00:53:46,800 --> 00:53:51,280
+problems, right? We have been you know
+
+1388
+00:53:49,280 --> 00:53:52,800
+operating in in that model for a long
+
+1389
+00:53:51,280 --> 00:53:55,920
+time and there's a data governance
+
+1390
+00:53:52,800 --> 00:53:57,920
+aspect of you know what data we have and
+
+1391
+00:53:55,920 --> 00:54:00,160
+who has access to it and then the
+
+1392
+00:53:57,920 --> 00:54:02,319
+protection essentially doesn't come with
+
+1393
+00:54:00,160 --> 00:54:04,160
+that has not been part of that in a lot
+
+1394
+00:54:02,319 --> 00:54:05,920
+of cases you know these teams are
+
+1395
+00:54:04,160 --> 00:54:07,520
+probably working together or sometimes
+
+1396
+00:54:05,920 --> 00:54:11,040
+it's under the same leadership in a lot
+
+1397
+00:54:07,520 --> 00:54:13,280
+of most cases they are not so and by
+
+1398
+00:54:11,040 --> 00:54:15,359
+data protection we are again in that
+
+1399
+00:54:13,280 --> 00:54:17,680
+blocking mode so sometimes you know this
+
+1400
+00:54:15,359 --> 00:54:19,359
+party will think the other party as an
+
+1401
+00:54:17,680 --> 00:54:20,640
+adversary rather than you know partners
+
+1402
+00:54:19,359 --> 00:54:23,200
+and that that we should be working
+
+1403
+00:54:20,640 --> 00:54:25,280
+together. So that separation is exactly
+
+1404
+00:54:23,200 --> 00:54:27,280
+I think what you know slowing
+
+1405
+00:54:25,280 --> 00:54:29,599
+organizations down and most teams are
+
+1406
+00:54:27,280 --> 00:54:31,280
+still oper in a model where one side is
+
+1407
+00:54:29,599 --> 00:54:33,520
+trying to enable access and innovation
+
+1408
+00:54:31,280 --> 00:54:35,520
+other side is trying to restrict and
+
+1409
+00:54:33,520 --> 00:54:38,480
+reduce risk to it right and then that
+
+1410
+00:54:35,520 --> 00:54:41,359
+creates the friction and as friction is
+
+1411
+00:54:38,480 --> 00:54:43,359
+created then you have the bypasses
+
+1412
+00:54:41,359 --> 00:54:45,119
+happening right and in that case you're
+
+1413
+00:54:43,359 --> 00:54:47,359
+introduce inadvertently introducing more
+
+1414
+00:54:45,119 --> 00:54:49,440
+risk in the enterprise so what's often
+
+1415
+00:54:47,359 --> 00:54:51,680
+often you know overlooked is the need
+
+1416
+00:54:49,440 --> 00:54:53,680
+for this unified runtime time approach
+
+1417
+00:54:51,680 --> 00:54:56,160
+where access and production happen
+
+1418
+00:54:53,680 --> 00:54:58,559
+together in real time and based on
+
+1419
+00:54:56,160 --> 00:55:00,480
+context and intent. uh so I think these
+
+1420
+00:54:58,559 --> 00:55:03,280
+these functions and and uh the
+
+1421
+00:55:00,480 --> 00:55:06,400
+approaches have to kind of so uh that's
+
+1422
+00:55:03,280 --> 00:55:09,040
+that's what I would see as uh you know
+
+1423
+00:55:06,400 --> 00:55:11,359
+one of the very important things and the
+
+1424
+00:55:09,040 --> 00:55:14,559
+other thing is you know basically like
+
+1425
+00:55:11,359 --> 00:55:17,440
+don't overindex you know on models the
+
+1426
+00:55:14,559 --> 00:55:20,160
+real differentiator won't be which model
+
+1427
+00:55:17,440 --> 00:55:22,160
+you're using but it it is how
+
+1428
+00:55:20,160 --> 00:55:23,680
+confidently you can use your data with
+
+1429
+00:55:22,160 --> 00:55:24,480
+that model right because at the end of
+
+1430
+00:55:23,680 --> 00:55:27,520
+the day
+
+1431
+00:55:24,480 --> 00:55:29,520
+the models are you know fed with data
+
+1432
+00:55:27,520 --> 00:55:31,680
+And then models deal with data and then
+
+1433
+00:55:29,520 --> 00:55:34,559
+that that's what you know they create
+
+1434
+00:55:31,680 --> 00:55:36,720
+outcomes based on the data. And it
+
+1435
+00:55:34,559 --> 00:55:38,880
+basically means that you know if you're
+
+1436
+00:55:36,720 --> 00:55:40,640
+able to confidently use your data with
+
+1437
+00:55:38,880 --> 00:55:43,200
+that model comes down to you know
+
+1438
+00:55:40,640 --> 00:55:45,359
+visibility control and ability to
+
+1439
+00:55:43,200 --> 00:55:47,839
+enforce policies dynamically as data
+
+1440
+00:55:45,359 --> 00:55:50,160
+moves right so that that's what you know
+
+1441
+00:55:47,839 --> 00:55:52,559
+will be required uh to boost that
+
+1442
+00:55:50,160 --> 00:55:55,440
+confidence regardless of what model I
+
+1443
+00:55:52,559 --> 00:55:58,160
+chose. I I can use my data in that
+
+1444
+00:55:55,440 --> 00:56:00,400
+model. Yeah. And you know, as we're
+
+1445
+00:55:58,160 --> 00:56:02,319
+wrapping up, I I just want to encourage
+
+1446
+00:56:00,400 --> 00:56:03,839
+through the listeners. We're we're
+
+1447
+00:56:02,319 --> 00:56:06,799
+definitely in a period of time where we
+
+1448
+00:56:03,839 --> 00:56:08,640
+want to find a way to be able to enable
+
+1449
+00:56:06,799 --> 00:56:11,839
+uh the data to be used in in a
+
+1450
+00:56:08,640 --> 00:56:13,040
+responsible manner. And this is I'm
+
+1451
+00:56:11,839 --> 00:56:14,480
+going to say something that might be a
+
+1452
+00:56:13,040 --> 00:56:16,720
+little controversial, but I'm in part of
+
+1453
+00:56:14,480 --> 00:56:20,160
+the healthcare provider sector for a for
+
+1454
+00:56:16,720 --> 00:56:22,880
+a larger part of my life. Um, we often
+
+1455
+00:56:20,160 --> 00:56:24,799
+tend to be a little ambitious and think
+
+1456
+00:56:22,880 --> 00:56:27,040
+that we're prepared to just build things
+
+1457
+00:56:24,799 --> 00:56:29,760
+on our own. Things have gotten so
+
+1458
+00:56:27,040 --> 00:56:32,799
+ridiculously specialized and there's so
+
+1459
+00:56:29,760 --> 00:56:35,200
+much uh time and energy being spent on
+
+1460
+00:56:32,799 --> 00:56:37,599
+both sides of an equation. One is trying
+
+1461
+00:56:35,200 --> 00:56:39,760
+to advance the capability and stay ahead
+
+1462
+00:56:37,599 --> 00:56:42,559
+of those who are trying to penetrate it
+
+1463
+00:56:39,760 --> 00:56:45,040
+and do nefarious things. The escalation
+
+1464
+00:56:42,559 --> 00:56:46,640
+is constant there. This is not something
+
+1465
+00:56:45,040 --> 00:56:48,960
+you want to be a hobbyist to try to
+
+1466
+00:56:46,640 --> 00:56:51,760
+solve. Not We you don't want to be a
+
+1467
+00:56:48,960 --> 00:56:53,680
+well-meaning person if just try thinking
+
+1468
+00:56:51,760 --> 00:56:55,920
+you really can do this. You really need
+
+1469
+00:56:53,680 --> 00:56:57,760
+solid partners. And this is where
+
+1470
+00:56:55,920 --> 00:57:00,079
+sitting in in the team at private
+
+1471
+00:56:57,760 --> 00:57:01,599
+committed from my perspective. And I
+
+1472
+00:57:00,079 --> 00:57:03,359
+just want to encourage all of you. You
+
+1473
+00:57:01,599 --> 00:57:05,440
+know, I'm going to have a whole bunch of
+
+1474
+00:57:03,359 --> 00:57:07,839
+information for you in the show notes.
+
+1475
+00:57:05,440 --> 00:57:09,119
+Uh but please you take take the
+
+1476
+00:57:07,839 --> 00:57:10,960
+opportunity to look at this if you're in
+
+1477
+00:57:09,119 --> 00:57:12,559
+a place where you're you're feeling that
+
+1478
+00:57:10,960 --> 00:57:16,319
+pressure. You've got to be able to
+
+1479
+00:57:12,559 --> 00:57:17,839
+enable responsible use. um this is a
+
+1480
+00:57:16,319 --> 00:57:20,880
+conversation that that you want to
+
+1481
+00:57:17,839 --> 00:57:22,799
+engage in. So please make sure that that
+
+1482
+00:57:20,880 --> 00:57:25,359
+you take a look and and reach out to to
+
+1483
+00:57:22,799 --> 00:57:27,599
+Sid and his team because you you really
+
+1484
+00:57:25,359 --> 00:57:31,280
+have to have solid partners and if this
+
+1485
+00:57:27,599 --> 00:57:32,960
+is not a scenario where you can have 25
+
+1486
+00:57:31,280 --> 00:57:34,960
+different small players that are use
+
+1487
+00:57:32,960 --> 00:57:37,839
+case driven. This is a foundational
+
+1488
+00:57:34,960 --> 00:57:40,559
+aspect that he's been talking about.
+
+1489
+00:57:37,839 --> 00:57:44,000
+So Fed said, I I really just appreciate
+
+1490
+00:57:40,559 --> 00:57:47,920
+you taking the time and I think the the
+
+1491
+00:57:44,000 --> 00:57:49,280
+takeaways for me are uh many uh but you
+
+1492
+00:57:47,920 --> 00:57:51,839
+know you talked about contextual
+
+1493
+00:57:49,280 --> 00:57:54,880
+awareness which really was an important
+
+1494
+00:57:51,839 --> 00:57:57,839
+thing as as well and you know what I
+
+1495
+00:57:54,880 --> 00:58:00,079
+hear from you is not stop and roadblock.
+
+1496
+00:57:57,839 --> 00:58:01,440
+It's let me help you accelerate. Let me
+
+1497
+00:58:00,079 --> 00:58:02,720
+help you do it in a way that's going to
+
+1498
+00:58:01,440 --> 00:58:07,200
+protect people and protect their
+
+1499
+00:58:02,720 --> 00:58:10,079
+privacy. Um I I love that. um you know,
+
+1500
+00:58:07,200 --> 00:58:12,160
+as we wrap before I just close it out,
+
+1501
+00:58:10,079 --> 00:58:14,079
+uh anything that that you're thinking
+
+1502
+00:58:12,160 --> 00:58:17,280
+about over the next, you know, year or
+
+1503
+00:58:14,079 --> 00:58:19,839
+so, um that could be a real gamecher
+
+1504
+00:58:17,280 --> 00:58:22,079
+that you've got your eye on. I I'm this
+
+1505
+00:58:19,839 --> 00:58:23,839
+is one I'm always curious about because
+
+1506
+00:58:22,079 --> 00:58:25,040
+you you see things from a different lens
+
+1507
+00:58:23,839 --> 00:58:27,040
+because you're you're really dealing
+
+1508
+00:58:25,040 --> 00:58:29,839
+with things under the under the covers
+
+1509
+00:58:27,040 --> 00:58:32,079
+that most of us don't even understand.
+
+1510
+00:58:29,839 --> 00:58:34,319
+Yeah. Um I would say it's just to kind
+
+1511
+00:58:32,079 --> 00:58:36,960
+of underscore the point I was talking
+
+1512
+00:58:34,319 --> 00:58:39,920
+about. I think at the end of the day,
+
+1513
+00:58:36,960 --> 00:58:44,720
+you know, AI doesn't create value from
+
+1514
+00:58:39,920 --> 00:58:48,079
+models and it creates value from data.
+
+1515
+00:58:44,720 --> 00:58:51,599
+Whoever can use data safely in real time
+
+1516
+00:58:48,079 --> 00:58:54,720
+will actually win and in that case we'll
+
+1517
+00:58:51,599 --> 00:58:58,160
+have to pivot from
+
+1518
+00:58:54,720 --> 00:59:01,839
+the perimeterbased
+
+1519
+00:58:58,160 --> 00:59:03,920
+type of controls trying to be you know
+
+1520
+00:59:01,839 --> 00:59:08,079
+build bigger walls around the protect
+
+1521
+00:59:03,920 --> 00:59:10,240
+surface. is to focus on the data itself,
+
+1522
+00:59:08,079 --> 00:59:12,160
+right? And that by data focusing on the
+
+1523
+00:59:10,240 --> 00:59:14,079
+data itself is essentially not just from
+
+1524
+00:59:12,160 --> 00:59:16,240
+a security standpoint but from from its
+
+1525
+00:59:14,079 --> 00:59:19,599
+hygiene standpoint as well. So I think a
+
+1526
+00:59:16,240 --> 00:59:21,680
+lot more focus will be around the data
+
+1527
+00:59:19,599 --> 00:59:23,839
+rather than the systems that are storing
+
+1528
+00:59:21,680 --> 00:59:26,400
+the data and their native controls and
+
+1529
+00:59:23,839 --> 00:59:29,119
+the network you know where this systems
+
+1530
+00:59:26,400 --> 00:59:32,720
+actually reside. uh so I think you know
+
+1531
+00:59:29,119 --> 00:59:35,839
+at the end of the day it will um decide
+
+1532
+00:59:32,720 --> 00:59:38,400
+that whoever is actually doing a better
+
+1533
+00:59:35,839 --> 00:59:41,040
+job actually winning or and in a lot of
+
+1534
+00:59:38,400 --> 00:59:44,640
+cases actually succeeding in in every
+
+1535
+00:59:41,040 --> 00:59:48,319
+sector they they actually have the the
+
+1536
+00:59:44,640 --> 00:59:52,799
+most cleansed data and also they're
+
+1537
+00:59:48,319 --> 00:59:57,040
+using AI you know very effectively with
+
+1538
+00:59:52,799 --> 00:59:58,559
+um you know maximizing their usage or or
+
+1539
+00:59:57,040 --> 01:00:00,960
+introduction ction of those data into
+
+1540
+00:59:58,559 --> 01:00:03,040
+those AI models because they have taken
+
+1541
+01:00:00,960 --> 01:00:05,920
+the privacy and the security uh you know
+
+1542
+01:00:03,040 --> 01:00:09,119
+aspect well given that they they can
+
+1543
+01:00:05,920 --> 01:00:11,359
+confidently push a lot more then they
+
+1544
+01:00:09,119 --> 01:00:13,599
+are able to now uh so I think that
+
+1545
+01:00:11,359 --> 01:00:15,040
+that's what probably my closing uh
+
+1546
+01:00:13,599 --> 01:00:17,280
+thought would be so because you can we
+
+1547
+01:00:15,040 --> 01:00:20,799
+can't see these two things differently
+
+1548
+01:00:17,280 --> 01:00:22,400
+it all has to come together if adoption
+
+1549
+01:00:20,799 --> 01:00:25,119
+and the value that we want to generate
+
+1550
+01:00:22,400 --> 01:00:27,680
+out of AI is something that in all of
+
+1551
+01:00:25,119 --> 01:00:28,559
+our you know success measures and KPIs
+
+1552
+01:00:27,680 --> 01:00:30,400
+will be based on.
+
+1553
+01:00:28,559 --> 01:00:32,400
+Well, I I didn't hear you say that, you
+
+1554
+01:00:30,400 --> 01:00:34,480
+know, an algorithm or AI are going to be
+
+1555
+01:00:32,400 --> 01:00:37,440
+the superstar.
+
+1556
+01:00:34,480 --> 01:00:39,280
+So, I think I I think that that that's
+
+1557
+01:00:37,440 --> 01:00:41,359
+heartening for a lot of folks because,
+
+1558
+01:00:39,280 --> 01:00:43,359
+you know, there's a lot of different
+
+1559
+01:00:41,359 --> 01:00:44,960
+fears that are out there, but you're
+
+1560
+01:00:43,359 --> 01:00:46,960
+you're really making me feel a lot
+
+1561
+01:00:44,960 --> 01:00:49,440
+better. So, I appreciate that.
+
+1562
+01:00:46,960 --> 01:00:52,480
+Yeah, of course. is there's too many
+
+1563
+01:00:49,440 --> 01:00:55,760
+debates and too many um you know schools
+
+1564
+01:00:52,480 --> 01:00:58,079
+of thought on that and AGI of course
+
+1565
+01:00:55,760 --> 01:01:00,079
+those are all you know great topics of
+
+1566
+01:00:58,079 --> 01:01:02,079
+here but yeah of course you know uh my
+
+1567
+01:01:00,079 --> 01:01:04,400
+my focus has been you know pretty
+
+1568
+01:01:02,079 --> 01:01:06,960
+grounded at this point to fix the
+
+1569
+01:01:04,400 --> 01:01:09,839
+fundamentals uh which has been broken
+
+1570
+01:01:06,960 --> 01:01:12,319
+for for a long long time and you can't
+
+1571
+01:01:09,839 --> 01:01:14,640
+expect you know different results by
+
+1572
+01:01:12,319 --> 01:01:16,720
+doing the same things
+
+1573
+01:01:14,640 --> 01:01:18,400
+exactly there there's a term that we
+
+1574
+01:01:16,720 --> 01:01:20,000
+call people like that But I I think I'll
+
+1575
+01:01:18,400 --> 01:01:23,280
+just leave that. I think people know
+
+1576
+01:01:20,000 --> 01:01:24,880
+what is. But Sid, thank you so much for
+
+1577
+01:01:23,280 --> 01:01:26,319
+for coming on the show. This has been a
+
+1578
+01:01:24,880 --> 01:01:28,559
+fascinating conversation for me. I've
+
+1579
+01:01:26,319 --> 01:01:30,240
+learned a lot and I'm excited for for
+
+1580
+01:01:28,559 --> 01:01:32,880
+people to be able to to hear from you
+
+1581
+01:01:30,240 --> 01:01:35,200
+and looking forward to continuing to
+
+1582
+01:01:32,880 --> 01:01:36,799
+follow your successes. So I'm quite
+
+1583
+01:01:35,200 --> 01:01:39,440
+impressed with what I've seen so far.
+
+1584
+01:01:36,799 --> 01:01:42,319
+We've only met just a few months ago. So
+
+1585
+01:01:39,440 --> 01:01:43,440
+um I I really I can't thank you enough.
+
+1586
+01:01:42,319 --> 01:01:45,040
+This has been fantastic.
+
+1587
+01:01:43,440 --> 01:01:47,680
+Thank you. Yeah. I mean it was a it was
+
+1588
+01:01:45,040 --> 01:01:51,200
+a great uh opportunity for me to come to
+
+1589
+01:01:47,680 --> 01:01:53,040
+your uh you know session and and then
+
+1590
+01:01:51,200 --> 01:01:55,680
+have have this dialogue. So really
+
+1591
+01:01:53,040 --> 01:01:57,359
+enjoyed the time and uh uh looking
+
+1592
+01:01:55,680 --> 01:01:59,760
+forward uh you know for for more
+
+1593
+01:01:57,359 --> 01:02:01,839
+collaboration opportunities and uh uh
+
+1594
+01:01:59,760 --> 01:02:04,400
+you know and same thing you know we'll
+
+1595
+01:02:01,839 --> 01:02:06,640
+have to see how this whole space plays
+
+1596
+01:02:04,400 --> 01:02:08,079
+out right over the next uh you know
+
+1597
+01:02:06,640 --> 01:02:08,960
+few years I guess.
+
+1598
+01:02:08,079 --> 01:02:10,720
+Thank you.
+
+1599
+01:02:08,960 --> 01:02:12,799
+That's it for this episode of the signal
+
+1600
+01:02:10,720 --> 01:02:14,880
+room. If today's conversation sparked
+
+1601
+01:02:12,799 --> 01:02:16,960
+something in you, an idea, a challenge,
+
+1602
+01:02:14,880 --> 01:02:18,720
+or a perspective worth amplifying, I'd
+
+1603
+01:02:16,960 --> 01:02:21,200
+love to hear from you. Message me on
+
+1604
+01:02:18,720 --> 01:02:23,119
+LinkedIn or visit cigarroompodcast.com
+
+1605
+01:02:21,200 --> 01:02:26,160
+to explore being a guest on an upcoming
+
+1606
+01:02:23,119 --> 01:02:30,520
+episode. Until next time, stay tuned,
+
+1607
+01:02:26,160 --> 01:02:30,520
+stay curious, and stay human.
+
