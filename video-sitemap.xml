@@ -132,4 +132,64 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/cfo-ai-investment-regret-gary-cao</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/iKiG5L005Fg/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The $100M Mistake CFOs Make by Going Late on AI</video:title>
+      <video:description>Gary Cao explains why delaying enterprise AI investment creates compounding data, workforce, and strategic costs that CFOs cannot recover quickly.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/iKiG5L005Fg</video:player_loc>
+      <video:duration>2527</video:duration>
+      <video:publication_date>2026-03-04T06:00:41Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-pilots-fail-brian-sutherland</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/7lsO0GK-UK4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Healthcare AI Pilots Fail Before They Scale</video:title>
+      <video:description>Brian Sutherland explains why healthcare AI pilots fail before they scale and how trust, governance, workflow, and leadership close the execution gap.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/7lsO0GK-UK4</video:player_loc>
+      <video:duration>2544</video:duration>
+      <video:publication_date>2026-02-25T19:31:30Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-drug-discovery-verification-david-finkelshteyn</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/TvaEQ87vgpo/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Drug Discovery Has a Verification Problem</video:title>
+      <video:description>David Finkelshteyn explains why verification, data integrity, and defensible validation are now the bottlenecks in AI-accelerated drug discovery.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/TvaEQ87vgpo</video:player_loc>
+      <video:duration>2262</video:duration>
+      <video:publication_date>2026-02-18T06:00:20Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-governance-cybersecurity-guman-chauhan</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/gR6OXuIxIOY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Governance Fails Without Cybersecurity</video:title>
+      <video:description>Guman Chauhan explains why AI governance fails without cybersecurity, executive accountability, and monitoring designed for AI-specific threats.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/gR6OXuIxIOY</video:player_loc>
+      <video:duration>2045</video:duration>
+      <video:publication_date>2026-02-11T06:00:27Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/clinical-ai-time-back-mark-gendreau</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/iNkDlnwZcMc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Clinical AI Must Give Time Back to Patients</video:title>
+      <video:description>Dr. Mark Gendreau explains why clinical AI succeeds only when it gives time back to clinicians and patients while preserving human judgment.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/iNkDlnwZcMc</video:player_loc>
+      <video:duration>2054</video:duration>
+      <video:publication_date>2026-02-04T06:00:39Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>

@@ -1,0 +1,4767 @@
+1
+00:00:00,000 --> 00:00:04,560
+Some CFOs are saying to data analytics
+
+2
+00:00:02,760 --> 00:00:06,480
+leaders, "Oh, sorry. I think in the past
+
+3
+00:00:04,560 --> 00:00:08,760
+few years you have pushed for me to
+
+4
+00:00:06,480 --> 00:00:11,200
+invest in data analytics. I always back
+
+5
+00:00:08,760 --> 00:00:13,680
+and say, okay, what's ROI?" Now, we have
+
+6
+00:00:11,200 --> 00:00:14,760
+even a higher level of pressure from all
+
+7
+00:00:13,680 --> 00:00:17,160
+the places.
+
+8
+00:00:14,760 --> 00:00:18,680
+So, we should have could have invested
+
+9
+00:00:17,160 --> 00:00:20,960
+more in data analytics two or three
+
+10
+00:00:18,680 --> 00:00:22,840
+years ago, earlier. Now, it's still not
+
+11
+00:00:20,960 --> 00:00:24,800
+too late, but still we should have been
+
+12
+00:00:22,840 --> 00:00:26,560
+could have been much more proactive.
+
+13
+00:00:24,800 --> 00:00:28,800
+>> Today on The Signal Room, I'm joined by
+
+14
+00:00:26,560 --> 00:00:30,720
+Gary Cao, long-time friend of mine and
+
+15
+00:00:28,800 --> 00:00:32,560
+executive leader who's been navigating
+
+16
+00:00:30,720 --> 00:00:34,560
+AI adoption from the inside of an
+
+17
+00:00:32,560 --> 00:00:36,280
+enterprise. Gary brings a perspective
+
+18
+00:00:34,560 --> 00:00:38,920
+shaped not by theory, but
+
+19
+00:00:36,280 --> 00:00:40,920
+accountability, aligning AI ambition
+
+20
+00:00:38,920 --> 00:00:43,120
+with operational realities,
+
+21
+00:00:40,920 --> 00:00:44,560
+managing risk while driving innovation,
+
+22
+00:00:43,120 --> 00:00:47,560
+and helping organizations move from
+
+23
+00:00:44,560 --> 00:00:49,320
+experimentation to enterprise scale.
+
+24
+00:00:47,560 --> 00:00:51,920
+As a chief data and analytics and AI
+
+25
+00:00:49,320 --> 00:00:53,880
+officer and serial founder of multiple
+
+26
+00:00:51,920 --> 00:00:56,160
+internal startups focused on data and
+
+27
+00:00:53,880 --> 00:00:58,320
+analytics across industries, Gary will
+
+28
+00:00:56,160 --> 00:01:01,120
+share his experience and lessons with a
+
+29
+00:00:58,320 --> 00:01:03,000
+focus on AI strategic road maps, and how
+
+30
+00:01:01,120 --> 00:01:05,920
+we can potentially integrate traditional
+
+31
+00:01:03,000 --> 00:01:07,600
+analytical AI with the emerging and
+
+32
+00:01:05,920 --> 00:01:10,920
+rapidly evolving generative AI
+
+33
+00:01:07,600 --> 00:01:13,120
+capabilities in the enterprise context.
+
+34
+00:01:10,920 --> 00:01:15,400
+Gary, welcome to The Signal Room.
+
+35
+00:01:13,120 --> 00:01:17,360
+>> Thank you, Chris. Happy to be here.
+
+36
+00:01:15,400 --> 00:01:19,040
+>> Well, I am happy to be having this kind
+
+37
+00:01:17,360 --> 00:01:20,720
+of a conversation and let a few folks in
+
+38
+00:01:19,040 --> 00:01:22,880
+on it. We've had some nice conversations
+
+39
+00:01:20,720 --> 00:01:24,800
+previously, and I always learn something
+
+40
+00:01:22,880 --> 00:01:26,920
+when we talk. So, thank you again for
+
+41
+00:01:24,800 --> 00:01:28,840
+for for joining me. I want to kind of
+
+42
+00:01:26,920 --> 00:01:30,240
+start with some things that are
+
+43
+00:01:28,840 --> 00:01:31,560
+really near and dear to your heart. I
+
+44
+00:01:30,240 --> 00:01:33,400
+know you've been talking about these
+
+45
+00:01:31,560 --> 00:01:35,560
+things a bit lately, and with all the
+
+46
+00:01:33,400 --> 00:01:37,040
+hype and the buzz going around,
+
+47
+00:01:35,560 --> 00:01:39,080
+I I I thought this is a really great
+
+48
+00:01:37,040 --> 00:01:40,960
+topic. So,
+
+49
+00:01:39,080 --> 00:01:42,360
+when you are talking to an organization
+
+50
+00:01:40,960 --> 00:01:43,760
+and they're saying they're on an AI
+
+51
+00:01:42,360 --> 00:01:46,800
+journey,
+
+52
+00:01:43,760 --> 00:01:49,000
+what does that usually mean in practice?
+
+53
+00:01:46,800 --> 00:01:51,880
+>> Generally, most companies when they say
+
+54
+00:01:49,000 --> 00:01:53,720
+they are in on an AI journey, they mean
+
+55
+00:01:51,880 --> 00:01:58,320
+they have
+
+56
+00:01:53,720 --> 00:01:59,760
+general very vague intention, and also
+
+57
+00:01:58,320 --> 00:02:03,000
+some type of
+
+58
+00:01:59,760 --> 00:02:06,280
+tool evaluation projects, use cases in
+
+59
+00:02:03,000 --> 00:02:09,440
+mind, but they don't have a holistic,
+
+60
+00:02:06,280 --> 00:02:12,280
+systematic way of designing a way
+
+61
+00:02:09,440 --> 00:02:15,280
+framework or road map for the next three
+
+62
+00:02:12,280 --> 00:02:17,080
+to five years. It's not just next month,
+
+63
+00:02:15,280 --> 00:02:20,120
+next quarter, even next year. It's
+
+64
+00:02:17,080 --> 00:02:22,320
+really I would say minimum one to three
+
+65
+00:02:20,120 --> 00:02:24,080
+years, if not three to five years.
+
+66
+00:02:22,320 --> 00:02:26,520
+>> Well, so
+
+67
+00:02:24,080 --> 00:02:29,360
+how do they go about really assessing
+
+68
+00:02:26,520 --> 00:02:31,760
+where they are then? I mean, if it's it
+
+69
+00:02:29,360 --> 00:02:34,400
+seems like it's not a orchestrated
+
+70
+00:02:31,760 --> 00:02:36,680
+strategy by what you're describing.
+
+71
+00:02:34,400 --> 00:02:39,040
+How would a a leader be assessing where
+
+72
+00:02:36,680 --> 00:02:39,520
+they fall on the AI maturity scale, do
+
+73
+00:02:39,040 --> 00:02:42,760
+you think?
+
+74
+00:02:39,520 --> 00:02:44,200
+>> Many companies are still, I would say,
+
+75
+00:02:42,760 --> 00:02:46,320
+in
+
+76
+00:02:44,200 --> 00:02:48,480
+maybe in a traditional journey of data
+
+77
+00:02:46,320 --> 00:02:52,120
+analytics, maybe in this
+
+78
+00:02:48,480 --> 00:02:55,360
+in a new phase of using generative AI,
+
+79
+00:02:52,120 --> 00:02:57,959
+but many many people's mind, those two
+
+80
+00:02:55,360 --> 00:03:00,480
+things are disjointed. They are not
+
+81
+00:02:57,959 --> 00:03:00,880
+properly, organically connected.
+
+82
+00:03:00,480 --> 00:03:03,920
+>> Right.
+
+83
+00:03:00,880 --> 00:03:07,080
+>> And when I talk to mid-size companies
+
+84
+00:03:03,920 --> 00:03:08,920
+CEOs and board members, I I ask them the
+
+85
+00:03:07,080 --> 00:03:11,800
+questions and say, "What do you want to
+
+86
+00:03:08,920 --> 00:03:12,720
+see in three to five years in terms of
+
+87
+00:03:11,800 --> 00:03:15,720
+the
+
+88
+00:03:12,720 --> 00:03:17,480
+future state of your company in terms of
+
+89
+00:03:15,720 --> 00:03:18,720
+the entire strategy, in terms of your
+
+90
+00:03:17,480 --> 00:03:19,440
+strategic priorities?"
+
+91
+00:03:18,720 --> 00:03:22,400
+>> Right.
+
+92
+00:03:19,440 --> 00:03:25,120
+>> From there, I want to see your strategic
+
+93
+00:03:22,400 --> 00:03:28,440
+plan and then from there translate that
+
+94
+00:03:25,120 --> 00:03:31,280
+into things that we can plan. Combining
+
+95
+00:03:28,440 --> 00:03:32,880
+four things together. One is technology,
+
+96
+00:03:31,280 --> 00:03:34,280
+which is the foundation. Without that,
+
+97
+00:03:32,880 --> 00:03:37,040
+you cannot do anything.
+
+98
+00:03:34,280 --> 00:03:40,040
+Second one is data. It's raw material.
+
+99
+00:03:37,040 --> 00:03:42,320
+The third thing is algorithm patterns
+
+100
+00:03:40,040 --> 00:03:43,560
+analytics. The fourth thing is the
+
+101
+00:03:42,320 --> 00:03:46,320
+business
+
+102
+00:03:43,560 --> 00:03:48,519
+adoption and execution of the
+
+103
+00:03:46,320 --> 00:03:50,680
+recommendation from analytics, pattern
+
+104
+00:03:48,519 --> 00:03:52,400
+detection and algorithm side. So, the
+
+105
+00:03:50,680 --> 00:03:55,520
+way we can see the real
+
+106
+00:03:52,400 --> 00:03:58,080
+or results of delivering the real value.
+
+107
+00:03:55,520 --> 00:03:59,720
+So those four things come together will
+
+108
+00:03:58,080 --> 00:04:02,840
+create a
+
+109
+00:03:59,720 --> 00:04:04,480
+virtual cycle to truly make this
+
+110
+00:04:02,840 --> 00:04:06,600
+capability development journey
+
+111
+00:04:04,480 --> 00:04:09,480
+sustainable and
+
+112
+00:04:06,600 --> 00:04:12,040
+truly delivering value that are expected
+
+113
+00:04:09,480 --> 00:04:13,800
+by the board as well as the CEO and the
+
+114
+00:04:12,040 --> 00:04:16,040
+owners and investors.
+
+115
+00:04:13,800 --> 00:04:18,519
+>> Right. Now, you you mentioned something
+
+116
+00:04:16,040 --> 00:04:20,200
+very, very briefly, but it's but it's
+
+117
+00:04:18,519 --> 00:04:21,720
+always a challenge.
+
+118
+00:04:20,200 --> 00:04:24,080
+Data
+
+119
+00:04:21,720 --> 00:04:26,040
+is always one of the biggest barriers
+
+120
+00:04:24,080 --> 00:04:28,360
+that I've run into, and I'm sure you've
+
+121
+00:04:26,040 --> 00:04:30,560
+seen this before, too. It's like people
+
+122
+00:04:28,360 --> 00:04:32,240
+have a different understanding of
+
+123
+00:04:30,560 --> 00:04:35,320
+the quality and completeness of their
+
+124
+00:04:32,240 --> 00:04:36,680
+data than than actually is reality,
+
+125
+00:04:35,320 --> 00:04:38,640
+which
+
+126
+00:04:36,680 --> 00:04:40,240
+kind of leads to another area I want to
+
+127
+00:04:38,640 --> 00:04:41,240
+touch on. I mean, we can pick up on the
+
+128
+00:04:40,240 --> 00:04:43,480
+on this
+
+129
+00:04:41,240 --> 00:04:45,880
+the data component of it because it's
+
+130
+00:04:43,480 --> 00:04:48,800
+it's a pretty significant lift, but
+
+131
+00:04:45,880 --> 00:04:51,360
+there's a gap usually between the
+
+132
+00:04:48,800 --> 00:04:53,320
+ambition and the execution. And I think
+
+133
+00:04:51,360 --> 00:04:55,919
+the elements that you described probably
+
+134
+00:04:53,320 --> 00:04:57,480
+fit into that gap in various ways, but I
+
+135
+00:04:55,919 --> 00:04:59,600
+mean, maybe talk a little bit about some
+
+136
+00:04:57,480 --> 00:05:01,320
+of the gaps that you see and and how do
+
+137
+00:04:59,600 --> 00:05:02,720
+you approach that?
+
+138
+00:05:01,320 --> 00:05:04,040
+>> That's great.
+
+139
+00:05:02,720 --> 00:05:06,400
+Um
+
+140
+00:05:04,040 --> 00:05:09,880
+I recently talked with a group of
+
+141
+00:05:06,400 --> 00:05:12,440
+people, practitioners in large companies
+
+142
+00:05:09,880 --> 00:05:14,720
+in technology, data analytics, and
+
+143
+00:05:12,440 --> 00:05:16,880
+digital transformation in uh
+
+144
+00:05:14,720 --> 00:05:18,880
+Cleveland area. We met at the Case
+
+145
+00:05:16,880 --> 00:05:21,040
+Western Reserve University
+
+146
+00:05:18,880 --> 00:05:24,160
+Weatherhead School of Management. We
+
+147
+00:05:21,040 --> 00:05:27,160
+talked about enterprise AI journey and
+
+148
+00:05:24,160 --> 00:05:29,919
+consistent with my professional kind of
+
+149
+00:05:27,160 --> 00:05:32,080
+framework based on past three years at
+
+150
+00:05:29,919 --> 00:05:35,480
+eight companies across industries,
+
+151
+00:05:32,080 --> 00:05:36,360
+I I identified four things to to kind of
+
+152
+00:05:35,480 --> 00:05:38,880
+like
+
+153
+00:05:36,360 --> 00:05:40,880
+as food food for thought. Number one is
+
+154
+00:05:38,880 --> 00:05:43,200
+business strategy. Without that, nothing
+
+155
+00:05:40,880 --> 00:05:45,720
+is really meaningful. Number two is
+
+156
+00:05:43,200 --> 00:05:48,880
+innovation and diversity of ideas,
+
+157
+00:05:45,720 --> 00:05:51,520
+analytics, and pattern detection, and
+
+158
+00:05:48,880 --> 00:05:53,400
+kind of like um algorithm-driven uh
+
+159
+00:05:51,520 --> 00:05:55,200
+recommendations, decision-making. Number
+
+160
+00:05:53,400 --> 00:05:57,160
+three is data management. And number
+
+161
+00:05:55,200 --> 00:05:59,280
+four is computing or technology or tools
+
+162
+00:05:57,160 --> 00:06:02,080
+infrastructure. So, all of those four
+
+163
+00:05:59,280 --> 00:06:05,120
+things, business strategy is the most
+
+164
+00:06:02,080 --> 00:06:07,640
+difficult topic for for discussion.
+
+165
+00:06:05,120 --> 00:06:08,800
+And innovation and diversity of ideas
+
+166
+00:06:07,640 --> 00:06:11,640
+and analytics
+
+167
+00:06:08,800 --> 00:06:13,720
+is less discussed. More discussed,
+
+168
+00:06:11,640 --> 00:06:16,200
+generally on top of people's mind, is
+
+169
+00:06:13,720 --> 00:06:17,520
+technology, tools, infrastructure, and
+
+170
+00:06:16,200 --> 00:06:19,680
+all those kind of things.
+
+171
+00:06:17,520 --> 00:06:22,360
+And then data management or data
+
+172
+00:06:19,680 --> 00:06:24,360
+quality, data lineage, data knowledge,
+
+173
+00:06:22,360 --> 00:06:26,400
+generally is below surface.
+
+174
+00:06:24,360 --> 00:06:28,880
+And also it's less, I would say,
+
+175
+00:06:26,400 --> 00:06:30,800
+undervalued, under-discussed.
+
+176
+00:06:28,880 --> 00:06:32,919
+So, all of those four things are
+
+177
+00:06:30,800 --> 00:06:35,840
+critical and are required to make this
+
+178
+00:06:32,919 --> 00:06:37,880
+journey less frustrating, more
+
+179
+00:06:35,840 --> 00:06:39,840
+successful, more productive. So, going
+
+180
+00:06:37,880 --> 00:06:42,440
+back, business strategy, analytics
+
+181
+00:06:39,840 --> 00:06:44,160
+culture, data management, and then
+
+182
+00:06:42,440 --> 00:06:45,720
+technology. So, those four things have
+
+183
+00:06:44,160 --> 00:06:48,919
+to be there. And technology is all
+
+184
+00:06:45,720 --> 00:06:50,560
+mostly visible and discussed. Data is
+
+185
+00:06:48,919 --> 00:06:52,560
+below the surface, sometimes out of
+
+186
+00:06:50,560 --> 00:06:56,360
+sight, out of mind. Analytics is less
+
+187
+00:06:52,560 --> 00:06:58,800
+discussed, still under-valued or maybe
+
+188
+00:06:56,360 --> 00:07:00,240
+under-appreciated. And business strategy
+
+189
+00:06:58,800 --> 00:07:01,560
+is generally
+
+190
+00:07:00,240 --> 00:07:03,000
+also difficult because people say,
+
+191
+00:07:01,560 --> 00:07:05,480
+"Okay, how do I connect the business
+
+192
+00:07:03,000 --> 00:07:06,880
+strategy with technology and problem and
+
+193
+00:07:05,480 --> 00:07:09,160
+use case and data management?" Because
+
+194
+00:07:06,880 --> 00:07:10,720
+data management just longer-term
+
+195
+00:07:09,160 --> 00:07:13,919
+requires much longer, let's say,
+
+196
+00:07:10,720 --> 00:07:16,720
+patience or deliberate effort.
+
+197
+00:07:13,919 --> 00:07:19,840
+>> Right. So, do you think that the there
+
+198
+00:07:16,720 --> 00:07:22,680
+there's a disparity between the
+
+199
+00:07:19,840 --> 00:07:24,919
+investment in the data foundation
+
+200
+00:07:22,680 --> 00:07:25,880
+versus what the ambition is? I think
+
+201
+00:07:24,919 --> 00:07:27,960
+that
+
+202
+00:07:25,880 --> 00:07:29,600
+I've seen it more often than not. It's
+
+203
+00:07:27,960 --> 00:07:31,480
+kind of there's a hidden cost that's
+
+204
+00:07:29,600 --> 00:07:34,120
+kind of tucked underneath the technology
+
+205
+00:07:31,480 --> 00:07:36,040
+contracts, and it's under-appreciated in
+
+206
+00:07:34,120 --> 00:07:38,919
+terms of the the level of effort when it
+
+207
+00:07:36,040 --> 00:07:40,400
+comes to getting the data fit for use.
+
+208
+00:07:38,919 --> 00:07:44,520
+What's your experience on that?
+
+209
+00:07:40,400 --> 00:07:46,960
+>> Yeah, data is it's not as tangible as
+
+210
+00:07:44,520 --> 00:07:48,560
+technology or tools. It's sometimes not
+
+211
+00:07:46,960 --> 00:07:51,040
+even visible.
+
+212
+00:07:48,560 --> 00:07:53,800
+And but that's the raw material. The
+
+213
+00:07:51,040 --> 00:07:56,200
+disparity here is that people try to
+
+214
+00:07:53,800 --> 00:07:58,160
+invest in the for the long term. They
+
+215
+00:07:56,200 --> 00:07:59,800
+are generally also very knowledgeable
+
+216
+00:07:58,160 --> 00:08:02,920
+about for example data, for example
+
+217
+00:07:59,800 --> 00:08:05,720
+technology. But the gap here is not
+
+218
+00:08:02,920 --> 00:08:06,760
+about investment in data management, but
+
+219
+00:08:05,720 --> 00:08:10,120
+rather
+
+220
+00:08:06,760 --> 00:08:11,440
+connecting data technology with business
+
+221
+00:08:10,120 --> 00:08:13,240
+problems.
+
+222
+00:08:11,440 --> 00:08:16,360
+And then focus on use cases and then
+
+223
+00:08:13,240 --> 00:08:16,720
+focus on short-term value creation.
+
+224
+00:08:16,360 --> 00:08:20,000
+>> Right.
+
+225
+00:08:16,720 --> 00:08:22,320
+>> And then have that connection traction.
+
+226
+00:08:20,000 --> 00:08:24,320
+That's the very interesting integration.
+
+227
+00:08:22,320 --> 00:08:26,360
+We have an integration of all those four
+
+228
+00:08:24,320 --> 00:08:28,640
+things together. That
+
+229
+00:08:26,360 --> 00:08:30,760
+Um many companies are very strong in
+
+230
+00:08:28,640 --> 00:08:32,719
+technology and sometimes also strong in
+
+231
+00:08:30,760 --> 00:08:35,599
+data. Business of course is
+
+232
+00:08:32,719 --> 00:08:37,520
+foundational. But the connection point
+
+233
+00:08:35,599 --> 00:08:38,039
+the the weakest spot
+
+234
+00:08:37,520 --> 00:08:39,280
+>> Mhm.
+
+235
+00:08:38,039 --> 00:08:39,800
+>> is the analytics part.
+
+236
+00:08:39,280 --> 00:08:42,520
+>> Right.
+
+237
+00:08:39,800 --> 00:08:43,280
+>> Which like a using technology and data
+
+238
+00:08:42,520 --> 00:08:44,839
+to
+
+239
+00:08:43,280 --> 00:08:47,360
+focus on the problem to solve it and
+
+240
+00:08:44,839 --> 00:08:49,800
+then deliver value with supporting and
+
+241
+00:08:47,360 --> 00:08:52,880
+servicing the business decision makers.
+
+242
+00:08:49,800 --> 00:08:56,280
+So that connection generally is not
+
+243
+00:08:52,880 --> 00:08:56,720
+easily um established or maintained or
+
+244
+00:08:56,280 --> 00:08:57,600
+>> Right.
+
+245
+00:08:56,720 --> 00:08:59,600
+>> supported.
+
+246
+00:08:57,600 --> 00:09:00,880
+>> Yeah, that's it's an interesting thing.
+
+247
+00:08:59,600 --> 00:09:02,400
+I mean I've I've been playing around
+
+248
+00:09:00,880 --> 00:09:05,320
+with my own models. I'm sure you have
+
+249
+00:09:02,400 --> 00:09:07,600
+too. But the quality of the the inputs,
+
+250
+00:09:05,320 --> 00:09:08,160
+the prompts, things like that,
+
+251
+00:09:07,600 --> 00:09:10,200
+um
+
+252
+00:09:08,160 --> 00:09:12,040
+they have everything to do with what
+
+253
+00:09:10,200 --> 00:09:13,320
+kind of an output you're going to
+
+254
+00:09:12,040 --> 00:09:16,839
+generate. And there's a lot of
+
+255
+00:09:13,320 --> 00:09:17,960
+variability as as well. Uh would maybe
+
+256
+00:09:16,839 --> 00:09:19,760
+if you don't mind, let's just talk a
+
+257
+00:09:17,960 --> 00:09:22,080
+little bit about how you see generative
+
+258
+00:09:19,760 --> 00:09:24,080
+AI kind of fitting in at an enterprise
+
+259
+00:09:22,080 --> 00:09:26,520
+level like it is part of an analytics
+
+260
+00:09:24,080 --> 00:09:29,200
+foundations. I don't know that uh we're
+
+261
+00:09:26,520 --> 00:09:31,280
+really clear on where the guardrails
+
+262
+00:09:29,200 --> 00:09:33,120
+are. But I know you spent some time on
+
+263
+00:09:31,280 --> 00:09:35,760
+that. I'd love to hear your thoughts.
+
+264
+00:09:33,120 --> 00:09:39,640
+>> It's confusing to many people.
+
+265
+00:09:35,760 --> 00:09:41,160
+Uh everybody says about AI, but in terms
+
+266
+00:09:39,640 --> 00:09:41,880
+of definition, people have different
+
+267
+00:09:41,160 --> 00:09:42,120
+definitions.
+
+268
+00:09:41,880 --> 00:09:45,440
+>> Right.
+
+269
+00:09:42,120 --> 00:09:48,880
+>> And in the common discussion or casual
+
+270
+00:09:45,440 --> 00:09:51,400
+dialogue, people mention AI casually and
+
+271
+00:09:48,880 --> 00:09:53,320
+there is something like AI
+
+272
+00:09:51,400 --> 00:09:53,680
+slop or AI wash.
+
+273
+00:09:53,320 --> 00:09:56,400
+>> Right.
+
+274
+00:09:53,680 --> 00:09:58,880
+>> In my mind, because I've been in this
+
+275
+00:09:56,400 --> 00:10:01,520
+data science machine learning space for
+
+276
+00:09:58,880 --> 00:10:03,640
+30 years for that for my entire career,
+
+277
+00:10:01,520 --> 00:10:06,520
+I believe AI's definition is pretty
+
+278
+00:10:03,640 --> 00:10:08,880
+broad. There are three layers. First
+
+279
+00:10:06,520 --> 00:10:10,600
+layer is the traditional data analytics
+
+280
+00:10:08,880 --> 00:10:11,960
+and machine learning,
+
+281
+00:10:10,600 --> 00:10:15,240
+predictive modeling, statistics,
+
+282
+00:10:11,960 --> 00:10:17,600
+mathematics, economics. So, that's
+
+283
+00:10:15,240 --> 00:10:18,520
+Of course, further including dashboard
+
+284
+00:10:17,600 --> 00:10:19,160
+and business intelligence.
+
+285
+00:10:18,520 --> 00:10:21,240
+>> Right.
+
+286
+00:10:19,160 --> 00:10:22,480
+>> And then the second layer that's kind
+
+287
+00:10:21,240 --> 00:10:24,720
+like
+
+288
+00:10:22,480 --> 00:10:27,640
+there, but people just don't necessarily
+
+289
+00:10:24,720 --> 00:10:30,920
+recognize they're there or see it is the
+
+290
+00:10:27,640 --> 00:10:34,880
+natural language processing, visual and
+
+291
+00:10:30,920 --> 00:10:35,960
+audio, and video image processing.
+
+292
+00:10:34,880 --> 00:10:38,240
+>> Right.
+
+293
+00:10:35,960 --> 00:10:40,760
+>> Uh, the third layer, which is more
+
+294
+00:10:38,240 --> 00:10:43,680
+visible in front of the use case users
+
+295
+00:10:40,760 --> 00:10:45,680
+as well as consumers, is generative AI,
+
+296
+00:10:43,680 --> 00:10:47,120
+large language model, the genetic
+
+297
+00:10:45,680 --> 00:10:49,080
+systems,
+
+298
+00:10:47,120 --> 00:10:53,520
+and uh
+
+299
+00:10:49,080 --> 00:10:56,080
+all the other hot and very dominant type
+
+300
+00:10:53,520 --> 00:10:58,000
+of topics right now. For example, chips,
+
+301
+00:10:56,080 --> 00:10:59,800
+for example, the large large language
+
+302
+00:10:58,000 --> 00:11:01,640
+model, for example, the visual video
+
+303
+00:10:59,800 --> 00:11:03,600
+creation, all those kind of things.
+
+304
+00:11:01,640 --> 00:11:06,920
+Those things coming together, there are
+
+305
+00:11:03,600 --> 00:11:08,720
+There is a clear line of evolution for
+
+306
+00:11:06,920 --> 00:11:09,120
+the past 20, 30, 40 years.
+
+307
+00:11:08,720 --> 00:11:11,720
+>> Right.
+
+308
+00:11:09,120 --> 00:11:13,839
+>> And if you don't people don't understand
+
+309
+00:11:11,720 --> 00:11:14,960
+the evolution, then they believe AI is
+
+310
+00:11:13,839 --> 00:11:16,640
+something
+
+311
+00:11:14,960 --> 00:11:17,120
+magically emerging in the past few
+
+312
+00:11:16,640 --> 00:11:17,360
+years,
+
+313
+00:11:17,120 --> 00:11:20,080
+>> Right.
+
+314
+00:11:17,360 --> 00:11:21,960
+>> then that's that's necessarily that's
+
+315
+00:11:20,080 --> 00:11:22,440
+missing the entire history.
+
+316
+00:11:21,960 --> 00:11:24,280
+>> Right.
+
+317
+00:11:22,440 --> 00:11:27,520
+>> So, if you look at the history, then you
+
+318
+00:11:24,280 --> 00:11:29,760
+will demystify AI and say, "Oh, it's
+
+319
+00:11:27,520 --> 00:11:32,480
+magic." No, it's not. It's algorithm,
+
+320
+00:11:29,760 --> 00:11:35,680
+it's statistics, it's economics, it's um
+
+321
+00:11:32,480 --> 00:11:38,280
+mathematics. So, if you look at that way
+
+322
+00:11:35,680 --> 00:11:39,720
+and um when people say, "Okay, I want
+
+323
+00:11:38,280 --> 00:11:41,120
+you." from the board of directors, from
+
+324
+00:11:39,720 --> 00:11:43,720
+CEOs, from CFOs, they say, "I want to
+
+325
+00:11:41,120 --> 00:11:45,880
+use I want to you use AI or generative
+
+326
+00:11:43,720 --> 00:11:47,840
+AI." What they really mean is that,
+
+327
+00:11:45,880 --> 00:11:50,480
+"Okay, I want to see results. I want to
+
+328
+00:11:47,840 --> 00:11:52,280
+see the what we're doing with the new
+
+329
+00:11:50,480 --> 00:11:54,520
+hot topics."
+
+330
+00:11:52,280 --> 00:11:57,480
+You That's not healthy in my mind. You
+
+331
+00:11:54,520 --> 00:12:01,120
+In reality, if you look at the entire uh
+
+332
+00:11:57,480 --> 00:12:04,160
+history and then make sure we start
+
+333
+00:12:01,120 --> 00:12:05,880
+um let's say, first crawl crawl before
+
+334
+00:12:04,160 --> 00:12:06,400
+we uh stand up and walk.
+
+335
+00:12:05,880 --> 00:12:08,760
+>> Right.
+
+336
+00:12:06,400 --> 00:12:10,960
+>> Walk before we start start running.
+
+337
+00:12:08,760 --> 00:12:12,880
+That's the capabilities Of course, I'm
+
+338
+00:12:10,960 --> 00:12:14,080
+not saying you have to do sequentially.
+
+339
+00:12:12,880 --> 00:12:17,080
+Sometimes you can
+
+340
+00:12:14,080 --> 00:12:19,880
+go back and forth, but then iteratively
+
+341
+00:12:17,080 --> 00:12:21,720
+uh without the right data foundation
+
+342
+00:12:19,880 --> 00:12:23,720
+uh without understanding the data
+
+343
+00:12:21,720 --> 00:12:26,440
+management side, anything that's kind of
+
+344
+00:12:23,720 --> 00:12:28,200
+like generative AI generated content for
+
+345
+00:12:26,440 --> 00:12:30,800
+example, customer service, for example,
+
+346
+00:12:28,200 --> 00:12:33,520
+uh meeting summary for example, new idea
+
+347
+00:12:30,800 --> 00:12:35,440
+generation. Those things are
+
+348
+00:12:33,520 --> 00:12:37,640
+helpful and useful, but they're not
+
+349
+00:12:35,440 --> 00:12:39,440
+going to fundamentally change the
+
+350
+00:12:37,640 --> 00:12:41,480
+decision process and culture and the
+
+351
+00:12:39,440 --> 00:12:44,320
+pro- uh let's say, workflow.
+
+352
+00:12:41,480 --> 00:12:46,680
+>> And I think that that gets to probably a
+
+353
+00:12:44,320 --> 00:12:48,200
+a point that maybe we don't talk about
+
+354
+00:12:46,680 --> 00:12:50,360
+enough for people to really wrap their
+
+355
+00:12:48,200 --> 00:12:51,720
+head around what this actually is about.
+
+356
+00:12:50,360 --> 00:12:53,440
+But, I know when we've talked, you've
+
+357
+00:12:51,720 --> 00:12:56,760
+talked about attention that kind of sits
+
+358
+00:12:53,440 --> 00:12:58,800
+between enterprise systems and
+
+359
+00:12:56,760 --> 00:13:00,600
+probabilistic AI models.
+
+360
+00:12:58,800 --> 00:13:03,040
+Uh there's
+
+361
+00:13:00,600 --> 00:13:04,440
+it's it's not magic. You know, I I I
+
+362
+00:13:03,040 --> 00:13:06,920
+figured that much out. I don't know that
+
+363
+00:13:04,440 --> 00:13:08,240
+I understand everything. But, talk a
+
+364
+00:13:06,920 --> 00:13:11,040
+little bit about what you know, what
+
+365
+00:13:08,240 --> 00:13:13,760
+that tension is between the enterprise
+
+366
+00:13:11,040 --> 00:13:15,880
+systems and probabilistic AI models.
+
+367
+00:13:13,760 --> 00:13:17,720
+>> I worked in health industry. I also
+
+368
+00:13:15,880 --> 00:13:21,080
+worked in financial service service
+
+369
+00:13:17,720 --> 00:13:22,040
+industry. I'm using the simple, let's
+
+370
+00:13:21,080 --> 00:13:24,800
+say,
+
+371
+00:13:22,040 --> 00:13:27,360
+different uh perspectives on functions.
+
+372
+00:13:24,800 --> 00:13:29,440
+For example, in financial service
+
+373
+00:13:27,360 --> 00:13:32,160
+banking industries, there's always
+
+374
+00:13:29,440 --> 00:13:34,760
+tension between marketing and risk
+
+375
+00:13:32,160 --> 00:13:37,000
+management. Marketing means that you
+
+376
+00:13:34,760 --> 00:13:39,240
+acquire new customers, you cross-sell to
+
+377
+00:13:37,000 --> 00:13:41,800
+customers with other products while they
+
+378
+00:13:39,240 --> 00:13:45,880
+have other have some other products.
+
+379
+00:13:41,800 --> 00:13:47,120
+And so, marketing is generally very
+
+380
+00:13:45,880 --> 00:13:49,000
+flexible
+
+381
+00:13:47,120 --> 00:13:51,960
+in terms of requirements. They don't
+
+382
+00:13:49,000 --> 00:13:55,080
+have any high level of accuracy in terms
+
+383
+00:13:51,960 --> 00:13:57,680
+of precision. So, once you have the
+
+384
+00:13:55,080 --> 00:13:59,120
+probabilistic decision-making process,
+
+385
+00:13:57,680 --> 00:14:00,000
+that's good enough.
+
+386
+00:13:59,120 --> 00:14:02,080
+But
+
+387
+00:14:00,000 --> 00:14:05,320
+in risk management, I think the
+
+388
+00:14:02,080 --> 00:14:07,000
+tolerance for lack of accuracy is much
+
+389
+00:14:05,320 --> 00:14:08,320
+lower. Of course, it's still
+
+390
+00:14:07,000 --> 00:14:10,840
+probabilistic. For example, you have a
+
+391
+00:14:08,320 --> 00:14:12,480
+model, you can say, "Okay, this group of
+
+392
+00:14:10,840 --> 00:14:14,000
+accounts have higher level higher
+
+393
+00:14:12,480 --> 00:14:15,920
+probability of
+
+394
+00:14:14,000 --> 00:14:18,040
+going to delinquent or something like
+
+395
+00:14:15,920 --> 00:14:20,000
+that." So, that's still probability.
+
+396
+00:14:18,040 --> 00:14:22,760
+But their requirements is higher and
+
+397
+00:14:20,000 --> 00:14:25,320
+this requires more compliance and more
+
+398
+00:14:22,760 --> 00:14:27,920
+calculation, more economic scientific
+
+399
+00:14:25,320 --> 00:14:31,040
+statistics analysis rather than rather
+
+400
+00:14:27,920 --> 00:14:32,640
+than tolerance of of the wider range of
+
+401
+00:14:31,040 --> 00:14:35,880
+ballpark number.
+
+402
+00:14:32,640 --> 00:14:37,960
+Um similarly in in healthcare, clinical
+
+403
+00:14:35,880 --> 00:14:40,600
+decision-making or diagnosis or
+
+404
+00:14:37,960 --> 00:14:42,760
+treatment, they have higher level of,
+
+405
+00:14:40,600 --> 00:14:44,800
+let's say, requirements for accuracy and
+
+406
+00:14:42,760 --> 00:14:47,440
+for higher level of compliance and
+
+407
+00:14:44,800 --> 00:14:49,640
+emotional value there. If you look at
+
+408
+00:14:47,440 --> 00:14:52,320
+administration and
+
+409
+00:14:49,640 --> 00:14:55,160
+let's say scheduling or let's say
+
+410
+00:14:52,320 --> 00:14:58,040
+logistics supply chain, those kind of
+
+411
+00:14:55,160 --> 00:15:01,160
+things are slightly I would say more
+
+412
+00:14:58,040 --> 00:15:03,400
+tolerant in terms of lack of accuracy or
+
+413
+00:15:01,160 --> 00:15:06,080
+precision. So, that's the healthy
+
+414
+00:15:03,400 --> 00:15:08,320
+tension between those different areas
+
+415
+00:15:06,080 --> 00:15:11,640
+for potentially applying
+
+416
+00:15:08,320 --> 00:15:14,200
+analytics. So, generative AI can
+
+417
+00:15:11,640 --> 00:15:16,880
+be very helpful for different use cases.
+
+418
+00:15:14,200 --> 00:15:18,080
+I have list of things that's really
+
+419
+00:15:16,880 --> 00:15:20,280
+valuable. For example, technical
+
+420
+00:15:18,080 --> 00:15:22,600
+assistance troubleshooting, right? For
+
+421
+00:15:20,280 --> 00:15:24,160
+example, content creation editing.
+
+422
+00:15:22,600 --> 00:15:27,040
+For example, personal professional
+
+423
+00:15:24,160 --> 00:15:30,240
+support. Those things are very
+
+424
+00:15:27,040 --> 00:15:33,120
+top use cases for generative AI. But if
+
+425
+00:15:30,240 --> 00:15:37,680
+you go back to say okay, I want to look
+
+426
+00:15:33,120 --> 00:15:40,040
+at the preventive, let's say um
+
+427
+00:15:37,680 --> 00:15:42,320
+equipment and machine machinery uh
+
+428
+00:15:40,040 --> 00:15:43,840
+maintenance. Those things will require a
+
+429
+00:15:42,320 --> 00:15:46,280
+little more statistical analysis and
+
+430
+00:15:43,840 --> 00:15:47,240
+then that at that moment it goes beyond
+
+431
+00:15:46,280 --> 00:15:47,600
+language models.
+
+432
+00:15:47,240 --> 00:15:50,840
+>> Right.
+
+433
+00:15:47,600 --> 00:15:53,960
+>> It goes to more mathematics um
+
+434
+00:15:50,840 --> 00:15:56,520
+statistics and then so it will requires
+
+435
+00:15:53,960 --> 00:15:56,800
+higher level of specialized expertise.
+
+436
+00:15:56,520 --> 00:15:59,160
+>> Right.
+
+437
+00:15:56,800 --> 00:16:00,680
+>> And a simple language model may not
+
+438
+00:15:59,160 --> 00:16:02,720
+handle that. Of course, of course, we
+
+439
+00:16:00,680 --> 00:16:05,560
+have a genetic systems that can
+
+440
+00:16:02,720 --> 00:16:07,720
+potentially blend in processes and
+
+441
+00:16:05,560 --> 00:16:11,320
+languages and also
+
+442
+00:16:07,720 --> 00:16:13,640
+let's say quantitative numbers. Uh but
+
+443
+00:16:11,320 --> 00:16:16,640
+we are not there yet. So we cannot
+
+444
+00:16:13,640 --> 00:16:18,840
+blindly trust, okay, language language
+
+445
+00:16:16,640 --> 00:16:21,000
+model can help us make better decisions
+
+446
+00:16:18,840 --> 00:16:22,240
+in just in traditional data analytics
+
+447
+00:16:21,000 --> 00:16:22,560
+can easily solve.
+
+448
+00:16:22,240 --> 00:16:25,240
+>> Right.
+
+449
+00:16:22,560 --> 00:16:29,440
+>> One great advance let's say
+
+450
+00:16:25,240 --> 00:16:32,720
+uh advancement here is that in the past
+
+451
+00:16:29,440 --> 00:16:34,960
+building a data science model may take a
+
+452
+00:16:32,720 --> 00:16:35,560
+few hours, a few days, or sometimes few
+
+453
+00:16:34,960 --> 00:16:36,320
+weeks.
+
+454
+00:16:35,560 --> 00:16:37,880
+>> Right.
+
+455
+00:16:36,320 --> 00:16:39,000
+>> Sometimes even months
+
+456
+00:16:37,880 --> 00:16:41,920
+depending on the complexity of the
+
+457
+00:16:39,000 --> 00:16:43,640
+product. But right now if you have the
+
+458
+00:16:41,920 --> 00:16:46,120
+right data and have high confidence in
+
+459
+00:16:43,640 --> 00:16:48,760
+data and also you have process work a
+
+460
+00:16:46,120 --> 00:16:51,160
+workflow defined. Right. That model
+
+461
+00:16:48,760 --> 00:16:53,960
+algorithm development can be as fast as
+
+462
+00:16:51,160 --> 00:16:57,320
+few seconds or few minutes.
+
+463
+00:16:53,960 --> 00:16:59,440
+So that enables a lot of data scientists
+
+464
+00:16:57,320 --> 00:17:01,640
+to be much more productive.
+
+465
+00:16:59,440 --> 00:17:04,360
+But does that reduce the workload and
+
+466
+00:17:01,640 --> 00:17:07,199
+attention to data quality, data
+
+467
+00:17:04,360 --> 00:17:08,240
+relevance, and data usefulness. All
+
+468
+00:17:07,199 --> 00:17:09,839
+those kind of things still have to be
+
+469
+00:17:08,240 --> 00:17:10,280
+there. Otherwise it's garbage in garbage
+
+470
+00:17:09,839 --> 00:17:11,040
+out.
+
+471
+00:17:10,280 --> 00:17:12,680
+>> Right.
+
+472
+00:17:11,040 --> 00:17:15,439
+>> And this also is it goes beyond
+
+473
+00:17:12,680 --> 00:17:18,040
+language. It's truly quantitative. The
+
+474
+00:17:15,439 --> 00:17:20,400
+other thing is that for our current data
+
+475
+00:17:18,040 --> 00:17:21,400
+management most of enterprises are still
+
+476
+00:17:20,400 --> 00:17:23,240
+using
+
+477
+00:17:21,400 --> 00:17:25,280
+relational databases, right? Data mart,
+
+478
+00:17:23,240 --> 00:17:27,720
+data warehouse, sometimes also they have
+
+479
+00:17:25,280 --> 00:17:31,040
+data lakehouse, data data lakes.
+
+480
+00:17:27,720 --> 00:17:31,480
+But they are tabular, maybe relational
+
+481
+00:17:31,040 --> 00:17:31,920
+data.
+
+482
+00:17:31,480 --> 00:17:35,080
+>> Right.
+
+483
+00:17:31,920 --> 00:17:37,760
+>> That's different from the more commonly
+
+484
+00:17:35,080 --> 00:17:39,680
+used data feed into generative models.
+
+485
+00:17:37,760 --> 00:17:42,920
+Generative model you you imagine that is
+
+486
+00:17:39,680 --> 00:17:45,640
+really more unstructured language,
+
+487
+00:17:42,920 --> 00:17:46,920
+visual, audio, those things. Or or log
+
+488
+00:17:45,640 --> 00:17:49,080
+files, right?
+
+489
+00:17:46,920 --> 00:17:52,160
+So the the the difference is there and
+
+490
+00:17:49,080 --> 00:17:53,280
+then uh generative AI greatly expanded
+
+491
+00:17:52,160 --> 00:17:56,560
+the
+
+492
+00:17:53,280 --> 00:18:00,240
+the capabilities or maybe the uh ability
+
+493
+00:17:56,560 --> 00:18:04,360
+for data scientists to use to expand or
+
+494
+00:18:00,240 --> 00:18:07,040
+speed up their uh workflow and to um
+
+495
+00:18:04,360 --> 00:18:08,000
+expand their scope of potential impact.
+
+496
+00:18:07,040 --> 00:18:09,960
+>> Right.
+
+497
+00:18:08,000 --> 00:18:12,600
+It occurs to me that you know what we're
+
+498
+00:18:09,960 --> 00:18:15,040
+talking about is an acceleration
+
+499
+00:18:12,600 --> 00:18:16,680
+uh of learning that typically would be
+
+500
+00:18:15,040 --> 00:18:18,800
+stretched out over a much longer period
+
+501
+00:18:16,680 --> 00:18:21,240
+of time. Just the pace that that's
+
+502
+00:18:18,800 --> 00:18:24,080
+generating new recommendations or
+
+503
+00:18:21,240 --> 00:18:26,840
+outputs just begs the question, do we
+
+504
+00:18:24,080 --> 00:18:29,560
+need a different kind of governance for
+
+505
+00:18:26,840 --> 00:18:31,000
+this generative AI approach to things
+
+506
+00:18:29,560 --> 00:18:32,720
+that's different than just what we
+
+507
+00:18:31,000 --> 00:18:34,800
+typically are doing for analytics?
+
+508
+00:18:32,720 --> 00:18:37,000
+>> I I think it's more complex and it's
+
+509
+00:18:34,800 --> 00:18:39,640
+more I would say there will be some
+
+510
+00:18:37,000 --> 00:18:41,360
+similarities and consistencies.
+
+511
+00:18:39,640 --> 00:18:43,760
+But there will also be some something
+
+512
+00:18:41,360 --> 00:18:45,840
+different, maybe going beyond the
+
+513
+00:18:43,760 --> 00:18:47,040
+traditional data governance. Data
+
+514
+00:18:45,840 --> 00:18:49,560
+governance has
+
+515
+00:18:47,040 --> 00:18:52,080
+has been I would say struggling for the
+
+516
+00:18:49,560 --> 00:18:54,680
+past few decades because it's uh high
+
+517
+00:18:52,080 --> 00:18:58,080
+cost and also it's it's very hard for
+
+518
+00:18:54,680 --> 00:18:59,400
+people to prioritize master data versus
+
+519
+00:18:58,080 --> 00:19:01,400
+the non
+
+520
+00:18:59,400 --> 00:19:03,040
+master data was kind of maybe maybe more
+
+521
+00:19:01,400 --> 00:19:06,120
+production data, right? Operational
+
+522
+00:19:03,040 --> 00:19:07,760
+data. So it's impossible to
+
+523
+00:19:06,120 --> 00:19:10,160
+to kind of like boil the ocean, right?
+
+524
+00:19:07,760 --> 00:19:12,280
+How do you balance the 80/20 rule in
+
+525
+00:19:10,160 --> 00:19:14,720
+terms of saying 80% of the
+
+526
+00:19:12,280 --> 00:19:17,160
+impact actually is deliverable created
+
+527
+00:19:14,720 --> 00:19:20,120
+with using the 20% of the volume of the
+
+528
+00:19:17,160 --> 00:19:22,440
+data." So, that could could potentially
+
+529
+00:19:20,120 --> 00:19:24,240
+be a great uh space generative AI can
+
+530
+00:19:22,440 --> 00:19:26,120
+help in terms of saying, "Okay, let's
+
+531
+00:19:24,240 --> 00:19:28,840
+look at the distribution and the focus
+
+532
+00:19:26,120 --> 00:19:31,640
+only on things that matter and also look
+
+533
+00:19:28,840 --> 00:19:33,360
+at the outliers and look at the things
+
+534
+00:19:31,640 --> 00:19:36,160
+that's out of the norm, then we can
+
+535
+00:19:33,360 --> 00:19:39,280
+correct that." So, the governance there
+
+536
+00:19:36,160 --> 00:19:41,520
+is probably useful, but the language
+
+537
+00:19:39,280 --> 00:19:43,920
+part of the the leakage part, many
+
+538
+00:19:41,520 --> 00:19:45,680
+people don't realize, "Okay, if we do
+
+539
+00:19:43,920 --> 00:19:47,640
+this, things already are out of the
+
+540
+00:19:45,680 --> 00:19:49,160
+door." It's not necessarily in front of
+
+541
+00:19:47,640 --> 00:19:50,720
+people's um
+
+542
+00:19:49,160 --> 00:19:53,240
+let's say computer.
+
+543
+00:19:50,720 --> 00:19:55,560
+That will require a discipline, it will
+
+544
+00:19:53,240 --> 00:19:58,440
+require, let's say, culture and
+
+545
+00:19:55,560 --> 00:20:00,760
+education and training and because
+
+546
+00:19:58,440 --> 00:20:02,520
+people have to realize we have we want
+
+547
+00:20:00,760 --> 00:20:04,400
+to minimize risks,
+
+548
+00:20:02,520 --> 00:20:05,440
+minimize the chance of making major
+
+549
+00:20:04,400 --> 00:20:05,720
+mistakes that
+
+550
+00:20:05,440 --> 00:20:07,720
+>> Right.
+
+551
+00:20:05,720 --> 00:20:10,160
+>> can cannot be reversed.
+
+552
+00:20:07,720 --> 00:20:12,320
+That has to be there first. And then the
+
+553
+00:20:10,160 --> 00:20:15,400
+many others kind of like smaller
+
+554
+00:20:12,320 --> 00:20:18,440
+potential problems, mistakes,
+
+555
+00:20:15,400 --> 00:20:20,240
+if we if we can recover from them,
+
+556
+00:20:18,440 --> 00:20:22,720
+yeah, we will just recover and gradually
+
+557
+00:20:20,240 --> 00:20:25,320
+we learn and then each turn each time we
+
+558
+00:20:22,720 --> 00:20:26,440
+will minimize chance of making the same
+
+559
+00:20:25,320 --> 00:20:27,200
+mistake in the future.
+
+560
+00:20:26,440 --> 00:20:28,320
+>> Right.
+
+561
+00:20:27,200 --> 00:20:31,240
+>> So, we don't have to worry too much
+
+562
+00:20:28,320 --> 00:20:33,760
+about it. But the big mistakes that you
+
+563
+00:20:31,240 --> 00:20:37,160
+want to avoid, that has to be really on
+
+564
+00:20:33,760 --> 00:20:39,320
+a high priority list for many um top
+
+565
+00:20:37,160 --> 00:20:41,560
+executives including the boards.
+
+566
+00:20:39,320 --> 00:20:43,600
+>> It it's just a whole different dynamic
+
+567
+00:20:41,560 --> 00:20:45,720
+to to be having the conversations, I
+
+568
+00:20:43,600 --> 00:20:47,600
+think, at an executive level
+
+569
+00:20:45,720 --> 00:20:50,840
+getting into the you know, the
+
+570
+00:20:47,600 --> 00:20:53,200
+differences between deterministic versus
+
+571
+00:20:50,840 --> 00:20:55,080
+you know, probabilistic thinking.
+
+572
+00:20:53,200 --> 00:20:57,200
+How should executives be thinking about
+
+573
+00:20:55,080 --> 00:20:58,800
+risk tolerance and cuz as you were just
+
+574
+00:20:57,200 --> 00:21:00,560
+talking about, there there's certain
+
+575
+00:20:58,800 --> 00:21:03,120
+certain areas that's just a
+
+576
+00:21:00,560 --> 00:21:05,320
+higher threshold that has to be met for
+
+577
+00:21:03,120 --> 00:21:07,240
+for something to be acceptable. I mean,
+
+578
+00:21:05,320 --> 00:21:09,480
+so how do they how do they should they
+
+579
+00:21:07,240 --> 00:21:11,160
+be thinking about that and
+
+580
+00:21:09,480 --> 00:21:13,120
+where's that margin
+
+581
+00:21:11,160 --> 00:21:14,640
+where you know that you've got a you've
+
+582
+00:21:13,120 --> 00:21:16,160
+got to make sure that you're hitting a
+
+583
+00:21:14,640 --> 00:21:17,400
+certain level of accuracy before
+
+584
+00:21:16,160 --> 00:21:18,640
+anyone's going to be comfortable that
+
+585
+00:21:17,400 --> 00:21:20,120
+you could trust it?
+
+586
+00:21:18,640 --> 00:21:23,000
+>> Yeah,
+
+587
+00:21:20,120 --> 00:21:24,960
+I think the business judgement is still
+
+588
+00:21:23,000 --> 00:21:27,480
+important, right? So,
+
+589
+00:21:24,960 --> 00:21:29,320
+I always go back to the fundamental
+
+590
+00:21:27,480 --> 00:21:31,520
+elements of the business, running a
+
+591
+00:21:29,320 --> 00:21:33,000
+business. So, first of all, you have you
+
+592
+00:21:31,520 --> 00:21:34,480
+have to have a customer.
+
+593
+00:21:33,000 --> 00:21:37,400
+And second of all, you have had have to
+
+594
+00:21:34,480 --> 00:21:39,320
+have some type of service and product
+
+595
+00:21:37,400 --> 00:21:39,800
+that can deliver value to the customer.
+
+596
+00:21:39,320 --> 00:21:41,520
+>> Yes.
+
+597
+00:21:39,800 --> 00:21:43,000
+>> And then then you have financial
+
+598
+00:21:41,520 --> 00:21:44,640
+performance, you have operations, you
+
+599
+00:21:43,000 --> 00:21:47,600
+have everything else.
+
+600
+00:21:44,640 --> 00:21:49,520
+From there, it's still right now human
+
+601
+00:21:47,600 --> 00:21:51,520
+judgement. So,
+
+602
+00:21:49,520 --> 00:21:54,040
+I would say
+
+603
+00:21:51,520 --> 00:21:56,400
+generally people most people are very
+
+604
+00:21:54,040 --> 00:21:59,680
+comfortable with mechanical
+
+605
+00:21:56,400 --> 00:22:01,200
+deterministic models. So, if 1 + 1 is 2,
+
+606
+00:21:59,680 --> 00:22:03,600
+okay, done.
+
+607
+00:22:01,200 --> 00:22:06,800
+But if you say 1 + 1 is
+
+608
+00:22:03,600 --> 00:22:08,600
+maybe 1.9, maybe 2.1, I don't understand
+
+609
+00:22:06,800 --> 00:22:12,320
+that. Why why do you say that?
+
+610
+00:22:08,600 --> 00:22:14,040
+So, in models, right, in probabilistic
+
+611
+00:22:12,320 --> 00:22:17,720
+data science or machine learning models,
+
+612
+00:22:14,040 --> 00:22:20,880
+it's all about patterns. It's all about
+
+613
+00:22:17,720 --> 00:22:22,080
+let's say judgement. So, I remember some
+
+614
+00:22:20,880 --> 00:22:24,440
+statistics
+
+615
+00:22:22,080 --> 00:22:26,520
+a statistician said, "All of the models
+
+616
+00:22:24,440 --> 00:22:27,640
+are wrong. Some models are useful."
+
+617
+00:22:26,520 --> 00:22:30,200
+Right.
+
+618
+00:22:27,640 --> 00:22:31,880
+I I always believe that, right? So, if
+
+619
+00:22:30,200 --> 00:22:34,040
+they all of them are wrong, then it
+
+620
+00:22:31,880 --> 00:22:35,680
+means okay, nothing is perfect
+
+621
+00:22:34,040 --> 00:22:38,720
+deterministic. So, it's really
+
+622
+00:22:35,680 --> 00:22:43,120
+probabilistic. So, it's a it's a mindset
+
+623
+00:22:38,720 --> 00:22:44,760
+mindset shift for leaders to say okay,
+
+624
+00:22:43,120 --> 00:22:46,720
+how do you balance the probabilistic
+
+625
+00:22:44,760 --> 00:22:49,680
+versus the deterministic?
+
+626
+00:22:46,720 --> 00:22:50,760
+In in reality, most business leaders
+
+627
+00:22:49,680 --> 00:22:53,400
+make
+
+628
+00:22:50,760 --> 00:22:55,320
+decisions based on judgement anyway.
+
+629
+00:22:53,400 --> 00:22:57,880
+For example, how do you know to invest
+
+630
+00:22:55,320 --> 00:22:59,880
+this many this much dollar amount into
+
+631
+00:22:57,880 --> 00:23:01,200
+this new product, going to this new
+
+632
+00:22:59,880 --> 00:23:02,400
+territory or market?
+
+633
+00:23:01,200 --> 00:23:02,720
+>> Right. all judgement.
+
+634
+00:23:02,400 --> 00:23:04,800
+>> Yes.
+
+635
+00:23:02,720 --> 00:23:06,600
+>> So, they should come to be
+
+636
+00:23:04,800 --> 00:23:07,800
+they are already comfortable
+
+637
+00:23:06,600 --> 00:23:09,920
+making
+
+638
+00:23:07,800 --> 00:23:11,440
+decisions based on limited information,
+
+639
+00:23:09,920 --> 00:23:13,600
+especially for you for example in
+
+640
+00:23:11,440 --> 00:23:14,800
+business, in military, in different
+
+641
+00:23:13,600 --> 00:23:15,880
+things. It's all the same
+
+642
+00:23:14,800 --> 00:23:16,840
+decision-making process.
+
+643
+00:23:15,880 --> 00:23:20,640
+>> Right.
+
+644
+00:23:16,840 --> 00:23:22,960
+>> So, as long as leaders remember business
+
+645
+00:23:20,640 --> 00:23:26,480
+foundational principles,
+
+646
+00:23:22,960 --> 00:23:29,040
+then just use that. And then again
+
+647
+00:23:26,480 --> 00:23:30,840
+generative AI is another
+
+648
+00:23:29,040 --> 00:23:32,920
+could be another tool, could be another
+
+649
+00:23:30,840 --> 00:23:35,080
+enabler, could it could be another For
+
+650
+00:23:32,920 --> 00:23:39,720
+example, people say kind of kind of like
+
+651
+00:23:35,080 --> 00:23:42,360
+a silicon, maybe a new digital species.
+
+652
+00:23:39,720 --> 00:23:44,600
+Okay, that might be too far in a
+
+653
+00:23:42,360 --> 00:23:45,960
+philosophical way, but from a business
+
+654
+00:23:44,600 --> 00:23:47,960
+perspective,
+
+655
+00:23:45,960 --> 00:23:50,920
+most enterprises are still in the early
+
+656
+00:23:47,960 --> 00:23:53,160
+stage of the journey for data analytics,
+
+657
+00:23:50,920 --> 00:23:55,400
+let alone generative AI.
+
+658
+00:23:53,160 --> 00:23:57,240
+And what I've heard is that some CFOs
+
+659
+00:23:55,400 --> 00:23:59,640
+are saying, "Oh,
+
+660
+00:23:57,240 --> 00:24:01,720
+uh saying to data data analytics
+
+661
+00:23:59,640 --> 00:24:04,320
+leaders, say, "Oh, sorry. I think in the
+
+662
+00:24:01,720 --> 00:24:05,600
+past few years you push for me to invest
+
+663
+00:24:04,320 --> 00:24:07,360
+in data analytics.
+
+664
+00:24:05,600 --> 00:24:10,320
+I I always push back and say, "Okay,
+
+665
+00:24:07,360 --> 00:24:13,080
+what's ROI?" Now we have even a higher
+
+666
+00:24:10,320 --> 00:24:15,480
+level of pressure from all the places.
+
+667
+00:24:13,080 --> 00:24:17,000
+So, we should have could have invested
+
+668
+00:24:15,480 --> 00:24:19,600
+more in data analytics two or three
+
+669
+00:24:17,000 --> 00:24:21,640
+years ago earlier. Now it's still not
+
+670
+00:24:19,600 --> 00:24:23,040
+too late, but still we should should
+
+671
+00:24:21,640 --> 00:24:25,960
+have been could have been much more
+
+672
+00:24:23,040 --> 00:24:29,240
+proactive. So, I think CFOs are also
+
+673
+00:24:25,960 --> 00:24:31,600
+some CFOs are all realizing that, "Okay,
+
+674
+00:24:29,240 --> 00:24:32,680
+until we push to the next level, then we
+
+675
+00:24:31,600 --> 00:24:36,320
+realize, "Okay, we are a little bit
+
+676
+00:24:32,680 --> 00:24:37,480
+behind." Even though they think ROI is
+
+677
+00:24:36,320 --> 00:24:41,680
+critical as
+
+678
+00:24:37,480 --> 00:24:44,680
+required, but ROI is not the only
+
+679
+00:24:41,680 --> 00:24:46,480
+uh decision criterion you have to use.
+
+680
+00:24:44,680 --> 00:24:48,400
+You also have to use judgment. You have
+
+681
+00:24:46,480 --> 00:24:50,760
+to use, let say,
+
+682
+00:24:48,400 --> 00:24:52,680
+intangible values. You have to use
+
+683
+00:24:50,760 --> 00:24:57,080
+culture factors. You have to use
+
+684
+00:24:52,680 --> 00:24:58,840
+strategic value of the different uh,
+
+685
+00:24:57,080 --> 00:25:00,480
+>> Right. I You mentioned something that I
+
+686
+00:24:58,840 --> 00:25:03,080
+I think is a
+
+687
+00:25:00,480 --> 00:25:05,080
+really important thing to to dial down
+
+688
+00:25:03,080 --> 00:25:07,520
+dial in on just a little bit. It's
+
+689
+00:25:05,080 --> 00:25:10,760
+really that we're talking about a
+
+690
+00:25:07,520 --> 00:25:12,560
+thought process that has to be
+
+691
+00:25:10,760 --> 00:25:14,480
+we have to instantiate it better and
+
+692
+00:25:12,560 --> 00:25:16,040
+make sure that we're not bypassing some
+
+693
+00:25:14,480 --> 00:25:17,320
+things because
+
+694
+00:25:16,040 --> 00:25:19,000
+when you're talking about patterns that
+
+695
+00:25:17,320 --> 00:25:21,440
+may exist in the data and facts that
+
+696
+00:25:19,000 --> 00:25:24,160
+exist in the data, uh, and it leads you
+
+697
+00:25:21,440 --> 00:25:27,280
+to predict things within some range of
+
+698
+00:25:24,160 --> 00:25:30,160
+acceptable percentage points, but
+
+699
+00:25:27,280 --> 00:25:31,960
+in reality, sometimes what's available
+
+700
+00:25:30,160 --> 00:25:34,120
+to us in history,
+
+701
+00:25:31,960 --> 00:25:35,440
+while true, is no longer the direction
+
+702
+00:25:34,120 --> 00:25:37,360
+we're going because we've learned
+
+703
+00:25:35,440 --> 00:25:39,120
+something. And so, I think that the
+
+704
+00:25:37,360 --> 00:25:40,320
+governance process has got to be a
+
+705
+00:25:39,120 --> 00:25:42,480
+little bit different than what we're
+
+706
+00:25:40,320 --> 00:25:44,000
+accustomed to. I think for that reason.
+
+707
+00:25:42,480 --> 00:25:46,440
+You know, you you can pick almost any
+
+708
+00:25:44,000 --> 00:25:48,680
+kind of scenario that you that you can
+
+709
+00:25:46,440 --> 00:25:51,200
+imagine, uh, but one of the best ones
+
+710
+00:25:48,680 --> 00:25:54,400
+I've heard was just this discri- this
+
+711
+00:25:51,200 --> 00:25:56,520
+disparity in salaries between men and
+
+712
+00:25:54,400 --> 00:25:59,120
+women historically in certain fields.
+
+713
+00:25:56,520 --> 00:26:00,680
+And that historical data would predict
+
+714
+00:25:59,120 --> 00:26:03,160
+certain things and tell you where it's
+
+715
+00:26:00,680 --> 00:26:05,240
+headed based on what it sees in the
+
+716
+00:26:03,160 --> 00:26:07,120
+history. That's where the judgment stuff
+
+717
+00:26:05,240 --> 00:26:08,840
+is so much more important and we have to
+
+718
+00:26:07,120 --> 00:26:11,800
+make sure that, you know, we're we're
+
+719
+00:26:08,840 --> 00:26:13,320
+designing our governance processes to
+
+720
+00:26:11,800 --> 00:26:16,080
+appropriately
+
+721
+00:26:13,320 --> 00:26:18,680
+pause and create space for those
+
+722
+00:26:16,080 --> 00:26:21,840
+judgment calls to happen so we don't get
+
+723
+00:26:18,680 --> 00:26:23,880
+ourselves into a spot that is, uh,
+
+724
+00:26:21,840 --> 00:26:25,440
+taking on more risk than we really ought
+
+725
+00:26:23,880 --> 00:26:28,200
+to be able to take on.
+
+726
+00:26:25,440 --> 00:26:29,880
+>> Yes. One other factor that I've seen
+
+727
+00:26:28,200 --> 00:26:30,880
+many companies, um,
+
+728
+00:26:29,880 --> 00:26:35,200
+may
+
+729
+00:26:30,880 --> 00:26:38,760
+not have spent enough time or investment
+
+730
+00:26:35,200 --> 00:26:41,680
+is the workforce upskilling. Right? So,
+
+731
+00:26:38,760 --> 00:26:44,760
+it's about mindset shift, it's about
+
+732
+00:26:41,680 --> 00:26:46,920
+ownership, it's about driving change
+
+733
+00:26:44,760 --> 00:26:48,200
+that's actually ultimately beneficial
+
+734
+00:26:46,920 --> 00:26:50,240
+for the company as well as for the
+
+735
+00:26:48,200 --> 00:26:53,520
+employees. So, that will require
+
+736
+00:26:50,240 --> 00:26:54,760
+sometimes some type of lifetime learn
+
+737
+00:26:53,520 --> 00:26:55,600
+lifelong learning.
+
+738
+00:26:54,760 --> 00:26:57,840
+>> Yes.
+
+739
+00:26:55,600 --> 00:26:59,600
+>> So, if you don't train them, they will
+
+740
+00:26:57,840 --> 00:27:01,160
+stay. If you train them, they will
+
+741
+00:26:59,600 --> 00:27:01,560
+leave. Okay, which one is better for
+
+742
+00:27:01,160 --> 00:27:01,920
+you?
+
+743
+00:27:01,560 --> 00:27:04,600
+>> Right.
+
+744
+00:27:01,920 --> 00:27:05,880
+>> Right. So, training and education and
+
+745
+00:27:04,600 --> 00:27:07,160
+upskilling
+
+746
+00:27:05,880 --> 00:27:08,600
+workforce
+
+747
+00:27:07,160 --> 00:27:10,840
+is great.
+
+748
+00:27:08,600 --> 00:27:13,080
+But, there are some other potential
+
+749
+00:27:10,840 --> 00:27:16,080
+concerns about, okay, if the AI is
+
+750
+00:27:13,080 --> 00:27:18,160
+really reducing the workforce, what why
+
+751
+00:27:16,080 --> 00:27:18,960
+would the workforce be welcoming the
+
+752
+00:27:18,160 --> 00:27:19,440
+adoption of AI?
+
+753
+00:27:18,960 --> 00:27:21,120
+>> Right.
+
+754
+00:27:19,440 --> 00:27:23,400
+>> So, that's another uh philosophical
+
+755
+00:27:21,120 --> 00:27:25,880
+discussions. It's about company culture,
+
+756
+00:27:23,400 --> 00:27:27,240
+it's about why companies exist.
+
+757
+00:27:25,880 --> 00:27:28,680
+>> Yeah, I think that's a it's a great
+
+758
+00:27:27,240 --> 00:27:30,960
+point and
+
+759
+00:27:28,680 --> 00:27:34,240
+I love that you're bringing up human
+
+760
+00:27:30,960 --> 00:27:36,600
+judgment and wrapping everything around
+
+761
+00:27:34,240 --> 00:27:38,960
+the support of human beings, which you
+
+762
+00:27:36,600 --> 00:27:40,000
+know, I I love that because it's it sure
+
+763
+00:27:38,960 --> 00:27:41,520
+is exciting to talk about the
+
+764
+00:27:40,000 --> 00:27:43,040
+technologies. I mean, it's it's it's
+
+765
+00:27:41,520 --> 00:27:45,000
+interesting and
+
+766
+00:27:43,040 --> 00:27:46,840
+I know people that think like we do
+
+767
+00:27:45,000 --> 00:27:48,440
+probably enjoy some of that technical
+
+768
+00:27:46,840 --> 00:27:49,920
+jargon and and investigating and
+
+769
+00:27:48,440 --> 00:27:51,160
+learning new things maybe more than
+
+770
+00:27:49,920 --> 00:27:52,360
+others. But, I think you're you're
+
+771
+00:27:51,160 --> 00:27:54,960
+making some really important
+
+772
+00:27:52,360 --> 00:27:57,920
+distinctions where this is not a
+
+773
+00:27:54,960 --> 00:28:00,640
+technology thing. This is really a whole
+
+774
+00:27:57,920 --> 00:28:03,440
+'nother level of support that we're
+
+775
+00:28:00,640 --> 00:28:05,040
+trying to put a wrap around the delivery
+
+776
+00:28:03,440 --> 00:28:06,840
+of good good health care. But, even
+
+777
+00:28:05,040 --> 00:28:08,560
+beyond the health care sector, same
+
+778
+00:28:06,840 --> 00:28:10,760
+thing is true. This is all really got to
+
+779
+00:28:08,560 --> 00:28:13,720
+support the lives of human beings and
+
+780
+00:28:10,760 --> 00:28:15,120
+make make their lives better in in ways
+
+781
+00:28:13,720 --> 00:28:17,200
+that we are
+
+782
+00:28:15,120 --> 00:28:18,520
+mitigating as much risk as we possibly
+
+783
+00:28:17,200 --> 00:28:21,800
+can. We're never going to bat a
+
+784
+00:28:18,520 --> 00:28:24,440
+thousand, but if we can get to 80 90 80
+
+785
+00:28:21,800 --> 00:28:25,920
+or 90% when we've never been able to hit
+
+786
+00:28:24,440 --> 00:28:27,360
+50%,
+
+787
+00:28:25,920 --> 00:28:29,480
+that's not perfection, but it's
+
+788
+00:28:27,360 --> 00:28:31,960
+certainly an improvement and I think
+
+789
+00:28:29,480 --> 00:28:34,760
+that's the the balance to be figured out
+
+790
+00:28:31,960 --> 00:28:36,520
+and the leadership has a has a really
+
+791
+00:28:34,760 --> 00:28:38,000
+important task to try to figure some of
+
+792
+00:28:36,520 --> 00:28:40,200
+these things out because the pressures
+
+793
+00:28:38,000 --> 00:28:41,800
+for cost and reduction and in
+
+794
+00:28:40,200 --> 00:28:43,800
+containment in health care, I don't
+
+795
+00:28:41,800 --> 00:28:46,400
+anticipate
+
+796
+00:28:43,800 --> 00:28:47,840
+really changing a whole lot. In fact,
+
+797
+00:28:46,400 --> 00:28:49,640
+there's an expectation that we're going
+
+798
+00:28:47,840 --> 00:28:51,720
+to be more efficient. And what does that
+
+799
+00:28:49,640 --> 00:28:53,640
+actually mean? It It really depends.
+
+800
+00:28:51,720 --> 00:28:56,760
+>> Maybe reducing the Maybe reducing the
+
+801
+00:28:53,640 --> 00:28:57,560
+waste. Maybe optimizing the resource
+
+802
+00:28:56,760 --> 00:28:58,120
+allocation.
+
+803
+00:28:57,560 --> 00:29:00,360
+>> Right.
+
+804
+00:28:58,120 --> 00:29:02,680
+>> Or maybe a better better alignment of
+
+805
+00:29:00,360 --> 00:29:03,680
+timing or geographical location. It's
+
+806
+00:29:02,680 --> 00:29:06,480
+kind of like a
+
+807
+00:29:03,680 --> 00:29:08,880
+>> I meant so I also see multiple
+
+808
+00:29:06,480 --> 00:29:09,120
+dimensions of disparities
+
+809
+00:29:08,880 --> 00:29:11,920
+>> Mhm.
+
+810
+00:29:09,120 --> 00:29:12,840
+>> in terms of adopting data analytics and
+
+811
+00:29:11,920 --> 00:29:13,120
+generative AI.
+
+812
+00:29:12,840 --> 00:29:15,480
+>> Yeah.
+
+813
+00:29:13,120 --> 00:29:17,600
+>> One is industry specific from, right?
+
+814
+00:29:15,480 --> 00:29:19,360
+Some industries are much more advanced.
+
+815
+00:29:17,600 --> 00:29:20,120
+For example, the digital native
+
+816
+00:29:19,360 --> 00:29:20,280
+companies
+
+817
+00:29:20,120 --> 00:29:22,320
+>> Yes.
+
+818
+00:29:20,280 --> 00:29:25,280
+>> versus manufacturing versus all
+
+819
+00:29:22,320 --> 00:29:26,600
+industries, right? So, they may be much
+
+820
+00:29:25,280 --> 00:29:28,800
+earlier in their
+
+821
+00:29:26,600 --> 00:29:30,880
+evolutionary stage. So, that's the
+
+822
+00:29:28,800 --> 00:29:33,400
+industry difference. The second one is
+
+823
+00:29:30,880 --> 00:29:35,680
+probably a geographical difference. So,
+
+824
+00:29:33,400 --> 00:29:37,880
+East Coast, West Coast versus South
+
+825
+00:29:35,680 --> 00:29:40,080
+versus Midwest. There may be
+
+826
+00:29:37,880 --> 00:29:42,560
+geographical differences because of
+
+827
+00:29:40,080 --> 00:29:44,720
+industry exposure and talent and other
+
+828
+00:29:42,560 --> 00:29:46,320
+factors. The third thing is within the
+
+829
+00:29:44,720 --> 00:29:48,760
+each company.
+
+830
+00:29:46,320 --> 00:29:51,760
+The difference or the disparity between
+
+831
+00:29:48,760 --> 00:29:52,800
+or the gaps between technical people
+
+832
+00:29:51,760 --> 00:29:53,200
+versus business people.
+
+833
+00:29:52,800 --> 00:29:55,160
+>> Right.
+
+834
+00:29:53,200 --> 00:29:56,880
+>> Business people, they think, "Okay,
+
+835
+00:29:55,160 --> 00:29:59,360
+don't tell me the details. I want to get
+
+836
+00:29:56,880 --> 00:30:00,840
+this thing done." And then But then the
+
+837
+00:29:59,360 --> 00:30:03,640
+business the technical people say,
+
+838
+00:30:00,840 --> 00:30:05,960
+"Okay, I know the technical aspect but I
+
+839
+00:30:03,640 --> 00:30:07,520
+have to I I don't know how to
+
+840
+00:30:05,960 --> 00:30:08,680
+effectively communicate with business
+
+841
+00:30:07,520 --> 00:30:10,280
+people."
+
+842
+00:30:08,680 --> 00:30:12,160
+And then so, many companies could
+
+843
+00:30:10,280 --> 00:30:14,800
+benefit in the in the future or right
+
+844
+00:30:12,160 --> 00:30:16,840
+now by identifying people and developing
+
+845
+00:30:14,800 --> 00:30:19,120
+people who can
+
+846
+00:30:16,840 --> 00:30:20,960
+fluently speak business language as well
+
+847
+00:30:19,120 --> 00:30:22,800
+as technology language.
+
+848
+00:30:20,960 --> 00:30:24,280
+And then data language and analytics
+
+849
+00:30:22,800 --> 00:30:24,840
+language, all those together.
+
+850
+00:30:24,280 --> 00:30:27,560
+>> Got it.
+
+851
+00:30:24,840 --> 00:30:29,440
+>> So, it's it's a it's a long-term
+
+852
+00:30:27,560 --> 00:30:31,840
+challenge or maybe long-term phenomenon,
+
+853
+00:30:29,440 --> 00:30:33,760
+but eventually it will get better. And
+
+854
+00:30:31,840 --> 00:30:36,440
+when we are in the journey, we're making
+
+855
+00:30:33,760 --> 00:30:38,480
+changes, the the progress can be slow
+
+856
+00:30:36,440 --> 00:30:41,200
+right now if we look at them. But if you
+
+857
+00:30:38,480 --> 00:30:42,960
+look back five three year five year
+
+858
+00:30:41,200 --> 00:30:44,760
+look back at today,
+
+859
+00:30:42,960 --> 00:30:47,680
+you will see we have traveled a long
+
+860
+00:30:44,760 --> 00:30:49,280
+distance. So, it's really about um
+
+861
+00:30:47,680 --> 00:30:52,080
+believing in the vision and believing in
+
+862
+00:30:49,280 --> 00:30:52,640
+the direction and then truly effort into
+
+863
+00:30:52,080 --> 00:30:54,640
+it.
+
+864
+00:30:52,640 --> 00:30:57,000
+>> Yeah, I I I think there's a there's an
+
+865
+00:30:54,640 --> 00:30:59,320
+interesting term that I've been thinking
+
+866
+00:30:57,000 --> 00:31:00,600
+about a lot lately in terms of what it
+
+867
+00:30:59,320 --> 00:31:02,920
+the kind of role that you're you're
+
+868
+00:31:00,600 --> 00:31:04,920
+describing that that you've been and I
+
+869
+00:31:02,920 --> 00:31:06,600
+I've spent a number of years in it, too.
+
+870
+00:31:04,920 --> 00:31:08,000
+But, the ability to do that translation
+
+871
+00:31:06,600 --> 00:31:09,000
+between the business and the technical
+
+872
+00:31:08,000 --> 00:31:11,840
+team
+
+873
+00:31:09,000 --> 00:31:13,920
+that can be that can't be overstated how
+
+874
+00:31:11,840 --> 00:31:16,400
+important that is. Um it's such a big
+
+875
+00:31:13,920 --> 00:31:18,040
+part of what you've done in your own
+
+876
+00:31:16,400 --> 00:31:19,440
+engagements, you know,
+
+877
+00:31:18,040 --> 00:31:21,360
+as as a
+
+878
+00:31:19,440 --> 00:31:24,320
+entrepreneur, but what also is
+
+879
+00:31:21,360 --> 00:31:26,560
+is a major player in enterprise systems.
+
+880
+00:31:24,320 --> 00:31:28,320
+That that's just such an important role.
+
+881
+00:31:26,560 --> 00:31:29,440
+And, you know, what it that doesn't
+
+882
+00:31:28,320 --> 00:31:31,000
+really matter what the title is. You
+
+883
+00:31:29,440 --> 00:31:33,920
+just need to have people that are, you
+
+884
+00:31:31,000 --> 00:31:36,880
+know, really good at understanding both
+
+885
+00:31:33,920 --> 00:31:39,560
+and bridging that communication uh gap
+
+886
+00:31:36,880 --> 00:31:40,840
+that often is existing because at some
+
+887
+00:31:39,560 --> 00:31:43,120
+point you're going to have to be held
+
+888
+00:31:40,840 --> 00:31:45,360
+accountable for what you're delivering
+
+889
+00:31:43,120 --> 00:31:48,440
+on. Which kind of brings me to one just
+
+890
+00:31:45,360 --> 00:31:50,240
+one thing on the business side I I'd
+
+891
+00:31:48,440 --> 00:31:51,240
+like to to have you weigh in on a little
+
+892
+00:31:50,240 --> 00:31:53,400
+bit
+
+893
+00:31:51,240 --> 00:31:54,360
+um before we pivot. I want you to put on
+
+894
+00:31:53,400 --> 00:31:55,720
+your
+
+895
+00:31:54,360 --> 00:31:57,760
+your special glasses and look in the
+
+896
+00:31:55,720 --> 00:32:00,200
+crystal ball and say and tell me what's
+
+897
+00:31:57,760 --> 00:32:03,360
+coming, but how should boards and
+
+898
+00:32:00,200 --> 00:32:06,680
+enterprises be evaluating
+
+899
+00:32:03,360 --> 00:32:07,920
+the potential ROI or lack thereof with
+
+900
+00:32:06,680 --> 00:32:10,120
+the with all the things that are coming
+
+901
+00:32:07,920 --> 00:32:13,360
+at them because, you know, you and I
+
+902
+00:32:10,120 --> 00:32:15,760
+have spent way too many hours
+
+903
+00:32:13,360 --> 00:32:17,640
+fishing through literally hundreds of
+
+904
+00:32:15,760 --> 00:32:20,200
+emails sometimes in a single day with
+
+905
+00:32:17,640 --> 00:32:23,360
+solutions providers covering a wide
+
+906
+00:32:20,200 --> 00:32:25,560
+range of things that may or may not be
+
+907
+00:32:23,360 --> 00:32:27,520
+viable, but even to do that assessment's
+
+908
+00:32:25,560 --> 00:32:29,200
+challenging. But, how would you say that
+
+909
+00:32:27,520 --> 00:32:31,000
+boards need to be thinking about that?
+
+910
+00:32:29,200 --> 00:32:33,880
+>> Yeah, at the end of the day, it's really
+
+911
+00:32:31,000 --> 00:32:36,000
+about judgment, about experience, about,
+
+912
+00:32:33,880 --> 00:32:38,120
+let's say, uh
+
+913
+00:32:36,000 --> 00:32:40,560
+of pros and cons and
+
+914
+00:32:38,120 --> 00:32:43,440
+benefits and costs. I would say that ROI
+
+915
+00:32:40,560 --> 00:32:46,240
+discussion can have um
+
+916
+00:32:43,440 --> 00:32:49,880
+two elements. One is value, the other
+
+917
+00:32:46,240 --> 00:32:51,680
+one is strategy or growth. I I actually
+
+918
+00:32:49,880 --> 00:32:54,200
+wrote an article in the past few months
+
+919
+00:32:51,680 --> 00:32:56,120
+and saying the board and CEOs, when they
+
+920
+00:32:54,200 --> 00:32:57,920
+look at AI investment, they should
+
+921
+00:32:56,120 --> 00:33:00,120
+balance the two approaches. One is
+
+922
+00:32:57,920 --> 00:33:02,400
+value, the other one is growth. So,
+
+923
+00:33:00,120 --> 00:33:04,760
+value is more very specific um
+
+924
+00:33:02,400 --> 00:33:07,200
+measurable metric in terms of ROI,
+
+925
+00:33:04,760 --> 00:33:10,000
+project-based, specific use case-based.
+
+926
+00:33:07,200 --> 00:33:12,880
+Growth is more strategic value in terms
+
+927
+00:33:10,000 --> 00:33:15,440
+of even hard-to-quantify
+
+928
+00:33:12,880 --> 00:33:17,160
+benefits. So, but you should not We
+
+929
+00:33:15,440 --> 00:33:18,920
+should not necessarily
+
+930
+00:33:17,160 --> 00:33:21,240
+discount or maybe
+
+931
+00:33:18,920 --> 00:33:23,600
+deprioritize the strategic value of
+
+932
+00:33:21,240 --> 00:33:26,680
+other AI investment. In my calculation
+
+933
+00:33:23,600 --> 00:33:29,160
+or potentially a scorecard design, there
+
+934
+00:33:26,680 --> 00:33:29,920
+are three components in this uh benefit
+
+935
+00:33:29,160 --> 00:33:32,120
+or
+
+936
+00:33:29,920 --> 00:33:35,240
+ROI. One is
+
+937
+00:33:32,120 --> 00:33:38,440
+direct impact on incremental revenue,
+
+938
+00:33:35,240 --> 00:33:41,480
+right? Or profitability. Second one is
+
+939
+00:33:38,440 --> 00:33:43,440
+cost avoidance or cost reduction. Those
+
+940
+00:33:41,480 --> 00:33:45,160
+are measurable numbers.
+
+941
+00:33:43,440 --> 00:33:47,240
+And sometimes you will say, "Oh, how
+
+942
+00:33:45,160 --> 00:33:50,160
+about number of hours saved?" That's
+
+943
+00:33:47,240 --> 00:33:52,440
+That's efficiency. That's another issue.
+
+944
+00:33:50,160 --> 00:33:54,760
+The third thing is benefits that are
+
+945
+00:33:52,440 --> 00:33:58,000
+hard to measure in dollar values even
+
+946
+00:33:54,760 --> 00:33:59,960
+quantity number numbers. For example,
+
+947
+00:33:58,000 --> 00:34:01,440
+customers' net promoter score
+
+948
+00:33:59,960 --> 00:34:03,600
+improvements.
+
+949
+00:34:01,440 --> 00:34:05,840
+So, those three things the decision
+
+950
+00:34:03,600 --> 00:34:07,360
+makers can assign given weights on those
+
+951
+00:34:05,840 --> 00:34:09,800
+three things and then come up with the
+
+952
+00:34:07,360 --> 00:34:13,600
+score. So, for example, one thing that
+
+953
+00:34:09,800 --> 00:34:16,760
+is has look low or no impact on revenue,
+
+954
+00:34:13,600 --> 00:34:18,760
+but has some light im- impact on time
+
+955
+00:34:16,760 --> 00:34:22,840
+saved or maybe cost reduction or cost
+
+956
+00:34:18,760 --> 00:34:25,639
+avoidance, right? But huge benefit in
+
+957
+00:34:22,840 --> 00:34:28,360
+quant- let's say qualifiable but not
+
+958
+00:34:25,639 --> 00:34:29,360
+quantifiable, let's say soft benefit.
+
+959
+00:34:28,360 --> 00:34:30,679
+Then
+
+960
+00:34:29,360 --> 00:34:32,840
+the decision maker should say, "Okay,
+
+961
+00:34:30,679 --> 00:34:34,520
+yeah, I know, but this this this is
+
+962
+00:34:32,840 --> 00:34:36,000
+something we should do. Even though it's
+
+963
+00:34:34,520 --> 00:34:36,600
+not short-term
+
+964
+00:34:36,000 --> 00:34:36,879
+>> ROI.
+
+965
+00:34:36,600 --> 00:34:38,080
+>> Yes.
+
+966
+00:34:36,879 --> 00:34:41,679
+>> Number-driven. Right.
+
+967
+00:34:38,080 --> 00:34:44,440
+>> So, CFO is has a lot of great input into
+
+968
+00:34:41,679 --> 00:34:46,600
+the discussion, but generally CEO is a
+
+969
+00:34:44,440 --> 00:34:47,200
+decision-maker or board board will make
+
+970
+00:34:46,600 --> 00:34:47,520
+a decision.
+
+971
+00:34:47,200 --> 00:34:50,240
+>> Right.
+
+972
+00:34:47,520 --> 00:34:53,399
+>> So, we should not necessarily let the
+
+973
+00:34:50,240 --> 00:34:55,040
+one metric just dominate the entire
+
+974
+00:34:53,399 --> 00:34:56,520
+discussion. So, it's it's really about
+
+975
+00:34:55,040 --> 00:34:57,400
+balancing. It's about making sound
+
+976
+00:34:56,520 --> 00:34:57,920
+decisions.
+
+977
+00:34:57,400 --> 00:34:59,520
+>> Right.
+
+978
+00:34:57,920 --> 00:35:01,040
+>> It's a different perspective, different
+
+979
+00:34:59,520 --> 00:35:02,160
+weights on different factors for the
+
+980
+00:35:01,040 --> 00:35:03,720
+decision-making.
+
+981
+00:35:02,160 --> 00:35:05,200
+>> Yeah, there's a
+
+982
+00:35:03,720 --> 00:35:07,680
+there's always a
+
+983
+00:35:05,200 --> 00:35:10,920
+difficult task sometimes.
+
+984
+00:35:07,680 --> 00:35:12,720
+If you're looking at things just from
+
+985
+00:35:10,920 --> 00:35:14,600
+how they contribute to a margin, whether
+
+986
+00:35:12,720 --> 00:35:17,840
+it's cost reduction or increased
+
+987
+00:35:14,600 --> 00:35:20,360
+revenue, that obviously is the top of
+
+988
+00:35:17,840 --> 00:35:22,760
+mind in in most conversations. But then
+
+989
+00:35:20,360 --> 00:35:24,400
+there's this other factor that probably
+
+990
+00:35:22,760 --> 00:35:26,200
+can be a whole lot more disruptive if we
+
+991
+00:35:24,400 --> 00:35:28,120
+don't get it right is when we're dealing
+
+992
+00:35:26,200 --> 00:35:31,720
+with um
+
+993
+00:35:28,120 --> 00:35:34,400
+some pretty difficult shortages um for
+
+994
+00:35:31,720 --> 00:35:36,000
+staffing, for nurses and clinicians,
+
+995
+00:35:34,400 --> 00:35:37,480
+particularly in the in in the general
+
+996
+00:35:36,000 --> 00:35:38,480
+medicine general internal medicine
+
+997
+00:35:37,480 --> 00:35:40,240
+space.
+
+998
+00:35:38,480 --> 00:35:41,920
+So, they they you know, they I love that
+
+999
+00:35:40,240 --> 00:35:43,440
+you kind of highlighted there's there's
+
+1000
+00:35:41,920 --> 00:35:44,920
+more than one thing that you got to look
+
+1001
+00:35:43,440 --> 00:35:46,360
+at. The numbers are important, of
+
+1002
+00:35:44,920 --> 00:35:48,480
+course.
+
+1003
+00:35:46,360 --> 00:35:51,600
+But those numbers are guaranteed to get
+
+1004
+00:35:48,480 --> 00:35:53,480
+worse if you if you can't staff the the
+
+1005
+00:35:51,600 --> 00:35:54,720
+clinicians that you need.
+
+1006
+00:35:53,480 --> 00:35:57,320
+>> That's why
+
+1007
+00:35:54,720 --> 00:35:59,160
+I I I I always believe that
+
+1008
+00:35:57,320 --> 00:36:01,320
+everything has its life cycle, right?
+
+1009
+00:35:59,160 --> 00:36:02,480
+So, one industry, one location, one
+
+1010
+00:36:01,320 --> 00:36:04,600
+product,
+
+1011
+00:36:02,480 --> 00:36:05,360
+uh one company, one person has its life
+
+1012
+00:36:04,600 --> 00:36:06,120
+cycle. So,
+
+1013
+00:36:05,360 --> 00:36:07,600
+>> Right.
+
+1014
+00:36:06,120 --> 00:36:10,360
+>> there is a chance that the board of
+
+1015
+00:36:07,600 --> 00:36:12,200
+directors or the CEO could
+
+1016
+00:36:10,360 --> 00:36:14,920
+reinvent the company, a culture, a
+
+1017
+00:36:12,200 --> 00:36:15,600
+business model to start a new life cycle
+
+1018
+00:36:14,920 --> 00:36:16,240
+curve.
+
+1019
+00:36:15,600 --> 00:36:18,560
+>> Right.
+
+1020
+00:36:16,240 --> 00:36:21,360
+>> But that's not easy, right? So, if you
+
+1021
+00:36:18,560 --> 00:36:23,240
+don't reinvent yourself, then it's
+
+1022
+00:36:21,360 --> 00:36:26,080
+easier to just take the ride, and then
+
+1023
+00:36:23,240 --> 00:36:28,200
+eventually the life cycle the It be
+
+1024
+00:36:26,080 --> 00:36:30,640
+growth, and then stagnation, and then
+
+1025
+00:36:28,200 --> 00:36:33,360
+decline. So, how do you bend the curve
+
+1026
+00:36:30,640 --> 00:36:33,880
+from decline to be another new growth?
+
+1027
+00:36:33,360 --> 00:36:35,320
+>> Right.
+
+1028
+00:36:33,880 --> 00:36:37,800
+>> So, there will always be some type of
+
+1029
+00:36:35,320 --> 00:36:41,120
+dynamics in terms of friction conflict
+
+1030
+00:36:37,800 --> 00:36:42,480
+in terms of friction different tension.
+
+1031
+00:36:41,120 --> 00:36:45,360
+So, it's always there. It's just a
+
+1032
+00:36:42,480 --> 00:36:48,400
+matter of the company's life cycle and
+
+1033
+00:36:45,360 --> 00:36:50,920
+also the the vision and the core value.
+
+1034
+00:36:48,400 --> 00:36:53,280
+>> This has gone like super fast. I mean I
+
+1035
+00:36:50,920 --> 00:36:56,080
+always enjoy our conversations.
+
+1036
+00:36:53,280 --> 00:36:57,880
+If I can get you just kind of look out
+
+1037
+00:36:56,080 --> 00:37:00,440
+little ways into the future over the
+
+1038
+00:36:57,880 --> 00:37:01,840
+next like 3 to 5 years.
+
+1039
+00:37:00,440 --> 00:37:03,120
+Two things.
+
+1040
+00:37:01,840 --> 00:37:04,880
+What do you think
+
+1041
+00:37:03,120 --> 00:37:07,040
+some of the most
+
+1042
+00:37:04,880 --> 00:37:08,400
+important leadership skills and
+
+1043
+00:37:07,040 --> 00:37:10,040
+capabilities are going to matter the
+
+1044
+00:37:08,400 --> 00:37:12,920
+most?
+
+1045
+00:37:10,040 --> 00:37:14,200
+And how do you see things shaking out in
+
+1046
+00:37:12,920 --> 00:37:15,960
+terms of
+
+1047
+00:37:14,200 --> 00:37:18,800
+the organizations that are going to
+
+1048
+00:37:15,960 --> 00:37:20,200
+really come through this in in a really
+
+1049
+00:37:18,800 --> 00:37:22,160
+really positive manner? What are the
+
+1050
+00:37:20,200 --> 00:37:23,680
+characteristics of those companies and
+
+1051
+00:37:22,160 --> 00:37:24,400
+the leadership that it's going to take
+
+1052
+00:37:23,680 --> 00:37:26,920
+to do that?
+
+1053
+00:37:24,400 --> 00:37:30,480
+>> I I think the most important trait for
+
+1054
+00:37:26,920 --> 00:37:34,520
+leader or influencer is to solve
+
+1055
+00:37:30,480 --> 00:37:36,840
+problems deliver value and also provide
+
+1056
+00:37:34,520 --> 00:37:40,080
+service. Right? So, it's
+
+1057
+00:37:36,840 --> 00:37:41,920
+if you are delivering valuable service
+
+1058
+00:37:40,080 --> 00:37:43,800
+to the right customer
+
+1059
+00:37:41,920 --> 00:37:44,360
+to the right stakeholder to the right
+
+1060
+00:37:43,800 --> 00:37:44,760
+audience
+
+1061
+00:37:44,360 --> 00:37:47,800
+>> Right.
+
+1062
+00:37:44,760 --> 00:37:51,200
+>> you will be in a good position. To do
+
+1063
+00:37:47,800 --> 00:37:55,320
+so, coming back to the potential traits
+
+1064
+00:37:51,200 --> 00:37:58,800
+of the organization. It's the way to
+
+1065
+00:37:55,320 --> 00:38:01,360
+deal with ambiguity versus specific
+
+1066
+00:37:58,800 --> 00:38:05,080
+details. So, it's kind of trade-off
+
+1067
+00:38:01,360 --> 00:38:06,720
+between specific ROI versus intangible
+
+1068
+00:38:05,080 --> 00:38:07,120
+benefits. How do you measure that?
+
+1069
+00:38:06,720 --> 00:38:09,280
+>> Right.
+
+1070
+00:38:07,120 --> 00:38:11,240
+>> Another important trait for the
+
+1071
+00:38:09,280 --> 00:38:13,480
+successful organization would be
+
+1072
+00:38:11,240 --> 00:38:14,720
+workflow optimization architecture
+
+1073
+00:38:13,480 --> 00:38:16,840
+design.
+
+1074
+00:38:14,720 --> 00:38:20,000
+So, it's not about okay, you have a
+
+1075
+00:38:16,840 --> 00:38:22,960
+rigid process. Okay, let it go
+
+1076
+00:38:20,000 --> 00:38:23,440
+Keep, it's not broken, don't fix it. But
+
+1077
+00:38:22,960 --> 00:38:25,120
+>> Right.
+
+1078
+00:38:23,440 --> 00:38:27,320
+>> based on the market demand, based on the
+
+1079
+00:38:25,120 --> 00:38:30,840
+customer need, how do you make this
+
+1080
+00:38:27,320 --> 00:38:34,120
+workflow process steady, but also
+
+1081
+00:38:30,840 --> 00:38:35,720
+continuously you evolve and improve.
+
+1082
+00:38:34,120 --> 00:38:38,040
+That way we will
+
+1083
+00:38:35,720 --> 00:38:40,520
+prevent this more
+
+1084
+00:38:38,040 --> 00:38:42,360
+agile approach. So, when things change,
+
+1085
+00:38:40,520 --> 00:38:42,880
+you can also change or be adaptive.
+
+1086
+00:38:42,360 --> 00:38:45,400
+>> Right.
+
+1087
+00:38:42,880 --> 00:38:46,160
+>> So, that be adapt be adaptive, that's
+
+1088
+00:38:45,400 --> 00:38:49,040
+the
+
+1089
+00:38:46,160 --> 00:38:49,840
+one very important trait for the future
+
+1090
+00:38:49,040 --> 00:38:51,840
+companies.
+
+1091
+00:38:49,840 --> 00:38:54,120
+>> I I really appreciate that. I I think
+
+1092
+00:38:51,840 --> 00:38:55,120
+the concept of disruptive innovation has
+
+1093
+00:38:54,120 --> 00:38:58,160
+been
+
+1094
+00:38:55,120 --> 00:38:58,560
+around for as as long as time.
+
+1095
+00:38:58,160 --> 00:39:00,040
+Um
+
+1096
+00:38:58,560 --> 00:39:02,440
+>> Easy to say, very hard to do.
+
+1097
+00:39:00,040 --> 00:39:04,680
+>> Right. But the challenges are going to
+
+1098
+00:39:02,440 --> 00:39:07,400
+only get get a a little bit bigger now
+
+1099
+00:39:04,680 --> 00:39:08,400
+because we're advancing at a pace that,
+
+1100
+00:39:07,400 --> 00:39:09,960
+you know, none of us have ever
+
+1101
+00:39:08,400 --> 00:39:12,960
+experienced in our lifetimes and it's
+
+1102
+00:39:09,960 --> 00:39:14,280
+just staggering how fast the advances
+
+1103
+00:39:12,960 --> 00:39:16,280
+are coming. Well
+
+1104
+00:39:14,280 --> 00:39:18,880
+>> Yeah, I I I would say there are there
+
+1105
+00:39:16,280 --> 00:39:20,680
+are two or three things I can leave with
+
+1106
+00:39:18,880 --> 00:39:23,400
+with audience today is the number one is
+
+1107
+00:39:20,680 --> 00:39:25,920
+that go back to the fundamental basics,
+
+1108
+00:39:23,400 --> 00:39:27,840
+right? Don't forget about the core value
+
+1109
+00:39:25,920 --> 00:39:28,440
+and principles and guardrails.
+
+1110
+00:39:27,840 --> 00:39:30,360
+>> Right.
+
+1111
+00:39:28,440 --> 00:39:33,320
+>> Um number two is balance of
+
+1112
+00:39:30,360 --> 00:39:35,880
+probabilistic versus deterministic
+
+1113
+00:39:33,320 --> 00:39:37,600
+approach. So, you need both. It's not
+
+1114
+00:39:35,880 --> 00:39:40,800
+one or the other.
+
+1115
+00:39:37,600 --> 00:39:41,440
+And the the third thing is
+
+1116
+00:39:40,800 --> 00:39:43,960
+uh
+
+1117
+00:39:41,440 --> 00:39:45,280
+for data analytics professionals, um how
+
+1118
+00:39:43,960 --> 00:39:47,280
+do we
+
+1119
+00:39:45,280 --> 00:39:48,560
+take advantage of the advancement of
+
+1120
+00:39:47,280 --> 00:39:51,440
+technology
+
+1121
+00:39:48,560 --> 00:39:53,600
+and uh uh of the environment.
+
+1122
+00:39:51,440 --> 00:39:55,360
+Uh a lot of visibility, right? A lot of
+
+1123
+00:39:53,600 --> 00:39:55,720
+awareness about data analytics.
+
+1124
+00:39:55,360 --> 00:39:59,360
+>> Right.
+
+1125
+00:39:55,720 --> 00:40:01,720
+>> How do we pivot from generative AI to to
+
+1126
+00:39:59,360 --> 00:40:03,840
+the entire spectrum of data analytics?
+
+1127
+00:40:01,720 --> 00:40:05,680
+And of course, including generative AI
+
+1128
+00:40:03,840 --> 00:40:06,000
+and our generative stuff and all that.
+
+1129
+00:40:05,680 --> 00:40:07,760
+>> Right.
+
+1130
+00:40:06,000 --> 00:40:10,400
+>> Robotic process automation, right?
+
+1131
+00:40:07,760 --> 00:40:12,640
+Digital process automation.
+
+1132
+00:40:10,400 --> 00:40:13,240
+To focus on two aspects. One is data
+
+1133
+00:40:12,640 --> 00:40:13,680
+management.
+
+1134
+00:40:13,240 --> 00:40:15,880
+>> Mhm.
+
+1135
+00:40:13,680 --> 00:40:17,920
+>> The other one is explainable
+
+1136
+00:40:15,880 --> 00:40:18,560
+algorithm-based recommendations.
+
+1137
+00:40:17,920 --> 00:40:20,600
+>> Yes.
+
+1138
+00:40:18,560 --> 00:40:23,000
+>> Huge opportunities exist for data
+
+1139
+00:40:20,600 --> 00:40:25,120
+management. How do we streamline this
+
+1140
+00:40:23,000 --> 00:40:27,120
+entire data management process? It's
+
+1141
+00:40:25,120 --> 00:40:29,000
+time-consuming, it's expensive, it's
+
+1142
+00:40:27,120 --> 00:40:29,400
+also not not very accurate.
+
+1143
+00:40:29,000 --> 00:40:30,800
+>> Right.
+
+1144
+00:40:29,400 --> 00:40:32,960
+>> But then
+
+1145
+00:40:30,800 --> 00:40:35,080
+so how do you streamline that using
+
+1146
+00:40:32,960 --> 00:40:37,600
+let's say generative AI or using the
+
+1147
+00:40:35,080 --> 00:40:39,360
+genetic process. The second one is
+
+1148
+00:40:37,600 --> 00:40:40,560
+explainable algorithm-based
+
+1149
+00:40:39,360 --> 00:40:43,240
+recommendations for business
+
+1150
+00:40:40,560 --> 00:40:47,040
+decision-making. That will deliver
+
+1151
+00:40:43,240 --> 00:40:48,960
+value as a last mile value delivery.
+
+1152
+00:40:47,040 --> 00:40:50,320
+>> Awesome.
+
+1153
+00:40:48,960 --> 00:40:51,840
+Well, Gary, I mean
+
+1154
+00:40:50,320 --> 00:40:53,560
+as always,
+
+1155
+00:40:51,840 --> 00:40:55,560
+really great conversation. I always
+
+1156
+00:40:53,560 --> 00:40:57,800
+learn things when we talk. So, thank you
+
+1157
+00:40:55,560 --> 00:40:59,000
+so much for for coming on the show and
+
+1158
+00:40:57,800 --> 00:41:00,720
+and and you're sharing your your
+
+1159
+00:40:59,000 --> 00:41:02,280
+experiences and your knowledge and
+
+1160
+00:41:00,720 --> 00:41:04,840
+giving us a glimpse of what we should be
+
+1161
+00:41:02,280 --> 00:41:06,520
+expecting over the next 3 to 5 years.
+
+1162
+00:41:04,840 --> 00:41:07,800
+Sounds like we've got plenty of plenty
+
+1163
+00:41:06,520 --> 00:41:08,760
+of work to do.
+
+1164
+00:41:07,800 --> 00:41:10,200
+Um
+
+1165
+00:41:08,760 --> 00:41:11,880
+>> Thanks very much, Chris. Happy to be
+
+1166
+00:41:10,200 --> 00:41:13,040
+here and then I always support you in a
+
+1167
+00:41:11,880 --> 00:41:15,520
+way that
+
+1168
+00:41:13,040 --> 00:41:18,360
+I can. It's also benefiting the data
+
+1169
+00:41:15,520 --> 00:41:20,680
+analytics professional as a community.
+
+1170
+00:41:18,360 --> 00:41:22,720
+>> No, thank thank you so much. I really
+
+1171
+00:41:20,680 --> 00:41:24,480
+appreciate you coming on the show.
+
+1172
+00:41:22,720 --> 00:41:25,800
+I look forward to having you back to to
+
+1173
+00:41:24,480 --> 00:41:27,640
+the audience.
+
+1174
+00:41:25,800 --> 00:41:29,560
+Watch watch for the show notes. They'll
+
+1175
+00:41:27,640 --> 00:41:31,760
+provide some information so you can
+
+1176
+00:41:29,560 --> 00:41:34,040
+definitely reach out to Gary.
+
+1177
+00:41:31,760 --> 00:41:36,520
+He's got some really great experience
+
+1178
+00:41:34,040 --> 00:41:37,920
+and if if you have questions, you need
+
+1179
+00:41:36,520 --> 00:41:40,280
+some help,
+
+1180
+00:41:37,920 --> 00:41:42,560
+I know he can help you. So,
+
+1181
+00:41:40,280 --> 00:41:44,040
+thanks again and that'll do it for this
+
+1182
+00:41:42,560 --> 00:41:45,720
+episode of the Signal Room.
+
+1183
+00:41:44,040 --> 00:41:47,720
+>> That's it for this episode of the Signal
+
+1184
+00:41:45,720 --> 00:41:49,880
+Room. If today's conversation sparked
+
+1185
+00:41:47,720 --> 00:41:51,920
+something in you, an idea, a challenge,
+
+1186
+00:41:49,880 --> 00:41:53,720
+or a perspective worth amplifying, I'd
+
+1187
+00:41:51,920 --> 00:41:56,240
+love to hear from you. Message me on
+
+1188
+00:41:53,720 --> 00:41:58,040
+LinkedIn or visit signalroompodcast.com
+
+1189
+00:41:56,240 --> 00:41:59,320
+to explore being a guest on an upcoming
+
+1190
+00:41:58,040 --> 00:42:01,400
+episode.
+
+1191
+00:41:59,320 --> 00:42:04,920
+Until next time, stay tuned, stay
+
+1192
+00:42:01,400 --> 00:42:04,920
+curious, and stay human.
