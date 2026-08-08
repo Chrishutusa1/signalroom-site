@@ -32,7 +32,7 @@
         'Steven Labkoff': 'https://www.linkedin.com/in/stevelabkoff/',
         'Diane Weaver': 'https://www.linkedin.com/in/diane-weaver-67379b8/',
         'Katherine Tuominen': 'https://www.linkedin.com/in/katherine-tuominen',
-        'Angela Millan': 'https://www.linkedin.com/in/angela-milan',
+        'Angela Millan': 'https://www.linkedin.com/in/angela-millan-np',
         'Bennett Borden': 'https://www.linkedin.com/in/bennett-borden/',
         '\u00D6mer Atl\u0131': 'https://www.linkedin.com/in/dromeratli', // key renders as 'Omer Atli' with O-umlaut + dotless i (matches the guest-card name)
         'Aaron Puckett': 'https://www.linkedin.com/in/aaronwpuckett/',
