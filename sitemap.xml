@@ -367,6 +367,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/watch/dark-side-ai-medical-boom</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-data-layer-privacy-governance</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-losing-best-people</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/hospital-ai-governance-signoff</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -380,6 +398,12 @@
   </url>
   <url>
     <loc>https://signalroompodcast.com/watch/why-new-nurses-quit-ai</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/workforce-trust-crisis-ai</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
