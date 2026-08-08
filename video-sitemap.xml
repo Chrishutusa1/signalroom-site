@@ -180,4 +180,64 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-governance-project-failure-andre-samokish</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/pnAPQjVL3yk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Governance: Why Most AI Projects Fail Before They Scale | Andre Samokish</video:title>
+      <video:description>Andre Samokish explains why AI governance, privacy by design, vendor accountability, and AI literacy must be built into projects before they scale.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/pnAPQjVL3yk</video:player_loc>
+      <video:duration>2568</video:duration>
+      <video:publication_date>2026-04-08T06:00:41Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/quiet-quitting-leadership-carly-caminiti</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Wsv6Pm3axds/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Good Employees Quietly Quit - and What Leaders Miss | Carly Caminiti</video:title>
+      <video:description>Carly Caminiti explains why quiet quitting is a leadership signal and why organizations cannot automate their way out of broken culture.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Wsv6Pm3axds</video:player_loc>
+      <video:duration>2966</video:duration>
+      <video:publication_date>2026-04-01T06:41:45Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ethical-ai-operational-trust-markeisha-snaith</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/MhHS4drVihM/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Healthcare Fails Without Operational Trust | MarKeisha Snaith</video:title>
+      <video:description>MarKeisha Snaith explains why ethical healthcare AI depends on operational trust, communication, clinical execution, and accountable leadership.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/MhHS4drVihM</video:player_loc>
+      <video:duration>3195</video:duration>
+      <video:publication_date>2026-03-25T06:00:16Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/personal-ai-patient-advocacy-amanda-roser</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0QC5nLRY5fs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Every Patient Needs a Personal AI Advocate | Amanda Roser</video:title>
+      <video:description>Amanda Roser explains why caregivers are healthcare infrastructure and how personal AI could help families coordinate complex care.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/0QC5nLRY5fs</video:player_loc>
+      <video:duration>3029</video:duration>
+      <video:publication_date>2026-03-18T06:27:39Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-emergency-medicine-natasha-dole</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/wizfkLwkIYw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Emergency Medicine: Design for the Worst 3 AM | Dr. Natasha Dole</video:title>
+      <video:description>Dr. Natasha Dole explains why emergency medicine is the ultimate stress test for healthcare AI, clinical judgment, consent, and accountability.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/wizfkLwkIYw</video:player_loc>
+      <video:duration>2659</video:duration>
+      <video:publication_date>2026-03-13T06:00:45Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
