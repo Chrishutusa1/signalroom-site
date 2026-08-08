@@ -1,0 +1,2839 @@
+1
+00:00:03,280 --> 00:00:08,400
+tagline for my company [music] is
+
+2
+00:00:06,240 --> 00:00:09,760
+humanizing AI for care. We've talked
+
+3
+00:00:08,400 --> 00:00:11,519
+about how healthcare needs to be
+
+4
+00:00:09,760 --> 00:00:14,880
+emotionally ready before it can be
+
+5
+00:00:11,519 --> 00:00:17,199
+technologically ready. [music]
+
+6
+00:00:14,880 --> 00:00:19,279
+Help people feel safe, seen, and
+
+7
+00:00:17,199 --> 00:00:21,039
+empowered as that change happens.
+
+8
+00:00:19,279 --> 00:00:22,400
+latchment on something which is already
+
+9
+00:00:21,039 --> 00:00:25,519
+there and bend on that
+
+10
+00:00:22,400 --> 00:00:30,760
+>> and hundreds of thousands of dollars on
+
+11
+00:00:25,519 --> 00:00:30,760
+the data that powers the technology.
+
+12
+00:00:32,719 --> 00:00:38,660
+>> Uh.com revolution internet and now AI I
+
+13
+00:00:35,840 --> 00:00:40,640
+think it's the I think AI is the is the
+
+14
+00:00:38,660 --> 00:00:42,719
+[music] quickest technology I mean human
+
+15
+00:00:40,640 --> 00:00:44,800
+species have ever adapted like in the
+
+16
+00:00:42,719 --> 00:00:47,120
+shortest frame of time. One of the major
+
+17
+00:00:44,800 --> 00:00:49,920
+components of AI first approach is PPD
+
+18
+00:00:47,120 --> 00:00:54,120
+people, processes and tools. So people
+
+19
+00:00:49,920 --> 00:00:54,120
+is the first step.
+
+20
+00:00:55,920 --> 00:01:00,160
+Welcome to all of our listeners to the
+
+21
+00:00:58,079 --> 00:01:02,480
+Singer Room podcast. We're on location
+
+22
+00:01:00,160 --> 00:01:04,879
+at Planet Hollywood in Las Vegas. This
+
+23
+00:01:02,480 --> 00:01:07,520
+morning I have the privilege of
+
+24
+00:01:04,879 --> 00:01:10,159
+discussing all things AI and some pretty
+
+25
+00:01:07,520 --> 00:01:11,760
+pretty cool technologies that that my my
+
+26
+00:01:10,159 --> 00:01:13,040
+new friend Parth has been working on.
+
+27
+00:01:11,760 --> 00:01:14,159
+Parth, welcome to the second room.
+
+28
+00:01:13,040 --> 00:01:16,400
+Thanks for being with us.
+
+29
+00:01:14,159 --> 00:01:17,680
+>> Thanks for having me here. Of course,
+
+30
+00:01:16,400 --> 00:01:19,840
+>> we've been hearing about so many
+
+31
+00:01:17,680 --> 00:01:20,880
+different aspects of AI and it it's so
+
+32
+00:01:19,840 --> 00:01:23,040
+exciting. I mean, I don't know about
+
+33
+00:01:20,880 --> 00:01:23,439
+you, but I feel like I found my people.
+
+34
+00:01:23,040 --> 00:01:25,520
+>> Yeah.
+
+35
+00:01:23,439 --> 00:01:27,200
+>> Uh this is really just a lot a lot of
+
+36
+00:01:25,520 --> 00:01:29,200
+fun and and but there's so much good
+
+37
+00:01:27,200 --> 00:01:30,960
+that people are are involved with here
+
+38
+00:01:29,200 --> 00:01:32,079
+and I I just feel like we're just
+
+39
+00:01:30,960 --> 00:01:33,439
+scratching the surface of the
+
+40
+00:01:32,079 --> 00:01:36,479
+opportunities we're going to find to to
+
+41
+00:01:33,439 --> 00:01:39,600
+do things together. Um, what I want to
+
+42
+00:01:36,479 --> 00:01:41,280
+kind of jump into, so I know that you're
+
+43
+00:01:39,600 --> 00:01:42,640
+you've got a company that's really doing
+
+44
+00:01:41,280 --> 00:01:45,040
+some interesting things because you have
+
+45
+00:01:42,640 --> 00:01:46,880
+an interesting background as well. U
+
+46
+00:01:45,040 --> 00:01:50,399
+we're thinking about, you know, building
+
+47
+00:01:46,880 --> 00:01:54,240
+AI that that it really is it's ethical.
+
+48
+00:01:50,399 --> 00:01:55,680
+Um, it hopefully augments and supports
+
+49
+00:01:54,240 --> 00:01:58,640
+humans. It's not really going to replace
+
+50
+00:01:55,680 --> 00:02:00,399
+it, but but you know, people can debate
+
+51
+00:01:58,640 --> 00:02:01,840
+that all all they want to, and I don't
+
+52
+00:02:00,399 --> 00:02:04,159
+think that's going to get solved anytime
+
+53
+00:02:01,840 --> 00:02:05,520
+soon. So love to hear a little bit about
+
+54
+00:02:04,159 --> 00:02:06,799
+your your background. I know you've done
+
+55
+00:02:05,520 --> 00:02:09,360
+some interesting things even before
+
+56
+00:02:06,799 --> 00:02:11,520
+NetSmarts, but uh love to hear about you
+
+57
+00:02:09,360 --> 00:02:13,280
+know what you're passionate about and
+
+58
+00:02:11,520 --> 00:02:15,599
+what led you to where you are today in
+
+59
+00:02:13,280 --> 00:02:17,040
+launching your company and some some of
+
+60
+00:02:15,599 --> 00:02:18,720
+the fun things that you're doing.
+
+61
+00:02:17,040 --> 00:02:21,760
+>> Absolutely. You know, thank you so much.
+
+62
+00:02:18,720 --> 00:02:23,280
+Uh I think uh yeah to your point it's a
+
+63
+00:02:21,760 --> 00:02:24,959
+it's a really interesting world we are
+
+64
+00:02:23,280 --> 00:02:27,280
+living in and uh you know we are lucky
+
+65
+00:02:24,959 --> 00:02:29,280
+to kind of see a lot of transitions
+
+66
+00:02:27,280 --> 00:02:32,319
+during our lifetime, right? I mean
+
+67
+00:02:29,280 --> 00:02:35,360
+uh.com revolution internet and now AI I
+
+68
+00:02:32,319 --> 00:02:37,599
+think it's the I think AI is the is the
+
+69
+00:02:35,360 --> 00:02:39,519
+quickest technology I mean human species
+
+70
+00:02:37,599 --> 00:02:41,599
+have ever adapted like in the shortest
+
+71
+00:02:39,519 --> 00:02:43,599
+frame of time right and it's so
+
+72
+00:02:41,599 --> 00:02:45,200
+fascinating uh you know uh I was
+
+73
+00:02:43,599 --> 00:02:47,440
+discussing with some of the colleagues
+
+74
+00:02:45,200 --> 00:02:49,760
+and even with you uh you know that it's
+
+75
+00:02:47,440 --> 00:02:52,239
+all those sci-fi movies coming you know
+
+76
+00:02:49,760 --> 00:02:55,360
+into reality in in some way or the other
+
+77
+00:02:52,239 --> 00:02:57,840
+right so yeah so about myself um I have
+
+78
+00:02:55,360 --> 00:02:58,879
+been uh involved in you know digital
+
+79
+00:02:57,840 --> 00:03:00,560
+transformation automation custom
+
+80
+00:02:58,879 --> 00:03:03,920
+software development space that's how I
+
+81
+00:03:00,560 --> 00:03:05,519
+started my career 20 years back and um I
+
+82
+00:03:03,920 --> 00:03:07,680
+have been involved in the world of SAS
+
+83
+00:03:05,519 --> 00:03:09,280
+primarily and that is uh you know that
+
+84
+00:03:07,680 --> 00:03:11,280
+is something uh you know we as an
+
+85
+00:03:09,280 --> 00:03:13,200
+organization and I as an individual we
+
+86
+00:03:11,280 --> 00:03:15,040
+hold a very strong expertise on and
+
+87
+00:03:13,200 --> 00:03:16,959
+something we are really proud of that we
+
+88
+00:03:15,040 --> 00:03:18,879
+have created multiple SAS products I
+
+89
+00:03:16,959 --> 00:03:21,680
+mean in fact thousands of them for our
+
+90
+00:03:18,879 --> 00:03:23,920
+clients over last two decades and then
+
+91
+00:03:21,680 --> 00:03:26,800
+um you know we got into the space of AI
+
+92
+00:03:23,920 --> 00:03:28,480
+since uh 2016 it's been fairly
+
+93
+00:03:26,800 --> 00:03:30,159
+10-year-old AI practice test we built at
+
+94
+00:03:28,480 --> 00:03:32,560
+Netsmarts and you know similarly I have
+
+95
+00:03:30,159 --> 00:03:34,560
+been in the world of AI since then and
+
+96
+00:03:32,560 --> 00:03:37,040
+uh we started with small projects like
+
+97
+00:03:34,560 --> 00:03:38,959
+you know data labeling projects which
+
+98
+00:03:37,040 --> 00:03:41,519
+which were you know common back in the
+
+99
+00:03:38,959 --> 00:03:43,440
+days because AI thrives on data as we
+
+100
+00:03:41,519 --> 00:03:45,040
+all know right and you know we were
+
+101
+00:03:43,440 --> 00:03:46,720
+creating a large data set for
+
+102
+00:03:45,040 --> 00:03:48,080
+organizations who could you know then go
+
+103
+00:03:46,720 --> 00:03:50,720
+with the AIdriven approach and that's
+
+104
+00:03:48,080 --> 00:03:53,440
+how we started into this segment but
+
+105
+00:03:50,720 --> 00:03:55,760
+yeah I mean um so my focus really
+
+106
+00:03:53,440 --> 00:03:58,560
+revolves around uh creating uh you know
+
+107
+00:03:55,760 --> 00:04:00,879
+AI first strategies for organizations
+
+108
+00:03:58,560 --> 00:04:03,280
+who are looking either to step into the
+
+109
+00:04:00,879 --> 00:04:04,799
+AI world and trying to decode what would
+
+110
+00:04:03,280 --> 00:04:07,519
+work for them, what would not work for
+
+111
+00:04:04,799 --> 00:04:09,760
+them rather than just you know investing
+
+112
+00:04:07,519 --> 00:04:12,319
+AI into AI you know just for the heck of
+
+113
+00:04:09,760 --> 00:04:14,239
+it and look cool around it right so
+
+114
+00:04:12,319 --> 00:04:16,479
+actually driving business use cases
+
+115
+00:04:14,239 --> 00:04:18,959
+which can get them some ROIs in shorter
+
+116
+00:04:16,479 --> 00:04:20,799
+or long term right and uh you know
+
+117
+00:04:18,959 --> 00:04:22,639
+helping them craft out their AI first
+
+118
+00:04:20,799 --> 00:04:24,479
+road map that you know because every
+
+119
+00:04:22,639 --> 00:04:24,800
+organization is unique in their own ways
+
+120
+00:04:24,479 --> 00:04:26,320
+yes
+
+121
+00:04:24,800 --> 00:04:27,440
+>> right and not one shoe is going to fit
+
+122
+00:04:26,320 --> 00:04:28,960
+all Right.
+
+123
+00:04:27,440 --> 00:04:30,560
+>> So, so yeah, that's that's what we are
+
+124
+00:04:28,960 --> 00:04:32,000
+really passionate about and that is what
+
+125
+00:04:30,560 --> 00:04:33,680
+you know we are working towards.
+
+126
+00:04:32,000 --> 00:04:35,440
+>> Well, you you're you're touching on
+
+127
+00:04:33,680 --> 00:04:37,040
+something that's actually what my the
+
+128
+00:04:35,440 --> 00:04:38,880
+whole premise of this this show is
+
+129
+00:04:37,040 --> 00:04:40,320
+about. It's like there's so much noise
+
+130
+00:04:38,880 --> 00:04:41,600
+that people are claiming all they're
+
+131
+00:04:40,320 --> 00:04:44,880
+doing all these wonderful things with
+
+132
+00:04:41,600 --> 00:04:46,720
+AI, but through the noise there's
+
+133
+00:04:44,880 --> 00:04:49,840
+there's a signal that we have to dial in
+
+134
+00:04:46,720 --> 00:04:52,960
+on and what you do is actually precisely
+
+135
+00:04:49,840 --> 00:04:56,160
+that. And so tell me how has the EU
+
+136
+00:04:52,960 --> 00:04:58,560
+approached kind of separating hype from
+
+137
+00:04:56,160 --> 00:05:01,120
+reality and identifying the the real
+
+138
+00:04:58,560 --> 00:05:02,639
+world use cases that are meaningful not
+
+139
+00:05:01,120 --> 00:05:05,520
+just you know somebody's excited because
+
+140
+00:05:02,639 --> 00:05:07,199
+they can chat GPT and it you know it
+
+141
+00:05:05,520 --> 00:05:09,039
+basically accelerates what Google used
+
+142
+00:05:07,199 --> 00:05:12,080
+to do in a millisecond in Google search.
+
+143
+00:05:09,039 --> 00:05:13,680
+Yeah, absolutely. I think uh I have
+
+144
+00:05:12,080 --> 00:05:16,880
+always believed in the fact that big
+
+145
+00:05:13,680 --> 00:05:18,320
+wins lie in small things probably,
+
+146
+00:05:16,880 --> 00:05:20,080
+right? It's not necessary that you have
+
+147
+00:05:18,320 --> 00:05:21,600
+to make a AI use case which is really
+
+148
+00:05:20,080 --> 00:05:23,680
+out of the box and then you're like you
+
+149
+00:05:21,600 --> 00:05:26,240
+know you've done something big. It could
+
+150
+00:05:23,680 --> 00:05:28,880
+be as small as automating one of your
+
+151
+00:05:26,240 --> 00:05:30,560
+department functions where it might not
+
+152
+00:05:28,880 --> 00:05:33,360
+be contributing in form of direct
+
+153
+00:05:30,560 --> 00:05:35,919
+revenues but maybe contributing towards
+
+154
+00:05:33,360 --> 00:05:38,080
+increasing your uh employees
+
+155
+00:05:35,919 --> 00:05:40,479
+efficiencies or you know you
+
+156
+00:05:38,080 --> 00:05:42,639
+accelerating your go to market in some
+
+157
+00:05:40,479 --> 00:05:44,880
+way or the other or for your clients
+
+158
+00:05:42,639 --> 00:05:47,120
+right and it doesn't have to be uh you
+
+159
+00:05:44,880 --> 00:05:49,840
+know rocket science around it right so
+
+160
+00:05:47,120 --> 00:05:51,600
+to give you an example uh you know we we
+
+161
+00:05:49,840 --> 00:05:53,360
+are one of our use cases which we're
+
+162
+00:05:51,600 --> 00:05:55,600
+really proud of is in the customer
+
+163
+00:05:53,360 --> 00:05:57,919
+support and customer experience side of
+
+164
+00:05:55,600 --> 00:05:59,840
+things, right? Every organization needs
+
+165
+00:05:57,919 --> 00:06:01,919
+better customer support as they keep
+
+166
+00:05:59,840 --> 00:06:04,160
+growing because you know uh
+
+167
+00:06:01,919 --> 00:06:06,319
+organizations they grow based on
+
+168
+00:06:04,160 --> 00:06:07,680
+retention of clients. That is how you
+
+169
+00:06:06,319 --> 00:06:09,919
+know we have believed and we have grown
+
+170
+00:06:07,680 --> 00:06:11,600
+as well as an organization and that that
+
+171
+00:06:09,919 --> 00:06:12,960
+is I think is is an industry agnostic
+
+172
+00:06:11,600 --> 00:06:16,240
+use case. I mean every business needs
+
+173
+00:06:12,960 --> 00:06:20,319
+that right. So in one of the use cases
+
+174
+00:06:16,240 --> 00:06:22,160
+we kind of automated the L1 level of uh
+
+175
+00:06:20,319 --> 00:06:25,199
+ticketing in terms of customer support.
+
+176
+00:06:22,160 --> 00:06:28,319
+So AI actually handles the L1 in form of
+
+177
+00:06:25,199 --> 00:06:31,280
+chat as well as in form of voice. Right?
+
+178
+00:06:28,319 --> 00:06:33,280
+So now imagine that AI is able to take
+
+179
+00:06:31,280 --> 00:06:35,840
+let's say that you get 1,000 customer
+
+180
+00:06:33,280 --> 00:06:37,199
+support queries every day, right? And
+
+181
+00:06:35,840 --> 00:06:38,880
+I'm taking a very minimal number. It
+
+182
+00:06:37,199 --> 00:06:41,759
+goes way beyond that in some businesses,
+
+183
+00:06:38,880 --> 00:06:44,720
+right? And then you know you're out of
+
+184
+00:06:41,759 --> 00:06:47,520
+which 50% is also handled by AI for
+
+185
+00:06:44,720 --> 00:06:49,680
+example. And then 50% is handed off by
+
+186
+00:06:47,520 --> 00:06:51,919
+AI to a human agent where it is not able
+
+187
+00:06:49,680 --> 00:06:54,639
+to convince the customer with the
+
+188
+00:06:51,919 --> 00:06:56,960
+resolution. And then of course you are
+
+189
+00:06:54,639 --> 00:06:59,199
+improving on the efficiency because out
+
+190
+00:06:56,960 --> 00:07:01,120
+of those 50% you know eventually AI is
+
+191
+00:06:59,199 --> 00:07:03,840
+going to take another 25% gradually
+
+192
+00:07:01,120 --> 00:07:06,479
+because it's going to learn right. So
+
+193
+00:07:03,840 --> 00:07:08,000
+now you know you are slowly and steadily
+
+194
+00:07:06,479 --> 00:07:10,560
+automating your customer support
+
+195
+00:07:08,000 --> 00:07:13,440
+functions increasing the bandwidth of
+
+196
+00:07:10,560 --> 00:07:16,000
+your uh you know regular human customer
+
+197
+00:07:13,440 --> 00:07:18,319
+support agents. And then they can do
+
+198
+00:07:16,000 --> 00:07:20,080
+meaningful work for their customers and
+
+199
+00:07:18,319 --> 00:07:21,599
+move them towards customer success
+
+200
+00:07:20,080 --> 00:07:22,960
+roadmap because there's a very thin line
+
+201
+00:07:21,599 --> 00:07:24,560
+between support and success for
+
+202
+00:07:22,960 --> 00:07:24,880
+especially for growing organizations.
+
+203
+00:07:24,560 --> 00:07:26,400
+Right.
+
+204
+00:07:24,880 --> 00:07:27,759
+>> Right. And they're not able to focus on
+
+205
+00:07:26,400 --> 00:07:29,039
+success because they are most of the
+
+206
+00:07:27,759 --> 00:07:32,479
+times they're dialing their time in the
+
+207
+00:07:29,039 --> 00:07:36,080
+sport. Right. So very small use case but
+
+208
+00:07:32,479 --> 00:07:38,160
+then big time impact. Right. So it it's
+
+209
+00:07:36,080 --> 00:07:39,599
+all about what would work for you, what
+
+210
+00:07:38,160 --> 00:07:42,160
+your business needs.
+
+211
+00:07:39,599 --> 00:07:44,720
+>> Yeah. And I think the what I find
+
+212
+00:07:42,160 --> 00:07:46,639
+interesting is we're in this place in
+
+213
+00:07:44,720 --> 00:07:50,080
+time where trust has been eroded
+
+214
+00:07:46,639 --> 00:07:51,680
+massively in every part of society and
+
+215
+00:07:50,080 --> 00:07:54,319
+people are terrified. There's a this
+
+216
+00:07:51,680 --> 00:07:56,560
+fear factor and you know what you're
+
+217
+00:07:54,319 --> 00:07:58,319
+talking about is identifying meaningful
+
+218
+00:07:56,560 --> 00:08:01,440
+workflows that are actually close to
+
+219
+00:07:58,319 --> 00:08:04,319
+where the action is. Um there's
+
+220
+00:08:01,440 --> 00:08:06,000
+something there's a cultural aspect to
+
+221
+00:08:04,319 --> 00:08:07,840
+to really getting the engagement that
+
+222
+00:08:06,000 --> 00:08:09,759
+you need to have people raise their hand
+
+223
+00:08:07,840 --> 00:08:11,680
+and say hey look this is a workflow that
+
+224
+00:08:09,759 --> 00:08:15,520
+I think we could actually make it a lot
+
+225
+00:08:11,680 --> 00:08:16,800
+better. uh ho how of do you see that and
+
+226
+00:08:15,520 --> 00:08:19,039
+what what what's what's your thought
+
+227
+00:08:16,800 --> 00:08:21,440
+about what leadership needs to be doing
+
+228
+00:08:19,039 --> 00:08:24,080
+inside of organizations to foster a
+
+229
+00:08:21,440 --> 00:08:26,080
+culture that people feel safe to
+
+230
+00:08:24,080 --> 00:08:28,400
+actually identify those things if they
+
+231
+00:08:26,080 --> 00:08:30,080
+don't feel safe that some of the biggest
+
+232
+00:08:28,400 --> 00:08:32,479
+impact things cuz you mentioned some
+
+233
+00:08:30,080 --> 00:08:34,479
+little things people might not bring it
+
+234
+00:08:32,479 --> 00:08:37,039
+up for fear of losing their job to AI
+
+235
+00:08:34,479 --> 00:08:40,640
+>> yeah 100% I think I think the fear is
+
+236
+00:08:37,039 --> 00:08:44,240
+real and u and it's something which I
+
+237
+00:08:40,640 --> 00:08:46,160
+would not say is wrong, right? Because
+
+238
+00:08:44,240 --> 00:08:49,760
+uh let's be honest, I mean some roles
+
+239
+00:08:46,160 --> 00:08:51,440
+are going to vanish 100%. Right? But I
+
+240
+00:08:49,760 --> 00:08:53,120
+also believe that this is not the first
+
+241
+00:08:51,440 --> 00:08:55,360
+transition we are going through and this
+
+242
+00:08:53,120 --> 00:08:56,880
+is not the last one as well. Right? We
+
+243
+00:08:55,360 --> 00:08:58,480
+have we have lived through similar
+
+244
+00:08:56,880 --> 00:09:00,959
+transitions in the past. I mean of
+
+245
+00:08:58,480 --> 00:09:03,040
+course not as massive as AI probably but
+
+246
+00:09:00,959 --> 00:09:06,240
+but we have we have gone through that
+
+247
+00:09:03,040 --> 00:09:08,880
+and the only thing which I think uh has
+
+248
+00:09:06,240 --> 00:09:12,720
+made us all survive is the ability to
+
+249
+00:09:08,880 --> 00:09:15,600
+adapt right and then upscale because uh
+
+250
+00:09:12,720 --> 00:09:17,360
+and I think every organization or top
+
+251
+00:09:15,600 --> 00:09:20,320
+leadership should really promote
+
+252
+00:09:17,360 --> 00:09:22,160
+upskilling and then you know should make
+
+253
+00:09:20,320 --> 00:09:24,320
+their uh you know their team members
+
+254
+00:09:22,160 --> 00:09:26,000
+feel safe that okay you know this is
+
+255
+00:09:24,320 --> 00:09:27,680
+your road map and that is where you know
+
+256
+00:09:26,000 --> 00:09:29,360
+we also come in with the AI force
+
+257
+00:09:27,680 --> 00:09:31,760
+approach and one of the major components
+
+258
+00:09:29,360 --> 00:09:34,720
+of AI first approach is PPT people,
+
+259
+00:09:31,760 --> 00:09:37,920
+processes and tools. So people is the
+
+260
+00:09:34,720 --> 00:09:39,839
+first step your your team needs to be
+
+261
+00:09:37,920 --> 00:09:41,760
+dialed in to the concept and it has to
+
+262
+00:09:39,839 --> 00:09:44,000
+the approach has to fall from top to the
+
+263
+00:09:41,760 --> 00:09:45,839
+bottom. It is not a bottom top approach,
+
+264
+00:09:44,000 --> 00:09:47,200
+right? So the top leadership has to
+
+265
+00:09:45,839 --> 00:09:49,279
+convince its people that this is the
+
+266
+00:09:47,200 --> 00:09:53,040
+road map we are going towards. Everyone
+
+267
+00:09:49,279 --> 00:09:54,720
+is safe provided you do XYZ things,
+
+268
+00:09:53,040 --> 00:09:57,360
+right? And then you upscale. So, you
+
+269
+00:09:54,720 --> 00:09:59,279
+need to prepare for the newer roles when
+
+270
+00:09:57,360 --> 00:10:01,680
+the older roles are actually going to
+
+271
+00:09:59,279 --> 00:10:02,640
+eventually move out of the market.
+
+272
+00:10:01,680 --> 00:10:03,279
+>> Yeah.
+
+273
+00:10:02,640 --> 00:10:05,279
+>> Right.
+
+274
+00:10:03,279 --> 00:10:06,880
+>> That's right. Yeah. And for our
+
+275
+00:10:05,279 --> 00:10:11,920
+listeners,
+
+276
+00:10:06,880 --> 00:10:14,000
+you're you're hearing from a a CEO of a
+
+277
+00:10:11,920 --> 00:10:16,240
+tech company and they're telling you it
+
+278
+00:10:14,000 --> 00:10:18,320
+starts with people. Can't forget that.
+
+279
+00:10:16,240 --> 00:10:20,560
+I'm glad that you're saying it because
+
+280
+00:10:18,320 --> 00:10:24,079
+we are at this inflection point where
+
+281
+00:10:20,560 --> 00:10:26,959
+leadership has to be really walking a
+
+282
+00:10:24,079 --> 00:10:30,560
+fine line with the transparency has to
+
+283
+00:10:26,959 --> 00:10:32,800
+be important. Um we have to be careful
+
+284
+00:10:30,560 --> 00:10:34,240
+obviously with the timing of everything
+
+285
+00:10:32,800 --> 00:10:36,640
+that we're doing. Some things that you
+
+286
+00:10:34,240 --> 00:10:38,240
+know as an executive that uh that that
+
+287
+00:10:36,640 --> 00:10:40,959
+you you kind of have to work through and
+
+288
+00:10:38,240 --> 00:10:43,200
+figure out timing and how to to deliver
+
+289
+00:10:40,959 --> 00:10:45,600
+that and implement things in your
+
+290
+00:10:43,200 --> 00:10:48,720
+organization. But there's also this
+
+291
+00:10:45,600 --> 00:10:50,800
+really uh important piece about trust
+
+292
+00:10:48,720 --> 00:10:54,160
+being eroded.
+
+293
+00:10:50,800 --> 00:10:56,480
+We have to find a way to help people to
+
+294
+00:10:54,160 --> 00:10:58,640
+be comfortable that we're we're working
+
+295
+00:10:56,480 --> 00:11:00,560
+with them. We're not trying to do
+
+296
+00:10:58,640 --> 00:11:03,040
+something to them. We're trying to find
+
+297
+00:11:00,560 --> 00:11:04,560
+ways to enable them. And you said yes,
+
+298
+00:11:03,040 --> 00:11:07,360
+jobs are going to be replaced. I think
+
+299
+00:11:04,560 --> 00:11:08,720
+you're right. But I think the the
+
+300
+00:11:07,360 --> 00:11:11,279
+message we want to make sure people are
+
+301
+00:11:08,720 --> 00:11:14,240
+hearing is
+
+302
+00:11:11,279 --> 00:11:17,440
+it's going to replace people who don't
+
+303
+00:11:14,240 --> 00:11:19,760
+adopt and learn how to use AI. And so
+
+304
+00:11:17,440 --> 00:11:21,120
+executives really need to hear from you
+
+305
+00:11:19,760 --> 00:11:24,240
+the things that you're you're talking
+
+306
+00:11:21,120 --> 00:11:24,800
+about. People is the very first thing on
+
+307
+00:11:24,240 --> 00:11:25,200
+the list.
+
+308
+00:11:24,800 --> 00:11:27,519
+>> Yes.
+
+309
+00:11:25,200 --> 00:11:30,079
+>> Um what are some of the barriers that
+
+310
+00:11:27,519 --> 00:11:32,399
+you see and and what would you tell um
+
+311
+00:11:30,079 --> 00:11:33,839
+executives that that may be listening?
+
+312
+00:11:32,399 --> 00:11:34,959
+They're trying to figure out where's
+
+313
+00:11:33,839 --> 00:11:36,959
+that fine line because they don't have
+
+314
+00:11:34,959 --> 00:11:38,959
+the understanding of AI that you have
+
+315
+00:11:36,959 --> 00:11:41,360
+and they might be a bit a little bit u
+
+316
+00:11:38,959 --> 00:11:42,800
+nervous. I mean apart from reaching out
+
+317
+00:11:41,360 --> 00:11:44,000
+and getting having a conversation with
+
+318
+00:11:42,800 --> 00:11:45,600
+you, what are some of the things you
+
+319
+00:11:44,000 --> 00:11:46,640
+would advise them to be thinking about
+
+320
+00:11:45,600 --> 00:11:49,120
+and doing?
+
+321
+00:11:46,640 --> 00:11:51,920
+>> I think uh whenever there's a there's a
+
+322
+00:11:49,120 --> 00:11:54,320
+transition phase uh it's uh is a fear
+
+323
+00:11:51,920 --> 00:11:55,760
+which actually kicks in first and it it
+
+324
+00:11:54,320 --> 00:11:57,120
+can it kind of could kick in in the top
+
+325
+00:11:55,760 --> 00:11:59,120
+leadership as well and as well as in
+
+326
+00:11:57,120 --> 00:12:02,000
+your midline managers. I think it's very
+
+327
+00:11:59,120 --> 00:12:04,160
+important as a CEO or as a seale uh
+
+328
+00:12:02,000 --> 00:12:06,240
+executive in an organization you need to
+
+329
+00:12:04,160 --> 00:12:07,839
+convince your midline managers first
+
+330
+00:12:06,240 --> 00:12:09,200
+right that okay you know this is what we
+
+331
+00:12:07,839 --> 00:12:10,480
+are following because they are the one
+
+332
+00:12:09,200 --> 00:12:12,320
+who are hustling on the ground level
+
+333
+00:12:10,480 --> 00:12:14,000
+every day right and they need to manage
+
+334
+00:12:12,320 --> 00:12:16,160
+the entire workforce which is going to
+
+335
+00:12:14,000 --> 00:12:18,399
+be working towards your AI first
+
+336
+00:12:16,160 --> 00:12:21,040
+strategy or whatever you opt in terms of
+
+337
+00:12:18,399 --> 00:12:23,920
+AI implementation in your business right
+
+338
+00:12:21,040 --> 00:12:26,079
+so have certain designated you know AI
+
+339
+00:12:23,920 --> 00:12:28,079
+officers inside the organization who
+
+340
+00:12:26,079 --> 00:12:30,079
+lead initiatives because you establish
+
+341
+00:12:28,079 --> 00:12:31,680
+lish trust with them at the first place
+
+342
+00:12:30,079 --> 00:12:32,959
+that they are like they need to be in a
+
+343
+00:12:31,680 --> 00:12:35,279
+good place they need to feel that okay
+
+344
+00:12:32,959 --> 00:12:37,760
+I'm a part of this right and and
+
+345
+00:12:35,279 --> 00:12:39,200
+whatever the board is deciding I am very
+
+346
+00:12:37,760 --> 00:12:40,800
+much involved and I'm an equal
+
+347
+00:12:39,200 --> 00:12:43,040
+stakeholder in this so that they can
+
+348
+00:12:40,800 --> 00:12:43,360
+give the same comfort to their downline
+
+349
+00:12:43,040 --> 00:12:46,160
+>> yes
+
+350
+00:12:43,360 --> 00:12:49,440
+>> right and then a clear road map is very
+
+351
+00:12:46,160 --> 00:12:51,839
+important you know make small wins uh
+
+352
+00:12:49,440 --> 00:12:53,920
+visible right have small goals maybe
+
+353
+00:12:51,839 --> 00:12:57,120
+next 6 months we are going to automate
+
+354
+00:12:53,920 --> 00:12:58,880
+your our outreach function maybe our
+
+355
+00:12:57,120 --> 00:13:00,880
+sales outreach Right? And then you have
+
+356
+00:12:58,880 --> 00:13:02,399
+the sales managers kind of you know
+
+357
+00:13:00,880 --> 00:13:03,920
+working towards that and maybe
+
+358
+00:13:02,399 --> 00:13:05,680
+implementation of tools and everything
+
+359
+00:13:03,920 --> 00:13:07,200
+but you can implement all the tools out
+
+360
+00:13:05,680 --> 00:13:08,880
+there in the world unless and until it
+
+361
+00:13:07,200 --> 00:13:11,920
+is not processized and your people are
+
+362
+00:13:08,880 --> 00:13:14,480
+not using it. It's it's it's a cash burn
+
+363
+00:13:11,920 --> 00:13:16,560
+right. So so you know a whole systematic
+
+364
+00:13:14,480 --> 00:13:19,279
+approach and sometimes what we do is
+
+365
+00:13:16,560 --> 00:13:20,480
+that we tend to do things ourselves and
+
+366
+00:13:19,279 --> 00:13:23,120
+you know that is where we lose the
+
+367
+00:13:20,480 --> 00:13:24,639
+battle. I I strongly encourage that you
+
+368
+00:13:23,120 --> 00:13:27,120
+know uh it's not necessary that
+
+369
+00:13:24,639 --> 00:13:29,279
+everything has to be done inhouse. get
+
+370
+00:13:27,120 --> 00:13:30,880
+get experts you know to help you.
+
+371
+00:13:29,279 --> 00:13:32,639
+There's a reason why there are experts,
+
+372
+00:13:30,880 --> 00:13:34,560
+right? I mean, we are a techdriven
+
+373
+00:13:32,639 --> 00:13:36,959
+organization and if tomorrow, you know,
+
+374
+00:13:34,560 --> 00:13:39,200
+someone comes and uh talks to me about
+
+375
+00:13:36,959 --> 00:13:40,800
+manufacturing uh you know uh and set up
+
+376
+00:13:39,200 --> 00:13:42,639
+a manufacturing plant, I'm not the
+
+377
+00:13:40,800 --> 00:13:44,399
+expert in that. I would rather go to
+
+378
+00:13:42,639 --> 00:13:46,959
+someone who has actually been there,
+
+379
+00:13:44,399 --> 00:13:50,720
+done it, right? And who accelerates my,
+
+380
+00:13:46,959 --> 00:13:52,560
+you know, uh uh uh my time to market,
+
+381
+00:13:50,720 --> 00:13:55,519
+right? rather than me trying to hustle
+
+382
+00:13:52,560 --> 00:13:57,839
+things and then you know I I I lose time
+
+383
+00:13:55,519 --> 00:13:59,519
+and as well as I lose money and then you
+
+384
+00:13:57,839 --> 00:14:00,880
+know then I realize oh my god you know I
+
+385
+00:13:59,519 --> 00:14:02,560
+should have got a specialist in on
+
+386
+00:14:00,880 --> 00:14:05,839
+board. So I think it's very important
+
+387
+00:14:02,560 --> 00:14:07,279
+you know get get an expert speed up have
+
+388
+00:14:05,839 --> 00:14:09,199
+a road map and then maybe you take
+
+389
+00:14:07,279 --> 00:14:11,120
+things back in house and in control
+
+390
+00:14:09,199 --> 00:14:13,680
+>> right no I think that makes a lot of
+
+391
+00:14:11,120 --> 00:14:15,040
+sense I think
+
+392
+00:14:13,680 --> 00:14:18,079
+you're really talking about some things
+
+393
+00:14:15,040 --> 00:14:19,680
+that I think people have to really
+
+394
+00:14:18,079 --> 00:14:22,560
+open up their their thinking a little
+
+395
+00:14:19,680 --> 00:14:24,800
+bit um cuz culture gets talked about in
+
+396
+00:14:22,560 --> 00:14:26,880
+in ways that
+
+397
+00:14:24,800 --> 00:14:28,399
+honestly sometimes don't it it feels
+
+398
+00:14:26,880 --> 00:14:31,360
+almost like an exercise and you're
+
+399
+00:14:28,399 --> 00:14:34,399
+checking a box but in reality
+
+400
+00:14:31,360 --> 00:14:36,880
+It takes commitment, repetition, and to
+
+401
+00:14:34,399 --> 00:14:40,000
+use your your words, you have to have a
+
+402
+00:14:36,880 --> 00:14:42,000
+systemic approach to this. And so, you
+
+403
+00:14:40,000 --> 00:14:43,760
+know, getting to them your mid-level
+
+404
+00:14:42,000 --> 00:14:45,680
+managers, the people who are closest to
+
+405
+00:14:43,760 --> 00:14:49,519
+the workforce that are really doing
+
+406
+00:14:45,680 --> 00:14:52,079
+these these critical jobs.
+
+407
+00:14:49,519 --> 00:14:54,399
+If an organization is is trying to
+
+408
+00:14:52,079 --> 00:14:56,720
+figure out
+
+409
+00:14:54,399 --> 00:14:59,199
+where to start and and put the put the
+
+410
+00:14:56,720 --> 00:15:00,560
+pieces together so that the you're
+
+411
+00:14:59,199 --> 00:15:04,160
+starting to repair some of the trust
+
+412
+00:15:00,560 --> 00:15:06,720
+things because roughly about 20 years
+
+413
+00:15:04,160 --> 00:15:07,839
+ago, um, eight out of 10 people would
+
+414
+00:15:06,720 --> 00:15:08,959
+have told you that they trust the
+
+415
+00:15:07,839 --> 00:15:10,639
+government.
+
+416
+00:15:08,959 --> 00:15:14,160
+probably higher percentage trust their
+
+417
+00:15:10,639 --> 00:15:16,880
+their clergy, their law enforcement. Um,
+
+418
+00:15:14,160 --> 00:15:19,600
+you know, pick an entity, but even for
+
+419
+00:15:16,880 --> 00:15:22,800
+CEOs in particular now, the number is in
+
+420
+00:15:19,600 --> 00:15:25,600
+the low 20s that 20 I think it's like
+
+421
+00:15:22,800 --> 00:15:28,720
+24% of what I heard recently.
+
+422
+00:15:25,600 --> 00:15:31,839
+How would you advise CEOs to engage
+
+423
+00:15:28,720 --> 00:15:33,680
+their their next level management in
+
+424
+00:15:31,839 --> 00:15:36,240
+order to start rebuilding that culture
+
+425
+00:15:33,680 --> 00:15:38,880
+so that there's trust and they're able
+
+426
+00:15:36,240 --> 00:15:41,519
+to move advanced things forward because
+
+427
+00:15:38,880 --> 00:15:43,440
+to your point it's it'smemes the subject
+
+428
+00:15:41,519 --> 00:15:45,680
+matter experts that actually be able to
+
+429
+00:15:43,440 --> 00:15:48,959
+point out the areas of opportunity and
+
+430
+00:15:45,680 --> 00:15:50,800
+if they're afraid and they don't trust
+
+431
+00:15:48,959 --> 00:15:54,079
+how are you going to get them to
+
+432
+00:15:50,800 --> 00:15:57,120
+actually step forward and help? Yeah, I
+
+433
+00:15:54,079 --> 00:16:00,320
+think it starts with uh empowerment
+
+434
+00:15:57,120 --> 00:16:02,800
+first, right? Your your managers, your
+
+435
+00:16:00,320 --> 00:16:04,959
+midline, they needs to feel empowered
+
+436
+00:16:02,800 --> 00:16:06,560
+and they need to, you know, to what I
+
+437
+00:16:04,959 --> 00:16:09,519
+was saying uh you know it they need to
+
+438
+00:16:06,560 --> 00:16:13,759
+feel that they're they're stakeholders
+
+439
+00:16:09,519 --> 00:16:16,000
+in this journey overall somehow, right?
+
+440
+00:16:13,759 --> 00:16:18,240
+Because with with that feeling comes a
+
+441
+00:16:16,000 --> 00:16:21,360
+lot of ownership, right? and then they
+
+442
+00:16:18,240 --> 00:16:23,199
+will work with you with your vision
+
+443
+00:16:21,360 --> 00:16:26,639
+because your vision becomes their
+
+444
+00:16:23,199 --> 00:16:28,800
+vision. It is it is very important to
+
+445
+00:16:26,639 --> 00:16:31,600
+translate your vision in very clear
+
+446
+00:16:28,800 --> 00:16:35,440
+actionable items and then you know tell
+
+447
+00:16:31,600 --> 00:16:37,839
+them what they have to gain in this win
+
+448
+00:16:35,440 --> 00:16:39,199
+right it's uh I mean yesterday at one of
+
+449
+00:16:37,839 --> 00:16:42,240
+the roundts I was speaking the same
+
+450
+00:16:39,199 --> 00:16:45,519
+thing I was like there is no deal where
+
+451
+00:16:42,240 --> 00:16:48,480
+there is not a win-win situation if it's
+
+452
+00:16:45,519 --> 00:16:50,800
+if it's a one-sided win I mean even in
+
+453
+00:16:48,480 --> 00:16:52,560
+in in our normal relationships right I
+
+454
+00:16:50,800 --> 00:16:54,320
+mean you cannot carry a relationship
+
+455
+00:16:52,560 --> 00:16:57,440
+longer if it's if it's only one person
+
+456
+00:16:54,320 --> 00:16:59,040
+who is winning there has to be some kind
+
+457
+00:16:57,440 --> 00:17:01,360
+of ratio. So I mean even if it's like
+
+458
+00:16:59,040 --> 00:17:03,759
+7030 and then it kind of changes
+
+459
+00:17:01,360 --> 00:17:05,679
+eventually and you know it it goes a
+
+460
+00:17:03,759 --> 00:17:07,760
+little up and down but there has to be a
+
+461
+00:17:05,679 --> 00:17:10,319
+win for the other side of the table as
+
+462
+00:17:07,760 --> 00:17:11,760
+well right so so for your midline
+
+463
+00:17:10,319 --> 00:17:13,600
+managers it is very important they see
+
+464
+00:17:11,760 --> 00:17:15,120
+that what is the win there for them
+
+465
+00:17:13,600 --> 00:17:17,199
+because at the end of the day everyone
+
+466
+00:17:15,120 --> 00:17:18,799
+is here to do something in their life
+
+467
+00:17:17,199 --> 00:17:21,679
+they're ambitious and that's why they're
+
+468
+00:17:18,799 --> 00:17:25,199
+working most of them I would say right
+
+469
+00:17:21,679 --> 00:17:28,559
+so um and then the kind of uh uh you
+
+470
+00:17:25,199 --> 00:17:30,160
+know drift we are we are witnessing
+
+471
+00:17:28,559 --> 00:17:32,080
+right now in the overall technology
+
+472
+00:17:30,160 --> 00:17:33,440
+everything is changing so rapidly every
+
+473
+00:17:32,080 --> 00:17:35,360
+day there's new development there are
+
+474
+00:17:33,440 --> 00:17:37,679
+new algorithms which are getting you
+
+475
+00:17:35,360 --> 00:17:39,360
+know developed and the whole working
+
+476
+00:17:37,679 --> 00:17:41,919
+norm is changing across different
+
+477
+00:17:39,360 --> 00:17:44,400
+industries and there's no way out of it
+
+478
+00:17:41,919 --> 00:17:45,919
+I mean it's inevitable this change is we
+
+479
+00:17:44,400 --> 00:17:47,360
+are supposed to go through it there's
+
+480
+00:17:45,919 --> 00:17:49,440
+there's nothing there's there's no way
+
+481
+00:17:47,360 --> 00:17:52,160
+we can we have a way out of it it's just
+
+482
+00:17:49,440 --> 00:17:55,200
+that we have to adapt to it and everyone
+
+483
+00:17:52,160 --> 00:17:57,600
+knows that deep inside know with fear
+
+484
+00:17:55,200 --> 00:18:00,160
+too but that's okay it's okay to have
+
+485
+00:17:57,600 --> 00:18:03,520
+fear but what is important is that how
+
+486
+00:18:00,160 --> 00:18:06,000
+you are uh facing that fear and what
+
+487
+00:18:03,520 --> 00:18:09,600
+steps are you forming to get there
+
+488
+00:18:06,000 --> 00:18:11,840
+>> right yeah it it's a
+
+489
+00:18:09,600 --> 00:18:14,640
+it's an old concept that we've been
+
+490
+00:18:11,840 --> 00:18:16,720
+dealing with since the dawn of mankind
+
+491
+00:18:14,640 --> 00:18:18,799
+disruptive innovation is real and and it
+
+492
+00:18:16,720 --> 00:18:22,160
+happens and you know if we think back
+
+493
+00:18:18,799 --> 00:18:24,400
+through the dot transition
+
+494
+00:18:22,160 --> 00:18:25,679
+I I know that a lot of us never never
+
+495
+00:18:24,400 --> 00:18:28,640
+could have imagined how things would
+
+496
+00:18:25,679 --> 00:18:30,720
+turn out and how how much the internet
+
+497
+00:18:28,640 --> 00:18:32,960
+connectivity has transformed pretty much
+
+498
+00:18:30,720 --> 00:18:34,640
+every part of our lives, you know, in
+
+499
+00:18:32,960 --> 00:18:38,080
+the civilized world, industrialized
+
+500
+00:18:34,640 --> 00:18:40,240
+world anyways. Um, this I think who
+
+501
+00:18:38,080 --> 00:18:42,400
+knows, I don't know if it's 10x or a
+
+502
+00:18:40,240 --> 00:18:45,600
+thousandx or whatever it is, but we know
+
+503
+00:18:42,400 --> 00:18:47,919
+it's it's massively disruptive and we
+
+504
+00:18:45,600 --> 00:18:50,480
+it's only that consistent communication
+
+505
+00:18:47,919 --> 00:18:52,480
+with human beings and really doing
+
+506
+00:18:50,480 --> 00:18:56,000
+things deliberately to establish a safe
+
+507
+00:18:52,480 --> 00:18:57,520
+environment for people where they do
+
+508
+00:18:56,000 --> 00:18:59,360
+they actually feel like they're
+
+509
+00:18:57,520 --> 00:19:01,600
+contributing. They can they're able to
+
+510
+00:18:59,360 --> 00:19:04,000
+drive some things and take ownership of
+
+511
+00:19:01,600 --> 00:19:05,440
+it. Um I think I was speaking with
+
+512
+00:19:04,000 --> 00:19:08,000
+somebody yesterday and at least put it
+
+513
+00:19:05,440 --> 00:19:10,480
+in a really simple term for me. You have
+
+514
+00:19:08,000 --> 00:19:11,760
+to have these conversations and answer
+
+515
+00:19:10,480 --> 00:19:14,480
+the question that they have in their
+
+516
+00:19:11,760 --> 00:19:16,000
+mind. What's in this for me? I mean, if
+
+517
+00:19:14,480 --> 00:19:18,160
+I go and do these things, what's what's
+
+518
+00:19:16,000 --> 00:19:20,320
+in it for me? Cuz you know, you're I
+
+519
+00:19:18,160 --> 00:19:21,520
+think you you'd want me to help help you
+
+520
+00:19:20,320 --> 00:19:23,600
+eliminate my job.
+
+521
+00:19:21,520 --> 00:19:25,760
+>> Yeah. Yeah. Apple and and then
+
+522
+00:19:23,600 --> 00:19:28,000
+everything does not have to be innovated
+
+523
+00:19:25,760 --> 00:19:29,440
+from ground level, right? I mean take
+
+524
+00:19:28,000 --> 00:19:30,720
+example of the touchscreen phones. I
+
+525
+00:19:29,440 --> 00:19:32,880
+mean Apple came came out with them
+
+526
+00:19:30,720 --> 00:19:35,600
+first. I mean Blackberry was drooling at
+
+527
+00:19:32,880 --> 00:19:37,280
+one point of time. The only small tweak
+
+528
+00:19:35,600 --> 00:19:39,280
+what they did was they got rid of the
+
+529
+00:19:37,280 --> 00:19:40,960
+keyboards. And it wasn't that we were
+
+530
+00:19:39,280 --> 00:19:43,440
+not operating on screens without
+
+531
+00:19:40,960 --> 00:19:46,320
+keywords from before. I mean your your
+
+532
+00:19:43,440 --> 00:19:48,000
+your laptop or even your desktop. I mean
+
+533
+00:19:46,320 --> 00:19:50,080
+you were using a mouse but you were
+
+534
+00:19:48,000 --> 00:19:51,520
+actually on a screen. You were not you
+
+535
+00:19:50,080 --> 00:19:54,320
+know doing everything from the keyboard.
+
+536
+00:19:51,520 --> 00:19:56,480
+So they just used that concept and got
+
+537
+00:19:54,320 --> 00:19:59,120
+rid of the real estate and made a larger
+
+538
+00:19:56,480 --> 00:20:01,440
+screen. And today we we are living on on
+
+539
+00:19:59,120 --> 00:20:02,880
+a you know on a smartphone day in day
+
+540
+00:20:01,440 --> 00:20:05,120
+out with with a complete touchscreen
+
+541
+00:20:02,880 --> 00:20:07,039
+panel. So it's not that you do
+
+542
+00:20:05,120 --> 00:20:08,559
+everything from ground up. Maybe you you
+
+543
+00:20:07,039 --> 00:20:10,160
+take something maybe you know there's so
+
+544
+00:20:08,559 --> 00:20:11,919
+many LLMs out there. There are so many
+
+545
+00:20:10,160 --> 00:20:14,000
+models out there. there are open source
+
+546
+00:20:11,919 --> 00:20:15,679
+models out there right you know plug and
+
+547
+00:20:14,000 --> 00:20:17,760
+play and then make something which is
+
+548
+00:20:15,679 --> 00:20:19,440
+you know you're solving a real problem
+
+549
+00:20:17,760 --> 00:20:22,080
+rather than just saying that hey I'm
+
+550
+00:20:19,440 --> 00:20:24,640
+doing AI because I meet a lot of people
+
+551
+00:20:22,080 --> 00:20:26,480
+these days and you know in a very uh
+
+552
+00:20:24,640 --> 00:20:28,000
+lighter manner I always say that AI
+
+553
+00:20:26,480 --> 00:20:31,200
+organizations are just breeding like
+
+554
+00:20:28,000 --> 00:20:33,840
+mushrooms right everyone is doing AI
+
+555
+00:20:31,200 --> 00:20:36,400
+right but are you solving a real problem
+
+556
+00:20:33,840 --> 00:20:38,159
+is the question yes because that is what
+
+557
+00:20:36,400 --> 00:20:40,640
+is required for longevity of your
+
+558
+00:20:38,159 --> 00:20:42,400
+organization so you have to be dealing
+
+559
+00:20:40,640 --> 00:20:44,720
+dealing with real problems and you're
+
+560
+00:20:42,400 --> 00:20:47,440
+giving real solutions.
+
+561
+00:20:44,720 --> 00:20:49,280
+>> Yeah. The the days of uh getting
+
+562
+00:20:47,440 --> 00:20:53,760
+sneaking by with with understanding of
+
+563
+00:20:49,280 --> 00:20:56,799
+buzzwords, the the game's kind of up now
+
+564
+00:20:53,760 --> 00:20:59,280
+because you you can't do a whole lot of
+
+565
+00:20:56,799 --> 00:21:02,799
+uh implementations of AI without getting
+
+566
+00:20:59,280 --> 00:21:05,520
+an ROI uh because it's not inexpensive
+
+567
+00:21:02,799 --> 00:21:09,440
+to do these things. It just isn't. So
+
+568
+00:21:05,520 --> 00:21:11,039
+yeah, it it's a very exciting but a
+
+569
+00:21:09,440 --> 00:21:12,159
+maybe a little intimidating sometimes
+
+570
+00:21:11,039 --> 00:21:13,679
+when when they think about what
+
+571
+00:21:12,159 --> 00:21:16,000
+replicants because I don't even think we
+
+572
+00:21:13,679 --> 00:21:18,480
+know um like to your point everything's
+
+573
+00:21:16,000 --> 00:21:19,840
+moving so quickly.
+
+574
+00:21:18,480 --> 00:21:23,120
+Six or eight months ago I remember
+
+575
+00:21:19,840 --> 00:21:26,000
+trying to get an image created using AI
+
+576
+00:21:23,120 --> 00:21:27,840
+and it was it giving me these really
+
+577
+00:21:26,000 --> 00:21:29,760
+horrendous things. I have no artistic
+
+578
+00:21:27,840 --> 00:21:31,120
+talent when it comes to drawing but I
+
+579
+00:21:29,760 --> 00:21:33,679
+could do better than it was doing just
+
+580
+00:21:31,120 --> 00:21:36,799
+that long ago. I have nothing related to
+
+581
+00:21:33,679 --> 00:21:39,360
+drawing as well.
+
+582
+00:21:36,799 --> 00:21:41,919
+>> But now I mean it's incredible what it
+
+583
+00:21:39,360 --> 00:21:44,960
+can do. It creates things. I mean I I if
+
+584
+00:21:41,919 --> 00:21:47,200
+you can imagine it you could probably
+
+585
+00:21:44,960 --> 00:21:50,799
+get something that looks close to it and
+
+586
+00:21:47,200 --> 00:21:52,400
+it looks like it was done like with our
+
+587
+00:21:50,799 --> 00:21:54,799
+imprecision.
+
+588
+00:21:52,400 --> 00:21:55,760
+I I don't know how but it it is amazing
+
+589
+00:21:54,799 --> 00:21:58,240
+how fast it's gone.
+
+590
+00:21:55,760 --> 00:21:59,760
+>> Yeah. And we all have that advisor you
+
+591
+00:21:58,240 --> 00:22:02,799
+know working with us which is called
+
+592
+00:21:59,760 --> 00:22:04,559
+Chad GPT or co-pilot right. and gets us
+
+593
+00:22:02,799 --> 00:22:06,480
+all the clinical information, data,
+
+594
+00:22:04,559 --> 00:22:08,000
+stats and everything. So if you really
+
+595
+00:22:06,480 --> 00:22:09,520
+want to do something and you know make
+
+596
+00:22:08,000 --> 00:22:11,840
+solutions I think we are living in a
+
+597
+00:22:09,520 --> 00:22:13,440
+perfect era it's just that we need to
+
+598
+00:22:11,840 --> 00:22:15,600
+you know use it in the right direction
+
+599
+00:22:13,440 --> 00:22:18,000
+and then maybe you know like I said I
+
+600
+00:22:15,600 --> 00:22:20,080
+have an expert work with you right I
+
+601
+00:22:18,000 --> 00:22:22,080
+mean if if you want your child to become
+
+602
+00:22:20,080 --> 00:22:24,240
+a football player tomorrow you will not
+
+603
+00:22:22,080 --> 00:22:26,240
+tell him that hey you know what son
+
+604
+00:22:24,240 --> 00:22:28,320
+start watching YouTube videos and you
+
+605
+00:22:26,240 --> 00:22:29,760
+know you'll become um you know Ronaldo
+
+606
+00:22:28,320 --> 00:22:31,760
+one day right I mean you have to find
+
+607
+00:22:29,760 --> 00:22:33,760
+him the best soccer coach out there who
+
+608
+00:22:31,760 --> 00:22:36,240
+has been there done it who has created
+
+609
+00:22:33,760 --> 00:22:38,080
+players and then you help work on that.
+
+610
+00:22:36,240 --> 00:22:40,320
+So everything cannot be chat GPT or
+
+611
+00:22:38,080 --> 00:22:41,919
+YouTube or Google, right? I mean there
+
+612
+00:22:40,320 --> 00:22:43,760
+there there will always be a human
+
+613
+00:22:41,919 --> 00:22:45,679
+component always. You cannot leave
+
+614
+00:22:43,760 --> 00:22:47,760
+decision-m in the hands of AI. I mean
+
+615
+00:22:45,679 --> 00:22:50,080
+I'm strongly against that, right? But
+
+616
+00:22:47,760 --> 00:22:53,120
+you can use it for getting you
+
+617
+00:22:50,080 --> 00:22:55,120
+visibility and you know guiding you that
+
+618
+00:22:53,120 --> 00:22:57,760
+this could be possibilities but the
+
+619
+00:22:55,120 --> 00:22:59,200
+decision-m should always be with you.
+
+620
+00:22:57,760 --> 00:23:02,320
+>> Absolutely. I couldn't agree with you
+
+621
+00:22:59,200 --> 00:23:04,159
+more. Before we wrap, this has been a
+
+622
+00:23:02,320 --> 00:23:06,480
+fascinating conversation. First of all,
+
+623
+00:23:04,159 --> 00:23:08,240
+and and I I hope you'll you'll come back
+
+624
+00:23:06,480 --> 00:23:09,360
+and and and be on the show with me again
+
+625
+00:23:08,240 --> 00:23:12,000
+because there's so much more that we
+
+626
+00:23:09,360 --> 00:23:13,360
+could talk about and honestly in in a
+
+627
+00:23:12,000 --> 00:23:15,120
+couple months, I'll bet you you'll have
+
+628
+00:23:13,360 --> 00:23:16,480
+some late breaking news that'll be
+
+629
+00:23:15,120 --> 00:23:19,280
+really interesting for people to hear
+
+630
+00:23:16,480 --> 00:23:20,960
+about. I I know I'll be interested. Um,
+
+631
+00:23:19,280 --> 00:23:24,000
+but if if people wanted to get in touch
+
+632
+00:23:20,960 --> 00:23:25,760
+with you or they want to know how do I
+
+633
+00:23:24,000 --> 00:23:27,360
+find the the right experts to figure out
+
+634
+00:23:25,760 --> 00:23:28,960
+what's hype and what's reality where I
+
+635
+00:23:27,360 --> 00:23:29,919
+put my resources, how do people get in
+
+636
+00:23:28,960 --> 00:23:31,520
+touch with you?
+
+637
+00:23:29,919 --> 00:23:33,360
+>> So, you can find me on LinkedIn. I think
+
+638
+00:23:31,520 --> 00:23:35,440
+that's the easiest way to find me. Uh,
+
+639
+00:23:33,360 --> 00:23:37,520
+you know, just search Parth Gargish.
+
+640
+00:23:35,440 --> 00:23:39,120
+That's my name. Uh, it's quite unique. I
+
+641
+00:23:37,520 --> 00:23:41,360
+mean, I've not seen anyone with the same
+
+642
+00:23:39,120 --> 00:23:43,200
+name on the planet till now. Nowhere in
+
+643
+00:23:41,360 --> 00:23:44,640
+the social media. So, that works for me.
+
+644
+00:23:43,200 --> 00:23:46,960
+So you can find me on LinkedIn very
+
+645
+00:23:44,640 --> 00:23:48,559
+easily or you can you know you can reach
+
+646
+00:23:46,960 --> 00:23:49,039
+me on my email uh you know
+
+647
+00:23:48,559 --> 00:23:50,559
+part.garesh@netmarts.com
+
+648
+00:23:49,039 --> 00:23:52,720
+garagesmarts.com.
+
+649
+00:23:50,559 --> 00:23:56,720
+I also run a community for SAS business
+
+650
+00:23:52,720 --> 00:23:58,480
+owners called SAS next SAS NXT. So, uh
+
+651
+00:23:56,720 --> 00:24:00,080
+you know we we do events and shows
+
+652
+00:23:58,480 --> 00:24:01,760
+across North America and we are trying
+
+653
+00:24:00,080 --> 00:24:03,280
+to create a community, you know, where
+
+654
+00:24:01,760 --> 00:24:05,520
+SAS business owners can come in,
+
+655
+00:24:03,280 --> 00:24:07,120
+collaborate, innovate with each other,
+
+656
+00:24:05,520 --> 00:24:08,559
+right? Because I'm I'm a person who has
+
+657
+00:24:07,120 --> 00:24:10,960
+been very strong believer of
+
+658
+00:24:08,559 --> 00:24:12,559
+partnerships. I I mean even with our
+
+659
+00:24:10,960 --> 00:24:14,159
+even with our clients I mean we work
+
+660
+00:24:12,559 --> 00:24:16,480
+more like partners rather than vendors
+
+661
+00:24:14,159 --> 00:24:18,400
+because you know we we strongly believe
+
+662
+00:24:16,480 --> 00:24:20,080
+in that that uh our success lies in
+
+663
+00:24:18,400 --> 00:24:21,600
+their success you know if they're not
+
+664
+00:24:20,080 --> 00:24:23,440
+successful in the long term I will not
+
+665
+00:24:21,600 --> 00:24:24,799
+have a client for life and that is
+
+666
+00:24:23,440 --> 00:24:27,279
+something we're really proud of that we
+
+667
+00:24:24,799 --> 00:24:28,640
+have created clients for life right so
+
+668
+00:24:27,279 --> 00:24:30,080
+so and that is what helps you sail
+
+669
+00:24:28,640 --> 00:24:32,320
+through you know those rough days too
+
+670
+00:24:30,080 --> 00:24:33,440
+like the pandemic and everything right I
+
+671
+00:24:32,320 --> 00:24:35,120
+mean you survive through it as an
+
+672
+00:24:33,440 --> 00:24:36,559
+organization only if you have clients
+
+673
+00:24:35,120 --> 00:24:39,120
+who have believed with you and who are
+
+674
+00:24:36,559 --> 00:24:41,279
+working with you as partners right so so
+
+675
+00:24:39,120 --> 00:24:42,880
+yeah I I mean uh that is the idea that
+
+676
+00:24:41,279 --> 00:24:44,240
+why we created that community and you
+
+677
+00:24:42,880 --> 00:24:45,840
+know I'm really passionate about it. So
+
+678
+00:24:44,240 --> 00:24:47,440
+if in case you're a SAS business owner
+
+679
+00:24:45,840 --> 00:24:49,760
+please feel free to hit up and I would
+
+680
+00:24:47,440 --> 00:24:51,200
+love to kind of have you there as a as a
+
+681
+00:24:49,760 --> 00:24:53,679
+community member. Yeah,
+
+682
+00:24:51,200 --> 00:24:56,320
+>> that's fantastic. I just I love the
+
+683
+00:24:53,679 --> 00:24:58,320
+focus on people are people are first.
+
+684
+00:24:56,320 --> 00:24:59,919
+This is a it's so refreshing and I'm
+
+685
+00:24:58,320 --> 00:25:01,760
+excited about what you're doing. Can't
+
+686
+00:24:59,919 --> 00:25:04,159
+wait to to see hear about your
+
+687
+00:25:01,760 --> 00:25:06,080
+successes. Uh let's definitely keep in
+
+688
+00:25:04,159 --> 00:25:07,520
+touch and hope you enjoy the rest of the
+
+689
+00:25:06,080 --> 00:25:09,200
+time here. I know there's a lot of good
+
+690
+00:25:07,520 --> 00:25:10,480
+conversations being had and to your
+
+691
+00:25:09,200 --> 00:25:12,320
+point I think a lot of partnerships are
+
+692
+00:25:10,480 --> 00:25:14,559
+going to get born out of these few days
+
+693
+00:25:12,320 --> 00:25:16,480
+here in Las Vegas. So Park, it's been an
+
+694
+00:25:14,559 --> 00:25:17,600
+amazing pleasure to to have you. Thanks
+
+695
+00:25:16,480 --> 00:25:18,720
+so much for being on the show.
+
+696
+00:25:17,600 --> 00:25:20,080
+>> Well, thank you for having me here. It
+
+697
+00:25:18,720 --> 00:25:21,360
+was a lovely conversation. I would look
+
+698
+00:25:20,080 --> 00:25:22,799
+forward towards, you know, a longer
+
+699
+00:25:21,360 --> 00:25:24,640
+conversation sometime. Yeah.
+
+700
+00:25:22,799 --> 00:25:25,679
+>> Oh, let's do that. Yeah. Good luck.
+
+701
+00:25:24,640 --> 00:25:27,440
+Thank you.
+
+702
+00:25:25,679 --> 00:25:29,520
+>> That's it for this episode of the Signal
+
+703
+00:25:27,440 --> 00:25:31,600
+Room. If today's conversation sparks
+
+704
+00:25:29,520 --> 00:25:33,679
+something in you, an idea, a challenge,
+
+705
+00:25:31,600 --> 00:25:35,520
+or a perspective worth amplifying, I'd
+
+706
+00:25:33,679 --> 00:25:37,919
+love to hear from you. Message me on
+
+707
+00:25:35,520 --> 00:25:39,919
+LinkedIn or visit cigarroompodcast.com
+
+708
+00:25:37,919 --> 00:25:42,960
+to explore being a guest on an upcoming
+
+709
+00:25:39,919 --> 00:25:47,240
+episode. Until next time, stay tuned,
+
+710
+00:25:42,960 --> 00:25:47,240
+stay curious, and stay human.

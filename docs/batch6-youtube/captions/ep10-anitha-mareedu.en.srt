@@ -1,0 +1,1883 @@
+1
+00:00:00,320 --> 00:00:06,319
+So [music] um we see from the last few
+
+2
+00:00:02,879 --> 00:00:09,200
+years it's very very much booming the
+
+3
+00:00:06,319 --> 00:00:13,360
+the world of AI or even the uh [music]
+
+4
+00:00:09,200 --> 00:00:15,120
+world that's going um around AI because
+
+5
+00:00:13,360 --> 00:00:16,240
+uh it's very fast it's moving [music]
+
+6
+00:00:15,120 --> 00:00:18,320
+really fastpaced
+
+7
+00:00:16,240 --> 00:00:20,240
+>> but we have to balance the risks that
+
+8
+00:00:18,320 --> 00:00:24,119
+that come with it because not everyone's
+
+9
+00:00:20,240 --> 00:00:24,119
+trying [music] to design for good.
+
+10
+00:00:26,080 --> 00:00:32,960
+Well, today I am excited to be joined by
+
+11
+00:00:28,720 --> 00:00:34,480
+Anitha Mareedu and we are here at
+
+12
+00:00:32,960 --> 00:00:38,000
+Hollywood, Las Vegas, Nevada for the
+
+13
+00:00:34,480 --> 00:00:40,000
+Potata First Conference. Uh I you're
+
+14
+00:00:38,000 --> 00:00:41,520
+smiling big. You you had a big smile
+
+15
+00:00:40,000 --> 00:00:43,040
+when you walked over here. So I know
+
+16
+00:00:41,520 --> 00:00:44,719
+that you you're you're with your people
+
+17
+00:00:43,040 --> 00:00:46,559
+too.
+
+18
+00:00:44,719 --> 00:00:48,239
+Uh, I've been really excited looking
+
+19
+00:00:46,559 --> 00:00:49,920
+forward to to coming here and and
+
+20
+00:00:48,239 --> 00:00:53,120
+meeting people like yourself because
+
+21
+00:00:49,920 --> 00:00:56,079
+what there's so much buzz around AI the
+
+22
+00:00:53,120 --> 00:00:58,320
+how we're using it the cyber security
+
+23
+00:00:56,079 --> 00:01:01,120
+aspects of it. Interestingly enough I've
+
+24
+00:00:58,320 --> 00:01:04,479
+had a couple of uh opportunities to to
+
+25
+00:01:01,120 --> 00:01:06,320
+respond to some questions for the um
+
+26
+00:01:04,479 --> 00:01:08,960
+journalists who are who are asking
+
+27
+00:01:06,320 --> 00:01:11,520
+because of some recent activities in
+
+28
+00:01:08,960 --> 00:01:14,400
+cyber like it's given me an even deeper
+
+29
+00:01:11,520 --> 00:01:15,680
+appreciation. I've always really been uh
+
+30
+00:01:14,400 --> 00:01:18,159
+appreciative of people who are working
+
+31
+00:01:15,680 --> 00:01:21,759
+in the cyber space because as a chief
+
+32
+00:01:18,159 --> 00:01:23,119
+data officer in my previous roles,
+
+33
+00:01:21,759 --> 00:01:24,240
+if I didn't have people worrying about
+
+34
+00:01:23,119 --> 00:01:27,119
+that stuff, I don't think I would have
+
+35
+00:01:24,240 --> 00:01:30,799
+slept it off because it's just a really
+
+36
+00:01:27,119 --> 00:01:34,000
+really important uh area. So, as we get
+
+37
+00:01:30,799 --> 00:01:36,320
+started uh in our conversation, I mean
+
+38
+00:01:34,000 --> 00:01:39,920
+the whole week that we're here is all
+
+39
+00:01:36,320 --> 00:01:42,000
+about AI. Um, what was it about this
+
+40
+00:01:39,920 --> 00:01:44,720
+particular event that got you interested
+
+41
+00:01:42,000 --> 00:01:46,880
+in in in coming out here and and what
+
+42
+00:01:44,720 --> 00:01:48,720
+are some things that you're a wanting to
+
+43
+00:01:46,880 --> 00:01:50,640
+to really learn and you know get from
+
+44
+00:01:48,720 --> 00:01:52,079
+the time here, but al also, you know,
+
+45
+00:01:50,640 --> 00:01:54,159
+what are some areas that maybe you're
+
+46
+00:01:52,079 --> 00:01:55,840
+concerned about that you could have an
+
+47
+00:01:54,159 --> 00:01:57,200
+opportunity to help influence and shape
+
+48
+00:01:55,840 --> 00:01:59,439
+while we're all here?
+
+49
+00:01:57,200 --> 00:02:01,600
+>> Yeah. Um, firstly, thank you so much for
+
+50
+00:01:59,439 --> 00:02:04,640
+having me here. Um, I really appreciate
+
+51
+00:02:01,600 --> 00:02:08,399
+it and this event is going great and I'm
+
+52
+00:02:04,640 --> 00:02:12,160
+here uh because of like to learn more
+
+53
+00:02:08,399 --> 00:02:14,640
+about AI or to learn more about how my
+
+54
+00:02:12,160 --> 00:02:18,800
+space of or my industry that I'm working
+
+55
+00:02:14,640 --> 00:02:20,640
+in um can AI like how AI can help or
+
+56
+00:02:18,800 --> 00:02:23,360
+like to network with the people and to
+
+57
+00:02:20,640 --> 00:02:27,680
+get to know like to learn more and grasp
+
+58
+00:02:23,360 --> 00:02:30,319
+things. um as this event is mainly um
+
+59
+00:02:27,680 --> 00:02:32,959
+data related like AI related data and
+
+60
+00:02:30,319 --> 00:02:35,040
+stuff like that. So in my area of cyber
+
+61
+00:02:32,959 --> 00:02:37,680
+security or network security space and
+
+62
+00:02:35,040 --> 00:02:41,040
+this is even more uh challenging with
+
+63
+00:02:37,680 --> 00:02:43,599
+all this um AI that's going on around in
+
+64
+00:02:41,040 --> 00:02:46,640
+the world. So yeah I I'm here to learn
+
+65
+00:02:43,599 --> 00:02:49,120
+and meet great people like yourself.
+
+66
+00:02:46,640 --> 00:02:51,280
+>> Wow. I'm I'm the I'm I'm excited about
+
+67
+00:02:49,120 --> 00:02:53,920
+the the promise that we have here with
+
+68
+00:02:51,280 --> 00:02:55,200
+with AI. But I think, you know, some of
+
+69
+00:02:53,920 --> 00:02:56,879
+the things that I've heard about over
+
+70
+00:02:55,200 --> 00:02:58,480
+the last couple years, I didn't even
+
+71
+00:02:56,879 --> 00:03:00,959
+know this until someone, you know,
+
+72
+00:02:58,480 --> 00:03:03,680
+forwarded me an article. Um, but it was
+
+73
+00:03:00,959 --> 00:03:06,400
+this spring just coming out of the the
+
+74
+00:03:03,680 --> 00:03:08,959
+the worst part of the pandemic that one
+
+75
+00:03:06,400 --> 00:03:10,560
+of the biggest cyber attacks in the US
+
+76
+00:03:08,959 --> 00:03:12,480
+happened during that period of time. And
+
+77
+00:03:10,560 --> 00:03:17,440
+there's like there's just one example of
+
+78
+00:03:12,480 --> 00:03:20,480
+of how pervasive um the nefarious
+
+79
+00:03:17,440 --> 00:03:21,680
+activity can be in in cyber. And I'm not
+
+80
+00:03:20,480 --> 00:03:22,879
+sure if you're familiar with this
+
+81
+00:03:21,680 --> 00:03:25,200
+particular incident that I'm referring
+
+82
+00:03:22,879 --> 00:03:29,440
+to, but um there were literally millions
+
+83
+00:03:25,200 --> 00:03:33,920
+of uh access points that people were
+
+84
+00:03:29,440 --> 00:03:36,239
+firing messages at the the NIH and
+
+85
+00:03:33,920 --> 00:03:38,799
+apparently didn't do anything to take
+
+86
+00:03:36,239 --> 00:03:40,480
+anything offline, but it clearly was
+
+87
+00:03:38,799 --> 00:03:43,840
+designed to bombard the thing and look
+
+88
+00:03:40,480 --> 00:03:45,680
+for vulnerabilities. Um, tell me a
+
+89
+00:03:43,840 --> 00:03:48,000
+little bit about what got you interested
+
+90
+00:03:45,680 --> 00:03:50,080
+in cyber security and and what are some
+
+91
+00:03:48,000 --> 00:03:51,840
+of your observations and as you've
+
+92
+00:03:50,080 --> 00:03:53,040
+gotten into it and maybe talk a little
+
+93
+00:03:51,840 --> 00:03:55,599
+bit about that and if it's something
+
+94
+00:03:53,040 --> 00:03:57,280
+you're familiar with and and how should
+
+95
+00:03:55,599 --> 00:03:59,599
+we be thinking about it and how do we
+
+96
+00:03:57,280 --> 00:04:03,120
+advise our friends and colleagues who
+
+97
+00:03:59,599 --> 00:04:05,439
+are working in the AI space? I mean,
+
+98
+00:04:03,120 --> 00:04:07,760
+it's exciting, but we have to balance
+
+99
+00:04:05,439 --> 00:04:09,360
+the risks that that come with it because
+
+100
+00:04:07,760 --> 00:04:09,840
+not everyone's trying to design for
+
+101
+00:04:09,360 --> 00:04:11,760
+good.
+
+102
+00:04:09,840 --> 00:04:13,920
+>> Yeah. Yeah. Absolutely. Um that's a
+
+103
+00:04:11,760 --> 00:04:16,320
+great question. So uh to answer your
+
+104
+00:04:13,920 --> 00:04:20,560
+first question like what interests me to
+
+105
+00:04:16,320 --> 00:04:23,199
+this uh field is uh so pre initially I
+
+106
+00:04:20,560 --> 00:04:25,440
+started my work my career in networking
+
+107
+00:04:23,199 --> 00:04:28,720
+as a network engineer uh because I did
+
+108
+00:04:25,440 --> 00:04:31,120
+my masters in um by taking some courses
+
+109
+00:04:28,720 --> 00:04:32,639
+in network field though I'm an
+
+110
+00:04:31,120 --> 00:04:35,680
+electrical engineering and I did my
+
+111
+00:04:32,639 --> 00:04:38,479
+thesis in real I did my research in real
+
+112
+00:04:35,680 --> 00:04:40,800
+and stuff but also I took my courses in
+
+113
+00:04:38,479 --> 00:04:42,400
+networking and security while doing that
+
+114
+00:04:40,800 --> 00:04:45,759
+taking some certifications s in the
+
+115
+00:04:42,400 --> 00:04:48,000
+field. uh that interested me and once I
+
+116
+00:04:45,759 --> 00:04:51,919
+started working off as a network
+
+117
+00:04:48,000 --> 00:04:54,400
+engineer and I see that we can create so
+
+118
+00:04:51,919 --> 00:04:56,800
+much about it like it we can talk from
+
+119
+00:04:54,400 --> 00:04:58,720
+anywhere in the world using this network
+
+120
+00:04:56,800 --> 00:05:01,440
+uh creating the routes and like you know
+
+121
+00:04:58,720 --> 00:05:04,240
+all the way from layer 1 to four and
+
+122
+00:05:01,440 --> 00:05:06,560
+then um uh about the layer 7 or about
+
+123
+00:05:04,240 --> 00:05:09,680
+the security stuff is what uh intrigued
+
+124
+00:05:06,560 --> 00:05:11,919
+me because nowadays as uh time is going
+
+125
+00:05:09,680 --> 00:05:15,039
+on we see a lot of applications around
+
+126
+00:05:11,919 --> 00:05:17,039
+the world, right? So, um and then
+
+127
+00:05:15,039 --> 00:05:20,400
+application security has become a very
+
+128
+00:05:17,039 --> 00:05:24,160
+much uh prominent um in the recent times
+
+129
+00:05:20,400 --> 00:05:26,720
+like app security or API uh security
+
+130
+00:05:24,160 --> 00:05:28,880
+when we talk about it. So, um that
+
+131
+00:05:26,720 --> 00:05:30,639
+introved me like security the breaches
+
+132
+00:05:28,880 --> 00:05:34,160
+or the attacks that keep on happening.
+
+133
+00:05:30,639 --> 00:05:36,160
+So, how we can defend these right? So,
+
+134
+00:05:34,160 --> 00:05:38,479
+uh that kind of interests me and I
+
+135
+00:05:36,160 --> 00:05:41,280
+started taking courses. I started
+
+136
+00:05:38,479 --> 00:05:42,800
+training myself um uh in the
+
+137
+00:05:41,280 --> 00:05:45,039
+certification through the certifications
+
+138
+00:05:42,800 --> 00:05:48,000
+it can be or the courses that we have
+
+139
+00:05:45,039 --> 00:05:49,680
+online. So um and while I am working on
+
+140
+00:05:48,000 --> 00:05:52,560
+it that really interests me to get into
+
+141
+00:05:49,680 --> 00:05:55,440
+this field of security and um I have
+
+142
+00:05:52,560 --> 00:05:56,960
+worked on um a few areas of security
+
+143
+00:05:55,440 --> 00:05:58,720
+like I have worked on the endpoint side
+
+144
+00:05:56,960 --> 00:06:01,919
+of security. I have worked on network
+
+145
+00:05:58,720 --> 00:06:04,880
+security basically on the defense side
+
+146
+00:06:01,919 --> 00:06:07,520
+um working on different um firewalls
+
+147
+00:06:04,880 --> 00:06:09,600
+like it can be uh different different
+
+148
+00:06:07,520 --> 00:06:12,240
+vendors that we have out right there
+
+149
+00:06:09,600 --> 00:06:15,039
+outside like uh it can be Cisco, Palo
+
+150
+00:06:12,240 --> 00:06:17,680
+Alto, Checkpoint, Juniper and so on to
+
+151
+00:06:15,039 --> 00:06:20,000
+name a few. So um I have worked on
+
+152
+00:06:17,680 --> 00:06:22,400
+different areas of that and I also
+
+153
+00:06:20,000 --> 00:06:25,840
+worked on um different layers of
+
+154
+00:06:22,400 --> 00:06:28,720
+security. So it can be uh to prevent the
+
+155
+00:06:25,840 --> 00:06:31,600
+attacks or breaches through IDPS tools
+
+156
+00:06:28,720 --> 00:06:33,919
+or um it can be all the way from user
+
+157
+00:06:31,600 --> 00:06:37,120
+identification, user ID all the way to
+
+158
+00:06:33,919 --> 00:06:40,000
+the um network security and like you
+
+159
+00:06:37,120 --> 00:06:42,160
+know endpoint side. So um when I worked
+
+160
+00:06:40,000 --> 00:06:44,400
+on so basically I have had the
+
+161
+00:06:42,160 --> 00:06:47,199
+experience to work on a holistic view
+
+162
+00:06:44,400 --> 00:06:49,759
+right um the whole ecosystem of security
+
+163
+00:06:47,199 --> 00:06:52,080
+all the way from um layer 1 to all the
+
+164
+00:06:49,759 --> 00:06:54,479
+way to layer 7 as well as covering from
+
+165
+00:06:52,080 --> 00:06:58,639
+user ID to all the way to the parimeter
+
+166
+00:06:54,479 --> 00:07:01,840
+side of the security. So um when we talk
+
+167
+00:06:58,639 --> 00:07:05,759
+about um AI or even we talk about
+
+168
+00:07:01,840 --> 00:07:08,720
+agentic AI or AI LLM models and stuff.
+
+169
+00:07:05,759 --> 00:07:12,479
+So um we see from the last few years
+
+170
+00:07:08,720 --> 00:07:15,840
+it's very very much booming the the word
+
+171
+00:07:12,479 --> 00:07:20,000
+of AI or even the uh work that's going
+
+172
+00:07:15,840 --> 00:07:23,360
+um around AI because uh it's very fast
+
+173
+00:07:20,000 --> 00:07:26,560
+it's moving really fast-paced and um um
+
+174
+00:07:23,360 --> 00:07:29,520
+we can also see that um a lot of the uh
+
+175
+00:07:26,560 --> 00:07:31,759
+work that we can do probably in hours
+
+176
+00:07:29,520 --> 00:07:34,720
+probably can be done in minutes now uh
+
+177
+00:07:31,759 --> 00:07:38,639
+by deploying but at the same time we
+
+178
+00:07:34,720 --> 00:07:42,080
+need to um we need to uh be vigilant
+
+179
+00:07:38,639 --> 00:07:45,759
+about um where we are deploying them and
+
+180
+00:07:42,080 --> 00:07:48,000
+how we are deploying them and um is it
+
+181
+00:07:45,759 --> 00:07:51,120
+really needed and if it is needed how we
+
+182
+00:07:48,000 --> 00:07:53,039
+can also secure it right because um at
+
+183
+00:07:51,120 --> 00:07:54,960
+the end of the day uh again security
+
+184
+00:07:53,039 --> 00:07:57,199
+matters a lot because if we are
+
+185
+00:07:54,960 --> 00:07:59,280
+deploying some kind of agentic AI or any
+
+186
+00:07:57,199 --> 00:08:01,360
+kind of AI if we are deploying it and
+
+187
+00:07:59,280 --> 00:08:05,039
+we're just giving it the power to do it
+
+188
+00:08:01,360 --> 00:08:07,680
+then we also need to um secure about it.
+
+189
+00:08:05,039 --> 00:08:10,160
+Uh how we how much access we can give to
+
+190
+00:08:07,680 --> 00:08:10,479
+what so
+
+191
+00:08:10,160 --> 00:08:13,520
+yeah
+
+192
+00:08:10,479 --> 00:08:16,080
+>> yeah you're you're touching on a really
+
+193
+00:08:13,520 --> 00:08:17,919
+important thing and it's how much data
+
+194
+00:08:16,080 --> 00:08:21,039
+and what data can we give it and I I
+
+195
+00:08:17,919 --> 00:08:24,080
+think you know when I've thought about
+
+196
+00:08:21,039 --> 00:08:25,599
+uh bias for example the thing that's
+
+197
+00:08:24,080 --> 00:08:27,280
+always been more of a concern to me and
+
+198
+00:08:25,599 --> 00:08:29,440
+and don't don't misunderstand I know
+
+199
+00:08:27,280 --> 00:08:32,080
+there's people who are actively trying
+
+200
+00:08:29,440 --> 00:08:35,039
+to you know breach systems and do things
+
+201
+00:08:32,080 --> 00:08:37,839
+that are just beyond my imagination why
+
+202
+00:08:35,039 --> 00:08:39,440
+they would want to u clearly somebody is
+
+203
+00:08:37,839 --> 00:08:41,599
+either making them very wealthy or they
+
+204
+00:08:39,440 --> 00:08:43,120
+just have a very very different mindset
+
+205
+00:08:41,599 --> 00:08:47,680
+than I do. I don't know which maybe is
+
+206
+00:08:43,120 --> 00:08:50,000
+both. Um but the the pieces that are
+
+207
+00:08:47,680 --> 00:08:52,800
+concerning
+
+208
+00:08:50,000 --> 00:08:55,839
+from a national security perspective for
+
+209
+00:08:52,800 --> 00:08:57,680
+example there's information that you
+
+210
+00:08:55,839 --> 00:09:00,480
+don't necessarily want everybody to
+
+211
+00:08:57,680 --> 00:09:04,000
+have. Um, if I think back, um, when the
+
+212
+00:09:00,480 --> 00:09:06,000
+first Gulf War was about to unfold, uh,
+
+213
+00:09:04,000 --> 00:09:08,560
+we first heard about stealth technology
+
+214
+00:09:06,000 --> 00:09:10,240
+at that point in time, it was clo, it
+
+215
+00:09:08,560 --> 00:09:11,839
+was over 20 years old, closer to 30
+
+216
+00:09:10,240 --> 00:09:13,920
+years old at that point where the
+
+217
+00:09:11,839 --> 00:09:16,080
+American public even became aware of it.
+
+218
+00:09:13,920 --> 00:09:19,839
+Um, it's a good example of something
+
+219
+00:09:16,080 --> 00:09:21,440
+that you don't necessarily want exposed.
+
+220
+00:09:19,839 --> 00:09:25,200
+You don't want to put it in just every
+
+221
+00:09:21,440 --> 00:09:29,040
+model. Um, but as we think about AI,
+
+222
+00:09:25,200 --> 00:09:32,080
+just from a a general perspective, are
+
+223
+00:09:29,040 --> 00:09:35,200
+there industries that you think that we
+
+224
+00:09:32,080 --> 00:09:38,560
+should be concerned about um that have a
+
+225
+00:09:35,200 --> 00:09:41,279
+tendency to be a lot less um stringent
+
+226
+00:09:38,560 --> 00:09:42,320
+about securing than than others? And I'm
+
+227
+00:09:41,279 --> 00:09:44,480
+not talking about that, you know, the
+
+228
+00:09:42,320 --> 00:09:46,160
+big data aggregate is because we I mean
+
+229
+00:09:44,480 --> 00:09:48,560
+they know that they've got a bullseye on
+
+230
+00:09:46,160 --> 00:09:52,000
+them. So, and I would hesitate to even
+
+231
+00:09:48,560 --> 00:09:53,600
+guess uh the the uh number of hours of
+
+232
+00:09:52,000 --> 00:09:55,920
+sleep that get lost on a regular basis
+
+233
+00:09:53,600 --> 00:09:58,720
+by people responsible for those and
+
+234
+00:09:55,920 --> 00:09:59,920
+their companies. Uh but you what are
+
+235
+00:09:58,720 --> 00:10:02,000
+some things what are some of the
+
+236
+00:09:59,920 --> 00:10:04,240
+industries that you think are are of
+
+237
+00:10:02,000 --> 00:10:06,320
+concern at this point? I I mean I think
+
+238
+00:10:04,240 --> 00:10:07,680
+about a lot of different things like in
+
+239
+00:10:06,320 --> 00:10:09,279
+the finance healthcare space and
+
+240
+00:10:07,680 --> 00:10:10,720
+whatever but from your experience you
+
+241
+00:10:09,279 --> 00:10:13,120
+know what are your what are you seeing
+
+242
+00:10:10,720 --> 00:10:14,640
+and and where should we we be looking
+
+243
+00:10:13,120 --> 00:10:16,720
+and paying attention and learning from
+
+244
+00:10:14,640 --> 00:10:17,760
+whether they're making good decisions or
+
+245
+00:10:16,720 --> 00:10:19,839
+making some mistakes.
+
+246
+00:10:17,760 --> 00:10:22,000
+>> Yeah. Yeah. Um so that's a great
+
+247
+00:10:19,839 --> 00:10:23,920
+question. I have worked with different
+
+248
+00:10:22,000 --> 00:10:25,920
+industries. I have worked in the
+
+249
+00:10:23,920 --> 00:10:27,680
+advertising product based companies. I
+
+250
+00:10:25,920 --> 00:10:30,000
+have worked in the social media company.
+
+251
+00:10:27,680 --> 00:10:31,680
+I have worked with uh security company
+
+252
+00:10:30,000 --> 00:10:34,959
+itself and now I'm working with that
+
+253
+00:10:31,680 --> 00:10:38,800
+chip designing designing company. So um
+
+254
+00:10:34,959 --> 00:10:40,880
+in my experience that I see um so if we
+
+255
+00:10:38,800 --> 00:10:42,560
+talk about the CIA trade right and
+
+256
+00:10:40,880 --> 00:10:46,000
+security which is confidentiality
+
+257
+00:10:42,560 --> 00:10:47,760
+integrity and availability so um each is
+
+258
+00:10:46,000 --> 00:10:49,680
+concerned with each different area of
+
+259
+00:10:47,760 --> 00:10:52,000
+sector right like if you're talking
+
+260
+00:10:49,680 --> 00:10:54,800
+about a government sector it's um
+
+261
+00:10:52,000 --> 00:10:56,480
+confidentiality matters a lot and uh
+
+262
+00:10:54,800 --> 00:10:58,480
+integrity of course it's very much
+
+263
+00:10:56,480 --> 00:11:00,959
+important when we talk about any kind of
+
+264
+00:10:58,480 --> 00:11:03,360
+principles in security because the data
+
+265
+00:11:00,959 --> 00:11:04,959
+have to be intact and uh when we talk
+
+266
+00:11:03,360 --> 00:11:07,600
+about availability. It's mostly about
+
+267
+00:11:04,959 --> 00:11:09,360
+like the private organizations or B2B
+
+268
+00:11:07,600 --> 00:11:11,519
+businesses it can be or B2C it can be
+
+269
+00:11:09,360 --> 00:11:14,399
+right. So you need the availability of
+
+270
+00:11:11,519 --> 00:11:16,800
+the data all the time. Uh make sure that
+
+271
+00:11:14,399 --> 00:11:19,200
+there is no downtime.
+
+272
+00:11:16,800 --> 00:11:20,800
+So um depending on each company or
+
+273
+00:11:19,200 --> 00:11:22,800
+depending on each organization or the
+
+274
+00:11:20,800 --> 00:11:24,160
+sector that you are in it matters like
+
+275
+00:11:22,800 --> 00:11:27,680
+what type of data that you need to
+
+276
+00:11:24,160 --> 00:11:29,040
+protect. So um when we are talking about
+
+277
+00:11:27,680 --> 00:11:31,360
+like let me say like a health
+
+278
+00:11:29,040 --> 00:11:34,399
+organizations like um principles like
+
+279
+00:11:31,360 --> 00:11:37,120
+HIPPA comes into picture right. So um we
+
+280
+00:11:34,399 --> 00:11:39,839
+need to make sure that the data the
+
+281
+00:11:37,120 --> 00:11:41,680
+privacy is not being compromised like PI
+
+282
+00:11:39,839 --> 00:11:44,480
+PI data personal identifiable
+
+283
+00:11:41,680 --> 00:11:46,640
+information is not being uh compromised.
+
+284
+00:11:44,480 --> 00:11:49,040
+So um the same goes with the finance
+
+285
+00:11:46,640 --> 00:11:51,040
+sectors like banking sectors where you
+
+286
+00:11:49,040 --> 00:11:54,320
+have a lot of information which needs to
+
+287
+00:11:51,040 --> 00:11:56,480
+be very much um like of users data. Uh
+
+288
+00:11:54,320 --> 00:11:57,920
+there's a lot of users data in uh both
+
+289
+00:11:56,480 --> 00:12:00,320
+the health sector as well as the finance
+
+290
+00:11:57,920 --> 00:12:02,079
+sector. So you need to make sure that
+
+291
+00:12:00,320 --> 00:12:05,120
+what exceptions that you're giving or
+
+292
+00:12:02,079 --> 00:12:07,120
+what um data or PI data how much
+
+293
+00:12:05,120 --> 00:12:09,360
+prediction you are uh putting there the
+
+294
+00:12:07,120 --> 00:12:11,680
+policies uh the best practices that
+
+295
+00:12:09,360 --> 00:12:14,240
+needs to be followed or the uh
+
+296
+00:12:11,680 --> 00:12:17,279
+principles that you need to um follow it
+
+297
+00:12:14,240 --> 00:12:21,360
+can be nest HIPPA or sock getting all of
+
+298
+00:12:17,279 --> 00:12:22,720
+these in place. So uh that matters a lot
+
+299
+00:12:21,360 --> 00:12:25,600
+uh depending on the industry that you
+
+300
+00:12:22,720 --> 00:12:27,760
+are in or depending on the industry that
+
+301
+00:12:25,600 --> 00:12:29,600
+you are trying to partner with or having
+
+302
+00:12:27,760 --> 00:12:32,560
+those customers or like you know
+
+303
+00:12:29,600 --> 00:12:34,639
+integrating with. So um in in that way
+
+304
+00:12:32,560 --> 00:12:36,560
+we need to also comply with that uh
+
+305
+00:12:34,639 --> 00:12:39,040
+principles and sector depending on the
+
+306
+00:12:36,560 --> 00:12:42,320
+sectors that you are with. Yeah, the
+
+307
+00:12:39,040 --> 00:12:44,800
+adaptability and the the nuance to
+
+308
+00:12:42,320 --> 00:12:46,880
+different industries I can imagine is is
+
+309
+00:12:44,800 --> 00:12:47,920
+a big challenge for you as you're, you
+
+310
+00:12:46,880 --> 00:12:51,760
+know, trying to find the right
+
+311
+00:12:47,920 --> 00:12:54,800
+solutions. U you you talked about, you
+
+312
+00:12:51,760 --> 00:12:57,440
+know, educating yourself and I I I'm
+
+313
+00:12:54,800 --> 00:12:58,720
+glad you said that because I I I really
+
+314
+00:12:57,440 --> 00:13:01,680
+want to make sure that people are
+
+315
+00:12:58,720 --> 00:13:03,760
+hearing um the the the things that they
+
+316
+00:13:01,680 --> 00:13:05,440
+should be really thinking about doing
+
+317
+00:13:03,760 --> 00:13:07,360
+for themselves because there's a massive
+
+318
+00:13:05,440 --> 00:13:08,480
+fear factor out there. People are
+
+319
+00:13:07,360 --> 00:13:11,680
+terrified they're going to lose their
+
+320
+00:13:08,480 --> 00:13:14,240
+jobs to AI. Um,
+
+321
+00:13:11,680 --> 00:13:15,680
+and there's young people out there that
+
+322
+00:13:14,240 --> 00:13:17,040
+they don't know whether to be excited or
+
+323
+00:13:15,680 --> 00:13:18,720
+scared because they're they get excited,
+
+324
+00:13:17,040 --> 00:13:20,560
+but their parents are probably trying to
+
+325
+00:13:18,720 --> 00:13:24,240
+put guard rails around them trying to
+
+326
+00:13:20,560 --> 00:13:26,160
+get them to be careful and all that. But
+
+327
+00:13:24,240 --> 00:13:28,959
+what would you tell people they should
+
+328
+00:13:26,160 --> 00:13:31,920
+be doing if if they they're realizing
+
+329
+00:13:28,959 --> 00:13:33,839
+that this is here to stay?
+
+330
+00:13:31,920 --> 00:13:36,480
+What should they do? What can they do?
+
+331
+00:13:33,839 --> 00:13:39,600
+Um, and especially if you you seem
+
+332
+00:13:36,480 --> 00:13:41,600
+passionate about what you do, maybe that
+
+333
+00:13:39,600 --> 00:13:43,519
+uh you can inspire some folks that may
+
+334
+00:13:41,600 --> 00:13:45,120
+may listen to our podcast. What are some
+
+335
+00:13:43,519 --> 00:13:47,279
+things that you would tell them from
+
+336
+00:13:45,120 --> 00:13:49,279
+your own experience? And and what can
+
+337
+00:13:47,279 --> 00:13:51,440
+they be doing to really take advantage
+
+338
+00:13:49,279 --> 00:13:53,760
+of the moment that we're in? This is
+
+339
+00:13:51,440 --> 00:13:56,639
+probably at least 10x as transformative
+
+340
+00:13:53,760 --> 00:13:58,079
+as the internet coming on the scene in
+
+341
+00:13:56,639 --> 00:14:00,079
+the '9s. It's massive
+
+342
+00:13:58,079 --> 00:14:02,480
+>> disrupion. Yeah. Yeah. Yeah. I totally
+
+343
+00:14:00,079 --> 00:14:04,639
+agree with you. and people like new
+
+344
+00:14:02,480 --> 00:14:06,079
+grads who are just graduating or the
+
+345
+00:14:04,639 --> 00:14:08,000
+people who are trying to the students
+
+346
+00:14:06,079 --> 00:14:09,920
+who are trying to get into the education
+
+347
+00:14:08,000 --> 00:14:12,639
+like you know who are coming for masters
+
+348
+00:14:09,920 --> 00:14:14,480
+to us or it can be uh for bachelors
+
+349
+00:14:12,639 --> 00:14:16,720
+right or even the people around the
+
+350
+00:14:14,480 --> 00:14:20,160
+world but we know that United States of
+
+351
+00:14:16,720 --> 00:14:23,279
+America is the place um to start
+
+352
+00:14:20,160 --> 00:14:24,720
+anything uh at the foremost right and we
+
+353
+00:14:23,279 --> 00:14:26,720
+know that Silicon Valley is the place
+
+354
+00:14:24,720 --> 00:14:28,880
+where everything just starts and we can
+
+355
+00:14:26,720 --> 00:14:31,279
+see already big tech companies like
+
+356
+00:14:28,880 --> 00:14:33,920
+Fanga companies or um who already
+
+357
+00:14:31,279 --> 00:14:35,920
+started from the last uh two years they
+
+358
+00:14:33,920 --> 00:14:39,760
+have been trying to do a lot of hiring
+
+359
+00:14:35,920 --> 00:14:42,399
+in the AI uh sector um rather than a
+
+360
+00:14:39,760 --> 00:14:45,839
+traditional work or even uh in the areas
+
+361
+00:14:42,399 --> 00:14:48,079
+of where uh you can just replace um
+
+362
+00:14:45,839 --> 00:14:49,839
+people with um like you know it can be
+
+363
+00:14:48,079 --> 00:14:52,560
+networking it can be a software
+
+364
+00:14:49,839 --> 00:14:54,880
+developers or everywhere right so
+
+365
+00:14:52,560 --> 00:14:57,680
+they're seeing to u have like one person
+
+366
+00:14:54,880 --> 00:14:58,079
+do 10 things using AI
+
+367
+00:14:57,680 --> 00:15:00,880
+>> right
+
+368
+00:14:58,079 --> 00:15:03,680
+>> kind of a technology so Um I would say
+
+369
+00:15:00,880 --> 00:15:05,680
+to anyone who is interested in pursuing
+
+370
+00:15:03,680 --> 00:15:08,880
+uh and who are really interested in
+
+371
+00:15:05,680 --> 00:15:12,320
+learning more about um like you know uh
+
+372
+00:15:08,880 --> 00:15:14,240
+it can be like you know AI area or it
+
+373
+00:15:12,320 --> 00:15:16,800
+can be on developing uh something
+
+374
+00:15:14,240 --> 00:15:20,160
+related to like learning new models or
+
+375
+00:15:16,800 --> 00:15:23,760
+languages um or even who wants to be in
+
+376
+00:15:20,160 --> 00:15:25,680
+the area of security or maybe in finance
+
+377
+00:15:23,760 --> 00:15:28,959
+or any other sector right so I would
+
+378
+00:15:25,680 --> 00:15:31,920
+first um ask them to question themselves
+
+379
+00:15:28,959 --> 00:15:36,480
+what their interest lies in and I would
+
+380
+00:15:31,920 --> 00:15:38,160
+also uh uh tell the students to have um
+
+381
+00:15:36,480 --> 00:15:40,639
+keep up with what's because the
+
+382
+00:15:38,160 --> 00:15:43,040
+technology changes every two years or
+
+383
+00:15:40,639 --> 00:15:44,959
+every year and it used to be like every
+
+384
+00:15:43,040 --> 00:15:46,880
+5 years or 10 years before now it's
+
+385
+00:15:44,959 --> 00:15:48,480
+every 2 years or every year the
+
+386
+00:15:46,880 --> 00:15:51,440
+technology something new comes and you
+
+387
+00:15:48,480 --> 00:15:54,800
+need to um learn something new all the
+
+388
+00:15:51,440 --> 00:15:57,120
+time so we need to um I mean there are
+
+389
+00:15:54,800 --> 00:15:59,040
+several platforms out there right uh for
+
+390
+00:15:57,120 --> 00:16:00,320
+example even me when I was uh at the
+
+391
+00:15:59,040 --> 00:16:02,320
+beginning even though I was an
+
+392
+00:16:00,320 --> 00:16:04,480
+electrical engineer engineering my
+
+393
+00:16:02,320 --> 00:16:06,320
+master's degree was in but I learned
+
+394
+00:16:04,480 --> 00:16:09,279
+myself to get into this field of cyber
+
+395
+00:16:06,320 --> 00:16:12,160
+security so um the same way I would say
+
+396
+00:16:09,279 --> 00:16:15,680
+whatever intrudes them uh I would highly
+
+397
+00:16:12,160 --> 00:16:17,120
+recommend to learn themselves because
+
+398
+00:16:15,680 --> 00:16:19,440
+anything that is coming out there right
+
+399
+00:16:17,120 --> 00:16:20,880
+now is new to everyone not everyone
+
+400
+00:16:19,440 --> 00:16:24,320
+knows everything
+
+401
+00:16:20,880 --> 00:16:26,399
+>> yes not everyone knows everything so um
+
+402
+00:16:24,320 --> 00:16:27,759
+the more that we learn the more we know
+
+403
+00:16:26,399 --> 00:16:29,600
+better than the other person
+
+404
+00:16:27,759 --> 00:16:30,959
+>> right So, um, that's what my
+
+405
+00:16:29,600 --> 00:16:34,160
+recommendation would. No,
+
+406
+00:16:30,959 --> 00:16:36,160
+>> I I love that. I think we need to
+
+407
+00:16:34,160 --> 00:16:38,320
+inspire people to to go into this field
+
+408
+00:16:36,160 --> 00:16:40,800
+primarily because the risk seems to be
+
+409
+00:16:38,320 --> 00:16:43,040
+compounding at a rate that's a little
+
+410
+00:16:40,800 --> 00:16:45,040
+little concerning. Um, but there's so
+
+411
+00:16:43,040 --> 00:16:46,399
+much enthusiasm and, you know, I'm
+
+412
+00:16:45,040 --> 00:16:49,680
+particularly excited that you came to
+
+413
+00:16:46,399 --> 00:16:52,079
+this event because I think we have to
+
+414
+00:16:49,680 --> 00:16:54,079
+have people like yourself that are
+
+415
+00:16:52,079 --> 00:16:55,759
+trying to figure out how can we say yes
+
+416
+00:16:54,079 --> 00:16:58,399
+to this capability, make sure that we're
+
+417
+00:16:55,759 --> 00:16:59,680
+using it well. Um there's plenty of
+
+418
+00:16:58,399 --> 00:17:01,600
+folks who are going to be the ones
+
+419
+00:16:59,680 --> 00:17:04,240
+that'll want us to pump the brakes. So I
+
+420
+00:17:01,600 --> 00:17:06,640
+understand that. Uh but the the reality
+
+421
+00:17:04,240 --> 00:17:09,039
+is somebody is going to continue to push
+
+422
+00:17:06,640 --> 00:17:11,039
+the ball forward or forgive the sports
+
+423
+00:17:09,039 --> 00:17:13,760
+metaphor, but it it's going to continue
+
+424
+00:17:11,039 --> 00:17:15,280
+to advance and we can either be part of
+
+425
+00:17:13,760 --> 00:17:18,559
+making sure it goes in the direction
+
+426
+00:17:15,280 --> 00:17:21,360
+that we can live with or we can live
+
+427
+00:17:18,559 --> 00:17:22,880
+with regret because we fell asleep at
+
+428
+00:17:21,360 --> 00:17:25,439
+the wheel and saw everything go
+
+429
+00:17:22,880 --> 00:17:28,720
+sideways. and and that that's not a not
+
+430
+00:17:25,439 --> 00:17:29,200
+a great area to be uh setting up camp I
+
+431
+00:17:28,720 --> 00:17:31,679
+don't think.
+
+432
+00:17:29,200 --> 00:17:34,640
+>> Yeah. In this day and age.
+
+433
+00:17:31,679 --> 00:17:36,720
+>> Well, Anitha, as you wrap up, um if
+
+434
+00:17:34,640 --> 00:17:38,400
+people wanted to get in touch with you,
+
+435
+00:17:36,720 --> 00:17:40,240
+especially people wanting to know where
+
+436
+00:17:38,400 --> 00:17:42,080
+do I start to learn about cyber security
+
+437
+00:17:40,240 --> 00:17:44,880
+because I she seems excited, she's
+
+438
+00:17:42,080 --> 00:17:47,200
+having fun. How will they reach you?
+
+439
+00:17:44,880 --> 00:17:51,440
+>> Um I mean you guys can reach me on
+
+440
+00:17:47,200 --> 00:17:53,600
+LinkedIn or um or through email. Uh that
+
+441
+00:17:51,440 --> 00:17:55,120
+is fine. But uh yeah, I'm always
+
+442
+00:17:53,600 --> 00:17:56,960
+available on LinkedIn.
+
+443
+00:17:55,120 --> 00:17:58,480
+>> That's fantastic. I I really appreciate
+
+444
+00:17:56,960 --> 00:18:01,440
+you, you know, coming by and and having
+
+445
+00:17:58,480 --> 00:18:05,120
+a conversation with me. Um I I don't
+
+446
+00:18:01,440 --> 00:18:07,600
+know what the final uh
+
+447
+00:18:05,120 --> 00:18:09,440
+insight package looks like walking away
+
+448
+00:18:07,600 --> 00:18:11,280
+from this event this week, but it's been
+
+449
+00:18:09,440 --> 00:18:13,520
+off to a great start, and I cannot wait
+
+450
+00:18:11,280 --> 00:18:15,520
+to to hear from from all the folks here
+
+451
+00:18:13,520 --> 00:18:17,600
+and meet people like yourself. This is
+
+452
+00:18:15,520 --> 00:18:18,880
+the best place to be. I think anywhere
+
+453
+00:18:17,600 --> 00:18:21,679
+if you're interested in AI and
+
+454
+00:18:18,880 --> 00:18:24,640
+technology and cyber compliance. You
+
+455
+00:18:21,679 --> 00:18:26,080
+just if if you're an AI person, this is
+
+456
+00:18:24,640 --> 00:18:28,080
+little sights of heaven for
+
+457
+00:18:26,080 --> 00:18:29,520
+>> Oh, yeah. Definitely. Definitely. And
+
+458
+00:18:28,080 --> 00:18:31,440
+it's my pleasure meeting you and thank
+
+459
+00:18:29,520 --> 00:18:32,720
+you so much for this opportunity.
+
+460
+00:18:31,440 --> 00:18:33,360
+>> Anitha, thank you so much for getting on
+
+461
+00:18:32,720 --> 00:18:36,000
+the sign.
+
+462
+00:18:33,360 --> 00:18:37,760
+>> Thank you. Thank you so much.
+
+463
+00:18:36,000 --> 00:18:39,840
+>> That's it for this episode of the Signal
+
+464
+00:18:37,760 --> 00:18:41,840
+Room. If today's conversation sparked
+
+465
+00:18:39,840 --> 00:18:44,000
+something in you, an idea, a challenge,
+
+466
+00:18:41,840 --> 00:18:45,760
+or perspective worth amplifying, I'd
+
+467
+00:18:44,000 --> 00:18:48,160
+love to hear from you. Message me on
+
+468
+00:18:45,760 --> 00:18:50,160
+LinkedIn or visit sigarroompodcast.com
+
+469
+00:18:48,160 --> 00:18:53,200
+to explore being a guest on an upcoming
+
+470
+00:18:50,160 --> 00:18:57,559
+episode. Until next time, stay tuned,
+
+471
+00:18:53,200 --> 00:18:57,559
+stay curious, and stay human.

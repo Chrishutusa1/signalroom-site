@@ -1,0 +1,3727 @@
+1
+00:00:03,280 --> 00:00:08,400
+tagline for my company [music] is
+
+2
+00:00:06,240 --> 00:00:09,760
+humanizing AI for care. We've talked
+
+3
+00:00:08,400 --> 00:00:11,519
+about how healthcare needs to be
+
+4
+00:00:09,760 --> 00:00:14,880
+emotionally ready before it can be
+
+5
+00:00:11,519 --> 00:00:17,199
+technologically ready. [music]
+
+6
+00:00:14,880 --> 00:00:19,279
+Help people feel safe, seen, and
+
+7
+00:00:17,199 --> 00:00:21,039
+empowered as that change happens.
+
+8
+00:00:19,279 --> 00:00:22,400
+latchment on something which is already
+
+9
+00:00:21,039 --> 00:00:25,519
+there and bend on that
+
+10
+00:00:22,400 --> 00:00:30,760
+>> and hundreds of thousands of dollars on
+
+11
+00:00:25,519 --> 00:00:30,760
+the data that powers the technology.
+
+12
+00:00:32,880 --> 00:00:37,280
+>> Why is verification
+
+13
+00:00:34,880 --> 00:00:38,719
+not model accuracy the hardest problem
+
+14
+00:00:37,280 --> 00:00:43,120
+that you actually have to solve?
+
+15
+00:00:38,719 --> 00:00:45,840
+>> But AI what gives us ability to kind of
+
+16
+00:00:43,120 --> 00:00:47,680
+search through the much wider grid of
+
+17
+00:00:45,840 --> 00:00:50,239
+possible compounds and molecules and
+
+18
+00:00:47,680 --> 00:00:53,440
+biomolelecules. The whole idea of AI now
+
+19
+00:00:50,239 --> 00:00:56,079
+is to be able to fail in faster so we
+
+20
+00:00:53,440 --> 00:00:59,399
+can get faster to and actually correct
+
+21
+00:00:56,079 --> 00:00:59,399
+result. And
+
+22
+00:01:00,480 --> 00:01:05,119
+>> today's guest is David Finkelshteyn, CEO
+
+23
+00:01:03,120 --> 00:01:07,200
+of Pivotal AI, where he focuses on
+
+24
+00:01:05,119 --> 00:01:09,439
+building AI systems for pharmaceutical
+
+25
+00:01:07,200 --> 00:01:11,840
+life sciences use cases that can
+
+26
+00:01:09,439 --> 00:01:13,680
+actually be verified, defended, and
+
+27
+00:01:11,840 --> 00:01:15,600
+trusted. We're going to go beyond the
+
+28
+00:01:13,680 --> 00:01:18,159
+hype today to talk about the real
+
+29
+00:01:15,600 --> 00:01:19,920
+bottleneck in pharma AI verification.
+
+30
+00:01:18,159 --> 00:01:21,520
+Not making models faster, but making
+
+31
+00:01:19,920 --> 00:01:23,680
+their outputs defensible enough to
+
+32
+00:01:21,520 --> 00:01:25,520
+survive regulators, audits, and real
+
+33
+00:01:23,680 --> 00:01:27,200
+world consequences. David, welcome to
+
+34
+00:01:25,520 --> 00:01:28,880
+the signal room. We're looking forward
+
+35
+00:01:27,200 --> 00:01:30,640
+to having this conversation with you for
+
+36
+00:01:28,880 --> 00:01:31,920
+a while now. We're we're in some pretty
+
+37
+00:01:30,640 --> 00:01:34,640
+interesting times, and I know you're
+
+38
+00:01:31,920 --> 00:01:36,560
+doing a lot of great work in in in the
+
+39
+00:01:34,640 --> 00:01:38,240
+pharmaceutical industry right now, among
+
+40
+00:01:36,560 --> 00:01:39,439
+other things that you're working on. But
+
+41
+00:01:38,240 --> 00:01:40,720
+if you don't mind, I'd love to just kind
+
+42
+00:01:39,439 --> 00:01:42,159
+of jump right in with some some
+
+43
+00:01:40,720 --> 00:01:44,400
+questions. cuz I know I've got a lot to
+
+44
+00:01:42,159 --> 00:01:45,680
+learn and I'm sure my listeners are
+
+45
+00:01:44,400 --> 00:01:47,439
+going to be very interested in what you
+
+46
+00:01:45,680 --> 00:01:50,560
+have to say today. So let's talk about
+
+47
+00:01:47,439 --> 00:01:53,040
+pharma AI. When people talk about it,
+
+48
+00:01:50,560 --> 00:01:55,439
+they focus on discovery speed more often
+
+49
+00:01:53,040 --> 00:01:56,960
+than almost anything else. Why is
+
+50
+00:01:55,439 --> 00:01:59,439
+verification
+
+51
+00:01:56,960 --> 00:02:00,799
+not model accuracy the hardest problem
+
+52
+00:01:59,439 --> 00:02:02,799
+that you actually have to solve?
+
+53
+00:02:00,799 --> 00:02:04,560
+>> Um yeah, thank you first of all. Thank
+
+54
+00:02:02,799 --> 00:02:07,600
+you for having me here. Yeah, I'm I'm
+
+55
+00:02:04,560 --> 00:02:12,959
+excited to excited to be here and to
+
+56
+00:02:07,600 --> 00:02:15,200
+share some uh of my uh experience. It's
+
+57
+00:02:12,959 --> 00:02:17,680
+always pleasure to have an conversation
+
+58
+00:02:15,200 --> 00:02:19,920
+with uh smart people. So,
+
+59
+00:02:17,680 --> 00:02:22,319
+>> let me go get one for you.
+
+60
+00:02:19,920 --> 00:02:24,720
+>> Oh, come on. So, answering your
+
+61
+00:02:22,319 --> 00:02:27,120
+question, I don't think is one of the
+
+62
+00:02:24,720 --> 00:02:28,959
+more is more important than another. I
+
+63
+00:02:27,120 --> 00:02:31,200
+think they tied together and the
+
+64
+00:02:28,959 --> 00:02:33,920
+discovery itself just doesn't make sense
+
+65
+00:02:31,200 --> 00:02:36,239
+without verification because we should
+
+66
+00:02:33,920 --> 00:02:39,040
+be able to get something a molecule the
+
+67
+00:02:36,239 --> 00:02:41,760
+drug that will fit some requirement
+
+68
+00:02:39,040 --> 00:02:45,519
+parameters. So it should be pleasurable
+
+69
+00:02:41,760 --> 00:02:49,280
+in terms of like phocinetics phramics uh
+
+70
+00:02:45,519 --> 00:02:52,319
+it should uh fulfill admin parameters.
+
+71
+00:02:49,280 --> 00:02:54,560
+Um so in this sense how like yes we
+
+72
+00:02:52,319 --> 00:02:58,000
+discovered something but what is it we
+
+73
+00:02:54,560 --> 00:03:00,720
+discovered right and this this this our
+
+74
+00:02:58,000 --> 00:03:03,120
+discovery should be tightened together
+
+75
+00:03:00,720 --> 00:03:07,120
+with verification
+
+76
+00:03:03,120 --> 00:03:09,920
+uh uh in our computer and then we want
+
+77
+00:03:07,120 --> 00:03:13,760
+to get down to
+
+78
+00:03:09,920 --> 00:03:16,640
+5 10 50 100 molecules and we want to
+
+79
+00:03:13,760 --> 00:03:18,400
+actually synthesize them in the lab and
+
+80
+00:03:16,640 --> 00:03:21,440
+we want to test them
+
+81
+00:03:18,400 --> 00:03:24,159
+>> and like it this this can be we can
+
+82
+00:03:21,440 --> 00:03:26,239
+start we should start with uh purely
+
+83
+00:03:24,159 --> 00:03:28,400
+invittor test because it's the cheapest
+
+84
+00:03:26,239 --> 00:03:30,959
+one and we this way we will cut off a
+
+85
+00:03:28,400 --> 00:03:33,599
+lot of uncertainty because again our
+
+86
+00:03:30,959 --> 00:03:35,920
+model regardless how good is it and how
+
+87
+00:03:33,599 --> 00:03:38,640
+accurate is it how model itself how
+
+88
+00:03:35,920 --> 00:03:41,200
+verified is it we need a ground truth
+
+89
+00:03:38,640 --> 00:03:43,200
+and ground truth is like actual physical
+
+90
+00:03:41,200 --> 00:03:44,560
+molecules being synthesized
+
+91
+00:03:43,200 --> 00:03:46,319
+>> right
+
+92
+00:03:44,560 --> 00:03:48,640
+>> regardless of small molecules and big
+
+93
+00:03:46,319 --> 00:03:50,159
+molecules so here it's just generating
+
+94
+00:03:48,640 --> 00:03:51,120
+molecule without verification just
+
+95
+00:03:50,159 --> 00:03:52,959
+doesn't make sense,
+
+96
+00:03:51,120 --> 00:03:55,040
+>> right? I understand that. You know, you
+
+97
+00:03:52,959 --> 00:03:57,760
+you rais an an excellent point as well
+
+98
+00:03:55,040 --> 00:04:00,080
+in terms of the realities of what what
+
+99
+00:03:57,760 --> 00:04:02,640
+we're using now with AI. It's just it
+
+100
+00:04:00,080 --> 00:04:04,400
+hasn't been you available to us for very
+
+101
+00:04:02,640 --> 00:04:05,920
+long. It it does require a lot of due
+
+102
+00:04:04,400 --> 00:04:08,159
+diligence especially in this space that
+
+103
+00:04:05,920 --> 00:04:09,920
+you're working in. I I I really
+
+104
+00:04:08,159 --> 00:04:11,760
+appreciate your perspective on that. I
+
+105
+00:04:09,920 --> 00:04:13,519
+think it's for me it's comforting. I
+
+106
+00:04:11,760 --> 00:04:15,360
+hope it is for others as well. Let's
+
+107
+00:04:13,519 --> 00:04:18,079
+think about the outputs. Uh so when
+
+108
+00:04:15,360 --> 00:04:21,199
+you're when you're using AI where are
+
+109
+00:04:18,079 --> 00:04:23,440
+the where are the most common ways or
+
+110
+00:04:21,199 --> 00:04:25,280
+the that between discovery and
+
+111
+00:04:23,440 --> 00:04:26,400
+regulatory acceptance where do things
+
+112
+00:04:25,280 --> 00:04:28,880
+really break down?
+
+113
+00:04:26,400 --> 00:04:31,120
+>> So there are many possible points on
+
+114
+00:04:28,880 --> 00:04:34,479
+breaking down and again it doesn't come
+
+115
+00:04:31,120 --> 00:04:36,479
+specifically for you. So most of the
+
+116
+00:04:34,479 --> 00:04:38,639
+break points they are the same
+
+117
+00:04:36,479 --> 00:04:40,880
+regardless of the way we discover the
+
+118
+00:04:38,639 --> 00:04:43,120
+leads. So there is a possible break
+
+119
+00:04:40,880 --> 00:04:46,160
+points when we trying to synthesize it.
+
+120
+00:04:43,120 --> 00:04:50,479
+Then when we trying to test parameters
+
+121
+00:04:46,160 --> 00:04:52,720
+and and um of of the drug in vitro then
+
+122
+00:04:50,479 --> 00:04:55,360
+when we go from invitro to invivo like
+
+123
+00:04:52,720 --> 00:04:57,360
+in the living creatures unfortunately we
+
+124
+00:04:55,360 --> 00:05:00,240
+still need to do this. Then when we
+
+125
+00:04:57,360 --> 00:05:03,199
+selecting a like clinical target group
+
+126
+00:05:00,240 --> 00:05:05,280
+then when we go into the human testing.
+
+127
+00:05:03,199 --> 00:05:07,840
+So all these points are possible break
+
+128
+00:05:05,280 --> 00:05:10,320
+point there are um specific for
+
+129
+00:05:07,840 --> 00:05:12,560
+artificial intelligence like for for
+
+130
+00:05:10,320 --> 00:05:14,560
+this way of generation drugs there are
+
+131
+00:05:12,560 --> 00:05:18,000
+specific break points for this way and
+
+132
+00:05:14,560 --> 00:05:20,960
+they are again it's it's just a other
+
+133
+00:05:18,000 --> 00:05:25,600
+side of the metal because on on one hand
+
+134
+00:05:20,960 --> 00:05:28,320
+what AI what gives us ability to kind of
+
+135
+00:05:25,600 --> 00:05:30,160
+search through the much wider grid of
+
+136
+00:05:28,320 --> 00:05:32,639
+possible compounds and molecules and
+
+137
+00:05:30,160 --> 00:05:36,639
+biomolelecules. So because before let's
+
+138
+00:05:32,639 --> 00:05:38,960
+say we can like we knew some number of
+
+139
+00:05:36,639 --> 00:05:41,199
+molecules and like as a humanity we were
+
+140
+00:05:38,960 --> 00:05:43,840
+inventing them and we were making like
+
+141
+00:05:41,199 --> 00:05:45,440
+steps and now they seem very like little
+
+142
+00:05:43,840 --> 00:05:48,240
+steps compared to what we can do now
+
+143
+00:05:45,440 --> 00:05:50,240
+with all this computational power and uh
+
+144
+00:05:48,240 --> 00:05:52,720
+machine learning power
+
+145
+00:05:50,240 --> 00:05:54,880
+>> but so like we did already a lot of
+
+146
+00:05:52,720 --> 00:05:57,039
+tests on all these compounds and
+
+147
+00:05:54,880 --> 00:05:59,840
+molecules all sorts of like testing
+
+148
+00:05:57,039 --> 00:06:00,800
+again in vitro in vivo all sort types of
+
+149
+00:05:59,840 --> 00:06:06,000
+research
+
+150
+00:06:00,800 --> 00:06:09,039
+of these molecules and but so when we AI
+
+151
+00:06:06,000 --> 00:06:12,160
+gives us ability to simulate experiments
+
+152
+00:06:09,039 --> 00:06:14,400
+with something far far away from what we
+
+153
+00:06:12,160 --> 00:06:18,800
+already have something looks completely
+
+154
+00:06:14,400 --> 00:06:20,720
+sim completely like different unlike
+
+155
+00:06:18,800 --> 00:06:24,240
+regard if it's with a small molecule
+
+156
+00:06:20,720 --> 00:06:26,319
+again or or a protein we can using AI we
+
+157
+00:06:24,240 --> 00:06:29,440
+can design like using AlphaFold let's
+
+158
+00:06:26,319 --> 00:06:31,840
+say we can design a protein that we've
+
+159
+00:06:29,440 --> 00:06:34,000
+never met in a human body or in an
+
+160
+00:06:31,840 --> 00:06:36,000
+animal body just something artificial
+
+161
+00:06:34,000 --> 00:06:39,280
+and and AlphaFold will predict how it
+
+162
+00:06:36,000 --> 00:06:41,039
+will fold in space and this is great
+
+163
+00:06:39,280 --> 00:06:43,840
+however the verification when
+
+164
+00:06:41,039 --> 00:06:48,160
+verification came into place it's this
+
+165
+00:06:43,840 --> 00:06:50,639
+unseen protein may cause I'm again like
+
+166
+00:06:48,160 --> 00:06:52,720
+may cause our body not to accept it may
+
+167
+00:06:50,639 --> 00:06:55,120
+cause an allergic reaction and because
+
+168
+00:06:52,720 --> 00:06:58,800
+it's not it doesn't look like anything
+
+169
+00:06:55,120 --> 00:07:00,240
+we've seen before we have no information
+
+170
+00:06:58,800 --> 00:07:04,080
+almost no information and guess about
+
+171
+00:07:00,240 --> 00:07:06,160
+it. So we just have to make more tests
+
+172
+00:07:04,080 --> 00:07:07,440
+and again this is a possible point of
+
+173
+00:07:06,160 --> 00:07:09,039
+breakdown
+
+174
+00:07:07,440 --> 00:07:12,000
+>> right
+
+175
+00:07:09,039 --> 00:07:13,840
+>> yeah and this is I would say yeah
+
+176
+00:07:12,000 --> 00:07:15,280
+>> the speed that you mentioned I I think
+
+177
+00:07:13,840 --> 00:07:16,560
+this is the piece that gets me excited
+
+178
+00:07:15,280 --> 00:07:18,800
+but I can see all when you're talking
+
+179
+00:07:16,560 --> 00:07:21,199
+about validation it also complicates
+
+180
+00:07:18,800 --> 00:07:24,240
+matters but but you're able to really
+
+181
+00:07:21,199 --> 00:07:25,919
+look at a much broader set of of
+
+182
+00:07:24,240 --> 00:07:27,680
+information and simulate and model
+
+183
+00:07:25,919 --> 00:07:30,160
+different things that would take you a
+
+184
+00:07:27,680 --> 00:07:32,720
+very very long time before having that
+
+185
+00:07:30,160 --> 00:07:34,720
+cap capability, but then you got to play
+
+186
+00:07:32,720 --> 00:07:36,880
+catch-up on the validation side. That
+
+187
+00:07:34,720 --> 00:07:39,199
+that must be it's exciting to to know
+
+188
+00:07:36,880 --> 00:07:40,960
+how far fast you can go, but there's
+
+189
+00:07:39,199 --> 00:07:42,479
+some work that you just can't shortcut.
+
+190
+00:07:40,960 --> 00:07:45,440
+I imagine that's a bit of a a
+
+191
+00:07:42,479 --> 00:07:47,360
+frustrating point as you're as you're
+
+192
+00:07:45,440 --> 00:07:48,080
+learning and and developing new new
+
+193
+00:07:47,360 --> 00:07:49,440
+compounds.
+
+194
+00:07:48,080 --> 00:07:50,960
+>> I mean, yeah, it depends on the
+
+195
+00:07:49,440 --> 00:07:53,520
+perspective. It's it's it can be
+
+196
+00:07:50,960 --> 00:07:55,840
+frustrated on one hand and another hand
+
+197
+00:07:53,520 --> 00:07:57,280
+knowing that we are like safer from I
+
+198
+00:07:55,840 --> 00:07:59,120
+mean I'm as a person who have been
+
+199
+00:07:57,280 --> 00:08:01,120
+working with machine learning models
+
+200
+00:07:59,120 --> 00:08:03,520
+more than 10 years I can tell you that
+
+201
+00:08:01,120 --> 00:08:06,240
+sometimes they so much off like they
+
+202
+00:08:03,520 --> 00:08:09,520
+completely off so it's it's actually
+
+203
+00:08:06,240 --> 00:08:12,160
+makes me feel safer knowing that our
+
+204
+00:08:09,520 --> 00:08:15,440
+validation criteria hasn't been changed
+
+205
+00:08:12,160 --> 00:08:17,360
+for a specifically that being said
+
+206
+00:08:15,440 --> 00:08:19,919
+>> at least you know that you you can fail
+
+207
+00:08:17,360 --> 00:08:20,479
+faster and that's one of the benefits
+
+208
+00:08:19,919 --> 00:08:22,080
+Right.
+
+209
+00:08:20,479 --> 00:08:24,479
+>> Exactly. And this is very very important
+
+210
+00:08:22,080 --> 00:08:28,160
+because again 90 like I don't remember
+
+211
+00:08:24,479 --> 00:08:31,759
+exactly um I think around 90% or even
+
+212
+00:08:28,160 --> 00:08:35,360
+more of all drugs that after they were
+
+213
+00:08:31,759 --> 00:08:37,760
+selected as a drug candidates. So this
+
+214
+00:08:35,360 --> 00:08:40,320
+whole industry right everyone knows that
+
+215
+00:08:37,760 --> 00:08:42,880
+create a new molecule denovo molecu even
+
+216
+00:08:40,320 --> 00:08:44,640
+generic but specific know is like huge
+
+217
+00:08:42,880 --> 00:08:46,640
+money tons amount of money. You can't
+
+218
+00:08:44,640 --> 00:08:48,880
+just you know be a startup or just
+
+219
+00:08:46,640 --> 00:08:51,279
+enthusiast and just create new molecule.
+
+220
+00:08:48,880 --> 00:08:54,320
+you have you have to get tremendous
+
+221
+00:08:51,279 --> 00:08:56,959
+amount of money and big part of it is
+
+222
+00:08:54,320 --> 00:08:59,680
+this huge failing rate and the whole
+
+223
+00:08:56,959 --> 00:09:02,480
+idea and you you catch it up like it's
+
+224
+00:08:59,680 --> 00:09:05,519
+this the whole idea of AI now is to be
+
+225
+00:09:02,480 --> 00:09:08,000
+able to failing faster so we can get
+
+226
+00:09:05,519 --> 00:09:10,480
+faster to an actually correct result
+
+227
+00:09:08,000 --> 00:09:14,560
+instead of like putting a lot of hours
+
+228
+00:09:10,480 --> 00:09:17,200
+and and efforts and human hours into and
+
+229
+00:09:14,560 --> 00:09:19,920
+work into something that will fail in
+
+230
+00:09:17,200 --> 00:09:22,240
+months now we will know it will pass
+
+231
+00:09:19,920 --> 00:09:22,720
+even our machine learning threshold in a
+
+232
+00:09:22,240 --> 00:09:25,600
+week.
+
+233
+00:09:22,720 --> 00:09:28,480
+>> That's a massive impact. That's exciting
+
+234
+00:09:25,600 --> 00:09:30,720
+cuz I think think about the broader uses
+
+235
+00:09:28,480 --> 00:09:33,040
+of AI for clinical research as well. I
+
+236
+00:09:30,720 --> 00:09:35,120
+think this is a really exciting time
+
+237
+00:09:33,040 --> 00:09:37,360
+that we're entering into. We thought the
+
+238
+00:09:35,120 --> 00:09:39,600
+co vaccines came out quickly. That's
+
+239
+00:09:37,360 --> 00:09:41,200
+probably just scratching the surface of
+
+240
+00:09:39,600 --> 00:09:43,680
+what's going to be possible as we learn
+
+241
+00:09:41,200 --> 00:09:45,680
+how to use this the AI capabilities uh
+
+242
+00:09:43,680 --> 00:09:47,680
+more efficiently moving forward. I've
+
+243
+00:09:45,680 --> 00:09:49,440
+heard the the term blackbox way too
+
+244
+00:09:47,680 --> 00:09:51,920
+often when they're talking about data AI
+
+245
+00:09:49,440 --> 00:09:54,480
+in in in any industry. Why do those
+
+246
+00:09:51,920 --> 00:09:55,920
+models fail specifically in
+
+247
+00:09:54,480 --> 00:09:58,320
+pharmaceutical environments?
+
+248
+00:09:55,920 --> 00:09:59,680
+>> Uh what so what do you mean by failing
+
+249
+00:09:58,320 --> 00:10:04,399
+pharmaceutical environments?
+
+250
+00:09:59,680 --> 00:10:06,320
+>> So you know the idea of trusting
+
+251
+00:10:04,399 --> 00:10:09,120
+>> AI not necessarily having enough
+
+252
+00:10:06,320 --> 00:10:12,000
+visibility into exactly how it's
+
+253
+00:10:09,120 --> 00:10:13,920
+deriving the outputs that you see. So
+
+254
+00:10:12,000 --> 00:10:16,720
+where is that really problematic in the
+
+255
+00:10:13,920 --> 00:10:19,680
+work that you do? Yeah. So this is the
+
+256
+00:10:16,720 --> 00:10:22,079
+essence of machine learning modeling per
+
+257
+00:10:19,680 --> 00:10:24,560
+se. So we have have a kind of this
+
+258
+00:10:22,079 --> 00:10:27,360
+trade-off. It's not like we there are
+
+259
+00:10:24,560 --> 00:10:30,160
+workarounds. We can talk about more
+
+260
+00:10:27,360 --> 00:10:32,560
+later. But the the rule of s there is a
+
+261
+00:10:30,160 --> 00:10:34,560
+trade-off. The more complex model the
+
+262
+00:10:32,560 --> 00:10:37,040
+the more complex the task usually the
+
+263
+00:10:34,560 --> 00:10:39,120
+more complex model you need and the more
+
+264
+00:10:37,040 --> 00:10:41,279
+complex the model
+
+265
+00:10:39,120 --> 00:10:43,200
+the less transparent it is. Because for
+
+266
+00:10:41,279 --> 00:10:44,880
+us transparency is something that we can
+
+267
+00:10:43,200 --> 00:10:47,519
+understand, we can relate. can grasp
+
+268
+00:10:44,880 --> 00:10:49,279
+right because like the easiest the most
+
+269
+00:10:47,519 --> 00:10:52,720
+simple machine learning model what is it
+
+270
+00:10:49,279 --> 00:10:55,279
+it's just a a line right it's I think
+
+271
+00:10:52,720 --> 00:10:58,000
+every data science first lesson you have
+
+272
+00:10:55,279 --> 00:10:59,760
+a graph and you have some dots going
+
+273
+00:10:58,000 --> 00:11:02,160
+approximately this direction and
+
+274
+00:10:59,760 --> 00:11:05,200
+everyone being asked okay guys now tell
+
+275
+00:11:02,160 --> 00:11:07,279
+me predict where next dots going to be
+
+276
+00:11:05,200 --> 00:11:08,720
+in this graph and now everyone drawing
+
+277
+00:11:07,279 --> 00:11:10,800
+this line and saying okay it's going
+
+278
+00:11:08,720 --> 00:11:14,640
+this direction say congratulations you
+
+279
+00:11:10,800 --> 00:11:16,880
+just uh make made your first prediction
+
+280
+00:11:14,640 --> 00:11:18,959
+as a like as machine learning model
+
+281
+00:11:16,880 --> 00:11:20,320
+would do. So it's we understand where
+
+282
+00:11:18,959 --> 00:11:22,000
+this machine learning would come from
+
+283
+00:11:20,320 --> 00:11:24,480
+right it's very simple
+
+284
+00:11:22,000 --> 00:11:27,839
+>> but when and then like there is a lure
+
+285
+00:11:24,480 --> 00:11:30,000
+of complexity and at the end we have a
+
+286
+00:11:27,839 --> 00:11:32,640
+large language models it's a narrow
+
+287
+00:11:30,000 --> 00:11:35,360
+network with very complex structure with
+
+288
+00:11:32,640 --> 00:11:37,200
+hundreds of billions of weights and of
+
+289
+00:11:35,360 --> 00:11:40,720
+course when you look at it like and you
+
+290
+00:11:37,200 --> 00:11:43,040
+have input and output there is no way a
+
+291
+00:11:40,720 --> 00:11:45,040
+human can tell okay this I think I know
+
+292
+00:11:43,040 --> 00:11:48,240
+what this will give me right in the end
+
+293
+00:11:45,040 --> 00:11:50,720
+so it's able it is able to solve very
+
+294
+00:11:48,240 --> 00:11:53,440
+complex task because it the structure is
+
+295
+00:11:50,720 --> 00:11:57,120
+so complex and flexible and this makes
+
+296
+00:11:53,440 --> 00:11:58,880
+it not uh explainable so much. So we
+
+297
+00:11:57,120 --> 00:12:00,880
+can't understand
+
+298
+00:11:58,880 --> 00:12:06,000
+>> people can't not [clears throat] always
+
+299
+00:12:00,880 --> 00:12:08,800
+can understand the reasoning behind um
+
+300
+00:12:06,000 --> 00:12:12,480
+this like decisions that machine models.
+
+301
+00:12:08,800 --> 00:12:14,079
+That's such an important thing, too, is
+
+302
+00:12:12,480 --> 00:12:16,160
+we we really need to make sure that
+
+303
+00:12:14,079 --> 00:12:17,920
+we're we're thinking about how we're
+
+304
+00:12:16,160 --> 00:12:19,600
+working with AI. We we have to have
+
+305
+00:12:17,920 --> 00:12:21,839
+explanability and transparency,
+
+306
+00:12:19,600 --> 00:12:24,079
+particularly when it comes to anything
+
+307
+00:12:21,839 --> 00:12:25,839
+that's going to touch clinical care or
+
+308
+00:12:24,079 --> 00:12:28,320
+is going to be some sort of a treatment
+
+309
+00:12:25,839 --> 00:12:30,959
+that that a human being is going to be
+
+310
+00:12:28,320 --> 00:12:33,519
+subjected to. regulations are a little
+
+311
+00:12:30,959 --> 00:12:35,600
+bit slow and coming when it comes to to
+
+312
+00:12:33,519 --> 00:12:37,360
+this side of everything, but I don't
+
+313
+00:12:35,600 --> 00:12:39,279
+think we have a whole lot of time left
+
+314
+00:12:37,360 --> 00:12:40,959
+before that starts to ramp. It sounds
+
+315
+00:12:39,279 --> 00:12:44,480
+I'm starting to hear a lot more about it
+
+316
+00:12:40,959 --> 00:12:47,040
+now. Hopefully, we can be proactive
+
+317
+00:12:44,480 --> 00:12:49,279
+enough in the industry that we don't
+
+318
+00:12:47,040 --> 00:12:51,440
+have things done to us, which is usually
+
+319
+00:12:49,279 --> 00:12:53,600
+how regulation affects us. We got people
+
+320
+00:12:51,440 --> 00:12:55,120
+who are really not understanding the
+
+321
+00:12:53,600 --> 00:12:57,200
+tech the technologies. They don't
+
+322
+00:12:55,120 --> 00:12:59,440
+understand medicine. they're trying to
+
+323
+00:12:57,200 --> 00:13:02,240
+make policy and that's that's just it's
+
+324
+00:12:59,440 --> 00:13:03,440
+a recipe for disaster in my opinion
+
+325
+00:13:02,240 --> 00:13:05,519
+particularly in the space that we're
+
+326
+00:13:03,440 --> 00:13:07,200
+talking about just because um if you're
+
+327
+00:13:05,519 --> 00:13:09,519
+dealing with it from a regulatory
+
+328
+00:13:07,200 --> 00:13:12,560
+standpoint you're thinking about it from
+
+329
+00:13:09,519 --> 00:13:14,079
+the legal and risks lens and the people
+
+330
+00:13:12,560 --> 00:13:15,839
+that are having those conversations are
+
+331
+00:13:14,079 --> 00:13:18,000
+certainly not trained scientists they're
+
+332
+00:13:15,839 --> 00:13:19,920
+not trained clinicians for the most part
+
+333
+00:13:18,000 --> 00:13:22,560
+now there are a few but very few of them
+
+334
+00:13:19,920 --> 00:13:24,560
+are actually in regulatory roles I
+
+335
+00:13:22,560 --> 00:13:26,399
+really appreciate that the context that
+
+336
+00:13:24,560 --> 00:13:29,360
+that you're giving it what does it mean
+
+337
+00:13:26,399 --> 00:13:31,760
+to actually verify an AI insight in in
+
+338
+00:13:29,360 --> 00:13:35,760
+the in the context of drug development.
+
+339
+00:13:31,760 --> 00:13:39,760
+>> So the the closest thing to verify an
+
+340
+00:13:35,760 --> 00:13:42,320
+AI. So when we define defining the model
+
+341
+00:13:39,760 --> 00:13:43,440
+again it we getting back to what we
+
+342
+00:13:42,320 --> 00:13:45,680
+discussed at the beginning right the
+
+343
+00:13:43,440 --> 00:13:48,480
+model the model output there are just
+
+344
+00:13:45,680 --> 00:13:50,639
+some numbers the context is what is it
+
+345
+00:13:48,480 --> 00:13:54,399
+important for the model. So we should
+
+346
+00:13:50,639 --> 00:13:58,000
+define clear several things. First we
+
+347
+00:13:54,399 --> 00:14:00,880
+should define the um the specific use
+
+348
+00:13:58,000 --> 00:14:04,000
+cases the frame within which we can
+
+349
+00:14:00,880 --> 00:14:07,199
+apply this model right because again uh
+
+350
+00:14:04,000 --> 00:14:09,440
+there are models that can predict uh
+
+351
+00:14:07,199 --> 00:14:11,440
+train models that generally speaking can
+
+352
+00:14:09,440 --> 00:14:13,279
+predict pretty good let's call again
+
+353
+00:14:11,440 --> 00:14:15,360
+everyone knows I think alpha fall right
+
+354
+00:14:13,279 --> 00:14:17,120
+alpha fall can predict pretty good how
+
+355
+00:14:15,360 --> 00:14:18,959
+molecules are folding in space and
+
+356
+00:14:17,120 --> 00:14:20,720
+they're really doing a good job there we
+
+357
+00:14:18,959 --> 00:14:22,399
+want and I will give you an extreme
+
+358
+00:14:20,720 --> 00:14:25,600
+example just on that we want regardless
+
+359
+00:14:22,399 --> 00:14:28,320
+of how put AlphaFold in predicting
+
+360
+00:14:25,600 --> 00:14:32,240
+molecules looks in space. We won't rely
+
+361
+00:14:28,320 --> 00:14:34,240
+on AlphaFold to predict a new drug
+
+362
+00:14:32,240 --> 00:14:36,639
+against some kind of cancer just because
+
+363
+00:14:34,240 --> 00:14:38,240
+it's not intended to do this. It it
+
+364
+00:14:36,639 --> 00:14:40,480
+wasn't trained to do this. It wasn't
+
+365
+00:14:38,240 --> 00:14:42,399
+validated to do this. It's it's not the
+
+366
+00:14:40,480 --> 00:14:44,959
+job of this model. So first thing is a
+
+367
+00:14:42,399 --> 00:14:47,839
+specific use case. The second thing is a
+
+368
+00:14:44,959 --> 00:14:51,600
+data created data. It's very very
+
+369
+00:14:47,839 --> 00:14:54,480
+important that how we what kind of data
+
+370
+00:14:51,600 --> 00:14:55,519
+we use to train and test the model. Um
+
+371
+00:14:54,480 --> 00:14:59,040
+right
+
+372
+00:14:55,519 --> 00:15:01,279
+>> again I I I don't think it should be a
+
+373
+00:14:59,040 --> 00:15:04,320
+guide for data scientists how exactly to
+
+374
+00:15:01,279 --> 00:15:06,959
+do this but high level data should be
+
+375
+00:15:04,320 --> 00:15:08,800
+should fit some statistical distribution
+
+376
+00:15:06,959 --> 00:15:11,440
+which it shouldn't have too much
+
+377
+00:15:08,800 --> 00:15:13,519
+outliers too many outliers
+
+378
+00:15:11,440 --> 00:15:15,680
+>> um or at least they should be again
+
+379
+00:15:13,519 --> 00:15:17,600
+distributed well when we test when we
+
+380
+00:15:15,680 --> 00:15:20,079
+validate in the model we should avoid
+
+381
+00:15:17,600 --> 00:15:21,199
+this thing called data leakage
+
+382
+00:15:20,079 --> 00:15:24,800
+>> right
+
+383
+00:15:21,199 --> 00:15:27,360
+>> so it means we should really separate
+
+384
+00:15:24,800 --> 00:15:29,279
+the data which we're using to train the
+
+385
+00:15:27,360 --> 00:15:32,079
+model and that we're using to to
+
+386
+00:15:29,279 --> 00:15:35,360
+validate the model and often as a data
+
+387
+00:15:32,079 --> 00:15:38,399
+scientists we have an urge when when we
+
+388
+00:15:35,360 --> 00:15:40,800
+have a new data and sometimes it's very
+
+389
+00:15:38,399 --> 00:15:42,720
+like exciting new data some new can
+
+390
+00:15:40,800 --> 00:15:45,360
+gives us new insights we have an urge to
+
+391
+00:15:42,720 --> 00:15:47,440
+retrain our model using this new data so
+
+392
+00:15:45,360 --> 00:15:49,759
+this is very dangerous part because if
+
+393
+00:15:47,440 --> 00:15:51,920
+we retrain this model using this new
+
+394
+00:15:49,759 --> 00:15:53,440
+data we should have another test set to
+
+395
+00:15:51,920 --> 00:15:54,639
+validate this model again because
+
+396
+00:15:53,440 --> 00:15:57,839
+otherwise
+
+397
+00:15:54,639 --> 00:16:00,880
+>> we may overfeit our model. Meaning it
+
+398
+00:15:57,839 --> 00:16:04,000
+will show very good results in our train
+
+399
+00:16:00,880 --> 00:16:07,680
+data obviously in in our validation set
+
+400
+00:16:04,000 --> 00:16:10,800
+which is not purely validation anymore
+
+401
+00:16:07,680 --> 00:16:14,560
+and therefore we cannot say how well it
+
+402
+00:16:10,800 --> 00:16:18,320
+will fit the pattern not the specific
+
+403
+00:16:14,560 --> 00:16:20,800
+noise in in in our data set. So this is
+
+404
+00:16:18,320 --> 00:16:22,480
+this is very important. Yeah, I'd say
+
+405
+00:16:20,800 --> 00:16:26,079
+these are main things.
+
+406
+00:16:22,480 --> 00:16:28,399
+>> You mentioned context and I want to kind
+
+407
+00:16:26,079 --> 00:16:30,320
+of stay on that topic for for a minute
+
+408
+00:16:28,399 --> 00:16:33,680
+here because I think that's one of the
+
+409
+00:16:30,320 --> 00:16:36,240
+things that I'm starting to find out
+
+410
+00:16:33,680 --> 00:16:39,680
+that people really are not as diligent
+
+411
+00:16:36,240 --> 00:16:42,560
+as they should be in in how they're
+
+412
+00:16:39,680 --> 00:16:45,279
+using AI. And I think the risk that is
+
+413
+00:16:42,560 --> 00:16:47,040
+now emerging because we we've got two
+
+414
+00:16:45,279 --> 00:16:49,600
+companies that are now entering the
+
+415
+00:16:47,040 --> 00:16:52,320
+health care space from a consumer access
+
+416
+00:16:49,600 --> 00:16:53,680
+standpoint and I mean I wonder if maybe
+
+417
+00:16:52,320 --> 00:16:55,600
+you can talk a little bit about how
+
+418
+00:16:53,680 --> 00:16:57,600
+important context is even in a larger
+
+419
+00:16:55,600 --> 00:17:00,000
+sense because we're talking about people
+
+420
+00:16:57,600 --> 00:17:01,839
+just interacting with chat GPT health or
+
+421
+00:17:00,000 --> 00:17:03,839
+with cloud health. These are AI
+
+422
+00:17:01,839 --> 00:17:06,000
+companies the data that they're working
+
+423
+00:17:03,839 --> 00:17:07,520
+with it's because it's sitting in
+
+424
+00:17:06,000 --> 00:17:09,439
+platforms that are considered to be
+
+425
+00:17:07,520 --> 00:17:11,839
+administrative and not clinical. It
+
+426
+00:17:09,439 --> 00:17:14,559
+changes the dynamics in terms of who's
+
+427
+00:17:11,839 --> 00:17:16,400
+responsible for decision-m and if it's
+
+428
+00:17:14,559 --> 00:17:18,400
+not involving a clinician and it's
+
+429
+00:17:16,400 --> 00:17:20,640
+sitting on a platform like that in most
+
+430
+00:17:18,400 --> 00:17:24,000
+most situations we're not talking about
+
+431
+00:17:20,640 --> 00:17:26,000
+liability even being a possibility. So
+
+432
+00:17:24,000 --> 00:17:27,280
+missing context I think is going to be
+
+433
+00:17:26,000 --> 00:17:28,720
+something that we have to really pay
+
+434
+00:17:27,280 --> 00:17:30,880
+attention to. Talk a little bit about
+
+435
+00:17:28,720 --> 00:17:32,559
+that from your perspective and why it's
+
+436
+00:17:30,880 --> 00:17:35,600
+such an important part of what you're
+
+437
+00:17:32,559 --> 00:17:38,000
+doing. So yes um the first thing I want
+
+438
+00:17:35,600 --> 00:17:41,520
+to say here I in my opinion it's really
+
+439
+00:17:38,000 --> 00:17:45,120
+important that people
+
+440
+00:17:41,520 --> 00:17:48,080
+um uh trying to know more and figure out
+
+441
+00:17:45,120 --> 00:17:50,160
+more about their own life especially
+
+442
+00:17:48,080 --> 00:17:52,880
+about their own health. So when you when
+
+443
+00:17:50,160 --> 00:17:55,679
+you have a appointment to doctor or when
+
+444
+00:17:52,880 --> 00:17:57,840
+it's when it's heard and you like you do
+
+445
+00:17:55,679 --> 00:18:00,720
+your own research before going and
+
+446
+00:17:57,840 --> 00:18:04,240
+blindly trust someone even if this is a
+
+447
+00:18:00,720 --> 00:18:07,520
+trained specialist unfortunately we know
+
+448
+00:18:04,240 --> 00:18:11,280
+that not everyone
+
+449
+00:18:07,520 --> 00:18:13,600
+even in in this area um the same right
+
+450
+00:18:11,280 --> 00:18:16,559
+there are true specialists and and not
+
+451
+00:18:13,600 --> 00:18:18,799
+so good. So it's always good to have
+
+452
+00:18:16,559 --> 00:18:21,440
+your own opinion and your and enable
+
+453
+00:18:18,799 --> 00:18:23,840
+your critical thinking uh supported by
+
+454
+00:18:21,440 --> 00:18:26,480
+some knowledge. That being said, of
+
+455
+00:18:23,840 --> 00:18:28,480
+course everyone
+
+456
+00:18:26,480 --> 00:18:31,280
+I'm sure especially everyone who is
+
+457
+00:18:28,480 --> 00:18:33,280
+listening your podcast knows that Chip,
+
+458
+00:18:31,280 --> 00:18:35,600
+Jimnina, I don't know Claude, all of
+
+459
+00:18:33,280 --> 00:18:37,520
+them they they hallucinate and they do
+
+460
+00:18:35,600 --> 00:18:39,919
+this on a daily basis pretty often,
+
+461
+00:18:37,520 --> 00:18:43,039
+right? Yes. So again my rule of thumb
+
+462
+00:18:39,919 --> 00:18:46,240
+here is always always try to find the
+
+463
+00:18:43,039 --> 00:18:49,520
+ground truth the origin reference. So
+
+464
+00:18:46,240 --> 00:18:50,880
+and again like they not hallucinating
+
+465
+00:18:49,520 --> 00:18:53,120
+because they are stupid or because they
+
+466
+00:18:50,880 --> 00:18:54,640
+don't know actually no because they
+
+467
+00:18:53,120 --> 00:18:55,919
+don't know. They they hallucinating
+
+468
+00:18:54,640 --> 00:18:58,960
+because they don't know but if you give
+
+469
+00:18:55,919 --> 00:19:01,200
+them enough context it's a very powerful
+
+470
+00:18:58,960 --> 00:19:04,000
+analytics tool. So they can extract
+
+471
+00:19:01,200 --> 00:19:06,320
+knowledge from again they can gather and
+
+472
+00:19:04,000 --> 00:19:09,280
+extract knowledge from different sources
+
+473
+00:19:06,320 --> 00:19:12,400
+different type of references. So what I
+
+474
+00:19:09,280 --> 00:19:14,799
+suggest the golden bus I think is to
+
+475
+00:19:12,400 --> 00:19:16,960
+whenever you want to the first thing
+
+476
+00:19:14,799 --> 00:19:20,080
+whenever you want to do research do your
+
+477
+00:19:16,960 --> 00:19:23,360
+research but when you're using any LLM
+
+478
+00:19:20,080 --> 00:19:25,679
+request it to work with a real source
+
+479
+00:19:23,360 --> 00:19:28,160
+and of course again the the golden
+
+480
+00:19:25,679 --> 00:19:30,960
+standard scientific article. So if you
+
+481
+00:19:28,160 --> 00:19:34,720
+want to research something about any
+
+482
+00:19:30,960 --> 00:19:38,480
+type of symptoms or or disease just ask
+
+483
+00:19:34,720 --> 00:19:40,323
+it to give you a bunch of references and
+
+484
+00:19:38,480 --> 00:19:42,000
+give you a suggestions based of it.
+
+485
+00:19:40,323 --> 00:19:44,080
+[snorts] And the second of course all
+
+486
+00:19:42,000 --> 00:19:45,679
+right after this go to the doctor have
+
+487
+00:19:44,080 --> 00:19:47,280
+your knowledge gather your knowledge and
+
+488
+00:19:45,679 --> 00:19:49,600
+go to the doctor. You're not trained
+
+489
+00:19:47,280 --> 00:19:52,080
+enough neither me nor you. No one
+
+490
+00:19:49,600 --> 00:19:54,400
+trained trained enough unless you're a
+
+491
+00:19:52,080 --> 00:19:55,919
+specialist. So do your research and go
+
+492
+00:19:54,400 --> 00:19:58,720
+to the doctor.
+
+493
+00:19:55,919 --> 00:20:00,640
+That is perfectly sad and I think people
+
+494
+00:19:58,720 --> 00:20:02,160
+really need to hear that message. We we
+
+495
+00:20:00,640 --> 00:20:04,880
+probably should put that on repeat and
+
+496
+00:20:02,160 --> 00:20:07,679
+turn the volume up honestly because the
+
+497
+00:20:04,880 --> 00:20:10,400
+the context issue was from my standpoint
+
+498
+00:20:07,679 --> 00:20:13,440
+just because of my own experiences. I
+
+499
+00:20:10,400 --> 00:20:15,120
+can't remember things that happened 25
+
+500
+00:20:13,440 --> 00:20:17,840
+years ago that actually might be
+
+501
+00:20:15,120 --> 00:20:20,640
+entirely relevant for the condition that
+
+502
+00:20:17,840 --> 00:20:22,320
+I'm that I'm dealing with right now. And
+
+503
+00:20:20,640 --> 00:20:23,360
+if I can't remember it, the model's
+
+504
+00:20:22,320 --> 00:20:25,200
+certainly not going to have that
+
+505
+00:20:23,360 --> 00:20:26,640
+information available. So that the
+
+506
+00:20:25,200 --> 00:20:29,039
+context has got to be something that
+
+507
+00:20:26,640 --> 00:20:32,799
+people think about and it's only like
+
+508
+00:20:29,039 --> 00:20:36,000
+you said it's not hallucinating because
+
+509
+00:20:32,799 --> 00:20:38,720
+of anything except for really the lack
+
+510
+00:20:36,000 --> 00:20:40,480
+of access to information. There's a lot
+
+511
+00:20:38,720 --> 00:20:42,080
+of things that go into that and I think
+
+512
+00:20:40,480 --> 00:20:45,440
+the things that I get concerned about
+
+513
+00:20:42,080 --> 00:20:48,480
+are symptoms that for all by themselves
+
+514
+00:20:45,440 --> 00:20:50,480
+they might be low risk and there'd be no
+
+515
+00:20:48,480 --> 00:20:53,679
+red flags set off but with proper
+
+516
+00:20:50,480 --> 00:20:57,600
+context if it happens to
+
+517
+00:20:53,679 --> 00:20:59,520
+be relevant that 2 years ago I I had a
+
+518
+00:20:57,600 --> 00:21:02,080
+really difficult time healing my broken
+
+519
+00:20:59,520 --> 00:21:05,039
+leg cuz I I had a wound. that kind of
+
+520
+00:21:02,080 --> 00:21:06,799
+information in current context might
+
+521
+00:21:05,039 --> 00:21:08,400
+mean something completely different than
+
+522
+00:21:06,799 --> 00:21:10,240
+just the symptoms that you're trying to
+
+523
+00:21:08,400 --> 00:21:12,159
+figure out what what to do about now.
+
+524
+00:21:10,240 --> 00:21:13,360
+That's just in my own thinking. I mean,
+
+525
+00:21:12,159 --> 00:21:16,159
+I know that they're they're working
+
+526
+00:21:13,360 --> 00:21:19,280
+through deploying the doctor's version
+
+527
+00:21:16,159 --> 00:21:21,120
+and the you know a a patient's version,
+
+528
+00:21:19,280 --> 00:21:23,280
+but again still the context is
+
+529
+00:21:21,120 --> 00:21:24,880
+important. I am on medication for my
+
+530
+00:21:23,280 --> 00:21:26,559
+blood pressure. The model may not know
+
+531
+00:21:24,880 --> 00:21:28,159
+that. the model might just say I've got
+
+532
+00:21:26,559 --> 00:21:29,600
+high blood pressure and it alerts and I
+
+533
+00:21:28,159 --> 00:21:31,840
+actually go to the physician and I'm
+
+534
+00:21:29,600 --> 00:21:34,240
+taking up time uh that I don't need to
+
+535
+00:21:31,840 --> 00:21:35,679
+be taking which means the physician may
+
+536
+00:21:34,240 --> 00:21:37,679
+not be treating someone that really
+
+537
+00:21:35,679 --> 00:21:39,200
+needs treatment because I'm in there and
+
+538
+00:21:37,679 --> 00:21:40,559
+I don't need to be. So I mean there's
+
+539
+00:21:39,200 --> 00:21:42,159
+like a lot of different sides to this
+
+540
+00:21:40,559 --> 00:21:45,520
+but in the context
+
+541
+00:21:42,159 --> 00:21:48,720
+>> it's really really critical. Let let me
+
+542
+00:21:45,520 --> 00:21:50,480
+uh add my five cents here. Actually very
+
+543
+00:21:48,720 --> 00:21:54,799
+interesting
+
+544
+00:21:50,480 --> 00:21:58,960
+trend I am seeing now in the industry is
+
+545
+00:21:54,799 --> 00:22:03,200
+again because uh everyone who has
+
+546
+00:21:58,960 --> 00:22:07,440
+internet and uh $20 in the pocket uh
+
+547
+00:22:03,200 --> 00:22:10,320
+have access to like great analytics
+
+548
+00:22:07,440 --> 00:22:12,960
+slashn knowledge base analytical
+
+549
+00:22:10,320 --> 00:22:16,159
+knowledge base. It's a good it's it's a
+
+550
+00:22:12,960 --> 00:22:16,960
+big trend for patients to own own their
+
+551
+00:22:16,159 --> 00:22:17,440
+own data
+
+552
+00:22:16,960 --> 00:22:19,120
+>> right
+
+553
+00:22:17,440 --> 00:22:21,280
+>> meaning when you go to the doctor right
+
+554
+00:22:19,120 --> 00:22:24,159
+you went there they gave you they made
+
+555
+00:22:21,280 --> 00:22:25,760
+it their may rust some tests and then
+
+556
+00:22:24,159 --> 00:22:28,240
+they say you some tell you something and
+
+557
+00:22:25,760 --> 00:22:30,480
+give one paper where it says like what
+
+558
+00:22:28,240 --> 00:22:33,840
+they did and and and what the doctor did
+
+559
+00:22:30,480 --> 00:22:36,000
+and you a very organized person if one
+
+560
+00:22:33,840 --> 00:22:38,480
+year later you have this paper somewhere
+
+561
+00:22:36,000 --> 00:22:41,919
+it's rare case actually but but the
+
+562
+00:22:38,480 --> 00:22:44,000
+clinician the clinic the the uh the
+
+563
+00:22:41,919 --> 00:22:45,919
+hospital they always have your data.
+
+564
+00:22:44,000 --> 00:22:48,799
+They gather it, they store it because
+
+565
+00:22:45,919 --> 00:22:52,240
+they have to. And for you to own this
+
+566
+00:22:48,799 --> 00:22:56,000
+data to be able to again use the whole
+
+567
+00:22:52,240 --> 00:22:58,559
+context for maybe LLM tool or another
+
+568
+00:22:56,000 --> 00:23:00,480
+specialist to look at it. This is a a
+
+569
+00:22:58,559 --> 00:23:02,480
+big trend I'm seeing now in in the
+
+570
+00:23:00,480 --> 00:23:05,919
+software development in this area and
+
+571
+00:23:02,480 --> 00:23:07,200
+and in healthcare in general. Yeah, this
+
+572
+00:23:05,919 --> 00:23:09,280
+it's going to be an interesting year
+
+573
+00:23:07,200 --> 00:23:12,159
+because we started right out of the gate
+
+574
+00:23:09,280 --> 00:23:13,760
+and we're not even halfway through well,
+
+575
+00:23:12,159 --> 00:23:16,159
+I guess maybe we are about just halfway
+
+576
+00:23:13,760 --> 00:23:17,840
+through today, halfway through January.
+
+577
+00:23:16,159 --> 00:23:19,520
+Um, yeah, it's it's going to be
+
+578
+00:23:17,840 --> 00:23:21,120
+interesting to see where where things go
+
+579
+00:23:19,520 --> 00:23:24,320
+from here. I want to kind of get into
+
+580
+00:23:21,120 --> 00:23:26,799
+some things around data integrity and
+
+581
+00:23:24,320 --> 00:23:28,400
+data quality because that's that's one
+
+582
+00:23:26,799 --> 00:23:29,760
+of the other issues that we're we're
+
+583
+00:23:28,400 --> 00:23:32,159
+dealing with. And you know, you talk
+
+584
+00:23:29,760 --> 00:23:35,120
+about the absence of data. From my
+
+585
+00:23:32,159 --> 00:23:37,039
+standpoint, that's the scariest kind of
+
+586
+00:23:35,120 --> 00:23:38,799
+bias that we could be dealing with. Talk
+
+587
+00:23:37,039 --> 00:23:40,640
+a little bit about, you know, how you
+
+588
+00:23:38,799 --> 00:23:42,799
+how do you manage when you're trying to
+
+589
+00:23:40,640 --> 00:23:45,280
+determine where to focus? How difficult
+
+590
+00:23:42,799 --> 00:23:47,760
+is it to validate whether you actually
+
+591
+00:23:45,280 --> 00:23:49,520
+have all the right inputs, the right
+
+592
+00:23:47,760 --> 00:23:51,360
+data sources, and you you've got
+
+593
+00:23:49,520 --> 00:23:52,960
+sufficient data integrity and quality
+
+594
+00:23:51,360 --> 00:23:53,919
+that you can actually trust it and start
+
+595
+00:23:52,960 --> 00:23:56,240
+to move forward.
+
+596
+00:23:53,919 --> 00:23:59,039
+>> Yeah, it's a great question. I saying
+
+597
+00:23:56,240 --> 00:24:01,919
+this is uh it's actually the biggest
+
+598
+00:23:59,039 --> 00:24:05,039
+bottleneck in in AI in drug design
+
+599
+00:24:01,919 --> 00:24:08,559
+development in healthcare and AI and in
+
+600
+00:24:05,039 --> 00:24:12,480
+general in all data science tasks. So
+
+601
+00:24:08,559 --> 00:24:14,720
+it's um really now the data is is like a
+
+602
+00:24:12,480 --> 00:24:17,200
+gold everyone is running around trying
+
+603
+00:24:14,720 --> 00:24:18,880
+to get more data, generate more data and
+
+604
+00:24:17,200 --> 00:24:21,760
+this is another problem synthetic data
+
+605
+00:24:18,880 --> 00:24:24,400
+but again it's a it's a like big topic.
+
+606
+00:24:21,760 --> 00:24:27,600
+Yes, you you need to
+
+607
+00:24:24,400 --> 00:24:30,159
+very carefully
+
+608
+00:24:27,600 --> 00:24:33,120
+get select get and select sources of
+
+609
+00:24:30,159 --> 00:24:36,159
+your information. Curate the data. Uh
+
+610
+00:24:33,120 --> 00:24:40,400
+make sure that it the the origin the
+
+611
+00:24:36,159 --> 00:24:43,679
+sources of this data are trustworthy
+
+612
+00:24:40,400 --> 00:24:48,400
+and then you need to maintain integrity
+
+613
+00:24:43,679 --> 00:24:50,320
+indeed. And uh it sounds easy but
+
+614
+00:24:48,400 --> 00:24:51,840
+actually it's not
+
+615
+00:24:50,320 --> 00:24:54,480
+>> because
+
+616
+00:24:51,840 --> 00:24:57,039
+because there are a lot of errors happen
+
+617
+00:24:54,480 --> 00:24:59,120
+along the way from from where you find
+
+618
+00:24:57,039 --> 00:25:00,480
+the data to when it comes into the model
+
+619
+00:24:59,120 --> 00:25:02,640
+to train it
+
+620
+00:25:00,480 --> 00:25:05,120
+>> and [snorts] all the things usually
+
+621
+00:25:02,640 --> 00:25:07,679
+related with humans. So human error the
+
+622
+00:25:05,120 --> 00:25:10,320
+good thing that the again in theory the
+
+623
+00:25:07,679 --> 00:25:12,080
+path to the integrity is pretty
+
+624
+00:25:10,320 --> 00:25:15,919
+straightforward. You need you just need
+
+625
+00:25:12,080 --> 00:25:17,840
+your system fully traceable, audible and
+
+626
+00:25:15,919 --> 00:25:21,039
+you you have to log everything. Again,
+
+627
+00:25:17,840 --> 00:25:22,799
+it sounds easy. It's not in reality, but
+
+628
+00:25:21,039 --> 00:25:24,799
+this is like this is how you do. This is
+
+629
+00:25:22,799 --> 00:25:28,480
+how you ensure integrity of your data.
+
+630
+00:25:24,799 --> 00:25:31,360
+Make sure in every step along the way of
+
+631
+00:25:28,480 --> 00:25:35,360
+your data pipeline, you can always look
+
+632
+00:25:31,360 --> 00:25:37,600
+backwards and and every step you you you
+
+633
+00:25:35,360 --> 00:25:39,760
+know what happened with your data, how
+
+634
+00:25:37,600 --> 00:25:42,159
+it was transformed, what what happened,
+
+635
+00:25:39,760 --> 00:25:45,520
+how it was like brushed and selected and
+
+636
+00:25:42,159 --> 00:25:47,200
+created. So this this is the way to
+
+637
+00:25:45,520 --> 00:25:49,039
+again preserve the integrity,
+
+638
+00:25:47,200 --> 00:25:50,640
+>> right? Yeah. It's such an important
+
+639
+00:25:49,039 --> 00:25:52,960
+factor and I I think that just thinking
+
+640
+00:25:50,640 --> 00:25:54,960
+about context again like when when it
+
+641
+00:25:52,960 --> 00:25:57,120
+comes to you know clinical care facts
+
+642
+00:25:54,960 --> 00:25:59,600
+change and when you're you've trained
+
+643
+00:25:57,120 --> 00:26:01,120
+your models to look at things a certain
+
+644
+00:25:59,600 --> 00:26:03,360
+way you've got all kinds of historical
+
+645
+00:26:01,120 --> 00:26:06,240
+data there it may be actually just fine
+
+646
+00:26:03,360 --> 00:26:08,000
+but the reality is things do change and
+
+647
+00:26:06,240 --> 00:26:10,320
+if the model is not aware of what's
+
+648
+00:26:08,000 --> 00:26:11,919
+changed then it's going to give you
+
+649
+00:26:10,320 --> 00:26:13,440
+outputs that are going to take you in a
+
+650
+00:26:11,919 --> 00:26:15,120
+direction you don't want to go I think
+
+651
+00:26:13,440 --> 00:26:16,799
+the real important thing for us to
+
+652
+00:26:15,120 --> 00:26:18,720
+remember is when you're talking about
+
+653
+00:26:16,799 --> 00:26:21,120
+healthcare It's called the practice of
+
+654
+00:26:18,720 --> 00:26:23,200
+medicine for a very specific reason.
+
+655
+00:26:21,120 --> 00:26:24,960
+It's an evolving science. It's not
+
+656
+00:26:23,200 --> 00:26:27,840
+static. And unfortunately, a lot of the
+
+657
+00:26:24,960 --> 00:26:29,520
+regulatory agencies are they treat it
+
+658
+00:26:27,840 --> 00:26:31,279
+like it is static. And that's how things
+
+659
+00:26:29,520 --> 00:26:32,400
+are measured. Whatever the composite is
+
+660
+00:26:31,279 --> 00:26:33,840
+that you're measured against to
+
+661
+00:26:32,400 --> 00:26:35,600
+determine whether your quality is good
+
+662
+00:26:33,840 --> 00:26:38,000
+or not. You're either incentivized or
+
+663
+00:26:35,600 --> 00:26:40,080
+penalized. It's based on a composite
+
+664
+00:26:38,000 --> 00:26:42,159
+that no human being will ever look like.
+
+665
+00:26:40,080 --> 00:26:43,440
+And it's just a really important thing,
+
+666
+00:26:42,159 --> 00:26:46,559
+especially when we're talking about
+
+667
+00:26:43,440 --> 00:26:48,640
+using uh LLM as a consumer. Remember,
+
+668
+00:26:46,559 --> 00:26:51,039
+you are unique. The model doesn't know
+
+669
+00:26:48,640 --> 00:26:51,919
+who you are and it doesn't care and it's
+
+670
+00:26:51,039 --> 00:26:53,840
+certainly not going to have any
+
+671
+00:26:51,919 --> 00:26:55,520
+compassion for you. So, you know, you
+
+672
+00:26:53,840 --> 00:26:58,400
+got to just be aware of what it really
+
+673
+00:26:55,520 --> 00:27:00,400
+is. And the incomplete risk, you know,
+
+674
+00:26:58,400 --> 00:27:02,159
+from in terms of having not enough data
+
+675
+00:27:00,400 --> 00:27:04,000
+or not the right data, it's the same
+
+676
+00:27:02,159 --> 00:27:06,080
+issue that a clinician has now when they
+
+677
+00:27:04,000 --> 00:27:08,400
+look at us in the exam room. They're
+
+678
+00:27:06,080 --> 00:27:10,400
+wondering what don't they know and is it
+
+679
+00:27:08,400 --> 00:27:12,480
+important? AI is not going to solve that
+
+680
+00:27:10,400 --> 00:27:14,240
+problem. It may help to accelerate the
+
+681
+00:27:12,480 --> 00:27:17,760
+processing of information and eliminate
+
+682
+00:27:14,240 --> 00:27:19,919
+a few more risks or even diagnostics,
+
+683
+00:27:17,760 --> 00:27:22,720
+but it's still not going to be able to
+
+684
+00:27:19,919 --> 00:27:25,279
+give you the the precision that everyone
+
+685
+00:27:22,720 --> 00:27:27,600
+wants. Yeah. I think that what I would
+
+686
+00:27:25,279 --> 00:27:29,360
+also say to what you mentioned earlier
+
+687
+00:27:27,600 --> 00:27:31,600
+in terms of how people should be
+
+688
+00:27:29,360 --> 00:27:33,120
+thinking about it, you also need to
+
+689
+00:27:31,600 --> 00:27:36,640
+remember when when you're putting your
+
+690
+00:27:33,120 --> 00:27:38,799
+PHI into a tool like that, you're also
+
+691
+00:27:36,640 --> 00:27:40,480
+eliminating your own protections by
+
+692
+00:27:38,799 --> 00:27:42,640
+doing so. people really need to be very
+
+693
+00:27:40,480 --> 00:27:44,480
+very careful how they think about using
+
+694
+00:27:42,640 --> 00:27:46,400
+these things and just remember to your
+
+695
+00:27:44,480 --> 00:27:48,240
+point do your research but go see your
+
+696
+00:27:46,400 --> 00:27:48,880
+doctor. It's just it's really important
+
+697
+00:27:48,240 --> 00:27:50,320
+to do that.
+
+698
+00:27:48,880 --> 00:27:52,799
+>> So for sure
+
+699
+00:27:50,320 --> 00:27:54,480
+>> let let's talk about what I kind of
+
+700
+00:27:52,799 --> 00:27:55,919
+touched on there and it's maybe the
+
+701
+00:27:54,480 --> 00:27:56,640
+uncomfortable part of what we're dealing
+
+702
+00:27:55,919 --> 00:27:58,240
+with.
+
+703
+00:27:56,640 --> 00:28:01,520
+>> What are the weaknesses that are most
+
+704
+00:27:58,240 --> 00:28:03,440
+often surfacing during audits or
+
+705
+00:28:01,520 --> 00:28:05,120
+regulatory reviews or legal scrutiny?
+
+706
+00:28:03,440 --> 00:28:06,640
+because I mean obviously you guys have
+
+707
+00:28:05,120 --> 00:28:08,000
+to think a lot about that when you're
+
+708
+00:28:06,640 --> 00:28:10,240
+dealing with research and
+
+709
+00:28:08,000 --> 00:28:11,600
+experimentation to actually get to some
+
+710
+00:28:10,240 --> 00:28:14,720
+of the exciting breakthroughs that you
+
+711
+00:28:11,600 --> 00:28:17,840
+get to. So again uh I talking about
+
+712
+00:28:14,720 --> 00:28:20,559
+breakthrough spec um uh like problems
+
+713
+00:28:17,840 --> 00:28:23,760
+specifically for drugs designed with
+
+714
+00:28:20,559 --> 00:28:25,120
+help of AI uh or
+
+715
+00:28:23,760 --> 00:28:27,600
+>> in general for
+
+716
+00:28:25,120 --> 00:28:29,919
+>> I think it's across the board because I
+
+717
+00:28:27,600 --> 00:28:31,600
+mean in both in both perspectives you
+
+718
+00:28:29,919 --> 00:28:33,679
+know it's still it's still an issue
+
+719
+00:28:31,600 --> 00:28:36,640
+that's got to be you know thought about
+
+720
+00:28:33,679 --> 00:28:38,559
+and weighed as just the the pace and I
+
+721
+00:28:36,640 --> 00:28:41,520
+don't want to overuse the term blackbox
+
+722
+00:28:38,559 --> 00:28:42,960
+but to regulators you know a lot of this
+
+723
+00:28:41,520 --> 00:28:44,640
+stuff is going to seem like a black box
+
+724
+00:28:42,960 --> 00:28:47,039
+cuz they already have a language barrier
+
+725
+00:28:44,640 --> 00:28:48,720
+and that they don't understand the
+
+726
+00:28:47,039 --> 00:28:50,240
+scientific language that's used half the
+
+727
+00:28:48,720 --> 00:28:50,640
+time or probably more than half the
+
+728
+00:28:50,240 --> 00:28:53,279
+time.
+
+729
+00:28:50,640 --> 00:28:57,520
+>> Yeah. Again, for regulator like okay
+
+730
+00:28:53,279 --> 00:29:00,480
+there are two kind of if I talk about if
+
+731
+00:28:57,520 --> 00:29:04,159
+you're talking about AI in let's say
+
+732
+00:29:00,480 --> 00:29:07,120
+drug development and drug design there
+
+733
+00:29:04,159 --> 00:29:09,360
+are two we can divide our AI tools or
+
+734
+00:29:07,120 --> 00:29:12,080
+approaches by two types. First type is
+
+735
+00:29:09,360 --> 00:29:15,840
+when we and this is where we where we
+
+736
+00:29:12,080 --> 00:29:17,760
+working mostly uh as pivotal and we were
+
+737
+00:29:15,840 --> 00:29:20,159
+talking during this podcast mostly
+
+738
+00:29:17,760 --> 00:29:23,600
+generating new leads so new new
+
+739
+00:29:20,159 --> 00:29:26,720
+candidates for drugs right so this and
+
+740
+00:29:23,600 --> 00:29:30,559
+for usually for the regulators for the
+
+741
+00:29:26,720 --> 00:29:33,919
+authorities for FDA EMA they don't care
+
+742
+00:29:30,559 --> 00:29:37,200
+much how we came up with this drug with
+
+743
+00:29:33,919 --> 00:29:39,919
+this uh new molecule because anyway we
+
+744
+00:29:37,200 --> 00:29:43,120
+going to undergo all the same tests that
+
+745
+00:29:39,919 --> 00:29:45,360
+other denovo molecules going through
+
+746
+00:29:43,120 --> 00:29:49,200
+regardless of the way we came up with
+
+747
+00:29:45,360 --> 00:29:52,080
+this molecules. Right? So again it's um
+
+748
+00:29:49,200 --> 00:29:55,360
+maybe someday down the road we will be
+
+749
+00:29:52,080 --> 00:29:57,520
+able to like convincing be more
+
+750
+00:29:55,360 --> 00:29:59,200
+convincing with the reasoning how we
+
+751
+00:29:57,520 --> 00:30:01,760
+came up with this. But again at this
+
+752
+00:29:59,200 --> 00:30:03,679
+point it doesn't really matter how do
+
+753
+00:30:01,760 --> 00:30:05,200
+you how did you came up with this
+
+754
+00:30:03,679 --> 00:30:07,279
+molecule that you want to test. It's
+
+755
+00:30:05,200 --> 00:30:10,240
+just going through the standard bus. Now
+
+756
+00:30:07,279 --> 00:30:15,520
+another type of machine learning tools
+
+757
+00:30:10,240 --> 00:30:17,760
+or AI tools uh that comes into the
+
+758
+00:30:15,520 --> 00:30:20,399
+pharmaceutical area these are more
+
+759
+00:30:17,760 --> 00:30:22,640
+decision makers and they not really in
+
+760
+00:30:20,399 --> 00:30:23,120
+the designing your drugs
+
+761
+00:30:22,640 --> 00:30:25,679
+>> right
+
+762
+00:30:23,120 --> 00:30:28,480
+>> uh they more in the analyzing
+
+763
+00:30:25,679 --> 00:30:33,200
+information for example
+
+764
+00:30:28,480 --> 00:30:37,039
+uh the biggest uh example of it it's uh
+
+765
+00:30:33,200 --> 00:30:42,000
+proved by EMA let me look it up I don't
+
+766
+00:30:37,039 --> 00:30:44,799
+uh remember the name exactly uh
+
+767
+00:30:42,000 --> 00:30:48,159
+of this
+
+768
+00:30:44,799 --> 00:30:50,159
+uh this company this tool. Give me one
+
+769
+00:30:48,159 --> 00:30:54,880
+second. I will look them up.
+
+770
+00:30:50,159 --> 00:30:58,320
+>> Yeah. So, aim uh uh NASH this is uh
+
+771
+00:30:54,880 --> 00:31:01,840
+essentially as a uh AI assistant for
+
+772
+00:30:58,320 --> 00:31:06,240
+histologology scoring in mesh trails. So
+
+773
+00:31:01,840 --> 00:31:08,640
+it's a AMI approved tool that help makes
+
+774
+00:31:06,240 --> 00:31:10,640
+a decision and this is a completely
+
+775
+00:31:08,640 --> 00:31:12,960
+different thing right. So this is
+
+776
+00:31:10,640 --> 00:31:15,279
+essentially became a part of validation
+
+777
+00:31:12,960 --> 00:31:18,320
+chain and again we don't have because
+
+778
+00:31:15,279 --> 00:31:20,159
+people don't trust AI and for good it's
+
+779
+00:31:18,320 --> 00:31:21,679
+good they don't trust EA uh
+
+780
+00:31:20,159 --> 00:31:24,799
+>> right
+
+781
+00:31:21,679 --> 00:31:28,080
+>> this we don't have a lot of so I think I
+
+782
+00:31:24,799 --> 00:31:31,760
+uh this is the only one of its own kind
+
+783
+00:31:28,080 --> 00:31:35,279
+that essentially allowed into the uh as
+
+784
+00:31:31,760 --> 00:31:38,559
+a decision maker without human overview
+
+785
+00:31:35,279 --> 00:31:41,519
+too much. So we just just not there yet.
+
+786
+00:31:38,559 --> 00:31:43,760
+>> Right. As we're kind of getting to
+
+787
+00:31:41,519 --> 00:31:46,640
+towards the end here, want to maybe take
+
+788
+00:31:43,760 --> 00:31:49,039
+a take a look out in into the future a
+
+789
+00:31:46,640 --> 00:31:51,440
+little bit. Uh first, we have talked
+
+790
+00:31:49,039 --> 00:31:52,799
+about hallucinations, but what would you
+
+791
+00:31:51,440 --> 00:31:54,799
+tell people that they should be thinking
+
+792
+00:31:52,799 --> 00:31:56,960
+about in in terms of how can you prevent
+
+793
+00:31:54,799 --> 00:31:58,880
+them in in the in in the work that
+
+794
+00:31:56,960 --> 00:32:00,000
+you're in the pharmaceutical industry in
+
+795
+00:31:58,880 --> 00:32:01,039
+particular? Because I'm sure there's a
+
+796
+00:32:00,000 --> 00:32:03,120
+lot of folks out there that are
+
+797
+00:32:01,039 --> 00:32:05,440
+wrestling with how to use it, how not to
+
+798
+00:32:03,120 --> 00:32:06,960
+use it. you know the hallucination piece
+
+799
+00:32:05,440 --> 00:32:08,399
+of it I think is is something be very
+
+800
+00:32:06,960 --> 00:32:09,519
+interesting to understand where you
+
+801
+00:32:08,399 --> 00:32:11,600
+think that needs to go.
+
+802
+00:32:09,519 --> 00:32:14,000
+>> Um so again it really depends on what
+
+803
+00:32:11,600 --> 00:32:17,200
+you want to do with this. Uh in general
+
+804
+00:32:14,000 --> 00:32:19,120
+again the rule of thumb if you want LM
+
+805
+00:32:17,200 --> 00:32:21,360
+to hallucinate less give it more
+
+806
+00:32:19,120 --> 00:32:24,559
+context. The more context the more data
+
+807
+00:32:21,360 --> 00:32:27,039
+you will fit uh LM the less it will go
+
+808
+00:32:24,559 --> 00:32:32,399
+hallucinated. essentially think about it
+
+809
+00:32:27,039 --> 00:32:37,120
+think uh about LM as a very powerful uh
+
+810
+00:32:32,399 --> 00:32:39,679
+search analytics tool. So just don't ask
+
+811
+00:32:37,120 --> 00:32:42,480
+it to invent something. Ask it to
+
+812
+00:32:39,679 --> 00:32:43,760
+analyze and work with the data and
+
+813
+00:32:42,480 --> 00:32:45,519
+context you gave it.
+
+814
+00:32:43,760 --> 00:32:47,679
+>> Beautifully said. I don't know that that
+
+815
+00:32:45,519 --> 00:32:50,320
+can be overstated. That that's amazing.
+
+816
+00:32:47,679 --> 00:32:52,080
+As you're looking ahead, do you think uh
+
+817
+00:32:50,320 --> 00:32:53,760
+verification is going to be really
+
+818
+00:32:52,080 --> 00:32:56,000
+become a real competitive advantage
+
+819
+00:32:53,760 --> 00:32:58,640
+rather than a constraint? Yes, I seen
+
+820
+00:32:56,000 --> 00:33:01,519
+now and it's not like again it's in a
+
+821
+00:32:58,640 --> 00:33:04,720
+different stage of drug design. The
+
+822
+00:33:01,519 --> 00:33:07,760
+chain is very long from idea to actual
+
+823
+00:33:04,720 --> 00:33:11,600
+drug in the pharmacy. The the the chain
+
+824
+00:33:07,760 --> 00:33:13,679
+is tremendous. So and many steps in this
+
+825
+00:33:11,600 --> 00:33:16,720
+chain they involves a lot of
+
+826
+00:33:13,679 --> 00:33:19,200
+documentation about a a lot of paper pap
+
+827
+00:33:16,720 --> 00:33:21,679
+papers filled and this is where I take
+
+828
+00:33:19,200 --> 00:33:24,080
+over now taking over now because as we
+
+829
+00:33:21,679 --> 00:33:27,519
+all know works with documentations
+
+830
+00:33:24,080 --> 00:33:30,559
+filling papers like based on your input
+
+831
+00:33:27,519 --> 00:33:33,760
+fill some standardized templates papers
+
+832
+00:33:30,559 --> 00:33:35,919
+from authorities this is m is driving it
+
+833
+00:33:33,760 --> 00:33:38,640
+right it it doing it great and there are
+
+834
+00:33:35,919 --> 00:33:40,640
+all sorts of kind of tools emerging now
+
+835
+00:33:38,640 --> 00:33:42,399
+to taking over this task. And this is
+
+836
+00:33:40,640 --> 00:33:45,120
+great because again this is something
+
+837
+00:33:42,399 --> 00:33:48,480
+that we shouldn't like there weren't any
+
+838
+00:33:45,120 --> 00:33:51,440
+harm from this because they cannot spoof
+
+839
+00:33:48,480 --> 00:33:54,720
+any evidence or push something some
+
+840
+00:33:51,440 --> 00:33:57,840
+drugs that will be toxic or harmful in
+
+841
+00:33:54,720 --> 00:34:00,159
+any way. Just there is a bureaucracy
+
+842
+00:33:57,840 --> 00:34:02,559
+threshold and now we have a tool to
+
+843
+00:34:00,159 --> 00:34:05,760
+fight with this bureaucracy at least at
+
+844
+00:34:02,559 --> 00:34:08,399
+some portion of it. So this is where we
+
+845
+00:34:05,760 --> 00:34:13,200
+see our acceleration.
+
+846
+00:34:08,399 --> 00:34:16,159
+I think again it's uh seeing how fast we
+
+847
+00:34:13,200 --> 00:34:18,639
+evolving in this industry and how like
+
+848
+00:34:16,159 --> 00:34:20,480
+pivots every year in in this industry
+
+849
+00:34:18,639 --> 00:34:23,520
+and other industry. But yeah it's
+
+850
+00:34:20,480 --> 00:34:25,280
+prediction is very hard thing to do. I'm
+
+851
+00:34:23,520 --> 00:34:27,520
+not a good machine learning models to
+
+852
+00:34:25,280 --> 00:34:31,839
+get a good prediction. what what I can
+
+853
+00:34:27,520 --> 00:34:33,440
+say I think that again first uh we will
+
+854
+00:34:31,839 --> 00:34:35,040
+uh
+
+855
+00:34:33,440 --> 00:34:37,040
+try to do something with lowhanging
+
+856
+00:34:35,040 --> 00:34:40,399
+fruits which are working with the
+
+857
+00:34:37,040 --> 00:34:43,359
+commmentations and maybe AI will let us
+
+858
+00:34:40,399 --> 00:34:46,000
+to reduce amount of efforts we have to
+
+859
+00:34:43,359 --> 00:34:49,119
+put into the bureaucracy and the the red
+
+860
+00:34:46,000 --> 00:34:51,599
+tape and this will lead us and like data
+
+861
+00:34:49,119 --> 00:34:54,000
+scientists and biochemists and like
+
+862
+00:34:51,599 --> 00:34:58,160
+other scientists and smart people in
+
+863
+00:34:54,000 --> 00:35:00,720
+pharma to put their mind more into the
+
+864
+00:34:58,160 --> 00:35:02,960
+essence of it into the creating or
+
+865
+00:35:00,720 --> 00:35:07,200
+creation of new drugs. Um getting back
+
+866
+00:35:02,960 --> 00:35:10,480
+to our very first topic, we may be able
+
+867
+00:35:07,200 --> 00:35:14,000
+to shorten this loop of designing and
+
+868
+00:35:10,480 --> 00:35:16,560
+verification and now we there are loops
+
+869
+00:35:14,000 --> 00:35:18,960
+where we designing drugs in AI and then
+
+870
+00:35:16,560 --> 00:35:21,599
+we send candidates to the automate
+
+871
+00:35:18,960 --> 00:35:24,480
+robotic lab and this labs they generates
+
+872
+00:35:21,599 --> 00:35:26,160
+molecules and they send them so not
+
+873
+00:35:24,480 --> 00:35:28,400
+generate a test the molecules send the
+
+874
+00:35:26,160 --> 00:35:31,280
+result back. So it's kind of closing
+
+875
+00:35:28,400 --> 00:35:33,760
+this loop and we need less and less
+
+876
+00:35:31,280 --> 00:35:36,560
+human in it and this is very good. So
+
+877
+00:35:33,760 --> 00:35:40,000
+the very good high quality verification
+
+878
+00:35:36,560 --> 00:35:44,079
+loop will lead us to a faster drug
+
+879
+00:35:40,000 --> 00:35:44,720
+invention and uh probably higher quality
+
+880
+00:35:44,079 --> 00:35:46,320
+medicine.
+
+881
+00:35:44,720 --> 00:35:48,400
+>> Exciting. There's there's just so many
+
+882
+00:35:46,320 --> 00:35:51,119
+things that weren't possible a decade
+
+883
+00:35:48,400 --> 00:35:53,040
+ago that now are going to become
+
+884
+00:35:51,119 --> 00:35:55,119
+reality. I think there's more
+
+885
+00:35:53,040 --> 00:35:57,040
+groundbreaking discoveries coming in the
+
+886
+00:35:55,119 --> 00:35:59,599
+cancer space. It wasn't that long ago
+
+887
+00:35:57,040 --> 00:36:02,160
+that a cancer diagnosis really came with
+
+888
+00:35:59,599 --> 00:36:04,160
+a an unfortunate time frame that you're
+
+889
+00:36:02,160 --> 00:36:06,320
+dealing with because it's it wasn't
+
+890
+00:36:04,160 --> 00:36:08,000
+curable. Um, but the things are evolving
+
+891
+00:36:06,320 --> 00:36:09,599
+so quickly in the work that you you're
+
+892
+00:36:08,000 --> 00:36:12,079
+doing in the pharmaceutical space.
+
+893
+00:36:09,599 --> 00:36:14,480
+Incredibly important. David, as we're
+
+894
+00:36:12,079 --> 00:36:16,160
+wrapping up, if folks wanted to uh reach
+
+895
+00:36:14,480 --> 00:36:17,920
+out to you to have a conversation
+
+896
+00:36:16,160 --> 00:36:19,920
+because I'm I'm sure that you you've
+
+897
+00:36:17,920 --> 00:36:21,920
+shared some things that'll folks will
+
+898
+00:36:19,920 --> 00:36:24,160
+have some curiosity about and want to
+
+899
+00:36:21,920 --> 00:36:25,760
+get some some insight from you. How how
+
+900
+00:36:24,160 --> 00:36:26,400
+do they reach out to you? What's your
+
+901
+00:36:25,760 --> 00:36:29,280
+preference?
+
+902
+00:36:26,400 --> 00:36:32,240
+>> So yeah, you can reach out mainly my
+
+903
+00:36:29,280 --> 00:36:34,640
+LinkedIn profile. I hope link will be
+
+904
+00:36:32,240 --> 00:36:35,520
+under the in the description, right?
+
+905
+00:36:34,640 --> 00:36:38,160
+>> Yes.
+
+906
+00:36:35,520 --> 00:36:41,280
+>> Yeah. And or uh there is a form on our
+
+907
+00:36:38,160 --> 00:36:44,240
+website where you can uh ask a question
+
+908
+00:36:41,280 --> 00:36:45,839
+or submit a request for project or
+
+909
+00:36:44,240 --> 00:36:47,760
+consultation. Uh
+
+910
+00:36:45,839 --> 00:36:49,760
+>> perfect. Yeah. For for listeners, I I'll
+
+911
+00:36:47,760 --> 00:36:52,480
+make sure that his contact information
+
+912
+00:36:49,760 --> 00:36:55,599
+and the website is in the show notes. So
+
+913
+00:36:52,480 --> 00:36:57,760
+David, thank you so much for a really
+
+914
+00:36:55,599 --> 00:37:00,000
+practical and grounded conversation. I
+
+915
+00:36:57,760 --> 00:37:01,760
+think you hit some themes in a on a high
+
+916
+00:37:00,000 --> 00:37:05,280
+level that folks really need to be
+
+917
+00:37:01,760 --> 00:37:08,160
+cognizant of. Context, context, context.
+
+918
+00:37:05,280 --> 00:37:10,480
+Big big focus on that. I really really
+
+919
+00:37:08,160 --> 00:37:12,000
+appreciate it. And I'm sure that uh the
+
+920
+00:37:10,480 --> 00:37:13,520
+clinical folks that are listening out
+
+921
+00:37:12,000 --> 00:37:15,599
+there appreciate that message too.
+
+922
+00:37:13,520 --> 00:37:18,800
+Context is important, but when you've
+
+923
+00:37:15,599 --> 00:37:20,560
+done your research, go see your doctor.
+
+924
+00:37:18,800 --> 00:37:22,720
+>> That's it for this episode of the Signar
+
+925
+00:37:20,560 --> 00:37:24,800
+Room. If today's conversation sparked
+
+926
+00:37:22,720 --> 00:37:26,960
+something in you, an idea, a challenge,
+
+927
+00:37:24,800 --> 00:37:28,720
+or a perspective worth amplifying, I'd
+
+928
+00:37:26,960 --> 00:37:31,119
+love to hear from you. Message me on
+
+929
+00:37:28,720 --> 00:37:33,119
+LinkedIn or visit cigarroompodcast.com
+
+930
+00:37:31,119 --> 00:37:36,160
+to explore being a guest on an upcoming
+
+931
+00:37:33,119 --> 00:37:40,440
+episode. Until next time, stay tuned,
+
+932
+00:37:36,160 --> 00:37:40,440
+stay curious, and stay human.
