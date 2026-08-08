@@ -1,0 +1,3219 @@
+1
+00:00:00,080 --> 00:00:03,679
+You were talking about that missed call
+
+2
+00:00:01,760 --> 00:00:05,759
+at a treatment center. It isn't a lost
+
+3
+00:00:03,679 --> 00:00:07,839
+sale. It's a patient safety event.
+
+4
+00:00:05,759 --> 00:00:09,170
+If you and I were in selling widgets
+
+5
+00:00:07,839 --> 00:00:10,960
+somewhere, right? You and I would
+
+6
+00:00:09,170 --> 00:00:12,960
+[music] be talking about the leads that
+
+7
+00:00:10,960 --> 00:00:15,360
+come in. But it's harder to put that tag
+
+8
+00:00:12,960 --> 00:00:17,359
+on a person, especially a person that's
+
+9
+00:00:15,360 --> 00:00:19,439
+stuck in addiction. How do you call them
+
+10
+00:00:17,359 --> 00:00:21,439
+a lead? So, let's call them what they
+
+11
+00:00:19,439 --> 00:00:24,400
+really are. People that had a moment of
+
+12
+00:00:21,439 --> 00:00:26,880
+clarity that make a call that could save
+
+13
+00:00:24,400 --> 00:00:28,640
+their life and nobody answers that. If
+
+14
+00:00:26,880 --> 00:00:31,519
+nobody answers the phone, [music] if
+
+15
+00:00:28,640 --> 00:00:33,600
+it's a long hold time, a drop call, any
+
+16
+00:00:31,519 --> 00:00:35,370
+of those things, that could save a life.
+
+17
+00:00:33,600 --> 00:00:37,200
+90% of the people that call treatment
+
+18
+00:00:35,370 --> 00:00:39,520
+[music] center at 3:00 a.m. aren't
+
+19
+00:00:37,200 --> 00:00:41,760
+usually sober at the time. So, there's a
+
+20
+00:00:39,520 --> 00:00:44,879
+whole lot of things that they say,
+
+21
+00:00:41,760 --> 00:00:47,840
+slurring words, getting a little upset.
+
+22
+00:00:44,879 --> 00:00:49,520
+So, our AI age trained to know that
+
+23
+00:00:47,840 --> 00:00:50,960
+cool technology is not the solution.
+
+24
+00:00:49,520 --> 00:00:51,600
+It's the tailored ones that actually
+
+25
+00:00:50,960 --> 00:00:54,480
+help people.
+
+26
+00:00:51,600 --> 00:00:56,320
+Technology is not 100%. But then again,
+
+27
+00:00:54,480 --> 00:00:57,680
+people aren't either. You bring a
+
+28
+00:00:56,320 --> 00:00:59,840
+personal perspective [music] to this
+
+29
+00:00:57,680 --> 00:01:00,559
+work. How does that lens change the way
+
+30
+00:00:59,840 --> 00:01:03,600
+that you build?
+
+31
+00:01:00,559 --> 00:01:05,840
+I was the person that sat in that CRM
+
+32
+00:01:03,600 --> 00:01:08,000
+and waited for a call. We take the
+
+33
+00:01:05,840 --> 00:01:11,439
+clients that are inactive and then the
+
+34
+00:01:08,000 --> 00:01:13,439
+AI text engages them with the idea of
+
+35
+00:01:11,439 --> 00:01:15,439
+coming back to admissions. These are
+
+36
+00:01:13,439 --> 00:01:16,000
+people that the treatment center can't
+
+37
+00:01:15,439 --> 00:01:18,000
+call.
+
+38
+00:01:16,000 --> 00:01:20,320
+Oh my gosh. Welcome back to the signal
+
+39
+00:01:18,000 --> 00:01:22,400
+room. I'm Chris Hutchins. My guest
+
+40
+00:01:20,320 --> 00:01:24,400
+today works at one of the most sensitive
+
+41
+00:01:22,400 --> 00:01:26,159
+doorways in all of healthcare. the
+
+42
+00:01:24,400 --> 00:01:27,840
+moment someone picks up the phone and
+
+43
+00:01:26,159 --> 00:01:29,680
+asks for help with addiction. David
+
+44
+00:01:27,840 --> 00:01:32,159
+Sichel is the founder of Blue Shirt
+
+45
+00:01:29,680 --> 00:01:33,920
+Media and he builds AI that answers and
+
+46
+00:01:32,159 --> 00:01:36,079
+follows up for drug and alcohol
+
+47
+00:01:33,920 --> 00:01:38,640
+treatment centers. What pulled me in is
+
+48
+00:01:36,079 --> 00:01:40,560
+how he how careful he is about it. This
+
+49
+00:01:38,640 --> 00:01:42,640
+is a conversation about doing automation
+
+50
+00:01:40,560 --> 00:01:44,880
+responsibly when mistakes are a human
+
+51
+00:01:42,640 --> 00:01:46,479
+life. Dave, welcome to the Signal Room.
+
+52
+00:01:44,880 --> 00:01:48,159
+Thanks, Chris. It's a pleasure being
+
+53
+00:01:46,479 --> 00:01:50,479
+here and I really enjoyed our
+
+54
+00:01:48,159 --> 00:01:52,079
+conversation on Friday also. I did as
+
+55
+00:01:50,479 --> 00:01:53,920
+well and I'm really excited for for you
+
+56
+00:01:52,079 --> 00:01:55,840
+to be able to share your story with with
+
+57
+00:01:53,920 --> 00:01:58,159
+our listeners today. Maybe just kind of
+
+58
+00:01:55,840 --> 00:02:00,399
+start with the short version of who you
+
+59
+00:01:58,159 --> 00:02:02,799
+are and what Blue Shirt Media does.
+
+60
+00:02:00,399 --> 00:02:04,479
+Yeah. So, I'm Dave Sichel. As we
+
+61
+00:02:02,799 --> 00:02:07,520
+discussed on Friday, I'm a person in
+
+62
+00:02:04,479 --> 00:02:10,959
+long-term recovery. I have experience
+
+63
+00:02:07,520 --> 00:02:14,080
+before this uh situation happened before
+
+64
+00:02:10,959 --> 00:02:16,959
+I formed this company. I have experience
+
+65
+00:02:14,080 --> 00:02:19,200
+with building a another company that was
+
+66
+00:02:16,959 --> 00:02:21,200
+a transport company that would take
+
+67
+00:02:19,200 --> 00:02:23,280
+people to treatment. And when I was in
+
+68
+00:02:21,200 --> 00:02:25,200
+there, like most things in life that
+
+69
+00:02:23,280 --> 00:02:27,200
+happened to you, I saw the emissions
+
+70
+00:02:25,200 --> 00:02:27,680
+department and how overworked them,
+
+71
+00:02:27,200 --> 00:02:30,959
+right?
+
+72
+00:02:27,680 --> 00:02:34,480
+But for CO did and there was no
+
+73
+00:02:30,959 --> 00:02:36,080
+anything, no certainty on how the
+
+74
+00:02:34,480 --> 00:02:38,160
+protocol would be to take people to
+
+75
+00:02:36,080 --> 00:02:40,800
+treat, right? So I shut that business
+
+76
+00:02:38,160 --> 00:02:43,920
+and then what happened is I realized
+
+77
+00:02:40,800 --> 00:02:45,519
+that later on once AI came out that
+
+78
+00:02:43,920 --> 00:02:49,200
+there was a gap
+
+79
+00:02:45,519 --> 00:02:51,519
+in the treatment uh that phone calls
+
+80
+00:02:49,200 --> 00:02:54,400
+would go with miss without being
+
+81
+00:02:51,519 --> 00:02:59,360
+answered and PE and emissions people
+
+82
+00:02:54,400 --> 00:03:01,840
+couldn't get the calls. So AI a pain
+
+83
+00:02:59,360 --> 00:03:04,480
+point and here we are. Yeah, the there
+
+84
+00:03:01,840 --> 00:03:07,519
+was so much revealed during the during
+
+85
+00:03:04,480 --> 00:03:09,519
+those early days of COVID. U you know I
+
+86
+00:03:07,519 --> 00:03:10,800
+I know people been disrupted you know
+
+87
+00:03:09,519 --> 00:03:12,239
+hearing what you're telling me about
+
+88
+00:03:10,800 --> 00:03:14,239
+your having to shut down your business.
+
+89
+00:03:12,239 --> 00:03:17,040
+I'm sure that was not a there was plenty
+
+90
+00:03:14,239 --> 00:03:18,560
+of stress in that I am certain. So in
+
+91
+00:03:17,040 --> 00:03:20,239
+our conversation Friday you said
+
+92
+00:03:18,560 --> 00:03:22,959
+something that really kind of stuck with
+
+93
+00:03:20,239 --> 00:03:24,560
+me and I really want to dig into this a
+
+94
+00:03:22,959 --> 00:03:26,879
+little bit. You were talking about that
+
+95
+00:03:24,560 --> 00:03:28,560
+missed call at a treatment center like
+
+96
+00:03:26,879 --> 00:03:30,959
+you just mentioned. It isn't a lost
+
+97
+00:03:28,560 --> 00:03:33,040
+sale. It's a patient safety event.
+
+98
+00:03:30,959 --> 00:03:34,640
+Unpack for me what's actually on the
+
+99
+00:03:33,040 --> 00:03:37,760
+other end of that mis call.
+
+100
+00:03:34,640 --> 00:03:40,720
+Yeah, Chris. So, for me, when I'm in
+
+101
+00:03:37,760 --> 00:03:43,519
+this business, it's hard because not
+
+102
+00:03:40,720 --> 00:03:45,840
+hard, it's it's rewarding. But when I
+
+103
+00:03:43,519 --> 00:03:47,920
+when if you and I were in, let's say,
+
+104
+00:03:45,840 --> 00:03:49,920
+selling widgets somewhere, right? You
+
+105
+00:03:47,920 --> 00:03:51,760
+and I would be talking about the leads
+
+106
+00:03:49,920 --> 00:03:53,440
+that come in. That's what we you and I
+
+107
+00:03:51,760 --> 00:03:56,239
+would be discussing. But it's harder to
+
+108
+00:03:53,440 --> 00:03:58,799
+put that tag on a person, especially a
+
+109
+00:03:56,239 --> 00:04:00,959
+person in addiction that's stuck in
+
+110
+00:03:58,799 --> 00:04:02,879
+addiction. How do you call them elite?
+
+111
+00:04:00,959 --> 00:04:05,760
+So, let's call them what they really
+
+112
+00:04:02,879 --> 00:04:08,480
+are. People that had a moment of clarity
+
+113
+00:04:05,760 --> 00:04:10,879
+that make a call that could save their
+
+114
+00:04:08,480 --> 00:04:12,560
+life and nobody answered that.
+
+115
+00:04:10,879 --> 00:04:15,519
+Oh my gosh, that's profound.
+
+116
+00:04:12,560 --> 00:04:17,519
+Yeah. Joe, as you you know, we discussed
+
+117
+00:04:15,519 --> 00:04:19,519
+on on our previous call, you know, when
+
+118
+00:04:17,519 --> 00:04:21,680
+we talked last week, we discussed that
+
+119
+00:04:19,519 --> 00:04:24,400
+there was only a certain amount of time
+
+120
+00:04:21,680 --> 00:04:26,400
+that people and anybody that has that
+
+121
+00:04:24,400 --> 00:04:28,000
+has experience with a loved one, a
+
+122
+00:04:26,400 --> 00:04:31,280
+friend, a family member, whatever
+
+123
+00:04:28,000 --> 00:04:33,680
+addiction, you know, firsthand that
+
+124
+00:04:31,280 --> 00:04:37,600
+person isn't ready until they're ready.
+
+125
+00:04:33,680 --> 00:04:40,720
+Yes. So when their courage up or the
+
+126
+00:04:37,600 --> 00:04:42,400
+will to I don't or the desperation
+
+127
+00:04:40,720 --> 00:04:44,639
+there's a million words I could use
+
+128
+00:04:42,400 --> 00:04:47,280
+there but we'll make it easy when they
+
+129
+00:04:44,639 --> 00:04:50,479
+finally that call if nobody answers the
+
+130
+00:04:47,280 --> 00:04:52,960
+phone if it's a long hold time a drop
+
+131
+00:04:50,479 --> 00:04:54,720
+call any of those things then if
+
+132
+00:04:52,960 --> 00:04:56,320
+nobody's on the other end of that that
+
+133
+00:04:54,720 --> 00:04:57,040
+that's the difference between that could
+
+134
+00:04:56,320 --> 00:04:59,840
+save a life
+
+135
+00:04:57,040 --> 00:05:01,520
+100% that's so profound I'm glad you
+
+136
+00:04:59,840 --> 00:05:03,680
+glad you put it that way too because we
+
+137
+00:05:01,520 --> 00:05:05,759
+try to do our best but sometimes that's
+
+138
+00:05:03,680 --> 00:05:07,440
+not enough. And I and I just I love that
+
+139
+00:05:05,759 --> 00:05:08,960
+you're you're putting this a clear focus
+
+140
+00:05:07,440 --> 00:05:11,520
+back on the individual who's just had
+
+141
+00:05:08,960 --> 00:05:12,880
+that moment of clarity. And we have to
+
+142
+00:05:11,520 --> 00:05:15,199
+pay attention and we have to do better
+
+143
+00:05:12,880 --> 00:05:16,560
+if we're going to use AI for good. These
+
+144
+00:05:15,199 --> 00:05:20,240
+are the types of things we have to keep
+
+145
+00:05:16,560 --> 00:05:21,840
+in mind. So let's talk about, you know,
+
+146
+00:05:20,240 --> 00:05:23,280
+what kind of brought you to this. So
+
+147
+00:05:21,840 --> 00:05:25,759
+take me back to how you ended up
+
+148
+00:05:23,280 --> 00:05:27,680
+building this uh why treatment center
+
+149
+00:05:25,759 --> 00:05:30,000
+specifically and why the front door.
+
+150
+00:05:27,680 --> 00:05:33,840
+Yeah. So what happened is it's a good
+
+151
+00:05:30,000 --> 00:05:37,199
+question. What happened was I thought of
+
+152
+00:05:33,840 --> 00:05:39,759
+the idea and then what happened was I
+
+153
+00:05:37,199 --> 00:05:41,440
+joined a platform called go high level
+
+154
+00:05:39,759 --> 00:05:43,840
+which a lot of people have heard of
+
+155
+00:05:41,440 --> 00:05:47,520
+which is a good platform the issue for
+
+156
+00:05:43,840 --> 00:05:50,720
+me that I had was that it does a lot of
+
+157
+00:05:47,520 --> 00:05:53,199
+good things right a lot of things but
+
+158
+00:05:50,720 --> 00:05:56,240
+it's not perfect in anything and I knew
+
+159
+00:05:53,199 --> 00:05:58,800
+that for the importance of this call and
+
+160
+00:05:56,240 --> 00:06:01,919
+the value of this call I had to get
+
+161
+00:05:58,800 --> 00:06:03,680
+agents a uh answering that would be a
+
+162
+00:06:01,919 --> 00:06:04,080
+100%. Right.
+
+163
+00:06:03,680 --> 00:06:06,800
+Yes.
+
+164
+00:06:04,080 --> 00:06:08,800
+That would be a model that I could roll
+
+165
+00:06:06,800 --> 00:06:11,440
+out and people could listen and say,
+
+166
+00:06:08,800 --> 00:06:14,160
+"Oh, Chris, that's so empathetic, you
+
+167
+00:06:11,440 --> 00:06:16,639
+know, uh, that person really don't
+
+168
+00:06:14,160 --> 00:06:18,720
+really they identify like an agent. They
+
+169
+00:06:16,639 --> 00:06:20,639
+identify as an agent, but then you will
+
+170
+00:06:18,720 --> 00:06:22,800
+never know once you start talking."
+
+171
+00:06:20,639 --> 00:06:25,680
+That's the one I went through. So, I did
+
+172
+00:06:22,800 --> 00:06:27,919
+some work with a white label and I but I
+
+173
+00:06:25,680 --> 00:06:30,720
+still wasn't controlling it. So I went
+
+174
+00:06:27,919 --> 00:06:33,520
+inhouse and started my own tech working
+
+175
+00:06:30,720 --> 00:06:36,479
+on my own tech stack. So now it's me, a
+
+176
+00:06:33,520 --> 00:06:38,800
+developer, a VA, and we're building our
+
+177
+00:06:36,479 --> 00:06:40,960
+own custom models.
+
+178
+00:06:38,800 --> 00:06:43,280
+You bring a personal perspective to this
+
+179
+00:06:40,960 --> 00:06:46,080
+work. Share as much or as little as you
+
+180
+00:06:43,280 --> 00:06:48,479
+you'd like. How does that lens change
+
+181
+00:06:46,080 --> 00:06:51,919
+the way that you build? Well, as far as
+
+182
+00:06:48,479 --> 00:06:55,039
+what I built, I have this this pressure
+
+183
+00:06:51,919 --> 00:06:57,759
+or whip on my back, let's say, that I
+
+184
+00:06:55,039 --> 00:07:00,479
+just never feel as good as anybody says
+
+185
+00:06:57,759 --> 00:07:02,560
+it is, as great as an idea, as the
+
+186
+00:07:00,479 --> 00:07:05,199
+product is, and it works really well,
+
+187
+00:07:02,560 --> 00:07:07,919
+that it's good enough, that it's always
+
+188
+00:07:05,199 --> 00:07:10,560
+going to, you know, again, let's not
+
+189
+00:07:07,919 --> 00:07:12,720
+fool ourselves. As great as it is, and
+
+190
+00:07:10,560 --> 00:07:15,360
+as great as everything is, it's still
+
+191
+00:07:12,720 --> 00:07:18,800
+technology. And you you know you know
+
+192
+00:07:15,360 --> 00:07:20,720
+technology technology is not 100%. But
+
+193
+00:07:18,800 --> 00:07:20,880
+then again people aren't either. That's
+
+194
+00:07:20,720 --> 00:07:24,400
+right.
+
+195
+00:07:20,880 --> 00:07:27,520
+You know what I mean? But I believe it's
+
+196
+00:07:24,400 --> 00:07:29,280
+such a gratification to know that even
+
+197
+00:07:27,520 --> 00:07:32,160
+though I'm never happy with it because
+
+198
+00:07:29,280 --> 00:07:34,400
+it's never good enough for me that at
+
+199
+00:07:32,160 --> 00:07:37,680
+the end of the day I'm building
+
+200
+00:07:34,400 --> 00:07:40,000
+something that saves lives. And you know
+
+201
+00:07:37,680 --> 00:07:41,520
+as far as the personal perspective I was
+
+202
+00:07:40,000 --> 00:07:43,520
+that person. you know, we're going to
+
+203
+00:07:41,520 --> 00:07:46,960
+talk about in a few minutes about what
+
+204
+00:07:43,520 --> 00:07:49,199
+we do lead reactivation, but you know,
+
+205
+00:07:46,960 --> 00:07:52,319
+as far as the personal aspect, I was the
+
+206
+00:07:49,199 --> 00:07:56,160
+person that sat in that CRM and waited
+
+207
+00:07:52,319 --> 00:07:59,599
+for a call that came. So, as on a
+
+208
+00:07:56,160 --> 00:08:03,039
+personal perspective, my personal goals
+
+209
+00:07:59,599 --> 00:08:05,120
+align with my business goals and that is
+
+210
+00:08:03,039 --> 00:08:07,599
+in my life to to help as many people as
+
+211
+00:08:05,120 --> 00:08:09,360
+I can. I I love that Dave. I mean that
+
+212
+00:08:07,599 --> 00:08:10,800
+was crystal clear the the first moment
+
+213
+00:08:09,360 --> 00:08:12,479
+we spoke that you've got a passion for
+
+214
+00:08:10,800 --> 00:08:15,280
+what you're doing. I think that really
+
+215
+00:08:12,479 --> 00:08:18,400
+matters a lot because people are in
+
+216
+00:08:15,280 --> 00:08:20,560
+various stages of life. All of us are
+
+217
+00:08:18,400 --> 00:08:22,560
+dealing with some really crazy times
+
+218
+00:08:20,560 --> 00:08:24,479
+that we're living in and all of us are
+
+219
+00:08:22,560 --> 00:08:26,960
+experiencing very common things and more
+
+220
+00:08:24,479 --> 00:08:29,039
+often than not they don't get any
+
+221
+00:08:26,960 --> 00:08:30,879
+airtime and I think it's just really
+
+222
+00:08:29,039 --> 00:08:32,719
+important for people to hear how things
+
+223
+00:08:30,879 --> 00:08:34,800
+really are so they understand they're
+
+224
+00:08:32,719 --> 00:08:36,320
+not alone and it actually is okay to
+
+225
+00:08:34,800 --> 00:08:38,000
+reach out for help and how you're
+
+226
+00:08:36,320 --> 00:08:39,680
+conducting yourself and driving your
+
+227
+00:08:38,000 --> 00:08:41,279
+business where you spend your time what
+
+228
+00:08:39,680 --> 00:08:43,279
+matters. It's a beautiful thing and I
+
+229
+00:08:41,279 --> 00:08:45,279
+really do appreciate how you do that.
+
+230
+00:08:43,279 --> 00:08:48,399
+Let's talk about mistakes just a little
+
+231
+00:08:45,279 --> 00:08:50,640
+bit. Most AI answering pitches are about
+
+232
+00:08:48,399 --> 00:08:52,640
+efficiency in your world. The caller
+
+233
+00:08:50,640 --> 00:08:54,560
+might be the worst moment at the worst
+
+234
+00:08:52,640 --> 00:08:56,399
+moment of their life. What does that
+
+235
+00:08:54,560 --> 00:08:58,320
+change about how the system has to
+
+236
+00:08:56,399 --> 00:08:59,519
+behave in the first 10 seconds for
+
+237
+00:08:58,320 --> 00:09:02,240
+example?
+
+238
+00:08:59,519 --> 00:09:03,839
+And in what what it's allowed to say? I
+
+239
+00:09:02,240 --> 00:09:06,240
+mean I mean there's a
+
+240
+00:09:03,839 --> 00:09:08,080
+Well, first thing we Yeah. And I I think
+
+241
+00:09:06,240 --> 00:09:12,160
+I got your question, but first thing we
+
+242
+00:09:08,080 --> 00:09:14,800
+say is on the call is we tell them that
+
+243
+00:09:12,160 --> 00:09:16,880
+my name is Jody or John or whatever it
+
+244
+00:09:14,800 --> 00:09:20,399
+is, guy, girl, and this call is being
+
+245
+00:09:16,880 --> 00:09:23,279
+recorded for quality purposes, right? We
+
+246
+00:09:20,399 --> 00:09:26,080
+record that break that down right there.
+
+247
+00:09:23,279 --> 00:09:28,560
+We record that call in case there's any
+
+248
+00:09:26,080 --> 00:09:31,040
+questions for the treatment center
+
+249
+00:09:28,560 --> 00:09:33,920
+because we try to pass the data
+
+250
+00:09:31,040 --> 00:09:36,080
+anonymously to the center because you
+
+251
+00:09:33,920 --> 00:09:38,640
+know and again we'll get into that into
+
+252
+00:09:36,080 --> 00:09:41,680
+HIPPA and different privacy things. So
+
+253
+00:09:38,640 --> 00:09:44,080
+we always stay compliant. So for the
+
+254
+00:09:41,680 --> 00:09:47,040
+first 10 seconds of the call, it's just
+
+255
+00:09:44,080 --> 00:09:49,920
+really and also we let them know which I
+
+256
+00:09:47,040 --> 00:09:52,000
+feel is a really good add-on is that we
+
+257
+00:09:49,920 --> 00:09:53,440
+send a text message at the end of with
+
+258
+00:09:52,000 --> 00:09:55,760
+their permission. If they say no, we
+
+259
+00:09:53,440 --> 00:09:59,040
+don't opt them in to the text message
+
+260
+00:09:55,760 --> 00:10:01,200
+with the call. So we say, you know, that
+
+261
+00:09:59,040 --> 00:10:03,440
+you know also we'll get a summary text
+
+262
+00:10:01,200 --> 00:10:06,560
+message and that text message I just
+
+263
+00:10:03,440 --> 00:10:08,560
+want to say works twofold. First of all,
+
+264
+00:10:06,560 --> 00:10:11,200
+the information goes right into the
+
+265
+00:10:08,560 --> 00:10:13,680
+client CR. This is all in real time,
+
+266
+00:10:11,200 --> 00:10:15,600
+right? And then the other thing that
+
+267
+00:10:13,680 --> 00:10:18,079
+that text message that we're talking
+
+268
+00:10:15,600 --> 00:10:20,480
+about, we could also set if it's an
+
+269
+00:10:18,079 --> 00:10:22,800
+overnight center, right? If that we're
+
+270
+00:10:20,480 --> 00:10:24,000
+answering overnight, we could do one of
+
+271
+00:10:22,800 --> 00:10:26,640
+a few things.
+
+272
+00:10:24,000 --> 00:10:28,720
+a live transfer, which a lot of people
+
+273
+00:10:26,640 --> 00:10:31,760
+prefer. It's hard to harder to do at
+
+274
+00:10:28,720 --> 00:10:33,440
+night than it is at 3:00, but at 3 p.m.
+
+275
+00:10:31,760 --> 00:10:35,120
+But the other thing we could do is with
+
+276
+00:10:33,440 --> 00:10:37,839
+that text message, we could send the
+
+277
+00:10:35,120 --> 00:10:40,720
+client a reminder or we could do an AI
+
+278
+00:10:37,839 --> 00:10:42,800
+call reminder to the client 7 a.m., 8
+
+279
+00:10:40,720 --> 00:10:44,640
+a.m., whenever they open. Hey, Joe, it's
+
+280
+00:10:42,800 --> 00:10:46,240
+Dave. You know, you were speaking to us.
+
+281
+00:10:44,640 --> 00:10:49,519
+We just want to let you know, here's the
+
+282
+00:10:46,240 --> 00:10:51,600
+number to call. And the uh the center
+
+283
+00:10:49,519 --> 00:10:53,519
+will also have the information. So the
+
+284
+00:10:51,600 --> 00:10:55,360
+first 10 minutes, first 10 seconds, I'm
+
+285
+00:10:53,519 --> 00:10:56,959
+sorry. The first 10 seconds, we're
+
+286
+00:10:55,360 --> 00:10:59,440
+really getting information out of the
+
+287
+00:10:56,959 --> 00:11:01,920
+way and then we wait to see what's going
+
+288
+00:10:59,440 --> 00:11:05,040
+on. You know, basic questions that we
+
+289
+00:11:01,920 --> 00:11:09,120
+have. thought and I'll just say this too
+
+290
+00:11:05,040 --> 00:11:11,519
+as the call progresses our AI agents are
+
+291
+00:11:09,120 --> 00:11:14,399
+overnight answering calls and daily
+
+292
+00:11:11,519 --> 00:11:16,079
+answering calls are known know that a
+
+293
+00:11:14,399 --> 00:11:18,560
+lot of people that call treatment center
+
+294
+00:11:16,079 --> 00:11:20,160
+at 3:00 a.m. I would say 90% of the
+
+295
+00:11:18,560 --> 00:11:22,640
+people that call treatment center at
+
+296
+00:11:20,160 --> 00:11:22,959
+3:00 a.m. aren't usually sober at the
+
+297
+00:11:22,640 --> 00:11:23,279
+time,
+
+298
+00:11:22,959 --> 00:11:25,200
+right?
+
+299
+00:11:23,279 --> 00:11:28,959
+So, there's a whole lot of things that
+
+300
+00:11:25,200 --> 00:11:33,760
+they say, slurring words, getting a
+
+301
+00:11:28,959 --> 00:11:37,440
+little upset. So, our AI agents trained
+
+302
+00:11:33,760 --> 00:11:39,120
+to know that to to be slower. So, I know
+
+303
+00:11:37,440 --> 00:11:41,760
+I jumped a little bit ahead on that
+
+304
+00:11:39,120 --> 00:11:43,519
+question, but yeah. So, uh yes, so that
+
+305
+00:11:41,760 --> 00:11:45,600
+that's what our agents do. Yeah.
+
+306
+00:11:43,519 --> 00:11:48,240
+Yeah. But I think it it leads naturally
+
+307
+00:11:45,600 --> 00:11:50,640
+to the to the question around, you know,
+
+308
+00:11:48,240 --> 00:11:51,920
+what are the stopping points? So, you
+
+309
+00:11:50,640 --> 00:11:53,600
+know, you're clear that it's not going
+
+310
+00:11:51,920 --> 00:11:55,760
+to give medical advice, but walk me
+
+311
+00:11:53,600 --> 00:11:57,839
+through where the machine stops and and
+
+312
+00:11:55,760 --> 00:12:00,079
+a human becomes involved.
+
+313
+00:11:57,839 --> 00:12:03,120
+So, what happens is a human becomes
+
+314
+00:12:00,079 --> 00:12:05,839
+involved a couple ways. The first way is
+
+315
+00:12:03,120 --> 00:12:08,000
+we I would like to say we have all these
+
+316
+00:12:05,839 --> 00:12:09,600
+programs and this and that, but what we
+
+317
+00:12:08,000 --> 00:12:13,200
+do is we sit down with the treatment
+
+318
+00:12:09,600 --> 00:12:16,600
+center and we say to them, look, Chris,
+
+319
+00:12:13,200 --> 00:12:16,600
+what qualifi?
+
+320
+00:12:16,639 --> 00:12:22,000
+You know, like maybe for a treatment
+
+321
+00:12:18,959 --> 00:12:26,240
+center it might be we accept this blue
+
+322
+00:12:22,000 --> 00:12:27,920
+cross. I just making but when do you
+
+323
+00:12:26,240 --> 00:12:30,000
+what's your level? It's really you know
+
+324
+00:12:27,920 --> 00:12:32,720
+we don't we don't decide. What's your
+
+325
+00:12:30,000 --> 00:12:35,600
+level on where the call needs to
+
+326
+00:12:32,720 --> 00:12:37,680
+escalate to an agent? So that just leads
+
+327
+00:12:35,600 --> 00:12:40,800
+me into this what we had talked about on
+
+328
+00:12:37,680 --> 00:12:42,959
+Friday is that our the biggest
+
+329
+00:12:40,800 --> 00:12:46,240
+misconception we you know we both spoke
+
+330
+00:12:42,959 --> 00:12:50,079
+about it was is that AI is replacing
+
+331
+00:12:46,240 --> 00:12:52,639
+people. Our AI is just a tool to answer
+
+332
+00:12:50,079 --> 00:12:55,519
+more calls and to free up emissions
+
+333
+00:12:52,639 --> 00:12:58,000
+people to only be able to react with the
+
+334
+00:12:55,519 --> 00:13:00,959
+follow, you know, to the calls they want
+
+335
+00:12:58,000 --> 00:13:03,760
+to react to and take, you know, so what
+
+336
+00:13:00,959 --> 00:13:05,440
+which really we call it the bandwidth in
+
+337
+00:13:03,760 --> 00:13:08,639
+the treatment center which really
+
+338
+00:13:05,440 --> 00:13:10,800
+reduces the band bandwidth and frees
+
+339
+00:13:08,639 --> 00:13:11,440
+them up a little bit more which we
+
+340
+00:13:10,800 --> 00:13:13,760
+really like.
+
+341
+00:13:11,440 --> 00:13:16,240
+Yeah. And during our conversation, I
+
+342
+00:13:13,760 --> 00:13:17,920
+think we we mentioned we kind of hit on
+
+343
+00:13:16,240 --> 00:13:19,920
+this governance theater issue. You know,
+
+344
+00:13:17,920 --> 00:13:22,160
+the councils that perform oversight
+
+345
+00:13:19,920 --> 00:13:23,760
+without actually doing it. Um, in a
+
+346
+00:13:22,160 --> 00:13:25,920
+setting this sensitive, what does real
+
+347
+00:13:23,760 --> 00:13:26,320
+governance look like versus the show
+
+348
+00:13:25,920 --> 00:13:28,720
+version?
+
+349
+00:13:26,320 --> 00:13:32,000
+When you mean real governance, uh, do
+
+350
+00:13:28,720 --> 00:13:34,800
+you mean like what we do on our part to
+
+351
+00:13:32,000 --> 00:13:36,560
+make it is that what you're going like
+
+352
+00:13:34,800 --> 00:13:38,160
+what we we you know, we have to sign
+
+353
+00:13:36,560 --> 00:13:41,120
+agree.
+
+354
+00:13:38,160 --> 00:13:43,600
+Go ahead. I'm sorry. Now it's really the
+
+355
+00:13:41,120 --> 00:13:45,519
+rather than having these lofty
+
+356
+00:13:43,600 --> 00:13:48,240
+conversations around governance and it's
+
+357
+00:13:45,519 --> 00:13:50,639
+all an academic exercise. What does it
+
+358
+00:13:48,240 --> 00:13:52,560
+actually look like in practice? So for
+
+359
+00:13:50,639 --> 00:13:54,720
+example, you have to come to some
+
+360
+00:13:52,560 --> 00:13:56,800
+conclusions and build some rules around
+
+361
+00:13:54,720 --> 00:13:59,120
+what the human escalation pathways are
+
+362
+00:13:56,800 --> 00:14:01,199
+and what are the things that cause that
+
+363
+00:13:59,120 --> 00:14:02,880
+to kick in. And these are decisions that
+
+364
+00:14:01,199 --> 00:14:04,240
+have to get made. They're not, you know,
+
+365
+00:14:02,880 --> 00:14:05,120
+oh, we'll just we'll just win you and
+
+366
+00:14:04,240 --> 00:14:07,279
+hope it works.
+
+367
+00:14:05,120 --> 00:14:09,279
+And everything we were saying earlier
+
+368
+00:14:07,279 --> 00:14:12,480
+about the call, how the moment of
+
+369
+00:14:09,279 --> 00:14:14,079
+sanity, you there's no room for error in
+
+370
+00:14:12,480 --> 00:14:16,800
+what you're talking about right there.
+
+371
+00:14:14,079 --> 00:14:18,800
+So, what I say is, and you know, I I
+
+372
+00:14:16,800 --> 00:14:22,320
+alluded to it a little bit before, but
+
+373
+00:14:18,800 --> 00:14:24,560
+what I say is that we don't we design
+
+374
+00:14:22,320 --> 00:14:26,959
+what they want.
+
+375
+00:14:24,560 --> 00:14:28,720
+Yeah. I do the we do the technical
+
+376
+00:14:26,959 --> 00:14:31,279
+stuff, the prompts, and this and that.
+
+377
+00:14:28,720 --> 00:14:34,560
+still it you we sit down and we go over
+
+378
+00:14:31,279 --> 00:14:38,160
+everything first in our process is I'll
+
+379
+00:14:34,560 --> 00:14:40,560
+build you a demo right and the demo will
+
+380
+00:14:38,160 --> 00:14:43,199
+you it'll just be something I c got off
+
+381
+00:14:40,560 --> 00:14:45,199
+the web with your information right so
+
+382
+00:14:43,199 --> 00:14:47,519
+that's a demo you listen to it listen to
+
+383
+00:14:45,199 --> 00:14:50,000
+her voice his voice I keep saying her
+
+384
+00:14:47,519 --> 00:14:52,800
+but male ages too listen to her listen
+
+385
+00:14:50,000 --> 00:14:54,399
+to the voice tell us what you think and
+
+386
+00:14:52,800 --> 00:14:56,800
+I always say the same thing to people
+
+387
+00:14:54,399 --> 00:14:59,920
+it's part of my thing I'm like look if
+
+388
+00:14:56,800 --> 00:15:02,079
+it's not up to what you got I I can't
+
+389
+00:14:59,920 --> 00:15:04,720
+make you know it's never if you don't
+
+390
+00:15:02,079 --> 00:15:07,360
+like the overall tone there, you know,
+
+391
+00:15:04,720 --> 00:15:08,480
+there's not much I can do to make you
+
+392
+00:15:07,360 --> 00:15:11,199
+like that, right?
+
+393
+00:15:08,480 --> 00:15:13,120
+You know, like redundancy, you know,
+
+394
+00:15:11,199 --> 00:15:14,880
+like, you know, I know on certain
+
+395
+00:15:13,120 --> 00:15:17,279
+models, and you've probably had
+
+396
+00:15:14,880 --> 00:15:18,959
+experience with these personally, too.
+
+397
+00:15:17,279 --> 00:15:21,279
+Yeah, I think we did talk about this
+
+398
+00:15:18,959 --> 00:15:25,600
+too. On certain models there's a long
+
+399
+00:15:21,279 --> 00:15:29,839
+pause between questions and that is
+
+400
+00:15:25,600 --> 00:15:33,600
+because the agent is looking in the
+
+401
+00:15:29,839 --> 00:15:36,240
+database for right the knowledge base
+
+402
+00:15:33,600 --> 00:15:39,120
+for the right information right that's
+
+403
+00:15:36,240 --> 00:15:43,279
+slowed the call down right so what we do
+
+404
+00:15:39,120 --> 00:15:44,800
+is we we just put it on so if you get a
+
+405
+00:15:43,279 --> 00:15:46,639
+demo for us what I was talking about
+
+406
+00:15:44,800 --> 00:15:49,040
+just talking about if you get a demo for
+
+407
+00:15:46,639 --> 00:15:50,800
+us and that's not sounding right to you
+
+408
+00:15:49,040 --> 00:15:52,959
+then we're not the right fit for you.
+
+409
+00:15:50,800 --> 00:15:55,279
+You you need to find somebody else.
+
+410
+00:15:52,959 --> 00:15:57,680
+There's other people that do it. Not you
+
+411
+00:15:55,279 --> 00:15:59,279
+couldn't. But if you like that then we
+
+412
+00:15:57,680 --> 00:16:01,759
+sit down and we go in for the second
+
+413
+00:15:59,279 --> 00:16:03,199
+phase and that is all right Chris tell
+
+414
+00:16:01,759 --> 00:16:06,880
+us what you want in an admissions
+
+415
+00:16:03,199 --> 00:16:09,120
+person. Let me see write me an FAQ. I
+
+416
+00:16:06,880 --> 00:16:10,399
+have noticed in these things even though
+
+417
+00:16:09,120 --> 00:16:11,360
+with treatment it's a little bit
+
+418
+00:16:10,399 --> 00:16:14,800
+different
+
+419
+00:16:11,360 --> 00:16:16,800
+but with these questions 90% of the
+
+420
+00:16:14,800 --> 00:16:19,920
+people ask the same questions all the
+
+421
+00:16:16,800 --> 00:16:21,680
+time. You know, you can they may say
+
+422
+00:16:19,920 --> 00:16:23,680
+them differently or ask them
+
+423
+00:16:21,680 --> 00:16:25,680
+differently, but what kind of treatment
+
+424
+00:16:23,680 --> 00:16:27,519
+you have? How long is the treatment? Can
+
+425
+00:16:25,680 --> 00:16:29,279
+I bring my can I bring my girlfriend?
+
+426
+00:16:27,519 --> 00:16:31,680
+Can I bring my dog? You know, can I
+
+427
+00:16:29,279 --> 00:16:33,759
+bring Red Bull? There's a million things
+
+428
+00:16:31,680 --> 00:16:35,920
+I like. There's a lot of questions like
+
+429
+00:16:33,759 --> 00:16:38,959
+answer that we can answer really
+
+430
+00:16:35,920 --> 00:16:41,120
+quickly. So, when it gets into the next
+
+431
+00:16:38,959 --> 00:16:43,839
+stage is when they say, "All right,
+
+432
+00:16:41,120 --> 00:16:45,519
+Dave, they have insurance. They're ready
+
+433
+00:16:43,839 --> 00:16:47,600
+to come in.
+
+434
+00:16:45,519 --> 00:16:51,680
+let's transfer to a live agent. And in
+
+435
+00:16:47,600 --> 00:16:54,480
+that same token, we do also long hold
+
+436
+00:16:51,680 --> 00:16:57,360
+times. Another thing, Chris, you got the
+
+437
+00:16:54,480 --> 00:16:59,759
+call, you know, and you're on the call
+
+438
+00:16:57,360 --> 00:17:01,680
+and you're waiting five minutes. You may
+
+439
+00:16:59,759 --> 00:17:02,079
+be in we're in that same moment, right?
+
+440
+00:17:01,680 --> 00:17:04,559
+Yes.
+
+441
+00:17:02,079 --> 00:17:06,480
+You may be disconnecting them.
+
+442
+00:17:04,559 --> 00:17:08,880
+So, we get on the lines, try to get
+
+443
+00:17:06,480 --> 00:17:10,880
+information, bring it back to emissions,
+
+444
+00:17:08,880 --> 00:17:11,439
+you know, this call, drop code. So,
+
+445
+00:17:10,880 --> 00:17:12,480
+yeah.
+
+446
+00:17:11,439 --> 00:17:14,319
+Right.
+
+447
+00:17:12,480 --> 00:17:16,079
+Let's talk about the trust issue. So
+
+448
+00:17:14,319 --> 00:17:18,160
+there there's been I spent a lot of time
+
+449
+00:17:16,079 --> 00:17:20,799
+talking with folks about trust a lot
+
+450
+00:17:18,160 --> 00:17:22,720
+from the you know the the relationship
+
+451
+00:17:20,799 --> 00:17:25,280
+standpoint just because there's been
+
+452
+00:17:22,720 --> 00:17:27,120
+such a really horrible decay in the
+
+453
+00:17:25,280 --> 00:17:29,520
+relationship trust between human beings
+
+454
+00:17:27,120 --> 00:17:32,720
+in the last couple decades. Uh I won't
+
+455
+00:17:29,520 --> 00:17:35,520
+labor that but but you you've seen some
+
+456
+00:17:32,720 --> 00:17:38,000
+messaging channels being abused as well.
+
+457
+00:17:35,520 --> 00:17:39,600
+So earning trust in this arena what
+
+458
+00:17:38,000 --> 00:17:42,799
+under the context of governance I think
+
+459
+00:17:39,600 --> 00:17:45,600
+is what what I'm thinking of. you you've
+
+460
+00:17:42,799 --> 00:17:48,799
+seen like spam, fake approvals, vendors
+
+461
+00:17:45,600 --> 00:17:50,880
+waving AI generated claims around. I
+
+462
+00:17:48,799 --> 00:17:52,640
+mean, what does that abuse cost the
+
+463
+00:17:50,880 --> 00:17:56,480
+legitimate operators like you?
+
+464
+00:17:52,640 --> 00:18:00,080
+Yeah, that just that that I believe I've
+
+465
+00:17:56,480 --> 00:18:03,039
+been really been self-employed for over
+
+466
+00:18:00,080 --> 00:18:04,320
+over 40 years. I know I only look 30, so
+
+467
+00:18:03,039 --> 00:18:06,000
+it's hard to say that.
+
+468
+00:18:04,320 --> 00:18:08,880
+I was I was going to say, brother, you
+
+469
+00:18:06,000 --> 00:18:11,200
+look really awesome. 25 30
+
+470
+00:18:08,880 --> 00:18:13,039
+right? He's got to be lying if he's
+
+471
+00:18:11,200 --> 00:18:14,160
+saying 40 years. I know that's what you
+
+472
+00:18:13,039 --> 00:18:17,679
+were thinking.
+
+473
+00:18:14,160 --> 00:18:20,240
+So, um, so the answer to your question
+
+474
+00:18:17,679 --> 00:18:23,039
+is is that we put on a a really good
+
+475
+00:18:20,240 --> 00:18:26,080
+product, but I've been dealing with that
+
+476
+00:18:23,039 --> 00:18:28,559
+kind of stuff no matter whether I was a
+
+477
+00:18:26,080 --> 00:18:32,240
+kid hustling candy
+
+478
+00:18:28,559 --> 00:18:34,960
+or, you know, you know, onto this AI.
+
+479
+00:18:32,240 --> 00:18:38,559
+But to your point, there is a higher
+
+480
+00:18:34,960 --> 00:18:42,240
+abuse with this AI and there's also a
+
+481
+00:18:38,559 --> 00:18:45,039
+problem with people contacting treatment
+
+482
+00:18:42,240 --> 00:18:48,080
+centers and home service business
+
+483
+00:18:45,039 --> 00:18:50,880
+everything about using their AI, you
+
+484
+00:18:48,080 --> 00:18:51,760
+know, like people get contacted 100
+
+485
+00:18:50,880 --> 00:18:52,559
+times a day.
+
+486
+00:18:51,760 --> 00:18:55,520
+Yeah.
+
+487
+00:18:52,559 --> 00:18:59,280
+You know, for so Yeah. So, as far as I'm
+
+488
+00:18:55,520 --> 00:19:03,120
+concerned, there's always bad actors and
+
+489
+00:18:59,280 --> 00:19:06,480
+everything. We don't we don't everything
+
+490
+00:19:03,120 --> 00:19:09,679
+for us has to be 100% clean. We want it
+
+491
+00:19:06,480 --> 00:19:12,400
+to be right. Want to be compliant and we
+
+492
+00:19:09,679 --> 00:19:14,480
+want to you know get our get our message
+
+493
+00:19:12,400 --> 00:19:15,440
+out that look you you know you never
+
+494
+00:19:14,480 --> 00:19:18,480
+have to miss a call.
+
+495
+00:19:15,440 --> 00:19:21,200
+So here's a another interesting angle
+
+496
+00:19:18,480 --> 00:19:23,840
+that you know I I wouldn't I would hope
+
+497
+00:19:21,200 --> 00:19:25,280
+would never be an issue but but it
+
+498
+00:19:23,840 --> 00:19:27,520
+actually is. We got back to the trust
+
+499
+00:19:25,280 --> 00:19:30,000
+factor. How do you tell a center odor
+
+500
+00:19:27,520 --> 00:19:32,320
+it's automated without it sounding like
+
+501
+00:19:30,000 --> 00:19:33,440
+you've put a robot between a desperate
+
+502
+00:19:32,320 --> 00:19:35,440
+caller and help?
+
+503
+00:19:33,440 --> 00:19:38,320
+Yeah, I we don't have that problem. Our
+
+504
+00:19:35,440 --> 00:19:40,160
+our people sound human. Our ages and I
+
+505
+00:19:38,320 --> 00:19:42,799
+my bad because I told you Friday I'd
+
+506
+00:19:40,160 --> 00:19:45,760
+send you a demo and I never did. But our
+
+507
+00:19:42,799 --> 00:19:48,000
+I would like your you to hear them too.
+
+508
+00:19:45,760 --> 00:19:50,960
+But yeah, we don't sound anything like
+
+509
+00:19:48,000 --> 00:19:53,600
+an automatic automated robot. And that's
+
+510
+00:19:50,960 --> 00:19:56,240
+been my whole purpose started. And the
+
+511
+00:19:53,600 --> 00:19:59,280
+good thing about AI is AI has come a
+
+512
+00:19:56,240 --> 00:20:02,080
+long way in the year I've been doing it.
+
+513
+00:19:59,280 --> 00:20:05,679
+You know, just better, you know, more
+
+514
+00:20:02,080 --> 00:20:09,200
+tools available and uh the treatment
+
+515
+00:20:05,679 --> 00:20:10,960
+center owner has to be on board or the,
+
+516
+00:20:09,200 --> 00:20:13,520
+you know, head of business development
+
+517
+00:20:10,960 --> 00:20:16,559
+or whatever their title is has to really
+
+518
+00:20:13,520 --> 00:20:19,440
+be on board. And here with this, like I
+
+519
+00:20:16,559 --> 00:20:22,960
+said, a five minute test before they go
+
+520
+00:20:19,440 --> 00:20:25,360
+anywhere. And I expect people, whatever
+
+521
+00:20:22,960 --> 00:20:28,000
+works for you, whether it be me or the
+
+522
+00:20:25,360 --> 00:20:30,400
+next guy, that's fine with me. But I'm
+
+523
+00:20:28,000 --> 00:20:32,000
+always going to put my best forward. But
+
+524
+00:20:30,400 --> 00:20:35,520
+I can tell you this, as far as
+
+525
+00:20:32,000 --> 00:20:37,919
+governance and that stuff goes,
+
+526
+00:20:35,520 --> 00:20:40,640
+the agents, to answer your question
+
+527
+00:20:37,919 --> 00:20:43,679
+specifically, the agents a year ago to
+
+528
+00:20:40,640 --> 00:20:46,000
+the agents today and the agents in six
+
+529
+00:20:43,679 --> 00:20:50,240
+months are so much better, so much
+
+530
+00:20:46,000 --> 00:20:53,679
+clearer. Our agents learn so much. The
+
+531
+00:20:50,240 --> 00:20:58,000
+agents that we have out there, you know,
+
+532
+00:20:53,679 --> 00:21:02,080
+come in and we take information just not
+
+533
+00:20:58,000 --> 00:21:04,880
+names and stuff, but information
+
+534
+00:21:02,080 --> 00:21:07,840
+anonymous data and we run that into the
+
+535
+00:21:04,880 --> 00:21:09,919
+AI to see where, you know, where can we
+
+536
+00:21:07,840 --> 00:21:11,760
+improve. So, we're always working on our
+
+537
+00:21:09,919 --> 00:21:13,520
+models. We don't sit back and say,
+
+538
+00:21:11,760 --> 00:21:16,080
+"Well, you know what? Today we have the
+
+539
+00:21:13,520 --> 00:21:17,520
+best model and or you know, so we just
+
+540
+00:21:16,080 --> 00:21:19,600
+keep going." It's important.
+
+541
+00:21:17,520 --> 00:21:20,799
+Yes. I I couldn't agree with you more
+
+542
+00:21:19,600 --> 00:21:22,320
+and that's one of the things that's
+
+543
+00:21:20,799 --> 00:21:25,679
+challenging for people to wrap their
+
+544
+00:21:22,320 --> 00:21:28,559
+head around is if you're using software
+
+545
+00:21:25,679 --> 00:21:30,320
+typically there's cycles. So, you know,
+
+546
+00:21:28,559 --> 00:21:31,600
+maybe there's an upgrade every quarter,
+
+547
+00:21:30,320 --> 00:21:33,440
+every other quarter. There's, you know,
+
+548
+00:21:31,600 --> 00:21:35,120
+patterns like that. But this is a
+
+549
+00:21:33,440 --> 00:21:37,840
+situation where the models are evolving
+
+550
+00:21:35,120 --> 00:21:40,559
+almost on a daily basis. It's just it
+
+551
+00:21:37,840 --> 00:21:42,640
+just needs a lot more eyeballs on it on
+
+552
+00:21:40,559 --> 00:21:44,799
+a regular basis than we've ever had to
+
+553
+00:21:42,640 --> 00:21:46,480
+have before. So, I mean, I definitely
+
+554
+00:21:44,799 --> 00:21:48,720
+appreciate the the approach you take to
+
+555
+00:21:46,480 --> 00:21:51,039
+it. If we could zoom out just a little
+
+556
+00:21:48,720 --> 00:21:52,320
+bit from the treatment centers, if you
+
+557
+00:21:51,039 --> 00:21:55,600
+were advising any healthcare
+
+558
+00:21:52,320 --> 00:21:57,600
+organization that standing up AI at a
+
+559
+00:21:55,600 --> 00:21:59,840
+human critical touch point, what's the
+
+560
+00:21:57,600 --> 00:22:01,840
+one principle you'd make non-negotiable
+
+561
+00:21:59,840 --> 00:22:04,480
+on a human touch point? Let me see if I
+
+562
+00:22:01,840 --> 00:22:06,480
+got that. So what you're saying is if I
+
+563
+00:22:04,480 --> 00:22:09,120
+would, you know, a hospital or a
+
+564
+00:22:06,480 --> 00:22:11,360
+doctor's office, anybody else outside
+
+565
+00:22:09,120 --> 00:22:14,080
+the treatment space, what would I make a
+
+566
+00:22:11,360 --> 00:22:15,120
+non-negotiable for a handoff, right, for
+
+567
+00:22:14,080 --> 00:22:15,760
+uh live transfer?
+
+568
+00:22:15,120 --> 00:22:19,440
+Exactly.
+
+569
+00:22:15,760 --> 00:22:21,520
+Yeah. So I I would make sure it would
+
+570
+00:22:19,440 --> 00:22:23,679
+first of all that the AI agent would
+
+571
+00:22:21,520 --> 00:22:24,320
+identify itself as an AI agent,
+
+572
+00:22:23,679 --> 00:22:26,720
+right?
+
+573
+00:22:24,320 --> 00:22:28,960
+That any disclaimers in the in the
+
+574
+00:22:26,720 --> 00:22:31,760
+beginning recorded, you know, because
+
+575
+00:22:28,960 --> 00:22:34,240
+healthcare is healthcare. any disclaimer
+
+576
+00:22:31,760 --> 00:22:37,440
+they all everybody's with HIPPA here so
+
+577
+00:22:34,240 --> 00:22:40,880
+any disclaimers that they have recording
+
+578
+00:22:37,440 --> 00:22:43,039
+like we said text message if the case so
+
+579
+00:22:40,880 --> 00:22:46,240
+in the beginning I I would just kind of
+
+580
+00:22:43,039 --> 00:22:48,400
+let people know that it's an AI right
+
+581
+00:22:46,240 --> 00:22:52,159
+before I went anywhere then I would get
+
+582
+00:22:48,400 --> 00:22:54,640
+into the calling you know to the prompt
+
+583
+00:22:52,159 --> 00:22:57,440
+and I would write I would tell people
+
+584
+00:22:54,640 --> 00:22:59,440
+look you would I would ask people how
+
+585
+00:22:57,440 --> 00:23:03,120
+far do you want to go with it we can
+
+586
+00:22:59,440 --> 00:23:05,200
+keep the AI engaged for 30 minutes or we
+
+587
+00:23:03,120 --> 00:23:07,919
+could if your idea is just answering the
+
+588
+00:23:05,200 --> 00:23:10,480
+phone times are busy and just getting
+
+589
+00:23:07,919 --> 00:23:14,000
+the call to a live person then we can go
+
+590
+00:23:10,480 --> 00:23:16,480
+really fast. So a a non-negotiable for
+
+591
+00:23:14,000 --> 00:23:18,240
+me would be no communication. I have to
+
+592
+00:23:16,480 --> 00:23:21,200
+know from you what you want to do
+
+593
+00:23:18,240 --> 00:23:21,840
+otherwise doesn't I can't do it. I won't
+
+594
+00:23:21,200 --> 00:23:23,120
+do it.
+
+595
+00:23:21,840 --> 00:23:25,520
+I love that. It's a crystal clear
+
+596
+00:23:23,120 --> 00:23:27,440
+answer. We don't get those often enough
+
+597
+00:23:25,520 --> 00:23:29,360
+these days it seems. I appreciate that.
+
+598
+00:23:27,440 --> 00:23:31,520
+I wanted to kind of look at another
+
+599
+00:23:29,360 --> 00:23:33,360
+angle of it. You know, we're we're
+
+600
+00:23:31,520 --> 00:23:34,640
+coming close to the end of our time and
+
+601
+00:23:33,360 --> 00:23:36,640
+I want to make sure we hit a couple
+
+602
+00:23:34,640 --> 00:23:37,919
+really important things. Where do you
+
+603
+00:23:36,640 --> 00:23:39,760
+think the industry is getting
+
+604
+00:23:37,919 --> 00:23:42,720
+responsible AI wrong right now?
+
+605
+00:23:39,760 --> 00:23:47,120
+I think it's hard for me to say that as
+
+606
+00:23:42,720 --> 00:23:49,360
+I am low low I do follow AI things, you
+
+607
+00:23:47,120 --> 00:23:52,400
+know, everywhere, but it's mainly from
+
+608
+00:23:49,360 --> 00:23:54,080
+my software providers. So, it's really
+
+609
+00:23:52,400 --> 00:23:56,880
+hard for me to say where they're getting
+
+610
+00:23:54,080 --> 00:24:00,000
+it wrong. The only experience I can give
+
+611
+00:23:56,880 --> 00:24:02,240
+you as is as a consumer and I'll hear a
+
+612
+00:24:00,000 --> 00:24:04,159
+I'll call an AI
+
+613
+00:24:02,240 --> 00:24:05,679
+think with the city I live in which
+
+614
+00:24:04,159 --> 00:24:08,080
+we'll leave anonymous because I live
+
+615
+00:24:05,679 --> 00:24:11,919
+here. I'm kidding. But what you know
+
+616
+00:24:08,080 --> 00:24:14,000
+like it's a terrible AI you know AI I
+
+617
+00:24:11,919 --> 00:24:16,400
+think that if you put a product out no
+
+618
+00:24:14,000 --> 00:24:20,480
+matter what the business home service
+
+619
+00:24:16,400 --> 00:24:23,039
+doctor whatever it is and it's not and
+
+620
+00:24:20,480 --> 00:24:26,000
+it makes the person want to hang up or
+
+621
+00:24:23,039 --> 00:24:28,400
+if it makes the person just confused
+
+622
+00:24:26,000 --> 00:24:30,880
+then either one of two things you don't
+
+623
+00:24:28,400 --> 00:24:33,919
+care or your callers don't mean anything
+
+624
+00:24:30,880 --> 00:24:36,559
+to you. So I would say an incomplete
+
+625
+00:24:33,919 --> 00:24:40,559
+product people not taking the time to go
+
+626
+00:24:36,559 --> 00:24:43,120
+over things. I really Chris only know
+
+627
+00:24:40,559 --> 00:24:46,400
+from my perspective and I know how hard
+
+628
+00:24:43,120 --> 00:24:50,240
+we go over things but it has given me
+
+629
+00:24:46,400 --> 00:24:53,039
+the ability to text other AIs listen to
+
+630
+00:24:50,240 --> 00:24:55,760
+video you know to different AIs and
+
+631
+00:24:53,039 --> 00:24:57,840
+within 15 seconds I could tell you
+
+632
+00:24:55,760 --> 00:24:58,320
+whether they spent time preparing that
+
+633
+00:24:57,840 --> 00:25:00,799
+or not.
+
+634
+00:24:58,320 --> 00:25:02,320
+Yeah that's a it's it's interesting. So
+
+635
+00:25:00,799 --> 00:25:05,360
+I think being in healthcare from the
+
+636
+00:25:02,320 --> 00:25:08,240
+majority of my career, I think that I've
+
+637
+00:25:05,360 --> 00:25:10,799
+seen so many solutions that come and
+
+638
+00:25:08,240 --> 00:25:13,600
+they're they are really narrow. They're
+
+639
+00:25:10,799 --> 00:25:17,039
+tackling this much of a space that has a
+
+640
+00:25:13,600 --> 00:25:19,840
+broader set of needs and it just seems
+
+641
+00:25:17,039 --> 00:25:21,279
+like we're picking and choosing these
+
+642
+00:25:19,840 --> 00:25:23,279
+little components but never actually
+
+643
+00:25:21,279 --> 00:25:25,200
+solving the whole end to end and it just
+
+644
+00:25:23,279 --> 00:25:27,200
+it's just really pro problematic to work
+
+645
+00:25:25,200 --> 00:25:29,600
+that way. So, you know, I think this
+
+646
+00:25:27,200 --> 00:25:31,760
+this whole idea of really making sure
+
+647
+00:25:29,600 --> 00:25:33,600
+that we're developing things that are
+
+648
+00:25:31,760 --> 00:25:36,080
+really fit for the purpose that they're
+
+649
+00:25:33,600 --> 00:25:37,840
+that they should be is it's just
+
+650
+00:25:36,080 --> 00:25:39,440
+important. Cool technology is not the
+
+651
+00:25:37,840 --> 00:25:41,120
+solution. It's the tailored ones that
+
+652
+00:25:39,440 --> 00:25:41,600
+actually help people. That's what really
+
+653
+00:25:41,120 --> 00:25:43,679
+matters.
+
+654
+00:25:41,600 --> 00:25:46,799
+Yeah. Yeah. And if I could add to that,
+
+655
+00:25:43,679 --> 00:25:49,840
+I would just say that the most if your
+
+656
+00:25:46,799 --> 00:25:51,919
+callers are important to you and like if
+
+657
+00:25:49,840 --> 00:25:53,520
+that's your first line of defense, which
+
+658
+00:25:51,919 --> 00:25:54,159
+most people are for sales,
+
+659
+00:25:53,520 --> 00:25:57,360
+Yeah.
+
+660
+00:25:54,159 --> 00:26:01,039
+is your call. come in. If you just want
+
+661
+00:25:57,360 --> 00:26:03,600
+to save money, you can find
+
+662
+00:26:01,039 --> 00:26:05,279
+um many models. You there's plenty of
+
+663
+00:26:03,600 --> 00:26:08,080
+people that will do it,
+
+664
+00:26:05,279 --> 00:26:10,240
+you know, uh really cheap, have a really
+
+665
+00:26:08,080 --> 00:26:12,640
+cheap model. You'll get, you know,
+
+666
+00:26:10,240 --> 00:26:15,120
+you'll pay less than maybe any major
+
+667
+00:26:12,640 --> 00:26:18,240
+vendor would charge you. The problem is
+
+668
+00:26:15,120 --> 00:26:22,000
+is with that is people know, you know,
+
+669
+00:26:18,240 --> 00:26:25,840
+it's AI. Like if your if your sign on
+
+670
+00:26:22,000 --> 00:26:28,799
+your business is a $5,700 sign instead
+
+671
+00:26:25,840 --> 00:26:31,200
+of an $11,000 sign, people might not
+
+672
+00:26:28,799 --> 00:26:33,760
+know that. But if you're, you know, so
+
+673
+00:26:31,200 --> 00:26:36,240
+why I say that is because we build a
+
+674
+00:26:33,760 --> 00:26:37,919
+done for you system. We don't build a
+
+675
+00:26:36,240 --> 00:26:39,919
+piece of software and give it to you,
+
+676
+00:26:37,919 --> 00:26:43,600
+you know. We do, you know. So I think
+
+677
+00:26:39,919 --> 00:26:45,840
+that people know the difference. And as
+
+678
+00:26:43,600 --> 00:26:47,919
+we go more and more and more people that
+
+679
+00:26:45,840 --> 00:26:49,360
+say they, you know, never go to AI go to
+
+680
+00:26:47,919 --> 00:26:51,919
+AI.
+
+681
+00:26:49,360 --> 00:26:54,559
+Then we'll see even more. You'll know
+
+682
+00:26:51,919 --> 00:26:56,159
+and you know too. It's not just me.
+
+683
+00:26:54,559 --> 00:26:57,919
+Everybody knows when you're calling a
+
+684
+00:26:56,159 --> 00:27:00,799
+bad AI. You just want to talk to the
+
+685
+00:26:57,919 --> 00:27:03,360
+agent right away. If my people if people
+
+686
+00:27:00,799 --> 00:27:06,000
+are calling my AI and I have used it in
+
+687
+00:27:03,360 --> 00:27:09,279
+other industry, if people are calling my
+
+688
+00:27:06,000 --> 00:27:11,520
+my AI and they're not and they're
+
+689
+00:27:09,279 --> 00:27:13,360
+hanging up or they're losing calls, then
+
+690
+00:27:11,520 --> 00:27:14,000
+it's just not the right product,
+
+691
+00:27:13,360 --> 00:27:15,279
+right?
+
+692
+00:27:14,000 --> 00:27:17,600
+I'm not doing my job.
+
+693
+00:27:15,279 --> 00:27:19,039
+So, last couple of things. So, for
+
+694
+00:27:17,600 --> 00:27:20,960
+someone who's running a center and
+
+695
+00:27:19,039 --> 00:27:22,400
+they're hearing this and think, "hm, I
+
+696
+00:27:20,960 --> 00:27:24,240
+think I might need to fix my front
+
+697
+00:27:22,400 --> 00:27:24,640
+door." What's the first thing they
+
+698
+00:27:24,240 --> 00:27:26,000
+should do?
+
+699
+00:27:24,640 --> 00:27:27,120
+What do you mean fix your Did you say
+
+700
+00:27:26,000 --> 00:27:29,360
+fix your front door?
+
+701
+00:27:27,120 --> 00:27:31,039
+Yeah, they're they realize I they need
+
+702
+00:27:29,360 --> 00:27:32,960
+to fix the front door. What you mean?
+
+703
+00:27:31,039 --> 00:27:35,200
+What should they do? Should should they
+
+704
+00:27:32,960 --> 00:27:37,679
+try to solve this with or without a
+
+705
+00:27:35,200 --> 00:27:40,240
+vendor? What would you recommend? Yeah,
+
+706
+00:27:37,679 --> 00:27:42,240
+I I would suggest that you would get
+
+707
+00:27:40,240 --> 00:27:44,720
+somebody that that you feel comfortable
+
+708
+00:27:42,240 --> 00:27:46,640
+with, that you trust, that you see
+
+709
+00:27:44,720 --> 00:27:48,480
+information about on the web, you know,
+
+710
+00:27:46,640 --> 00:27:51,600
+that you could research. But more
+
+711
+00:27:48,480 --> 00:27:53,200
+importantly, with all that said, I say,
+
+712
+00:27:51,600 --> 00:27:56,080
+not just because it's the way I do it,
+
+713
+00:27:53,200 --> 00:27:58,720
+but let them run a demo for you. I would
+
+714
+00:27:56,080 --> 00:28:00,799
+say do, you know, do that. See how it
+
+715
+00:27:58,720 --> 00:28:04,159
+is. You know, it's proven that it will
+
+716
+00:28:00,799 --> 00:28:07,760
+work in this industry, right? Uh, so you
+
+717
+00:28:04,159 --> 00:28:09,200
+know, just find take your time, try a
+
+718
+00:28:07,760 --> 00:28:11,600
+couple different people and see where
+
+719
+00:28:09,200 --> 00:28:13,919
+you're the most comfortable. I hope it's
+
+720
+00:28:11,600 --> 00:28:14,480
+me, but if it's not, you know, use the
+
+721
+00:28:13,919 --> 00:28:16,720
+next guy,
+
+722
+00:28:14,480 --> 00:28:19,360
+right? No, I appreciate that. Well, this
+
+723
+00:28:16,720 --> 00:28:21,120
+between last Friday and today, our
+
+724
+00:28:19,360 --> 00:28:22,399
+conversation, what's a question maybe I
+
+725
+00:28:21,120 --> 00:28:23,440
+should have asked that I didn't ask? Did
+
+726
+00:28:22,399 --> 00:28:24,880
+you want to speak?
+
+727
+00:28:23,440 --> 00:28:27,520
+Yeah. What I do want to say really
+
+728
+00:28:24,880 --> 00:28:31,039
+quick, it'll only take a minute is we do
+
+729
+00:28:27,520 --> 00:28:33,520
+something else too where we engage
+
+730
+00:28:31,039 --> 00:28:36,000
+inactive clients, right? So every
+
+731
+00:28:33,520 --> 00:28:38,960
+treatment center has and this I really I
+
+732
+00:28:36,000 --> 00:28:41,760
+said to earlier in the uh interview I
+
+733
+00:28:38,960 --> 00:28:44,559
+was saying that I was that guy. So yeah,
+
+734
+00:28:41,760 --> 00:28:47,520
+so we take the clients that are inactive
+
+735
+00:28:44,559 --> 00:28:50,240
+and what we do with them is we get the
+
+736
+00:28:47,520 --> 00:28:52,799
+client uh commercially approved for text
+
+737
+00:28:50,240 --> 00:28:56,640
+messages and we send a text message to
+
+738
+00:28:52,799 --> 00:28:58,799
+them and then the AI uh text engages
+
+739
+00:28:56,640 --> 00:29:00,880
+them with the idea of coming back to
+
+740
+00:28:58,799 --> 00:29:03,039
+admissions. These are people that the
+
+741
+00:29:00,880 --> 00:29:06,000
+treatment center can't don't have
+
+742
+00:29:03,039 --> 00:29:08,159
+doesn't have the time or can't call. So
+
+743
+00:29:06,000 --> 00:29:10,159
+that's something we do. Yeah, we're very
+
+744
+00:29:08,159 --> 00:29:12,399
+not a lot of people are doing that. uh
+
+745
+00:29:10,159 --> 00:29:15,360
+right now we're one of the few but you
+
+746
+00:29:12,399 --> 00:29:17,039
+know we're we're uh it's it's really
+
+747
+00:29:15,360 --> 00:29:17,520
+important to me can help a lot of
+
+748
+00:29:17,039 --> 00:29:19,120
+people.
+
+749
+00:29:17,520 --> 00:29:21,679
+No, I totally get that and it seems like
+
+750
+00:29:19,120 --> 00:29:23,600
+an obvious place where technology should
+
+751
+00:29:21,679 --> 00:29:25,600
+be part of the process that people think
+
+752
+00:29:23,600 --> 00:29:27,039
+about but I mean it's an area where I
+
+753
+00:29:25,600 --> 00:29:29,039
+mean I just love that you're taking
+
+754
+00:29:27,039 --> 00:29:30,799
+think taking the proactive step if and
+
+755
+00:29:29,039 --> 00:29:32,799
+not just leaving it and hoping that
+
+756
+00:29:30,799 --> 00:29:34,799
+they're the center is going to do those
+
+757
+00:29:32,799 --> 00:29:36,640
+follow-ups. I think that's a that's a
+
+758
+00:29:34,799 --> 00:29:40,399
+differentiator from from where I sit.
+
+759
+00:29:36,640 --> 00:29:42,159
+So, where can people find you and where
+
+760
+00:29:40,399 --> 00:29:42,640
+can they find out more about blueshirt
+
+761
+00:29:42,159 --> 00:29:44,720
+media?
+
+762
+00:29:42,640 --> 00:29:46,320
+Yeah, so you can go to my site. I think
+
+763
+00:29:44,720 --> 00:29:48,720
+we talked about there'll be a link
+
+764
+00:29:46,320 --> 00:29:52,159
+there. It's blueshirtmedia.com.
+
+765
+00:29:48,720 --> 00:29:55,520
+You can uh also uh you know go to my
+
+766
+00:29:52,159 --> 00:29:58,399
+site, come there, read the blogs, read
+
+767
+00:29:55,520 --> 00:30:01,520
+the information, call me my you can call
+
+768
+00:29:58,399 --> 00:30:03,600
+me directly on my cell phone. We'll go
+
+769
+00:30:01,520 --> 00:30:06,000
+over anything you want to go over. And
+
+770
+00:30:03,600 --> 00:30:08,240
+even if you're maybe not in the
+
+771
+00:30:06,000 --> 00:30:10,000
+treatment space, but you're somewhat in
+
+772
+00:30:08,240 --> 00:30:12,640
+healthcare and you want to find out some
+
+773
+00:30:10,000 --> 00:30:15,039
+options, we really do talk to, you know,
+
+774
+00:30:12,640 --> 00:30:17,360
+people that can use the service that
+
+775
+00:30:15,039 --> 00:30:19,440
+doesn't don't even know it exists. So,
+
+776
+00:30:17,360 --> 00:30:21,039
+blueshirtmedia.com.
+
+777
+00:30:19,440 --> 00:30:22,399
+Thank Thanks so much, Dave. I really
+
+778
+00:30:21,039 --> 00:30:24,240
+appreciate it. And for our listeners,
+
+779
+00:30:22,399 --> 00:30:26,240
+you'll find all the contact information
+
+780
+00:30:24,240 --> 00:30:28,159
+you you could ever need in the show
+
+781
+00:30:26,240 --> 00:30:30,480
+notes as always. And please don't
+
+782
+00:30:28,159 --> 00:30:32,399
+hesitate to to reach out to Dave and and
+
+783
+00:30:30,480 --> 00:30:35,039
+his team at Blue Shark Media. Dave, this
+
+784
+00:30:32,399 --> 00:30:36,880
+has been a amazing conversation. Well,
+
+785
+00:30:35,039 --> 00:30:38,720
+two days worth of it. The guests only
+
+786
+00:30:36,880 --> 00:30:40,640
+get to the excuse me, the the our
+
+787
+00:30:38,720 --> 00:30:42,559
+listeners only get to hear today's
+
+788
+00:30:40,640 --> 00:30:44,080
+version. Um, but I very much have
+
+789
+00:30:42,559 --> 00:30:46,080
+enjoyed our conversations and I look
+
+790
+00:30:44,080 --> 00:30:47,679
+forward to continuing those. And thank
+
+791
+00:30:46,080 --> 00:30:49,360
+you so much again for what you're doing.
+
+792
+00:30:47,679 --> 00:30:51,679
+You're missionoriented. You've got
+
+793
+00:30:49,360 --> 00:30:53,200
+passion and it's personal. To me, that's
+
+794
+00:30:51,679 --> 00:30:55,279
+the winning formula to really make a
+
+795
+00:30:53,200 --> 00:30:57,520
+difference in people's lives. So, on
+
+796
+00:30:55,279 --> 00:30:59,279
+behalf of my listeners, I say thank you.
+
+797
+00:30:57,520 --> 00:31:00,960
+Thank you, Chris. Thanks for having me.
+
+798
+00:30:59,279 --> 00:31:02,960
+Appreciate it. That's it for this
+
+799
+00:31:00,960 --> 00:31:04,960
+episode of the Signal Room. If today's
+
+800
+00:31:02,960 --> 00:31:06,799
+conversation sparks something in you, an
+
+801
+00:31:04,960 --> 00:31:08,720
+idea, a challenge, or a perspective
+
+802
+00:31:06,799 --> 00:31:10,799
+worth amplifying, I'd love to hear from
+
+803
+00:31:08,720 --> 00:31:12,320
+you. Message me on LinkedIn or visit
+
+804
+00:31:10,799 --> 00:31:16,320
+sigaroompodcast.com
+
+805
+00:31:12,320 --> 00:31:16,320
+to explore being a guest on an upcoming

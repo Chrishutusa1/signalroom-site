@@ -1,0 +1,4599 @@
+1
+00:00:00,080 --> 00:00:03,439
+There's a version of AI that quietly
+
+2
+00:00:01,839 --> 00:00:04,880
+grows your business while you sleep. And
+
+3
+00:00:03,439 --> 00:00:06,799
+there's a version that sends the wrong
+
+4
+00:00:04,880 --> 00:00:08,720
+client the wrong message at 2 a.m.
+
+5
+00:00:06,799 --> 00:00:12,000
+I've seen it where it's like, "We will
+
+6
+00:00:08,720 --> 00:00:14,880
+grow your business to $560,000 or
+
+7
+00:00:12,000 --> 00:00:16,375
+$800,000. Like, these are huge numbers
+
+8
+00:00:14,880 --> 00:00:17,680
+and you're making these promises before
+
+9
+00:00:16,375 --> 00:00:20,240
+[music] you even talked with the company
+
+10
+00:00:17,680 --> 00:00:22,240
+owner." The agent should never own
+
+11
+00:00:20,240 --> 00:00:25,039
+anything that requires real judgment or
+
+12
+00:00:22,240 --> 00:00:27,039
+carries relationship risk. An unexpected
+
+13
+00:00:25,039 --> 00:00:29,359
+objection, something emotional, an
+
+14
+00:00:27,039 --> 00:00:31,119
+actual negotiation. Those are all things
+
+15
+00:00:29,359 --> 00:00:33,520
+that [music] don't need a human. If we
+
+16
+00:00:31,119 --> 00:00:34,719
+start adding to those broken systems,
+
+17
+00:00:33,520 --> 00:00:36,160
+you're just going to create more of a
+
+18
+00:00:34,719 --> 00:00:37,920
+mess on top of what you already have.
+
+19
+00:00:36,160 --> 00:00:39,440
+You built the system, so you're
+
+20
+00:00:37,920 --> 00:00:39,760
+responsible for what it does in your
+
+21
+00:00:39,440 --> 00:00:41,440
+name.
+
+22
+00:00:39,760 --> 00:00:43,280
+Welcome back to the Siggo Room. I'm
+
+23
+00:00:41,440 --> 00:00:45,120
+Chris Hutchins. Here's a version of AI
+
+24
+00:00:43,280 --> 00:00:46,399
+that quietly grows your business while
+
+25
+00:00:45,120 --> 00:00:48,160
+you sleep. And there's a version that
+
+26
+00:00:46,399 --> 00:00:50,399
+sends the wrong client the wrong message
+
+27
+00:00:48,160 --> 00:00:52,559
+at 2 a.m. and nobody notices for a week.
+
+28
+00:00:50,399 --> 00:00:54,480
+Same tools. The only difference is what
+
+29
+00:00:52,559 --> 00:00:56,800
+you keep a human on. My guest builds
+
+30
+00:00:54,480 --> 00:00:59,280
+these systems for real operators. Today
+
+31
+00:00:56,800 --> 00:00:59,920
+we find that line. Ethan, welcome to the
+
+32
+00:00:59,280 --> 00:01:01,520
+Signal Room.
+
+33
+00:00:59,920 --> 00:01:03,920
+Hey Chris, thank you for having me.
+
+34
+00:01:01,520 --> 00:01:05,199
+It's a pleasure. Really enjoyed having
+
+35
+00:01:03,920 --> 00:01:06,880
+some some conversations with you over
+
+36
+00:01:05,199 --> 00:01:08,560
+the last couple of weeks. I'm like, we
+
+37
+00:01:06,880 --> 00:01:10,159
+got to do this for everyone else so they
+
+38
+00:01:08,560 --> 00:01:12,240
+can actually listen in. Fascinating
+
+39
+00:01:10,159 --> 00:01:14,880
+stuff you're doing. But why don't we
+
+40
+00:01:12,240 --> 00:01:16,560
+kind of start with who you are, what
+
+41
+00:01:14,880 --> 00:01:17,920
+you're about, and tell us about what
+
+42
+00:01:16,560 --> 00:01:20,960
+Overclocked AI does.
+
+43
+00:01:17,920 --> 00:01:25,520
+Yeah, absolutely. My name is Ethan. I am
+
+44
+00:01:20,960 --> 00:01:27,040
+27. I live in Canada right now. my path
+
+45
+00:01:25,520 --> 00:01:28,799
+that is uh that's going to be more the
+
+46
+00:01:27,040 --> 00:01:31,119
+east side. We like to bug them about the
+
+47
+00:01:28,799 --> 00:01:32,960
+uh the Canadian accent. Uh there is a
+
+48
+00:01:31,119 --> 00:01:34,560
+stereotypical accent. It's on the east
+
+49
+00:01:32,960 --> 00:01:36,880
+side, not the west side.
+
+50
+00:01:34,560 --> 00:01:39,119
+But uh yeah, Chris, my my path here
+
+51
+00:01:36,880 --> 00:01:41,280
+wasn't uh exactly a straight line. Uh
+
+52
+00:01:39,119 --> 00:01:43,920
+just to to back it up a little bit, I
+
+53
+00:01:41,280 --> 00:01:46,079
+spent a lot of years uh my early years
+
+54
+00:01:43,920 --> 00:01:48,560
+in the restaurant industry starting at
+
+55
+00:01:46,079 --> 00:01:51,520
+15. was there for many years after COVID
+
+56
+00:01:48,560 --> 00:01:53,600
+hit my town. It was uh it took a long
+
+57
+00:01:51,520 --> 00:01:56,000
+time to to build back up. I moved out to
+
+58
+00:01:53,600 --> 00:01:58,240
+the Okonogan for a year around that time
+
+59
+00:01:56,000 --> 00:02:00,079
+to chase a commercial pilot's license.
+
+60
+00:01:58,240 --> 00:02:02,799
+Uh after getting out of the restaurant
+
+61
+00:02:00,079 --> 00:02:05,600
+industry and uh I've always been wired
+
+62
+00:02:02,799 --> 00:02:09,039
+for adventure and flying felt like a way
+
+63
+00:02:05,600 --> 00:02:10,959
+to to make travel and freedom a
+
+64
+00:02:09,039 --> 00:02:13,599
+permanent part of my life. very quickly
+
+65
+00:02:10,959 --> 00:02:15,920
+that didn't work out due to uh hitting a
+
+66
+00:02:13,599 --> 00:02:17,840
+wall on the medical exam and uh I ended
+
+67
+00:02:15,920 --> 00:02:19,680
+up having to go back home and you know
+
+68
+00:02:17,840 --> 00:02:21,920
+figure figure things out what was next
+
+69
+00:02:19,680 --> 00:02:23,760
+for me. After that uh I had an
+
+70
+00:02:21,920 --> 00:02:25,440
+opportunity with a national group
+
+71
+00:02:23,760 --> 00:02:27,599
+benefits consultancy as a sales
+
+72
+00:02:25,440 --> 00:02:30,000
+consultant for a couple years. It built
+
+73
+00:02:27,599 --> 00:02:32,160
+good skills and I come from a family of
+
+74
+00:02:30,000 --> 00:02:34,080
+business owners in in that space. though
+
+75
+00:02:32,160 --> 00:02:36,400
+I knew early on it wasn't where I wanted
+
+76
+00:02:34,080 --> 00:02:39,519
+to be but I did want to build something
+
+77
+00:02:36,400 --> 00:02:42,160
+of my own and uh I was always you know
+
+78
+00:02:39,519 --> 00:02:43,760
+raised to be ambitious about creating
+
+79
+00:02:42,160 --> 00:02:46,400
+something and building something of your
+
+80
+00:02:43,760 --> 00:02:48,640
+own but also being passionate about it.
+
+81
+00:02:46,400 --> 00:02:51,920
+So [clears throat] what really shaped me
+
+82
+00:02:48,640 --> 00:02:54,800
+where I was at, you know, during COVID,
+
+83
+00:02:51,920 --> 00:02:56,400
+uh, I was watching a lot of people
+
+84
+00:02:54,800 --> 00:02:58,319
+working from a laptop, living in
+
+85
+00:02:56,400 --> 00:03:00,959
+incredible places, building income
+
+86
+00:02:58,319 --> 00:03:03,599
+without asking anyone's permission for,
+
+87
+00:03:00,959 --> 00:03:06,319
+you know, two weeks off uh, in a year.
+
+88
+00:03:03,599 --> 00:03:09,360
+that really hit something in me and uh
+
+89
+00:03:06,319 --> 00:03:11,200
+it took time to to find the actual path
+
+90
+00:03:09,360 --> 00:03:12,959
+but AI was one of the things that
+
+91
+00:03:11,200 --> 00:03:14,720
+clicked uh around when it started
+
+92
+00:03:12,959 --> 00:03:17,920
+getting you know more popular and just
+
+93
+00:03:14,720 --> 00:03:20,640
+being talked about more it very quickly
+
+94
+00:03:17,920 --> 00:03:24,080
+for for me I believed uh that it would
+
+95
+00:03:20,640 --> 00:03:26,640
+be you know the next internet boom in a
+
+96
+00:03:24,080 --> 00:03:28,800
+way the way it would shape work and just
+
+97
+00:03:26,640 --> 00:03:30,879
+the world going forward I was uh very
+
+98
+00:03:28,800 --> 00:03:33,440
+confident in it and uh that was a few
+
+99
+00:03:30,879 --> 00:03:36,560
+years ago we've obviously seen how uh AI
+
+100
+00:03:33,440 --> 00:03:38,640
+has come out of that. Uh there's some
+
+101
+00:03:36,560 --> 00:03:40,400
+some companies that are going way and
+
+102
+00:03:38,640 --> 00:03:42,799
+beyond with where they're at, right? Uh
+
+103
+00:03:40,400 --> 00:03:44,640
+Tesla building robots, crazy stuff. So,
+
+104
+00:03:42,799 --> 00:03:47,120
+we're nowhere at that level. But, uh
+
+105
+00:03:44,640 --> 00:03:49,680
+yeah, just believing early on that it
+
+106
+00:03:47,120 --> 00:03:52,560
+was going to be uh a really big thing. I
+
+107
+00:03:49,680 --> 00:03:55,519
+believed it was important to get into it
+
+108
+00:03:52,560 --> 00:03:57,439
+early on. So, that brings us to uh where
+
+109
+00:03:55,519 --> 00:04:00,319
+we're at today. That's what became
+
+110
+00:03:57,439 --> 00:04:02,239
+Overclocked AI. What we do is help
+
+111
+00:04:00,319 --> 00:04:04,879
+consulting firms build a predictable
+
+112
+00:04:02,239 --> 00:04:07,840
+pipeline instead of relying on referrals
+
+113
+00:04:04,879 --> 00:04:09,680
+and manual outreach. We call it an AI
+
+114
+00:04:07,840 --> 00:04:11,760
+growth engine and uh we can get into
+
+115
+00:04:09,680 --> 00:04:14,159
+that in a little bit. It's three pieces.
+
+116
+00:04:11,760 --> 00:04:16,320
+It's an AI agent uh that handles
+
+117
+00:04:14,159 --> 00:04:19,199
+outbound research and personalized
+
+118
+00:04:16,320 --> 00:04:21,120
+outreach. There's an AI sales department
+
+119
+00:04:19,199 --> 00:04:24,400
+representative that takes over once
+
+120
+00:04:21,120 --> 00:04:26,880
+someone replies and answering questions
+
+121
+00:04:24,400 --> 00:04:28,960
+uh handling objections and and booking
+
+122
+00:04:26,880 --> 00:04:31,600
+meetings straight onto the calendar
+
+123
+00:04:28,960 --> 00:04:33,600
+24/7. You know, that's uh that's some of
+
+124
+00:04:31,600 --> 00:04:36,400
+the things that we uh try to focus on.
+
+125
+00:04:33,600 --> 00:04:38,880
+Wow, that's that's fascinating. I I
+
+126
+00:04:36,400 --> 00:04:40,880
+really uh appreciate your resilience.
+
+127
+00:04:38,880 --> 00:04:42,720
+Obviously, you've you're heading down a
+
+128
+00:04:40,880 --> 00:04:44,400
+pathway and then all of a sudden like,
+
+129
+00:04:42,720 --> 00:04:46,720
+oh, I've got to pivot. and you've kind
+
+130
+00:04:44,400 --> 00:04:49,040
+of been kind of in that mindset that
+
+131
+00:04:46,720 --> 00:04:51,360
+that's what you're going to do. Um, not
+
+132
+00:04:49,040 --> 00:04:54,000
+everybody pivots like that. Kudos to you
+
+133
+00:04:51,360 --> 00:04:55,280
+for for making the change. I'm sure for
+
+134
+00:04:54,000 --> 00:04:56,639
+somebody who really was kind of
+
+135
+00:04:55,280 --> 00:04:58,960
+passionate and wanted to to fly
+
+136
+00:04:56,639 --> 00:05:00,320
+airplanes, it kind of stung a little bit
+
+137
+00:04:58,960 --> 00:05:01,919
+for a bit, you know, but
+
+138
+00:05:00,320 --> 00:05:04,240
+Exactly.
+
+139
+00:05:01,919 --> 00:05:07,120
+Yeah. and and some of those uh those you
+
+140
+00:05:04,240 --> 00:05:10,000
+know early on stories um I I know are
+
+141
+00:05:07,120 --> 00:05:12,080
+completely not uh a part of what we're
+
+142
+00:05:10,000 --> 00:05:14,560
+talking about today but I like to paint
+
+143
+00:05:12,080 --> 00:05:16,960
+a picture that you know for me I didn't
+
+144
+00:05:14,560 --> 00:05:18,720
+know what I wanted to do uh and I think
+
+145
+00:05:16,960 --> 00:05:20,400
+there's so many people in this space
+
+146
+00:05:18,720 --> 00:05:21,919
+that sorry not in this space but just
+
+147
+00:05:20,400 --> 00:05:23,840
+out there that you know they just go one
+
+148
+00:05:21,919 --> 00:05:25,919
+thing to the other not figuring out what
+
+149
+00:05:23,840 --> 00:05:27,840
+is meant for them. So you're not alone
+
+150
+00:05:25,919 --> 00:05:29,919
+out there's many of us and you'll find
+
+151
+00:05:27,840 --> 00:05:31,840
+what you know works best for you. I'm
+
+152
+00:05:29,919 --> 00:05:33,680
+glad you put it that way. And you know,
+
+153
+00:05:31,840 --> 00:05:36,320
+it just it reminds me of something I
+
+154
+00:05:33,680 --> 00:05:38,080
+heard Gary Vee talk about on on one of
+
+155
+00:05:36,320 --> 00:05:39,759
+his podcasts. He tells people this a
+
+156
+00:05:38,080 --> 00:05:41,440
+lot. He said, "Look, you're young. The
+
+157
+00:05:39,759 --> 00:05:44,000
+one thing that you have that's the most
+
+158
+00:05:41,440 --> 00:05:46,560
+valuable thing, it's time. And in your
+
+159
+00:05:44,000 --> 00:05:47,919
+20s and your 30s, you've got plenty of
+
+160
+00:05:46,560 --> 00:05:49,520
+time to figure stuff out. So, if you
+
+161
+00:05:47,919 --> 00:05:51,039
+haven't figured it out, don't sweat it.
+
+162
+00:05:49,520 --> 00:05:52,800
+You're in a really good spot. You've got
+
+163
+00:05:51,039 --> 00:05:55,039
+the time to learn. One of the things
+
+164
+00:05:52,800 --> 00:05:56,880
+that I was inspired by is when I first
+
+165
+00:05:55,039 --> 00:05:59,440
+heard about Colonel Sanders launched his
+
+166
+00:05:56,880 --> 00:06:01,680
+business after he was retired over 60
+
+167
+00:05:59,440 --> 00:06:03,199
+years old. So that there's hope. Don't
+
+168
+00:06:01,680 --> 00:06:04,880
+don't get too discouraged, folks. You're
+
+169
+00:06:03,199 --> 00:06:07,440
+doing just fine.
+
+170
+00:06:04,880 --> 00:06:09,520
+So let's kind of get into a little bit
+
+171
+00:06:07,440 --> 00:06:11,919
+more about, you know, how did you get
+
+172
+00:06:09,520 --> 00:06:13,759
+into this this mode that you're in, you
+
+173
+00:06:11,919 --> 00:06:15,919
+know, working with overclocked AI? How
+
+174
+00:06:13,759 --> 00:06:17,680
+did you get here? What's an AI growth
+
+175
+00:06:15,919 --> 00:06:20,560
+engine really for a consultant or a
+
+176
+00:06:17,680 --> 00:06:23,840
+small team? The idea that I had when I
+
+177
+00:06:20,560 --> 00:06:26,800
+when I took this on was uh just jumping
+
+178
+00:06:23,840 --> 00:06:29,039
+back to the COVID days. There was a big
+
+179
+00:06:26,800 --> 00:06:30,960
+boom of uh obviously everyone was at
+
+180
+00:06:29,039 --> 00:06:33,600
+home. So a lot of people started working
+
+181
+00:06:30,960 --> 00:06:35,280
+from home uh and coming out of co things
+
+182
+00:06:33,600 --> 00:06:37,199
+stayed that way uh for a lot of
+
+183
+00:06:35,280 --> 00:06:38,800
+companies. Many companies also switched
+
+184
+00:06:37,199 --> 00:06:40,479
+to a hybrid model where you know you're
+
+185
+00:06:38,800 --> 00:06:42,880
+at work some but also still working at
+
+186
+00:06:40,479 --> 00:06:45,600
+home. And I think a lot of people built
+
+187
+00:06:42,880 --> 00:06:47,759
+an appreciation for, you know, being
+
+188
+00:06:45,600 --> 00:06:49,759
+being in a place that I guess wasn't
+
+189
+00:06:47,759 --> 00:06:51,440
+work that they were like forced to be.
+
+190
+00:06:49,759 --> 00:06:53,680
+You know, they got to spend time around
+
+191
+00:06:51,440 --> 00:06:55,600
+their families. They got to, you know,
+
+192
+00:06:53,680 --> 00:06:58,479
+focus on their health, right? Like how
+
+193
+00:06:55,600 --> 00:07:01,280
+many people were had access to uh, you
+
+194
+00:06:58,479 --> 00:07:03,039
+know, be cooking at home instead of, you
+
+195
+00:07:01,280 --> 00:07:04,720
+know, going a full day without eating or
+
+196
+00:07:03,039 --> 00:07:05,919
+having to pack a lunch or something or,
+
+197
+00:07:04,720 --> 00:07:08,479
+you know, having a half hour for a
+
+198
+00:07:05,919 --> 00:07:10,160
+lunch, right? So it really in a way we
+
+199
+00:07:08,479 --> 00:07:11,599
+were uh we we were a little spoiled and
+
+200
+00:07:10,160 --> 00:07:14,160
+then we realized that you know we can
+
+201
+00:07:11,599 --> 00:07:16,560
+take work wherever we go. Going back to
+
+202
+00:07:14,160 --> 00:07:18,960
+uh you know the co days there was also a
+
+203
+00:07:16,560 --> 00:07:21,280
+big boom of uh people on Instagram right
+
+204
+00:07:18,960 --> 00:07:23,199
+you had content creators that were
+
+205
+00:07:21,280 --> 00:07:24,400
+posting videos that like I mentioned
+
+206
+00:07:23,199 --> 00:07:26,400
+before where they would just be you know
+
+207
+00:07:24,400 --> 00:07:28,240
+on a beach somewhere working a couple
+
+208
+00:07:26,400 --> 00:07:31,120
+hours a week. I knew that it was
+
+209
+00:07:28,240 --> 00:07:32,560
+possible. I also, you know, like I like
+
+210
+00:07:31,120 --> 00:07:34,080
+I mentioned earlier, having to, you
+
+211
+00:07:32,560 --> 00:07:37,520
+know, request from a boss to have your
+
+212
+00:07:34,080 --> 00:07:39,599
+your two weeks uh in a year. I I just
+
+213
+00:07:37,520 --> 00:07:41,120
+started to really struggle with the idea
+
+214
+00:07:39,599 --> 00:07:43,599
+that, you know, you get one life, you
+
+215
+00:07:41,120 --> 00:07:45,919
+get to, you know, you you you can live
+
+216
+00:07:43,599 --> 00:07:48,319
+it how you want, right? So that's what
+
+217
+00:07:45,919 --> 00:07:49,759
+got me into this space. I wanted to not
+
+218
+00:07:48,319 --> 00:07:52,560
+only have financial freedom, but freedom
+
+219
+00:07:49,759 --> 00:07:54,479
+over my time and uh be able to live my
+
+220
+00:07:52,560 --> 00:07:57,440
+life every single day, even from a young
+
+221
+00:07:54,479 --> 00:07:58,479
+age, exactly how I wanted it to. Uh I
+
+222
+00:07:57,440 --> 00:08:00,479
+believe that answers one of your
+
+223
+00:07:58,479 --> 00:08:02,800
+questions. I forget what the other
+
+224
+00:08:00,479 --> 00:08:05,440
+question uh was there.
+
+225
+00:08:02,800 --> 00:08:07,360
+I I love the answer and it's fantastic
+
+226
+00:08:05,440 --> 00:08:09,680
+to me because I I remember going through
+
+227
+00:08:07,360 --> 00:08:11,120
+the same kind of transformation or in
+
+228
+00:08:09,680 --> 00:08:12,720
+transition during the during the
+
+229
+00:08:11,120 --> 00:08:15,360
+pandemic. But one of the things that I
+
+230
+00:08:12,720 --> 00:08:17,919
+found so remarkable is that the
+
+231
+00:08:15,360 --> 00:08:21,599
+resiliency and the way that people seem
+
+232
+00:08:17,919 --> 00:08:24,319
+to be able to step up and just navigate
+
+233
+00:08:21,599 --> 00:08:26,800
+that difficulty. I had I was working in
+
+234
+00:08:24,319 --> 00:08:29,120
+New York and had some team members,
+
+235
+00:08:26,800 --> 00:08:31,759
+managers and directors people are all
+
+236
+00:08:29,120 --> 00:08:34,000
+were responsible for teams and both
+
+237
+00:08:31,759 --> 00:08:36,080
+spouses were home working had to work
+
+238
+00:08:34,000 --> 00:08:38,080
+from home there all the kids all the
+
+239
+00:08:36,080 --> 00:08:40,000
+pets and honestly that was one of the
+
+240
+00:08:38,080 --> 00:08:41,680
+best parts of it that I that I like to
+
+241
+00:08:40,000 --> 00:08:43,200
+think about. I mean got to know people
+
+242
+00:08:41,680 --> 00:08:44,800
+in a very different way when you're in
+
+243
+00:08:43,200 --> 00:08:47,360
+an office environment. I mean, you can
+
+244
+00:08:44,800 --> 00:08:49,200
+do the, you know, a random stop by at
+
+245
+00:08:47,360 --> 00:08:51,279
+somebody's desk or whatever and chat,
+
+246
+00:08:49,200 --> 00:08:54,240
+but it's a whole different thing when
+
+247
+00:08:51,279 --> 00:08:56,320
+you're not able to do that and then you
+
+248
+00:08:54,240 --> 00:08:57,839
+see people in their own elev you're
+
+249
+00:08:56,320 --> 00:08:59,839
+seeing them differently and I I loved
+
+250
+00:08:57,839 --> 00:09:01,760
+it. I got to know the team on a level
+
+251
+00:08:59,839 --> 00:09:04,640
+that I probably wouldn't have any other
+
+252
+00:09:01,760 --> 00:09:07,040
+way. So, there there was a a silver
+
+253
+00:09:04,640 --> 00:09:08,640
+lining in there. uh not to say that
+
+254
+00:09:07,040 --> 00:09:10,399
+there was much else that was positive
+
+255
+00:09:08,640 --> 00:09:12,320
+about the the experience other than just
+
+256
+00:09:10,399 --> 00:09:14,240
+the people part of it and understand
+
+257
+00:09:12,320 --> 00:09:16,560
+obviously heroism for all of us probably
+
+258
+00:09:14,240 --> 00:09:18,800
+got redefined during those those years.
+
+259
+00:09:16,560 --> 00:09:20,880
+So [laughter] let's just you've kind of
+
+260
+00:09:18,800 --> 00:09:24,080
+teased up the the growth engine a little
+
+261
+00:09:20,880 --> 00:09:27,600
+bit. Um let's kind of go past that demo
+
+262
+00:09:24,080 --> 00:09:30,080
+and what actually becomes a true reality
+
+263
+00:09:27,600 --> 00:09:31,760
+when an agent is doing the work. Um,
+
+264
+00:09:30,080 --> 00:09:34,720
+we're talking about agentic AI minus the
+
+265
+00:09:31,760 --> 00:09:36,240
+hype essentially when AI is an the agent
+
+266
+00:09:34,720 --> 00:09:38,080
+doing some of the outreach and the
+
+267
+00:09:36,240 --> 00:09:40,240
+followup. Where does it earn its keep
+
+268
+00:09:38,080 --> 00:09:41,040
+from your perspective and where might it
+
+269
+00:09:40,240 --> 00:09:44,240
+quietly break?
+
+270
+00:09:41,040 --> 00:09:45,839
+Yeah. Um, agentic AI just means that the
+
+271
+00:09:44,240 --> 00:09:49,120
+the system doesn't just answer a
+
+272
+00:09:45,839 --> 00:09:51,200
+question, one input, one output. It it
+
+273
+00:09:49,120 --> 00:09:53,120
+takes action across multiple steps to uh
+
+274
+00:09:51,200 --> 00:09:55,120
+to get something done like you know
+
+275
+00:09:53,120 --> 00:09:57,040
+handing a task to an employee and
+
+276
+00:09:55,120 --> 00:10:00,720
+letting them run with it. In our world
+
+277
+00:09:57,040 --> 00:10:03,040
+that is an AI agent uh researching and
+
+278
+00:10:00,720 --> 00:10:05,440
+uh reaching out on its own then handling
+
+279
+00:10:03,040 --> 00:10:08,399
+replies objections building or sorry
+
+280
+00:10:05,440 --> 00:10:10,720
+booking uh meetings without a person
+
+281
+00:10:08,399 --> 00:10:13,040
+actually having to touch each step. Uh
+
+282
+00:10:10,720 --> 00:10:14,800
+it earns its uh it's keep on repetitive
+
+283
+00:10:13,040 --> 00:10:17,839
+you know it's uh it's timesensitive it's
+
+284
+00:10:14,800 --> 00:10:20,000
+low judgment uh work the follow-up that
+
+285
+00:10:17,839 --> 00:10:22,880
+never uh it's a follow-up that just
+
+286
+00:10:20,000 --> 00:10:25,760
+never goes cold. So what people
+
+287
+00:10:22,880 --> 00:10:28,480
+misunderstand is thinking that AI is
+
+288
+00:10:25,760 --> 00:10:30,560
+some separate unpredictable thing. Uh
+
+289
+00:10:28,480 --> 00:10:32,399
+it's not. It's an extension of the
+
+290
+00:10:30,560 --> 00:10:33,920
+person who built it. Uh I believe
+
+291
+00:10:32,399 --> 00:10:35,920
+there's definitely don't get me wrong
+
+292
+00:10:33,920 --> 00:10:38,240
+there is definitely AI systems out there
+
+293
+00:10:35,920 --> 00:10:40,880
+that are intelligent. Uh especially like
+
+294
+00:10:38,240 --> 00:10:42,800
+the large language models like uh Chacha
+
+295
+00:10:40,880 --> 00:10:45,519
+or Claude. I I do believe they're at the
+
+296
+00:10:42,800 --> 00:10:48,160
+the place of you know being able to to
+
+297
+00:10:45,519 --> 00:10:49,600
+research and learn uh on their own. But
+
+298
+00:10:48,160 --> 00:10:51,760
+uh as far as like the systems that we
+
+299
+00:10:49,600 --> 00:10:54,320
+build for for companies, we make sure
+
+300
+00:10:51,760 --> 00:10:55,920
+that they are predictable. Uh the
+
+301
+00:10:54,320 --> 00:10:58,240
+systems that we have are they're trained
+
+302
+00:10:55,920 --> 00:11:00,480
+to respond the way that you would want
+
+303
+00:10:58,240 --> 00:11:01,920
+them to uh or you know how how you
+
+304
+00:11:00,480 --> 00:11:04,079
+would. If something feels off, that's
+
+305
+00:11:01,920 --> 00:11:07,760
+just it's a guidance gap, not really uh
+
+306
+00:11:04,079 --> 00:11:10,399
+the AI going rogue uh on its own. So uh
+
+307
+00:11:07,760 --> 00:11:13,519
+yeah, just on on the oversight, we run a
+
+308
+00:11:10,399 --> 00:11:15,519
+a 90-day path like like most would in
+
+309
+00:11:13,519 --> 00:11:17,279
+this space. Month one is is usually an
+
+310
+00:11:15,519 --> 00:11:19,200
+integration built around the specific
+
+311
+00:11:17,279 --> 00:11:21,200
+business. Month two is where we watch
+
+312
+00:11:19,200 --> 00:11:22,959
+the performance and make fine tuning
+
+313
+00:11:21,200 --> 00:11:24,720
+decisions on that. Every industry
+
+314
+00:11:22,959 --> 00:11:26,079
+responds differently, but then uh month
+
+315
+00:11:24,720 --> 00:11:29,200
+three is going to be, you know, largely
+
+316
+00:11:26,079 --> 00:11:30,959
+hands off and uh your first month where
+
+317
+00:11:29,200 --> 00:11:33,760
+you know you're actually pulling in the
+
+318
+00:11:30,959 --> 00:11:36,160
+best results. So you can see results as
+
+319
+00:11:33,760 --> 00:11:39,040
+early as month one in in the the you
+
+320
+00:11:36,160 --> 00:11:40,959
+know the work that we do. But uh just
+
+321
+00:11:39,040 --> 00:11:43,279
+getting to your your other uh question
+
+322
+00:11:40,959 --> 00:11:45,600
+there, the part about you know that that
+
+323
+00:11:43,279 --> 00:11:48,800
+no one demos honestly it's uh it's
+
+324
+00:11:45,600 --> 00:11:51,040
+almost never the AI itself uh I find
+
+325
+00:11:48,800 --> 00:11:53,200
+it's what it's working with you know uh
+
+326
+00:11:51,040 --> 00:11:55,760
+if a firm's process is inconsistent or
+
+327
+00:11:53,200 --> 00:11:58,880
+nobody agrees on what a qualified lead
+
+328
+00:11:55,760 --> 00:12:01,040
+is for example uh or even you know looks
+
+329
+00:11:58,880 --> 00:12:03,360
+like automating that just makes the mess
+
+330
+00:12:01,040 --> 00:12:05,279
+move faster. uh before automation
+
+331
+00:12:03,360 --> 00:12:07,680
+actually pays off, you need to have
+
+332
+00:12:05,279 --> 00:12:10,160
+clarity on who you're targeting, right?
+
+333
+00:12:07,680 --> 00:12:12,560
+What a good fit actually looks like and
+
+334
+00:12:10,160 --> 00:12:14,800
+what it means for your team and uh what
+
+335
+00:12:12,560 --> 00:12:17,920
+your process is when someone actually
+
+336
+00:12:14,800 --> 00:12:20,320
+says yes. So the AI amplifies whatever
+
+337
+00:12:17,920 --> 00:12:23,200
+is already there uh whether it is good
+
+338
+00:12:20,320 --> 00:12:24,959
+or messy. So, one of the things that's
+
+339
+00:12:23,200 --> 00:12:28,000
+I've been kind of thinking about o over
+
+340
+00:12:24,959 --> 00:12:30,720
+the last several months in more even
+
+341
+00:12:28,000 --> 00:12:33,440
+recently when we think about building a
+
+342
+00:12:30,720 --> 00:12:36,000
+business, traditional business, there
+
+343
+00:12:33,440 --> 00:12:37,760
+are career level commitments that people
+
+344
+00:12:36,000 --> 00:12:40,079
+make for the types of roles that we
+
+345
+00:12:37,760 --> 00:12:42,240
+would typically hire for and they're not
+
+346
+00:12:40,079 --> 00:12:45,279
+all the same. And it occurs to me that
+
+347
+00:12:42,240 --> 00:12:47,279
+what you're doing is very similar in
+
+348
+00:12:45,279 --> 00:12:49,120
+that way in how you're building your
+
+349
+00:12:47,279 --> 00:12:51,440
+your business and you're building the
+
+350
+00:12:49,120 --> 00:12:53,440
+functions. All agents are not the same,
+
+351
+00:12:51,440 --> 00:12:54,480
+right? I think most people just start,
+
+352
+00:12:53,440 --> 00:12:56,320
+you know, playing around with the
+
+353
+00:12:54,480 --> 00:12:58,720
+prompts. But maybe talk about that, how
+
+354
+00:12:56,320 --> 00:13:00,720
+how different that is because if you're
+
+355
+00:12:58,720 --> 00:13:01,920
+trying to use it as a Swiss Army knife,
+
+356
+00:13:00,720 --> 00:13:03,120
+that's where you're going to run into
+
+357
+00:13:01,920 --> 00:13:04,399
+some trouble. And I think that's
+
+358
+00:13:03,120 --> 00:13:05,839
+something that you're really solving
+
+359
+00:13:04,399 --> 00:13:10,079
+for.
+
+360
+00:13:05,839 --> 00:13:12,639
+Yeah. Um there's one key word that I uh
+
+361
+00:13:10,079 --> 00:13:13,760
+uh love to use in this space. Um and
+
+362
+00:13:12,639 --> 00:13:16,160
+it's probably going to be surprising,
+
+363
+00:13:13,760 --> 00:13:18,320
+but relationships. Uh relationships, the
+
+364
+00:13:16,160 --> 00:13:20,079
+human factor of things are still so
+
+365
+00:13:18,320 --> 00:13:22,320
+important, right? especially people that
+
+366
+00:13:20,079 --> 00:13:24,399
+that aren't even uh looking at AI or
+
+367
+00:13:22,320 --> 00:13:26,560
+just think that AI is bad. Yeah, I can
+
+368
+00:13:24,399 --> 00:13:28,399
+absolutely see, you know, why why it
+
+369
+00:13:26,560 --> 00:13:30,880
+would be taken that way if you don't
+
+370
+00:13:28,399 --> 00:13:32,560
+understand it or or know what it can do.
+
+371
+00:13:30,880 --> 00:13:34,000
+Yeah, you know, it's very easy to just
+
+372
+00:13:32,560 --> 00:13:35,440
+assume that AI is going to take over.
+
+373
+00:13:34,000 --> 00:13:37,600
+There's you're not going to be any work
+
+374
+00:13:35,440 --> 00:13:39,279
+for people. You know, it's uh this or
+
+375
+00:13:37,600 --> 00:13:41,040
+that. There's so many so many different
+
+376
+00:13:39,279 --> 00:13:43,760
+ways that you could go about with AI to
+
+377
+00:13:41,040 --> 00:13:46,560
+to give it a bad name. But at the end of
+
+378
+00:13:43,760 --> 00:13:48,720
+the day, the agent should never own
+
+379
+00:13:46,560 --> 00:13:51,120
+anything that requires real judgment uh
+
+380
+00:13:48,720 --> 00:13:53,200
+or carries, you know, relationship risk
+
+381
+00:13:51,120 --> 00:13:55,920
+and unexpected objection, something
+
+382
+00:13:53,200 --> 00:13:58,240
+emotional, an actual negotiation. Those
+
+383
+00:13:55,920 --> 00:14:00,880
+are all things that, uh, you know, still
+
+384
+00:13:58,240 --> 00:14:03,120
+need a human. It's easy to lose a
+
+385
+00:14:00,880 --> 00:14:04,399
+relationship rather than to to build
+
+386
+00:14:03,120 --> 00:14:05,360
+one, you know.
+
+387
+00:14:04,399 --> 00:14:07,920
+So,
+
+388
+00:14:05,360 --> 00:14:10,320
+for what matters more right now, I would
+
+389
+00:14:07,920 --> 00:14:12,000
+say relationships. You know, I've talked
+
+390
+00:14:10,320 --> 00:14:14,079
+to a lot of founders about what their
+
+391
+00:14:12,000 --> 00:14:16,079
+day-to-day actually looks like, and the
+
+392
+00:14:14,079 --> 00:14:17,440
+most common answer that they've been
+
+393
+00:14:16,079 --> 00:14:19,360
+giving me is that they're spending a
+
+394
+00:14:17,440 --> 00:14:21,519
+huge chunk of their time calling around
+
+395
+00:14:19,360 --> 00:14:23,519
+businesses, writing outreach emails,
+
+396
+00:14:21,519 --> 00:14:25,600
+chasing leads themselves. That's one of
+
+397
+00:14:23,519 --> 00:14:27,760
+the biggest bottlenecks we see uh in
+
+398
+00:14:25,600 --> 00:14:29,760
+business uh the business owners right
+
+399
+00:14:27,760 --> 00:14:32,079
+now is uh you know they're trying to
+
+400
+00:14:29,760 --> 00:14:33,839
+scale but they're spending so much of
+
+401
+00:14:32,079 --> 00:14:36,240
+their time on something that they could
+
+402
+00:14:33,839 --> 00:14:38,160
+either get a staff member to do or um
+
+403
+00:14:36,240 --> 00:14:41,040
+you know even just uh use an AI tool
+
+404
+00:14:38,160 --> 00:14:44,079
+for. I want to be clear we're not uh you
+
+405
+00:14:41,040 --> 00:14:45,760
+know AI AI can you know replace
+
+406
+00:14:44,079 --> 00:14:47,600
+employees. It is at that point
+
+407
+00:14:45,760 --> 00:14:49,519
+unfortunately but you know that's not
+
+408
+00:14:47,600 --> 00:14:51,600
+what we're in the the business of doing.
+
+409
+00:14:49,519 --> 00:14:52,880
+We're trying to make, you know, the
+
+410
+00:14:51,600 --> 00:14:54,480
+staff that you already have more
+
+411
+00:14:52,880 --> 00:14:57,199
+efficient. Take a sales consultant for
+
+412
+00:14:54,480 --> 00:14:59,440
+example. People people want to do
+
+413
+00:14:57,199 --> 00:15:00,720
+business with other people, right? Uh
+
+414
+00:14:59,440 --> 00:15:02,880
+we're giving them the tools to improve
+
+415
+00:15:00,720 --> 00:15:05,600
+their skills, cut the repetitive stuff
+
+416
+00:15:02,880 --> 00:15:07,040
+and uh just free up their time for what
+
+417
+00:15:05,600 --> 00:15:09,680
+actually matters uh which is the
+
+418
+00:15:07,040 --> 00:15:11,279
+relationship, right? So automation
+
+419
+00:15:09,680 --> 00:15:13,519
+should create space for more human
+
+420
+00:15:11,279 --> 00:15:15,440
+connection, but definitely not less. I
+
+421
+00:15:13,519 --> 00:15:17,199
+I like how you put it. you know, just
+
+422
+00:15:15,440 --> 00:15:18,880
+the context is such an important thing
+
+423
+00:15:17,199 --> 00:15:20,560
+for people. I mean, if you're if you're
+
+424
+00:15:18,880 --> 00:15:22,720
+uncomfortable with something like that,
+
+425
+00:15:20,560 --> 00:15:26,320
+it really helps to start to understand
+
+426
+00:15:22,720 --> 00:15:29,120
+that what makes AI valuable is when
+
+427
+00:15:26,320 --> 00:15:31,440
+there's a human being actually operating
+
+428
+00:15:29,120 --> 00:15:34,320
+it effectively, that has good judgment,
+
+429
+00:15:31,440 --> 00:15:36,240
+has the ability to to to learn, has the
+
+430
+00:15:34,320 --> 00:15:38,320
+ability to adapt. It's not going to be
+
+431
+00:15:36,240 --> 00:15:39,920
+stuck on one idea that that they
+
+432
+00:15:38,320 --> 00:15:42,320
+actually can actually, you know, to your
+
+433
+00:15:39,920 --> 00:15:44,240
+point that AI is not going to negotiate.
+
+434
+00:15:42,320 --> 00:15:46,399
+Well, a human being can't. there.
+
+435
+00:15:44,240 --> 00:15:48,720
+There's just a lot of value to learning
+
+436
+00:15:46,399 --> 00:15:49,920
+how to use it. And I like how you're how
+
+437
+00:15:48,720 --> 00:15:53,360
+you're talking about it because I think
+
+438
+00:15:49,920 --> 00:15:57,279
+that's where people need to really
+
+439
+00:15:53,360 --> 00:15:58,480
+stop believing the hype and ju start
+
+440
+00:15:57,279 --> 00:16:00,560
+playing around with it yourself just to
+
+441
+00:15:58,480 --> 00:16:03,360
+kind of see what it what it is and what
+
+442
+00:16:00,560 --> 00:16:05,199
+it can do. And you know, I would also,
+
+443
+00:16:03,360 --> 00:16:07,279
+you know, ask for your your thoughts on
+
+444
+00:16:05,199 --> 00:16:09,759
+this, Ethan. Um what should
+
+445
+00:16:07,279 --> 00:16:12,079
+organizations be doing to help people?
+
+446
+00:16:09,759 --> 00:16:14,880
+because I don't I think we often try to
+
+447
+00:16:12,079 --> 00:16:16,320
+do things as a hobbyist, but to make
+
+448
+00:16:14,880 --> 00:16:18,480
+these things really work, I think
+
+449
+00:16:16,320 --> 00:16:20,800
+there's an investment that needs to be
+
+450
+00:16:18,480 --> 00:16:21,759
+made in upskilling. Don't do you agree
+
+451
+00:16:20,800 --> 00:16:23,839
+with that?
+
+452
+00:16:21,759 --> 00:16:25,920
+Mhm. Yeah, I absolutely do, Chris. I'll
+
+453
+00:16:23,839 --> 00:16:28,800
+I'll use an example. Um, I'm sure
+
+454
+00:16:25,920 --> 00:16:30,880
+everyone Oh, actually I know my
+
+455
+00:16:28,800 --> 00:16:34,000
+Instagram for example, all the ads
+
+456
+00:16:30,880 --> 00:16:36,880
+because I'm in AI is uh it's full of,
+
+457
+00:16:34,000 --> 00:16:39,600
+you know, other people advertising uh AI
+
+458
+00:16:36,880 --> 00:16:41,360
+solutions or, you know, their agencies
+
+459
+00:16:39,600 --> 00:16:42,800
+uh and and I'm sure other people
+
+460
+00:16:41,360 --> 00:16:45,920
+listening to this have at least come
+
+461
+00:16:42,800 --> 00:16:48,560
+across an AI ad from time to time.
+
+462
+00:16:45,920 --> 00:16:52,000
+So, the thing is most of those ads now
+
+463
+00:16:48,560 --> 00:16:54,399
+are being uh AI generated and uh
+
+464
+00:16:52,000 --> 00:16:56,639
+uploaded. um that's where we're at in
+
+465
+00:16:54,399 --> 00:16:58,720
+this day and age. Uh very rarely do you
+
+466
+00:16:56,639 --> 00:17:00,800
+actually still have uh humans making
+
+467
+00:16:58,720 --> 00:17:02,000
+custom posts and you know all the
+
+468
+00:17:00,800 --> 00:17:03,519
+graphics for that. There's still some
+
+469
+00:17:02,000 --> 00:17:07,280
+out there, but a lot of it has been
+
+470
+00:17:03,519 --> 00:17:10,400
+taken over. You're going to see a ton of
+
+471
+00:17:07,280 --> 00:17:12,000
+people uh or agencies out there,
+
+472
+00:17:10,400 --> 00:17:14,240
+especially on Instagram where it's just
+
+473
+00:17:12,000 --> 00:17:15,760
+easy to upload an ad. They're going to
+
+474
+00:17:14,240 --> 00:17:17,199
+be making promises. They're going to,
+
+475
+00:17:15,760 --> 00:17:18,959
+you know, be sugar coating things. It's
+
+476
+00:17:17,199 --> 00:17:20,319
+going to be nice graphics on it. And and
+
+477
+00:17:18,959 --> 00:17:23,760
+it's going to be promises. It's going to
+
+478
+00:17:20,319 --> 00:17:26,079
+be something like we guarantee x amount
+
+479
+00:17:23,760 --> 00:17:27,760
+of blank whatever you know they're
+
+480
+00:17:26,079 --> 00:17:29,840
+they're promising let's say lead
+
+481
+00:17:27,760 --> 00:17:31,600
+generation within you know a certain
+
+482
+00:17:29,840 --> 00:17:33,520
+amount of time right I've seen it where
+
+483
+00:17:31,600 --> 00:17:36,160
+it's it's like we will grow your
+
+484
+00:17:33,520 --> 00:17:40,000
+business to like $560,000
+
+485
+00:17:36,160 --> 00:17:41,600
+or $800,000 like these are huge numbers
+
+486
+00:17:40,000 --> 00:17:43,600
+and you're making these promises before
+
+487
+00:17:41,600 --> 00:17:45,919
+you even talked with the the the company
+
+488
+00:17:43,600 --> 00:17:48,799
+owner or or anything like that. Yeah.
+
+489
+00:17:45,919 --> 00:17:52,000
+So, as far as the the governance part of
+
+490
+00:17:48,799 --> 00:17:54,080
+things and uh just being careful, it's
+
+491
+00:17:52,000 --> 00:17:56,400
+it's definitely a space that you want to
+
+492
+00:17:54,080 --> 00:17:59,039
+do, you know, a lot of research on. If
+
+493
+00:17:56,400 --> 00:18:01,120
+you're considering services, you can hop
+
+494
+00:17:59,039 --> 00:18:02,559
+into chat GBT or claude and just start
+
+495
+00:18:01,120 --> 00:18:04,480
+working with it, just start talking with
+
+496
+00:18:02,559 --> 00:18:05,919
+it and and all that. And that's not
+
+497
+00:18:04,480 --> 00:18:07,840
+something you really need to research on
+
+498
+00:18:05,919 --> 00:18:10,320
+unless you want to learn how to use it.
+
+499
+00:18:07,840 --> 00:18:12,240
+But as far as knowing who to trust uh in
+
+500
+00:18:10,320 --> 00:18:13,440
+in the space, there's going to be a lot
+
+501
+00:18:12,240 --> 00:18:15,600
+of people out there that are just kind
+
+502
+00:18:13,440 --> 00:18:18,559
+of uh thrown around
+
+503
+00:18:15,600 --> 00:18:21,039
+uh different different ideas, right? So,
+
+504
+00:18:18,559 --> 00:18:23,280
+just on the the government's part, uh
+
+505
+00:18:21,039 --> 00:18:26,160
+for a small shop, uh the government
+
+506
+00:18:23,280 --> 00:18:27,760
+isn't the the policies or or the
+
+507
+00:18:26,160 --> 00:18:30,400
+committees, you know, it's it's knowing
+
+508
+00:18:27,760 --> 00:18:32,720
+what you'd never let the AI say or do
+
+509
+00:18:30,400 --> 00:18:34,880
+unsupervised. And and this goes for the
+
+510
+00:18:32,720 --> 00:18:36,720
+actual business itself. If if a business
+
+511
+00:18:34,880 --> 00:18:38,559
+is going to incorporate AI, this is some
+
+512
+00:18:36,720 --> 00:18:40,480
+of the guidelines uh in a way that they
+
+513
+00:18:38,559 --> 00:18:41,840
+should be uh thinking about uh
+
+514
+00:18:40,480 --> 00:18:43,440
+especially when they are you know
+
+515
+00:18:41,840 --> 00:18:44,960
+considering their customers and how the
+
+516
+00:18:43,440 --> 00:18:47,600
+customers are going to think or feel
+
+517
+00:18:44,960 --> 00:18:48,640
+about them having AI right so you don't
+
+518
+00:18:47,600 --> 00:18:50,640
+want to you know there's certain things
+
+519
+00:18:48,640 --> 00:18:53,919
+you don't want unsupervised you want to
+
+520
+00:18:50,640 --> 00:18:56,320
+be as a human uh checking in regularly
+
+521
+00:18:53,919 --> 00:18:58,240
+especially early on uh it's less about
+
+522
+00:18:56,320 --> 00:19:00,480
+the bureaucracy of the of the company
+
+523
+00:18:58,240 --> 00:19:02,640
+and more about the integration right you
+
+524
+00:19:00,480 --> 00:19:04,960
+built the system so you're responsible
+
+525
+00:19:02,640 --> 00:19:07,440
+for for what it does in your name.
+
+526
+00:19:04,960 --> 00:19:09,679
+That's exactly the the way it is in the
+
+527
+00:19:07,440 --> 00:19:11,280
+in reality. If you're running a a
+
+528
+00:19:09,679 --> 00:19:13,039
+business with people,
+
+529
+00:19:11,280 --> 00:19:15,039
+you don't there's certain things that
+
+530
+00:19:13,039 --> 00:19:16,640
+you just you're going to be monitoring.
+
+531
+00:19:15,039 --> 00:19:18,240
+If you're running a business, you want
+
+532
+00:19:16,640 --> 00:19:20,559
+to have people who will represent you
+
+533
+00:19:18,240 --> 00:19:22,160
+properly and know where the barriers
+
+534
+00:19:20,559 --> 00:19:23,760
+are. Don't cross discipline. Don't see
+
+535
+00:19:22,160 --> 00:19:25,360
+these types of things. Don't do these
+
+536
+00:19:23,760 --> 00:19:27,919
+types of things. But here's here's what
+
+537
+00:19:25,360 --> 00:19:30,480
+I want you to do. those I think we we
+
+538
+00:19:27,919 --> 00:19:33,520
+forget sometimes we're we're really
+
+539
+00:19:30,480 --> 00:19:36,320
+still trying to address the same the
+
+540
+00:19:33,520 --> 00:19:37,919
+same challenges and your AI needs the
+
+541
+00:19:36,320 --> 00:19:39,919
+same boundaries you would put around an
+
+542
+00:19:37,919 --> 00:19:42,960
+employee really that simple.
+
+543
+00:19:39,919 --> 00:19:45,440
+Yeah, it really is. And uh this actually
+
+544
+00:19:42,960 --> 00:19:47,679
+ties directly into how we built our uh
+
+545
+00:19:45,440 --> 00:19:49,440
+our growth engine in the first place. We
+
+546
+00:19:47,679 --> 00:19:51,520
+don't just install some offtheshelf
+
+547
+00:19:49,440 --> 00:19:54,160
+here's a tool that gets uh gets you more
+
+548
+00:19:51,520 --> 00:19:56,240
+leads uh set up. We don't do that. We do
+
+549
+00:19:54,160 --> 00:19:57,840
+a deep dive into the business first. uh
+
+550
+00:19:56,240 --> 00:20:00,400
+you know how they operate, who they sell
+
+551
+00:19:57,840 --> 00:20:02,160
+to, what their process looks like, uh
+
+552
+00:20:00,400 --> 00:20:03,360
+what the numbers, right, the the revenue
+
+553
+00:20:02,160 --> 00:20:05,280
+that they're bringing in. You know, you
+
+554
+00:20:03,360 --> 00:20:06,960
+can't make an accurate prediction of
+
+555
+00:20:05,280 --> 00:20:08,480
+where you can bring this company if you
+
+556
+00:20:06,960 --> 00:20:08,960
+don't know where they're at right now.
+
+557
+00:20:08,480 --> 00:20:09,360
+So
+
+558
+00:20:08,960 --> 00:20:11,039
+right
+
+559
+00:20:09,360 --> 00:20:13,280
+you know making just getting all the
+
+560
+00:20:11,039 --> 00:20:15,440
+information for for what you need and
+
+561
+00:20:13,280 --> 00:20:17,600
+that becomes the blueprint for the whole
+
+562
+00:20:15,440 --> 00:20:19,919
+system uh or where the whole system is
+
+563
+00:20:17,600 --> 00:20:22,240
+built around using precision from you
+
+564
+00:20:19,919 --> 00:20:25,360
+know past data and similar case studies
+
+565
+00:20:22,240 --> 00:20:26,799
+to set realistic targets instead of
+
+566
+00:20:25,360 --> 00:20:28,880
+generic promise.
+
+567
+00:20:26,799 --> 00:20:30,720
+Uh but real quick Chris here's where the
+
+568
+00:20:28,880 --> 00:20:33,520
+government piece comes in. Even though
+
+569
+00:20:30,720 --> 00:20:35,520
+the the build follows that blueprint and
+
+570
+00:20:33,520 --> 00:20:37,440
+it it's meant to, you know, give to a
+
+571
+00:20:35,520 --> 00:20:39,760
+company and we we would manage
+
+572
+00:20:37,440 --> 00:20:41,840
+everything that we integrate uh and and
+
+573
+00:20:39,760 --> 00:20:43,280
+that company would basically follow uh
+
+574
+00:20:41,840 --> 00:20:44,960
+the plan that we put in place to get
+
+575
+00:20:43,280 --> 00:20:46,559
+them to where they want to be.
+
+576
+00:20:44,960 --> 00:20:47,840
+Can I can I get you to talk a little bit
+
+577
+00:20:46,559 --> 00:20:49,280
+about this because you're you're talking
+
+578
+00:20:47,840 --> 00:20:50,880
+about some of the foundational things
+
+579
+00:20:49,280 --> 00:20:52,720
+that I think people need to to
+
+580
+00:20:50,880 --> 00:20:54,960
+understand a little bit better when
+
+581
+00:20:52,720 --> 00:20:56,960
+you're implementing
+
+582
+00:20:54,960 --> 00:21:00,240
+and this is around the governance piece
+
+583
+00:20:56,960 --> 00:21:03,280
+of it. Where do you see things kind of
+
+584
+00:21:00,240 --> 00:21:06,159
+usually bump into some some barriers? Is
+
+585
+00:21:03,280 --> 00:21:08,080
+it the AI itself or the messy data and
+
+586
+00:21:06,159 --> 00:21:10,960
+the processes that are sitting under it?
+
+587
+00:21:08,080 --> 00:21:14,799
+Yeah, in my experience, I find that a
+
+588
+00:21:10,960 --> 00:21:18,320
+lot of like what's going wrong uh in in
+
+589
+00:21:14,799 --> 00:21:21,520
+you know the systems is uh going to be
+
+590
+00:21:18,320 --> 00:21:23,440
+on the human side, right? Yeah. In my
+
+591
+00:21:21,520 --> 00:21:25,840
+experience, uh, you know, especially
+
+592
+00:21:23,440 --> 00:21:27,679
+when working with with founders and, uh,
+
+593
+00:21:25,840 --> 00:21:29,840
+you know, the key decision makers in the
+
+594
+00:21:27,679 --> 00:21:31,840
+space, they have a way of of wanting to
+
+595
+00:21:29,840 --> 00:21:33,840
+do things, right? And, uh, how they want
+
+596
+00:21:31,840 --> 00:21:35,440
+to run the the business. And, you know,
+
+597
+00:21:33,840 --> 00:21:37,440
+coming in as a strategic partner with
+
+598
+00:21:35,440 --> 00:21:39,280
+them, we absolutely want them to be
+
+599
+00:21:37,440 --> 00:21:41,039
+running things. We want them to be in
+
+600
+00:21:39,280 --> 00:21:43,280
+charge. Uh, they tell us how they want
+
+601
+00:21:41,039 --> 00:21:46,559
+to do things. But, uh, at some point,
+
+602
+00:21:43,280 --> 00:21:49,679
+you also have to let if you've hired
+
+603
+00:21:46,559 --> 00:21:51,360
+somebody for an, you know, a reason,
+
+604
+00:21:49,679 --> 00:21:53,280
+right? you have to let them yes
+
+605
+00:21:51,360 --> 00:21:55,200
+do what they're there to do, right? So,
+
+606
+00:21:53,280 --> 00:21:56,480
+we can make suggestions. Uh but we're
+
+607
+00:21:55,200 --> 00:21:58,080
+not going to run the company for you. We
+
+608
+00:21:56,480 --> 00:22:01,280
+just manage what we what we put in
+
+609
+00:21:58,080 --> 00:22:02,880
+place. And uh you know, in in the case
+
+610
+00:22:01,280 --> 00:22:04,960
+of our company, we would you know,
+
+611
+00:22:02,880 --> 00:22:07,120
+usually have like weekly weekly calls
+
+612
+00:22:04,960 --> 00:22:09,039
+with uh whoever we set it up with. And
+
+613
+00:22:07,120 --> 00:22:10,400
+uh we want to do weekly check-ins, you
+
+614
+00:22:09,039 --> 00:22:12,080
+know, just make sure that you're getting
+
+615
+00:22:10,400 --> 00:22:14,640
+the results that you want. If we're
+
+616
+00:22:12,080 --> 00:22:16,320
+behind on something in the project, we
+
+617
+00:22:14,640 --> 00:22:18,000
+will be upfront with you about that and,
+
+618
+00:22:16,320 --> 00:22:19,600
+you know, tell you where we're at and
+
+619
+00:22:18,000 --> 00:22:21,360
+where we're going. I think I got a
+
+620
+00:22:19,600 --> 00:22:22,960
+little off topic there. Uh, but I think
+
+621
+00:22:21,360 --> 00:22:24,799
+you wanted me to more dial in, you know,
+
+622
+00:22:22,960 --> 00:22:26,480
+the AI compared to the human factor.
+
+623
+00:22:24,799 --> 00:22:28,000
+Where does it usually fall apart? Was
+
+624
+00:22:26,480 --> 00:22:29,520
+that the the question?
+
+625
+00:22:28,000 --> 00:22:30,880
+Yeah. Well, yeah. Where where are some
+
+626
+00:22:29,520 --> 00:22:33,360
+of the barriers that you get to? Because
+
+627
+00:22:30,880 --> 00:22:35,280
+I mean, ultimately, I'm I'm just
+
+628
+00:22:33,360 --> 00:22:37,120
+thinking about this from how you do an
+
+629
+00:22:35,280 --> 00:22:39,679
+implementation and where you've had the
+
+630
+00:22:37,120 --> 00:22:43,360
+best success. What are the things that
+
+631
+00:22:39,679 --> 00:22:45,520
+were in place that the the your clients
+
+632
+00:22:43,360 --> 00:22:47,360
+had started to deal with that made them
+
+633
+00:22:45,520 --> 00:22:49,840
+ready for you to be able to help them
+
+634
+00:22:47,360 --> 00:22:51,039
+take things to the next level?
+
+635
+00:22:49,840 --> 00:22:52,799
+There's definitely some that are really
+
+636
+00:22:51,039 --> 00:22:54,880
+good. There's some that maybe struggle
+
+637
+00:22:52,799 --> 00:22:56,159
+more than others, but I'm just I just
+
+638
+00:22:54,880 --> 00:22:57,840
+want to make sure our listeners are
+
+639
+00:22:56,159 --> 00:22:59,600
+hearing um if they're thinking about
+
+640
+00:22:57,840 --> 00:23:00,880
+doing this, what are the things that you
+
+641
+00:22:59,600 --> 00:23:02,159
+know you're going to hope that they're
+
+642
+00:23:00,880 --> 00:23:03,360
+thinking about it and doing it so
+
+643
+00:23:02,159 --> 00:23:05,280
+they're ready for you?
+
+644
+00:23:03,360 --> 00:23:07,919
+Yeah, that's a that's a good question.
+
+645
+00:23:05,280 --> 00:23:10,640
+Um the thing with our our company is we
+
+646
+00:23:07,919 --> 00:23:12,640
+are you know we do offer uh custom
+
+647
+00:23:10,640 --> 00:23:15,039
+solutions. So if there was something
+
+648
+00:23:12,640 --> 00:23:16,960
+that we wanted to do a deep dive on uh
+
+649
+00:23:15,039 --> 00:23:18,480
+we could you know absolutely do that. So
+
+650
+00:23:16,960 --> 00:23:21,440
+I think I've talked a lot about like the
+
+651
+00:23:18,480 --> 00:23:24,080
+lead generation of uh side of things but
+
+652
+00:23:21,440 --> 00:23:26,000
+you know for example uh a question would
+
+653
+00:23:24,080 --> 00:23:28,000
+be like how do we track all that right
+
+654
+00:23:26,000 --> 00:23:30,640
+what happens if this company doesn't
+
+655
+00:23:28,000 --> 00:23:33,120
+have certain systems set up already. So
+
+656
+00:23:30,640 --> 00:23:35,200
+there would definitely be we can come in
+
+657
+00:23:33,120 --> 00:23:37,200
+and we can work with the the current
+
+658
+00:23:35,200 --> 00:23:38,960
+systems and operations that you uh are
+
+659
+00:23:37,200 --> 00:23:40,320
+working with, but it would be a
+
+660
+00:23:38,960 --> 00:23:41,840
+different conversation if there was
+
+661
+00:23:40,320 --> 00:23:44,240
+things that were not working and needed
+
+662
+00:23:41,840 --> 00:23:46,240
+to be changed. Uh so we could definitely
+
+663
+00:23:44,240 --> 00:23:48,000
+set up some systems there and then, you
+
+664
+00:23:46,240 --> 00:23:49,520
+know, get get you on our system. We get
+
+665
+00:23:48,000 --> 00:23:51,440
+all of your information moved over, make
+
+666
+00:23:49,520 --> 00:23:54,159
+sure it's all organized. It would be
+
+667
+00:23:51,440 --> 00:23:56,080
+like big data transfer in a in a way.
+
+668
+00:23:54,159 --> 00:23:58,559
+And then from there, that's only if your
+
+669
+00:23:56,080 --> 00:24:01,760
+your current system is just needing an
+
+670
+00:23:58,559 --> 00:24:03,760
+upgrade. But for the most part, the the
+
+671
+00:24:01,760 --> 00:24:05,679
+main bottlenecks are going to be more on
+
+672
+00:24:03,760 --> 00:24:07,520
+the the human side of things, right?
+
+673
+00:24:05,679 --> 00:24:10,000
+Like I said, we would be there to to
+
+674
+00:24:07,520 --> 00:24:11,760
+help you scale uh and get your company
+
+675
+00:24:10,000 --> 00:24:13,440
+to where you want it to be. Uh and
+
+676
+00:24:11,760 --> 00:24:15,520
+that's that's assuming that you're not
+
+677
+00:24:13,440 --> 00:24:17,440
+happy with where it is now or you are
+
+678
+00:24:15,520 --> 00:24:19,760
+just ready for that growth. So, it
+
+679
+00:24:17,440 --> 00:24:22,640
+definitely speeds up the process if you
+
+680
+00:24:19,760 --> 00:24:24,559
+have been managing your operations well
+
+681
+00:24:22,640 --> 00:24:26,880
+and your team well and and you know,
+
+682
+00:24:24,559 --> 00:24:28,880
+you're you're you're happy with where
+
+683
+00:24:26,880 --> 00:24:30,159
+you're at. But, uh, if there's, you
+
+684
+00:24:28,880 --> 00:24:32,000
+know, if you're needing to make changes
+
+685
+00:24:30,159 --> 00:24:34,480
+within a team, uh, that is going to be
+
+686
+00:24:32,000 --> 00:24:36,080
+one of the bigger, uh, bottlenecks, uh,
+
+687
+00:24:34,480 --> 00:24:38,559
+that will that will slow you down.
+
+688
+00:24:36,080 --> 00:24:41,039
+Yeah. You're you're kind of leaning into
+
+689
+00:24:38,559 --> 00:24:44,400
+some of this already, but maybe we can
+
+690
+00:24:41,039 --> 00:24:46,559
+just touch on where's the line in terms
+
+691
+00:24:44,400 --> 00:24:49,039
+of what where you need a human to be,
+
+692
+00:24:46,559 --> 00:24:51,200
+you know, remain in the loop and what
+
+693
+00:24:49,039 --> 00:24:53,679
+happens and what have you seen happen
+
+694
+00:24:51,200 --> 00:24:55,679
+when, you know, somebody actually
+
+695
+00:24:53,679 --> 00:24:57,440
+removes that and there's no human in the
+
+696
+00:24:55,679 --> 00:24:59,520
+loop. What are some of the types of
+
+697
+00:24:57,440 --> 00:25:02,320
+things that you've seen in and what
+
+698
+00:24:59,520 --> 00:25:04,480
+would you tell people um in terms of
+
+699
+00:25:02,320 --> 00:25:06,159
+thinking through where they need to put
+
+700
+00:25:04,480 --> 00:25:07,440
+those lines so that they don't end up
+
+701
+00:25:06,159 --> 00:25:08,159
+undermining what they're trying to
+
+702
+00:25:07,440 --> 00:25:10,640
+accomplish?
+
+703
+00:25:08,159 --> 00:25:12,240
+Yeah. Uh like I mentioned before um the
+
+704
+00:25:10,640 --> 00:25:14,320
+biggest thing and the the most simple
+
+705
+00:25:12,240 --> 00:25:16,880
+thing is going to be if you have broken
+
+706
+00:25:14,320 --> 00:25:18,159
+systems right now and we don't know that
+
+707
+00:25:16,880 --> 00:25:21,120
+we would obviously need to identify
+
+708
+00:25:18,159 --> 00:25:23,840
+those. But if if if we start adding to
+
+709
+00:25:21,120 --> 00:25:25,120
+those broken systems, right? um such as
+
+710
+00:25:23,840 --> 00:25:27,279
+lead generation. If we start filling
+
+711
+00:25:25,120 --> 00:25:29,039
+your calendar and what you have
+
+712
+00:25:27,279 --> 00:25:30,880
+currently is already not working or
+
+713
+00:25:29,039 --> 00:25:32,400
+things need fixing, you're just going to
+
+714
+00:25:30,880 --> 00:25:34,159
+create more of a mess on top of what you
+
+715
+00:25:32,400 --> 00:25:35,600
+already have. So, you know, just going
+
+716
+00:25:34,159 --> 00:25:37,520
+back to where I just mentioned uh that
+
+717
+00:25:35,600 --> 00:25:39,520
+we could, you know, upgrade those
+
+718
+00:25:37,520 --> 00:25:41,520
+systems and things like that. It really
+
+719
+00:25:39,520 --> 00:25:43,120
+is all about it's not about like just
+
+720
+00:25:41,520 --> 00:25:45,600
+giving you more services, more things to
+
+721
+00:25:43,120 --> 00:25:48,159
+pay for, right? Um, it it really is if
+
+722
+00:25:45,600 --> 00:25:50,880
+we're going to optimize this for you and
+
+723
+00:25:48,159 --> 00:25:52,720
+manage things and get you to the targets
+
+724
+00:25:50,880 --> 00:25:54,000
+that you want to hit, let's do it right.
+
+725
+00:25:52,720 --> 00:25:55,520
+Let's let's not start right in the
+
+726
+00:25:54,000 --> 00:25:57,200
+middle. Let's not, you know, start, you
+
+727
+00:25:55,520 --> 00:26:00,240
+know, a couple steps ahead. If you're
+
+728
+00:25:57,200 --> 00:26:02,000
+not ready to be bringing in more
+
+729
+00:26:00,240 --> 00:26:04,480
+business, we need to identify that
+
+730
+00:26:02,000 --> 00:26:06,960
+first. Uh, rather than, you know, just
+
+731
+00:26:04,480 --> 00:26:09,039
+piling on more leads, more business to
+
+732
+00:26:06,960 --> 00:26:10,960
+you that will just get scrambled.
+
+733
+00:26:09,039 --> 00:26:12,720
+Yeah, that's that's hugely important. I
+
+734
+00:26:10,960 --> 00:26:16,080
+think it actually leads into this, you
+
+735
+00:26:12,720 --> 00:26:18,240
+know, that some of the ideas around
+
+736
+00:26:16,080 --> 00:26:19,600
+how does this free people up, you know,
+
+737
+00:26:18,240 --> 00:26:21,760
+if we're putting these agents in place
+
+738
+00:26:19,600 --> 00:26:24,000
+and we're using them properly, it
+
+739
+00:26:21,760 --> 00:26:26,320
+creates capacity, you know, you know,
+
+740
+00:26:24,000 --> 00:26:28,000
+presumably anyway, for for for human
+
+741
+00:26:26,320 --> 00:26:30,480
+beings to be able to do much higher
+
+742
+00:26:28,000 --> 00:26:31,840
+level work than they can do today. Maybe
+
+743
+00:26:30,480 --> 00:26:34,320
+talk talk talk a little bit about that
+
+744
+00:26:31,840 --> 00:26:36,480
+and and what you see perhaps with some
+
+745
+00:26:34,320 --> 00:26:38,400
+of your clients where all of a sudden
+
+746
+00:26:36,480 --> 00:26:40,159
+they're they're they were able to tackle
+
+747
+00:26:38,400 --> 00:26:42,799
+things that were never even be they
+
+748
+00:26:40,159 --> 00:26:44,159
+weren't close to getting to until some
+
+749
+00:26:42,799 --> 00:26:45,120
+of this things these things were
+
+750
+00:26:44,159 --> 00:26:49,520
+automated.
+
+751
+00:26:45,120 --> 00:26:52,559
+Yeah. Um I it's hard to it really is uh
+
+752
+00:26:49,520 --> 00:26:54,159
+case dependent on uh you know
+
+753
+00:26:52,559 --> 00:26:57,120
+what what's going on in that business.
+
+754
+00:26:54,159 --> 00:26:59,120
+But for example, I I I mentioned earlier
+
+755
+00:26:57,120 --> 00:27:00,640
+that uh you know I've spoken with a lot
+
+756
+00:26:59,120 --> 00:27:02,000
+of people and like these are these are
+
+757
+00:27:00,640 --> 00:27:04,559
+the business owners right like they have
+
+758
+00:27:02,000 --> 00:27:06,880
+so many things to worry about to to you
+
+759
+00:27:04,559 --> 00:27:08,080
+know work on especially when they are in
+
+760
+00:27:06,880 --> 00:27:09,120
+the mindset of wanting to grow the
+
+761
+00:27:08,080 --> 00:27:13,440
+business
+
+762
+00:27:09,120 --> 00:27:15,440
+to be spending all your time calling or
+
+763
+00:27:13,440 --> 00:27:17,840
+sending emails. Uh I I talked to
+
+764
+00:27:15,440 --> 00:27:21,120
+somebody who said that he had to to
+
+765
+00:27:17,840 --> 00:27:22,960
+research his own leads I guess and I was
+
+766
+00:27:21,120 --> 00:27:24,400
+just thinking like how timeconuming that
+
+767
+00:27:22,960 --> 00:27:26,159
+would be. Imagine if the leads were
+
+768
+00:27:24,400 --> 00:27:27,840
+coming in on their own. Yeah. I can't
+
+769
+00:27:26,159 --> 00:27:31,440
+even think of an example of what what a
+
+770
+00:27:27,840 --> 00:27:33,120
+a business owner uh would do in their
+
+771
+00:27:31,440 --> 00:27:34,159
+spare time. Maybe they'd go golfing,
+
+772
+00:27:33,120 --> 00:27:36,559
+right?
+
+773
+00:27:34,159 --> 00:27:39,600
+But uh at the end of the day, if we
+
+774
+00:27:36,559 --> 00:27:42,080
+could fix one task that you're spending
+
+775
+00:27:39,600 --> 00:27:44,880
+all your time on every day, most of your
+
+776
+00:27:42,080 --> 00:27:46,240
+days in a week, all year long, that is
+
+777
+00:27:44,880 --> 00:27:48,000
+so many hours you could be putting
+
+778
+00:27:46,240 --> 00:27:49,840
+towards other things. Uh you know,
+
+779
+00:27:48,000 --> 00:27:51,679
+building your relationships. You could
+
+780
+00:27:49,840 --> 00:27:53,440
+even, you know, you could even still do
+
+781
+00:27:51,679 --> 00:27:55,120
+all of that if you really wanted to
+
+782
+00:27:53,440 --> 00:27:57,200
+while having the automation and you
+
+783
+00:27:55,120 --> 00:27:59,520
+could be just bringing in so much. So,
+
+784
+00:27:57,200 --> 00:28:02,080
+it it's it's not necessarily about
+
+785
+00:27:59,520 --> 00:28:04,880
+taking the task on and now what task can
+
+786
+00:28:02,080 --> 00:28:07,919
+they do now that that first one is done.
+
+787
+00:28:04,880 --> 00:28:10,080
+It really is you have all this time now.
+
+788
+00:28:07,919 --> 00:28:11,520
+What do you want to do with it? And uh
+
+789
+00:28:10,080 --> 00:28:13,279
+what do you think is going to be the
+
+790
+00:28:11,520 --> 00:28:14,720
+best, you know, move for for your
+
+791
+00:28:13,279 --> 00:28:16,880
+business? Where do you want to be?
+
+792
+00:28:14,720 --> 00:28:18,240
+Right. It's it's so fascinating to me
+
+793
+00:28:16,880 --> 00:28:21,360
+because we're we're hitting some some
+
+794
+00:28:18,240 --> 00:28:23,600
+things that are uh pretty much universal
+
+795
+00:28:21,360 --> 00:28:26,080
+um across multiple industries and in in
+
+796
+00:28:23,600 --> 00:28:28,399
+healthcare in particular. I've I've
+
+797
+00:28:26,080 --> 00:28:30,880
+talked to a lot of clin clinical people,
+
+798
+00:28:28,399 --> 00:28:32,640
+doctors, nurses, and one of the things
+
+799
+00:28:30,880 --> 00:28:35,919
+they've always been a little frustrated
+
+800
+00:28:32,640 --> 00:28:38,720
+by is we when we're bringing new
+
+801
+00:28:35,919 --> 00:28:41,600
+technologies, the conversation always
+
+802
+00:28:38,720 --> 00:28:43,679
+tends to center around the productivity.
+
+803
+00:28:41,600 --> 00:28:45,360
+But as I've listened to them, they've
+
+804
+00:28:43,679 --> 00:28:47,039
+echoed very loudly something that you
+
+805
+00:28:45,360 --> 00:28:48,159
+just talked about.
+
+806
+00:28:47,039 --> 00:28:50,799
+Is [clears throat] what you're doing
+
+807
+00:28:48,159 --> 00:28:53,440
+going to give me time back? And that's a
+
+808
+00:28:50,799 --> 00:28:55,200
+massive massive uh challenge that we've
+
+809
+00:28:53,440 --> 00:28:56,480
+got to do a much better job with. And
+
+810
+00:28:55,200 --> 00:28:59,279
+I'm glad that you're thinking about it
+
+811
+00:28:56,480 --> 00:29:01,440
+that way is to you're right. You know,
+
+812
+00:28:59,279 --> 00:29:05,360
+it it is a lot of work that you're doing
+
+813
+00:29:01,440 --> 00:29:06,960
+and you know, being a CEO yourself that
+
+814
+00:29:05,360 --> 00:29:09,360
+I thrown out that means chief everything
+
+815
+00:29:06,960 --> 00:29:10,720
+offer. certain everything's on my plate
+
+816
+00:29:09,360 --> 00:29:12,159
+and if I don't do it, no one's going to
+
+817
+00:29:10,720 --> 00:29:15,120
+do it because I haven't hired anyone to
+
+818
+00:29:12,159 --> 00:29:16,799
+do it. So that time measurement is one
+
+819
+00:29:15,120 --> 00:29:19,440
+of the things that I think is a really
+
+820
+00:29:16,799 --> 00:29:21,520
+really big deal and kudos to you for
+
+821
+00:29:19,440 --> 00:29:22,799
+realizing it and amplifying it because I
+
+822
+00:29:21,520 --> 00:29:25,279
+think that's a really important thing
+
+823
+00:29:22,799 --> 00:29:28,080
+for us to aim our attention at as people
+
+824
+00:29:25,279 --> 00:29:29,760
+who are trying to improve the lives of
+
+825
+00:29:28,080 --> 00:29:31,520
+human beings and improve the value of
+
+826
+00:29:29,760 --> 00:29:33,600
+the work that they do. Make it easier
+
+827
+00:29:31,520 --> 00:29:36,399
+and more enjoyable so you're not just
+
+828
+00:29:33,600 --> 00:29:38,240
+pushing a button for eight hours. I
+
+829
+00:29:36,399 --> 00:29:39,679
+mean, those those things are not all
+
+830
+00:29:38,240 --> 00:29:42,399
+that attractive for a human being to be
+
+831
+00:29:39,679 --> 00:29:44,480
+doing. But I I love that. Giving time
+
+832
+00:29:42,399 --> 00:29:45,760
+back. Kudos, man. I love that.
+
+833
+00:29:44,480 --> 00:29:47,440
+I I love what you just brought up,
+
+834
+00:29:45,760 --> 00:29:49,760
+Chris. Uh, you know, just talking about
+
+835
+00:29:47,440 --> 00:29:51,679
+like looking out for uh uh you know,
+
+836
+00:29:49,760 --> 00:29:53,840
+other people and and all that. It's
+
+837
+00:29:51,679 --> 00:29:56,240
+really easy to start your own business
+
+838
+00:29:53,840 --> 00:29:58,080
+and, you know, be be driven by money and
+
+839
+00:29:56,240 --> 00:30:00,080
+success and, you know, what you want for
+
+840
+00:29:58,080 --> 00:30:02,000
+your own life. But in my journey of
+
+841
+00:30:00,080 --> 00:30:04,240
+figuring out where I wanted to be or
+
+842
+00:30:02,000 --> 00:30:06,240
+work, I didn't want to just be a, you
+
+843
+00:30:04,240 --> 00:30:09,039
+know, another number to a company. I
+
+844
+00:30:06,240 --> 00:30:11,360
+felt like I wasn't making an impact, I
+
+845
+00:30:09,039 --> 00:30:13,279
+guess, uh, is is how I would put it. So,
+
+846
+00:30:11,360 --> 00:30:15,600
+I I always wanted to be in a creative
+
+847
+00:30:13,279 --> 00:30:17,840
+space. Uh, and I love, you know, working
+
+848
+00:30:15,600 --> 00:30:19,600
+in tech. It's, uh, you know, I built my
+
+849
+00:30:17,840 --> 00:30:21,120
+own PC. So, just getting back to, uh, we
+
+850
+00:30:19,600 --> 00:30:23,279
+had a conversation earlier about like
+
+851
+00:30:21,120 --> 00:30:25,840
+what overclocked means. Uh overclocks is
+
+852
+00:30:23,279 --> 00:30:28,240
+when you just like boost your your PC
+
+853
+00:30:25,840 --> 00:30:30,799
+and uh it's uh you know you just ramp it
+
+854
+00:30:28,240 --> 00:30:33,200
+up uh all the specs on it. So uh we want
+
+855
+00:30:30,799 --> 00:30:35,279
+to do that with companies, but uh just
+
+856
+00:30:33,200 --> 00:30:36,880
+getting back to the human factor, it was
+
+857
+00:30:35,279 --> 00:30:39,279
+never about like getting a paycheck. You
+
+858
+00:30:36,880 --> 00:30:41,840
+know, it's uh I always wanted to be
+
+859
+00:30:39,279 --> 00:30:44,640
+doing something that helped others in a
+
+860
+00:30:41,840 --> 00:30:46,720
+way. And maybe some people don't see it
+
+861
+00:30:44,640 --> 00:30:48,399
+the way I do. You know, some people just
+
+862
+00:30:46,720 --> 00:30:50,720
+hate AI or think that we're, you know,
+
+863
+00:30:48,399 --> 00:30:52,640
+taking taking jobs or whatever. Um, I
+
+864
+00:30:50,720 --> 00:30:55,520
+want to come in and I want to help
+
+865
+00:30:52,640 --> 00:30:58,880
+people and uh free up their time and and
+
+866
+00:30:55,520 --> 00:31:01,440
+hopefully just give them the perspective
+
+867
+00:30:58,880 --> 00:31:03,600
+of what it would look like to to have a
+
+868
+00:31:01,440 --> 00:31:05,200
+bit more of your time back and and be
+
+869
+00:31:03,600 --> 00:31:08,080
+able to spend it how you want to. Maybe
+
+870
+00:31:05,200 --> 00:31:10,399
+that is like diving head first fully
+
+871
+00:31:08,080 --> 00:31:12,480
+into your business doing more tasks that
+
+872
+00:31:10,399 --> 00:31:14,640
+you could let uh you get where I'm going
+
+873
+00:31:12,480 --> 00:31:16,159
+with that, Chris? But uh yeah, you know,
+
+874
+00:31:14,640 --> 00:31:16,720
+it's all about looking out for each
+
+875
+00:31:16,159 --> 00:31:19,679
+other there.
+
+876
+00:31:16,720 --> 00:31:20,720
+Yeah, I I I I love it. I love it. You
+
+877
+00:31:19,679 --> 00:31:23,600
+know, you've talked a bit about
+
+878
+00:31:20,720 --> 00:31:26,640
+governance and I think over the course
+
+879
+00:31:23,600 --> 00:31:29,039
+of my years uh I've seen governance
+
+880
+00:31:26,640 --> 00:31:31,200
+talked about almost exclusively from an
+
+881
+00:31:29,039 --> 00:31:33,520
+academic exercise perspective. Most
+
+882
+00:31:31,200 --> 00:31:36,000
+organizations I've been around had stood
+
+883
+00:31:33,520 --> 00:31:37,919
+up a data governance program and started
+
+884
+00:31:36,000 --> 00:31:39,440
+bringing in all the senior level people
+
+885
+00:31:37,919 --> 00:31:41,200
+when there wasn't yet anything to
+
+886
+00:31:39,440 --> 00:31:43,840
+govern. They weren't asking there was no
+
+887
+00:31:41,200 --> 00:31:46,480
+decisions to be made. So over time those
+
+888
+00:31:43,840 --> 00:31:48,880
+things kind of disappeared. But now here
+
+889
+00:31:46,480 --> 00:31:51,120
+we are with AI and governance is
+
+890
+00:31:48,880 --> 00:31:54,240
+important as you've already stressed. Uh
+
+891
+00:31:51,120 --> 00:31:56,559
+if you're working with a small group,
+
+892
+00:31:54,240 --> 00:31:58,799
+let's just say it's a three person shop.
+
+893
+00:31:56,559 --> 00:32:00,480
+It almost sounds like it's a luxury to
+
+894
+00:31:58,799 --> 00:32:02,480
+do where you know we got to we got to
+
+895
+00:32:00,480 --> 00:32:04,000
+create this team. Maybe talk to talk to
+
+896
+00:32:02,480 --> 00:32:05,279
+me a little about that. It's not it
+
+897
+00:32:04,000 --> 00:32:07,039
+sounds like a luxury, but I don't know
+
+898
+00:32:05,279 --> 00:32:08,799
+that that's really the case. What does
+
+899
+00:32:07,039 --> 00:32:10,960
+it actually look like for an operator
+
+900
+00:32:08,799 --> 00:32:13,519
+with no compliance department? Why
+
+901
+00:32:10,960 --> 00:32:15,200
+should they care about if something goes
+
+902
+00:32:13,519 --> 00:32:17,600
+wrong or before something goes wrong
+
+903
+00:32:15,200 --> 00:32:20,720
+perhaps maybe that'd be better?
+
+904
+00:32:17,600 --> 00:32:22,960
+Yeah, I'll uh I'll give you an example
+
+905
+00:32:20,720 --> 00:32:24,880
+and uh I think I can relate it to this
+
+906
+00:32:22,960 --> 00:32:28,640
+but uh I just spoke with somebody who
+
+907
+00:32:24,880 --> 00:32:30,960
+was uh they do consulting uh uh in a in
+
+908
+00:32:28,640 --> 00:32:32,960
+a way but they worked with uh the US
+
+909
+00:32:30,960 --> 00:32:35,440
+government so they relied uh heavily on
+
+910
+00:32:32,960 --> 00:32:39,120
+government contracts. They recently told
+
+911
+00:32:35,440 --> 00:32:42,480
+me uh that they had been doed you know
+
+912
+00:32:39,120 --> 00:32:44,480
+during this uh this this presidency and
+
+913
+00:32:42,480 --> 00:32:46,960
+uh that they actually lost a government
+
+914
+00:32:44,480 --> 00:32:48,960
+contract. So you know very quickly after
+
+915
+00:32:46,960 --> 00:32:51,760
+that they uh they had to go more private
+
+916
+00:32:48,960 --> 00:32:53,440
+and I think they do still do some uh
+
+917
+00:32:51,760 --> 00:32:56,240
+some government work but it's just not
+
+918
+00:32:53,440 --> 00:32:57,279
+coming in the same way that it did. So
+
+919
+00:32:56,240 --> 00:32:59,600
+right
+
+920
+00:32:57,279 --> 00:33:03,440
+circling back to your question Chris the
+
+921
+00:32:59,600 --> 00:33:06,640
+governance part of AI I think is
+
+922
+00:33:03,440 --> 00:33:09,120
+extremely important and it's even just
+
+923
+00:33:06,640 --> 00:33:12,159
+giving you know the public peace of mind
+
+924
+00:33:09,120 --> 00:33:14,880
+AI in in spaces like healthcare
+
+925
+00:33:12,159 --> 00:33:17,279
+government military big things you could
+
+926
+00:33:14,880 --> 00:33:18,880
+even like you know say electrical grids
+
+927
+00:33:17,279 --> 00:33:21,440
+like things that the public really rely
+
+928
+00:33:18,880 --> 00:33:23,679
+on it needs to be tight you know there
+
+929
+00:33:21,440 --> 00:33:26,559
+needs to be people that are overlooking
+
+930
+00:33:23,679 --> 00:33:28,159
+these things and have proper regulations
+
+931
+00:33:26,559 --> 00:33:30,880
+just because you know think about like
+
+932
+00:33:28,159 --> 00:33:32,399
+what would happen if if data got across
+
+933
+00:33:30,880 --> 00:33:33,760
+uh you know got in the wrong hands right
+
+934
+00:33:32,399 --> 00:33:36,960
+so that's not something that the public
+
+935
+00:33:33,760 --> 00:33:39,840
+wants as well as you know it just just
+
+936
+00:33:36,960 --> 00:33:42,720
+information right uh or AI getting to
+
+937
+00:33:39,840 --> 00:33:45,039
+the point where it is running on its own
+
+938
+00:33:42,720 --> 00:33:47,440
+so it always needs to you know in a way
+
+939
+00:33:45,039 --> 00:33:48,559
+maybe have like a kill switch right
+
+940
+00:33:47,440 --> 00:33:51,039
+yeah I don't know how that would look
+
+941
+00:33:48,559 --> 00:33:54,000
+like but again AI has gotten so big in
+
+942
+00:33:51,039 --> 00:33:56,080
+in certain areas but talking about the
+
+943
+00:33:54,000 --> 00:33:59,519
+small shops getting on to the the
+
+944
+00:33:56,080 --> 00:34:04,480
+smaller side of things. I think having
+
+945
+00:33:59,519 --> 00:34:06,880
+too much regulation would actually be uh
+
+946
+00:34:04,480 --> 00:34:09,440
+not good for businesses. There's already
+
+947
+00:34:06,880 --> 00:34:12,079
+enough hurdles to to start uh your own
+
+948
+00:34:09,440 --> 00:34:13,839
+company and to you know maybe you're
+
+949
+00:34:12,079 --> 00:34:16,320
+trademarking something, right? It just
+
+950
+00:34:13,839 --> 00:34:19,040
+it takes long a long time to actually go
+
+951
+00:34:16,320 --> 00:34:21,200
+from the day you decide to start to
+
+952
+00:34:19,040 --> 00:34:22,639
+making a success and getting through all
+
+953
+00:34:21,200 --> 00:34:24,560
+those hurdles, all those those
+
+954
+00:34:22,639 --> 00:34:27,359
+roadblocks, right? So if you were to
+
+955
+00:34:24,560 --> 00:34:28,800
+start regulating AI in a way, you could
+
+956
+00:34:27,359 --> 00:34:31,520
+definitely, you know, regulate it a
+
+957
+00:34:28,800 --> 00:34:33,280
+little bit, but as far as having mass
+
+958
+00:34:31,520 --> 00:34:36,159
+amounts of of regulation where you have
+
+959
+00:34:33,280 --> 00:34:38,800
+to check by everyone uh or, you know, go
+
+960
+00:34:36,159 --> 00:34:41,040
+through certain uh streams like
+
+961
+00:34:38,800 --> 00:34:43,359
+government or whatever there it could
+
+962
+00:34:41,040 --> 00:34:45,919
+just be very it could hold things up uh
+
+963
+00:34:43,359 --> 00:34:47,919
+very quickly and kill dreams and and
+
+964
+00:34:45,919 --> 00:34:49,440
+things like that. So when it comes to
+
+965
+00:34:47,919 --> 00:34:51,119
+small companies, it comes to like things
+
+966
+00:34:49,440 --> 00:34:53,280
+like data or whatever like they should
+
+967
+00:34:51,119 --> 00:34:55,839
+absolutely be exercising extreme
+
+968
+00:34:53,280 --> 00:34:58,480
+caution. You know, you're implementing
+
+969
+00:34:55,839 --> 00:35:00,079
+uh clients, right? I I would have access
+
+970
+00:34:58,480 --> 00:35:02,240
+if I implemented clients, I would have
+
+971
+00:35:00,079 --> 00:35:03,839
+access to their stuff. So, you know, it
+
+972
+00:35:02,240 --> 00:35:06,640
+really does come down to to trusting
+
+973
+00:35:03,839 --> 00:35:08,800
+people, but uh yeah, just at the end of
+
+974
+00:35:06,640 --> 00:35:10,560
+the day, you got to be careful with uh
+
+975
+00:35:08,800 --> 00:35:12,800
+you know, who what what what you're
+
+976
+00:35:10,560 --> 00:35:14,720
+limiting, but also making sure that it's
+
+977
+00:35:12,800 --> 00:35:17,359
+not just a complete free-for-all. No, I
+
+978
+00:35:14,720 --> 00:35:19,280
+couldn't agree more. As we kind of wind
+
+979
+00:35:17,359 --> 00:35:22,079
+down a little bit now, I I just I'd like
+
+980
+00:35:19,280 --> 00:35:24,720
+to have you kind of put your futurist
+
+981
+00:35:22,079 --> 00:35:26,640
+hat on for a second and, you know, look
+
+982
+00:35:24,720 --> 00:35:28,640
+ahead, you know, maybe for the over the
+
+983
+00:35:26,640 --> 00:35:31,119
+next year. Where do you see things
+
+984
+00:35:28,640 --> 00:35:33,839
+moving uh for small businesses over the
+
+985
+00:35:31,119 --> 00:35:35,680
+next year like what you're seeing in and
+
+986
+00:35:33,839 --> 00:35:37,040
+the things that you're you're deploying
+
+987
+00:35:35,680 --> 00:35:38,560
+and building? In fact, maybe you could
+
+988
+00:35:37,040 --> 00:35:40,640
+talk about if there's things that you
+
+989
+00:35:38,560 --> 00:35:42,560
+that are in the in your pipeline that
+
+990
+00:35:40,640 --> 00:35:44,560
+that you're excited about that you might
+
+991
+00:35:42,560 --> 00:35:46,079
+be able to do to offer clients in the
+
+992
+00:35:44,560 --> 00:35:48,800
+next year.
+
+993
+00:35:46,079 --> 00:35:50,720
+Yeah, absolutely. So, Chris, I'll just
+
+994
+00:35:48,800 --> 00:35:53,200
+say I think in the next year this stops
+
+995
+00:35:50,720 --> 00:35:55,280
+being a novelty. There's so many people
+
+996
+00:35:53,200 --> 00:35:56,560
+right now that there's three categories,
+
+997
+00:35:55,280 --> 00:35:58,560
+right? There's people that implemented
+
+998
+00:35:56,560 --> 00:35:59,839
+AI from the beginning. Uh I've spoken
+
+999
+00:35:58,560 --> 00:36:02,240
+with a lot of companies that they don't
+
+1000
+00:35:59,839 --> 00:36:03,760
+even work in the AI space, but they have
+
+1001
+00:36:02,240 --> 00:36:05,839
+learned AI. they build their own
+
+1002
+00:36:03,760 --> 00:36:07,119
+products in shop to use for their own
+
+1003
+00:36:05,839 --> 00:36:08,960
+company and maybe the clients that
+
+1004
+00:36:07,119 --> 00:36:10,720
+they're working with, but it's not in
+
+1005
+00:36:08,960 --> 00:36:12,000
+the sense of an AI agency, right? So,
+
+1006
+00:36:10,720 --> 00:36:14,320
+there's people that adopted it very
+
+1007
+00:36:12,000 --> 00:36:16,160
+well. There's other people that uh have
+
+1008
+00:36:14,320 --> 00:36:17,520
+been very skeptical, but they've done a
+
+1009
+00:36:16,160 --> 00:36:18,800
+little bit, right? So, you know, they
+
+1010
+00:36:17,520 --> 00:36:21,040
+start talking about like, yeah, you
+
+1011
+00:36:18,800 --> 00:36:22,480
+know, I started running this project
+
+1012
+00:36:21,040 --> 00:36:24,560
+through Claude and I just wanted some
+
+1013
+00:36:22,480 --> 00:36:26,560
+feedback on it and uh you know, they're
+
+1014
+00:36:24,560 --> 00:36:28,400
+thinking about, you know, getting into
+
+1015
+00:36:26,560 --> 00:36:29,680
+something simple like lead generation. I
+
+1016
+00:36:28,400 --> 00:36:32,240
+would absolutely say that that's like
+
+1017
+00:36:29,680 --> 00:36:34,640
+fairly entry level for, you know,
+
+1018
+00:36:32,240 --> 00:36:35,920
+businesses getting into AI, right?
+
+1019
+00:36:34,640 --> 00:36:36,960
+Uh and then you're going to have the
+
+1020
+00:36:35,920 --> 00:36:38,400
+people that, you know, they still hate
+
+1021
+00:36:36,960 --> 00:36:39,599
+it. They don't like what's going on.
+
+1022
+00:36:38,400 --> 00:36:41,599
+You'll have people that worried about
+
+1023
+00:36:39,599 --> 00:36:43,359
+the the economy. Sorry, not the economy,
+
+1024
+00:36:41,599 --> 00:36:44,960
+the environment with these uh big data
+
+1025
+00:36:43,359 --> 00:36:46,960
+centers going up or, you know, the
+
+1026
+00:36:44,960 --> 00:36:48,480
+amount of water being used for them. So
+
+1027
+00:36:46,960 --> 00:36:51,040
+things like that, I'll say I hope they
+
+1028
+00:36:48,480 --> 00:36:53,040
+find better solutions. I heard China has
+
+1029
+00:36:51,040 --> 00:36:54,320
+been dropping data centers into the
+
+1030
+00:36:53,040 --> 00:36:56,320
+ocean. I think that's a much better way
+
+1031
+00:36:54,320 --> 00:36:57,440
+of cooling them rather than like near
+
+1032
+00:36:56,320 --> 00:37:00,400
+city or something. So
+
+1033
+00:36:57,440 --> 00:37:01,040
+that's a good head or
+
+1034
+00:37:00,400 --> 00:37:03,200
+I love it.
+
+1035
+00:37:01,040 --> 00:37:05,599
+Yeah, for cooling, right? So yeah, I
+
+1036
+00:37:03,200 --> 00:37:07,839
+don't know uh if that's I don't know
+
+1037
+00:37:05,599 --> 00:37:09,680
+exactly if that's like eco-friendly. So
+
+1038
+00:37:07,839 --> 00:37:12,000
+nobody nobody get mad at me for that. I
+
+1039
+00:37:09,680 --> 00:37:13,280
+just heard it's a little better than uh
+
+1040
+00:37:12,000 --> 00:37:16,800
+you know some of the other solutions
+
+1041
+00:37:13,280 --> 00:37:18,640
+that that have been uh coming up. So uh
+
+1042
+00:37:16,800 --> 00:37:20,400
+yeah, like I said, it's I think it goes
+
+1043
+00:37:18,640 --> 00:37:22,560
+from stopping or it stops being a
+
+1044
+00:37:20,400 --> 00:37:25,359
+novelty and it just becomes how small
+
+1045
+00:37:22,560 --> 00:37:27,520
+firms operate. uh the ones who adopt it
+
+1046
+00:37:25,359 --> 00:37:29,920
+thoughtfully uh not just the shortcut
+
+1047
+00:37:27,520 --> 00:37:32,320
+versions but the real infrastructure
+
+1048
+00:37:29,920 --> 00:37:34,320
+versions uh they're going to outpace the
+
+1049
+00:37:32,320 --> 00:37:36,240
+ones still doing everything manually and
+
+1050
+00:37:34,320 --> 00:37:38,079
+that gap is going to widen fast. We've
+
+1051
+00:37:36,240 --> 00:37:39,839
+already seen that it it's just going to
+
+1052
+00:37:38,079 --> 00:37:41,760
+get you know more and more bigger. When
+
+1053
+00:37:39,839 --> 00:37:43,040
+I started my company this year, uh I've
+
+1054
+00:37:41,760 --> 00:37:44,880
+only been in this space for a couple
+
+1055
+00:37:43,040 --> 00:37:46,079
+months, but uh when I started it, you
+
+1056
+00:37:44,880 --> 00:37:48,160
+know, everyone was saying like this is
+
+1057
+00:37:46,079 --> 00:37:49,920
+the year of the agents, right? So
+
+1058
+00:37:48,160 --> 00:37:52,240
+agents, you know, doing those repetitive
+
+1059
+00:37:49,920 --> 00:37:54,640
+tasks are going to be bigger or sorry,
+
+1060
+00:37:52,240 --> 00:37:56,640
+uh more common, but I think after this,
+
+1061
+00:37:54,640 --> 00:37:59,200
+you know, agents are going to be
+
+1062
+00:37:56,640 --> 00:38:01,359
+not not, you know, old or anything, but
+
+1063
+00:37:59,200 --> 00:38:03,200
+like they'll have been around and AI is
+
+1064
+00:38:01,359 --> 00:38:04,640
+just it's it's just progressing like
+
+1065
+00:38:03,200 --> 00:38:05,680
+every day. So
+
+1066
+00:38:04,640 --> 00:38:08,000
+yeah,
+
+1067
+00:38:05,680 --> 00:38:09,760
+I think for me I'm going to be, you
+
+1068
+00:38:08,000 --> 00:38:12,800
+know, really wanting to focus on
+
+1069
+00:38:09,760 --> 00:38:15,440
+refining the uh the growth engine and uh
+
+1070
+00:38:12,800 --> 00:38:18,079
+the growth engine again is not one
+
+1071
+00:38:15,440 --> 00:38:20,560
+product, but it is more a uh a
+
+1072
+00:38:18,079 --> 00:38:21,920
+multi-phase product line. So you know,
+
+1073
+00:38:20,560 --> 00:38:24,079
+we would install different things,
+
+1074
+00:38:21,920 --> 00:38:24,880
+right? So once we've finished doing one
+
+1075
+00:38:24,079 --> 00:38:26,400
+thing,
+
+1076
+00:38:24,880 --> 00:38:28,560
+see how it runs, make sure you've gotten
+
+1077
+00:38:26,400 --> 00:38:30,160
+your return on investment there, and
+
+1078
+00:38:28,560 --> 00:38:31,839
+then we would start on another one. and
+
+1079
+00:38:30,160 --> 00:38:34,079
+the growth engine. It would be
+
+1080
+00:38:31,839 --> 00:38:36,000
+completely considered like we do all
+
+1081
+00:38:34,079 --> 00:38:38,000
+these things. They're all running
+
+1082
+00:38:36,000 --> 00:38:40,640
+smoothly. You're scaling as we keep
+
+1083
+00:38:38,000 --> 00:38:42,560
+doing these more leads coming in. You
+
+1084
+00:38:40,640 --> 00:38:44,160
+know, maybe you have more room to hire
+
+1085
+00:38:42,560 --> 00:38:45,920
+more people, right? It's all about
+
+1086
+00:38:44,160 --> 00:38:50,720
+growth, looking out for each other. Uh
+
+1087
+00:38:45,920 --> 00:38:52,640
+like I said, so that I I love this. So,
+
+1088
+00:38:50,720 --> 00:38:54,960
+Ethan, if people are hearing this today
+
+1089
+00:38:52,640 --> 00:38:56,560
+and uh they want to learn more, where
+
+1090
+00:38:54,960 --> 00:38:59,280
+where can they go to find you?
+
+1091
+00:38:56,560 --> 00:39:00,720
+Yeah. Uh [clears throat] my website uh
+
+1092
+00:38:59,280 --> 00:39:03,440
+it has all my services. You can book a
+
+1093
+00:39:00,720 --> 00:39:06,440
+call with me there. Uh it is going to be
+
+1094
+00:39:03,440 --> 00:39:06,440
+overclockedai.net.
+
+1095
+00:39:06,720 --> 00:39:12,640
+Uh and then you can find me at LinkedIn.
+
+1096
+00:39:09,440 --> 00:39:16,560
+Uh that is going to be Ethan Seib
+
+1097
+00:39:12,640 --> 00:39:18,320
+spelled S Ei B. And uh I'm sure Chris
+
+1098
+00:39:16,560 --> 00:39:20,720
+will have those in the show notes. Uh
+
+1099
+00:39:18,320 --> 00:39:22,000
+that last name it gets uh it tricks
+
+1100
+00:39:20,720 --> 00:39:24,000
+people sometimes.
+
+1101
+00:39:22,000 --> 00:39:25,520
+Absolutely. Yeah. For the audience, you
+
+1102
+00:39:24,000 --> 00:39:27,040
+can count on that. I will I will make
+
+1103
+00:39:25,520 --> 00:39:29,760
+sure that there's all the information
+
+1104
+00:39:27,040 --> 00:39:32,240
+that you need to get a hold of Ethan and
+
+1105
+00:39:29,760 --> 00:39:35,040
+engage and I encourage you to do that.
+
+1106
+00:39:32,240 --> 00:39:37,200
+So as we wrap uh Ethan Seib, founder of
+
+1107
+00:39:35,040 --> 00:39:39,760
+Overclocked AI, the threat I'm taking
+
+1108
+00:39:37,200 --> 00:39:42,160
+with me, the agents that they're the
+
+1109
+00:39:39,760 --> 00:39:44,960
+easy part. It's the human beings that
+
+1110
+00:39:42,160 --> 00:39:46,720
+are really the the irreplaceable
+
+1111
+00:39:44,960 --> 00:39:48,800
+component of of what we're doing. And I
+
+1112
+00:39:46,720 --> 00:39:50,960
+love that you focused on really giving
+
+1113
+00:39:48,800 --> 00:39:53,440
+time back for human beings. Hugely
+
+1114
+00:39:50,960 --> 00:39:56,480
+important. I'm a big fan. uh love what
+
+1115
+00:39:53,440 --> 00:39:58,400
+you're doing. And to my listeners,
+
+1116
+00:39:56,480 --> 00:40:01,599
+please make sure and go go ahead and
+
+1117
+00:39:58,400 --> 00:40:03,680
+check out his podcast. The operators who
+
+1118
+00:40:01,599 --> 00:40:06,240
+win are the ones who know exactly which
+
+1119
+00:40:03,680 --> 00:40:08,960
+decisions to keep their hands on. The
+
+1120
+00:40:06,240 --> 00:40:10,480
+meantime, go check out the operator lab.
+
+1121
+00:40:08,960 --> 00:40:12,079
+And thanks, Ethan, for trading seats
+
+1122
+00:40:10,480 --> 00:40:14,560
+with me. I've had a blast with you
+
+1123
+00:40:12,079 --> 00:40:16,400
+today. Learned a lot. And I look forward
+
+1124
+00:40:14,560 --> 00:40:18,160
+to hearing more good things and and
+
+1125
+00:40:16,400 --> 00:40:21,200
+congrats on launching your business. And
+
+1126
+00:40:18,160 --> 00:40:23,680
+I wish you great success. Let's plan on
+
+1127
+00:40:21,200 --> 00:40:26,079
+catching up again soon and I want to be
+
+1128
+00:40:23,680 --> 00:40:27,680
+learning all the things that I should be
+
+1129
+00:40:26,079 --> 00:40:29,359
+changing about how I'm operating my
+
+1130
+00:40:27,680 --> 00:40:30,560
+business as well. Thank you so much
+
+1131
+00:40:29,359 --> 00:40:31,839
+again for being on the show.
+
+1132
+00:40:30,560 --> 00:40:34,640
+Absolutely, Chris. Thank you so much for
+
+1133
+00:40:31,839 --> 00:40:36,880
+having me. And just one quick note is uh
+
+1134
+00:40:34,640 --> 00:40:38,800
+I connected with Chris uh by doing a
+
+1135
+00:40:36,880 --> 00:40:41,440
+podcast with him first where we get to
+
+1136
+00:40:38,800 --> 00:40:43,280
+talk about uh everything Chris is doing
+
+1137
+00:40:41,440 --> 00:40:44,960
+and give him the spotlight. So if you'd
+
+1138
+00:40:43,280 --> 00:40:47,119
+like to uh have another perspective of
+
+1139
+00:40:44,960 --> 00:40:49,040
+what's going on with Chris, uh you can
+
+1140
+00:40:47,119 --> 00:40:51,760
+check out uh my YouTube channel. I will
+
+1141
+00:40:49,040 --> 00:40:53,520
+have his video up uh very soon.
+
+1142
+00:40:51,760 --> 00:40:55,520
+Thanks so much. That's it for this
+
+1143
+00:40:53,520 --> 00:40:57,280
+episode of The Signal Room. If today's
+
+1144
+00:40:55,520 --> 00:40:59,280
+conversation sparked something in you,
+
+1145
+00:40:57,280 --> 00:41:01,280
+an idea, a challenge, or perspective
+
+1146
+00:40:59,280 --> 00:41:03,359
+worth amplifying, I'd love to hear from
+
+1147
+00:41:01,280 --> 00:41:04,880
+you. Message me on LinkedIn or visit
+
+1148
+00:41:03,359 --> 00:41:06,880
+signarroompodcast.com
+
+1149
+00:41:04,880 --> 00:41:09,880
+to explore being a guest on an upcoming
+
+1150
+00:41:06,880 --> 00:41:09,880
+episode.
