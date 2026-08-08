@@ -349,7 +349,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/watch/ai-security-cybersecurity-anitha-mareedu</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/ai-security-risk-governance-gap</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-trust-infrastructure-amit-shivpuja</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -367,7 +379,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-complete-medical-records-aleida-lanza</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-roi-parth-gargish</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/hospital-ai-governance-signoff</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/responsible-ai-healthcare-asha-mahesh</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
