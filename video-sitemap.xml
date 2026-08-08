@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-literacy-crisis-killing-healthcare</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/PCHVQ9mPHC0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>A Doctor Warns: Stop Reading Your Own Lab Results Using AI | Dr. Steven Labkoff</video:title>
+      <video:description>Dr. Steven Labkoff explains why using general-purpose AI to interpret personal lab results can produce confident but clinically dangerous conclusions and why healthcare AI literacy matters.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/PCHVQ9mPHC0</video:player_loc>
+      <video:duration>2926</video:duration>
+      <video:publication_date>2026-05-13</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+</urlset>
