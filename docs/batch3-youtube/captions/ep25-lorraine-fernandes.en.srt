@@ -1,0 +1,3204 @@
+1
+00:00:00,080 --> 00:00:03,840
+Jobs are going to be replaced by AI.
+
+2
+00:00:01,920 --> 00:00:05,759
+It's growing in healthare two times
+
+3
+00:00:03,840 --> 00:00:08,400
+faster in healthcare than any other
+
+4
+00:00:05,759 --> 00:00:10,480
+industry. It comes down to one single
+
+5
+00:00:08,400 --> 00:00:13,360
+word, trust, the focus on the future
+
+6
+00:00:10,480 --> 00:00:16,720
+[music] 2026. So we're going to start
+
+7
+00:00:13,360 --> 00:00:18,160
+the series on April 15th with digital
+
+8
+00:00:16,720 --> 00:00:21,600
+health. [music] Then we're going to move
+
+9
+00:00:18,160 --> 00:00:23,760
+to AI and healthcare and yours truly,
+
+10
+00:00:21,600 --> 00:00:26,880
+Chris, is going to be the lead speaker
+
+11
+00:00:23,760 --> 00:00:28,800
+for our April 29th event. Then we're
+
+12
+00:00:26,880 --> 00:00:31,279
+going to move to coding and
+
+13
+00:00:28,800 --> 00:00:33,520
+classification and terminologies [music]
+
+14
+00:00:31,279 --> 00:00:37,120
+on May 13th. And then we're going to
+
+15
+00:00:33,520 --> 00:00:39,600
+close it out on May 27th talking about
+
+16
+00:00:37,120 --> 00:00:41,760
+leadership and workforce development. Go
+
+17
+00:00:39,600 --> 00:00:45,280
+to ifmaima.org and you'll on our
+
+18
+00:00:41,760 --> 00:00:47,039
+homepage you can sign up and decide what
+
+19
+00:00:45,280 --> 00:00:49,200
+ticket might work best for you.
+
+20
+00:00:47,039 --> 00:00:51,680
+Lorraine, it has been a while and it's
+
+21
+00:00:49,200 --> 00:00:53,680
+so good to see you. I'm really excited
+
+22
+00:00:51,680 --> 00:00:54,559
+to welcome you to the Sigma Room
+
+23
+00:00:53,680 --> 00:00:56,480
+podcast.
+
+24
+00:00:54,559 --> 00:00:57,680
+Well, thanks Chris. It certainly has
+
+25
+00:00:56,480 --> 00:01:00,239
+been a while,
+
+26
+00:00:57,680 --> 00:01:02,399
+right? I I don't I don't even remember.
+
+27
+00:01:00,239 --> 00:01:04,159
+It's been a long time. And then recently
+
+28
+00:01:02,399 --> 00:01:06,240
+we reconnected again. And it's, you
+
+29
+00:01:04,159 --> 00:01:08,240
+know, the things that we thought were a
+
+30
+00:01:06,240 --> 00:01:10,080
+big deal way back then. Turns out we're
+
+31
+00:01:08,240 --> 00:01:13,119
+insignificant compared to what we're
+
+32
+00:01:10,080 --> 00:01:15,200
+dealing with today. So really excited to
+
+33
+00:01:13,119 --> 00:01:16,880
+to hear from you what what your
+
+34
+00:01:15,200 --> 00:01:18,400
+experiences are. And of course, you've
+
+35
+00:01:16,880 --> 00:01:21,680
+been playing a really important role in
+
+36
+00:01:18,400 --> 00:01:23,280
+Athe, you know, led it through uh some
+
+37
+00:01:21,680 --> 00:01:25,439
+incredible years. And now it's
+
+38
+00:01:23,280 --> 00:01:27,200
+transitioning again. We're at a
+
+39
+00:01:25,439 --> 00:01:28,560
+wonderful time of the year. There's some
+
+40
+00:01:27,200 --> 00:01:30,799
+events coming up for we get to talk
+
+41
+00:01:28,560 --> 00:01:32,880
+about today, but I am thrilled to have
+
+42
+00:01:30,799 --> 00:01:33,280
+you. So again, welcome to the Signal
+
+43
+00:01:32,880 --> 00:01:34,720
+Room.
+
+44
+00:01:33,280 --> 00:01:35,840
+Well, thank you much, Chris. I
+
+45
+00:01:34,720 --> 00:01:38,320
+appreciate the invite.
+
+46
+00:01:35,840 --> 00:01:40,640
+So, let's just jump in. Uh kind of
+
+47
+00:01:38,320 --> 00:01:42,640
+alluded to the things that are much
+
+48
+00:01:40,640 --> 00:01:44,560
+different than they they were not so
+
+49
+00:01:42,640 --> 00:01:46,320
+long ago. Let's talk about the role of
+
+50
+00:01:44,560 --> 00:01:48,320
+of health information management and
+
+51
+00:01:46,320 --> 00:01:50,079
+then how is it really changed over the
+
+52
+00:01:48,320 --> 00:01:52,720
+last decade? I mean, there's I'm sure
+
+53
+00:01:50,079 --> 00:01:54,640
+there's tons, but there's probably some
+
+54
+00:01:52,720 --> 00:01:56,960
+significant things that you can you can
+
+55
+00:01:54,640 --> 00:01:58,560
+hit that probably will jar people's
+
+56
+00:01:56,960 --> 00:01:59,119
+memory that maybe they've forgotten
+
+57
+00:01:58,560 --> 00:02:01,040
+about.
+
+58
+00:01:59,119 --> 00:02:03,680
+Well, and that's certainly true. And as
+
+59
+00:02:01,040 --> 00:02:06,000
+I was thinking about what I would share
+
+60
+00:02:03,680 --> 00:02:08,000
+with you and and your listeners, I'll
+
+61
+00:02:06,000 --> 00:02:10,800
+probably reflect a little bit more than
+
+62
+00:02:08,000 --> 00:02:13,520
+a decade since I have a 50-year career.
+
+63
+00:02:10,800 --> 00:02:15,040
+I can't believe it. Uh, and
+
+64
+00:02:13,520 --> 00:02:15,280
+you started at 10 years old, just like
+
+65
+00:02:15,040 --> 00:02:18,080
+me.
+
+66
+00:02:15,280 --> 00:02:21,920
+I did. I did. I started at 10. and I'll
+
+67
+00:02:18,080 --> 00:02:25,520
+reflect some of my thoughts are on my 12
+
+68
+00:02:21,920 --> 00:02:27,840
+years on the ifa board also. So I'll
+
+69
+00:02:25,520 --> 00:02:29,360
+share a little insight and and I'm sure
+
+70
+00:02:27,840 --> 00:02:32,640
+this is going to spark further
+
+71
+00:02:29,360 --> 00:02:34,879
+conversation. So in my career I always
+
+72
+00:02:32,640 --> 00:02:37,680
+had a passion for data but honestly I
+
+73
+00:02:34,879 --> 00:02:39,599
+don't think I'm unique in that regard. I
+
+74
+00:02:37,680 --> 00:02:41,599
+managed people in the quote unquote
+
+75
+00:02:39,599 --> 00:02:45,680
+traditional health information
+
+76
+00:02:41,599 --> 00:02:48,080
+management department. I also managed uh
+
+77
+00:02:45,680 --> 00:02:50,080
+almost from day one in my career, you
+
+78
+00:02:48,080 --> 00:02:52,239
+know, the cancer registry or tumor
+
+79
+00:02:50,080 --> 00:02:55,120
+registry as it was called, trauma
+
+80
+00:02:52,239 --> 00:02:58,319
+registries and other types of clinical
+
+81
+00:02:55,120 --> 00:03:00,239
+registries cuz I just love data and any
+
+82
+00:02:58,319 --> 00:03:03,599
+how to capture it, how to make sure it
+
+83
+00:03:00,239 --> 00:03:06,080
+was accurate and my staff I I was lucky
+
+84
+00:03:03,599 --> 00:03:08,239
+the first 10 years of my career I found
+
+85
+00:03:06,080 --> 00:03:11,519
+staff who shared my passion,
+
+86
+00:03:08,239 --> 00:03:14,159
+right? So you fast forward a bit and you
+
+87
+00:03:11,519 --> 00:03:16,879
+say okay so we've evolved from paper
+
+88
+00:03:14,159 --> 00:03:19,280
+early in my career to electronic for
+
+89
+00:03:16,879 --> 00:03:21,360
+many reasons and obviously we know the
+
+90
+00:03:19,280 --> 00:03:24,480
+US government did a significant
+
+91
+00:03:21,360 --> 00:03:28,400
+investment in that from like what was it
+
+92
+00:03:24,480 --> 00:03:32,319
+2008 to 12 something like that. So paper
+
+93
+00:03:28,400 --> 00:03:34,560
+in the US is largely gone except for
+
+94
+00:03:32,319 --> 00:03:37,920
+perhaps some specialty areas of health
+
+95
+00:03:34,560 --> 00:03:40,400
+care, maybe some specialty clinics or
+
+96
+00:03:37,920 --> 00:03:43,040
+other niches, but you know we still have
+
+97
+00:03:40,400 --> 00:03:46,239
+shadow records in electronics just like
+
+98
+00:03:43,040 --> 00:03:49,599
+we did in paper. But the transition over
+
+99
+00:03:46,239 --> 00:03:51,920
+the last 15 years I believe has created
+
+100
+00:03:49,599 --> 00:03:54,000
+tremendous opportunity for health
+
+101
+00:03:51,920 --> 00:03:57,280
+information or health information
+
+102
+00:03:54,000 --> 00:04:00,239
+management professionals because as a
+
+103
+00:03:57,280 --> 00:04:02,159
+result of the infusion in the US from
+
+104
+00:04:00,239 --> 00:04:05,360
+the federal government to move to
+
+105
+00:04:02,159 --> 00:04:07,920
+electronic or to digital professionals
+
+106
+00:04:05,360 --> 00:04:10,319
+had a chance to lead design and
+
+107
+00:04:07,920 --> 00:04:12,480
+implementation teams maybe for the
+
+108
+00:04:10,319 --> 00:04:15,760
+products that were implemented in their
+
+109
+00:04:12,480 --> 00:04:18,799
+respective departments. and from that go
+
+110
+00:04:15,760 --> 00:04:22,639
+even bigger to leading larger teams who
+
+111
+00:04:18,799 --> 00:04:25,120
+are more generic to functions I'd say in
+
+112
+00:04:22,639 --> 00:04:27,840
+the health care system and I think that
+
+113
+00:04:25,120 --> 00:04:30,560
+was a fabulous springboard for the
+
+114
+00:04:27,840 --> 00:04:33,919
+profession to go bigger to go better to
+
+115
+00:04:30,560 --> 00:04:36,800
+go broader whatever else you want to add
+
+116
+00:04:33,919 --> 00:04:39,440
+there and I think that created the
+
+117
+00:04:36,800 --> 00:04:41,840
+environment where health information
+
+118
+00:04:39,440 --> 00:04:44,320
+professionals instead of just creating
+
+119
+00:04:41,840 --> 00:04:46,960
+the data as we did from release of
+
+120
+00:04:44,320 --> 00:04:49,600
+information or clinical coding or other
+
+121
+00:04:46,960 --> 00:04:53,040
+administrative functions, registration,
+
+122
+00:04:49,600 --> 00:04:56,160
+patient access. Um, we became users and
+
+123
+00:04:53,040 --> 00:04:59,440
+curators of the data. A much different
+
+124
+00:04:56,160 --> 00:05:03,919
+hat I think we put on as a result of
+
+125
+00:04:59,440 --> 00:05:06,560
+that infusion. You know, we use data in
+
+126
+00:05:03,919 --> 00:05:09,199
+our data analyst roles, perhaps in
+
+127
+00:05:06,560 --> 00:05:11,759
+information or data governance, clinical
+
+128
+00:05:09,199 --> 00:05:13,919
+decision support, maybe clinical
+
+129
+00:05:11,759 --> 00:05:16,479
+documentation improvement, and it goes
+
+130
+00:05:13,919 --> 00:05:20,240
+on a long ways. In particular, I'd say
+
+131
+00:05:16,479 --> 00:05:24,160
+the clinical coders uh are evolving now
+
+132
+00:05:20,240 --> 00:05:28,479
+to address clinical coding in the US and
+
+133
+00:05:24,160 --> 00:05:31,600
+especially around the world beyond ICD
+
+134
+00:05:28,479 --> 00:05:36,400
+or CPT. I I talked to global colleagues
+
+135
+00:05:31,600 --> 00:05:38,240
+who are working in SNOMED and in ICD
+
+136
+00:05:36,400 --> 00:05:40,160
+and we'll talk about those in just a
+
+137
+00:05:38,240 --> 00:05:43,680
+second and other clinical
+
+138
+00:05:40,160 --> 00:05:47,039
+classifications. Some come out of WH,
+
+139
+00:05:43,680 --> 00:05:49,919
+some come out of other uh regulatory or
+
+140
+00:05:47,039 --> 00:05:52,320
+professional associations. So I think
+
+141
+00:05:49,919 --> 00:05:55,120
+this has broadened our remmit to
+
+142
+00:05:52,320 --> 00:05:57,520
+encompass a lot more components and I
+
+143
+00:05:55,120 --> 00:06:00,240
+think others would agree it's the whole
+
+144
+00:05:57,520 --> 00:06:02,240
+of the revenue cycle management. Now,
+
+145
+00:06:00,240 --> 00:06:04,479
+not everybody is doing it as you and I
+
+146
+00:06:02,240 --> 00:06:06,800
+know and our listeners know, right?
+
+147
+00:06:04,479 --> 00:06:10,160
+But there's a lot of people who've moved
+
+148
+00:06:06,800 --> 00:06:13,039
+beyond just that one little component of
+
+149
+00:06:10,160 --> 00:06:16,479
+revenue cycle to manage the sides of
+
+150
+00:06:13,039 --> 00:06:20,319
+each of our traditional and much bigger.
+
+151
+00:06:16,479 --> 00:06:23,120
+And I think with that what we've seen is
+
+152
+00:06:20,319 --> 00:06:27,280
+we've become stewards of data as opposed
+
+153
+00:06:23,120 --> 00:06:30,080
+to users or curators or the creators of
+
+154
+00:06:27,280 --> 00:06:33,520
+data. Right? And that's stewards through
+
+155
+00:06:30,080 --> 00:06:37,680
+governance, through compliance, through
+
+156
+00:06:33,520 --> 00:06:42,240
+privacy and uh advocacy in a latter
+
+157
+00:06:37,680 --> 00:06:45,680
+areas. So at ifa what we did and we've
+
+158
+00:06:42,240 --> 00:06:47,840
+become connectors in in ifa's belief
+
+159
+00:06:45,680 --> 00:06:50,479
+we're the connectors that work far
+
+160
+00:06:47,840 --> 00:06:53,759
+beyond the data experts. were the
+
+161
+00:06:50,479 --> 00:06:57,039
+bridges, you could say, to knowledge and
+
+162
+00:06:53,759 --> 00:07:00,479
+experience and skills that are really
+
+163
+00:06:57,039 --> 00:07:02,560
+needed today between technical,
+
+164
+00:07:00,479 --> 00:07:05,039
+clinical, and administrative functions.
+
+165
+00:07:02,560 --> 00:07:07,039
+that that's such an important part of
+
+166
+00:07:05,039 --> 00:07:09,120
+what we're we're talking about today is
+
+167
+00:07:07,039 --> 00:07:11,440
+there's this whole function I I think
+
+168
+00:07:09,120 --> 00:07:13,360
+about you know from the years that I was
+
+169
+00:07:11,440 --> 00:07:15,680
+working in the data and analytics space
+
+170
+00:07:13,360 --> 00:07:17,919
+in a chief data officer role or you know
+
+171
+00:07:15,680 --> 00:07:20,000
+really working with multiple different
+
+172
+00:07:17,919 --> 00:07:22,479
+kinds of data sources because there's a
+
+173
+00:07:20,000 --> 00:07:25,440
+proliferation at a pace that is
+
+174
+00:07:22,479 --> 00:07:27,280
+staggering honestly I think the the
+
+175
+00:07:25,440 --> 00:07:29,520
+amount of data in all recorded history
+
+176
+00:07:27,280 --> 00:07:31,520
+it like not even five years ago I was
+
+177
+00:07:29,520 --> 00:07:33,039
+hearing it was that was happening inside
+
+178
+00:07:31,520 --> 00:07:35,520
+of it 2 years. Yeah.
+
+179
+00:07:33,039 --> 00:07:38,479
+I can't even imagine what that is like
+
+180
+00:07:35,520 --> 00:07:41,120
+now. It's probably 2 weeks. It It's just
+
+181
+00:07:38,479 --> 00:07:43,280
+staggering. But the the piece that uh
+
+182
+00:07:41,120 --> 00:07:46,319
+really changed the way that I had to
+
+183
+00:07:43,280 --> 00:07:49,120
+operate was moving from report
+
+184
+00:07:46,319 --> 00:07:53,520
+generation, cataloging, you know,
+
+185
+00:07:49,120 --> 00:07:55,759
+auditing to translation. And really what
+
+186
+00:07:53,520 --> 00:07:58,800
+you're talking about in this stewardship
+
+187
+00:07:55,759 --> 00:08:01,599
+arena is there is so much information
+
+188
+00:07:58,800 --> 00:08:04,400
+that's coming in with many more more
+
+189
+00:08:01,599 --> 00:08:07,440
+kinds of data and the timing of it is is
+
+190
+00:08:04,400 --> 00:08:10,160
+different. Uh the relevancy based on a
+
+191
+00:08:07,440 --> 00:08:12,479
+variety of factors uh is not easily
+
+192
+00:08:10,160 --> 00:08:14,639
+discerned. So you I think the the role
+
+193
+00:08:12,479 --> 00:08:15,840
+that you know these professionals that
+
+194
+00:08:14,639 --> 00:08:17,680
+are involved with health information
+
+195
+00:08:15,840 --> 00:08:20,240
+management are becoming much more
+
+196
+00:08:17,680 --> 00:08:22,160
+important and essential to uh our
+
+197
+00:08:20,240 --> 00:08:24,560
+success as we start to implement even
+
+198
+00:08:22,160 --> 00:08:27,440
+more I'll call it disruption I think
+
+199
+00:08:24,560 --> 00:08:30,639
+improvement but I think it's you know
+
+200
+00:08:27,440 --> 00:08:33,440
+it's more disruption at least for now it
+
+201
+00:08:30,639 --> 00:08:35,279
+is anyway but I think it would be really
+
+202
+00:08:33,440 --> 00:08:38,240
+good you know to hear your perspective
+
+203
+00:08:35,279 --> 00:08:40,959
+on not only is it more important but why
+
+204
+00:08:38,240 --> 00:08:43,919
+stewardship matters uh more as we're
+
+205
+00:08:40,959 --> 00:08:46,480
+moving into these these AI assisted
+
+206
+00:08:43,919 --> 00:08:49,360
+workflows. I mean it it's a gamecher for
+
+207
+00:08:46,480 --> 00:08:50,880
+sure, but the risks are significant
+
+208
+00:08:49,360 --> 00:08:52,880
+especially if we don't understand
+
+209
+00:08:50,880 --> 00:08:54,800
+stewardship and and who's responsible
+
+210
+00:08:52,880 --> 00:08:57,760
+and how do we lean in and do it well.
+
+211
+00:08:54,800 --> 00:09:03,120
+I think it comes down to one single word
+
+212
+00:08:57,760 --> 00:09:06,880
+trust. We must build trust from creation
+
+213
+00:09:03,120 --> 00:09:09,279
+and analysis to output to downstream
+
+214
+00:09:06,880 --> 00:09:12,080
+systems consuming it. And those
+
+215
+00:09:09,279 --> 00:09:14,160
+consuming systems are obviously whether
+
+216
+00:09:12,080 --> 00:09:16,720
+it's the workflow for the consuming
+
+217
+00:09:14,160 --> 00:09:19,440
+systems or the system itself heavily
+
+218
+00:09:16,720 --> 00:09:22,560
+using AI. If they're not today, give it
+
+219
+00:09:19,440 --> 00:09:24,959
+a few weeks or months and they will be.
+
+220
+00:09:22,560 --> 00:09:27,279
+And so without trust and and the
+
+221
+00:09:24,959 --> 00:09:29,839
+discussion of trust isn't brand new in
+
+222
+00:09:27,279 --> 00:09:32,080
+the context of AI. We've been discussing
+
+223
+00:09:29,839 --> 00:09:34,560
+trust for years, but I think without
+
+224
+00:09:32,080 --> 00:09:36,800
+trust, it's part of stewardship. We're
+
+225
+00:09:34,560 --> 00:09:39,920
+not going to achieve the goals that
+
+226
+00:09:36,800 --> 00:09:43,040
+we're talking about from automation,
+
+227
+00:09:39,920 --> 00:09:45,120
+digital health, AI initiatives, and the
+
+228
+00:09:43,040 --> 00:09:47,519
+monies that are being spent, which are
+
+229
+00:09:45,120 --> 00:09:49,920
+staggering, as you know, even more so
+
+230
+00:09:47,519 --> 00:09:52,640
+than me. um we're not going to recoup
+
+231
+00:09:49,920 --> 00:09:55,519
+all those rewards or all those benefits.
+
+232
+00:09:52,640 --> 00:09:57,680
+And I did like you uh yesterday I did a
+
+233
+00:09:55,519 --> 00:10:00,160
+quick query and said how much are we
+
+234
+00:09:57,680 --> 00:10:04,160
+really spending in AI today? And here's
+
+235
+00:10:00,160 --> 00:10:06,959
+what I found. 38 to 39 billion were
+
+236
+00:10:04,160 --> 00:10:11,440
+predicted to be spent last year right
+
+237
+00:10:06,959 --> 00:10:14,959
+in AI and 50 billion by the end of this
+
+238
+00:10:11,440 --> 00:10:17,680
+year. And that's Fortune magazine. So
+
+239
+00:10:14,959 --> 00:10:20,079
+it's not my opinion or your opinion.
+
+240
+00:10:17,680 --> 00:10:22,000
+This is some thinker out there and
+
+241
+00:10:20,079 --> 00:10:25,040
+researcher who's saying that and it's
+
+242
+00:10:22,000 --> 00:10:27,279
+growing in healthare at two times and
+
+243
+00:10:25,040 --> 00:10:29,760
+maybe you knew this Chris two times
+
+244
+00:10:27,279 --> 00:10:31,600
+faster in healthcare than any other
+
+245
+00:10:29,760 --> 00:10:34,959
+industry. mind-boggling.
+
+246
+00:10:31,600 --> 00:10:37,760
+Yeah. So I think beyond that
+
+247
+00:10:34,959 --> 00:10:40,320
+you know what's even more disturbing I
+
+248
+00:10:37,760 --> 00:10:41,680
+think in that vein is that there all the
+
+249
+00:10:40,320 --> 00:10:43,519
+things that were concerned about the
+
+250
+00:10:41,680 --> 00:10:46,640
+nefarious actors doing using this
+
+251
+00:10:43,519 --> 00:10:50,160
+technology they're even ahead of that
+
+252
+00:10:46,640 --> 00:10:52,959
+and it's just for me that's just another
+
+253
+00:10:50,160 --> 00:10:54,800
+reason that we have to double down now
+
+254
+00:10:52,959 --> 00:10:57,040
+make sure that everyone understands how
+
+255
+00:10:54,800 --> 00:10:59,600
+things are being used make sure we have
+
+256
+00:10:57,040 --> 00:11:02,560
+the the structure around it to actually
+
+257
+00:10:59,600 --> 00:11:05,680
+protect health care as it as the place
+
+258
+00:11:02,560 --> 00:11:07,839
+where you can go there still knowing
+
+259
+00:11:05,680 --> 00:11:09,920
+that there's people that are are there
+
+260
+00:11:07,839 --> 00:11:11,519
+for you and to take care of you. It's
+
+261
+00:11:09,920 --> 00:11:13,040
+not about you're you're not a number.
+
+262
+00:11:11,519 --> 00:11:15,360
+You mean you're you're a human being and
+
+263
+00:11:13,040 --> 00:11:17,839
+we're going to wrap the services around
+
+264
+00:11:15,360 --> 00:11:18,880
+your care to ensure that we preserve
+
+265
+00:11:17,839 --> 00:11:21,839
+that.
+
+266
+00:11:18,880 --> 00:11:25,440
+And and as we've hinted at, stewardship
+
+267
+00:11:21,839 --> 00:11:28,399
+and trust are essential. They should be
+
+268
+00:11:25,440 --> 00:11:33,279
+foundational to building the consumer
+
+269
+00:11:28,399 --> 00:11:36,640
+conference confidence as a result of AI
+
+270
+00:11:33,279 --> 00:11:40,240
+being a part of clinical decision making
+
+271
+00:11:36,640 --> 00:11:43,839
+and clinical interactions to decision
+
+272
+00:11:40,240 --> 00:11:47,040
+support to financial workflows. And so
+
+273
+00:11:43,839 --> 00:11:50,000
+advocacy becomes a big part of that
+
+274
+00:11:47,040 --> 00:11:53,760
+building trust now because it's every
+
+275
+00:11:50,000 --> 00:11:57,279
+aspect of consumer confidence, consumer
+
+276
+00:11:53,760 --> 00:11:58,800
+engagement with their care in order to
+
+277
+00:11:57,279 --> 00:12:01,040
+improve health care because we're not
+
+278
+00:11:58,800 --> 00:12:03,120
+doing this just to have some fun new
+
+279
+00:12:01,040 --> 00:12:04,880
+project to do. We want to improve health
+
+280
+00:12:03,120 --> 00:12:07,920
+and health outcomes.
+
+281
+00:12:04,880 --> 00:12:09,760
+100%. as we're thinking about this, you
+
+282
+00:12:07,920 --> 00:12:13,279
+know, the you mentioned governance and
+
+283
+00:12:09,760 --> 00:12:14,800
+it people have varying um degrees of
+
+284
+00:12:13,279 --> 00:12:17,279
+understanding of what that really is
+
+285
+00:12:14,800 --> 00:12:19,600
+about and you know probably more more of
+
+286
+00:12:17,279 --> 00:12:21,600
+us than not have had experiences with it
+
+287
+00:12:19,600 --> 00:12:23,920
+and it seems like it was been treated as
+
+288
+00:12:21,600 --> 00:12:27,200
+an academic exercise that is really not
+
+289
+00:12:23,920 --> 00:12:29,279
+what we're talking about. Um so as
+
+290
+00:12:27,200 --> 00:12:32,480
+you're thinking about how the the role
+
+291
+00:12:29,279 --> 00:12:35,200
+of HIM is expanding in the governance
+
+292
+00:12:32,480 --> 00:12:38,079
+quality and compliance space this is way
+
+293
+00:12:35,200 --> 00:12:40,720
+beyond buzzwords which for some people
+
+294
+00:12:38,079 --> 00:12:42,880
+it's a people it's a buzzword these are
+
+295
+00:12:40,720 --> 00:12:45,200
+really significant areas of
+
+296
+00:12:42,880 --> 00:12:46,880
+responsibility that are really really
+
+297
+00:12:45,200 --> 00:12:49,920
+essential. Can you talk a little bit
+
+298
+00:12:46,880 --> 00:12:52,880
+about how the role is expanding and what
+
+299
+00:12:49,920 --> 00:12:54,720
+what that really means for for him
+
+300
+00:12:52,880 --> 00:12:56,959
+professionals and and where they can be
+
+301
+00:12:54,720 --> 00:12:58,959
+and they need to be, you know, educating
+
+302
+00:12:56,959 --> 00:13:01,120
+themselves and stepping into higher
+
+303
+00:12:58,959 --> 00:13:04,399
+levels of proficiency in these areas.
+
+304
+00:13:01,120 --> 00:13:07,519
+Sure. And and I think I' I'd ground my
+
+305
+00:13:04,399 --> 00:13:10,000
+response from health information
+
+306
+00:13:07,519 --> 00:13:12,720
+management professionals around the
+
+307
+00:13:10,000 --> 00:13:15,200
+globe that I talk with week after week,
+
+308
+00:13:12,720 --> 00:13:17,920
+month after month because everybody
+
+309
+00:13:15,200 --> 00:13:20,959
+around the globe in my profession is
+
+310
+00:13:17,920 --> 00:13:23,920
+talking about how their role is evolving
+
+311
+00:13:20,959 --> 00:13:26,240
+and everybody talks about their concerns
+
+312
+00:13:23,920 --> 00:13:29,200
+about AI and what it's going to do to
+
+313
+00:13:26,240 --> 00:13:30,480
+their role, their responsibilities, how
+
+314
+00:13:29,200 --> 00:13:32,560
+they're going to integrate it to
+
+315
+00:13:30,480 --> 00:13:34,959
+workflow or how they're not going to
+
+316
+00:13:32,560 --> 00:13:38,240
+integrate it because of their concerns
+
+317
+00:13:34,959 --> 00:13:41,600
+that governance isn't adequately
+
+318
+00:13:38,240 --> 00:13:44,880
+addressed as as a foundational element.
+
+319
+00:13:41,600 --> 00:13:47,279
+And so what we did at if HEA is because
+
+320
+00:13:44,880 --> 00:13:49,120
+we were hearing this so much from our
+
+321
+00:13:47,279 --> 00:13:52,079
+professionals and it didn't matter
+
+322
+00:13:49,120 --> 00:13:56,240
+whether you were in the US or Canada or
+
+323
+00:13:52,079 --> 00:13:58,800
+Nigeria or Australia or Spain around the
+
+324
+00:13:56,240 --> 00:14:02,240
+globe, people are concerned. So, we
+
+325
+00:13:58,800 --> 00:14:05,360
+developed a toolkit that we released in
+
+326
+00:14:02,240 --> 00:14:07,760
+November of last year. If you go to
+
+327
+00:14:05,360 --> 00:14:10,320
+ifphema.org, you'll see the toolkit
+
+328
+00:14:07,760 --> 00:14:14,639
+there. And it's got a white paper about
+
+329
+00:14:10,320 --> 00:14:16,720
+the value and the adaptability of the
+
+330
+00:14:14,639 --> 00:14:20,000
+health information management
+
+331
+00:14:16,720 --> 00:14:22,959
+professional to help in digital health,
+
+332
+00:14:20,000 --> 00:14:25,199
+to help in privacy and security. And
+
+333
+00:14:22,959 --> 00:14:28,320
+last but certainly not least, the
+
+334
+00:14:25,199 --> 00:14:32,480
+critical role we should play in AI
+
+335
+00:14:28,320 --> 00:14:35,440
+design and adoption and implementation.
+
+336
+00:14:32,480 --> 00:14:37,519
+So I have to thank all of my colleagues.
+
+337
+00:14:35,440 --> 00:14:39,680
+There was about 10 of them I believe
+
+338
+00:14:37,519 --> 00:14:43,680
+from around the world who helped develop
+
+339
+00:14:39,680 --> 00:14:46,240
+this toolkit from Barbados to Iran. Yes,
+
+340
+00:14:43,680 --> 00:14:48,079
+we had Iranians as a part of this
+
+341
+00:14:46,240 --> 00:14:52,720
+despite what's going on in the world
+
+342
+00:14:48,079 --> 00:14:55,760
+today. to Kenya to Spain and Australia.
+
+343
+00:14:52,720 --> 00:14:57,920
+Everybody had good input about where's
+
+344
+00:14:55,760 --> 00:15:00,560
+the profession at in their country
+
+345
+00:14:57,920 --> 00:15:04,639
+today. Where are they struggling and why
+
+346
+00:15:00,560 --> 00:15:07,199
+and then what they must do to embrace
+
+347
+00:15:04,639 --> 00:15:10,639
+the future and prepare themselves and
+
+348
+00:15:07,199 --> 00:15:12,880
+their associations for the future. So
+
+349
+00:15:10,639 --> 00:15:15,600
+obviously the goal of all of this was
+
+350
+00:15:12,880 --> 00:15:18,560
+give tools to our members and we've
+
+351
+00:15:15,600 --> 00:15:22,079
+gotten fabulous response and I am not
+
+352
+00:15:18,560 --> 00:15:25,199
+exaggerating fabulous response about yes
+
+353
+00:15:22,079 --> 00:15:28,000
+this is what I need to go to talk to the
+
+354
+00:15:25,199 --> 00:15:30,959
+minister of health of why I must be a
+
+355
+00:15:28,000 --> 00:15:34,079
+part of this government initiative or
+
+356
+00:15:30,959 --> 00:15:37,680
+why I need to be involved when we're
+
+357
+00:15:34,079 --> 00:15:39,600
+discussing ICD-11 implementation if
+
+358
+00:15:37,680 --> 00:15:42,480
+they're already on whatever version of
+
+359
+00:15:39,600 --> 00:15:45,440
+ICD-10 they're on and it's it's impacting
+
+360
+00:15:42,480 --> 00:15:48,560
+the payers the providers in the US terms
+
+361
+00:15:45,440 --> 00:15:52,000
+we use here it's impacting all elements
+
+362
+00:15:48,560 --> 00:15:55,199
+of government once you kind of leave the
+
+363
+00:15:52,000 --> 00:15:58,160
+US it's government plays a very big role
+
+364
+00:15:55,199 --> 00:16:00,880
+so life is changing that's for sure
+
+365
+00:15:58,160 --> 00:16:03,519
+for yeah no question about that and I
+
+366
+00:16:00,880 --> 00:16:06,639
+think it's really really helpful to to
+
+367
+00:16:03,519 --> 00:16:09,680
+hear you perspectives in in the the way
+
+368
+00:16:06,639 --> 00:16:12,160
+that a female is is supporting this
+
+369
+00:16:09,680 --> 00:16:14,240
+on a global level because you know we
+
+370
+00:16:12,160 --> 00:16:16,240
+hear tons about what's going on here in
+
+371
+00:16:14,240 --> 00:16:18,000
+the US and there's all these you know
+
+372
+00:16:16,240 --> 00:16:19,360
+challenging things about how things are
+
+373
+00:16:18,000 --> 00:16:22,240
+going to get regulated where they're
+
+374
+00:16:19,360 --> 00:16:23,920
+going to get regulated but people are
+
+375
+00:16:22,240 --> 00:16:25,360
+still needing to get healthcare
+
+376
+00:16:23,920 --> 00:16:26,639
+everywhere and they're not waiting for
+
+377
+00:16:25,360 --> 00:16:29,440
+everybody to figure out the policy
+
+378
+00:16:26,639 --> 00:16:31,759
+stuff. So the role that Ephimma plays is
+
+379
+00:16:29,440 --> 00:16:34,240
+an incredibly important one. And I mean
+
+380
+00:16:31,759 --> 00:16:36,079
+it heartens me to know just how much uh
+
+381
+00:16:34,240 --> 00:16:38,399
+the organization has been doing to
+
+382
+00:16:36,079 --> 00:16:40,800
+support healthcare professionals around
+
+383
+00:16:38,399 --> 00:16:42,320
+the world. And you know we're we're all
+
+384
+00:16:40,800 --> 00:16:43,839
+first of all first and foremost we're
+
+385
+00:16:42,320 --> 00:16:46,480
+all human beings regardless of whatever
+
+386
+00:16:43,839 --> 00:16:48,240
+else is going on. And it's really a
+
+387
+00:16:46,480 --> 00:16:50,959
+wonderful thing that a FEMA is doing to
+
+388
+00:16:48,240 --> 00:16:52,959
+make sure that, you know, healthcare
+
+389
+00:16:50,959 --> 00:16:54,959
+information management teams and
+
+390
+00:16:52,959 --> 00:16:56,560
+professionals are keeping their eye on
+
+391
+00:16:54,959 --> 00:16:58,240
+the ball and they're they're really
+
+392
+00:16:56,560 --> 00:17:00,959
+doing a great job in moving things
+
+393
+00:16:58,240 --> 00:17:02,959
+forward. Um maybe can kind of pivot. Uh
+
+394
+00:17:00,959 --> 00:17:05,280
+I I want to get a little bit from you in
+
+395
+00:17:02,959 --> 00:17:07,439
+terms of you think things are going and
+
+396
+00:17:05,280 --> 00:17:10,319
+I think that naturally leads us into the
+
+397
+00:17:07,439 --> 00:17:13,199
+the invitation for people to you know
+
+398
+00:17:10,319 --> 00:17:15,039
+get get involved and uh with some of the
+
+399
+00:17:13,199 --> 00:17:16,480
+wonderful resources that are going to be
+
+400
+00:17:15,039 --> 00:17:18,559
+available in the coming weeks and
+
+401
+00:17:16,480 --> 00:17:21,760
+months. Uh we'll we'll talk about that a
+
+402
+00:17:18,559 --> 00:17:23,520
+little bit as well. Uh but so let's talk
+
+403
+00:17:21,760 --> 00:17:25,600
+about how health information management
+
+404
+00:17:23,520 --> 00:17:28,160
+is changing you know as the landscape is
+
+405
+00:17:25,600 --> 00:17:30,160
+becoming more digital and you know AI is
+
+406
+00:17:28,160 --> 00:17:32,559
+doing more to shape documentation and
+
+407
+00:17:30,160 --> 00:17:34,160
+decision support. I think recently, and
+
+408
+00:17:32,559 --> 00:17:37,039
+I'm sure you've have thoughts about this
+
+409
+00:17:34,160 --> 00:17:40,640
+too, but the the introduction of open AI
+
+410
+00:17:37,039 --> 00:17:43,360
+and anthropics offerings into the direct
+
+411
+00:17:40,640 --> 00:17:45,760
+connection with a patient with AI uh
+
+412
+00:17:43,360 --> 00:17:48,000
+poses some interesting scenarios to
+
+413
+00:17:45,760 --> 00:17:50,240
+figure out where you're dealing with AI
+
+414
+00:17:48,000 --> 00:17:52,000
+generated data sets that are coming in
+
+415
+00:17:50,240 --> 00:17:55,360
+for the electronic records.
+
+416
+00:17:52,000 --> 00:17:58,080
+Yes, it is. You know, as as you know,
+
+417
+00:17:55,360 --> 00:17:59,520
+digital health is one of the four topic
+
+418
+00:17:58,080 --> 00:18:02,160
+areas we're going to cover in our
+
+419
+00:17:59,520 --> 00:18:03,919
+four-part series. digital health in the
+
+420
+00:18:02,160 --> 00:18:06,480
+context of what we're discussing right
+
+421
+00:18:03,919 --> 00:18:11,039
+now. When we wrote this toolkit and
+
+422
+00:18:06,480 --> 00:18:15,039
+released it, we noted that 540 billion
+
+423
+00:18:11,039 --> 00:18:17,200
+is expected to be spent by 2035.
+
+424
+00:18:15,039 --> 00:18:21,120
+And interestingly, the World Health
+
+425
+00:18:17,200 --> 00:18:23,280
+Organization is firmly behind this. So
+
+426
+00:18:21,120 --> 00:18:25,760
+it's not the private sector, it's not
+
+427
+00:18:23,280 --> 00:18:29,120
+the vendors, it's not just the
+
+428
+00:18:25,760 --> 00:18:32,799
+healthcare delivery organizations, it is
+
+429
+00:18:29,120 --> 00:18:38,640
+um government and global organizations
+
+430
+00:18:32,799 --> 00:18:41,919
+like WH. So in that context, HIM can be
+
+431
+00:18:38,640 --> 00:18:44,559
+the connector to the many facets of
+
+432
+00:18:41,919 --> 00:18:47,919
+digital health uh expenditures,
+
+433
+00:18:44,559 --> 00:18:50,559
+deployments and obviously AI, artificial
+
+434
+00:18:47,919 --> 00:18:54,000
+intelligence. But one of the things I
+
+435
+00:18:50,559 --> 00:18:57,039
+have to do is is as as the marketing and
+
+436
+00:18:54,000 --> 00:19:00,240
+communications executive for Epheima is
+
+437
+00:18:57,039 --> 00:19:03,039
+remember that the HIM role varies
+
+438
+00:19:00,240 --> 00:19:06,160
+considerably around the globe. great
+
+439
+00:19:03,039 --> 00:19:09,280
+deal of variation and some many
+
+440
+00:19:06,160 --> 00:19:12,400
+organizations or many countries are
+
+441
+00:19:09,280 --> 00:19:16,559
+still struggling with how to define the
+
+442
+00:19:12,400 --> 00:19:20,160
+role and how to gain the recognition and
+
+443
+00:19:16,559 --> 00:19:23,440
+the compensation for the role that has
+
+444
+00:19:20,160 --> 00:19:26,400
+changed and is essential to AI and
+
+445
+00:19:23,440 --> 00:19:28,880
+digital health and the other things. So
+
+446
+00:19:26,400 --> 00:19:31,039
+at IFHIMA, we talk about how do we help
+
+447
+00:19:28,880 --> 00:19:33,760
+people, how do we help our members deal
+
+448
+00:19:31,039 --> 00:19:36,240
+with outdated job codes or labor
+
+449
+00:19:33,760 --> 00:19:39,360
+classification codes and that goes from
+
+450
+00:19:36,240 --> 00:19:42,160
+global to country specific because that
+
+451
+00:19:39,360 --> 00:19:44,880
+certainly does hold professionals back
+
+452
+00:19:42,160 --> 00:19:47,440
+in many countries. And then in other
+
+453
+00:19:44,880 --> 00:19:51,840
+countries that we work with, it's the
+
+454
+00:19:47,440 --> 00:19:55,280
+lack of formal HI or HIM programs in
+
+455
+00:19:51,840 --> 00:19:58,080
+their countries and the degrees that are
+
+456
+00:19:55,280 --> 00:20:01,039
+granted and then the lack of
+
+457
+00:19:58,080 --> 00:20:03,440
+credentials. So credentials and academic
+
+458
+00:20:01,039 --> 00:20:07,280
+programs aren't an issue or the lack of
+
+459
+00:20:03,440 --> 00:20:10,080
+them isn't an issue in the US. But what
+
+460
+00:20:07,280 --> 00:20:12,960
+you hear from people like me in the US
+
+461
+00:20:10,080 --> 00:20:15,440
+is, yeah, I can get a degree and I can
+
+462
+00:20:12,960 --> 00:20:18,640
+maintain my credentials, but I got to
+
+463
+00:20:15,440 --> 00:20:21,840
+make sure my job compensation
+
+464
+00:20:18,640 --> 00:20:24,720
+helps reward me for making that
+
+465
+00:20:21,840 --> 00:20:28,799
+investment and that investment helps you
+
+466
+00:20:24,720 --> 00:20:30,799
+and I as health care consumers. So, it's
+
+467
+00:20:28,799 --> 00:20:33,679
+a piggy. That's something I don't think
+
+468
+00:20:30,799 --> 00:20:35,600
+people realize how significant, you
+
+469
+00:20:33,679 --> 00:20:38,960
+know, that that investment needs to be
+
+470
+00:20:35,600 --> 00:20:41,200
+to to really keep up with the the the
+
+471
+00:20:38,960 --> 00:20:42,559
+ever evolving landscape that we're
+
+472
+00:20:41,200 --> 00:20:44,799
+talking about, you know, the
+
+473
+00:20:42,559 --> 00:20:46,960
+proliferation of data again. And not
+
+474
+00:20:44,799 --> 00:20:49,360
+only that, the kind of data we used
+
+475
+00:20:46,960 --> 00:20:50,640
+we're used to, but there's new kinds of
+
+476
+00:20:49,360 --> 00:20:51,600
+it that are being introduced all the
+
+477
+00:20:50,640 --> 00:20:55,440
+time, too.
+
+478
+00:20:51,600 --> 00:20:57,679
+Yeah. So I think AI it can open many
+
+479
+00:20:55,440 --> 00:21:00,400
+doors for health information
+
+480
+00:20:57,679 --> 00:21:03,520
+professionals. We've got to step forward
+
+481
+00:21:00,400 --> 00:21:06,559
+a few steps. We've got to take a few
+
+482
+00:21:03,520 --> 00:21:08,480
+risks. And that's not easy for everybody
+
+483
+00:21:06,559 --> 00:21:12,159
+based upon where you live, where you're
+
+484
+00:21:08,480 --> 00:21:16,240
+at in your career, etc. And we've got to
+
+485
+00:21:12,159 --> 00:21:18,720
+upskill a bit to demonstrate that we
+
+486
+00:21:16,240 --> 00:21:22,000
+have that broad skill set. We've got the
+
+487
+00:21:18,720 --> 00:21:24,960
+knowledge. We are the bridges and the
+
+488
+00:21:22,000 --> 00:21:29,760
+connectors that are out there. I firmly
+
+489
+00:21:24,960 --> 00:21:33,200
+believe that who better than us to be
+
+490
+00:21:29,760 --> 00:21:35,919
+the stewards of the data that we've
+
+491
+00:21:33,200 --> 00:21:39,679
+created historically and that we are now
+
+492
+00:21:35,919 --> 00:21:42,720
+using in so many different ways as a
+
+493
+00:21:39,679 --> 00:21:44,960
+result of how AI is is going to
+
+494
+00:21:42,720 --> 00:21:48,320
+revolutionize the healthcare industry
+
+495
+00:21:44,960 --> 00:21:52,480
+and perhaps in some facets already has.
+
+496
+00:21:48,320 --> 00:21:55,679
+So um great opportunities but we need to
+
+497
+00:21:52,480 --> 00:21:57,679
+wisely understand the data limitations
+
+498
+00:21:55,679 --> 00:22:00,159
+that the health information management
+
+499
+00:21:57,679 --> 00:22:03,200
+professional is certainly in a good
+
+500
+00:22:00,159 --> 00:22:05,600
+position to explain. Yeah, it's it's a
+
+501
+00:22:03,200 --> 00:22:07,120
+in a moment where people are concerned,
+
+502
+00:22:05,600 --> 00:22:09,760
+you know, if their jobs are going to be
+
+503
+00:22:07,120 --> 00:22:11,679
+replaced by AI and this at this point,
+
+504
+00:22:09,760 --> 00:22:13,200
+you've heard this before, but people's
+
+505
+00:22:11,679 --> 00:22:15,600
+jobs that'll be replaced will be
+
+506
+00:22:13,200 --> 00:22:17,600
+replaced by people who are using AI. And
+
+507
+00:22:15,600 --> 00:22:19,039
+you know, this is the moment if you
+
+508
+00:22:17,600 --> 00:22:21,120
+haven't already started as a
+
+509
+00:22:19,039 --> 00:22:23,440
+professional to start to figure out how
+
+510
+00:22:21,120 --> 00:22:25,840
+how you can use it. Now's the time to do
+
+511
+00:22:23,440 --> 00:22:28,159
+that. and which kind of leads very
+
+512
+00:22:25,840 --> 00:22:30,080
+nicely into the work that you've you've
+
+513
+00:22:28,159 --> 00:22:32,960
+been doing that's kind of culminating in
+
+514
+00:22:30,080 --> 00:22:34,559
+this next series that that Athe is is
+
+515
+00:22:32,960 --> 00:22:37,679
+sponsoring and the events that are
+
+516
+00:22:34,559 --> 00:22:39,600
+coming in and you know very very soon.
+
+517
+00:22:37,679 --> 00:22:41,520
+Uh love love to have you talk a little
+
+518
+00:22:39,600 --> 00:22:43,520
+bit about what you guys have planned and
+
+519
+00:22:41,520 --> 00:22:45,840
+what folks can get involved in over the
+
+520
+00:22:43,520 --> 00:22:48,240
+next weeks and months to to really start
+
+521
+00:22:45,840 --> 00:22:50,480
+to you know make some own progress make
+
+522
+00:22:48,240 --> 00:22:53,200
+some of their own progress in uh moving
+
+523
+00:22:50,480 --> 00:22:55,280
+towards being able to meet the demands
+
+524
+00:22:53,200 --> 00:22:57,760
+of what what's going to be required
+
+525
+00:22:55,280 --> 00:22:59,440
+moving forward in in the roles of uh
+
+526
+00:22:57,760 --> 00:23:01,919
+leaders that are involved in healthcare.
+
+527
+00:22:59,440 --> 00:23:04,400
+And we actually started this journey
+
+528
+00:23:01,919 --> 00:23:06,240
+about almost 2 years ago now because
+
+529
+00:23:04,400 --> 00:23:09,120
+with any event you know there there's a
+
+530
+00:23:06,240 --> 00:23:13,120
+good ramp of 6 to9 months at least
+
+531
+00:23:09,120 --> 00:23:15,200
+before you have production. So in 2025
+
+532
+00:23:13,120 --> 00:23:17,440
+we launched the focus on the future
+
+533
+00:23:15,200 --> 00:23:20,880
+series and that's why you see some of my
+
+534
+00:23:17,440 --> 00:23:23,760
+gray hair here. That series, it was
+
+535
+00:23:20,880 --> 00:23:25,120
+phenomenally accepted much broader than
+
+536
+00:23:23,760 --> 00:23:28,880
+what we thought it would be in all
+
+537
+00:23:25,120 --> 00:23:31,520
+honesty because people have a thirst for
+
+538
+00:23:28,880 --> 00:23:33,679
+how do I prepare for my future? If I'm
+
+539
+00:23:31,520 --> 00:23:36,000
+an educator, how do I prepare my
+
+540
+00:23:33,679 --> 00:23:38,240
+students? If I'm a professional, how do
+
+541
+00:23:36,000 --> 00:23:41,280
+I make sure I've got the latest
+
+542
+00:23:38,240 --> 00:23:44,960
+knowledge? So based upon the response in
+
+543
+00:23:41,280 --> 00:23:48,960
+2025, then late last year we started
+
+544
+00:23:44,960 --> 00:23:51,760
+planning the focus on the future 2026.
+
+545
+00:23:48,960 --> 00:23:54,960
+So we're going to start the series on
+
+546
+00:23:51,760 --> 00:23:57,679
+April 15th with digital health. Then
+
+547
+00:23:54,960 --> 00:24:00,799
+we're going to move to AI and healthc
+
+548
+00:23:57,679 --> 00:24:04,159
+care and yours truly Chris is going to
+
+549
+00:24:00,799 --> 00:24:06,640
+be the lead speaker for our April 29th
+
+550
+00:24:04,159 --> 00:24:08,480
+event. Then we're going to move to
+
+551
+00:24:06,640 --> 00:24:11,760
+coding and classification and
+
+552
+00:24:08,480 --> 00:24:15,279
+terminologies on May 13th. And then
+
+553
+00:24:11,760 --> 00:24:19,360
+we're going to close it out on May 27th
+
+554
+00:24:15,279 --> 00:24:21,919
+talking about leadership and workforce
+
+555
+00:24:19,360 --> 00:24:24,400
+development. It's a broad agenda. We're
+
+556
+00:24:21,919 --> 00:24:27,440
+going to cover two hours each. You can
+
+557
+00:24:24,400 --> 00:24:30,159
+attend live or you can listen on demand.
+
+558
+00:24:27,440 --> 00:24:32,799
+So it's really planned for the global
+
+559
+00:24:30,159 --> 00:24:35,279
+audience. And that's why we have to have
+
+560
+00:24:32,799 --> 00:24:38,880
+on demand because 6 a.m. might not work
+
+561
+00:24:35,279 --> 00:24:39,440
+for you in the US or in Australia or
+
+562
+00:24:38,880 --> 00:24:40,000
+whatever.
+
+563
+00:24:39,440 --> 00:24:43,919
+Right?
+
+564
+00:24:40,000 --> 00:24:48,240
+So we'll go from April 15th in digital
+
+565
+00:24:43,919 --> 00:24:51,039
+health and I'm really excited that Dr.
+
+566
+00:24:48,240 --> 00:24:53,120
+Osama El Hassan. And for any of your
+
+567
+00:24:51,039 --> 00:24:57,200
+listeners who have ever heard him talk
+
+568
+00:24:53,120 --> 00:25:01,039
+or read about his achievements, he has
+
+569
+00:24:57,200 --> 00:25:04,480
+moved mountains in the Middle East. You
+
+570
+00:25:01,039 --> 00:25:08,880
+know, one of the co-founders of Zean and
+
+571
+00:25:04,480 --> 00:25:12,000
+his organization in Abu Dhabi as well as
+
+572
+00:25:08,880 --> 00:25:13,520
+the UAE and the whole Middle East doing
+
+573
+00:25:12,000 --> 00:25:17,120
+great things. So, I know he's going to
+
+574
+00:25:13,520 --> 00:25:20,320
+have success stories to share and I'm
+
+575
+00:25:17,120 --> 00:25:21,760
+sure lessons learned and a few nuggets.
+
+576
+00:25:20,320 --> 00:25:24,480
+And then we're going to go to April
+
+577
+00:25:21,760 --> 00:25:26,400
+29th. Good. I I hope you can join us.
+
+578
+00:25:24,480 --> 00:25:28,640
+So, then we're going to go to April 29th
+
+579
+00:25:26,400 --> 00:25:30,960
+where Chris, you're going to lead us off
+
+580
+00:25:28,640 --> 00:25:33,679
+and we're going to talk, I believe,
+
+581
+00:25:30,960 --> 00:25:36,880
+about AI from many different
+
+582
+00:25:33,679 --> 00:25:39,600
+perspectives, governance, privacy,
+
+583
+00:25:36,880 --> 00:25:41,600
+consent, risk mitigation, and are there
+
+584
+00:25:39,600 --> 00:25:43,600
+a few other kernels you want to share?
+
+585
+00:25:41,600 --> 00:25:45,600
+There definitely will be some uh
+
+586
+00:25:43,600 --> 00:25:47,760
+probably more than I even realize now
+
+587
+00:25:45,600 --> 00:25:49,919
+because things are evolving so fast. But
+
+588
+00:25:47,760 --> 00:25:51,600
+you know, I would stay tuned. I'm sure
+
+589
+00:25:49,919 --> 00:25:52,320
+I'll be learning some things at the same
+
+590
+00:25:51,600 --> 00:25:55,200
+time.
+
+591
+00:25:52,320 --> 00:25:57,360
+Yeah, that's probably the truth. So then
+
+592
+00:25:55,200 --> 00:26:00,320
+we're going to move to May 13th, what
+
+593
+00:25:57,360 --> 00:26:02,960
+some people might say is is the bread
+
+594
+00:26:00,320 --> 00:26:05,520
+and butter, so to speak, of the health
+
+595
+00:26:02,960 --> 00:26:07,840
+information management profession. And
+
+596
+00:26:05,520 --> 00:26:09,360
+we're going to talk about coding and
+
+597
+00:26:07,840 --> 00:26:12,559
+classifications
+
+598
+00:26:09,360 --> 00:26:14,559
+and particularly about mapping across
+
+599
+00:26:12,559 --> 00:26:17,360
+systems because there's a lot of work
+
+600
+00:26:14,559 --> 00:26:20,960
+happening there. So we're going to talk
+
+601
+00:26:17,360 --> 00:26:23,440
+about ICD-11. Now probably in your
+
+602
+00:26:20,960 --> 00:26:25,919
+lifetime and mine certainly in mine
+
+603
+00:26:23,440 --> 00:26:28,080
+we're not going to see ICD-11 in the US.
+
+604
+00:26:25,919 --> 00:26:30,559
+We're going to be latent to doctor. We
+
+605
+00:26:28,080 --> 00:26:33,679
+all know that. But we've got to
+
+606
+00:26:30,559 --> 00:26:38,000
+understand what's coming because in the
+
+607
+00:26:33,679 --> 00:26:41,840
+decades ahead when ICD-11 comes, we're
+
+608
+00:26:38,000 --> 00:26:44,080
+going to use ICD-10 and the insights we
+
+609
+00:26:41,840 --> 00:26:47,120
+can gain from that. So we're also going
+
+610
+00:26:44,080 --> 00:26:49,039
+to talk about SnowMed and one of the
+
+611
+00:26:47,120 --> 00:26:50,960
+speakers is going to talk about the
+
+612
+00:26:49,039 --> 00:26:55,440
+mappings that are happening between
+
+613
+00:26:50,960 --> 00:26:57,840
+SnowMed and WH. That's one I'm really
+
+614
+00:26:55,440 --> 00:27:00,400
+interested because I I at this point
+
+615
+00:26:57,840 --> 00:27:01,440
+don't know a whole lot about it. And and
+
+616
+00:27:00,400 --> 00:27:05,200
+then we're going to have a little
+
+617
+00:27:01,440 --> 00:27:10,320
+conversation about other systems like
+
+618
+00:27:05,200 --> 00:27:14,080
+ICF and itchy that come from WH not used
+
+619
+00:27:10,320 --> 00:27:16,240
+much in the US. So the classifications
+
+620
+00:27:14,080 --> 00:27:20,720
+and functionality
+
+621
+00:27:16,240 --> 00:27:22,559
+or the health interventions and itchy
+
+622
+00:27:20,720 --> 00:27:26,159
+has come a long ways in the last few
+
+623
+00:27:22,559 --> 00:27:29,840
+years. So we're to talk about procedures
+
+624
+00:27:26,159 --> 00:27:32,559
+or interventions tied to diagnosis. So
+
+625
+00:27:29,840 --> 00:27:35,039
+May 13th for people who live and breathe
+
+626
+00:27:32,559 --> 00:27:39,120
+coding and classifications.
+
+627
+00:27:35,039 --> 00:27:41,039
+It's a global audience of speakers that
+
+628
+00:27:39,120 --> 00:27:43,360
+I've heard some of them several times
+
+629
+00:27:41,039 --> 00:27:45,440
+and they are just enlightening beyond
+
+630
+00:27:43,360 --> 00:27:48,159
+words in what they share. It's happening
+
+631
+00:27:45,440 --> 00:27:51,279
+out there. So then last but not least,
+
+632
+00:27:48,159 --> 00:27:55,120
+we're going to go to May 27th where Dr.
+
+633
+00:27:51,279 --> 00:27:58,080
+Christy Lamach who has just retired as a
+
+634
+00:27:55,120 --> 00:28:03,120
+professor from the University of Alabama
+
+635
+00:27:58,080 --> 00:28:05,760
+in Birmingham. She's now uh SVP at the
+
+636
+00:28:03,120 --> 00:28:08,640
+Scottsdale Institute and she's going to
+
+637
+00:28:05,760 --> 00:28:10,720
+talk about leadership and workforce
+
+638
+00:28:08,640 --> 00:28:13,760
+development that's needed for the
+
+639
+00:28:10,720 --> 00:28:16,799
+future. So, uh I've heard great things
+
+640
+00:28:13,760 --> 00:28:20,000
+about her. I've not heard her speak, but
+
+641
+00:28:16,799 --> 00:28:22,480
+she comes highly, highly recommended.
+
+642
+00:28:20,000 --> 00:28:25,600
+And we've got a nice list of global
+
+643
+00:28:22,480 --> 00:28:28,399
+speakers that will round out. And then
+
+644
+00:28:25,600 --> 00:28:30,559
+in all of these, I should add, there are
+
+645
+00:28:28,399 --> 00:28:33,919
+panel discussions. And that was the
+
+646
+00:28:30,559 --> 00:28:36,559
+number one thing our attendees told us
+
+647
+00:28:33,919 --> 00:28:40,320
+last year. Please give your panels more
+
+648
+00:28:36,559 --> 00:28:42,159
+time because the discussion amongst the
+
+649
+00:28:40,320 --> 00:28:44,080
+panelists because first they're going to
+
+650
+00:28:42,159 --> 00:28:46,880
+react to what the speakers ahead of them
+
+651
+00:28:44,080 --> 00:28:50,399
+said, but then they're going to discuss
+
+652
+00:28:46,880 --> 00:28:53,760
+perhaps inconsistencies across that
+
+653
+00:28:50,399 --> 00:28:56,559
+differing viewpoints a and arrive at
+
+654
+00:28:53,760 --> 00:28:59,360
+probably some pretty uh common
+
+655
+00:28:56,559 --> 00:29:01,440
+denominators that the audiences really
+
+656
+00:28:59,360 --> 00:29:04,159
+liked. And the best part of it perhaps
+
+657
+00:29:01,440 --> 00:29:05,840
+is the audience gets to ask questions.
+
+658
+00:29:04,159 --> 00:29:09,120
+So, there's going to be a chat feature
+
+659
+00:29:05,840 --> 00:29:12,320
+and a Q&A. So, get ready, Chris, because
+
+660
+00:29:09,120 --> 00:29:15,360
+what's going to come from the Q&A
+
+661
+00:29:12,320 --> 00:29:17,360
+sometimes is a bit surprising. So, it's
+
+662
+00:29:15,360 --> 00:29:19,760
+going to be very interactive if you can
+
+663
+00:29:17,360 --> 00:29:22,480
+listen and participate in the live
+
+664
+00:29:19,760 --> 00:29:24,559
+event. And even if you have to listen to
+
+665
+00:29:22,480 --> 00:29:27,840
+it on demand, you're going to hear what
+
+666
+00:29:24,559 --> 00:29:29,919
+everybody thinks and feels as a part of
+
+667
+00:29:27,840 --> 00:29:32,640
+the panel discussions.
+
+668
+00:29:29,919 --> 00:29:36,559
+This is exciting. that you you talked
+
+669
+00:29:32,640 --> 00:29:38,799
+about the the the focus on career
+
+670
+00:29:36,559 --> 00:29:40,720
+development and and the the directions
+
+671
+00:29:38,799 --> 00:29:42,960
+that people have to go in their career
+
+672
+00:29:40,720 --> 00:29:45,120
+that the equipping that's required here.
+
+673
+00:29:42,960 --> 00:29:47,039
+I'm that I'm I'm super excited to hear
+
+674
+00:29:45,120 --> 00:29:49,120
+about that because no matter what you're
+
+675
+00:29:47,039 --> 00:29:50,799
+doing, if you're working inside of any
+
+676
+00:29:49,120 --> 00:29:53,600
+organization, these are things that
+
+677
+00:29:50,799 --> 00:29:55,440
+people are concerned about. So I these
+
+678
+00:29:53,600 --> 00:29:57,600
+sessions are incredible. I I'm very
+
+679
+00:29:55,440 --> 00:29:59,919
+excited and people
+
+680
+00:29:57,600 --> 00:30:02,799
+if you haven't already made made a
+
+681
+00:29:59,919 --> 00:30:04,720
+decision to to sign on to sign up for
+
+682
+00:30:02,799 --> 00:30:08,000
+these I encourage you go to the website
+
+683
+00:30:04,720 --> 00:30:10,399
+of fema.org definitely sign sign up for
+
+684
+00:30:08,000 --> 00:30:12,159
+these things. Um we're going to put a
+
+685
+00:30:10,399 --> 00:30:14,399
+bunch of information in the show notes
+
+686
+00:30:12,159 --> 00:30:16,159
+for for folks as well. Want to make it
+
+687
+00:30:14,399 --> 00:30:18,080
+really easy for you to find your find
+
+688
+00:30:16,159 --> 00:30:21,520
+your way. U make sure you're telling all
+
+689
+00:30:18,080 --> 00:30:24,159
+your friends and colleagues. Um this is
+
+690
+00:30:21,520 --> 00:30:27,360
+a really important moment in time and a
+
+691
+00:30:24,159 --> 00:30:29,919
+FEMA has done incredible work uh to put
+
+692
+00:30:27,360 --> 00:30:32,080
+this or all these programs together to
+
+693
+00:30:29,919 --> 00:30:34,880
+equip you for what you're about to
+
+694
+00:30:32,080 --> 00:30:37,440
+embark on and we've not seen anything
+
+695
+00:30:34,880 --> 00:30:39,679
+yet. So definitely take advantage of all
+
+696
+00:30:37,440 --> 00:30:42,960
+these opportunities. it it's really this
+
+697
+00:30:39,679 --> 00:30:45,360
+is the time um to absorb everything you
+
+698
+00:30:42,960 --> 00:30:48,880
+possibly can and start leading your
+
+699
+00:30:45,360 --> 00:30:51,039
+organizations with uh great equipping
+
+700
+00:30:48,880 --> 00:30:54,080
+and the the knowledge that you'll need
+
+701
+00:30:51,039 --> 00:30:55,840
+uh to to really guide and lead your your
+
+702
+00:30:54,080 --> 00:30:58,559
+organizations and your efforts in the
+
+703
+00:30:55,840 --> 00:31:00,799
+HIM space uh in the months and years to
+
+704
+00:30:58,559 --> 00:31:03,360
+come. And thanks and and I think I'd
+
+705
+00:31:00,799 --> 00:31:05,440
+close my thoughts with we want to ensure
+
+706
+00:31:03,360 --> 00:31:07,120
+that our members and we're going to have
+
+707
+00:31:05,440 --> 00:31:10,000
+a lot of non-members that are going to
+
+708
+00:31:07,120 --> 00:31:12,080
+come to these events and this series. We
+
+709
+00:31:10,000 --> 00:31:15,200
+want them to have the tools to thrive
+
+710
+00:31:12,080 --> 00:31:17,520
+and that is part of Epheima's mission to
+
+711
+00:31:15,200 --> 00:31:20,080
+ensure we enable our membership to
+
+712
+00:31:17,520 --> 00:31:23,440
+thrive and that includes our national
+
+713
+00:31:20,080 --> 00:31:26,480
+association. So whether it's Aheima, the
+
+714
+00:31:23,440 --> 00:31:27,919
+Chima from Canada, HIMA from Australia,
+
+715
+00:31:26,480 --> 00:31:30,399
+and roughly [clears throat] 20 other
+
+716
+00:31:27,919 --> 00:31:33,840
+nations that are a part of our
+
+717
+00:31:30,399 --> 00:31:35,840
+membership, we want to make sure all of
+
+718
+00:31:33,840 --> 00:31:38,799
+your listeners and all of the
+
+719
+00:31:35,840 --> 00:31:41,600
+professionals around the world have the
+
+720
+00:31:38,799 --> 00:31:43,360
+tools to thrive into the future because
+
+721
+00:31:41,600 --> 00:31:45,440
+it's not just important to their
+
+722
+00:31:43,360 --> 00:31:48,240
+personal careers. It's important to you
+
+723
+00:31:45,440 --> 00:31:50,159
+and I. I firmly believe as healthcare
+
+724
+00:31:48,240 --> 00:31:52,559
+consumers, we're going to do better if
+
+725
+00:31:50,159 --> 00:31:55,600
+we have better data that is better
+
+726
+00:31:52,559 --> 00:31:57,039
+stewarded that we have more trust in
+
+727
+00:31:55,600 --> 00:31:59,360
+because from that we're going to have
+
+728
+00:31:57,039 --> 00:32:02,000
+better health and better health outcomes
+
+729
+00:31:59,360 --> 00:32:03,760
+and that is exactly what we're all
+
+730
+00:32:02,000 --> 00:32:05,440
+motivated by. I believe if you're
+
+731
+00:32:03,760 --> 00:32:09,679
+involved in this space that's what makes
+
+732
+00:32:05,440 --> 00:32:12,080
+you tick. So good on FEMA for really
+
+733
+00:32:09,679 --> 00:32:14,799
+taking taking the the lead in this and
+
+734
+00:32:12,080 --> 00:32:17,360
+know good on you Lorraine and incoming
+
+735
+00:32:14,799 --> 00:32:19,679
+leadership of Lynette. You all are
+
+736
+00:32:17,360 --> 00:32:22,000
+amazing and I I couldn't be more excited
+
+737
+00:32:19,679 --> 00:32:24,960
+to to be able to you know provide a
+
+738
+00:32:22,000 --> 00:32:27,519
+platform to get the word out and I'm
+
+739
+00:32:24,960 --> 00:32:30,000
+blown away and and humbled by the the
+
+740
+00:32:27,519 --> 00:32:32,720
+invitation to be part of the the event
+
+741
+00:32:30,000 --> 00:32:34,960
+in at the end of April. Uh very much
+
+742
+00:32:32,720 --> 00:32:36,799
+looking forward to it. you all doing far
+
+743
+00:32:34,960 --> 00:32:38,240
+more important work than most people
+
+744
+00:32:36,799 --> 00:32:40,799
+realize. Um,
+
+745
+00:32:38,240 --> 00:32:43,120
+but it needs to be it really needs to be
+
+746
+00:32:40,799 --> 00:32:45,919
+elevated and I'm very excited for more
+
+747
+00:32:43,120 --> 00:32:47,760
+people to hear about it and between your
+
+748
+00:32:45,919 --> 00:32:49,840
+network and my network and a few other
+
+749
+00:32:47,760 --> 00:32:52,159
+people's networks, we should be able to
+
+750
+00:32:49,840 --> 00:32:54,000
+get the word out pretty well and improve
+
+751
+00:32:52,159 --> 00:32:56,480
+the the reach of the organization and
+
+752
+00:32:54,000 --> 00:32:58,240
+equip and help more people to to thrive
+
+753
+00:32:56,480 --> 00:33:00,159
+as they're going through this this
+
+754
+00:32:58,240 --> 00:33:00,640
+transformation that we're facing ahead
+
+755
+00:33:00,159 --> 00:33:03,360
+of us.
+
+756
+00:33:00,640 --> 00:33:05,679
+So, thanks. We we appreciate it. So go
+
+757
+00:33:03,360 --> 00:33:09,519
+to ifmaimma.org and you'll on our
+
+758
+00:33:05,679 --> 00:33:11,279
+homepage you can sign up and decide what
+
+759
+00:33:09,519 --> 00:33:14,320
+ticket might work best for you.
+
+760
+00:33:11,279 --> 00:33:16,399
+Fantastic. Lorine is always it's been
+
+761
+00:33:14,320 --> 00:33:18,960
+been a really fun conversation. I always
+
+762
+00:33:16,399 --> 00:33:21,360
+learn things when I talk to you. Uh and
+
+763
+00:33:18,960 --> 00:33:24,000
+I always get more excited because you're
+
+764
+00:33:21,360 --> 00:33:26,640
+so passionate about what you do and
+
+765
+00:33:24,000 --> 00:33:28,480
+you're the right person for for the work
+
+766
+00:33:26,640 --> 00:33:31,760
+that has been done and what you've done
+
+767
+00:33:28,480 --> 00:33:33,840
+has has been extraordinary. Um, so we'll
+
+768
+00:33:31,760 --> 00:33:36,159
+still let a few more people get inspired
+
+769
+00:33:33,840 --> 00:33:38,320
+by you. We'll just spread the good cheer
+
+770
+00:33:36,159 --> 00:33:40,480
+all the way around here. I I just love
+
+771
+00:33:38,320 --> 00:33:42,720
+the the infectious passion that you have
+
+772
+00:33:40,480 --> 00:33:44,799
+and can't thank you enough and it it's
+
+773
+00:33:42,720 --> 00:33:46,240
+it's absolutely an honor. So, thank you
+
+774
+00:33:44,799 --> 00:33:48,640
+so much for joining me on the singer
+
+775
+00:33:46,240 --> 00:33:50,159
+room and can't wait to be working
+
+776
+00:33:48,640 --> 00:33:50,640
+together with you over the next few
+
+777
+00:33:50,159 --> 00:33:54,760
+weeks.
+
+778
+00:33:50,640 --> 00:33:54,760
+Great. See you soon.
+
+779
+00:33:54,799 --> 00:34:01,003
+We actually started this journey about
+
+780
+00:33:57,760 --> 00:34:02,960
+almost two years ago now in 2025 we
+
+781
+00:34:01,003 --> 00:34:06,399
+[music] launched the focus on the future
+
+782
+00:34:02,960 --> 00:34:09,839
+series. It was phenomenally accepted
+
+783
+00:34:06,399 --> 00:34:12,320
+based upon the response in [music] 2025.
+
+784
+00:34:09,839 --> 00:34:15,440
+We started planning the focus on the
+
+785
+00:34:12,320 --> 00:34:18,480
+future 2026. We're going to start the
+
+786
+00:34:15,440 --> 00:34:21,280
+series on April 15th with digital
+
+787
+00:34:18,480 --> 00:34:23,679
+health. Then we're going to move to AI
+
+788
+00:34:21,280 --> 00:34:25,760
+and healthcare and [music] yours truly
+
+789
+00:34:23,679 --> 00:34:29,040
+Chris is going to be the lead speaker
+
+790
+00:34:25,760 --> 00:34:30,720
+for our April 29th event. Then we're
+
+791
+00:34:29,040 --> 00:34:33,520
+going to move to coding and
+
+792
+00:34:30,720 --> 00:34:35,679
+classification and terminologies on May
+
+793
+00:34:33,520 --> 00:34:39,760
+13th. And then we're going to close it
+
+794
+00:34:35,679 --> 00:34:41,919
+out on May 27th talking about leadership
+
+795
+00:34:39,760 --> 00:34:44,639
+and workforce development. You can
+
+796
+00:34:41,919 --> 00:34:47,359
+attend live or you can listen on demand.
+
+797
+00:34:44,639 --> 00:34:49,520
+So it's really planned for the global
+
+798
+00:34:47,359 --> 00:34:52,240
+audience. Go to ifa.org [music] and
+
+799
+00:34:49,520 --> 00:34:55,200
+you'll on our homepage you can sign up
+
+800
+00:34:52,240 --> 00:34:58,079
+and decide what ticket might work best
+
+801
+00:34:55,200 --> 00:34:58,079
+for you.
+

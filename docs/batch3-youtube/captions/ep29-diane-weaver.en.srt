@@ -1,0 +1,5436 @@
+1
+00:00:00,000 --> 00:00:05,359
+And we know that high-performing
+
+2
+00:00:01,920 --> 00:00:08,559
+executives and elite athletes, they all
+
+3
+00:00:05,359 --> 00:00:11,519
+have this one habit in common, which is
+
+4
+00:00:08,559 --> 00:00:14,960
+they set their intention for the day and
+
+5
+00:00:11,519 --> 00:00:17,199
+they don't stop there. They visualize it
+
+6
+00:00:14,960 --> 00:00:17,680
+and they verbalize it. They say it out
+
+7
+00:00:17,199 --> 00:00:19,520
+loud.
+
+8
+00:00:17,680 --> 00:00:22,080
+The staggering stat that sticks with me
+
+9
+00:00:19,520 --> 00:00:24,240
+is that less than 25% of people in the
+
+10
+00:00:22,080 --> 00:00:26,640
+workforce say that they trust their CEO.
+
+11
+00:00:24,240 --> 00:00:28,560
+The current opportunities right now in
+
+12
+00:00:26,640 --> 00:00:30,160
+AI are just massive.
+
+13
+00:00:28,560 --> 00:00:32,640
+Hello everyone. Welcome back to the
+
+14
+00:00:30,160 --> 00:00:34,559
+signal room. Today I get to talk to
+
+15
+00:00:32,640 --> 00:00:36,960
+somebody I'm genuinely excited about
+
+16
+00:00:34,559 --> 00:00:38,800
+sharing with you. Diane Weaver is one of
+
+17
+00:00:36,960 --> 00:00:41,600
+those rare people who can see the whole
+
+18
+00:00:38,800 --> 00:00:44,079
+system and still say stay laser focused
+
+19
+00:00:41,600 --> 00:00:46,399
+on the humans inside it. She grew up in
+
+20
+00:00:44,079 --> 00:00:47,680
+a long line of entrepreneurs which I
+
+21
+00:00:46,399 --> 00:00:50,559
+think you'll hear in the way that she
+
+22
+00:00:47,680 --> 00:00:52,719
+talks about building things. She spent
+
+23
+00:00:50,559 --> 00:00:55,039
+time in big edtech at places like
+
+24
+00:00:52,719 --> 00:00:56,800
+Pearson and Waterford. She co-founded
+
+25
+00:00:55,039 --> 00:00:58,239
+Corset tune to help make the hidden
+
+26
+00:00:56,800 --> 00:01:00,800
+structure of learning and outcomes
+
+27
+00:00:58,239 --> 00:01:03,520
+visible. And now she's a co-founder of
+
+28
+00:01:00,800 --> 00:01:06,000
+Varians, an AI company focused on what
+
+29
+00:01:03,520 --> 00:01:07,840
+it actually means to flourish at work.
+
+30
+00:01:06,000 --> 00:01:10,640
+The through that I see in her work is
+
+31
+00:01:07,840 --> 00:01:12,720
+this. Meet people where they are and
+
+32
+00:01:10,640 --> 00:01:14,960
+help them get where they want to be.
+
+33
+00:01:12,720 --> 00:01:17,439
+Whether that's faculty and students,
+
+34
+00:01:14,960 --> 00:01:19,040
+teams inside organizations, or leaders
+
+35
+00:01:17,439 --> 00:01:21,600
+trying to do the right thing by their
+
+36
+00:01:19,040 --> 00:01:24,479
+people. Diane keeps coming back to that
+
+37
+00:01:21,600 --> 00:01:26,640
+center. Diane, I am really glad you're
+
+38
+00:01:24,479 --> 00:01:29,520
+here and thank you so much for agreeing
+
+39
+00:01:26,640 --> 00:01:31,600
+to join me here on the signal room.
+
+40
+00:01:29,520 --> 00:01:34,560
+Thank you so much for having me, Chris.
+
+41
+00:01:31,600 --> 00:01:38,159
+It really is such a genuine pleasure and
+
+42
+00:01:34,560 --> 00:01:41,280
+highlight of my week to be here.
+
+43
+00:01:38,159 --> 00:01:42,640
+Wow. I I couldn't I couldn't wait. We we
+
+44
+00:01:41,280 --> 00:01:44,640
+had such a wonderful conversation
+
+45
+00:01:42,640 --> 00:01:47,360
+recently. Like we we we have to do this
+
+46
+00:01:44,640 --> 00:01:49,600
+and let some other people in on all the
+
+47
+00:01:47,360 --> 00:01:51,200
+great stuff that you're doing. So, I
+
+48
+00:01:49,600 --> 00:01:54,079
+want to kind of get right into some of
+
+49
+00:01:51,200 --> 00:01:55,759
+the some of the things that I'm sure our
+
+50
+00:01:54,079 --> 00:01:58,000
+listeners are going to want to know. As
+
+51
+00:01:55,759 --> 00:02:01,600
+a fifth generation entrepreneur and a
+
+52
+00:01:58,000 --> 00:02:04,159
+systems thinker, I mean, maybe talk a
+
+53
+00:02:01,600 --> 00:02:05,680
+little bit about the progression. I
+
+54
+00:02:04,159 --> 00:02:07,840
+mean, you've done some really
+
+55
+00:02:05,680 --> 00:02:10,080
+interesting things, but maybe talk about
+
+56
+00:02:07,840 --> 00:02:12,080
+where you started and and how you ended
+
+57
+00:02:10,080 --> 00:02:13,920
+up where you are now. And first, I'd
+
+58
+00:02:12,080 --> 00:02:15,760
+love to hear a lot more about your work
+
+59
+00:02:13,920 --> 00:02:18,640
+as well, but I kind of want to hear your
+
+60
+00:02:15,760 --> 00:02:21,280
+personal story if I can. Oh, absolutely.
+
+61
+00:02:18,640 --> 00:02:23,520
+It's my pleasure to share it. So, if I
+
+62
+00:02:21,280 --> 00:02:26,640
+start at the very beginning, right? You
+
+63
+00:02:23,520 --> 00:02:28,319
+know, typically when you grow up and
+
+64
+00:02:26,640 --> 00:02:30,560
+you're a dreamer and a builder and a
+
+65
+00:02:28,319 --> 00:02:33,040
+creator, you often have this like moment
+
+66
+00:02:30,560 --> 00:02:36,560
+of inspiration. For me, it happened
+
+67
+00:02:33,040 --> 00:02:39,280
+pretty young. My grandfather was a
+
+68
+00:02:36,560 --> 00:02:41,920
+television pioneer, a radio pioneer, and
+
+69
+00:02:39,280 --> 00:02:43,840
+a television pioneer, Pat Weaver. He did
+
+70
+00:02:41,920 --> 00:02:46,959
+things like create the Today Show and
+
+71
+00:02:43,840 --> 00:02:48,959
+the Tonight Show and what we and my
+
+72
+00:02:46,959 --> 00:02:51,280
+favorite thing that he created was the
+
+73
+00:02:48,959 --> 00:02:56,319
+30 secondond commercial. And he would
+
+74
+00:02:51,280 --> 00:03:00,879
+often talk about how every new piece of
+
+75
+00:02:56,319 --> 00:03:04,480
+technology has two purposes. to help
+
+76
+00:03:00,879 --> 00:03:07,440
+with communications of great ideas and
+
+77
+00:03:04,480 --> 00:03:09,760
+to help educate and disseminate those
+
+78
+00:03:07,440 --> 00:03:11,920
+ideas as much as possible to kind of
+
+79
+00:03:09,760 --> 00:03:15,120
+democratize that that information
+
+80
+00:03:11,920 --> 00:03:17,599
+insight to benefit humanity.
+
+81
+00:03:15,120 --> 00:03:19,519
+And so he always talked about, you know,
+
+82
+00:03:17,599 --> 00:03:23,519
+leaving the world better than how you
+
+83
+00:03:19,519 --> 00:03:26,800
+found it. And he al also always talked
+
+84
+00:03:23,519 --> 00:03:30,799
+about um how he wished he had one more
+
+85
+00:03:26,800 --> 00:03:32,720
+life to just see where it all goes.
+
+86
+00:03:30,799 --> 00:03:35,840
+where will we end up with all of this
+
+87
+00:03:32,720 --> 00:03:38,000
+tech that's you know emerging constantly
+
+88
+00:03:35,840 --> 00:03:41,519
+in in these waves right
+
+89
+00:03:38,000 --> 00:03:43,840
+so I start there because he was a huge
+
+90
+00:03:41,519 --> 00:03:48,000
+inspiration for me right
+
+91
+00:03:43,840 --> 00:03:51,280
+and also my parents had the they created
+
+92
+00:03:48,000 --> 00:03:53,840
+this very unique uh upbringing for me
+
+93
+00:03:51,280 --> 00:03:56,239
+and my siblings my parents were like the
+
+94
+00:03:53,840 --> 00:03:59,040
+quintessential country mouse and city
+
+95
+00:03:56,239 --> 00:04:00,560
+mouse so my dad came from this
+
+96
+00:03:59,040 --> 00:04:04,400
+background
+
+97
+00:04:00,560 --> 00:04:08,080
+And my mom was a farmer's daughter. And
+
+98
+00:04:04,400 --> 00:04:10,400
+so I spent my summers growing up working
+
+99
+00:04:08,080 --> 00:04:14,560
+on the family farm and getting chased by
+
+100
+00:04:10,400 --> 00:04:15,680
+the paparazzi. And I got to see
+
+101
+00:04:14,560 --> 00:04:16,479
+Yeah.
+
+102
+00:04:15,680 --> 00:04:19,040
+Great combination.
+
+103
+00:04:16,479 --> 00:04:21,600
+It was
+
+104
+00:04:19,040 --> 00:04:25,600
+it was a very interesting childhood and
+
+105
+00:04:21,600 --> 00:04:27,360
+I got to see the best of both worlds,
+
+106
+00:04:25,600 --> 00:04:30,800
+right? And
+
+107
+00:04:27,360 --> 00:04:33,360
+part of that deep desire to meet people
+
+108
+00:04:30,800 --> 00:04:36,720
+where they are is is it started with
+
+109
+00:04:33,360 --> 00:04:39,759
+that very early understanding of
+
+110
+00:04:36,720 --> 00:04:43,600
+multiple ways of life and multiple ways
+
+111
+00:04:39,759 --> 00:04:47,919
+of of having a good life regardless of
+
+112
+00:04:43,600 --> 00:04:50,479
+your material means and uh and and the
+
+113
+00:04:47,919 --> 00:04:54,000
+opportunities and um and privileges that
+
+114
+00:04:50,479 --> 00:04:57,840
+you have of creating for yourself a good
+
+115
+00:04:54,000 --> 00:05:01,280
+life. Everyone is entitled to that. And
+
+116
+00:04:57,840 --> 00:05:05,520
+so often we get stuck and you know
+
+117
+00:05:01,280 --> 00:05:07,440
+challenges hit and every human being I I
+
+118
+00:05:05,520 --> 00:05:09,840
+really believe that every human being
+
+119
+00:05:07,440 --> 00:05:13,120
+you know experiences the full spectrum
+
+120
+00:05:09,840 --> 00:05:17,120
+of of you know emotions and experiences
+
+121
+00:05:13,120 --> 00:05:20,479
+available to to us as humans which is a
+
+122
+00:05:17,120 --> 00:05:23,600
+really special thing. So, I like to keep
+
+123
+00:05:20,479 --> 00:05:28,160
+it human and keep humans at the center.
+
+124
+00:05:23,600 --> 00:05:29,840
+And I like to pursue big ideas that help
+
+125
+00:05:28,160 --> 00:05:34,000
+people
+
+126
+00:05:29,840 --> 00:05:37,759
+really cultivate a feeling of agency in
+
+127
+00:05:34,000 --> 00:05:41,120
+their lives and cultivate a growth
+
+128
+00:05:37,759 --> 00:05:44,000
+mindset and to really help you know
+
+129
+00:05:41,120 --> 00:05:46,639
+foster more of an entrepreneurial spirit
+
+130
+00:05:44,000 --> 00:05:49,280
+within everyone which is probably my
+
+131
+00:05:46,639 --> 00:05:53,199
+western upbringing and you know all of
+
+132
+00:05:49,280 --> 00:05:54,720
+that too. So early on,
+
+133
+00:05:53,199 --> 00:05:56,800
+oh, I'll just
+
+134
+00:05:54,720 --> 00:05:59,520
+I don't mean to like go on and on here,
+
+135
+00:05:56,800 --> 00:06:01,360
+but
+
+136
+00:05:59,520 --> 00:06:03,919
+I mean, we had some similarities, you
+
+137
+00:06:01,360 --> 00:06:05,360
+know, working on the the family farm and
+
+138
+00:06:03,919 --> 00:06:08,479
+the paparazzi. Well, maybe not the
+
+139
+00:06:05,360 --> 00:06:10,960
+paparazzi thing, but I did happen to do
+
+140
+00:06:08,479 --> 00:06:12,800
+some work on a farm growing up, so I can
+
+141
+00:06:10,960 --> 00:06:14,960
+appreciate, you know, what what that how
+
+142
+00:06:12,800 --> 00:06:16,960
+that impacts you. you know, the the
+
+143
+00:06:14,960 --> 00:06:19,120
+motivation, the drive that you have
+
+144
+00:06:16,960 --> 00:06:21,039
+comes from learning how to how to work
+
+145
+00:06:19,120 --> 00:06:23,440
+at a, you know, at a young age. And it's
+
+146
+00:06:21,039 --> 00:06:25,840
+I I just love hearing that your your
+
+147
+00:06:23,440 --> 00:06:28,720
+inspiration really came, you know, from
+
+148
+00:06:25,840 --> 00:06:31,039
+your own family. I think that's amazing.
+
+149
+00:06:28,720 --> 00:06:33,520
+I think we have some similarities in in
+
+150
+00:06:31,039 --> 00:06:36,560
+that aspect that led us to do what we're
+
+151
+00:06:33,520 --> 00:06:37,680
+doing. Uh but but yeah, please I I
+
+152
+00:06:36,560 --> 00:06:40,080
+definitely want to hear some more
+
+153
+00:06:37,680 --> 00:06:41,600
+because you started to talk to to me
+
+154
+00:06:40,080 --> 00:06:43,360
+yesterday about a couple things that
+
+155
+00:06:41,600 --> 00:06:45,120
+were, you know, really exciting to me
+
+156
+00:06:43,360 --> 00:06:48,240
+because the conversations that are being
+
+157
+00:06:45,120 --> 00:06:51,840
+had generally right now when it comes to
+
+158
+00:06:48,240 --> 00:06:54,560
+AI, they're a lot more focused on the
+
+159
+00:06:51,840 --> 00:06:57,199
+tech and do you trust it? Is there
+
+160
+00:06:54,560 --> 00:06:59,280
+hallucinations? But that's not where
+
+161
+00:06:57,199 --> 00:07:00,880
+you're hanging hanging out. You're
+
+162
+00:06:59,280 --> 00:07:04,160
+you've got some very specific things
+
+163
+00:07:00,880 --> 00:07:05,759
+that you're you know criteria basically
+
+164
+00:07:04,160 --> 00:07:07,440
+that determines where you're going to
+
+165
+00:07:05,759 --> 00:07:10,800
+spend your time and your energy.
+
+166
+00:07:07,440 --> 00:07:13,280
+No, absolutely. And you're right. I mean
+
+167
+00:07:10,800 --> 00:07:17,199
+the current opportunities right now in
+
+168
+00:07:13,280 --> 00:07:20,560
+AI are just they're massive. It's we're
+
+169
+00:07:17,199 --> 00:07:23,039
+we're transforming so many of our
+
+170
+00:07:20,560 --> 00:07:25,360
+systems, you know, just globally uh
+
+171
+00:07:23,039 --> 00:07:28,880
+around this as we bring AI, you know,
+
+172
+00:07:25,360 --> 00:07:31,199
+closer in. So there's personal human
+
+173
+00:07:28,880 --> 00:07:34,000
+transformation that's happening and then
+
+174
+00:07:31,199 --> 00:07:36,639
+transformation within groups of humans
+
+175
+00:07:34,000 --> 00:07:40,240
+whether it's you know teams at work or
+
+176
+00:07:36,639 --> 00:07:43,120
+organizations you know or nonprofits etc
+
+177
+00:07:40,240 --> 00:07:45,199
+cities and communities coming together
+
+178
+00:07:43,120 --> 00:07:48,000
+and really figuring this out and then
+
+179
+00:07:45,199 --> 00:07:50,560
+whole you know global corporations and
+
+180
+00:07:48,000 --> 00:07:53,199
+things like that. So it's it is like a
+
+181
+00:07:50,560 --> 00:07:55,199
+mountain. You you do have to figure out
+
+182
+00:07:53,199 --> 00:07:56,639
+like where and how am I going to focus
+
+183
+00:07:55,199 --> 00:08:00,800
+my time because there's no way I'm going
+
+184
+00:07:56,639 --> 00:08:02,639
+to do all of it, right? So truly, you
+
+185
+00:08:00,800 --> 00:08:05,759
+know, I think that one of the most
+
+186
+00:08:02,639 --> 00:08:10,560
+important pieces here as we're building
+
+187
+00:08:05,759 --> 00:08:13,919
+AI is building trust. And I'm not
+
+188
+00:08:10,560 --> 00:08:16,960
+talking about trust between people and
+
+189
+00:08:13,919 --> 00:08:19,759
+technology. I'm I'm talking about trust
+
+190
+00:08:16,960 --> 00:08:24,879
+between people between people within the
+
+191
+00:08:19,759 --> 00:08:28,800
+system. And so truly um as we think
+
+192
+00:08:24,879 --> 00:08:32,159
+about like what does it mean to evolve
+
+193
+00:08:28,800 --> 00:08:35,039
+right now with AI? What do what does AI
+
+194
+00:08:32,159 --> 00:08:38,080
+enabled human uh roles and
+
+195
+00:08:35,039 --> 00:08:40,719
+responsibilities look like? And I I
+
+196
+00:08:38,080 --> 00:08:42,479
+often think about um because of my
+
+197
+00:08:40,719 --> 00:08:44,560
+edtech background, I think about the
+
+198
+00:08:42,479 --> 00:08:47,839
+skills and the durable skills that we
+
+199
+00:08:44,560 --> 00:08:50,959
+need, but also this idea that every
+
+200
+00:08:47,839 --> 00:08:55,200
+person needs to shift from being a
+
+201
+00:08:50,959 --> 00:08:59,360
+technology user to a technology steward
+
+202
+00:08:55,200 --> 00:09:01,920
+and that really keeps humans at the helm
+
+203
+00:08:59,360 --> 00:09:03,440
+of of what we're doing here.
+
+204
+00:09:01,920 --> 00:09:05,760
+Can you dig in on that a little bit? I
+
+205
+00:09:03,440 --> 00:09:09,600
+mean the the I think it's an important
+
+206
+00:09:05,760 --> 00:09:12,399
+distinction because everyone is being uh
+
+207
+00:09:09,600 --> 00:09:14,399
+pulled along or pushed along one way one
+
+208
+00:09:12,399 --> 00:09:17,120
+way or the other to adopt this
+
+209
+00:09:14,399 --> 00:09:18,640
+technology and there's a really
+
+210
+00:09:17,120 --> 00:09:20,560
+significant difference between
+
+211
+00:09:18,640 --> 00:09:23,680
+understanding what you're using it for
+
+212
+00:09:20,560 --> 00:09:25,680
+what it's what's possible and also
+
+213
+00:09:23,680 --> 00:09:28,560
+having an understanding what your role
+
+214
+00:09:25,680 --> 00:09:31,760
+is and how it's used. There absolutely
+
+215
+00:09:28,560 --> 00:09:35,279
+is and I think this is just it's an
+
+216
+00:09:31,760 --> 00:09:38,240
+unprecedented ask that we are you know
+
+217
+00:09:35,279 --> 00:09:41,920
+requiring of of everyone right now. If
+
+218
+00:09:38,240 --> 00:09:45,760
+you think of like the evolution of the
+
+219
+00:09:41,920 --> 00:09:48,800
+workplace and and our education leading
+
+220
+00:09:45,760 --> 00:09:51,600
+up to how we function in the workplace,
+
+221
+00:09:48,800 --> 00:09:53,519
+it has very much followed you know
+
+222
+00:09:51,600 --> 00:09:56,720
+industrialization's
+
+223
+00:09:53,519 --> 00:09:59,279
+uh methodologies. A lot of our workflows
+
+224
+00:09:56,720 --> 00:10:02,399
+and sequences, now I'm talking about the
+
+225
+00:09:59,279 --> 00:10:05,920
+systems here, are really they really
+
+226
+00:10:02,399 --> 00:10:10,720
+kind of echo the old conveyor belts of
+
+227
+00:10:05,920 --> 00:10:13,839
+the factory. And so you like in our
+
+228
+00:10:10,720 --> 00:10:17,440
+current system, you have interests, you
+
+229
+00:10:13,839 --> 00:10:20,000
+start to pursue them in formal schooling
+
+230
+00:10:17,440 --> 00:10:21,839
+and you kind of get on this track and if
+
+231
+00:10:20,000 --> 00:10:25,279
+you get this degree, then you're going
+
+232
+00:10:21,839 --> 00:10:27,920
+to get the credential that puts you in
+
+233
+00:10:25,279 --> 00:10:31,279
+this place in that factory conveyor belt
+
+234
+00:10:27,920 --> 00:10:33,760
+line, right? and you you see the job
+
+235
+00:10:31,279 --> 00:10:36,000
+description and you and you evaluate
+
+236
+00:10:33,760 --> 00:10:40,399
+whether there you meet enough of that
+
+237
+00:10:36,000 --> 00:10:43,920
+criteria to apply and you are onboarded
+
+238
+00:10:40,399 --> 00:10:46,000
+and handed your you know your tasks and
+
+239
+00:10:43,920 --> 00:10:49,440
+your job descriptions and then you
+
+240
+00:10:46,000 --> 00:10:52,560
+execute right this is very typical of
+
+241
+00:10:49,440 --> 00:10:55,279
+the kind of North American h like
+
+242
+00:10:52,560 --> 00:10:57,600
+working experience and it's archaic it's
+
+243
+00:10:55,279 --> 00:10:59,920
+old and it doesn't work for a lot of
+
+244
+00:10:57,600 --> 00:11:06,079
+people actually is broken in many many
+
+245
+00:10:59,920 --> 00:11:10,079
+ways. And so in this shift, you know, as
+
+246
+00:11:06,079 --> 00:11:12,320
+uh as companies are implementing AI, it
+
+247
+00:11:10,079 --> 00:11:14,160
+typically starts in the leadership level
+
+248
+00:11:12,320 --> 00:11:16,640
+and then it and then it kind of like
+
+249
+00:11:14,160 --> 00:11:19,760
+comes down the line, right?
+
+250
+00:11:16,640 --> 00:11:22,880
+But there's a huge disconnect between
+
+251
+00:11:19,760 --> 00:11:26,720
+leadership and the the frontline
+
+252
+00:11:22,880 --> 00:11:30,399
+experience and my day-to-day and what
+
+253
+00:11:26,720 --> 00:11:32,640
+actually matters uh to to accomplish the
+
+254
+00:11:30,399 --> 00:11:34,880
+things that I need to accomplish. So if
+
+255
+00:11:32,640 --> 00:11:38,560
+people are already maxed out um trying
+
+256
+00:11:34,880 --> 00:11:40,720
+to get their productivity KPIs uh in
+
+257
+00:11:38,560 --> 00:11:44,640
+their in their roles like they've kind
+
+258
+00:11:40,720 --> 00:11:48,000
+of uh increased significantly and on top
+
+259
+00:11:44,640 --> 00:11:51,800
+of it now you have to reimagine your
+
+260
+00:11:48,000 --> 00:11:51,800
+role with AI,
+
+261
+00:11:52,079 --> 00:11:55,440
+right? Yeah. I mean it's it's a whole
+
+262
+00:11:53,920 --> 00:11:57,760
+different thing. I remember like back in
+
+263
+00:11:55,440 --> 00:12:00,399
+the 90s when the we were all like we
+
+264
+00:11:57,760 --> 00:12:01,920
+knew that the internet was was cool. We
+
+265
+00:12:00,399 --> 00:12:04,160
+were doing some interesting things with
+
+266
+00:12:01,920 --> 00:12:07,680
+it but we had no idea that it was going
+
+267
+00:12:04,160 --> 00:12:09,600
+to be so much a part of the core
+
+268
+00:12:07,680 --> 00:12:13,040
+activities that we do every day.
+
+269
+00:12:09,600 --> 00:12:15,600
+Yeah. Just it's it is such a part of
+
+270
+00:12:13,040 --> 00:12:19,440
+it's it's in the fabric of everything,
+
+271
+00:12:15,600 --> 00:12:22,880
+right? And this is this is how AI AI is
+
+272
+00:12:19,440 --> 00:12:26,800
+and will be even even more so. It's
+
+273
+00:12:22,880 --> 00:12:30,240
+really being identified or called out as
+
+274
+00:12:26,800 --> 00:12:32,880
+um almost an energy source like
+
+275
+00:12:30,240 --> 00:12:35,040
+electricity. Yeah.
+
+276
+00:12:32,880 --> 00:12:37,200
+I'd love to get you to to kind of dig in
+
+277
+00:12:35,040 --> 00:12:39,200
+on this because you mentioned this the
+
+278
+00:12:37,200 --> 00:12:40,959
+trust piece of it. They think it's
+
+279
+00:12:39,200 --> 00:12:44,240
+really important and obviously it's a
+
+280
+00:12:40,959 --> 00:12:48,240
+big reason that you know you burials now
+
+281
+00:12:44,240 --> 00:12:50,160
+is a a a real uh it's a system and a
+
+282
+00:12:48,240 --> 00:12:51,360
+platform that you you're already moving
+
+283
+00:12:50,160 --> 00:12:53,279
+with and having some some great
+
+284
+00:12:51,360 --> 00:12:54,639
+successes and I think it's it's an
+
+285
+00:12:53,279 --> 00:12:57,519
+important thing to understand because
+
+286
+00:12:54,639 --> 00:13:00,639
+when you're talking about uh executives
+
+287
+00:12:57,519 --> 00:13:03,040
+and the the different levels of of team
+
+288
+00:13:00,639 --> 00:13:05,279
+members that they have that trust is a
+
+289
+00:13:03,040 --> 00:13:08,480
+big issue. I know we talked about this a
+
+290
+00:13:05,279 --> 00:13:10,480
+little bit recently, but the erosion of
+
+291
+00:13:08,480 --> 00:13:14,000
+trust in human relationships is a really
+
+292
+00:13:10,480 --> 00:13:15,519
+significant thing. U for anyone that's
+
+293
+00:13:14,000 --> 00:13:17,600
+been listening to the podcast, you've
+
+294
+00:13:15,519 --> 00:13:20,720
+probably heard a couple of different uh
+
+295
+00:13:17,600 --> 00:13:23,040
+discussions around this. Dr. Larry [ __ ]
+
+296
+00:13:20,720 --> 00:13:25,519
+uh had did some fantastic research that
+
+297
+00:13:23,040 --> 00:13:28,240
+he shared and the the staggering stat
+
+298
+00:13:25,519 --> 00:13:30,480
+that sticks with me is that less than
+
+299
+00:13:28,240 --> 00:13:34,240
+25% of people in the workforce say that
+
+300
+00:13:30,480 --> 00:13:37,440
+they trust their CEO. Uh so what do you
+
+301
+00:13:34,240 --> 00:13:40,079
+do? Uh if you're in a situation like
+
+302
+00:13:37,440 --> 00:13:42,959
+this, you're running a company, who do
+
+303
+00:13:40,079 --> 00:13:44,399
+you talk to? How do you figure out
+
+304
+00:13:42,959 --> 00:13:46,720
+where there's where there's errors you
+
+305
+00:13:44,399 --> 00:13:49,440
+can reinforce and how do you fix it?
+
+306
+00:13:46,720 --> 00:13:51,920
+What's involved in all of that? Uh but I
+
+307
+00:13:49,440 --> 00:13:54,320
+mean if you dig in on that because I
+
+308
+00:13:51,920 --> 00:13:55,760
+think that's how you ended up uh forming
+
+309
+00:13:54,320 --> 00:13:58,480
+this company and all the vision that
+
+310
+00:13:55,760 --> 00:14:00,800
+you've got start you kind of came from
+
+311
+00:13:58,480 --> 00:14:02,720
+these relationships to being you know
+
+312
+00:14:00,800 --> 00:14:04,320
+over time kind of degraded. I think we
+
+313
+00:14:02,720 --> 00:14:05,600
+probably lost a lot of skill sets along
+
+314
+00:14:04,320 --> 00:14:06,880
+the way that we need to figure out what
+
+315
+00:14:05,600 --> 00:14:09,279
+to do about.
+
+316
+00:14:06,880 --> 00:14:11,199
+Yeah, I I think you're right. I mean
+
+317
+00:14:09,279 --> 00:14:13,440
+this is a whole we're we're dancing
+
+318
+00:14:11,199 --> 00:14:15,600
+around kind of a whole ball of yarn
+
+319
+00:14:13,440 --> 00:14:18,320
+here. So let's start pulling on the
+
+320
+00:14:15,600 --> 00:14:21,040
+threads. So
+
+321
+00:14:18,320 --> 00:14:24,720
+trust trust between the humans really
+
+322
+00:14:21,040 --> 00:14:28,320
+truly is the issue here. And when we're
+
+323
+00:14:24,720 --> 00:14:30,560
+talking about the system that has
+
+324
+00:14:28,320 --> 00:14:34,000
+evolved over time that is like the
+
+325
+00:14:30,560 --> 00:14:36,320
+workplace system or the systems that the
+
+326
+00:14:34,000 --> 00:14:39,120
+industry kind of the workplace sits
+
+327
+00:14:36,320 --> 00:14:41,040
+within the systems of the industry or
+
+328
+00:14:39,120 --> 00:14:43,600
+within the regulations you know and
+
+329
+00:14:41,040 --> 00:14:46,240
+standards and accreditations of that
+
+330
+00:14:43,600 --> 00:14:48,240
+industry. And this has, you know, just
+
+331
+00:14:46,240 --> 00:14:50,000
+it's evolved over time to the point
+
+332
+00:14:48,240 --> 00:14:53,600
+where
+
+333
+00:14:50,000 --> 00:14:58,639
+oftent times leadership will say things
+
+334
+00:14:53,600 --> 00:15:02,160
+that they can't do, if that makes sense.
+
+335
+00:14:58,639 --> 00:15:04,880
+And if we boil down the concept of human
+
+336
+00:15:02,160 --> 00:15:07,279
+trust and how do we build and establish
+
+337
+00:15:04,880 --> 00:15:10,480
+trust with, you know, a relationship of
+
+338
+00:15:07,279 --> 00:15:12,800
+trust with humans, it it really comes
+
+339
+00:15:10,480 --> 00:15:16,399
+down to doing the things that we say
+
+340
+00:15:12,800 --> 00:15:20,639
+we're going to do. It is that simple. If
+
+341
+00:15:16,399 --> 00:15:24,320
+we have a track record of doing that,
+
+342
+00:15:20,639 --> 00:15:27,519
+then there is more trust because I hear
+
+343
+00:15:24,320 --> 00:15:29,440
+what this person is saying and I trust
+
+344
+00:15:27,519 --> 00:15:32,160
+that they're going to do it because I
+
+345
+00:15:29,440 --> 00:15:34,560
+have all of this evidence that they've
+
+346
+00:15:32,160 --> 00:15:36,720
+done that in the past. So, it gets
+
+347
+00:15:34,560 --> 00:15:39,600
+really hard because in some of these
+
+348
+00:15:36,720 --> 00:15:41,760
+leadership positions, you you enter the
+
+349
+00:15:39,600 --> 00:15:44,800
+position and once you're inside of it,
+
+350
+00:15:41,760 --> 00:15:47,440
+you really see how your options are
+
+351
+00:15:44,800 --> 00:15:52,160
+locked down. And then it becomes very
+
+352
+00:15:47,440 --> 00:15:55,600
+hard to communicate anything new or or
+
+353
+00:15:52,160 --> 00:15:58,320
+or different. And it's it becomes hard
+
+354
+00:15:55,600 --> 00:16:02,320
+to even talk about the changes that need
+
+355
+00:15:58,320 --> 00:16:05,199
+to happen because those changes there's
+
+356
+00:16:02,320 --> 00:16:09,440
+not a track record of making changes
+
+357
+00:16:05,199 --> 00:16:11,360
+like this in the past. And so there's a
+
+358
+00:16:09,440 --> 00:16:14,720
+lot of uncertainty,
+
+359
+00:16:11,360 --> 00:16:16,800
+a lot of unknowns, not only for folks
+
+360
+00:16:14,720 --> 00:16:20,959
+across the organization but also for the
+
+361
+00:16:16,800 --> 00:16:23,440
+leadership team too. Um yeah, so we so
+
+362
+00:16:20,959 --> 00:16:27,920
+we did we built we built Baryons to
+
+363
+00:16:23,440 --> 00:16:30,639
+really help address this issue uh not
+
+364
+00:16:27,920 --> 00:16:32,320
+not just for one group within the
+
+365
+00:16:30,639 --> 00:16:35,279
+organization. If you think about
+
+366
+00:16:32,320 --> 00:16:38,639
+historically executive coaching has been
+
+367
+00:16:35,279 --> 00:16:41,839
+uh limited to just the seauite or just
+
+368
+00:16:38,639 --> 00:16:45,440
+the CEO and it's extremely expensive but
+
+369
+00:16:41,839 --> 00:16:47,680
+the return on it is like is like a 7x
+
+370
+00:16:45,440 --> 00:16:51,440
+return for every dollar on executive
+
+371
+00:16:47,680 --> 00:16:54,399
+coaching. we know it works. And so what
+
+372
+00:16:51,440 --> 00:16:57,920
+we've done with the Berian's experience
+
+373
+00:16:54,399 --> 00:17:01,360
+is there's there's four different really
+
+374
+00:16:57,920 --> 00:17:02,959
+powerful uh concepts that you encounter
+
+375
+00:17:01,360 --> 00:17:05,839
+in your Berian's experience. And
+
+376
+00:17:02,959 --> 00:17:08,480
+executive coaching is just one of them.
+
+377
+00:17:05,839 --> 00:17:10,079
+And the reason why we did that is and
+
+378
+00:17:08,480 --> 00:17:12,880
+why we started there is because we
+
+379
+00:17:10,079 --> 00:17:15,760
+wanted to democratize this incredibly
+
+380
+00:17:12,880 --> 00:17:18,160
+valuable resource for everyone across
+
+381
+00:17:15,760 --> 00:17:20,640
+the organization. But because we're
+
+382
+00:17:18,160 --> 00:17:23,679
+human first and we're building human
+
+383
+00:17:20,640 --> 00:17:26,000
+first AI, you know, we still recommend
+
+384
+00:17:23,679 --> 00:17:28,960
+that you that you have your human
+
+385
+00:17:26,000 --> 00:17:31,600
+executive coaches and that your Baryons
+
+386
+00:17:28,960 --> 00:17:34,400
+is that daily touch point between the
+
+387
+00:17:31,600 --> 00:17:36,960
+human touch points and that you have
+
+388
+00:17:34,400 --> 00:17:39,840
+mentorship between the humans across
+
+389
+00:17:36,960 --> 00:17:41,840
+your organization. A mentorship program
+
+390
+00:17:39,840 --> 00:17:44,080
+even within the organization can be
+
+391
+00:17:41,840 --> 00:17:47,840
+extremely powerful. And it's interesting
+
+392
+00:17:44,080 --> 00:17:49,760
+because the everything kind of pivoted
+
+393
+00:17:47,840 --> 00:17:53,039
+really really harsh when the when the
+
+394
+00:17:49,760 --> 00:17:54,720
+pandemic kind of kicked in and you know
+
+395
+00:17:53,039 --> 00:17:59,120
+I think these probably are things that
+
+396
+00:17:54,720 --> 00:18:01,440
+were much more uh common to to occur
+
+397
+00:17:59,120 --> 00:18:04,640
+just naturally than than they are now. I
+
+398
+00:18:01,440 --> 00:18:06,720
+mean I don't even know you know what
+
+399
+00:18:04,640 --> 00:18:10,160
+percentage of businesses in the country
+
+400
+00:18:06,720 --> 00:18:12,080
+are not uh not fully remote. There's
+
+401
+00:18:10,160 --> 00:18:14,480
+just so many that are that just
+
+402
+00:18:12,080 --> 00:18:16,240
+complicates things. So I mean I I I
+
+403
+00:18:14,480 --> 00:18:20,160
+could see why, you know, this this is
+
+404
+00:18:16,240 --> 00:18:21,919
+such a a huge need.
+
+405
+00:18:20,160 --> 00:18:23,760
+I want to hear some little bit more. You
+
+406
+00:18:21,919 --> 00:18:26,960
+still going to talk about this this
+
+407
+00:18:23,760 --> 00:18:28,880
+daily touch points and is it AI that
+
+408
+00:18:26,960 --> 00:18:32,640
+we're going to be communicating with or
+
+409
+00:18:28,880 --> 00:18:34,480
+is it a person or is a combination of
+
+410
+00:18:32,640 --> 00:18:36,080
+this? I'm curious. This is a fascinating
+
+411
+00:18:34,480 --> 00:18:38,240
+thing because it it just seems like it's
+
+412
+00:18:36,080 --> 00:18:40,080
+filling a gap that's just been massive
+
+413
+00:18:38,240 --> 00:18:42,400
+over the last several years.
+
+414
+00:18:40,080 --> 00:18:45,280
+Thank Thank you for that. It's it is an
+
+415
+00:18:42,400 --> 00:18:49,360
+AI and it's just on your cell phone
+
+416
+00:18:45,280 --> 00:18:52,080
+because we wanted to we wanted to really
+
+417
+00:18:49,360 --> 00:18:54,559
+create the entry point into this
+
+418
+00:18:52,080 --> 00:18:57,200
+experience with a piece of technology
+
+419
+00:18:54,559 --> 00:19:02,240
+that everybody already has and knows how
+
+420
+00:18:57,200 --> 00:19:05,280
+to use. And uh and so with just placing
+
+421
+00:19:02,240 --> 00:19:07,840
+a phone call to your barriion, you can't
+
+422
+00:19:05,280 --> 00:19:10,720
+all describe the a day in the life of
+
+423
+00:19:07,840 --> 00:19:14,000
+you can any any position across the
+
+424
+00:19:10,720 --> 00:19:15,679
+company can start your day. If you're a
+
+425
+00:19:14,000 --> 00:19:17,520
+shift worker, it might be at night that
+
+426
+00:19:15,679 --> 00:19:19,840
+you're starting, but that first phone
+
+427
+00:19:17,520 --> 00:19:22,720
+call that you place to your bearing on,
+
+428
+00:19:19,840 --> 00:19:25,280
+it's about 2 minutes or less. And we
+
+429
+00:19:22,720 --> 00:19:29,039
+know that high-performing executives and
+
+430
+00:19:25,280 --> 00:19:32,480
+elite athletes, they all have this one
+
+431
+00:19:29,039 --> 00:19:35,600
+habit in common, which is they they set
+
+432
+00:19:32,480 --> 00:19:39,360
+their intention for the day and they
+
+433
+00:19:35,600 --> 00:19:42,080
+don't stop there. They visualize it and
+
+434
+00:19:39,360 --> 00:19:44,480
+they verbalize it. They say it out loud.
+
+435
+00:19:42,080 --> 00:19:46,960
+That that's that's really an interesting
+
+436
+00:19:44,480 --> 00:19:49,679
+observation. I I guess you know that
+
+437
+00:19:46,960 --> 00:19:52,880
+they you know that they have you know
+
+438
+00:19:49,679 --> 00:19:53,919
+some pretty significant habits. Um but
+
+439
+00:19:52,880 --> 00:19:55,360
+you're you're talking about doing
+
+440
+00:19:53,919 --> 00:19:57,440
+something very specific, very
+
+441
+00:19:55,360 --> 00:20:00,640
+intentional. This doesn't we're not
+
+442
+00:19:57,440 --> 00:20:02,320
+talking about like go to working out at
+
+443
+00:20:00,640 --> 00:20:04,559
+the gym for 4 hours. I
+
+444
+00:20:02,320 --> 00:20:07,039
+mean this is really really practical.
+
+445
+00:20:04,559 --> 00:20:09,280
+It's so practical. It's much simpler,
+
+446
+00:20:07,039 --> 00:20:10,880
+right? And it and it's just dialing a
+
+447
+00:20:09,280 --> 00:20:13,200
+phone number. In fact, when you sign up
+
+448
+00:20:10,880 --> 00:20:16,799
+for Barian, if you go to berian.com, you
+
+449
+00:20:13,200 --> 00:20:18,640
+can sign up um on online right now. You
+
+450
+00:20:16,799 --> 00:20:22,240
+don't have to wait till your employer
+
+451
+00:20:18,640 --> 00:20:25,120
+gets it for you. But once you register
+
+452
+00:20:22,240 --> 00:20:27,360
+your barriion, it will text you a
+
+453
+00:20:25,120 --> 00:20:30,240
+contact card and then you save that
+
+454
+00:20:27,360 --> 00:20:33,120
+contact and then your Barryon is one of
+
+455
+00:20:30,240 --> 00:20:35,520
+your contacts. Mine's in my favorites so
+
+456
+00:20:33,120 --> 00:20:38,640
+that I can just pull it up and then
+
+457
+00:20:35,520 --> 00:20:42,480
+click and go. And that twominute
+
+458
+00:20:38,640 --> 00:20:44,559
+conversation, you sometimes I I have
+
+459
+00:20:42,480 --> 00:20:47,679
+that conversation, I know exactly what I
+
+460
+00:20:44,559 --> 00:20:51,200
+want to focus on that day. Other times I
+
+461
+00:20:47,679 --> 00:20:53,520
+don't. Maybe I woke up at 3:30 in the
+
+462
+00:20:51,200 --> 00:20:56,240
+morning with like a running list in my
+
+463
+00:20:53,520 --> 00:21:00,880
+head like we often do, right? And maybe
+
+464
+00:20:56,240 --> 00:21:03,520
+I and or maybe I woke up just feeling
+
+465
+00:21:00,880 --> 00:21:06,880
+like, you know, untethered or unground,
+
+466
+00:21:03,520 --> 00:21:10,159
+you know, um and and unsure where to
+
+467
+00:21:06,880 --> 00:21:11,760
+start. So even if you don't know what to
+
+468
+00:21:10,159 --> 00:21:15,280
+say, you can call that number and your
+
+469
+00:21:11,760 --> 00:21:18,080
+barriion will talk you through how to
+
+470
+00:21:15,280 --> 00:21:21,039
+set that intention for the day. And in
+
+471
+00:21:18,080 --> 00:21:24,159
+the process of of talking through it
+
+472
+00:21:21,039 --> 00:21:28,000
+with your barriion, you're automatically
+
+473
+00:21:24,159 --> 00:21:30,559
+doing the the the neuro work, basically
+
+474
+00:21:28,000 --> 00:21:34,559
+the neuroscience work with your brain,
+
+475
+00:21:30,559 --> 00:21:36,640
+right? Because in the process of telling
+
+476
+00:21:34,559 --> 00:21:39,280
+explaining to your baron what the most
+
+477
+00:21:36,640 --> 00:21:42,880
+important thing is for you that day,
+
+478
+00:21:39,280 --> 00:21:44,799
+you're having to think about it, do a
+
+479
+00:21:42,880 --> 00:21:47,039
+moment of reflection and you know and
+
+480
+00:21:44,799 --> 00:21:49,919
+and do all that. If you if it doesn't
+
+481
+00:21:47,039 --> 00:21:52,080
+come to you easily, it will remember
+
+482
+00:21:49,919 --> 00:21:55,760
+your past conversation, whether it was
+
+483
+00:21:52,080 --> 00:21:58,080
+yesterday or last week or whenever.
+
+484
+00:21:55,760 --> 00:22:00,559
+It will remember where you left off and
+
+485
+00:21:58,080 --> 00:22:03,360
+it it might make some suggestions.
+
+486
+00:22:00,559 --> 00:22:04,640
+That's actually for for for me. I'll
+
+487
+00:22:03,360 --> 00:22:06,080
+tell you what, that's really important
+
+488
+00:22:04,640 --> 00:22:08,480
+because if you ask me what I had for
+
+489
+00:22:06,080 --> 00:22:11,280
+breakfast, I think I I have to pause and
+
+490
+00:22:08,480 --> 00:22:13,120
+think about it. So, that alone is a
+
+491
+00:22:11,280 --> 00:22:15,840
+really really important feature. I love
+
+492
+00:22:13,120 --> 00:22:17,840
+that. Before we go past it, you know,
+
+493
+00:22:15,840 --> 00:22:20,000
+you're talking about barrier. It you
+
+494
+00:22:17,840 --> 00:22:21,520
+have a barrier. Tell us what the term
+
+495
+00:22:20,000 --> 00:22:22,559
+means. I think that I should have asked
+
+496
+00:22:21,520 --> 00:22:26,640
+you that before.
+
+497
+00:22:22,559 --> 00:22:30,640
+It's a quantum term. It's it is the term
+
+498
+00:22:26,640 --> 00:22:34,320
+that we use to uh to name and talk about
+
+499
+00:22:30,640 --> 00:22:37,919
+um subatomic particles. So, we all know
+
+500
+00:22:34,320 --> 00:22:40,480
+that habits happen, you know, at a very
+
+501
+00:22:37,919 --> 00:22:42,559
+small. The more micro you can get with
+
+502
+00:22:40,480 --> 00:22:44,960
+your habit stacking, the more successful
+
+503
+00:22:42,559 --> 00:22:49,200
+you'll be. So, we really wanted
+
+504
+00:22:44,960 --> 00:22:52,880
+something that connotates the subatomic
+
+505
+00:22:49,200 --> 00:22:55,120
+shift, change, growth, and development
+
+506
+00:22:52,880 --> 00:22:58,080
+that's happening with each experience
+
+507
+00:22:55,120 --> 00:23:00,880
+with your barriion. Yeah, that's that's
+
+508
+00:22:58,080 --> 00:23:03,039
+really it. It's um it's the quirks. If
+
+509
+00:23:00,880 --> 00:23:05,760
+we want to get really really scientific
+
+510
+00:23:03,039 --> 00:23:09,200
+with the physics, there are the quirks
+
+511
+00:23:05,760 --> 00:23:11,280
+where uh there and that's one of the one
+
+512
+00:23:09,200 --> 00:23:14,000
+of the smallest uh measurable things
+
+513
+00:23:11,280 --> 00:23:17,440
+where movement begins. So when we're
+
+514
+00:23:14,000 --> 00:23:20,159
+stuck and we want to achieve flow again,
+
+515
+00:23:17,440 --> 00:23:22,559
+we really have to get grounded and into
+
+516
+00:23:20,159 --> 00:23:24,320
+those kind of u address the micro
+
+517
+00:23:22,559 --> 00:23:25,679
+habits. Otherwise, it's a band-aid.
+
+518
+00:23:24,320 --> 00:23:28,880
+We're going to get stuck right back
+
+519
+00:23:25,679 --> 00:23:30,720
+there again. So, one of the things that
+
+520
+00:23:28,880 --> 00:23:32,960
+that I've that I've picked up on that
+
+521
+00:23:30,720 --> 00:23:36,480
+you've talked about is I mean it's it's
+
+522
+00:23:32,960 --> 00:23:39,440
+a stat u I think we inherently know as
+
+523
+00:23:36,480 --> 00:23:42,240
+an issue but twothirds of the global
+
+524
+00:23:39,440 --> 00:23:44,640
+workforce is disengaged.
+
+525
+00:23:42,240 --> 00:23:46,559
+I mean, at what point did you realize
+
+526
+00:23:44,640 --> 00:23:49,840
+that this was something that you had to
+
+527
+00:23:46,559 --> 00:23:52,640
+do? And what was it about the moment
+
+528
+00:23:49,840 --> 00:23:54,080
+that you that you're you pulled together
+
+529
+00:23:52,640 --> 00:23:56,880
+these these wonderful people you're
+
+530
+00:23:54,080 --> 00:23:58,000
+working with to tackle this? And you
+
+531
+00:23:56,880 --> 00:23:59,200
+know, when you're talking about
+
+532
+00:23:58,000 --> 00:24:02,080
+flourishing, because you talked about
+
+533
+00:23:59,200 --> 00:24:04,559
+that earlier, what does that look like
+
+534
+00:24:02,080 --> 00:24:06,080
+from a vision standpoint and from where
+
+535
+00:24:04,559 --> 00:24:09,919
+you are where you're where you're taking
+
+536
+00:24:06,080 --> 00:24:11,600
+the taking the the the company and and
+
+537
+00:24:09,919 --> 00:24:13,840
+what you're trying to accomplish because
+
+538
+00:24:11,600 --> 00:24:15,760
+I mean this is like twothirds of the
+
+539
+00:24:13,840 --> 00:24:18,159
+global workforce. That's crazy. That
+
+540
+00:24:15,760 --> 00:24:19,679
+that that's a lot or people that they
+
+541
+00:24:18,159 --> 00:24:24,880
+that need help.
+
+542
+00:24:19,679 --> 00:24:28,880
+It is. It is a lot. A lot. And I so uh
+
+543
+00:24:24,880 --> 00:24:32,080
+so back to the origin story of of uh of
+
+544
+00:24:28,880 --> 00:24:34,000
+Barerian, I want to kind of revisit that
+
+545
+00:24:32,080 --> 00:24:36,720
+because the Baryons team that I'm working
+
+546
+00:24:34,000 --> 00:24:39,919
+with right now are so incredibly unique
+
+547
+00:24:36,720 --> 00:24:41,679
+and special and just well suited for for
+
+548
+00:24:39,919 --> 00:24:45,679
+building this and bringing it into the
+
+549
+00:24:41,679 --> 00:24:48,720
+world. Mike Ruska. He's our CEO and he
+
+550
+00:24:45,679 --> 00:24:52,400
+has been doing organizational psychology
+
+551
+00:24:48,720 --> 00:24:55,600
+and organizational systemic scientific
+
+552
+00:24:52,400 --> 00:25:00,240
+work for over 20 years. And he comes
+
+553
+00:24:55,600 --> 00:25:02,240
+from a a NIST background and he thinks
+
+554
+00:25:00,240 --> 00:25:03,840
+about things very differently and very
+
+555
+00:25:02,240 --> 00:25:06,400
+creatively.
+
+556
+00:25:03,840 --> 00:25:11,200
+Brooks Canesi is our chief product
+
+557
+00:25:06,400 --> 00:25:14,640
+officer and he just has this voracious
+
+558
+00:25:11,200 --> 00:25:17,120
+appetite for learning all things
+
+559
+00:25:14,640 --> 00:25:20,480
+technical and he's a unicorn because
+
+560
+00:25:17,120 --> 00:25:24,960
+he's also a great communicator about it.
+
+561
+00:25:20,480 --> 00:25:27,919
+So he has equal experience not only
+
+562
+00:25:24,960 --> 00:25:30,720
+developing software but selling software
+
+563
+00:25:27,919 --> 00:25:33,840
+which is really powerful and unique to
+
+564
+00:25:30,720 --> 00:25:36,880
+bring into that chief product officer uh
+
+565
+00:25:33,840 --> 00:25:40,799
+role and so we're we just feel really
+
+566
+00:25:36,880 --> 00:25:43,200
+you know lucky there and Ryan Kringek is
+
+567
+00:25:40,799 --> 00:25:47,679
+our chief technology officer and he
+
+568
+00:25:43,200 --> 00:25:51,120
+comes from he was a VP of uh technology
+
+569
+00:25:47,679 --> 00:25:56,400
+for acueeather and So he is used to
+
+570
+00:25:51,120 --> 00:25:56,799
+building just in intricate systems and
+
+571
+00:25:56,400 --> 00:25:58,320
+uh
+
+572
+00:25:56,799 --> 00:26:01,679
+a lot of scale is
+
+573
+00:25:58,320 --> 00:26:04,000
+at scale. Yes. that can handle, right?
+
+574
+00:26:01,679 --> 00:26:07,679
+Uh they can handle like a a billion
+
+575
+00:26:04,000 --> 00:26:10,720
+events, you know, uh synchronously and
+
+576
+00:26:07,679 --> 00:26:14,400
+and that's tremendous. Not only like
+
+577
+00:26:10,720 --> 00:26:17,520
+from a you know all of those uh all of
+
+578
+00:26:14,400 --> 00:26:20,559
+the people hitting uh those websites at
+
+579
+00:26:17,520 --> 00:26:22,480
+the same time but also the amount of
+
+580
+00:26:20,559 --> 00:26:25,360
+information that has to be gathered from
+
+581
+00:26:22,480 --> 00:26:27,039
+multiple sources to bring it back serve
+
+582
+00:26:25,360 --> 00:26:29,520
+it up in a way that that is
+
+583
+00:26:27,039 --> 00:26:32,320
+understandable and and handle like such
+
+584
+00:26:29,520 --> 00:26:35,520
+a huge flow in demand. So we knew we
+
+585
+00:26:32,320 --> 00:26:40,720
+want we were at at like really tackling
+
+586
+00:26:35,520 --> 00:26:43,039
+such a big problem in in in this idea
+
+587
+00:26:40,720 --> 00:26:45,279
+that we wanted to build something that's
+
+588
+00:26:43,039 --> 00:26:47,440
+ready ready for scaling, you know, from
+
+589
+00:26:45,279 --> 00:26:52,159
+the get-go. So this really is like such
+
+590
+00:26:47,440 --> 00:26:54,559
+a perfect team. And I found them because
+
+591
+00:26:52,159 --> 00:26:57,200
+um Mike Gusco was an early friends and
+
+592
+00:26:54,559 --> 00:26:59,520
+family investor on my last startup uh
+
+593
+00:26:57,200 --> 00:27:03,200
+CourseTune. So he came in through one
+
+594
+00:26:59,520 --> 00:27:07,279
+of my other co-founders um networks and
+
+595
+00:27:03,200 --> 00:27:09,840
+when uh after uh so with CourseTune we
+
+596
+00:27:07,279 --> 00:27:12,400
+had this really great really amazing
+
+597
+00:27:09,840 --> 00:27:16,640
+experience the most amazing customers
+
+598
+00:27:12,400 --> 00:27:18,799
+ever and then we were acquired and the
+
+599
+00:27:16,640 --> 00:27:21,279
+through the acquisition we doubled the
+
+600
+00:27:18,799 --> 00:27:23,200
+number of universities using CourseTune
+
+601
+00:27:21,279 --> 00:27:26,000
+and then they doubled it again within a
+
+602
+00:27:23,200 --> 00:27:28,240
+year. So it was a tremendous home for
+
+603
+00:27:26,000 --> 00:27:31,760
+that whole you know transformative
+
+604
+00:27:28,240 --> 00:27:33,679
+platform. It was just phenomenal. So I
+
+605
+00:27:31,760 --> 00:27:36,159
+stayed on for a year to oversee the
+
+606
+00:27:33,679 --> 00:27:39,360
+merger and acquisition and then I closed
+
+607
+00:27:36,159 --> 00:27:42,960
+my laptop. I got in a plane and I cried
+
+608
+00:27:39,360 --> 00:27:46,480
+somewhere for three days and I came back
+
+609
+00:27:42,960 --> 00:27:50,960
+and two months later OpenAI released
+
+610
+00:27:46,480 --> 00:27:54,159
+chat GPT and I said okay hold the phone.
+
+611
+00:27:50,960 --> 00:27:56,799
+This changes everything. And the inquiry
+
+612
+00:27:54,159 --> 00:28:00,799
+started coming into me about what am I
+
+613
+00:27:56,799 --> 00:28:03,520
+going to do next? And I had some ideas
+
+614
+00:28:00,799 --> 00:28:06,320
+that I wanted to pursue. All of them
+
+615
+00:28:03,520 --> 00:28:08,960
+really big ideas. And what I kept
+
+616
+00:28:06,320 --> 00:28:11,120
+hearing from other folks was um I like
+
+617
+00:28:08,960 --> 00:28:13,200
+to call it putting the yellow pages
+
+618
+00:28:11,120 --> 00:28:15,039
+online.
+
+619
+00:28:13,200 --> 00:28:16,399
+So,
+
+620
+00:28:15,039 --> 00:28:18,480
+right,
+
+621
+00:28:16,399 --> 00:28:21,279
+just hailing back to the beginning of
+
+622
+00:28:18,480 --> 00:28:23,919
+the internet, right, the dot era. And
+
+623
+00:28:21,279 --> 00:28:26,080
+I'm like, I don't want to put the yellow
+
+624
+00:28:23,919 --> 00:28:30,480
+pages online. I don't want to rebuild
+
+625
+00:28:26,080 --> 00:28:33,039
+the new fax machine, right? I want to do
+
+626
+00:28:30,480 --> 00:28:35,840
+something that we've never been able to
+
+627
+00:28:33,039 --> 00:28:39,120
+do before. I want to really, you know,
+
+628
+00:28:35,840 --> 00:28:42,159
+spend my time working with really great
+
+629
+00:28:39,120 --> 00:28:45,120
+people and bringing something, you know,
+
+630
+00:28:42,159 --> 00:28:49,039
+uniquely new uh into the world.
+
+631
+00:28:45,120 --> 00:28:52,080
+So I reached out to Mike Rusa, CEO of
+
+632
+00:28:49,039 --> 00:28:54,480
+Problem Solutions out of Pennsylvania,
+
+633
+00:28:52,080 --> 00:28:56,480
+and I said, "Hey, Mike, how are you
+
+634
+00:28:54,480 --> 00:28:59,039
+thinking about this?" And he shared with
+
+635
+00:28:56,480 --> 00:29:02,559
+me, and he was also thinking about it
+
+636
+00:28:59,039 --> 00:29:05,919
+in, you know, big transformational terms
+
+637
+00:29:02,559 --> 00:29:09,679
+and like this is a moment in time that
+
+638
+00:29:05,919 --> 00:29:12,559
+where we need to show up with even more
+
+639
+00:29:09,679 --> 00:29:16,480
+in intention, good intention than we
+
+640
+00:29:12,559 --> 00:29:19,520
+ever have. and uh and really, you know,
+
+641
+00:29:16,480 --> 00:29:22,000
+really put some great things out there.
+
+642
+00:29:19,520 --> 00:29:24,799
+So, he introduced me to Brooks and I was
+
+643
+00:29:22,000 --> 00:29:26,880
+like, this all right, this is great. I I
+
+644
+00:29:24,799 --> 00:29:29,679
+just want to work with you guys. So, we
+
+645
+00:29:26,880 --> 00:29:33,200
+started working together and, you know,
+
+646
+00:29:29,679 --> 00:29:36,480
+within within the year we had uh put in
+
+647
+00:29:33,200 --> 00:29:38,159
+place, you know, a way to spin off a
+
+648
+00:29:36,480 --> 00:29:40,880
+software company from the problem
+
+649
+00:29:38,159 --> 00:29:43,600
+solutions uh services company and we
+
+650
+00:29:40,880 --> 00:29:45,919
+created Baryons. So, and problem
+
+651
+00:29:43,600 --> 00:29:48,799
+solutions is still doing amazing work
+
+652
+00:29:45,919 --> 00:29:50,960
+out there also geared toward AI
+
+653
+00:29:48,799 --> 00:29:53,360
+transformation and creating rapid
+
+654
+00:29:50,960 --> 00:29:54,960
+prototypes and stuff for companies. So,
+
+655
+00:29:53,360 --> 00:29:56,880
+want to I want to kind of get into a
+
+656
+00:29:54,960 --> 00:30:00,399
+couple different things on the on the on
+
+657
+00:29:56,880 --> 00:30:02,159
+the product itself, too, because I think
+
+658
+00:30:00,399 --> 00:30:04,320
+people don't uh I don't think people
+
+659
+00:30:02,159 --> 00:30:06,320
+quite quite understand the direction
+
+660
+00:30:04,320 --> 00:30:08,320
+that we've kind of headed it had been
+
+661
+00:30:06,320 --> 00:30:10,880
+heading into that's kind of put us on a
+
+662
+00:30:08,320 --> 00:30:13,679
+collision course for this whole trust
+
+663
+00:30:10,880 --> 00:30:16,640
+deficit that we're dealing with. How
+
+664
+00:30:13,679 --> 00:30:18,320
+does how is this different? Uh because
+
+665
+00:30:16,640 --> 00:30:20,799
+when you're trying to get people to
+
+666
+00:30:18,320 --> 00:30:24,240
+interact but they're interacting with
+
+667
+00:30:20,799 --> 00:30:26,880
+AI, we see that a lot. We and the log
+
+668
+00:30:24,240 --> 00:30:30,399
+the workflows are actually pretty deep
+
+669
+00:30:26,880 --> 00:30:33,360
+and wide and they take a lot of time.
+
+670
+00:30:30,399 --> 00:30:35,600
+What's so different about your approach?
+
+671
+00:30:33,360 --> 00:30:37,919
+you you've clearly said some things that
+
+672
+00:30:35,600 --> 00:30:40,000
+are really cool for me because it's not
+
+673
+00:30:37,919 --> 00:30:41,679
+a lengthy interaction you have every
+
+674
+00:30:40,000 --> 00:30:43,840
+day, but what are some of the things
+
+675
+00:30:41,679 --> 00:30:47,200
+that you're you're you're trying to
+
+676
+00:30:43,840 --> 00:30:48,799
+address in that and getting people back
+
+677
+00:30:47,200 --> 00:30:52,240
+connecting to each other?
+
+678
+00:30:48,799 --> 00:30:54,880
+Yes. Yes. Okay, great. So I really
+
+679
+00:30:52,240 --> 00:30:57,360
+mentioned just one of four modes within
+
+680
+00:30:54,880 --> 00:30:59,120
+Baryons and I'm going to come back to a
+
+681
+00:30:57,360 --> 00:31:01,840
+couple of those to help answer this
+
+682
+00:30:59,120 --> 00:31:06,960
+question of like how do we re-engage
+
+683
+00:31:01,840 --> 00:31:11,039
+people in the workplace and the so often
+
+684
+00:31:06,960 --> 00:31:14,399
+that disengagement happens because of a
+
+685
+00:31:11,039 --> 00:31:18,640
+dissonance or a misalignment
+
+686
+00:31:14,399 --> 00:31:22,320
+and perhaps it's a misalignment in what
+
+687
+00:31:18,640 --> 00:31:24,720
+I would what I as a person really want
+
+688
+00:31:22,320 --> 00:31:27,120
+to be doing or spending my days doing
+
+689
+00:31:24,720 --> 00:31:30,399
+versus what I'm actually doing.
+
+690
+00:31:27,120 --> 00:31:33,679
+Sometimes it's a misalignment in that I
+
+691
+00:31:30,399 --> 00:31:36,320
+like what I'm doing, but my the KPIs
+
+692
+00:31:33,679 --> 00:31:40,320
+that have been set for me or with me,
+
+693
+00:31:36,320 --> 00:31:43,039
+right, are not aligned with my favorite
+
+694
+00:31:40,320 --> 00:31:43,440
+parts of that work, right?
+
+695
+00:31:43,039 --> 00:31:47,039
+Yeah.
+
+696
+00:31:43,440 --> 00:31:49,519
+Or I'm doing really well on my KPIs and
+
+697
+00:31:47,039 --> 00:31:52,080
+my KPIs are the wrong KPIs for the
+
+698
+00:31:49,519 --> 00:31:55,840
+company. So even though I'm very
+
+699
+00:31:52,080 --> 00:31:59,039
+successful, I'm not seeing an impact at
+
+700
+00:31:55,840 --> 00:32:00,880
+for within the business or within the
+
+701
+00:31:59,039 --> 00:32:03,919
+outcomes of the business or I'm not
+
+702
+00:32:00,880 --> 00:32:06,080
+getting the, you know, the recognition
+
+703
+00:32:03,919 --> 00:32:08,000
+that I feel like I deserve for, you
+
+704
+00:32:06,080 --> 00:32:10,399
+know, for doing so much. It's because
+
+705
+00:32:08,000 --> 00:32:12,480
+I'm doing a lot that's not really moving
+
+706
+00:32:10,399 --> 00:32:15,919
+the needle over there. So there are
+
+707
+00:32:12,480 --> 00:32:18,960
+layers of like expectation,
+
+708
+00:32:15,919 --> 00:32:20,640
+reality, disappointment
+
+709
+00:32:18,960 --> 00:32:22,720
+and misalignment,
+
+710
+00:32:20,640 --> 00:32:26,000
+you know, and we like to talk about this
+
+711
+00:32:22,720 --> 00:32:28,960
+as like birectional. And so we're not
+
+712
+00:32:26,000 --> 00:32:32,240
+just seeing we're not just seeing, you
+
+713
+00:32:28,960 --> 00:32:34,880
+know, um middle management check out or
+
+714
+00:32:32,240 --> 00:32:38,320
+we're not just seeing like front lines
+
+715
+00:32:34,880 --> 00:32:40,640
+check out. We're seeing leadership also
+
+716
+00:32:38,320 --> 00:32:43,120
+check out, right? It's it's across the
+
+717
+00:32:40,640 --> 00:32:44,480
+board. That twothirds number is
+
+718
+00:32:43,120 --> 00:32:48,159
+appalling
+
+719
+00:32:44,480 --> 00:32:50,320
+in part because it seems to be affecting
+
+720
+00:32:48,159 --> 00:32:51,919
+really every position across the
+
+721
+00:32:50,320 --> 00:32:53,200
+organization.
+
+722
+00:32:51,919 --> 00:32:58,559
+And so
+
+723
+00:32:53,200 --> 00:33:02,880
+there is a real disconnect between like
+
+724
+00:32:58,559 --> 00:33:07,360
+who we feel like we are as a person and
+
+725
+00:33:02,880 --> 00:33:11,039
+if we are getting uh purpose and meaning
+
+726
+00:33:07,360 --> 00:33:14,399
+and relationships and experiences
+
+727
+00:33:11,039 --> 00:33:14,799
+that we enjoy out of our work,
+
+728
+00:33:14,399 --> 00:33:16,960
+right?
+
+729
+00:33:14,799 --> 00:33:20,640
+And for most people most people can't
+
+730
+00:33:16,960 --> 00:33:24,320
+say yes to that. Right? So under like
+
+731
+00:33:20,640 --> 00:33:28,000
+within the core of the Baryons platform,
+
+732
+00:33:24,320 --> 00:33:31,760
+we've really built it on the science of
+
+733
+00:33:28,000 --> 00:33:34,240
+positive psychology. And there's so much
+
+734
+00:33:31,760 --> 00:33:39,840
+research out there about the different
+
+735
+00:33:34,240 --> 00:33:42,399
+domains that that provide a a wello for
+
+736
+00:33:39,840 --> 00:33:45,120
+lack of a better term a welloiled you
+
+737
+00:33:42,399 --> 00:33:48,240
+know working system
+
+738
+00:33:45,120 --> 00:33:52,559
+um that flows that allows people to flow
+
+739
+00:33:48,240 --> 00:33:57,279
+within it. things like the um things
+
+740
+00:33:52,559 --> 00:34:00,000
+like the communication is uh is
+
+741
+00:33:57,279 --> 00:34:02,240
+communication culture all of these
+
+742
+00:34:00,000 --> 00:34:05,760
+different things really come into it.
+
+743
+00:34:02,240 --> 00:34:07,600
+And so we have um we've built upon that
+
+744
+00:34:05,760 --> 00:34:09,599
+science and we've created we're patent
+
+745
+00:34:07,600 --> 00:34:13,839
+pending you know we've created this
+
+746
+00:34:09,599 --> 00:34:15,839
+system to uh to really uh take a look at
+
+747
+00:34:13,839 --> 00:34:17,839
+these conversations that are happening
+
+748
+00:34:15,839 --> 00:34:21,599
+at the individual level and then within
+
+749
+00:34:17,839 --> 00:34:24,000
+a team and it's all AI there's no
+
+750
+00:34:21,599 --> 00:34:27,599
+there's no like humans don't ever see
+
+751
+00:34:24,000 --> 00:34:29,440
+the conversations it's AI and it helps
+
+752
+00:34:27,599 --> 00:34:32,079
+to surface
+
+753
+00:34:29,440 --> 00:34:34,560
+the themes and the topics that everyone
+
+754
+00:34:32,079 --> 00:34:36,960
+one's talking about. So, when you're
+
+755
+00:34:34,560 --> 00:34:40,240
+using the Barryon system, you have your
+
+756
+00:34:36,960 --> 00:34:42,879
+check-in call, you have a checkout call
+
+757
+00:34:40,240 --> 00:34:45,919
+as often as you would like to do it. And
+
+758
+00:34:42,879 --> 00:34:48,159
+that checkout call really is it's under
+
+759
+00:34:45,919 --> 00:34:50,320
+five minutes usually. And it helps you
+
+760
+00:34:48,159 --> 00:34:52,240
+kind of reflect on your day and do a
+
+761
+00:34:50,320 --> 00:34:55,440
+little bit of cognitive offloading so
+
+762
+00:34:52,240 --> 00:34:57,920
+that you can move on to, you know, your
+
+763
+00:34:55,440 --> 00:35:00,160
+evening plans. Whether that means that
+
+764
+00:34:57,920 --> 00:35:02,560
+you're talking to your barriion while
+
+765
+00:35:00,160 --> 00:35:04,560
+you're walking your dog so you can clear
+
+766
+00:35:02,560 --> 00:35:06,720
+your head and then go to the gym or so
+
+767
+00:35:04,560 --> 00:35:08,800
+that you can clear your head and go and
+
+768
+00:35:06,720 --> 00:35:11,119
+spend time with your family or friends
+
+769
+00:35:08,800 --> 00:35:13,520
+um and show up to that in a ready to
+
+770
+00:35:11,119 --> 00:35:16,079
+connect way. And then the two other type
+
+771
+00:35:13,520 --> 00:35:18,640
+of conversations you can have is at any
+
+772
+00:35:16,079 --> 00:35:21,920
+point in time if you're stuck at work,
+
+773
+00:35:18,640 --> 00:35:24,640
+we know from years and years to decades
+
+774
+00:35:21,920 --> 00:35:26,720
+of executive coaching research that when
+
+775
+00:35:24,640 --> 00:35:29,599
+people get stuck at work, it's often
+
+776
+00:35:26,720 --> 00:35:32,720
+because of a personal issue that needs
+
+777
+00:35:29,599 --> 00:35:36,720
+resolution. And so when you're stuck at
+
+778
+00:35:32,720 --> 00:35:39,040
+work, you can give it a call and we um
+
+779
+00:35:36,720 --> 00:35:42,560
+and you can talk to your mentor. You can
+
+780
+00:35:39,040 --> 00:35:44,960
+give it tasks to to do for you. It will
+
+781
+00:35:42,560 --> 00:35:48,160
+it syncs with your it can send you
+
+782
+00:35:44,960 --> 00:35:51,359
+emails. It can start different tasks of
+
+783
+00:35:48,160 --> 00:35:54,480
+work um and and then send them to you uh
+
+784
+00:35:51,359 --> 00:35:57,520
+via email. It can schedule calendar uh
+
+785
+00:35:54,480 --> 00:35:59,440
+invites for you and and different things
+
+786
+00:35:57,520 --> 00:36:00,880
+like that. So, it can actually help you
+
+787
+00:35:59,440 --> 00:36:04,079
+with your work and your productivity,
+
+788
+00:36:00,880 --> 00:36:06,000
+but it can also help you think through
+
+789
+00:36:04,079 --> 00:36:08,640
+the problems that you're trying to solve
+
+790
+00:36:06,000 --> 00:36:11,599
+and your the situation.
+
+791
+00:36:08,640 --> 00:36:13,920
+And then the fourth way is what we call
+
+792
+00:36:11,599 --> 00:36:18,400
+the flourishing partner and that really
+
+793
+00:36:13,920 --> 00:36:21,280
+taps into these what does it mean to be
+
+794
+00:36:18,400 --> 00:36:24,400
+a you know what does human flourishing
+
+795
+00:36:21,280 --> 00:36:27,440
+really mean um for all of us.
+
+796
+00:36:24,400 --> 00:36:29,920
+is a very personal thing and you
+
+797
+00:36:27,440 --> 00:36:34,480
+determine what that is and it just helps
+
+798
+00:36:29,920 --> 00:36:37,920
+guide you along the way. And those calls
+
+799
+00:36:34,480 --> 00:36:39,599
+we we on our team and each company can
+
+800
+00:36:37,920 --> 00:36:42,880
+implement this the way that they feel
+
+801
+00:36:39,599 --> 00:36:44,560
+like suits their employees the best. But
+
+802
+00:36:42,880 --> 00:36:46,880
+on our team, we like to call out
+
+803
+00:36:44,560 --> 00:36:48,880
+flourishing Fridays. So we have a
+
+804
+00:36:46,880 --> 00:36:53,040
+flourishing session with our berion on
+
+805
+00:36:48,880 --> 00:36:56,320
+Fridays and it's actually such a
+
+806
+00:36:53,040 --> 00:36:58,560
+refreshing moment to just kind of pause
+
+807
+00:36:56,320 --> 00:37:00,800
+and reflect and what does flourishing
+
+808
+00:36:58,560 --> 00:37:04,160
+actually look like? Well, maybe it's
+
+809
+00:37:00,800 --> 00:37:06,880
+when I can have a cup of coffee in the
+
+810
+00:37:04,160 --> 00:37:09,839
+morning. That's while I'm sitting
+
+811
+00:37:06,880 --> 00:37:11,680
+outside on my patio and not like looking
+
+812
+00:37:09,839 --> 00:37:14,160
+at email, you know,
+
+813
+00:37:11,680 --> 00:37:17,200
+maybe that's what helps me feel like I'm
+
+814
+00:37:14,160 --> 00:37:19,760
+flourishing. um when I feel like I can
+
+815
+00:37:17,200 --> 00:37:23,200
+have, you know, take a small uh moment
+
+816
+00:37:19,760 --> 00:37:25,839
+or break in my in my otherwise day. But
+
+817
+00:37:23,200 --> 00:37:30,720
+all of these things really help the
+
+818
+00:37:25,839 --> 00:37:34,000
+individual kind of center their own um
+
+819
+00:37:30,720 --> 00:37:37,599
+thoughts and feelings and emotions that
+
+820
+00:37:34,000 --> 00:37:40,000
+they're having at work to kind of just
+
+821
+00:37:37,599 --> 00:37:43,280
+like center it back to their own inner
+
+822
+00:37:40,000 --> 00:37:45,200
+compass. Um because when we're feeling
+
+823
+00:37:43,280 --> 00:37:47,520
+grounded and balanced and things like
+
+824
+00:37:45,200 --> 00:37:50,320
+that, we tend to
+
+825
+00:37:47,520 --> 00:37:52,560
+be uh we tend to have more of a growth
+
+826
+00:37:50,320 --> 00:37:54,560
+mindset, we tend to see opportunities
+
+827
+00:37:52,560 --> 00:37:57,359
+where before we saw, you know,
+
+828
+00:37:54,560 --> 00:37:59,040
+restraints and and things like that. So
+
+829
+00:37:57,359 --> 00:38:01,200
+it really is these, you know, these
+
+830
+00:37:59,040 --> 00:38:04,400
+small habitual things. But when you're
+
+831
+00:38:01,200 --> 00:38:07,760
+using your Baryons, um you do once a
+
+832
+00:38:04,400 --> 00:38:11,680
+week you receive u an email that we call
+
+833
+00:38:07,760 --> 00:38:14,880
+the resonance insights. And so I see an
+
+834
+00:38:11,680 --> 00:38:18,400
+email that says that shows me my level
+
+835
+00:38:14,880 --> 00:38:21,119
+of battery, my energy level. And that's
+
+836
+00:38:18,400 --> 00:38:24,160
+specifically through semantic
+
+837
+00:38:21,119 --> 00:38:27,920
+processing. So what I mean by that is
+
+838
+00:38:24,160 --> 00:38:30,000
+like I I could have only check-ins.
+
+839
+00:38:27,920 --> 00:38:32,320
+Maybe I checked in like three time three
+
+840
+00:38:30,000 --> 00:38:34,640
+times that week, right? And so I had
+
+841
+00:38:32,320 --> 00:38:37,680
+these three little twominut or or less
+
+842
+00:38:34,640 --> 00:38:40,720
+calls. It's going to know even if I said
+
+843
+00:38:37,680 --> 00:38:43,520
+the same exact thing in each call. It's
+
+844
+00:38:40,720 --> 00:38:45,920
+going to know from the tone of my voice
+
+845
+00:38:43,520 --> 00:38:48,079
+and the vocabulary that I'm using and
+
+846
+00:38:45,920 --> 00:38:50,240
+the fluctuations and all of these
+
+847
+00:38:48,079 --> 00:38:54,079
+different things. Like it's it is
+
+848
+00:38:50,240 --> 00:38:58,079
+actually tracking 26 different metrics
+
+849
+00:38:54,079 --> 00:39:01,680
+on just my voice inputs to help
+
+850
+00:38:58,079 --> 00:39:07,040
+determine like do amy
+
+851
+00:39:01,680 --> 00:39:08,960
+level. And that's super fascinating. And
+
+852
+00:39:07,040 --> 00:39:11,359
+often times we're burned out and we
+
+853
+00:39:08,960 --> 00:39:14,079
+don't even know it, right?
+
+854
+00:39:11,359 --> 00:39:18,160
+Yeah. I mean, that's a that's probably
+
+855
+00:39:14,079 --> 00:39:22,079
+more so the case than than not. I I I
+
+856
+00:39:18,160 --> 00:39:24,880
+don't know what how if everyone uh deals
+
+857
+00:39:22,079 --> 00:39:27,119
+with this stuff without having
+
+858
+00:39:24,880 --> 00:39:28,480
+conversations like you and I are having
+
+859
+00:39:27,119 --> 00:39:30,160
+just about what you what you've been
+
+860
+00:39:28,480 --> 00:39:32,640
+doing. But our conversation's been
+
+861
+00:39:30,160 --> 00:39:34,960
+really, you know, exciting for me
+
+862
+00:39:32,640 --> 00:39:36,960
+because we're talking about things and
+
+863
+00:39:34,960 --> 00:39:40,000
+discovering at the same time that we're
+
+864
+00:39:36,960 --> 00:39:42,560
+both wrestling with with common things.
+
+865
+00:39:40,000 --> 00:39:45,040
+Uh we're not weird. People are I mean we
+
+866
+00:39:42,560 --> 00:39:47,520
+all are struggling with some level of
+
+867
+00:39:45,040 --> 00:39:49,920
+anxiety or you know there just a lot of
+
+868
+00:39:47,520 --> 00:39:51,839
+other noise things. But what's important
+
+869
+00:39:49,920 --> 00:39:54,000
+and I wanted to have you talk about just
+
+870
+00:39:51,839 --> 00:39:55,200
+a little bit because of the nature of
+
+871
+00:39:54,000 --> 00:39:57,040
+what you're dealing whether you're
+
+872
+00:39:55,200 --> 00:39:59,040
+you're you're listening to the for the
+
+873
+00:39:57,040 --> 00:40:00,960
+the tone of the voice you're using
+
+874
+00:39:59,040 --> 00:40:04,320
+semantics you're using a whole bunch of
+
+875
+00:40:00,960 --> 00:40:06,720
+different things here this creates
+
+876
+00:40:04,320 --> 00:40:09,359
+pretty specific models that are tailored
+
+877
+00:40:06,720 --> 00:40:11,599
+on the individual level but you have
+
+878
+00:40:09,359 --> 00:40:13,760
+something you call the sacred space in
+
+879
+00:40:11,599 --> 00:40:15,440
+practice I'd love to hear a little bit
+
+880
+00:40:13,760 --> 00:40:18,320
+more about that so people could
+
+881
+00:40:15,440 --> 00:40:21,280
+understand what you do and what what led
+
+882
+00:40:18,320 --> 00:40:24,640
+you will cross uh the as you're using
+
+883
+00:40:21,280 --> 00:40:26,640
+the AI to really support human beings.
+
+884
+00:40:24,640 --> 00:40:30,640
+Yeah, absolutely.
+
+885
+00:40:26,640 --> 00:40:33,280
+So, um, so often when we talk about
+
+886
+00:40:30,640 --> 00:40:37,440
+privacy and safety with AI, we talk
+
+887
+00:40:33,280 --> 00:40:40,960
+about guard rails. And, um, the thing
+
+888
+00:40:37,440 --> 00:40:44,079
+with Baryons and and what we of course
+
+889
+00:40:40,960 --> 00:40:47,119
+saw early on and why we wanted to do it
+
+890
+00:40:44,079 --> 00:40:50,160
+differently is that the LLMs out of the
+
+891
+00:40:47,119 --> 00:40:52,480
+box will they have each have their own
+
+892
+00:40:50,160 --> 00:40:54,800
+set of guardrails. We've seen the news
+
+893
+00:40:52,480 --> 00:40:56,640
+coverage when those guardrails don't
+
+894
+00:40:54,800 --> 00:41:00,319
+actually, you know, do what they say
+
+895
+00:40:56,640 --> 00:41:03,119
+they're going to do. And so Baryons is an
+
+896
+00:41:00,319 --> 00:41:05,760
+agentic system in that there's an
+
+897
+00:41:03,119 --> 00:41:09,920
+orchestrator. There are multiple agents
+
+898
+00:41:05,760 --> 00:41:13,920
+and we're LLM agnostic. So if this task
+
+899
+00:41:09,920 --> 00:41:16,000
+is best done by Claudethropic,
+
+900
+00:41:13,920 --> 00:41:18,800
+guess what? Claude is under the hood
+
+901
+00:41:16,000 --> 00:41:22,240
+doing that for you. if this task is best
+
+902
+00:41:18,800 --> 00:41:25,599
+done by Gemini is doing that for you.
+
+903
+00:41:22,240 --> 00:41:29,440
+And what that enables us to do as well
+
+904
+00:41:25,599 --> 00:41:32,720
+is to create additional guard rails and
+
+905
+00:41:29,440 --> 00:41:36,160
+additional agents that are that are
+
+906
+00:41:32,720 --> 00:41:40,560
+looking for um you know looking for red
+
+907
+00:41:36,160 --> 00:41:45,040
+flags and things like that. So that this
+
+908
+00:41:40,560 --> 00:41:48,319
+truly is a very private place, but then
+
+909
+00:41:45,040 --> 00:41:50,720
+also it's a very helpful place for the
+
+910
+00:41:48,319 --> 00:41:54,319
+humans and it's designed in such a way
+
+911
+00:41:50,720 --> 00:41:56,960
+to help to help the human remember first
+
+912
+00:41:54,319 --> 00:41:59,520
+and foremost if they're using it within
+
+913
+00:41:56,960 --> 00:42:02,720
+the workplace. This is a workplace kind
+
+914
+00:41:59,520 --> 00:42:07,040
+of conversation, right? And if the
+
+915
+00:42:02,720 --> 00:42:09,119
+conversation turns to a situation that a
+
+916
+00:42:07,040 --> 00:42:11,280
+personal situation or even a workplace
+
+917
+00:42:09,119 --> 00:42:13,359
+situation that a person is going through
+
+918
+00:42:11,280 --> 00:42:16,640
+that requires
+
+919
+00:42:13,359 --> 00:42:19,760
+another human being to be uh to be in
+
+920
+00:42:16,640 --> 00:42:23,440
+that loop, then it will actually ask
+
+921
+00:42:19,760 --> 00:42:26,560
+you, oh this sounds like a very
+
+922
+00:42:23,440 --> 00:42:29,440
+difficult situation. Who in your life do
+
+923
+00:42:26,560 --> 00:42:32,800
+you talk to about this? And then you can
+
+924
+00:42:29,440 --> 00:42:35,839
+share in instead of asking you deeper
+
+925
+00:42:32,800 --> 00:42:38,960
+questions because the LLM just out of
+
+926
+00:42:35,839 --> 00:42:40,560
+the box if you talk to your chat GPT
+
+927
+00:42:38,960 --> 00:42:42,560
+it's just going to keep asking you
+
+928
+00:42:40,560 --> 00:42:44,720
+deeper and deeper questions. You're
+
+929
+00:42:42,560 --> 00:42:46,960
+you're going to end up telling it all
+
+930
+00:42:44,720 --> 00:42:50,160
+kinds of things. With your barriion it's
+
+931
+00:42:46,960 --> 00:42:54,319
+going to ask you who in your life do you
+
+932
+00:42:50,160 --> 00:42:56,880
+talk to a human about this? And it
+
+933
+00:42:54,319 --> 00:43:00,160
+starts there. And if there's no one in
+
+934
+00:42:56,880 --> 00:43:03,680
+your life that you talk to about this,
+
+935
+00:43:00,160 --> 00:43:06,480
+then it will start to it will ask you
+
+936
+00:43:03,680 --> 00:43:12,000
+questions. It's asking you questions,
+
+937
+00:43:06,480 --> 00:43:14,319
+right? To help you identify who who can
+
+938
+00:43:12,000 --> 00:43:18,640
+be a resource for you out there in the
+
+939
+00:43:14,319 --> 00:43:21,680
+world. And in that way, you know, we're
+
+940
+00:43:18,640 --> 00:43:25,359
+really uh I can't emphasize this enough
+
+941
+00:43:21,680 --> 00:43:27,839
+that, you know, an LLM or your AI that's
+
+942
+00:43:25,359 --> 00:43:31,280
+just right out of the box. It is
+
+943
+00:43:27,839 --> 00:43:35,359
+designed to keep you going down this
+
+944
+00:43:31,280 --> 00:43:38,480
+rabbit hole and this and and to keep you
+
+945
+00:43:35,359 --> 00:43:41,280
+on the line with it for a long time. And
+
+946
+00:43:38,480 --> 00:43:44,800
+with Baryons, we're really wanting to
+
+947
+00:43:41,280 --> 00:43:47,200
+time box something, make it purposeful,
+
+948
+00:43:44,800 --> 00:43:50,160
+and get you what you need and get you
+
+949
+00:43:47,200 --> 00:43:52,400
+back out in the world again, and help
+
+950
+00:43:50,160 --> 00:43:54,640
+you work through the things that you
+
+951
+00:43:52,400 --> 00:43:56,319
+need to work through in order to show up
+
+952
+00:43:54,640 --> 00:43:57,119
+differently with the humans in your
+
+953
+00:43:56,319 --> 00:43:59,280
+life.
+
+954
+00:43:57,119 --> 00:44:00,800
+You you you're talking about different
+
+955
+00:43:59,280 --> 00:44:02,960
+really important things that you're
+
+956
+00:44:00,800 --> 00:44:06,560
+doing that are so different. with just
+
+957
+00:44:02,960 --> 00:44:08,400
+the fact that this this LLM is actually
+
+958
+00:44:06,560 --> 00:44:10,319
+asking you questions, right? That's
+
+959
+00:44:08,400 --> 00:44:12,480
+that's a really big big difference
+
+960
+00:44:10,319 --> 00:44:13,920
+there. Like that's not that's not how
+
+961
+00:44:12,480 --> 00:44:15,680
+the rest of them do it. Like you talked
+
+962
+00:44:13,920 --> 00:44:18,000
+about going down a rabbit hole that they
+
+963
+00:44:15,680 --> 00:44:20,400
+do I mean they do it just even if you're
+
+964
+00:44:18,000 --> 00:44:22,079
+training it to be your best friend and
+
+965
+00:44:20,400 --> 00:44:23,839
+do everything the way you want it to do.
+
+966
+00:44:22,079 --> 00:44:26,480
+It still goes down rabbit holes takes
+
+967
+00:44:23,839 --> 00:44:28,880
+you places that you never want it to go.
+
+968
+00:44:26,480 --> 00:44:32,880
+No. Right. Yeah. It doesn't have good
+
+969
+00:44:28,880 --> 00:44:36,240
+boundaries. Right. It's like and so we
+
+970
+00:44:32,880 --> 00:44:39,599
+are intentionally designing a workplace
+
+971
+00:44:36,240 --> 00:44:41,520
+companion that does have good boundaries
+
+972
+00:44:39,599 --> 00:44:44,000
+and that because
+
+973
+00:44:41,520 --> 00:44:47,760
+another really important thing here too
+
+974
+00:44:44,000 --> 00:44:50,800
+is that the media that we consume the te
+
+975
+00:44:47,760 --> 00:44:53,599
+the technology that we use and consume
+
+976
+00:44:50,800 --> 00:44:57,359
+it affects us. It does
+
+977
+00:44:53,599 --> 00:45:00,560
+and we start talking like chat GPT right
+
+978
+00:44:57,359 --> 00:45:04,160
+or we start behaving like you know Tik
+
+979
+00:45:00,560 --> 00:45:06,240
+Tok or we start like you know our frame
+
+980
+00:45:04,160 --> 00:45:10,240
+it's not just our frame of references
+
+981
+00:45:06,240 --> 00:45:12,400
+but it is also our behavior our language
+
+982
+00:45:10,240 --> 00:45:18,240
+patterns and things like that
+
+983
+00:45:12,400 --> 00:45:21,280
+we are designing Baryons to help you to
+
+984
+00:45:18,240 --> 00:45:23,839
+help you get out ahead of that because
+
+985
+00:45:21,280 --> 00:45:27,839
+everything else in your life is trying
+
+986
+00:45:23,839 --> 00:45:32,880
+to get you to be like that, like it.
+
+987
+00:45:27,839 --> 00:45:34,240
+And we want we want you to be like you.
+
+988
+00:45:32,880 --> 00:45:36,400
+So, yeah,
+
+989
+00:45:34,240 --> 00:45:38,560
+that's a novel idea.
+
+990
+00:45:36,400 --> 00:45:41,440
+I know, right?
+
+991
+00:45:38,560 --> 00:45:44,319
+Right. No, it's, you know, we we laugh,
+
+992
+00:45:41,440 --> 00:45:46,000
+but you know, there there's been such a
+
+993
+00:45:44,319 --> 00:45:50,560
+rapid
+
+994
+00:45:46,000 --> 00:45:52,560
+descent into this black hole of AI where
+
+995
+00:45:50,560 --> 00:45:55,520
+you just keep going deeper and deeper
+
+996
+00:45:52,560 --> 00:45:58,560
+into it. The further you go, the more
+
+997
+00:45:55,520 --> 00:46:00,960
+off off course you seem to find that
+
+998
+00:45:58,560 --> 00:46:03,280
+you're you're being led. And, you know,
+
+999
+00:46:00,960 --> 00:46:06,560
+to your earlier point about being a
+
+1000
+00:46:03,280 --> 00:46:08,800
+steward, that's kind of a big deal. We
+
+1001
+00:46:06,560 --> 00:46:10,720
+just really need people to understand
+
+1002
+00:46:08,800 --> 00:46:13,119
+what it really is useful for, what it's
+
+1003
+00:46:10,720 --> 00:46:14,960
+not. You you do need to be the one doing
+
+1004
+00:46:13,119 --> 00:46:18,640
+the leading and the the one having
+
+1005
+00:46:14,960 --> 00:46:21,680
+judgment and providing context to you.
+
+1006
+00:46:18,640 --> 00:46:23,839
+It's it's uh it's artificial, which
+
+1007
+00:46:21,680 --> 00:46:25,680
+means like means it's not real. You
+
+1008
+00:46:23,839 --> 00:46:29,040
+might think twice before you just trust
+
+1009
+00:46:25,680 --> 00:46:29,680
+it blindly. That's just my two cents on
+
+1010
+00:46:29,040 --> 00:46:33,280
+that.
+
+1011
+00:46:29,680 --> 00:46:37,760
+Absolutely. Absolutely. It is our duty
+
+1012
+00:46:33,280 --> 00:46:40,800
+as humans to show up with good intention
+
+1013
+00:46:37,760 --> 00:46:43,920
+and to you know use our critical
+
+1014
+00:46:40,800 --> 00:46:48,160
+thinking and our durable skills which
+
+1015
+00:46:43,920 --> 00:46:50,560
+are things like questioning and you know
+
+1016
+00:46:48,160 --> 00:46:53,280
+critical thinking and empathy and
+
+1017
+00:46:50,560 --> 00:46:56,160
+thinking through the impact of the
+
+1018
+00:46:53,280 --> 00:47:00,319
+action based on you know the information
+
+1019
+00:46:56,160 --> 00:47:01,599
+that you have and just and also like our
+
+1020
+00:47:00,319 --> 00:47:05,920
+intuitive
+
+1021
+00:47:01,599 --> 00:47:08,240
+uh uh you know sensory as being humans I
+
+1022
+00:47:05,920 --> 00:47:10,720
+mean and especially because so much is
+
+1023
+00:47:08,240 --> 00:47:13,119
+remote and we're still feeling very
+
+1024
+00:47:10,720 --> 00:47:16,079
+connected in our virtual world to other
+
+1025
+00:47:13,119 --> 00:47:19,599
+humans. Um, and there are other they're
+
+1026
+00:47:16,079 --> 00:47:23,119
+like different kind of cues like reading
+
+1027
+00:47:19,599 --> 00:47:26,400
+a room on a Zoom is so different than
+
+1028
+00:47:23,119 --> 00:47:30,079
+reading a room in person, but that's a
+
+1029
+00:47:26,400 --> 00:47:32,400
+durable skill that transcends in real
+
+1030
+00:47:30,079 --> 00:47:35,440
+life and virtually, right? And so
+
+1031
+00:47:32,400 --> 00:47:39,359
+there's all all of these things that
+
+1032
+00:47:35,440 --> 00:47:43,359
+make us uniquely human and different and
+
+1033
+00:47:39,359 --> 00:47:46,240
+better than the AI. Those are the things
+
+1034
+00:47:43,359 --> 00:47:49,680
+we want to really sharpen right now at
+
+1035
+00:47:46,240 --> 00:47:53,200
+this moment in time because if we are
+
+1036
+00:47:49,680 --> 00:47:56,160
+truly going to be, you know, helping to
+
+1037
+00:47:53,200 --> 00:47:59,680
+fact check, regulate, uh, be humans in
+
+1038
+00:47:56,160 --> 00:48:02,720
+the loop, build new systems and build a
+
+1039
+00:47:59,680 --> 00:48:06,560
+future, a new future, uh, with
+
+1040
+00:48:02,720 --> 00:48:09,119
+reimagined with AI in it, uh, we need we
+
+1041
+00:48:06,560 --> 00:48:12,160
+need to have these skills
+
+1042
+00:48:09,119 --> 00:48:14,720
+and and what's happening
+
+1043
+00:48:12,160 --> 00:48:16,880
+cognitively in our brains and our our
+
+1044
+00:48:14,720 --> 00:48:18,960
+brain health. And uh you know brain
+
+1045
+00:48:16,880 --> 00:48:21,920
+health, mental wealth and brain capital
+
+1046
+00:48:18,960 --> 00:48:25,440
+are really important topics and themes
+
+1047
+00:48:21,920 --> 00:48:31,040
+right now for a reason because it is it
+
+1048
+00:48:25,440 --> 00:48:32,960
+is also human nature to take the path of
+
+1049
+00:48:31,040 --> 00:48:38,079
+least resistance.
+
+1050
+00:48:32,960 --> 00:48:40,880
+And it is enticing to, you know, think
+
+1051
+00:48:38,079 --> 00:48:45,359
+like, oh great, I can just have my AI do
+
+1052
+00:48:40,880 --> 00:48:49,839
+that and check out, right? So, um there
+
+1053
+00:48:45,359 --> 00:48:53,920
+are other AIs that will actually magnify
+
+1054
+00:48:49,839 --> 00:48:57,119
+the current um problems with with uh
+
+1055
+00:48:53,920 --> 00:49:00,319
+disconnect and burnout. And then there
+
+1056
+00:48:57,119 --> 00:49:03,200
+are AI there's AI use that will um help
+
+1057
+00:49:00,319 --> 00:49:07,760
+you get out ahead of it. um and and see
+
+1058
+00:49:03,200 --> 00:49:09,520
+those early indicators um early on. Uh
+
+1059
+00:49:07,760 --> 00:49:12,880
+so
+
+1060
+00:49:09,520 --> 00:49:15,280
+yeah, the insights that that that teams
+
+1061
+00:49:12,880 --> 00:49:17,680
+and companies are getting from from
+
+1062
+00:49:15,280 --> 00:49:20,319
+everyone uh from all of their employees
+
+1063
+00:49:17,680 --> 00:49:22,400
+and their leadership and the CEO using
+
+1064
+00:49:20,319 --> 00:49:24,079
+Baryons, right? Like everybody's got to
+
+1065
+00:49:22,400 --> 00:49:26,800
+use it
+
+1066
+00:49:24,079 --> 00:49:28,960
+and it's not an us and them tool, right?
+
+1067
+00:49:26,800 --> 00:49:31,839
+It's everybody's got to use it for it to
+
+1068
+00:49:28,960 --> 00:49:34,559
+really work. No, I I I really I really
+
+1069
+00:49:31,839 --> 00:49:37,200
+love this the whole idea of it and it's
+
+1070
+00:49:34,559 --> 00:49:39,440
+it's unique in the in many ways, but the
+
+1071
+00:49:37,200 --> 00:49:42,079
+the piece that to me is probably the
+
+1072
+00:49:39,440 --> 00:49:45,119
+most exciting is you are pushing people
+
+1073
+00:49:42,079 --> 00:49:47,040
+to towards human relationships and
+
+1074
+00:49:45,119 --> 00:49:50,240
+interactions that are actually going to
+
+1075
+00:49:47,040 --> 00:49:52,319
+improve uh their own life experiences
+
+1076
+00:49:50,240 --> 00:49:53,839
+while they're doing doing their work. It
+
+1077
+00:49:52,319 --> 00:49:57,680
+could be your personal relationships
+
+1078
+00:49:53,839 --> 00:49:59,040
+being improved. Um, but the having
+
+1079
+00:49:57,680 --> 00:50:01,359
+conversations with your phone
+
+1080
+00:49:59,040 --> 00:50:03,520
+constantly, if that's all we're doing,
+
+1081
+00:50:01,359 --> 00:50:07,200
+we're we're instantiating things that
+
+1082
+00:50:03,520 --> 00:50:09,040
+are making us less compassionate, less
+
+1083
+00:50:07,200 --> 00:50:10,640
+personable. I mean, it's it's just the
+
+1084
+00:50:09,040 --> 00:50:13,760
+realities of and I think we've all seen
+
+1085
+00:50:10,640 --> 00:50:16,480
+examples and I've even found on occasion
+
+1086
+00:50:13,760 --> 00:50:18,960
+that I my first reaction is to look at
+
+1087
+00:50:16,480 --> 00:50:20,319
+something on the phone instead of using
+
+1088
+00:50:18,960 --> 00:50:23,839
+it for another purpose and calling
+
+1089
+00:50:20,319 --> 00:50:26,480
+someone, right? Um, I'm kind of kind of
+
+1090
+00:50:23,839 --> 00:50:30,480
+getting to towards the the end, I before
+
+1091
+00:50:26,480 --> 00:50:32,160
+I before we go towards the what I call a
+
+1092
+00:50:30,480 --> 00:50:33,200
+rapid fire round, which will be fun.
+
+1093
+00:50:32,160 --> 00:50:34,960
+You're going to be the first one I get
+
+1094
+00:50:33,200 --> 00:50:37,599
+to do that with, by the way. So, very
+
+1095
+00:50:34,960 --> 00:50:39,280
+excited about this. Uh, if you could
+
+1096
+00:50:37,599 --> 00:50:41,520
+talk a little bit about what you're
+
+1097
+00:50:39,280 --> 00:50:43,200
+doing uh right now because I know that
+
+1098
+00:50:41,520 --> 00:50:45,280
+you're you're involved in some pretty
+
+1099
+00:50:43,200 --> 00:50:47,680
+exciting things. Uh, some events. you're
+
+1100
+00:50:45,280 --> 00:50:50,240
+you're you're going to be working in in
+
+1101
+00:50:47,680 --> 00:50:52,079
+places where you people can come and see
+
+1102
+00:50:50,240 --> 00:50:53,520
+and listen to you and your colleagues.
+
+1103
+00:50:52,079 --> 00:50:55,359
+Uh maybe talk a little bit about what
+
+1104
+00:50:53,520 --> 00:50:57,599
+what's coming up in the next few weeks
+
+1105
+00:50:55,359 --> 00:51:00,400
+and where people can find you.
+
+1106
+00:50:57,599 --> 00:51:01,920
+Definitely. So you can always find us at
+
+1107
+00:51:00,400 --> 00:51:05,359
+Baryons.com.
+
+1108
+00:51:01,920 --> 00:51:08,480
+That's b a r yo ns.com. It sounds like
+
+1109
+00:51:05,359 --> 00:51:12,480
+carryon and barri those keep calling
+
+1110
+00:51:08,480 --> 00:51:15,119
+Barryon. We do often speak um virtually
+
+1111
+00:51:12,480 --> 00:51:16,960
+uh across different channels. Next week
+
+1112
+00:51:15,119 --> 00:51:19,920
+I'm going to be at the human and tech
+
+1113
+00:51:16,960 --> 00:51:23,920
+week. It's the offsite for the h the
+
+1114
+00:51:19,920 --> 00:51:26,400
+future of humanity in uh San Francisco.
+
+1115
+00:51:23,920 --> 00:51:28,559
+And so not to date this episode, but
+
+1116
+00:51:26,400 --> 00:51:31,920
+I'll date this episode. It's May 11th
+
+1117
+00:51:28,559 --> 00:51:35,920
+through 15th in 2026.
+
+1118
+00:51:31,920 --> 00:51:38,720
+And for all you future viewer listeners,
+
+1119
+00:51:35,920 --> 00:51:41,920
+um so I'm very excited about that
+
+1120
+00:51:38,720 --> 00:51:45,200
+because this this forum is specifically
+
+1121
+00:51:41,920 --> 00:51:47,839
+for the builders. It's it's a room full
+
+1122
+00:51:45,200 --> 00:51:50,400
+of founders and entrepreneurs who are
+
+1123
+00:51:47,839 --> 00:51:51,599
+building building the future.
+
+1124
+00:51:50,400 --> 00:51:54,160
+So, that's going to be really
+
+1125
+00:51:51,599 --> 00:51:56,880
+interesting. There's a lot coming up
+
+1126
+00:51:54,160 --> 00:51:59,599
+this summer around Brain Capital and
+
+1127
+00:51:56,880 --> 00:52:03,040
+Brain Capital Summits. If you want to
+
+1128
+00:51:59,599 --> 00:52:06,720
+get involved, find out if your city or
+
+1129
+00:52:03,040 --> 00:52:09,760
+your metropolitan area has a brain
+
+1130
+00:52:06,720 --> 00:52:13,839
+capital initiative. A lot of cities and
+
+1131
+00:52:09,760 --> 00:52:16,720
+communities do. and we need all of it.
+
+1132
+00:52:13,839 --> 00:52:18,240
+We need everyone to come to the table to
+
+1133
+00:52:16,720 --> 00:52:19,760
+really do this, right?
+
+1134
+00:52:18,240 --> 00:52:20,400
+Those are the ones I'm most excited
+
+1135
+00:52:19,760 --> 00:52:22,160
+about.
+
+1136
+00:52:20,400 --> 00:52:24,720
+Well, thank you for sharing that. And
+
+1137
+00:52:22,160 --> 00:52:27,119
+for listeners, uh you'll you you'll
+
+1138
+00:52:24,720 --> 00:52:28,800
+start hearing more about this and I'll
+
+1139
+00:52:27,119 --> 00:52:30,800
+make sure that we get the get the the
+
+1140
+00:52:28,800 --> 00:52:32,800
+sites up for you so that you can see
+
+1141
+00:52:30,800 --> 00:52:35,359
+where where you can actually register to
+
+1142
+00:52:32,800 --> 00:52:37,680
+attend these events. If if you can get
+
+1143
+00:52:35,359 --> 00:52:40,000
+there, you really should. I I've been
+
+1144
+00:52:37,680 --> 00:52:41,839
+inspired. We haven't even begun our
+
+1145
+00:52:40,000 --> 00:52:44,000
+conversation to be honest with you.
+
+1146
+00:52:41,839 --> 00:52:46,400
+There's so much more. You know, Diane
+
+1147
+00:52:44,000 --> 00:52:48,640
+and I had a wonderful first conversation
+
+1148
+00:52:46,400 --> 00:52:49,760
+that we could have gone for hours and we
+
+1149
+00:52:48,640 --> 00:52:52,079
+still wouldn't have scratched the
+
+1150
+00:52:49,760 --> 00:52:53,760
+surface. So for listeners, definitely
+
+1151
+00:52:52,079 --> 00:52:54,640
+follow up. Look at the show notes.
+
+1152
+00:52:53,760 --> 00:52:56,240
+There's going to be a lot of good
+
+1153
+00:52:54,640 --> 00:52:58,319
+information there for you. You can reach
+
+1154
+00:52:56,240 --> 00:53:01,440
+out to Diane. You can reach out to her
+
+1155
+00:52:58,319 --> 00:53:05,680
+colleagues. And this is a time for this
+
+1156
+00:53:01,440 --> 00:53:08,240
+kind of human- centered AI support for
+
+1157
+00:53:05,680 --> 00:53:09,599
+human beings and using it for that
+
+1158
+00:53:08,240 --> 00:53:11,599
+purpose is really what they're all
+
+1159
+00:53:09,599 --> 00:53:13,920
+about. And it matters. It matters. We
+
+1160
+00:53:11,599 --> 00:53:15,839
+all need to we all need to be engaging
+
+1161
+00:53:13,920 --> 00:53:18,800
+in ways that are healthy and and
+
+1162
+00:53:15,839 --> 00:53:20,720
+helpful. And having some people that are
+
+1163
+00:53:18,800 --> 00:53:23,920
+building tech specifically designed for
+
+1164
+00:53:20,720 --> 00:53:25,520
+that is a gift to all of us. So
+
+1165
+00:53:23,920 --> 00:53:27,760
+definitely don't don't lose the
+
+1166
+00:53:25,520 --> 00:53:29,280
+opportunity there. Make sure you you you
+
+1167
+00:53:27,760 --> 00:53:32,880
+reach out to them and I think you
+
+1168
+00:53:29,280 --> 00:53:34,559
+probably will be much happier in a few
+
+1169
+00:53:32,880 --> 00:53:35,920
+months than you are today because you're
+
+1170
+00:53:34,559 --> 00:53:37,920
+going to get some tools that are not
+
+1171
+00:53:35,920 --> 00:53:39,839
+complicated. They're actually designed
+
+1172
+00:53:37,920 --> 00:53:43,119
+specifically to make things work easily
+
+1173
+00:53:39,839 --> 00:53:46,400
+for you. So then let's get into this
+
+1174
+00:53:43,119 --> 00:53:49,040
+rapid fire question. Are you ready?
+
+1175
+00:53:46,400 --> 00:53:49,680
+Okay. Oh, I think so. I think I'm ready.
+
+1176
+00:53:49,040 --> 00:53:52,640
+We'll see.
+
+1177
+00:53:49,680 --> 00:53:55,359
+Okay. Well, well, let's start with one
+
+1178
+00:53:52,640 --> 00:53:56,480
+that that it's for me it's kind of fun.
+
+1179
+00:53:55,359 --> 00:53:59,280
+Uh,
+
+1180
+00:53:56,480 --> 00:54:01,760
+I'm sure it is for you, too. If you had
+
+1181
+00:53:59,280 --> 00:54:05,280
+your choice and you could pick one
+
+1182
+00:54:01,760 --> 00:54:06,480
+buzzword and ban it for an entire year,
+
+1183
+00:54:05,280 --> 00:54:10,640
+what would it be?
+
+1184
+00:54:06,480 --> 00:54:13,119
+Oh my gosh. Okay, so there are so many
+
+1185
+00:54:10,640 --> 00:54:17,200
+buzzwords right now floating around with
+
+1186
+00:54:13,119 --> 00:54:20,480
+AI and I think I would have to say I you
+
+1187
+00:54:17,200 --> 00:54:22,480
+know I keep coming back to vibe this,
+
+1188
+00:54:20,480 --> 00:54:25,119
+vibe that, vibe this, vibe that, you
+
+1189
+00:54:22,480 --> 00:54:28,400
+know, and you know I I want to drop the
+
+1190
+00:54:25,119 --> 00:54:30,319
+vibe and just say it's coding. This is
+
+1191
+00:54:28,400 --> 00:54:33,680
+how we code. This is the new way of
+
+1192
+00:54:30,319 --> 00:54:36,880
+coding. We talk into a microphone and
+
+1193
+00:54:33,680 --> 00:54:39,040
+then the code happens, right? like this
+
+1194
+00:54:36,880 --> 00:54:43,319
+is this is the way of the future. It the
+
+1195
+00:54:39,040 --> 00:54:43,319
+future is voice truly.
+
+1196
+00:54:44,559 --> 00:54:50,400
+What's one thing as you're looking at
+
+1197
+00:54:47,599 --> 00:54:53,520
+this reality versus hype thing? What's
+
+1198
+00:54:50,400 --> 00:54:55,599
+one really significant tell that kind of
+
+1199
+00:54:53,520 --> 00:54:57,599
+tells you whether somebody's got
+
+1200
+00:54:55,599 --> 00:55:03,359
+something or if this is just hyper?
+
+1201
+00:54:57,599 --> 00:55:07,680
+H yeah. So you know the question around
+
+1202
+00:55:03,359 --> 00:55:11,200
+which LLM do you use for this widget
+
+1203
+00:55:07,680 --> 00:55:14,160
+tool t you know task or whatever it is
+
+1204
+00:55:11,200 --> 00:55:18,079
+if they're answering with just one like
+
+1205
+00:55:14,160 --> 00:55:20,720
+just run you know you you can use that
+
+1206
+00:55:18,079 --> 00:55:24,720
+LM LLM at this point and you can build
+
+1207
+00:55:20,720 --> 00:55:26,880
+your own version that's that is
+
+1208
+00:55:24,720 --> 00:55:29,680
+yeah that's what I would say
+
+1209
+00:55:26,880 --> 00:55:30,079
+right here's a really tough One.
+
+1210
+00:55:29,680 --> 00:55:32,720
+Mhm.
+
+1211
+00:55:30,079 --> 00:55:36,319
+Cop air tea.
+
+1212
+00:55:32,720 --> 00:55:38,720
+That is the hardest one of all. No, I
+
+1213
+00:55:36,319 --> 00:55:41,200
+one cup of coffee in the morning with my
+
+1214
+00:55:38,720 --> 00:55:43,680
+creatine. Got to put a plug in there for
+
+1215
+00:55:41,200 --> 00:55:46,880
+creatine, which in my head it's always
+
+1216
+00:55:43,680 --> 00:55:51,359
+like a very mus like muscly voice saying
+
+1217
+00:55:46,880 --> 00:55:53,680
+creatine. And so, but it's brain it's
+
+1218
+00:55:51,359 --> 00:55:55,760
+very good brain food actually. So, one
+
+1219
+00:55:53,680 --> 00:55:59,040
+cup of coffee with creatine. And then I
+
+1220
+00:55:55,760 --> 00:56:01,599
+do like I do like to create a pot of tea
+
+1221
+00:55:59,040 --> 00:56:03,200
+that I just kind of sip from throughout
+
+1222
+00:56:01,599 --> 00:56:05,440
+the rest of the day.
+
+1223
+00:56:03,200 --> 00:56:08,079
+So here's a this was a fun one. Can you
+
+1224
+00:56:05,440 --> 00:56:09,520
+give me an example of of something that
+
+1225
+00:56:08,079 --> 00:56:12,160
+you were sure was going to be really
+
+1226
+00:56:09,520 --> 00:56:16,240
+really simple. It ended up being a
+
+1227
+00:56:12,160 --> 00:56:20,319
+really hard mess to tackle.
+
+1228
+00:56:16,240 --> 00:56:25,280
+Yeah. So I once worked with a team of
+
+1229
+00:56:20,319 --> 00:56:28,240
+folks um who we were tasked to create an
+
+1230
+00:56:25,280 --> 00:56:34,000
+AI machine learning course,
+
+1231
+00:56:28,240 --> 00:56:37,599
+right? And I um two of us on the team uh
+
+1232
+00:56:34,000 --> 00:56:41,280
+we actually ended up really uh
+
+1233
+00:56:37,599 --> 00:56:45,119
+completely damaging our computers
+
+1234
+00:56:41,280 --> 00:56:50,319
+trying to trying to get uh trying to get
+
+1235
+00:56:45,119 --> 00:56:51,920
+the environment to to perform. Um and so
+
+1236
+00:56:50,319 --> 00:56:54,000
+I know this is like a very technical
+
+1237
+00:56:51,920 --> 00:56:56,640
+one. I'm trying to keep it like lighter
+
+1238
+00:56:54,000 --> 00:57:00,319
+than ever. But truly, it was supposed to
+
+1239
+00:56:56,640 --> 00:57:03,040
+be like a browserbased environment and
+
+1240
+00:57:00,319 --> 00:57:05,680
+very easy to like set up and and do. And
+
+1241
+00:57:03,040 --> 00:57:10,480
+we were writing a course on how to do
+
+1242
+00:57:05,680 --> 00:57:13,280
+this. And we kept running into problems
+
+1243
+00:57:10,480 --> 00:57:15,839
+and issues when it should have just been
+
+1244
+00:57:13,280 --> 00:57:18,720
+very simple. This was a few years back.
+
+1245
+00:57:15,839 --> 00:57:21,040
+I'm sure it's all fixed now. Right.
+
+1246
+00:57:18,720 --> 00:57:24,880
+Right. you you work across multiple
+
+1247
+00:57:21,040 --> 00:57:26,960
+industries uh but I I spent a lot of
+
+1248
+00:57:24,880 --> 00:57:30,319
+time with the healthcare
+
+1249
+00:57:26,960 --> 00:57:32,880
+uh side of the world here. If you were
+
+1250
+00:57:30,319 --> 00:57:35,040
+to based on all your interactions,
+
+1251
+00:57:32,880 --> 00:57:38,160
+if you could have every health care
+
+1252
+00:57:35,040 --> 00:57:41,680
+executive spend a day in one department
+
+1253
+00:57:38,160 --> 00:57:44,079
+in their hospital, what would it be? So
+
+1254
+00:57:41,680 --> 00:57:47,760
+this answer I'm going to pull on my
+
+1255
+00:57:44,079 --> 00:57:49,839
+personal life um for this answer because
+
+1256
+00:57:47,760 --> 00:57:54,079
+my husband works in healthcare supply
+
+1257
+00:57:49,839 --> 00:57:56,880
+chain management and so I would say they
+
+1258
+00:57:54,079 --> 00:58:02,240
+have to spend a day in the supply chain
+
+1259
+00:57:56,880 --> 00:58:04,799
+management because they are when COVID
+
+1260
+00:58:02,240 --> 00:58:08,400
+happened we always joked that he was
+
+1261
+00:58:04,799 --> 00:58:13,079
+like um the pizza delivery guy that
+
+1262
+00:58:08,400 --> 00:58:13,079
+saves the day in the zombie movie.
+
+1263
+00:58:13,119 --> 00:58:16,000
+It
+
+1264
+00:58:14,240 --> 00:58:21,040
+great visual.
+
+1265
+00:58:16,000 --> 00:58:23,200
+Yes, it is. It's like a role that that
+
+1266
+00:58:21,040 --> 00:58:26,799
+seems like it's so simple, but it really
+
+1267
+00:58:23,200 --> 00:58:30,640
+is so complex. And there um and talk
+
+1268
+00:58:26,799 --> 00:58:35,440
+about having to build a system
+
+1269
+00:58:30,640 --> 00:58:37,839
+with a lot of uh humans involved for and
+
+1270
+00:58:35,440 --> 00:58:40,799
+the purpose is to save the life of
+
+1271
+00:58:37,839 --> 00:58:43,599
+humans, right? to save human lives
+
+1272
+00:58:40,799 --> 00:58:45,280
+ultimately. And so um you know I think
+
+1273
+00:58:43,599 --> 00:58:47,200
+that
+
+1274
+00:58:45,280 --> 00:58:50,000
+there are so many things that just
+
+1275
+00:58:47,200 --> 00:58:51,839
+happen um in the flow of work in
+
+1276
+00:58:50,000 --> 00:58:54,160
+healthcare you know and especially as
+
+1277
+00:58:51,839 --> 00:58:56,000
+like our health professionals are also
+
+1278
+00:58:54,160 --> 00:58:58,240
+facing burnout and they're also
+
+1279
+00:58:56,000 --> 00:59:01,119
+overloaded and they're also going a
+
+1280
+00:58:58,240 --> 00:59:04,400
+million miles an hour and so you know
+
+1281
+00:59:01,119 --> 00:59:08,240
+when a supply isn't where they expected
+
+1282
+00:59:04,400 --> 00:59:10,720
+or runs out or they they forgot to order
+
+1283
+00:59:08,240 --> 00:59:13,040
+it and now why isn't it here? you know,
+
+1284
+00:59:10,720 --> 00:59:16,160
+like all of these things, these it's
+
+1285
+00:59:13,040 --> 00:59:19,520
+it's often a point of of friction in
+
+1286
+00:59:16,160 --> 00:59:21,760
+that flow of work. And so, so there's
+
+1287
+00:59:19,520 --> 00:59:24,559
+like layers of systems that typically
+
+1288
+00:59:21,760 --> 00:59:29,040
+are are built within within a hospital
+
+1289
+00:59:24,559 --> 00:59:32,960
+system to keep the supply chain going
+
+1290
+00:59:29,040 --> 00:59:35,280
+and going smoothly and almost invisible.
+
+1291
+00:59:32,960 --> 00:59:37,440
+Um, and it works, it's when it works,
+
+1292
+00:59:35,280 --> 00:59:39,599
+it's amazing. And when it when it when
+
+1293
+00:59:37,440 --> 00:59:43,040
+there are friction points or when it's
+
+1294
+00:59:39,599 --> 00:59:45,680
+uh you know god for broken uh then it
+
+1295
+00:59:43,040 --> 00:59:48,319
+really does you know cause problems. So
+
+1296
+00:59:45,680 --> 00:59:50,880
+just like we saw in COVID when we and
+
+1297
+00:59:48,319 --> 00:59:52,960
+everybody was running out of PPE,
+
+1298
+00:59:50,880 --> 00:59:55,520
+right? You know, it's it's it's
+
+1299
+00:59:52,960 --> 00:59:59,040
+fascinating because I think the the
+
+1300
+00:59:55,520 --> 01:00:01,359
+realities are such that we are
+
+1301
+00:59:59,040 --> 01:00:03,680
+redefining dial tone basically on a
+
+1302
+01:00:01,359 --> 01:00:05,839
+daily basis because we're adding and
+
+1303
+01:00:03,680 --> 01:00:08,079
+automating more and more things and the
+
+1304
+01:00:05,839 --> 01:00:10,640
+expectation is just going to be there
+
+1305
+01:00:08,079 --> 01:00:13,280
+and when it's not that you know that's
+
+1306
+01:00:10,640 --> 01:00:14,720
+when things get loud. uh you know in the
+
+1307
+01:00:13,280 --> 01:00:18,319
+space I've operated in with data and
+
+1308
+01:00:14,720 --> 01:00:19,920
+analytics the days that you hope are the
+
+1309
+01:00:18,319 --> 01:00:22,480
+most prevalent are the ones that no one
+
+1310
+01:00:19,920 --> 01:00:24,720
+even knows what you're doing. Uh it's
+
+1311
+01:00:22,480 --> 01:00:27,680
+like if you if you're this brown guy at
+
+1312
+01:00:24,720 --> 01:00:30,160
+your favorite in your your the Rolling
+
+1313
+01:00:27,680 --> 01:00:33,920
+Stones are playing and and you people
+
+1314
+01:00:30,160 --> 01:00:35,280
+know who you are that's not a good day.
+
+1315
+01:00:33,920 --> 01:00:36,880
+That was a bad day.
+
+1316
+01:00:35,280 --> 01:00:38,079
+Right. That was a bad day for the wrong
+
+1317
+01:00:36,880 --> 01:00:39,839
+reason. Yeah.
+
+1318
+01:00:38,079 --> 01:00:41,520
+Right. But that dial keeps getting
+
+1319
+01:00:39,839 --> 01:00:45,839
+redefined. the standards get higher and
+
+1320
+01:00:41,520 --> 01:00:49,680
+higher and you know the good technology
+
+1321
+01:00:45,839 --> 01:00:51,839
+uh good practice you know you don't have
+
+1322
+01:00:49,680 --> 01:00:53,520
+a need to pay attention to certain
+
+1323
+01:00:51,839 --> 01:00:55,920
+things and you can take it for granted
+
+1324
+01:00:53,520 --> 01:00:57,599
+and you don't necessarily understand
+
+1325
+01:00:55,920 --> 01:00:59,280
+what's going on behind the scenes that
+
+1326
+01:00:57,599 --> 01:01:00,799
+makes it so that dial tone is you pick
+
+1327
+01:00:59,280 --> 01:01:03,200
+up the phone it's it's our you hear a
+
+1328
+01:01:00,799 --> 01:01:04,559
+dial to every time anyway it's always
+
+1329
+01:01:03,200 --> 01:01:07,359
+been an interesting concept for me
+
+1330
+01:01:04,559 --> 01:01:08,880
+because the way the technologies evolved
+
+1331
+01:01:07,359 --> 01:01:10,480
+sometimes we forget some of the things
+
+1332
+01:01:08,880 --> 01:01:13,119
+that we're using we depend
+
+1333
+01:01:10,480 --> 01:01:15,440
+are less than a decade old and it's
+
+1334
+01:01:13,119 --> 01:01:17,119
+astounding how quickly we adopt and
+
+1335
+01:01:15,440 --> 01:01:18,240
+we're you know getting used to these
+
+1336
+01:01:17,119 --> 01:01:21,040
+things but
+
+1337
+01:01:18,240 --> 01:01:25,040
+no fascinating I could have talked for
+
+1338
+01:01:21,040 --> 01:01:27,760
+you for hours with you um and we have to
+
+1339
+01:01:25,040 --> 01:01:30,240
+do this again absolutely I really
+
+1340
+01:01:27,760 --> 01:01:32,079
+appreciate what what you're doing love
+
+1341
+01:01:30,240 --> 01:01:34,720
+the focus of your company love the
+
+1342
+01:01:32,079 --> 01:01:36,640
+vision love the human first approach
+
+1343
+01:01:34,720 --> 01:01:36,960
+absolutely amazing so
+
+1344
+01:01:36,640 --> 01:01:39,200
+Chris
+
+1345
+01:01:36,960 --> 01:01:40,079
+on behalf of the listeners the this
+
+1346
+01:01:39,200 --> 01:01:43,200
+singer
+
+1347
+01:01:40,079 --> 01:01:44,880
+and on my own behalf, thank you.
+
+1348
+01:01:43,200 --> 01:01:47,040
+Sincerely, thank you for for taking the
+
+1349
+01:01:44,880 --> 01:01:47,599
+time to have this conversation with me
+
+1350
+01:01:47,040 --> 01:01:49,440
+today.
+
+1351
+01:01:47,599 --> 01:01:51,359
+Thank you so much, Chris. This has been
+
+1352
+01:01:49,440 --> 01:01:53,119
+really important. Thank you.
+
+1353
+01:01:51,359 --> 01:01:55,200
+That's it for this episode of the Signar
+
+1354
+01:01:53,119 --> 01:01:57,280
+Room. If today's conversation sparked
+
+1355
+01:01:55,200 --> 01:01:59,440
+something in you, an idea, a challenge,
+
+1356
+01:01:57,280 --> 01:02:01,200
+or a perspective worth amplifying, I'd
+
+1357
+01:01:59,440 --> 01:02:03,599
+love to hear from you. Message me on
+
+1358
+01:02:01,200 --> 01:02:07,520
+LinkedIn or visit cigarroompodcast.com
+
+1359
+01:02:03,599 --> 01:02:07,520
+to explore being a guest on an upcoming
+
