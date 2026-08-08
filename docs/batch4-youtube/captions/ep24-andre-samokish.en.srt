@@ -1,0 +1,3840 @@
+1
+00:00:00,080 --> 00:00:04,720
+If you collect garbage, you'll have
+
+2
+00:00:01,760 --> 00:00:07,759
+garbage in implementation stage. I feel
+
+3
+00:00:04,720 --> 00:00:09,760
+like the moment when for example they
+
+4
+00:00:07,759 --> 00:00:12,080
+not developing they implementing the
+
+5
+00:00:09,760 --> 00:00:15,120
+buying services and then just think
+
+6
+00:00:12,080 --> 00:00:18,240
+about it how you going to use it and
+
+7
+00:00:15,120 --> 00:00:21,199
+again talk to legal team to understand
+
+8
+00:00:18,240 --> 00:00:24,400
+what would be the risks because there is
+
+9
+00:00:21,199 --> 00:00:26,880
+some regulation even saying that there
+
+10
+00:00:24,400 --> 00:00:29,760
+is prohibited AI activities you need to
+
+11
+00:00:26,880 --> 00:00:33,120
+be aware of. So that implementation your
+
+12
+00:00:29,760 --> 00:00:35,840
+use case can be very tricky and very
+
+13
+00:00:33,120 --> 00:00:39,280
+harmful for your organization. So why do
+
+14
+00:00:35,840 --> 00:00:41,280
+not just go over those list of high-risk
+
+15
+00:00:39,280 --> 00:00:43,600
+activities talk to legal team and
+
+16
+00:00:41,280 --> 00:00:46,640
+understand in early stage what you can
+
+17
+00:00:43,600 --> 00:00:48,399
+do with those tool and what you cannot.
+
+18
+00:00:46,640 --> 00:00:52,160
+So if you still have a problem you're
+
+19
+00:00:48,399 --> 00:00:53,920
+trying to solve with AI and it's better
+
+20
+00:00:52,160 --> 00:00:55,680
+to understand in early stage.
+
+21
+00:00:53,920 --> 00:00:58,000
+Andre welcome to the signal room. It's
+
+22
+00:00:55,680 --> 00:00:59,680
+great to have you. Oh, thank you, Chris.
+
+23
+00:00:58,000 --> 00:01:02,719
+Thank you for having me here. I'm so
+
+24
+00:00:59,680 --> 00:01:04,479
+excited to do this conversation. Yeah,
+
+25
+00:01:02,719 --> 00:01:06,560
+I'm happy to be here.
+
+26
+00:01:04,479 --> 00:01:08,320
+It's been a little bit, but you know, I
+
+27
+00:01:06,560 --> 00:01:09,840
+think we met out in Las Vegas at the put
+
+28
+00:01:08,320 --> 00:01:12,560
+data first conference, right?
+
+29
+00:01:09,840 --> 00:01:15,040
+Yeah, that correct. I love all events in
+
+30
+00:01:12,560 --> 00:01:17,520
+person. And you can you can meet uh
+
+31
+00:01:15,040 --> 00:01:19,680
+experts and just just talk about
+
+32
+00:01:17,520 --> 00:01:22,880
+different expertise because that one was
+
+33
+00:01:19,680 --> 00:01:26,479
+basically mostly about security data put
+
+34
+00:01:22,880 --> 00:01:28,479
+data first but also I met couple privacy
+
+35
+00:01:26,479 --> 00:01:31,759
+experts and of course everyone were
+
+36
+00:01:28,479 --> 00:01:34,000
+talking about AI implication and how it
+
+37
+00:01:31,759 --> 00:01:36,799
+how it works together with privacy
+
+38
+00:01:34,000 --> 00:01:37,280
+security and all related data of course
+
+39
+00:01:36,799 --> 00:01:38,479
+data
+
+40
+00:01:37,280 --> 00:01:39,759
+that was good that was one of the things
+
+41
+00:01:38,479 --> 00:01:42,720
+that kind of struck me about it because
+
+42
+00:01:39,759 --> 00:01:44,960
+I've been to conferences and you know AI
+
+43
+00:01:42,720 --> 00:01:46,960
+is certainly a topic, but it was really
+
+44
+00:01:44,960 --> 00:01:48,799
+cool for me because the biggest concerns
+
+45
+00:01:46,960 --> 00:01:50,720
+that people are talking about these days
+
+46
+00:01:48,799 --> 00:01:52,240
+are really around governance and and the
+
+47
+00:01:50,720 --> 00:01:54,399
+healthc care sector in particular. We're
+
+48
+00:01:52,240 --> 00:01:56,240
+we're a little behind the behind the the
+
+49
+00:01:54,399 --> 00:01:58,479
+curve on that one. A lot of folks like
+
+50
+00:01:56,240 --> 00:02:00,719
+yourselves were like really talking
+
+51
+00:01:58,479 --> 00:02:02,399
+about this stuff with a lot of passion
+
+52
+00:02:00,719 --> 00:02:05,119
+and you know for me it was like very
+
+53
+00:02:02,399 --> 00:02:07,040
+very comforting to know that people like
+
+54
+00:02:05,119 --> 00:02:09,039
+you are really engaged in and thinking
+
+55
+00:02:07,040 --> 00:02:12,560
+about the security the privacy aspects
+
+56
+00:02:09,039 --> 00:02:14,800
+of it and kind of how pushing us a bit
+
+57
+00:02:12,560 --> 00:02:16,160
+on on that side of it so that we are
+
+58
+00:02:14,800 --> 00:02:18,319
+very thoughtful about how we use it.
+
+59
+00:02:16,160 --> 00:02:21,200
+It's one thing to have good intention.
+
+60
+00:02:18,319 --> 00:02:22,480
+It's it's another thing to right. So
+
+61
+00:02:21,200 --> 00:02:24,560
+very excited about having our
+
+62
+00:02:22,480 --> 00:02:27,040
+conversation this morning. Let's kind of
+
+63
+00:02:24,560 --> 00:02:29,120
+start on you know the real basic
+
+64
+00:02:27,040 --> 00:02:31,760
+premises that that people don't probably
+
+65
+00:02:29,120 --> 00:02:34,160
+understand very well. Can try to explain
+
+66
+00:02:31,760 --> 00:02:37,280
+for so that the role of privacy and AI
+
+67
+00:02:34,160 --> 00:02:38,959
+governance as a manager or to a manager
+
+68
+00:02:37,280 --> 00:02:41,840
+that's not an expert. Yeah, great
+
+69
+00:02:38,959 --> 00:02:44,160
+question because few years ago we just
+
+70
+00:02:41,840 --> 00:02:48,000
+had kind of privacy governance right
+
+71
+00:02:44,160 --> 00:02:52,400
+data governance but then new topic came
+
+72
+00:02:48,000 --> 00:02:56,000
+AI and now we there is some demand on
+
+73
+00:02:52,400 --> 00:02:58,400
+experts about privacy and AI governance
+
+74
+00:02:56,000 --> 00:03:01,360
+because both of them touch data data
+
+75
+00:02:58,400 --> 00:03:05,280
+touch all the industries and as a
+
+76
+00:03:01,360 --> 00:03:08,000
+manager for me most important is to of
+
+77
+00:03:05,280 --> 00:03:10,080
+course to support business uh on
+
+78
+00:03:08,000 --> 00:03:15,040
+achieving their goals. They want to
+
+79
+00:03:10,080 --> 00:03:17,120
+build new AI tools or implement buying
+
+80
+00:03:15,040 --> 00:03:21,840
+uh some services from third parties,
+
+81
+00:03:17,120 --> 00:03:25,760
+vendors and those initiatives now just
+
+82
+00:03:21,840 --> 00:03:29,760
+going so fast and role of privacy and
+
+83
+00:03:25,760 --> 00:03:31,840
+air governance experts is to keep up and
+
+84
+00:03:29,760 --> 00:03:34,159
+also be proactive. How you can be
+
+85
+00:03:31,840 --> 00:03:37,760
+proactive? You need to think ahead a
+
+86
+00:03:34,159 --> 00:03:40,159
+little bit and of course build processes
+
+87
+00:03:37,760 --> 00:03:42,799
+and controls in place. I don't want to
+
+88
+00:03:40,159 --> 00:03:45,519
+scare people with word controls because
+
+89
+00:03:42,799 --> 00:03:49,040
+controls means you can go with your
+
+90
+00:03:45,519 --> 00:03:52,080
+initiative business initiative when you
+
+91
+00:03:49,040 --> 00:03:55,760
+have those controls if it's required and
+
+92
+00:03:52,080 --> 00:03:59,360
+you can feel safe if you implement those
+
+93
+00:03:55,760 --> 00:04:03,280
+things up front. What we call privacy by
+
+94
+00:03:59,360 --> 00:04:06,159
+design. Yeah. implement uh some
+
+95
+00:04:03,280 --> 00:04:09,120
+processes, controls, policies on time in
+
+96
+00:04:06,159 --> 00:04:13,200
+early stage and then you can just be
+
+97
+00:04:09,120 --> 00:04:15,760
+sure that when you when you're launching
+
+98
+00:04:13,200 --> 00:04:19,040
+your product or feature, you already
+
+99
+00:04:15,760 --> 00:04:20,959
+done. And it's not just about complying
+
+100
+00:04:19,040 --> 00:04:23,360
+uh with requirements which is very
+
+101
+00:04:20,959 --> 00:04:26,000
+important but also it's about building
+
+102
+00:04:23,360 --> 00:04:29,680
+trust with with clients and be
+
+103
+00:04:26,000 --> 00:04:32,800
+transparent as much as you can because
+
+104
+00:04:29,680 --> 00:04:34,320
+when people start using new tools they
+
+105
+00:04:32,800 --> 00:04:36,960
+definitely
+
+106
+00:04:34,320 --> 00:04:39,120
+uh the first concern they have what will
+
+107
+00:04:36,960 --> 00:04:41,840
+happen with their data once they enter
+
+108
+00:04:39,120 --> 00:04:45,680
+to the service or even touch website
+
+109
+00:04:41,840 --> 00:04:49,040
+right and say uh again they non-experts
+
+110
+00:04:45,680 --> 00:04:51,919
+Maybe I mean they known privacy known AI
+
+111
+00:04:49,040 --> 00:04:55,040
+governance experts. So they want to feel
+
+112
+00:04:51,919 --> 00:04:58,240
+safe and trust is something you need to
+
+113
+00:04:55,040 --> 00:05:01,280
+build. So role of privacy in AI
+
+114
+00:04:58,240 --> 00:05:03,840
+governance manager is to help business
+
+115
+00:05:01,280 --> 00:05:05,680
+to implement to build first of all to
+
+116
+00:05:03,840 --> 00:05:07,360
+understand what controls and processes
+
+117
+00:05:05,680 --> 00:05:11,039
+you need to have in place to make sure
+
+118
+00:05:07,360 --> 00:05:14,720
+that you using data in safe way. then
+
+119
+00:05:11,039 --> 00:05:18,160
+also following in ongoing base following
+
+120
+00:05:14,720 --> 00:05:20,320
+those controls and I I would say I would
+
+121
+00:05:18,160 --> 00:05:23,919
+highlight one more role of privacy
+
+122
+00:05:20,320 --> 00:05:26,800
+manager is to educate people on um
+
+123
+00:05:23,919 --> 00:05:30,240
+privacy and AI governance it's it's not
+
+124
+00:05:26,800 --> 00:05:33,600
+something that the main goal is to solve
+
+125
+00:05:30,240 --> 00:05:37,360
+problem it's mostly I would say it's
+
+126
+00:05:33,600 --> 00:05:39,199
+also about building building uh to be
+
+127
+00:05:37,360 --> 00:05:42,000
+proactive building trust with clients
+
+128
+00:05:39,199 --> 00:05:44,479
+and even using this like when you have
+
+129
+00:05:42,000 --> 00:05:46,800
+strong governance and privacy controls
+
+130
+00:05:44,479 --> 00:05:50,479
+in place as a business owner.
+
+131
+00:05:46,800 --> 00:05:52,080
+You mentioned governance and u the sense
+
+132
+00:05:50,479 --> 00:05:54,479
+of controls and I think that's one of
+
+133
+00:05:52,080 --> 00:05:57,280
+the the bad wraps that that governance
+
+134
+00:05:54,479 --> 00:05:58,800
+has had in times past but it it's now
+
+135
+00:05:57,280 --> 00:06:00,720
+not something that's intended to slow
+
+136
+00:05:58,800 --> 00:06:02,960
+you down. It's the only way you can
+
+137
+00:06:00,720 --> 00:06:05,039
+safely speed up. I mean that you know I
+
+138
+00:06:02,960 --> 00:06:07,520
+just was working on developing a website
+
+139
+00:06:05,039 --> 00:06:11,039
+and I do not code but the technologies
+
+140
+00:06:07,520 --> 00:06:14,639
+are so crazy. I built a pre-roll website
+
+141
+00:06:11,039 --> 00:06:17,039
+myself and I mean it's moving between
+
+142
+00:06:14,639 --> 00:06:19,680
+screens and all kinds of things. So I
+
+143
+00:06:17,039 --> 00:06:22,080
+can only imagine the the types of risks
+
+144
+00:06:19,680 --> 00:06:23,759
+that could be taken if people are
+
+145
+00:06:22,080 --> 00:06:25,360
+engaging, you know, someone like
+
+146
+00:06:23,759 --> 00:06:27,440
+yourself with this expertise to help
+
+147
+00:06:25,360 --> 00:06:29,840
+them understand where to put your guard
+
+148
+00:06:27,440 --> 00:06:31,600
+rails and don't do that and don't, you
+
+149
+00:06:29,840 --> 00:06:33,440
+know, get ahead of yourself cuz we're
+
+150
+00:06:31,600 --> 00:06:35,360
+going way too fast at this point.
+
+151
+00:06:33,440 --> 00:06:38,639
+Yeah, definitely. And those controls
+
+152
+00:06:35,360 --> 00:06:42,080
+like just simple example would be uh put
+
+153
+00:06:38,639 --> 00:06:44,000
+proper language language popup window
+
+154
+00:06:42,080 --> 00:06:46,000
+message that you interacting with the
+
+155
+00:06:44,000 --> 00:06:48,639
+system. For example, this is example of
+
+156
+00:06:46,000 --> 00:06:51,039
+controls. It's nothing scary. It just uh
+
+157
+00:06:48,639 --> 00:06:53,600
+try to design it as early as you can in
+
+158
+00:06:51,039 --> 00:06:56,960
+early stage of your product development
+
+159
+00:06:53,600 --> 00:06:59,840
+and you okay to go. So just something
+
+160
+00:06:56,960 --> 00:07:02,560
+that will help you and just as you're
+
+161
+00:06:59,840 --> 00:07:04,319
+saying it's not stopping that's why
+
+162
+00:07:02,560 --> 00:07:06,880
+that's why I feel like one of the role
+
+163
+00:07:04,319 --> 00:07:10,400
+of the manager to help people to kind of
+
+164
+00:07:06,880 --> 00:07:13,280
+change mind a little bit or shift to
+
+165
+00:07:10,400 --> 00:07:16,319
+kind of culture of privacy and AI governance.
+
+166
+00:07:13,280 --> 00:07:19,199
+Yeah. I mean that kind of know touches
+
+167
+00:07:16,319 --> 00:07:20,880
+on there areas that people are confusing
+
+168
+00:07:19,199 --> 00:07:23,520
+you know you know control versus
+
+169
+00:07:20,880 --> 00:07:25,199
+governance that's Warner but what are
+
+170
+00:07:23,520 --> 00:07:28,160
+some of the other ways that people might
+
+171
+00:07:25,199 --> 00:07:30,000
+be confused about really what this means
+
+172
+00:07:28,160 --> 00:07:32,000
+or what like some of the misconceptions
+
+173
+00:07:30,000 --> 00:07:32,720
+people might have about privacy and AI
+
+174
+00:07:32,000 --> 00:07:35,840
+governance
+
+175
+00:07:32,720 --> 00:07:38,800
+maybe I would highlight one misconcept
+
+176
+00:07:35,840 --> 00:07:42,080
+that governance it's something that
+
+177
+00:07:38,800 --> 00:07:46,720
+should be handled just by legal and
+
+178
+00:07:42,080 --> 00:07:49,520
+privacy team, but I feel like we really
+
+179
+00:07:46,720 --> 00:07:52,080
+encourage product people, marketing
+
+180
+00:07:49,520 --> 00:07:55,280
+teams, crossf functional teams to be
+
+181
+00:07:52,080 --> 00:07:58,960
+proactive and just to contribute as much
+
+182
+00:07:55,280 --> 00:08:03,120
+as I can to talk to our teams earlier so
+
+183
+00:07:58,960 --> 00:08:05,599
+we can discuss and again just even if
+
+184
+00:08:03,120 --> 00:08:09,360
+there is some risks another topic to
+
+185
+00:08:05,599 --> 00:08:11,919
+talk about risks when uh we saying risk
+
+186
+00:08:09,360 --> 00:08:14,160
+it can be mitigated again we can put
+
+187
+00:08:11,919 --> 00:08:17,199
+some controls in place and it doesn't
+
+188
+00:08:14,160 --> 00:08:19,440
+mean risk you should stop. Most likely
+
+189
+00:08:17,199 --> 00:08:22,400
+you can mitigate that. I feel like
+
+190
+00:08:19,440 --> 00:08:24,560
+privacy and governance it's work for all
+
+191
+00:08:22,400 --> 00:08:26,639
+cross functional teams. Yeah, I think
+
+192
+00:08:24,560 --> 00:08:29,120
+it's a it's an interesting challenge
+
+193
+00:08:26,639 --> 00:08:31,199
+too. Organizations are pretty
+
+194
+00:08:29,120 --> 00:08:32,880
+sophisticated and they've got a lot of
+
+195
+00:08:31,199 --> 00:08:34,479
+different verticals and there's going to
+
+196
+00:08:32,880 --> 00:08:36,320
+be some people you need in the room.
+
+197
+00:08:34,479 --> 00:08:37,519
+They don't really don't spend a lot of
+
+198
+00:08:36,320 --> 00:08:39,680
+time thinking about this kind of
+
+199
+00:08:37,519 --> 00:08:42,959
+technology, but we need them to because
+
+200
+00:08:39,680 --> 00:08:44,880
+their subject matter expertise really is
+
+201
+00:08:42,959 --> 00:08:46,880
+needs to be represented to make sure
+
+202
+00:08:44,880 --> 00:08:49,200
+that we are understanding all of the
+
+203
+00:08:46,880 --> 00:08:51,440
+areas that we could have risk. It's
+
+204
+00:08:49,200 --> 00:08:52,640
+important people understand that you're
+
+205
+00:08:51,440 --> 00:08:54,720
+not there to control things. You're
+
+206
+00:08:52,640 --> 00:08:57,440
+there to support them as a manager that
+
+207
+00:08:54,720 --> 00:09:00,399
+is responsible for this stuff. Um, and I
+
+208
+00:08:57,440 --> 00:09:03,519
+maybe I think I'm kind of cool because I
+
+209
+00:09:00,399 --> 00:09:04,800
+mean you've you've been pretty upbeat
+
+210
+00:09:03,519 --> 00:09:06,480
+all the time that we've spoken about
+
+211
+00:09:04,800 --> 00:09:08,480
+this. Maybe you could talk a little bit
+
+212
+00:09:06,480 --> 00:09:10,560
+about an initiative that you're that
+
+213
+00:09:08,480 --> 00:09:12,560
+you're working on that excites you. I
+
+214
+00:09:10,560 --> 00:09:15,279
+mean, I don't know if people think about
+
+215
+00:09:12,560 --> 00:09:17,519
+privacy and security and governance and
+
+216
+00:09:15,279 --> 00:09:19,600
+think that might be exciting, but I kind
+
+217
+00:09:17,519 --> 00:09:21,279
+of think it is because you've been we've
+
+218
+00:09:19,600 --> 00:09:22,000
+been having a fun conversation since we
+
+219
+00:09:21,279 --> 00:09:25,200
+met.
+
+220
+00:09:22,000 --> 00:09:28,560
+Yeah. I feel like privacy and AI
+
+221
+00:09:25,200 --> 00:09:30,080
+governance now sometimes associates as
+
+222
+00:09:28,560 --> 00:09:32,959
+something very complicated for
+
+223
+00:09:30,080 --> 00:09:35,760
+non-experts and even for privacy experts
+
+224
+00:09:32,959 --> 00:09:39,040
+even for legal teams. It's uh
+
+225
+00:09:35,760 --> 00:09:42,399
+overwhelmed with new regulations with
+
+226
+00:09:39,040 --> 00:09:46,560
+complicated topics. So I feel like one
+
+227
+00:09:42,399 --> 00:09:49,839
+of the initiatives that excites me is to
+
+228
+00:09:46,560 --> 00:09:53,839
+implement educational trainings to talk
+
+229
+00:09:49,839 --> 00:09:56,320
+to um non-experts cross functional teams
+
+230
+00:09:53,839 --> 00:09:59,360
+about simple things fundamental things
+
+231
+00:09:56,320 --> 00:10:02,320
+what is what is personal data how AI
+
+232
+00:09:59,360 --> 00:10:05,680
+even related to personal data so what is
+
+233
+00:10:02,320 --> 00:10:08,240
+the main principles of uh handling
+
+234
+00:10:05,680 --> 00:10:10,320
+personal data I mean I feel like I can
+
+235
+00:10:08,240 --> 00:10:12,240
+talk even just about one principle data
+
+236
+00:10:10,320 --> 00:10:15,519
+minim optimization. I can I need one day
+
+237
+00:10:12,240 --> 00:10:18,000
+to talk about data minimization that
+
+238
+00:10:15,519 --> 00:10:20,640
+teams you you cannot collect data just
+
+239
+00:10:18,000 --> 00:10:22,399
+in case. Right. Right. You need to you
+
+240
+00:10:20,640 --> 00:10:24,959
+need to you need to know why you that
+
+241
+00:10:22,399 --> 00:10:29,760
+data and most important you need to
+
+242
+00:10:24,959 --> 00:10:31,760
+explain your customers and uh get their
+
+243
+00:10:29,760 --> 00:10:36,320
+consent that how you going to use that
+
+244
+00:10:31,760 --> 00:10:39,360
+data. So it just you save a lot of time
+
+245
+00:10:36,320 --> 00:10:41,360
+and maybe f and maybe save time when you
+
+246
+00:10:39,360 --> 00:10:43,279
+need to do future assessments when you
+
+247
+00:10:41,360 --> 00:10:48,320
+talk to your cross cross functional
+
+248
+00:10:43,279 --> 00:10:50,399
+teams just now yeah set up 15 minutes I
+
+249
+00:10:48,320 --> 00:10:53,680
+don't think like you need couple hours
+
+250
+00:10:50,399 --> 00:10:56,959
+meetings every day talking about privacy
+
+251
+00:10:53,680 --> 00:10:58,720
+just 15 minutes about privacy uh maybe
+
+252
+00:10:56,959 --> 00:11:01,600
+once a week or something like that it
+
+253
+00:10:58,720 --> 00:11:05,040
+should be very simple conversation about
+
+254
+00:11:01,600 --> 00:11:07,120
+most important important things and that
+
+255
+00:11:05,040 --> 00:11:08,640
+shift that education not happening
+
+256
+00:11:07,120 --> 00:11:12,000
+overnight
+
+257
+00:11:08,640 --> 00:11:15,040
+it just takes time so that efforts
+
+258
+00:11:12,000 --> 00:11:17,519
+really require and I like implementing
+
+259
+00:11:15,040 --> 00:11:20,160
+trainings also I'm very excited about
+
+260
+00:11:17,519 --> 00:11:23,040
+automation because again it's about
+
+261
+00:11:20,160 --> 00:11:27,920
+simplifying privacy processes when you
+
+262
+00:11:23,040 --> 00:11:31,519
+can implement tool that help you to uh
+
+263
+00:11:27,920 --> 00:11:35,120
+automate and move from Excel sheets to
+
+264
+00:11:31,519 --> 00:11:38,399
+um traceable uh workflow, sending
+
+265
+00:11:35,120 --> 00:11:41,839
+notifications in assessments, setting up
+
+266
+00:11:38,399 --> 00:11:44,240
+tasks involve people through one tool to
+
+267
+00:11:41,839 --> 00:11:46,240
+collaborate on data privacy and AI
+
+268
+00:11:44,240 --> 00:11:49,600
+governance. There is a lot of
+
+269
+00:11:46,240 --> 00:11:53,040
+similarities how you handle data privacy
+
+270
+00:11:49,600 --> 00:11:55,519
+and governance process. So, uh yeah,
+
+271
+00:11:53,040 --> 00:11:57,519
+these two things I I feel like it's very
+
+272
+00:11:55,519 --> 00:12:00,000
+important to keep in mind for for
+
+273
+00:11:57,519 --> 00:12:02,079
+privacy experts. You you you mentioned
+
+274
+00:12:00,000 --> 00:12:04,560
+something that I think is really uh
+
+275
+00:12:02,079 --> 00:12:06,079
+worth kind of pausing on for a second.
+
+276
+00:12:04,560 --> 00:12:07,920
+Historically,
+
+277
+00:12:06,079 --> 00:12:09,600
+in my experience over the years, you
+
+278
+00:12:07,920 --> 00:12:11,839
+know, people that are dealing with data
+
+279
+00:12:09,600 --> 00:12:14,320
+and analytics, data warehousing, they
+
+280
+00:12:11,839 --> 00:12:16,160
+tend to go for I want to pull in
+
+281
+00:12:14,320 --> 00:12:17,360
+everything. I I just want to, you know,
+
+282
+00:12:16,160 --> 00:12:19,440
+have you talk about that just for a
+
+283
+00:12:17,360 --> 00:12:21,279
+second because this is a shift that has
+
+284
+00:12:19,440 --> 00:12:23,040
+to be made and organizations have to
+
+285
+00:12:21,279 --> 00:12:25,279
+think about this differently now because
+
+286
+00:12:23,040 --> 00:12:27,440
+if they're going to start using the AI
+
+287
+00:12:25,279 --> 00:12:29,040
+capabilities on it, now you have to
+
+288
+00:12:27,440 --> 00:12:31,760
+really think about things different.
+
+289
+00:12:29,040 --> 00:12:35,120
+that you you can't just have these these
+
+290
+00:12:31,760 --> 00:12:36,959
+uh these new programs or solutions
+
+291
+00:12:35,120 --> 00:12:38,880
+attached to the ocean and think
+
+292
+00:12:36,959 --> 00:12:40,959
+everything's going to be okay. Uh that
+
+293
+00:12:38,880 --> 00:12:43,279
+there's got to be some some uh
+
+294
+00:12:40,959 --> 00:12:45,680
+conversations and and ways to handle
+
+295
+00:12:43,279 --> 00:12:48,560
+this. And if I know we didn't talk about
+
+296
+00:12:45,680 --> 00:12:50,240
+this previously, but maybe just talk a
+
+297
+00:12:48,560 --> 00:12:52,160
+little bit about how you you support
+
+298
+00:12:50,240 --> 00:12:53,519
+teams and help them to think through
+
+299
+00:12:52,160 --> 00:12:55,200
+that effort because it just seems like
+
+300
+00:12:53,519 --> 00:12:56,880
+it's a it's going to be a a pretty
+
+301
+00:12:55,200 --> 00:12:58,880
+significant shift in how they think and
+
+302
+00:12:56,880 --> 00:13:01,839
+how they manage the data sets. Yeah,
+
+303
+00:12:58,880 --> 00:13:05,120
+great question because I feel like now
+
+304
+00:13:01,839 --> 00:13:07,600
+every team wants to on board some tool
+
+305
+00:13:05,120 --> 00:13:10,160
+and most likely that tool will have a
+
+306
+00:13:07,600 --> 00:13:13,760
+high capabilities because it's speeding
+
+307
+00:13:10,160 --> 00:13:15,680
+up process and everything but I feel
+
+308
+00:13:13,760 --> 00:13:19,839
+like everything starts with simple
+
+309
+00:13:15,680 --> 00:13:23,839
+question why why you need that tool what
+
+310
+00:13:19,839 --> 00:13:27,920
+that tool will be doing for us and how I
+
+311
+00:13:23,839 --> 00:13:30,000
+mean as as a privacy side I would ask
+
+312
+00:13:27,920 --> 00:13:32,240
+how they going to use our data and
+
+313
+00:13:30,000 --> 00:13:34,639
+whether they we want them to permit to
+
+314
+00:13:32,240 --> 00:13:37,120
+use that data. Is this mandatory
+
+315
+00:13:34,639 --> 00:13:40,000
+mandatory or we can turn it off,
+
+316
+00:13:37,120 --> 00:13:42,240
+right? So it's it's just a simple
+
+317
+00:13:40,000 --> 00:13:45,040
+conversation with business owner of the
+
+318
+00:13:42,240 --> 00:13:47,600
+process or who is going to to implement
+
+319
+00:13:45,040 --> 00:13:50,959
+that initiative just to to talk about
+
+320
+00:13:47,600 --> 00:13:53,440
+what is the value of the tool and is it
+
+321
+00:13:50,959 --> 00:13:56,480
+really solving our problem issues or
+
+322
+00:13:53,440 --> 00:14:00,160
+challenges and okay now let's talk about
+
+323
+00:13:56,480 --> 00:14:02,959
+data and do we have controls in place
+
+324
+00:14:00,160 --> 00:14:06,000
+for that if not can we implement that
+
+325
+00:14:02,959 --> 00:14:07,199
+quickly in parallel with your uh with
+
+326
+00:14:06,000 --> 00:14:09,839
+your initiative
+
+327
+00:14:07,199 --> 00:14:12,399
+Are there any risks? Are there any high
+
+328
+00:14:09,839 --> 00:14:15,199
+risks? And whether there is a way to
+
+329
+00:14:12,399 --> 00:14:18,399
+mitigate it and again talking about
+
+330
+00:14:15,199 --> 00:14:20,800
+risks, it just something we need to work
+
+331
+00:14:18,399 --> 00:14:23,279
+on. Of course, if there is high risk and
+
+332
+00:14:20,800 --> 00:14:25,680
+there is no mitigation, there is might
+
+333
+00:14:23,279 --> 00:14:27,519
+be question to stop that initiative.
+
+334
+00:14:25,680 --> 00:14:28,720
+It's a it's a conversation with business
+
+335
+00:14:27,519 --> 00:14:30,800
+in early stage.
+
+336
+00:14:28,720 --> 00:14:33,519
+Yeah. And I think you know you're you're
+
+337
+00:14:30,800 --> 00:14:36,079
+touching on probably one of the more
+
+338
+00:14:33,519 --> 00:14:38,560
+important aspects of the governance
+
+339
+00:14:36,079 --> 00:14:41,760
+piece of this. It's really what
+
+340
+00:14:38,560 --> 00:14:42,880
+responsible and ethical AI and talk a
+
+341
+00:14:41,760 --> 00:14:44,959
+little bit about that. What and how
+
+342
+00:14:42,880 --> 00:14:46,800
+would you describe that in your words?
+
+343
+00:14:44,959 --> 00:14:48,480
+What does it really mean? I feel like we
+
+344
+00:14:46,800 --> 00:14:53,440
+touched a little bit this topic but
+
+345
+00:14:48,480 --> 00:14:55,279
+ethical AI there are many subtopics sub
+
+346
+00:14:53,440 --> 00:14:58,720
+things to talk about but I wouldn't
+
+347
+00:14:55,279 --> 00:15:00,320
+highlight this one that to be very
+
+348
+00:14:58,720 --> 00:15:03,519
+transparent
+
+349
+00:15:00,320 --> 00:15:06,639
+and with your clients customers and even
+
+350
+00:15:03,519 --> 00:15:10,240
+if it's not requirement think about what
+
+351
+00:15:06,639 --> 00:15:12,959
+you can disclosure on your website to
+
+352
+00:15:10,240 --> 00:15:16,000
+put more information for customers so
+
+353
+00:15:12,959 --> 00:15:18,720
+they aware about your technologies is if
+
+354
+00:15:16,000 --> 00:15:24,079
+you have AI component maybe you can
+
+355
+00:15:18,720 --> 00:15:27,040
+explain the logic logic behind AI. So
+
+356
+00:15:24,079 --> 00:15:30,000
+how much you are are you transparent
+
+357
+00:15:27,040 --> 00:15:32,800
+with your customers about your business
+
+358
+00:15:30,000 --> 00:15:35,199
+and whether you have controls in place
+
+359
+00:15:32,800 --> 00:15:36,959
+let them know let them know what
+
+360
+00:15:35,199 --> 00:15:40,000
+certification you have. Are you
+
+361
+00:15:36,959 --> 00:15:43,440
+following the major certifications?
+
+362
+00:15:40,000 --> 00:15:47,680
+Do you kind of how you care about data
+
+363
+00:15:43,440 --> 00:15:50,320
+and AI safe use in your business and
+
+364
+00:15:47,680 --> 00:15:53,120
+just make that publicly available so
+
+365
+00:15:50,320 --> 00:15:54,880
+people can go read people reading now
+
+366
+00:15:53,120 --> 00:15:57,519
+people reading more I'm sure and they
+
+367
+00:15:54,880 --> 00:16:00,959
+want to know about your business and AI
+
+368
+00:15:57,519 --> 00:16:05,360
+component because there is different
+
+369
+00:16:00,959 --> 00:16:09,440
+opinion about safe use right use of your
+
+370
+00:16:05,360 --> 00:16:12,560
+data what AI can do and how scalable
+
+371
+00:16:09,440 --> 00:16:15,040
+abilities and like then they make
+
+372
+00:16:12,560 --> 00:16:15,600
+decision do I need to use this tool or
+
+373
+00:16:15,040 --> 00:16:17,839
+not
+
+374
+00:16:15,600 --> 00:16:19,440
+touching you're touching on another
+
+375
+00:16:17,839 --> 00:16:21,839
+great
+
+376
+00:16:19,440 --> 00:16:24,079
+an important topic you mentioned the
+
+377
+00:16:21,839 --> 00:16:26,160
+explanability piece of it there's a
+
+378
+00:16:24,079 --> 00:16:28,320
+translation needed because you you're
+
+379
+00:16:26,160 --> 00:16:30,560
+not going to as a hobbyist understand
+
+380
+00:16:28,320 --> 00:16:31,680
+you know it's not like you can turn over
+
+381
+00:16:30,560 --> 00:16:32,959
+the code and someone's going to be able
+
+382
+00:16:31,680 --> 00:16:34,720
+to understand what you're doing with it
+
+383
+00:16:32,959 --> 00:16:36,639
+there's really a translation aspect of
+
+384
+00:16:34,720 --> 00:16:38,959
+it so I mean how do you think about
+
+385
+00:16:36,639 --> 00:16:40,240
+translating abstract principles into
+
+386
+00:16:38,959 --> 00:16:43,519
+concrete controls.
+
+387
+00:16:40,240 --> 00:16:46,079
+Yeah, I feel like first of all you'll be
+
+388
+00:16:43,519 --> 00:16:49,199
+translating that to different audiences.
+
+389
+00:16:46,079 --> 00:16:52,720
+For example, your employees who have
+
+390
+00:16:49,199 --> 00:16:55,519
+some expertise, right? They they they
+
+391
+00:16:52,720 --> 00:16:57,920
+have expertise in tech most likely about
+
+392
+00:16:55,519 --> 00:17:02,480
+data in general, not just personal data
+
+393
+00:16:57,920 --> 00:17:06,640
+but in data. So you can talk to your
+
+394
+00:17:02,480 --> 00:17:09,520
+teams just help them to understand that
+
+395
+00:17:06,640 --> 00:17:14,959
+that transparency explanability is very
+
+396
+00:17:09,520 --> 00:17:19,199
+important and involve them to to create
+
+397
+00:17:14,959 --> 00:17:22,559
+those documentation about how it works
+
+398
+00:17:19,199 --> 00:17:24,880
+to help them to uh actually future
+
+399
+00:17:22,559 --> 00:17:27,280
+products because now they invol
+
+400
+00:17:24,880 --> 00:17:29,679
+understand importancy they not just
+
+401
+00:17:27,280 --> 00:17:32,080
+reading what you created you actually
+
+402
+00:17:29,679 --> 00:17:35,520
+working with you together to develop
+
+403
+00:17:32,080 --> 00:17:38,160
+this those controls. Another audience
+
+404
+00:17:35,520 --> 00:17:41,520
+would be just your visitors for example
+
+405
+00:17:38,160 --> 00:17:44,559
+on your website, your future customers
+
+406
+00:17:41,520 --> 00:17:47,039
+or current customers. So then you need
+
+407
+00:17:44,559 --> 00:17:49,760
+maybe to make sure that you're talking
+
+408
+00:17:47,039 --> 00:17:53,440
+to them same language I mean
+
+409
+00:17:49,760 --> 00:17:56,720
+professional language tech language and
+
+410
+00:17:53,440 --> 00:17:59,440
+explaining simple things to help them to
+
+411
+00:17:56,720 --> 00:18:02,080
+understand like in plain language in
+
+412
+00:17:59,440 --> 00:18:04,559
+simple language how your system works
+
+413
+00:18:02,080 --> 00:18:07,280
+and I feel like collaboration with legal
+
+414
+00:18:04,559 --> 00:18:10,080
+team would be very helpful because they
+
+415
+00:18:07,280 --> 00:18:13,120
+have component of regulation language
+
+416
+00:18:10,080 --> 00:18:16,480
+and they can explain to you and you and
+
+417
+00:18:13,120 --> 00:18:18,960
+ask all questions legal first and then
+
+418
+00:18:16,480 --> 00:18:22,320
+kind of translate that to make that more
+
+419
+00:18:18,960 --> 00:18:25,039
+accessible to to your audiences uh to
+
+420
+00:18:22,320 --> 00:18:26,080
+understand that everyone will benefit
+
+421
+00:18:25,039 --> 00:18:30,720
+from that.
+
+422
+00:18:26,080 --> 00:18:33,919
+Right. Yeah. I I think the the tendency
+
+423
+00:18:30,720 --> 00:18:36,559
+at least in the last year or so
+
+424
+00:18:33,919 --> 00:18:40,320
+everyone's going at such a breakneck
+
+425
+00:18:36,559 --> 00:18:43,679
+pace moving so fast. Um yeah, if you're
+
+426
+00:18:40,320 --> 00:18:45,840
+not involving the legal experts, you're
+
+427
+00:18:43,679 --> 00:18:47,919
+you're probably have risk right now that
+
+428
+00:18:45,840 --> 00:18:51,360
+you don't know about. And it's it's a
+
+429
+00:18:47,919 --> 00:18:53,760
+good idea to go go talk legal team. Get
+
+430
+00:18:51,360 --> 00:18:55,760
+get them involved. It it's just it's
+
+431
+00:18:53,760 --> 00:18:57,200
+just this really important thing we
+
+432
+00:18:55,760 --> 00:18:59,520
+don't we don't lose sight of right now
+
+433
+00:18:57,200 --> 00:19:01,840
+because I think this is going to be the
+
+434
+00:18:59,520 --> 00:19:03,360
+year of governance for sure. And I don't
+
+435
+00:19:01,840 --> 00:19:05,600
+think it's all going to be rosy. I think
+
+436
+00:19:03,360 --> 00:19:07,600
+it's going to be some some bumps here.
+
+437
+00:19:05,600 --> 00:19:09,919
+So I'd encourage people to to really
+
+438
+00:19:07,600 --> 00:19:12,000
+hear this this point and Andre's
+
+439
+00:19:09,919 --> 00:19:14,080
+absolutely right. You you want to work
+
+440
+00:19:12,000 --> 00:19:17,039
+with your legal team. There are all
+
+441
+00:19:14,080 --> 00:19:18,720
+kinds of different um reasons that that
+
+442
+00:19:17,039 --> 00:19:20,880
+things fail. Where do you see the
+
+443
+00:19:18,720 --> 00:19:23,280
+biggest current failure modes? Data
+
+444
+00:19:20,880 --> 00:19:24,720
+collection, model design, deployment,
+
+445
+00:19:23,280 --> 00:19:26,320
+organizational culture.
+
+446
+00:19:24,720 --> 00:19:28,880
+Great question because every piece is
+
+447
+00:19:26,320 --> 00:19:32,720
+important. you start maybe with data
+
+448
+00:19:28,880 --> 00:19:34,880
+collection and I feel like I'm not going
+
+449
+00:19:32,720 --> 00:19:37,440
+to say something new when I when I
+
+450
+00:19:34,880 --> 00:19:40,400
+mention that if you collect garbage
+
+451
+00:19:37,440 --> 00:19:44,480
+you'll have garbage about data. So yeah,
+
+452
+00:19:40,400 --> 00:19:46,960
+sorry about that terminology, but also I
+
+453
+00:19:44,480 --> 00:19:49,360
+want to
+
+454
+00:19:46,960 --> 00:19:51,200
+yeah I feel like in the in
+
+455
+00:19:49,360 --> 00:19:53,679
+implementation
+
+456
+00:19:51,200 --> 00:19:56,880
+stage I feel like I want to highlight
+
+457
+00:19:53,679 --> 00:19:59,039
+the moment when for example company they
+
+458
+00:19:56,880 --> 00:20:02,000
+not developing AI they they implementing
+
+459
+00:19:59,039 --> 00:20:04,640
+the buying services and then just think
+
+460
+00:20:02,000 --> 00:20:08,559
+about it how you going to use that tool
+
+461
+00:20:04,640 --> 00:20:11,200
+and um again talk to legal team to
+
+462
+00:20:08,559 --> 00:20:15,600
+understand what would be the risks
+
+463
+00:20:11,200 --> 00:20:18,640
+because some regulation even uh saying
+
+464
+00:20:15,600 --> 00:20:21,280
+that there is prohibited AI activities
+
+465
+00:20:18,640 --> 00:20:24,160
+you need to be aware of. So that
+
+466
+00:20:21,280 --> 00:20:26,960
+implementation you your use case can be
+
+467
+00:20:24,160 --> 00:20:30,400
+very tricky and very harmful for your
+
+468
+00:20:26,960 --> 00:20:33,280
+organization. So why do not just go over
+
+469
+00:20:30,400 --> 00:20:36,240
+those lists couple list of high-risk
+
+470
+00:20:33,280 --> 00:20:38,480
+activities or prohibited activities talk
+
+471
+00:20:36,240 --> 00:20:40,799
+to legal team and understand in early
+
+472
+00:20:38,480 --> 00:20:43,600
+stage what you can do with those tool
+
+473
+00:20:40,799 --> 00:20:46,320
+and what you cannot so if you still have
+
+474
+00:20:43,600 --> 00:20:50,480
+a problem you're trying to solve uh with
+
+475
+00:20:46,320 --> 00:20:52,720
+AI and it's better to to understand in
+
+476
+00:20:50,480 --> 00:20:56,000
+early stage maybe you need to look for
+
+477
+00:20:52,720 --> 00:20:58,000
+another vendor or implement controls
+
+478
+00:20:56,000 --> 00:21:00,000
+right start implementing right Now
+
+479
+00:20:58,000 --> 00:21:02,640
+because some controls really take place
+
+480
+00:21:00,000 --> 00:21:05,600
+to implement it's not happening
+
+481
+00:21:02,640 --> 00:21:08,320
+overnight and for example some
+
+482
+00:21:05,600 --> 00:21:10,720
+certification or registration your
+
+483
+00:21:08,320 --> 00:21:15,760
+system in database whatever it kind of I
+
+484
+00:21:10,720 --> 00:21:18,799
+it will take time so yeah I would say um
+
+485
+00:21:15,760 --> 00:21:21,039
+I don't know sometimes it's all comes to
+
+486
+00:21:18,799 --> 00:21:25,360
+communication and collaboration between
+
+487
+00:21:21,039 --> 00:21:29,360
+teams if product or business owner come
+
+488
+00:21:25,360 --> 00:21:32,480
+to privacy team AI governance and just
+
+489
+00:21:29,360 --> 00:21:35,280
+share ideas when it's in idea stage then
+
+490
+00:21:32,480 --> 00:21:37,840
+it's easier to manage. you're you're
+
+491
+00:21:35,280 --> 00:21:40,799
+hitting on I think something that we got
+
+492
+00:21:37,840 --> 00:21:42,000
+we really need to think think about a
+
+493
+00:21:40,799 --> 00:21:44,799
+little bit differently than we have
+
+494
+00:21:42,000 --> 00:21:48,799
+before inside of a company there's all
+
+495
+00:21:44,799 --> 00:21:51,840
+generally there's an intent to speak the
+
+496
+00:21:48,799 --> 00:21:53,440
+same language right so you and I have
+
+497
+00:21:51,840 --> 00:21:55,520
+talked a little bit about AI literacy
+
+498
+00:21:53,440 --> 00:21:58,799
+before but what does it mean what does
+
+499
+00:21:55,520 --> 00:22:01,200
+AI literacy mean for non-technical staff
+
+500
+00:21:58,799 --> 00:22:02,559
+versus technical staff I mean they
+
+501
+00:22:01,200 --> 00:22:05,919
+really do have to be able to communicate
+
+502
+00:22:02,559 --> 00:22:08,159
+and understand each other about that
+
+503
+00:22:05,919 --> 00:22:10,880
+it's it could be even worse than a
+
+504
+00:22:08,159 --> 00:22:12,159
+language barrier if it's not if it's not
+
+505
+00:22:10,880 --> 00:22:16,480
+given some attention
+
+506
+00:22:12,159 --> 00:22:18,880
+definitely and uh that AI literacy um I
+
+507
+00:22:16,480 --> 00:22:20,559
+mean there is different definitions but
+
+508
+00:22:18,880 --> 00:22:23,120
+I would say there is at least three
+
+509
+00:22:20,559 --> 00:22:26,720
+components the first of all it's about
+
+510
+00:22:23,120 --> 00:22:30,720
+AI and technical side how what is the
+
+511
+00:22:26,720 --> 00:22:33,440
+capabilities how it works and for
+
+512
+00:22:30,720 --> 00:22:36,159
+example what is their performance
+
+513
+00:22:33,440 --> 00:22:38,080
+indicators, what are their metrics you
+
+514
+00:22:36,159 --> 00:22:41,600
+can you can measure performance, what is
+
+515
+00:22:38,080 --> 00:22:43,600
+the accuracy, what are there other
+
+516
+00:22:41,600 --> 00:22:46,880
+technical things you you need to
+
+517
+00:22:43,600 --> 00:22:49,520
+understand logic behind AI. The second
+
+518
+00:22:46,880 --> 00:22:51,840
+component would be it's of course it's
+
+519
+00:22:49,520 --> 00:22:54,000
+regulation. You need to you need to know
+
+520
+00:22:51,840 --> 00:22:56,400
+like what you can do, what you cannot do
+
+521
+00:22:54,000 --> 00:22:59,440
+with AI and what controls need to be in
+
+522
+00:22:56,400 --> 00:23:02,880
+place. And we talked about this today a
+
+523
+00:22:59,440 --> 00:23:05,520
+lot. So you cannot you cannot avoid
+
+524
+00:23:02,880 --> 00:23:09,919
+governance piece. It's it's just
+
+525
+00:23:05,520 --> 00:23:11,600
+mandatory and also opportunity to to
+
+526
+00:23:09,919 --> 00:23:14,559
+scale your business and add to your
+
+527
+00:23:11,600 --> 00:23:16,880
+value proposition that oh my gosh we
+
+528
+00:23:14,559 --> 00:23:20,000
+have such good governance in place. So
+
+529
+00:23:16,880 --> 00:23:23,440
+we want to talk we want to give it as a
+
+530
+00:23:20,000 --> 00:23:26,799
+benefit to our to our clients. And third
+
+531
+00:23:23,440 --> 00:23:29,919
+component is ethical AI use. ethical
+
+532
+00:23:26,799 --> 00:23:33,440
+use. I feel like uh what we touched
+
+533
+00:23:29,919 --> 00:23:37,440
+today um you cannot collect data just in
+
+534
+00:23:33,440 --> 00:23:41,200
+case. So it's then what purpose you will
+
+535
+00:23:37,440 --> 00:23:45,919
+be using that data for and that ethical
+
+536
+00:23:41,200 --> 00:23:49,679
+um part now sounds more often and more
+
+537
+00:23:45,919 --> 00:23:53,679
+because it's about how people feel about
+
+538
+00:23:49,679 --> 00:23:58,320
+using the data and what how transparent
+
+539
+00:23:53,679 --> 00:24:00,159
+AI systems. So these three components so
+
+540
+00:23:58,320 --> 00:24:01,840
+since you mentioned technical stuff and
+
+541
+00:24:00,159 --> 00:24:04,799
+nontechnical things they both would
+
+542
+00:24:01,840 --> 00:24:07,600
+benefit because technical things is
+
+543
+00:24:04,799 --> 00:24:10,799
+requirement and technical personnel can
+
+544
+00:24:07,600 --> 00:24:14,640
+explain this site to for example for
+
+545
+00:24:10,799 --> 00:24:16,480
+privacy team hey you guys tech please
+
+546
+00:24:14,640 --> 00:24:19,679
+give us a little bit more information
+
+547
+00:24:16,480 --> 00:24:22,640
+how it works and non-technical stuff of
+
+548
+00:24:19,679 --> 00:24:25,200
+course we can we can talk to tech to
+
+549
+00:24:22,640 --> 00:24:28,559
+explain importancy of understanding
+
+550
+00:24:25,200 --> 00:24:30,320
+ending technical side. So just just
+
+551
+00:24:28,559 --> 00:24:31,919
+mutually beneficial things.
+
+552
+00:24:30,320 --> 00:24:34,880
+Now we've we've talked a little bit
+
+553
+00:24:31,919 --> 00:24:37,760
+about their data usage uh things here,
+
+554
+00:24:34,880 --> 00:24:39,279
+but let's talk about some of your your
+
+555
+00:24:37,760 --> 00:24:41,679
+lessons that you've learned leading
+
+556
+00:24:39,279 --> 00:24:43,919
+privacy awareness and training uh since
+
+557
+00:24:41,679 --> 00:24:46,480
+you've kind of opened this topic and how
+
+558
+00:24:43,919 --> 00:24:48,400
+these lessons apply to AI literacy.
+
+559
+00:24:46,480 --> 00:24:52,880
+Great question. It's a very very big
+
+560
+00:24:48,400 --> 00:24:55,600
+topic about trainings and I feel like uh
+
+561
+00:24:52,880 --> 00:24:58,320
+sometimes businesses need to shift to
+
+562
+00:24:55,600 --> 00:25:01,039
+kind of just to think about it that you
+
+563
+00:24:58,320 --> 00:25:02,799
+using so much data and you serving
+
+564
+00:25:01,039 --> 00:25:06,240
+customers.
+
+565
+00:25:02,799 --> 00:25:08,559
+So uh you have so much regulations, you
+
+566
+00:25:06,240 --> 00:25:11,919
+have so much governance in place. How
+
+567
+00:25:08,559 --> 00:25:15,200
+much time do you dedicate to educate
+
+568
+00:25:11,919 --> 00:25:18,159
+people on what you have? Right? just
+
+569
+00:25:15,200 --> 00:25:21,279
+compare like how much is it compared to
+
+570
+00:25:18,159 --> 00:25:24,799
+what you have and uh again education
+
+571
+00:25:21,279 --> 00:25:28,080
+happening not that quickly not overnight
+
+572
+00:25:24,799 --> 00:25:30,400
+and especially when people facing data
+
+573
+00:25:28,080 --> 00:25:33,679
+privacy training or governance first
+
+574
+00:25:30,400 --> 00:25:36,720
+time they they just it's like something
+
+575
+00:25:33,679 --> 00:25:40,480
+undiscovered yet much and something
+
+576
+00:25:36,720 --> 00:25:42,480
+unknown and that that's why maybe you
+
+577
+00:25:40,480 --> 00:25:44,480
+feel sometimes resistance from crossf
+
+578
+00:25:42,480 --> 00:25:47,600
+functional teams
+
+579
+00:25:44,480 --> 00:25:50,559
+uh another things I feel like now it's
+
+580
+00:25:47,600 --> 00:25:54,480
+almost responsibility of privacy experts
+
+581
+00:25:50,559 --> 00:25:58,000
+to make that materials privacy content
+
+582
+00:25:54,480 --> 00:26:00,480
+interesting to people then well then
+
+583
+00:25:58,000 --> 00:26:02,000
+good design come to play comes to play
+
+584
+00:26:00,480 --> 00:26:04,480
+because
+
+585
+00:26:02,000 --> 00:26:07,679
+uh you can think in different way how to
+
+586
+00:26:04,480 --> 00:26:11,360
+design your content your slides maybe
+
+587
+00:26:07,679 --> 00:26:12,960
+short videos and it is ongoing should be
+
+588
+00:26:11,360 --> 00:26:14,880
+an ongoing base
+
+589
+00:26:12,960 --> 00:26:17,360
+you know it's It's increasingly
+
+590
+00:26:14,880 --> 00:26:20,000
+important as the the regulatory
+
+591
+00:26:17,360 --> 00:26:22,640
+landscape seems to be evolving towards
+
+592
+00:26:20,000 --> 00:26:25,679
+explanability and transparency and at
+
+593
+00:26:22,640 --> 00:26:28,480
+the moment it's it's not really at the
+
+594
+00:26:25,679 --> 00:26:32,240
+federal level moving at the pace that it
+
+595
+00:26:28,480 --> 00:26:33,440
+is some some states. So, you know I you
+
+596
+00:26:32,240 --> 00:26:36,480
+know some of the first cases in
+
+597
+00:26:33,440 --> 00:26:37,760
+California in Texas for example they
+
+598
+00:26:36,480 --> 00:26:40,799
+they've put some things in place for
+
+599
+00:26:37,760 --> 00:26:44,960
+healthcare uh specifically uh that are
+
+600
+00:26:40,799 --> 00:26:47,919
+requiring the the transparency and and
+
+601
+00:26:44,960 --> 00:26:50,799
+the explanability in order to actually
+
+602
+00:26:47,919 --> 00:26:52,640
+achieve informed consent and there's you
+
+603
+00:26:50,799 --> 00:26:56,080
+know pending lawsuits about this stuff
+
+604
+00:26:52,640 --> 00:26:58,960
+now. So if if you're not designing with
+
+605
+00:26:56,080 --> 00:27:01,279
+that in mind, you you really need to
+
+606
+00:26:58,960 --> 00:27:03,520
+take another look at that. Uh so there
+
+607
+00:27:01,279 --> 00:27:04,960
+you you don't end up having to go and
+
+608
+00:27:03,520 --> 00:27:07,520
+pull something out of production and
+
+609
+00:27:04,960 --> 00:27:08,799
+rebuild it. But that's the risk you take
+
+610
+00:27:07,520 --> 00:27:11,520
+if you're not thinking about those
+
+611
+00:27:08,799 --> 00:27:13,679
+things. Uh 50 states in 50 different
+
+612
+00:27:11,520 --> 00:27:16,400
+approaches is quite possible. It's
+
+613
+00:27:13,679 --> 00:27:17,840
+happened before. So I just hash people
+
+614
+00:27:16,400 --> 00:27:20,000
+make sure that you're looking for that.
+
+615
+00:27:17,840 --> 00:27:21,840
+Yeah. And one more thing about sorry I'm
+
+616
+00:27:20,000 --> 00:27:25,039
+I'm just want to add one more thing to
+
+617
+00:27:21,840 --> 00:27:26,960
+this question. I pop up in my mind. Uh
+
+618
+00:27:25,039 --> 00:27:29,200
+sometime ago, I believe privacy
+
+619
+00:27:26,960 --> 00:27:31,840
+trainings were like something like
+
+620
+00:27:29,200 --> 00:27:35,679
+happening once a year or just on
+
+621
+00:27:31,840 --> 00:27:39,279
+boarding security privacy trainings and
+
+622
+00:27:35,679 --> 00:27:42,080
+I feel like sometimes there is a kind of
+
+623
+00:27:39,279 --> 00:27:45,200
+those trainings mostly about security
+
+624
+00:27:42,080 --> 00:27:47,360
+and less about data privacy.
+
+625
+00:27:45,200 --> 00:27:50,400
+So it's just naturally people forget
+
+626
+00:27:47,360 --> 00:27:52,880
+about data privacy. there is not huge
+
+627
+00:27:50,400 --> 00:27:54,720
+retention knowledge about data privacy.
+
+628
+00:27:52,880 --> 00:27:56,960
+So I feel like there is some shift
+
+629
+00:27:54,720 --> 00:28:00,559
+required from just on boarding trainings
+
+630
+00:27:56,960 --> 00:28:03,840
+to ongoing privacy and AI governance.
+
+631
+00:28:00,559 --> 00:28:06,559
+Similar similar similar challenge uh
+
+632
+00:28:03,840 --> 00:28:09,679
+educating people about governance AI
+
+633
+00:28:06,559 --> 00:28:12,399
+governance. It should be small small
+
+634
+00:28:09,679 --> 00:28:14,960
+pieces of information in ongoing base
+
+635
+00:28:12,399 --> 00:28:18,399
+well designed. Think about maybe involve
+
+636
+00:28:14,960 --> 00:28:20,960
+designers who will help you to uh again
+
+637
+00:28:18,399 --> 00:28:23,279
+cross functional collaboration who will
+
+638
+00:28:20,960 --> 00:28:25,919
+help you to design your content well and
+
+639
+00:28:23,279 --> 00:28:26,799
+think about it how deliver interesting
+
+640
+00:28:25,919 --> 00:28:30,399
+way
+
+641
+00:28:26,799 --> 00:28:32,640
+right yeah I think for there's got to be
+
+642
+00:28:30,399 --> 00:28:36,640
+a shift in thinking about this from the
+
+643
+00:28:32,640 --> 00:28:38,399
+standpoint of a AI models are evolving
+
+644
+00:28:36,640 --> 00:28:41,120
+and they're they're being retrained
+
+645
+00:28:38,399 --> 00:28:42,799
+constantly. So, you know, we you can't
+
+646
+00:28:41,120 --> 00:28:44,799
+really treat this as a checkbox like
+
+647
+00:28:42,799 --> 00:28:46,080
+like you we could probably do in some
+
+648
+00:28:44,799 --> 00:28:48,159
+instances in the past because the
+
+649
+00:28:46,080 --> 00:28:51,520
+policies just didn't change that much
+
+650
+00:28:48,159 --> 00:28:53,360
+because the the the outputs that the
+
+651
+00:28:51,520 --> 00:28:55,279
+organization's accustomed to really
+
+652
+00:28:53,360 --> 00:28:57,200
+don't change that much in terms of how
+
+653
+00:28:55,279 --> 00:28:58,720
+they're being produced. You know, if you
+
+654
+00:28:57,200 --> 00:29:01,679
+figure
+
+655
+00:28:58,720 --> 00:29:04,240
+most workflows don't change overnight
+
+656
+00:29:01,679 --> 00:29:06,880
+and they they never have, but today
+
+657
+00:29:04,240 --> 00:29:09,600
+that's not necessarily the case. So, I
+
+658
+00:29:06,880 --> 00:29:11,039
+think it's a really important uh concept
+
+659
+00:29:09,600 --> 00:29:12,880
+that you're talking about there cuz it's
+
+660
+00:29:11,039 --> 00:29:14,480
+got to be it's got to be thought of
+
+661
+00:29:12,880 --> 00:29:18,799
+differently and we've got to have some
+
+662
+00:29:14,480 --> 00:29:20,720
+kind of a a process to keep feeding uh
+
+663
+00:29:18,799 --> 00:29:21,760
+the information to make sure that we we
+
+664
+00:29:20,720 --> 00:29:23,279
+keep current and people are
+
+665
+00:29:21,760 --> 00:29:25,360
+understanding, you know, this stuff and
+
+666
+00:29:23,279 --> 00:29:28,080
+know they know what the risks are.
+
+667
+00:29:25,360 --> 00:29:29,200
+Yeah, that's that's that's a big topic
+
+668
+00:29:28,080 --> 00:29:30,720
+definitely.
+
+669
+00:29:29,200 --> 00:29:32,960
+What do you think are some of the common
+
+670
+00:29:30,720 --> 00:29:35,440
+misunderstandings that you encounter
+
+671
+00:29:32,960 --> 00:29:37,279
+like this AI is magic? Well, Leo will
+
+672
+00:29:35,440 --> 00:29:40,000
+handle it. Don't worry about that. Or
+
+673
+00:29:37,279 --> 00:29:41,679
+it's it's the vendor. They've got this.
+
+674
+00:29:40,000 --> 00:29:42,799
+What are some of the the things that you
+
+675
+00:29:41,679 --> 00:29:45,039
+run into?
+
+676
+00:29:42,799 --> 00:29:48,559
+I feel like I feel like Yeah, we talked
+
+677
+00:29:45,039 --> 00:29:52,240
+about this a little bit. Just just feels
+
+678
+00:29:48,559 --> 00:29:55,200
+like uh even if vendor saying everything
+
+679
+00:29:52,240 --> 00:29:58,320
+okay, you have everything. Just go over
+
+680
+00:29:55,200 --> 00:30:01,440
+again everything and involve your teams
+
+681
+00:29:58,320 --> 00:30:04,559
+and use that maybe as for educational
+
+682
+00:30:01,440 --> 00:30:09,840
+purposes. just do it again and make sure
+
+683
+00:30:04,559 --> 00:30:12,399
+that that what they saying works and uh
+
+684
+00:30:09,840 --> 00:30:15,520
+if you're planning to use that vendor
+
+685
+00:30:12,399 --> 00:30:18,880
+for long term just
+
+686
+00:30:15,520 --> 00:30:21,120
+uh go a little bit deeper and again
+
+687
+00:30:18,880 --> 00:30:22,799
+start with business owners involve
+
+688
+00:30:21,120 --> 00:30:25,840
+responsible people in the process
+
+689
+00:30:22,799 --> 00:30:28,399
+communicate with vendor and sometimes on
+
+690
+00:30:25,840 --> 00:30:31,520
+the way you can uncover something like
+
+691
+00:30:28,399 --> 00:30:35,200
+new cases business business have plans
+
+692
+00:30:31,520 --> 00:30:37,200
+to use use uh this tool in different use
+
+693
+00:30:35,200 --> 00:30:40,399
+cases and how you can know that without
+
+694
+00:30:37,200 --> 00:30:42,559
+collaboration how how legal or just
+
+695
+00:30:40,399 --> 00:30:45,600
+privacy tip can handle that if they do
+
+696
+00:30:42,559 --> 00:30:47,919
+not know business purposes or plans
+
+697
+00:30:45,600 --> 00:30:51,679
+about those tool or specific
+
+698
+00:30:47,919 --> 00:30:53,840
+implications. So yeah um we just
+
+699
+00:30:51,679 --> 00:30:56,399
+technically cannot handle uh data
+
+700
+00:30:53,840 --> 00:30:58,960
+privacy and a governance by ourself and
+
+701
+00:30:56,399 --> 00:31:02,559
+I feel like uh when you collaborating
+
+702
+00:30:58,960 --> 00:31:05,679
+with teams it just show that you have
+
+703
+00:31:02,559 --> 00:31:10,799
+great communication inside company with
+
+704
+00:31:05,679 --> 00:31:14,240
+other teams and that just also add to
+
+705
+00:31:10,799 --> 00:31:16,480
+your product value proposition that
+
+706
+00:31:14,240 --> 00:31:19,120
+everything clear even for non-experts
+
+707
+00:31:16,480 --> 00:31:22,080
+and when they talking to prospects facts
+
+708
+00:31:19,120 --> 00:31:25,039
+they can mention and sound like experts
+
+709
+00:31:22,080 --> 00:31:28,320
+about privacy or well educated people
+
+710
+00:31:25,039 --> 00:31:31,919
+about privacy well privacy it's very
+
+711
+00:31:28,320 --> 00:31:33,919
+often about data so it's I mean since
+
+712
+00:31:31,919 --> 00:31:36,720
+you have a lot of data most likely there
+
+713
+00:31:33,919 --> 00:31:40,159
+is some personal data and people want to
+
+714
+00:31:36,720 --> 00:31:42,240
+know about it why not to to add to your
+
+715
+00:31:40,159 --> 00:31:44,320
+expertise you're happy to share
+
+716
+00:31:42,240 --> 00:31:47,120
+we talk a lot about the you know the
+
+717
+00:31:44,320 --> 00:31:49,279
+technology and the data but maybe talk
+
+718
+00:31:47,120 --> 00:31:51,919
+let's talk a little bit about the the
+
+719
+00:31:49,279 --> 00:31:54,559
+the role that of tools and platforms
+
+720
+00:31:51,919 --> 00:31:57,600
+like one trust versus human process and
+
+721
+00:31:54,559 --> 00:31:59,600
+culture. That's an area that's I think
+
+722
+00:31:57,600 --> 00:32:01,679
+not getting quite enough airtime right
+
+723
+00:31:59,600 --> 00:32:03,360
+now. We're talking really it's the
+
+724
+00:32:01,679 --> 00:32:05,840
+cultural stuff that and the human
+
+725
+00:32:03,360 --> 00:32:08,559
+impacts. Um would love to hear your
+
+726
+00:32:05,840 --> 00:32:11,919
+thoughts about that. Yeah, it's a great
+
+727
+00:32:08,559 --> 00:32:15,840
+question and I feel like automation
+
+728
+00:32:11,919 --> 00:32:20,000
+similar to AI uh serving one purpose to
+
+729
+00:32:15,840 --> 00:32:24,000
+help to help to save time to simplify
+
+730
+00:32:20,000 --> 00:32:26,880
+some very predictable tasks
+
+731
+00:32:24,000 --> 00:32:30,960
+and so you can focus on more strategic
+
+732
+00:32:26,880 --> 00:32:33,679
+things. uh I love automation and
+
+733
+00:32:30,960 --> 00:32:37,519
+particularly I work in using and have
+
+734
+00:32:33,679 --> 00:32:40,399
+got certification for one trust so uh
+
+735
+00:32:37,519 --> 00:32:43,600
+it's very good practice and says about
+
+736
+00:32:40,399 --> 00:32:47,360
+your data handling maturity level how
+
+737
+00:32:43,600 --> 00:32:50,720
+you handle data so you have one tool one
+
+738
+00:32:47,360 --> 00:32:53,519
+source of truth about data for example
+
+739
+00:32:50,720 --> 00:32:56,720
+about vendors you have one profile of
+
+740
+00:32:53,519 --> 00:32:59,519
+vendor all risks all your communication
+
+741
+00:32:56,720 --> 00:33:02,720
+all uh mitigation measures you
+
+742
+00:32:59,519 --> 00:33:04,880
+implemented in one tool in one profile.
+
+743
+00:33:02,720 --> 00:33:07,120
+You can generate reports. You can you
+
+744
+00:33:04,880 --> 00:33:09,120
+can have dashboards to see how many
+
+745
+00:33:07,120 --> 00:33:12,080
+risks you have. What is the situation
+
+746
+00:33:09,120 --> 00:33:14,799
+overall situation about privacy in you?
+
+747
+00:33:12,080 --> 00:33:17,279
+uh it's very kind of hard a bit harder I
+
+748
+00:33:14,799 --> 00:33:22,399
+found harder to do with with without
+
+749
+00:33:17,279 --> 00:33:25,919
+tool and it's definitely save time and
+
+750
+00:33:22,399 --> 00:33:27,679
+even um non-privacy experts they can if
+
+751
+00:33:25,919 --> 00:33:30,960
+they have permission they can go to
+
+752
+00:33:27,679 --> 00:33:33,919
+specific vendor and take a look hey can
+
+753
+00:33:30,960 --> 00:33:36,159
+we work with this vendor do we want to
+
+754
+00:33:33,919 --> 00:33:39,519
+work in the future what is the risk
+
+755
+00:33:36,159 --> 00:33:43,120
+level how responsible they are to
+
+756
+00:33:39,519 --> 00:33:46,000
+mitigate those risks And it's just great
+
+757
+00:33:43,120 --> 00:33:50,000
+tool collaborate together on on data
+
+758
+00:33:46,000 --> 00:33:52,880
+privacy and AI governance. And just keep
+
+759
+00:33:50,000 --> 00:33:56,080
+in mind that tool like that you need to
+
+760
+00:33:52,880 --> 00:33:58,720
+most likely you will need to customize a
+
+761
+00:33:56,080 --> 00:34:01,919
+lot of things because every business
+
+762
+00:33:58,720 --> 00:34:05,840
+unique and to be looking for different
+
+763
+00:34:01,919 --> 00:34:08,480
+to to cover different goals. So once you
+
+764
+00:34:05,840 --> 00:34:10,480
+work on setting up the tool and
+
+765
+00:34:08,480 --> 00:34:16,720
+customize everything then you can really
+
+766
+00:34:10,480 --> 00:34:19,919
+enjoy uh flow workflow and automated
+
+767
+00:34:16,720 --> 00:34:24,159
+tasks and your assessments will be going
+
+768
+00:34:19,919 --> 00:34:26,639
+easier and just you will have visibility
+
+769
+00:34:24,159 --> 00:34:29,280
+what's going on with your privacy and
+
+770
+00:34:26,639 --> 00:34:31,040
+what situation you have there and AI
+
+771
+00:34:29,280 --> 00:34:33,200
+governance and you can share your
+
+772
+00:34:31,040 --> 00:34:37,200
+practices with your potential clients.
+
+773
+00:34:33,200 --> 00:34:39,520
+you can just uh generate reports or uh
+
+774
+00:34:37,200 --> 00:34:41,599
+share certification whatever. So it's
+
+775
+00:34:39,520 --> 00:34:44,560
+very convenient and I feel like it's
+
+776
+00:34:41,599 --> 00:34:47,599
+really says about great leadership
+
+777
+00:34:44,560 --> 00:34:51,280
+support about how you handle your data
+
+778
+00:34:47,599 --> 00:34:52,879
+AI governance. So things to consider I
+
+779
+00:34:51,280 --> 00:34:55,599
+would really encourage businesses to
+
+780
+00:34:52,879 --> 00:34:57,599
+have it some some data management tool
+
+781
+00:34:55,599 --> 00:35:00,320
+whatever you select. As we're kind of
+
+782
+00:34:57,599 --> 00:35:02,240
+getting towards the end of our time, uh
+
+783
+00:35:00,320 --> 00:35:05,359
+there's a couple of topics here that
+
+784
+00:35:02,240 --> 00:35:07,520
+they're they're really related, but it
+
+785
+00:35:05,359 --> 00:35:10,720
+occurs to me that there's probably some
+
+786
+00:35:07,520 --> 00:35:12,720
+some folks listening that are really not
+
+787
+00:35:10,720 --> 00:35:14,720
+quite sure how they're going to embed
+
+788
+00:35:12,720 --> 00:35:16,400
+governance into product and engineering
+
+789
+00:35:14,720 --> 00:35:19,200
+workflows. So, it doesn't feel like a
+
+790
+00:35:16,400 --> 00:35:21,599
+blocker. That's one side of it. But also
+
+791
+00:35:19,200 --> 00:35:24,320
+there's there's some skills that I think
+
+792
+00:35:21,599 --> 00:35:26,160
+are probably um ones that people should
+
+793
+00:35:24,320 --> 00:35:28,480
+be thinking about and prioritizing as
+
+794
+00:35:26,160 --> 00:35:30,400
+well. So maybe you can kind of talk
+
+795
+00:35:28,480 --> 00:35:32,320
+about those those two things. So you
+
+796
+00:35:30,400 --> 00:35:35,040
+know first how do you embed the
+
+797
+00:35:32,320 --> 00:35:36,800
+governance? Uh but then what are some of
+
+798
+00:35:35,040 --> 00:35:40,000
+the skills that you think need to be
+
+799
+00:35:36,800 --> 00:35:42,320
+developed or acquired if an organization
+
+800
+00:35:40,000 --> 00:35:45,680
+doesn't already have them? Yeah, I feel
+
+801
+00:35:42,320 --> 00:35:49,440
+like it's uh something that almost every
+
+802
+00:35:45,680 --> 00:35:53,200
+business will face this challenge how to
+
+803
+00:35:49,440 --> 00:35:56,160
+build governance. But there is one easy
+
+804
+00:35:53,200 --> 00:35:58,640
+component if you have privacy data
+
+805
+00:35:56,160 --> 00:36:01,200
+governance in place. You can you can
+
+806
+00:35:58,640 --> 00:36:04,880
+transition you can transfer many
+
+807
+00:36:01,200 --> 00:36:06,640
+controls from there to to AI governance.
+
+808
+00:36:04,880 --> 00:36:08,480
+For example, you can handle your
+
+809
+00:36:06,640 --> 00:36:11,599
+assessments
+
+810
+00:36:08,480 --> 00:36:15,280
+uh using some questions from your
+
+811
+00:36:11,599 --> 00:36:18,079
+previous questionnaers. uh you can use
+
+812
+00:36:15,280 --> 00:36:20,480
+same tool data management tool to handle
+
+813
+00:36:18,079 --> 00:36:23,599
+AI assessments
+
+814
+00:36:20,480 --> 00:36:28,400
+vendor assessments internal assessments
+
+815
+00:36:23,599 --> 00:36:30,079
+and talking about skills I feel like uh
+
+816
+00:36:28,400 --> 00:36:33,200
+it's very clear you need to have
+
+817
+00:36:30,079 --> 00:36:36,079
+technical things uh data privacy skills
+
+818
+00:36:33,200 --> 00:36:38,800
+like getting some certification from
+
+819
+00:36:36,079 --> 00:36:42,560
+famous organizations but also I feel
+
+820
+00:36:38,800 --> 00:36:45,280
+like we missing um in general it's kind
+
+821
+00:36:42,560 --> 00:36:47,280
+of not something People think about even
+
+822
+00:36:45,280 --> 00:36:47,680
+communication skills,
+
+823
+00:36:47,280 --> 00:36:51,599
+right?
+
+824
+00:36:47,680 --> 00:36:53,839
+Even project management skills, how to
+
+825
+00:36:51,599 --> 00:36:57,280
+how to communicate to cross functional
+
+826
+00:36:53,839 --> 00:36:59,200
+teams in early stage. How to embed
+
+827
+00:36:57,280 --> 00:37:01,200
+privacy component, AI governance
+
+828
+00:36:59,200 --> 00:37:05,200
+component to
+
+829
+00:37:01,200 --> 00:37:07,920
+project scope, project plan and uh how
+
+830
+00:37:05,200 --> 00:37:10,880
+to use project management tools to
+
+831
+00:37:07,920 --> 00:37:13,839
+create that visibility and communication
+
+832
+00:37:10,880 --> 00:37:16,800
+sharable documents,
+
+833
+00:37:13,839 --> 00:37:20,000
+dashboards and everything just to
+
+834
+00:37:16,800 --> 00:37:23,040
+simplify life for non-expert non-privacy
+
+835
+00:37:20,000 --> 00:37:26,560
+experts and help them to simplify
+
+836
+00:37:23,040 --> 00:37:29,119
+everything And uh yeah project
+
+837
+00:37:26,560 --> 00:37:31,359
+management skills will be very helpful
+
+838
+00:37:29,119 --> 00:37:33,280
+communication and communication would be
+
+839
+00:37:31,359 --> 00:37:36,480
+helpful for every team because we will
+
+840
+00:37:33,280 --> 00:37:39,680
+be talking and it's okay to talk
+
+841
+00:37:36,480 --> 00:37:42,320
+initiatives in the beginning giving
+
+842
+00:37:39,680 --> 00:37:46,240
+feedback I feel like communication
+
+843
+00:37:42,320 --> 00:37:49,040
+skills uh how to give feedback and
+
+844
+00:37:46,240 --> 00:37:51,200
+request feedback request help from
+
+845
+00:37:49,040 --> 00:37:53,520
+experts different fields it's it's all
+
+846
+00:37:51,200 --> 00:37:56,160
+about communication and it's not just
+
+847
+00:37:53,520 --> 00:37:57,839
+naturally you born with those skills.
+
+848
+00:37:56,160 --> 00:38:01,839
+There is skills you can learn a lot
+
+849
+00:37:57,839 --> 00:38:04,400
+about. Take some courses, take some um
+
+850
+00:38:01,839 --> 00:38:07,040
+education on that component also would
+
+851
+00:38:04,400 --> 00:38:09,920
+help because crossf functional uh
+
+852
+00:38:07,040 --> 00:38:12,079
+collaboration uh really will help to
+
+853
+00:38:09,920 --> 00:38:13,040
+save time and there's reduce those
+
+854
+00:38:12,079 --> 00:38:15,599
+blotters.
+
+855
+00:38:13,040 --> 00:38:18,320
+You lead into the
+
+856
+00:38:15,599 --> 00:38:21,839
+probably one of the biggest most
+
+857
+00:38:18,320 --> 00:38:24,240
+important points of of our conversation.
+
+858
+00:38:21,839 --> 00:38:27,040
+Where would you encourage people to who
+
+859
+00:38:24,240 --> 00:38:28,960
+are listening who want to learn more
+
+860
+00:38:27,040 --> 00:38:31,680
+where should they be looking or their
+
+861
+00:38:28,960 --> 00:38:33,839
+community certifications resources where
+
+862
+00:38:31,680 --> 00:38:35,839
+where would you point them? Sure. My
+
+863
+00:38:33,839 --> 00:38:38,400
+experience there is much more resources
+
+864
+00:38:35,839 --> 00:38:40,720
+you can learn from. I mean um I got
+
+865
+00:38:38,400 --> 00:38:42,640
+couple certificates from EIP
+
+866
+00:38:40,720 --> 00:38:45,920
+organization international organization
+
+867
+00:38:42,640 --> 00:38:48,079
+of privacy professionals and there is u
+
+868
+00:38:45,920 --> 00:38:50,079
+AI governance certification as well.
+
+869
+00:38:48,079 --> 00:38:52,800
+It's not just about privacy but they
+
+870
+00:38:50,079 --> 00:38:55,119
+have that also since we talked about
+
+871
+00:38:52,800 --> 00:38:58,240
+automation and implementing tools. I
+
+872
+00:38:55,119 --> 00:39:00,960
+think um one trust uh has a lot of
+
+873
+00:38:58,240 --> 00:39:05,920
+educational materials. You can find them
+
+874
+00:39:00,960 --> 00:39:08,480
+some of them free access uh and uh maybe
+
+875
+00:39:05,920 --> 00:39:11,119
+you can start from there. And also I I
+
+876
+00:39:08,480 --> 00:39:13,280
+personally like how much educational
+
+877
+00:39:11,119 --> 00:39:16,800
+materials you can find on different
+
+878
+00:39:13,280 --> 00:39:20,400
+platforms like linkadin or corsera or
+
+879
+00:39:16,800 --> 00:39:22,800
+like just just try to focus there is so
+
+880
+00:39:20,400 --> 00:39:26,079
+much so much information just try to
+
+881
+00:39:22,800 --> 00:39:27,440
+focus on what specific area you want to
+
+882
+00:39:26,079 --> 00:39:30,000
+work on right
+
+883
+00:39:27,440 --> 00:39:31,440
+and uh maybe you want to be security
+
+884
+00:39:30,000 --> 00:39:34,320
+experts it's a bit different from
+
+885
+00:39:31,440 --> 00:39:37,760
+privacy even we working closely but it's
+
+886
+00:39:34,320 --> 00:39:40,560
+it's funny because when I go to to just
+
+887
+00:39:37,760 --> 00:39:42,400
+conference. Sometimes I I I hear a
+
+888
+00:39:40,560 --> 00:39:45,200
+question hey what do you do and do
+
+889
+00:39:42,400 --> 00:39:47,520
+privacy and oh you security guy there is
+
+890
+00:39:45,200 --> 00:39:50,160
+some similarities but this is where we
+
+891
+00:39:47,520 --> 00:39:52,000
+need to start to educate people just to
+
+892
+00:39:50,160 --> 00:39:54,079
+for even from simple things what is the
+
+893
+00:39:52,000 --> 00:39:57,680
+security what is the privacy what data
+
+894
+00:39:54,079 --> 00:40:00,560
+you're responsible responsible for and u
+
+895
+00:39:57,680 --> 00:40:04,160
+I think this is kind of a great question
+
+896
+00:40:00,560 --> 00:40:08,079
+to people to understand even like okay
+
+897
+00:40:04,160 --> 00:40:11,280
+why AI system needs my data and where
+
+898
+00:40:08,079 --> 00:40:14,480
+like search where to go on business
+
+899
+00:40:11,280 --> 00:40:17,040
+website where to go specifically to read
+
+900
+00:40:14,480 --> 00:40:20,880
+like how that data is going to be used
+
+901
+00:40:17,040 --> 00:40:24,560
+so where is it where that component and
+
+902
+00:40:20,880 --> 00:40:26,079
+it's yeah it's it's just um I don't know
+
+903
+00:40:24,560 --> 00:40:30,240
+we talked today about a lot about
+
+904
+00:40:26,079 --> 00:40:34,079
+shifting to to that culture culture of
+
+905
+00:40:30,240 --> 00:40:36,240
+uh safe data and for businesses to
+
+906
+00:40:34,079 --> 00:40:37,920
+understand that can be your value part
+
+907
+00:40:36,240 --> 00:40:39,440
+of your value proposition
+
+908
+00:40:37,920 --> 00:40:42,160
+You can even
+
+909
+00:40:39,440 --> 00:40:45,040
+emphasize when you have good AI or
+
+910
+00:40:42,160 --> 00:40:47,359
+privacy and both governance in place.
+
+911
+00:40:45,040 --> 00:40:50,800
+Feel free to to add it to your value
+
+912
+00:40:47,359 --> 00:40:52,720
+proposition because it's working. Andre,
+
+913
+00:40:50,800 --> 00:40:54,560
+this has been a fantastic conversation.
+
+914
+00:40:52,720 --> 00:40:56,160
+I I've learned some things. Thank you.
+
+915
+00:40:54,560 --> 00:41:00,400
+Of course, I always enjoy speaking with
+
+916
+00:40:56,160 --> 00:41:01,920
+you uh for listeners. Uh you'll find uh
+
+917
+00:41:00,400 --> 00:41:04,880
+all kinds of good information in the
+
+918
+00:41:01,920 --> 00:41:06,640
+show notes. you'll you'll find the
+
+919
+00:41:04,880 --> 00:41:08,319
+anything you need to know about how to
+
+920
+00:41:06,640 --> 00:41:10,720
+reach out to Andre. If you have have
+
+921
+00:41:08,319 --> 00:41:13,280
+questions, you you just want to have a
+
+922
+00:41:10,720 --> 00:41:15,520
+conversation and and bit gleaned from
+
+923
+00:41:13,280 --> 00:41:17,839
+his wisdom a bit. I'm sure he he'd love
+
+924
+00:41:15,520 --> 00:41:19,920
+to hear from you. But that's going to do
+
+925
+00:41:17,839 --> 00:41:22,000
+it for this episode. And Andre, thank
+
+926
+00:41:19,920 --> 00:41:24,400
+you so much for being here. I can't
+
+927
+00:41:22,000 --> 00:41:26,079
+thank you enough. It's been fantastic.
+
+928
+00:41:24,400 --> 00:41:29,680
+Thank you, Curtis, so much for having me
+
+929
+00:41:26,079 --> 00:41:34,160
+here. And uh your questions just right
+
+930
+00:41:29,680 --> 00:41:36,560
+to the point. And I'm happy that uh you
+
+931
+00:41:34,160 --> 00:41:39,280
+curious about that and I'm sure our
+
+932
+00:41:36,560 --> 00:41:43,040
+audience want to know more about that
+
+933
+00:41:39,280 --> 00:41:44,960
+and of course uh there is experts from
+
+934
+00:41:43,040 --> 00:41:47,520
+different fields who really want to
+
+935
+00:41:44,960 --> 00:41:50,079
+become privacy experts and they want to
+
+936
+00:41:47,520 --> 00:41:52,480
+starts from somewhere and I'm sure they
+
+937
+00:41:50,079 --> 00:41:56,079
+will find implication of their expertise
+
+938
+00:41:52,480 --> 00:41:59,599
+in privacy field because it touchs a lot
+
+939
+00:41:56,079 --> 00:42:02,720
+and it's also a global and international
+
+940
+00:41:59,599 --> 00:42:04,720
+uh field where like privacy once
+
+941
+00:42:02,720 --> 00:42:07,760
+business have presence somewhere in
+
+942
+00:42:04,720 --> 00:42:10,720
+Europe or whatever it become become
+
+943
+00:42:07,760 --> 00:42:12,800
+international and global um global thing
+
+944
+00:42:10,720 --> 00:42:15,760
+and so so much things to learn about
+
+945
+00:42:12,800 --> 00:42:18,560
+privacy and now in governance so I'm
+
+946
+00:42:15,760 --> 00:42:21,599
+happy to share my knowledge uh with
+
+947
+00:42:18,560 --> 00:42:22,400
+people who want to reach out I'm happy
+
+948
+00:42:21,599 --> 00:42:24,000
+to talk to
+
+949
+00:42:22,400 --> 00:42:25,040
+excellent thank you so much
+
+950
+00:42:24,000 --> 00:42:26,800
+thank you Chris
+
+951
+00:42:25,040 --> 00:42:28,880
+that's it for this episode of the signal
+
+952
+00:42:26,800 --> 00:42:30,560
+room if today's conversation sparked
+
+953
+00:42:28,880 --> 00:42:31,920
+something in you an idea idea, a
+
+954
+00:42:30,560 --> 00:42:34,160
+challenge or perspective worth
+
+955
+00:42:31,920 --> 00:42:35,680
+amplifying, I'd love to hear from you.
+
+956
+00:42:34,160 --> 00:42:37,280
+Message me on LinkedIn or visit
+
+957
+00:42:35,680 --> 00:42:39,200
+cigarroompodcast.com
+
+958
+00:42:37,280 --> 00:42:42,240
+to explore being a guest on an upcoming
+
+959
+00:42:39,200 --> 00:42:46,599
+episode. Until next time, stay tuned,
+
+960
+00:42:42,240 --> 00:42:46,599
+stay curious, and stay human.
+

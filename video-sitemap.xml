@@ -28,7 +28,7 @@
     <loc>https://signalroompodcast.com/watch/ai-literacy-crisis-killing-healthcare</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/PCHVQ9mPHC0/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>A Doctor Warns: Stop Reading Your Own Lab Results Using AI | Dr. Steven Labkoff</video:title>
+      <video:title>A Doctor Warns: Don&apos;t Read Lab Results With AI | Dr. Steven Labkoff</video:title>
       <video:description>Dr. Steven Labkoff explains why using general-purpose AI to interpret personal lab results can produce confident but clinically dangerous conclusions and why healthcare AI literacy matters.</video:description>
       <video:player_loc>https://www.youtube.com/embed/PCHVQ9mPHC0</video:player_loc>
       <video:duration>2926</video:duration>
@@ -129,6 +129,114 @@
       <video:player_loc>https://www.youtube.com/embed/DlFna8wQghg</video:player_loc>
       <video:duration>1815</video:duration>
       <video:publication_date>2026-07-07T18:15:16Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/workforce-trust-crisis-ai</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/1FDllB_VhW4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The 2-Minute Habit Elite Executives Use Every Day | Diane Weaver</video:title>
+      <video:description>Diane Weaver explains the two-minute daily intention habit used by elite performers, why AI adoption can widen the leadership trust gap, and how technology stewardship keeps people in control.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/1FDllB_VhW4</video:player_loc>
+      <video:duration>3727</video:duration>
+      <video:publication_date>2026-05-20T06:15:06Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-ai-data-layer-privacy-governance</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/G6ChBbgV4xY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Healthcare AI Stalls Before Deployment — This Is Why</video:title>
+      <video:description>Sid Dutta explains why healthcare AI stalls at the data layer and how privacy-preserving infrastructure can move clinical AI from pilots to production.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/G6ChBbgV4xY</video:player_loc>
+      <video:duration>3752</video:duration>
+      <video:publication_date>2026-04-30T23:15:00Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-losing-best-people</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/hez3mE_AlkA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Pajama Time Documentation Is Killing Our Clinicians</video:title>
+      <video:description>Poonam Patel explains how pajama-time documentation accelerates clinician burnout and how ambient AI, interoperability, and empathetic leadership can give providers time back.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/hez3mE_AlkA</video:player_loc>
+      <video:duration>2762</video:duration>
+      <video:publication_date>2026-04-22T00:15:02Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/dark-side-ai-medical-boom</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/7yo6GahIN2c/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Dark Side of the $50B AI Medical Boom | Lorraine Fernandes</video:title>
+      <video:description>Lorraine Fernandes explains why trustworthy medical AI begins with governed source data and why health information leaders belong in every procurement decision.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/7yo6GahIN2c</video:player_loc>
+      <video:duration>2097</video:duration>
+      <video:publication_date>2026-04-15T06:00:05Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-governance-project-failure-andre-samokish</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/pnAPQjVL3yk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Governance: Why Most AI Projects Fail Before They Scale | Andre Samokish</video:title>
+      <video:description>Andre Samokish explains why AI governance, privacy by design, vendor accountability, and AI literacy must be built into projects before they scale.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/pnAPQjVL3yk</video:player_loc>
+      <video:duration>2568</video:duration>
+      <video:publication_date>2026-04-08T06:00:41Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/quiet-quitting-leadership-carly-caminiti</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Wsv6Pm3axds/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Good Employees Quietly Quit - and What Leaders Miss | Carly Caminiti</video:title>
+      <video:description>Carly Caminiti explains why quiet quitting is a leadership signal and why organizations cannot automate their way out of broken culture.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Wsv6Pm3axds</video:player_loc>
+      <video:duration>2966</video:duration>
+      <video:publication_date>2026-04-01T06:41:45Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ethical-ai-operational-trust-markeisha-snaith</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/MhHS4drVihM/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Healthcare Fails Without Operational Trust | MarKeisha Snaith</video:title>
+      <video:description>MarKeisha Snaith explains why ethical healthcare AI depends on operational trust, communication, clinical execution, and accountable leadership.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/MhHS4drVihM</video:player_loc>
+      <video:duration>3195</video:duration>
+      <video:publication_date>2026-03-25T06:00:16Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/personal-ai-patient-advocacy-amanda-roser</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0QC5nLRY5fs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Every Patient Needs a Personal AI Advocate | Amanda Roser</video:title>
+      <video:description>Amanda Roser explains why caregivers are healthcare infrastructure and how personal AI could help families coordinate complex care.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/0QC5nLRY5fs</video:player_loc>
+      <video:duration>3029</video:duration>
+      <video:publication_date>2026-03-18T06:27:39Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-emergency-medicine-natasha-dole</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/wizfkLwkIYw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Emergency Medicine: Design for the Worst 3 AM | Dr. Natasha Dole</video:title>
+      <video:description>Dr. Natasha Dole explains why emergency medicine is the ultimate stress test for healthcare AI, clinical judgment, consent, and accountability.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/wizfkLwkIYw</video:player_loc>
+      <video:duration>2659</video:duration>
+      <video:publication_date>2026-03-13T06:00:45Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
