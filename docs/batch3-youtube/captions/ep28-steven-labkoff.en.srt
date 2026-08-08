@@ -1,0 +1,5696 @@
+1
+00:00:00,080 --> 00:00:04,960
+A friend of mine recently was diagnosed
+
+2
+00:00:02,080 --> 00:00:06,720
+with a rare disease and he had some lab
+
+3
+00:00:04,960 --> 00:00:09,360
+work done and he called me on the phone
+
+4
+00:00:06,720 --> 00:00:11,519
+and said, "Hey, I know what I have. I
+
+5
+00:00:09,360 --> 00:00:13,120
+have celiac disease." I said, "What do
+
+6
+00:00:11,519 --> 00:00:14,719
+you mean?" Well, here's the blood work.
+
+7
+00:00:13,120 --> 00:00:15,920
+When I looked at the blood work, I'm a
+
+8
+00:00:14,719 --> 00:00:17,680
+physician, right? I've been trained.
+
+9
+00:00:15,920 --> 00:00:19,119
+I've seen patients for 10 years. I
+
+10
+00:00:17,680 --> 00:00:21,520
+looked at I said, "What makes you think
+
+11
+00:00:19,119 --> 00:00:23,119
+this is showing that you have celiac
+
+12
+00:00:21,520 --> 00:00:25,199
+disease?" Cuz all the labs were
+
+13
+00:00:23,119 --> 00:00:26,400
+negative. He said, "Oh, no, no, no. Look
+
+14
+00:00:25,199 --> 00:00:27,760
+here." I'm like, "No, no, no. You're
+
+15
+00:00:26,400 --> 00:00:29,359
+misreading it. It doesn't say what you
+
+16
+00:00:27,760 --> 00:00:31,359
+think it says." Sounds a little snobby
+
+17
+00:00:29,359 --> 00:00:32,960
+for me as an expert to say you need the
+
+18
+00:00:31,359 --> 00:00:34,559
+experts, but honest to God, I really do
+
+19
+00:00:32,960 --> 00:00:37,920
+think you need the experts. And I don't
+
+20
+00:00:34,559 --> 00:00:39,120
+think that chat GBT or Claude can take
+
+21
+00:00:37,920 --> 00:00:40,480
+the place of that.
+
+22
+00:00:39,120 --> 00:00:42,960
+Well, welcome back to the Sigma Room
+
+23
+00:00:40,480 --> 00:00:44,640
+where we dig into how AI, data, and real
+
+24
+00:00:42,960 --> 00:00:46,399
+world healthcare actually come together
+
+25
+00:00:44,640 --> 00:00:48,719
+in practice. Today, I'm excited to be
+
+26
+00:00:46,399 --> 00:00:50,879
+joined by Dr. Steven Labkoff. He's a
+
+27
+00:00:48,719 --> 00:00:52,800
+physician executive and an AI platform
+
+28
+00:00:50,879 --> 00:00:54,719
+leader who spent his career figuring out
+
+29
+00:00:52,800 --> 00:00:56,879
+how to turn clinical, genomic, and real
+
+30
+00:00:54,719 --> 00:00:59,199
+world data into tools that actually move
+
+31
+00:00:56,879 --> 00:01:01,039
+the needle. in drug discovery, clinical
+
+32
+00:00:59,199 --> 00:01:03,039
+research and patient care. He trained in
+
+33
+00:01:01,039 --> 00:01:04,799
+internal medicine and cardiology. He
+
+34
+00:01:03,039 --> 00:01:06,560
+went on to lead informatics and data
+
+35
+00:01:04,799 --> 00:01:09,119
+platform work at organizations like
+
+36
+00:01:06,560 --> 00:01:11,360
+Fizer and Astroenica and the multiple
+
+37
+00:01:09,119 --> 00:01:13,119
+amyoma research foundation where he
+
+38
+00:01:11,360 --> 00:01:15,439
+served as the chief data officer. And
+
+39
+00:01:13,119 --> 00:01:17,439
+today he's a busy guy. He's running
+
+40
+00:01:15,439 --> 00:01:18,560
+Luminant Consulting. He collaborates
+
+41
+00:01:17,439 --> 00:01:20,400
+with the division of clinical
+
+42
+00:01:18,560 --> 00:01:21,680
+informatics at Beth Israel Deaconist
+
+43
+00:01:20,400 --> 00:01:23,680
+Medical Center and he hosts the
+
+44
+00:01:21,680 --> 00:01:25,360
+Practical AI in Healthcare podcast.
+
+45
+00:01:23,680 --> 00:01:27,040
+Steve, thanks for being here and it's
+
+46
+00:01:25,360 --> 00:01:28,000
+really great to have you. Welcome to the
+
+47
+00:01:27,040 --> 00:01:29,439
+Signal Room.
+
+48
+00:01:28,000 --> 00:01:30,159
+Hey, my pleasure. Thank you very much
+
+49
+00:01:29,439 --> 00:01:31,840
+for having me.
+
+50
+00:01:30,159 --> 00:01:33,040
+Well, I want to just jump in because,
+
+51
+00:01:31,840 --> 00:01:34,799
+you know, we've had some interesting
+
+52
+00:01:33,040 --> 00:01:36,400
+conversations and I know that you've got
+
+53
+00:01:34,799 --> 00:01:38,240
+a lot of things that you're you're
+
+54
+00:01:36,400 --> 00:01:39,840
+working on. So, I wanted to start with
+
+55
+00:01:38,240 --> 00:01:42,079
+what's top of mind for you as you're
+
+56
+00:01:39,840 --> 00:01:43,920
+looking at healthcare and AI right now.
+
+57
+00:01:42,079 --> 00:01:46,159
+What's really occupying most of your
+
+58
+00:01:43,920 --> 00:01:48,479
+thinking lately? And, you know, what are
+
+59
+00:01:46,159 --> 00:01:51,200
+you really paying the closest attention
+
+60
+00:01:48,479 --> 00:01:52,799
+to? There's just so much to talk about.
+
+61
+00:01:51,200 --> 00:01:55,040
+I wouldn't even know where to start, but
+
+62
+00:01:52,799 --> 00:01:57,119
+love to hear from your perspective. So,
+
+63
+00:01:55,040 --> 00:02:00,079
+you know, right now, it's funny. I was
+
+64
+00:01:57,119 --> 00:02:03,040
+in a conversation just within the last
+
+65
+00:02:00,079 --> 00:02:04,320
+hour with somebody and I mentioning he
+
+66
+00:02:03,040 --> 00:02:06,240
+asked me basically the same question
+
+67
+00:02:04,320 --> 00:02:08,399
+because I didn't really set out to
+
+68
+00:02:06,240 --> 00:02:10,080
+become sort of a like a pundit in the
+
+69
+00:02:08,399 --> 00:02:11,599
+space, but it because of the podcast and
+
+70
+00:02:10,080 --> 00:02:13,440
+the other work I'm doing and the
+
+71
+00:02:11,599 --> 00:02:14,879
+publications, people are calling me and
+
+72
+00:02:13,440 --> 00:02:16,080
+asking me questions like this. So, this
+
+73
+00:02:14,879 --> 00:02:18,400
+guy asked me, you know, the same
+
+74
+00:02:16,080 --> 00:02:20,480
+question. What's the most pressing
+
+75
+00:02:18,400 --> 00:02:22,720
+thing? What's the the latest trends that
+
+76
+00:02:20,480 --> 00:02:24,720
+you're seeing? And I'm going to talk
+
+77
+00:02:22,720 --> 00:02:26,480
+more about like the things that are sort
+
+78
+00:02:24,720 --> 00:02:28,080
+of not the trends as much, but the
+
+79
+00:02:26,480 --> 00:02:29,920
+things that I'm seeing that I think are
+
+80
+00:02:28,080 --> 00:02:32,879
+really important things to pay attention
+
+81
+00:02:29,920 --> 00:02:36,000
+to. And it goes back to some of the work
+
+82
+00:02:32,879 --> 00:02:38,560
+I did most recently when I was the VP of
+
+83
+00:02:36,000 --> 00:02:40,319
+analytics at Bristol Myers Squibb. And
+
+84
+00:02:38,560 --> 00:02:41,599
+what I observed while I was there was
+
+85
+00:02:40,319 --> 00:02:43,840
+that when they were trying to roll out
+
+86
+00:02:41,599 --> 00:02:46,319
+AI, one of the things I observed was
+
+87
+00:02:43,840 --> 00:02:47,920
+that it's such a new technology. And by
+
+88
+00:02:46,319 --> 00:02:49,920
+the way, it is a technology. People
+
+89
+00:02:47,920 --> 00:02:52,239
+think that it's not a an information
+
+90
+00:02:49,920 --> 00:02:53,840
+technology. It really is and it needs to
+
+91
+00:02:52,239 --> 00:02:56,080
+be thought of in that framework. Vast
+
+92
+00:02:53,840 --> 00:02:58,400
+majority of leaders in the organization,
+
+93
+00:02:56,080 --> 00:03:00,400
+both senior leaders and middle managers
+
+94
+00:02:58,400 --> 00:03:02,000
+and folks at the bottom of the stack,
+
+95
+00:03:00,400 --> 00:03:04,480
+you know, the secretaries and the
+
+96
+00:03:02,000 --> 00:03:06,159
+administrative assistants, the amount of
+
+97
+00:03:04,480 --> 00:03:09,120
+these folks who actually understood what
+
+98
+00:03:06,159 --> 00:03:10,879
+AI could potentially do was tiny.
+
+99
+00:03:09,120 --> 00:03:12,560
+Certainly there was a group in the IT
+
+100
+00:03:10,879 --> 00:03:13,920
+department that was very well-versed in
+
+101
+00:03:12,560 --> 00:03:16,800
+it and understood things like what's
+
+102
+00:03:13,920 --> 00:03:18,879
+possible and what you could do but it
+
+103
+00:03:16,800 --> 00:03:20,720
+was a very very tiny percentage of the
+
+104
+00:03:18,879 --> 00:03:22,400
+senior leadership and anywhere in the
+
+105
+00:03:20,720 --> 00:03:24,560
+organ that actually understood it in a
+
+106
+00:03:22,400 --> 00:03:27,120
+meaningful way which led me in the work
+
+107
+00:03:24,560 --> 00:03:29,360
+that I was doing that I am doing at the
+
+108
+00:03:27,120 --> 00:03:31,360
+Beth Israel Deaconist medical center at
+
+109
+00:03:29,360 --> 00:03:34,560
+the division of clinical formatics into
+
+110
+00:03:31,360 --> 00:03:36,080
+our last fall conference that we ran and
+
+111
+00:03:34,560 --> 00:03:37,920
+that was called signal to the noise.
+
+112
+00:03:36,080 --> 00:03:40,640
+purpose of the conference was to sort of
+
+113
+00:03:37,920 --> 00:03:42,319
+try to identify the types of AI
+
+114
+00:03:40,640 --> 00:03:43,519
+solutions in healthcare that are making
+
+115
+00:03:42,319 --> 00:03:44,959
+a difference kind of like what you
+
+116
+00:03:43,519 --> 00:03:46,720
+described in the opening and one of the
+
+117
+00:03:44,959 --> 00:03:49,840
+things we kind of trip tripped into was
+
+118
+00:03:46,720 --> 00:03:53,280
+this concept of AI literacy and it's one
+
+119
+00:03:49,840 --> 00:03:54,720
+of the least talked about AI issues that
+
+120
+00:03:53,280 --> 00:03:56,319
+are out there I mean other things people
+
+121
+00:03:54,720 --> 00:03:58,319
+are talking about are governance and
+
+122
+00:03:56,319 --> 00:03:59,680
+safety and and those are all important
+
+123
+00:03:58,319 --> 00:04:02,720
+but the one that's not getting a lot of
+
+124
+00:03:59,680 --> 00:04:05,519
+airplay is this issue of of of literacy
+
+125
+00:04:02,720 --> 00:04:07,280
+and it's one of I think if it's not the
+
+126
+00:04:05,519 --> 00:04:09,120
+most important thing that's out there.
+
+127
+00:04:07,280 --> 00:04:12,879
+It's it's up there in the top three
+
+128
+00:04:09,120 --> 00:04:14,640
+because we're seeing hype and trends and
+
+129
+00:04:12,879 --> 00:04:16,560
+and everything and things are moving at
+
+130
+00:04:14,640 --> 00:04:18,639
+lightning speed, but most of the world
+
+131
+00:04:16,560 --> 00:04:20,560
+doesn't quite understand yet what's
+
+132
+00:04:18,639 --> 00:04:22,400
+possible and what it could do for you.
+
+133
+00:04:20,560 --> 00:04:23,759
+And that's kind of where lit the whole
+
+134
+00:04:22,400 --> 00:04:26,720
+literacy conversation begins.
+
+135
+00:04:23,759 --> 00:04:28,639
+Yeah, it's such an important point. the
+
+136
+00:04:26,720 --> 00:04:31,919
+crazy pace that things have happened now
+
+137
+00:04:28,639 --> 00:04:34,320
+with the emergence of open AI and uh the
+
+138
+00:04:31,919 --> 00:04:36,240
+anthropic kind of jumping way out ahead
+
+139
+00:04:34,320 --> 00:04:38,080
+and getting going direct to the p to the
+
+140
+00:04:36,240 --> 00:04:40,240
+public and you know potentially
+
+141
+00:04:38,080 --> 00:04:41,840
+impacting how patients are thinking
+
+142
+00:04:40,240 --> 00:04:44,160
+about their care inside of health
+
+143
+00:04:41,840 --> 00:04:46,160
+systems. We really have to get our
+
+144
+00:04:44,160 --> 00:04:48,400
+ourselves organized quickly and start to
+
+145
+00:04:46,160 --> 00:04:50,720
+help people understand this stuff.
+
+146
+00:04:48,400 --> 00:04:53,040
+Brilliant point to to bring that up.
+
+147
+00:04:50,720 --> 00:04:55,759
+There's so many different kinds of AI,
+
+148
+00:04:53,040 --> 00:04:57,440
+but not all of it's not all of it's how
+
+149
+00:04:55,759 --> 00:04:59,680
+people are thinking about it and and I
+
+150
+00:04:57,440 --> 00:05:01,040
+think that's where it gets a little
+
+151
+00:04:59,680 --> 00:05:03,040
+little sideways because you mentioned
+
+152
+00:05:01,040 --> 00:05:04,639
+it's it really is technology. We've been
+
+153
+00:05:03,040 --> 00:05:06,880
+technology first for a long time, but
+
+154
+00:05:04,639 --> 00:05:08,880
+we've done not so well when it comes to
+
+155
+00:05:06,880 --> 00:05:11,039
+helping people understand what the
+
+156
+00:05:08,880 --> 00:05:13,120
+intended uses are, what it's good for,
+
+157
+00:05:11,039 --> 00:05:14,880
+what it's not, and even worse, we've not
+
+158
+00:05:13,120 --> 00:05:16,720
+really gotten to the people who were
+
+159
+00:05:14,880 --> 00:05:18,160
+impacted by the workflow before we
+
+160
+00:05:16,720 --> 00:05:19,840
+actually designed something.
+
+161
+00:05:18,160 --> 00:05:21,759
+That's exactly right. Yeah.
+
+162
+00:05:19,840 --> 00:05:24,080
+That how has that been in your
+
+163
+00:05:21,759 --> 00:05:26,160
+experience? Have you seen a lot more of
+
+164
+00:05:24,080 --> 00:05:27,680
+that that kind of technology first
+
+165
+00:05:26,160 --> 00:05:30,160
+approach or or
+
+166
+00:05:27,680 --> 00:05:31,680
+No. Well, no. people could people seem
+
+167
+00:05:30,160 --> 00:05:33,520
+to be at the moment from what what I'm
+
+168
+00:05:31,680 --> 00:05:35,440
+what I'm observing is they they are
+
+169
+00:05:33,520 --> 00:05:38,800
+treating this as something super novel
+
+170
+00:05:35,440 --> 00:05:42,639
+super new and they're not using the same
+
+171
+00:05:38,800 --> 00:05:45,520
+type of critical thinking that has
+
+172
+00:05:42,639 --> 00:05:48,000
+typically accompanied every other type
+
+173
+00:05:45,520 --> 00:05:50,240
+of new technological innovation that's
+
+174
+00:05:48,000 --> 00:05:52,720
+happened over the last call it 30 years.
+
+175
+00:05:50,240 --> 00:05:55,199
+So you and I are in the same age group.
+
+176
+00:05:52,720 --> 00:05:57,440
+We both cut our teeth in the late 90s or
+
+177
+00:05:55,199 --> 00:06:00,400
+maybe the mid 90s as we got into this
+
+178
+00:05:57,440 --> 00:06:02,320
+space. And you'll remember, you know,
+
+179
+00:06:00,400 --> 00:06:05,360
+when the internet started, the internet
+
+180
+00:06:02,320 --> 00:06:08,080
+was another exactly the same kind of of
+
+181
+00:06:05,360 --> 00:06:09,440
+of a hype cycle. Same kind of like you
+
+182
+00:06:08,080 --> 00:06:11,280
+can do everything. It's going to change
+
+183
+00:06:09,440 --> 00:06:15,280
+the way we're doing the entire world.
+
+184
+00:06:11,280 --> 00:06:18,639
+But it wasn't until the mid 2000s, maybe
+
+185
+00:06:15,280 --> 00:06:21,440
+very very Yeah. like 2004, fiveish, when
+
+186
+00:06:18,639 --> 00:06:24,080
+Amazon, eBay, and all these other big
+
+187
+00:06:21,440 --> 00:06:27,840
+companies really found their footing.
+
+188
+00:06:24,080 --> 00:06:29,919
+And we figured out that in 1993 or '94,
+
+189
+00:06:27,840 --> 00:06:32,160
+'95 when it was, you know, Netscape and
+
+190
+00:06:29,919 --> 00:06:34,560
+it was just so cool, nobody knew exactly
+
+191
+00:06:32,160 --> 00:06:36,240
+what to do until they realized, oh, we
+
+192
+00:06:34,560 --> 00:06:37,440
+can sell things on the internet. We can
+
+193
+00:06:36,240 --> 00:06:39,520
+search for things on the internet. we
+
+194
+00:06:37,440 --> 00:06:41,360
+can get data from the and I think we're
+
+195
+00:06:39,520 --> 00:06:43,360
+in the same kind of a we're only three
+
+196
+00:06:41,360 --> 00:06:45,919
+years into this whole journey with AI
+
+197
+00:06:43,360 --> 00:06:47,280
+and I think we still don't yet know
+
+198
+00:06:45,919 --> 00:06:50,000
+where things are going to settle. I mean
+
+199
+00:06:47,280 --> 00:06:51,440
+people have been talking about AI in you
+
+200
+00:06:50,000 --> 00:06:54,319
+know in how to practice medicine and
+
+201
+00:06:51,440 --> 00:06:57,039
+clinical decision support and how to
+
+202
+00:06:54,319 --> 00:06:59,039
+ensure that patient you know we're going
+
+203
+00:06:57,039 --> 00:07:00,400
+to change medicine well yeah we are
+
+204
+00:06:59,039 --> 00:07:02,400
+going to change medicine but it's going
+
+205
+00:07:00,400 --> 00:07:04,639
+to change probably not at the pace that
+
+206
+00:07:02,400 --> 00:07:06,000
+people are hyping it about and that was
+
+207
+00:07:04,639 --> 00:07:08,560
+what one of the things that came out of
+
+208
+00:07:06,000 --> 00:07:10,240
+our work at the at the Beth Israel is
+
+209
+00:07:08,560 --> 00:07:11,759
+that there are some really interesting
+
+210
+00:07:10,240 --> 00:07:14,560
+things happening like we've had people
+
+211
+00:07:11,759 --> 00:07:18,000
+talk about everything from diabetic
+
+212
+00:07:14,560 --> 00:07:20,319
+retinopathy screening and and pathology
+
+213
+00:07:18,000 --> 00:07:22,080
+and things like that. And yeah, AI can
+
+214
+00:07:20,319 --> 00:07:23,840
+do in some cases a better job than
+
+215
+00:07:22,080 --> 00:07:26,720
+humans in diagnosing these things and
+
+216
+00:07:23,840 --> 00:07:29,280
+helping doctors think better, but I'm
+
+217
+00:07:26,720 --> 00:07:31,199
+not clear if that's where the real wins
+
+218
+00:07:29,280 --> 00:07:33,280
+are going to settle out. One of the
+
+219
+00:07:31,199 --> 00:07:35,520
+things we've seen also is that the
+
+220
+00:07:33,280 --> 00:07:37,599
+mundane use cases, use cases for things
+
+221
+00:07:35,520 --> 00:07:39,520
+that are really like really hanging up
+
+222
+00:07:37,599 --> 00:07:40,400
+humans, pushing paper for example.
+
+223
+00:07:39,520 --> 00:07:42,479
+Yeah,
+
+224
+00:07:40,400 --> 00:07:44,479
+I was just chiding with a friend of
+
+225
+00:07:42,479 --> 00:07:46,400
+mine. I run my consultancy and I don't
+
+226
+00:07:44,479 --> 00:07:48,800
+do my own billing. So, my clients love
+
+227
+00:07:46,400 --> 00:07:50,560
+that because I don't bill them and then
+
+228
+00:07:48,800 --> 00:07:52,400
+and then, you know, I have to sit down
+
+229
+00:07:50,560 --> 00:07:54,319
+and spend an hour or two doing my
+
+230
+00:07:52,400 --> 00:07:56,879
+billing and I it's a task that I just
+
+231
+00:07:54,319 --> 00:07:58,479
+loathe doing. It's just a painful thing
+
+232
+00:07:56,879 --> 00:08:00,080
+even though I need it to get paid. But,
+
+233
+00:07:58,479 --> 00:08:02,000
+if I could figure out an AI agent that
+
+234
+00:08:00,080 --> 00:08:03,440
+will help me with something as mundane
+
+235
+00:08:02,000 --> 00:08:04,720
+as getting my bills out the door on time
+
+236
+00:08:03,440 --> 00:08:07,680
+at the beginning of the month, that
+
+237
+00:08:04,720 --> 00:08:09,360
+would be a win, right? And it it'd be a
+
+238
+00:08:07,680 --> 00:08:11,599
+great win, like if it helps diagnose
+
+239
+00:08:09,360 --> 00:08:13,759
+rare disease or if it helps us generate
+
+240
+00:08:11,599 --> 00:08:15,840
+new drugs. All these things are really
+
+241
+00:08:13,759 --> 00:08:17,199
+really cool use cases, but they're not I
+
+242
+00:08:15,840 --> 00:08:18,720
+think they're those use cases are going
+
+243
+00:08:17,199 --> 00:08:20,479
+to be they're not going to be the ones
+
+244
+00:08:18,720 --> 00:08:21,680
+that are going to really win the day, so
+
+245
+00:08:20,479 --> 00:08:23,199
+to speak. It's not the ones are going to
+
+246
+00:08:21,680 --> 00:08:25,280
+win the hearts and minds of the of the
+
+247
+00:08:23,199 --> 00:08:26,879
+masses because the masses don't know
+
+248
+00:08:25,280 --> 00:08:28,560
+anything about AlphaFold. They don't
+
+249
+00:08:26,879 --> 00:08:30,879
+know anything about how to design a
+
+250
+00:08:28,560 --> 00:08:32,479
+drug. They know that the only thing in
+
+251
+00:08:30,879 --> 00:08:33,839
+their checkbook is a painful thing to do
+
+252
+00:08:32,479 --> 00:08:36,159
+every month. And what do we do?
+
+253
+00:08:33,839 --> 00:08:39,039
+Yes. Yeah. I I think the the interesting
+
+254
+00:08:36,159 --> 00:08:40,880
+opportunities for me and you know I'm
+
+255
+00:08:39,039 --> 00:08:42,080
+sure you have some some thoughts around
+
+256
+00:08:40,880 --> 00:08:44,080
+this and probably you're involved in
+
+257
+00:08:42,080 --> 00:08:45,760
+some things in this space too but the
+
+258
+00:08:44,080 --> 00:08:48,720
+potential research is the part that I
+
+259
+00:08:45,760 --> 00:08:50,560
+get excited about if nothing more than
+
+260
+00:08:48,720 --> 00:08:53,040
+the fact that having capability to
+
+261
+00:08:50,560 --> 00:08:54,880
+process information uh at a scale that
+
+262
+00:08:53,040 --> 00:08:56,720
+we've never been able to at a time frame
+
+263
+00:08:54,880 --> 00:08:58,800
+in a pace that we've never been able to
+
+264
+00:08:56,720 --> 00:09:00,959
+that really kind of excites me but the
+
+265
+00:08:58,800 --> 00:09:02,800
+data hygiene and data quality stuff
+
+266
+00:09:00,959 --> 00:09:04,080
+we've got to get on that stuff and we've
+
+267
+00:09:02,800 --> 00:09:06,399
+been how long we've been talking about
+
+268
+00:09:04,080 --> 00:09:08,640
+interoperability and we've really not
+
+269
+00:09:06,399 --> 00:09:10,560
+achieved any level of it. That really
+
+270
+00:09:08,640 --> 00:09:14,240
+moves the needle and relieves a lot of
+
+271
+00:09:10,560 --> 00:09:16,880
+the burden for clinicians that has been
+
+272
+00:09:14,240 --> 00:09:19,279
+routinely had things added to their
+
+273
+00:09:16,880 --> 00:09:21,120
+their list of data points they've got to
+
+274
+00:09:19,279 --> 00:09:22,880
+capture conversations you have to have
+
+275
+00:09:21,120 --> 00:09:24,640
+about certain things so it's documented
+
+276
+00:09:22,880 --> 00:09:26,320
+can be built. I mean all that stuff we
+
+277
+00:09:24,640 --> 00:09:28,160
+just kind of went in the wrong direction
+
+278
+00:09:26,320 --> 00:09:29,760
+but we've got we got to get serious. We
+
+279
+00:09:28,160 --> 00:09:31,120
+don't have a lot of time. I don't think
+
+280
+00:09:29,760 --> 00:09:32,800
+I I you know, I don't know about how
+
+281
+00:09:31,120 --> 00:09:35,360
+much time we have, but I do think that
+
+282
+00:09:32,800 --> 00:09:36,640
+you're not wrong in that we need to have
+
+283
+00:09:35,360 --> 00:09:37,920
+be thinking about this a little
+
+284
+00:09:36,640 --> 00:09:40,000
+differently than we may have thought of
+
+285
+00:09:37,920 --> 00:09:41,839
+in the past. We need to be or maybe
+
+286
+00:09:40,000 --> 00:09:43,040
+stated it slightly differently. We need
+
+287
+00:09:41,839 --> 00:09:44,399
+to think about it with the same
+
+288
+00:09:43,040 --> 00:09:47,360
+framework as things that we've done in
+
+289
+00:09:44,399 --> 00:09:48,880
+the past because at the end of the day,
+
+290
+00:09:47,360 --> 00:09:50,959
+if you think about it like a standard
+
+291
+00:09:48,880 --> 00:09:53,120
+information technology play or or
+
+292
+00:09:50,959 --> 00:09:55,200
+challenge, you have there there are
+
+293
+00:09:53,120 --> 00:09:57,680
+rules and and ways of working that have
+
+294
+00:09:55,200 --> 00:09:59,360
+been tried and true for 40 years about
+
+295
+00:09:57,680 --> 00:10:01,760
+how to bring a new technology to bear.
+
+296
+00:09:59,360 --> 00:10:03,680
+And I think right now most of the world
+
+297
+00:10:01,760 --> 00:10:05,360
+is kind of ignoring that because they're
+
+298
+00:10:03,680 --> 00:10:07,519
+so enamored with all the really cool
+
+299
+00:10:05,360 --> 00:10:09,680
+things, all the new video clips that can
+
+300
+00:10:07,519 --> 00:10:12,320
+be made, all the artificial photographs
+
+301
+00:10:09,680 --> 00:10:13,920
+that can be done. And all those things
+
+302
+00:10:12,320 --> 00:10:15,600
+are really cool and really interesting
+
+303
+00:10:13,920 --> 00:10:17,200
+and, you know, to some degree a little
+
+304
+00:10:15,600 --> 00:10:18,959
+concerning when you have, you know,
+
+305
+00:10:17,200 --> 00:10:21,440
+artificial people talking and they look
+
+306
+00:10:18,959 --> 00:10:23,839
+like President Trump or President Obama.
+
+307
+00:10:21,440 --> 00:10:25,519
+Those things are highly concerning. But
+
+308
+00:10:23,839 --> 00:10:26,959
+if we take a step back and look at it
+
+309
+00:10:25,519 --> 00:10:28,959
+with the same lens that we use for
+
+310
+00:10:26,959 --> 00:10:30,880
+looking at any new physical technology
+
+311
+00:10:28,959 --> 00:10:32,560
+that we bring into our lives, it's going
+
+312
+00:10:30,880 --> 00:10:34,160
+to look a lot different. So initially
+
+313
+00:10:32,560 --> 00:10:36,640
+people are going to start using it for
+
+314
+00:10:34,160 --> 00:10:38,560
+the things that they know how to do and
+
+315
+00:10:36,640 --> 00:10:39,920
+we'll take over for the for those
+
+316
+00:10:38,560 --> 00:10:41,200
+things. But that's not going to be the
+
+317
+00:10:39,920 --> 00:10:42,800
+real win. The real win is going to be
+
+318
+00:10:41,200 --> 00:10:44,240
+when you're thinking completely out of
+
+319
+00:10:42,800 --> 00:10:46,880
+the box and you come up with new use
+
+320
+00:10:44,240 --> 00:10:49,200
+cases that is very specifically
+
+321
+00:10:46,880 --> 00:10:51,519
+earmarked for what AI can literally do
+
+322
+00:10:49,200 --> 00:10:53,200
+differently than other than like do your
+
+323
+00:10:51,519 --> 00:10:54,959
+checkbook differently or the same as you
+
+324
+00:10:53,200 --> 00:10:57,360
+do it now. you need to come and and I
+
+325
+00:10:54,959 --> 00:10:59,040
+think that's where time will settle out
+
+326
+00:10:57,360 --> 00:11:00,399
+and these use cases are going to you
+
+327
+00:10:59,040 --> 00:11:02,079
+know start to bubbling to the surface
+
+328
+00:11:00,399 --> 00:11:03,600
+and we're seeing that and the podcast
+
+329
+00:11:02,079 --> 00:11:05,680
+you mentioned I did this podcast so
+
+330
+00:11:03,600 --> 00:11:07,839
+Practical AI in Healthcare is all about
+
+331
+00:11:05,680 --> 00:11:09,760
+looking for exactly that what are the
+
+332
+00:11:07,839 --> 00:11:11,440
+what are the bright spots in the
+
+333
+00:11:09,760 --> 00:11:14,800
+healthcare ecosystem whether it's in
+
+334
+00:11:11,440 --> 00:11:17,200
+patient care or nursing or engaged
+
+335
+00:11:14,800 --> 00:11:18,399
+patients or life sciences where are the
+
+336
+00:11:17,200 --> 00:11:19,839
+bright spots where these things are
+
+337
+00:11:18,399 --> 00:11:21,920
+being found and what are those bright
+
+338
+00:11:19,839 --> 00:11:23,680
+spots and that's one of the core
+
+339
+00:11:21,920 --> 00:11:25,839
+missions of why we do that podcast.
+
+340
+00:11:23,680 --> 00:11:28,720
+I would love to like just rewind just a
+
+341
+00:11:25,839 --> 00:11:31,519
+little and just kind of talk a little
+
+342
+00:11:28,720 --> 00:11:33,040
+bit about what inspired you and kind of
+
+343
+00:11:31,519 --> 00:11:34,640
+led you into this because you mentioned
+
+344
+00:11:33,040 --> 00:11:36,959
+earlier, you know, you didn't set out to
+
+345
+00:11:34,640 --> 00:11:39,200
+be dealing with data and AI at the and
+
+346
+00:11:36,959 --> 00:11:40,480
+that's, you know, as a clinician. It's
+
+347
+00:11:39,200 --> 00:11:41,519
+not like you didn't have a lot of other
+
+348
+00:11:40,480 --> 00:11:43,920
+things you could do.
+
+349
+00:11:41,519 --> 00:11:46,160
+So, if you rewind my career, I started
+
+350
+00:11:43,920 --> 00:11:47,839
+as a as a an internal medicine doctor. I
+
+351
+00:11:46,160 --> 00:11:49,760
+trained at University of Pittsburgh,
+
+352
+00:11:47,839 --> 00:11:52,000
+which was an amazing place to get
+
+353
+00:11:49,760 --> 00:11:53,760
+trained. It was kind of the best of both
+
+354
+00:11:52,000 --> 00:11:54,880
+worlds. It had both inner city
+
+355
+00:11:53,760 --> 00:11:56,160
+components and a lot of suburban
+
+356
+00:11:54,880 --> 00:11:58,079
+components. So, you'd see some of the
+
+357
+00:11:56,160 --> 00:12:00,160
+really nasty things that you need to see
+
+358
+00:11:58,079 --> 00:12:02,320
+when you're in training because of the
+
+359
+00:12:00,160 --> 00:12:04,480
+downtown kind of parts of it. And then
+
+360
+00:12:02,320 --> 00:12:06,480
+you'd see a lot of uh high-end like we
+
+361
+00:12:04,480 --> 00:12:07,839
+had chics coming into Pittsburgh from
+
+362
+00:12:06,480 --> 00:12:09,839
+the Middle East who needed liver
+
+363
+00:12:07,839 --> 00:12:11,920
+transplants and and their children and
+
+364
+00:12:09,839 --> 00:12:13,600
+their and we would see these high-end
+
+365
+00:12:11,920 --> 00:12:15,440
+patients and the very low-end pat. So, I
+
+366
+00:12:13,600 --> 00:12:17,600
+got my training in that environment
+
+367
+00:12:15,440 --> 00:12:20,160
+which was amazing place to train. But
+
+368
+00:12:17,600 --> 00:12:22,079
+while I was there, I got hooked up with
+
+369
+00:12:20,160 --> 00:12:23,519
+um the division of informatics that was
+
+370
+00:12:22,079 --> 00:12:25,120
+run by a guy named Randy Miller at the
+
+371
+00:12:23,519 --> 00:12:26,800
+time. And I got hooked into doing some
+
+372
+00:12:25,120 --> 00:12:28,399
+work and it was I'm going to call it
+
+373
+00:12:26,800 --> 00:12:30,560
+peeon work because they were working on
+
+374
+00:12:28,399 --> 00:12:32,639
+an artificial intelligence system called
+
+375
+00:12:30,560 --> 00:12:34,240
+the quick medical reference or QMR. And
+
+376
+00:12:32,639 --> 00:12:36,720
+I was one of these residents that got
+
+377
+00:12:34,240 --> 00:12:38,880
+hired to do a lot of research to create
+
+378
+00:12:36,720 --> 00:12:40,399
+these medic these um they call them
+
+379
+00:12:38,880 --> 00:12:42,480
+disease profiles. And they was looking
+
+380
+00:12:40,399 --> 00:12:44,399
+for the weights. How do you come up with
+
+381
+00:12:42,480 --> 00:12:46,880
+a profile that was using a deterministic
+
+382
+00:12:44,399 --> 00:12:49,120
+model to determine whether or not the
+
+383
+00:12:46,880 --> 00:12:50,560
+patient had this given disease? And I
+
+384
+00:12:49,120 --> 00:12:51,839
+got to meet the department and I got to
+
+385
+00:12:50,560 --> 00:12:53,680
+meet all these people in the in the
+
+386
+00:12:51,839 --> 00:12:55,839
+field. And eventually after I did my
+
+387
+00:12:53,680 --> 00:12:57,360
+cardiology work, I decided to go do a
+
+388
+00:12:55,839 --> 00:12:59,519
+fellowship in informat left cardiology
+
+389
+00:12:57,360 --> 00:13:00,959
+and went to Harvard and MIT to do a
+
+390
+00:12:59,519 --> 00:13:03,440
+clinical informatics fellowship at Beth
+
+391
+00:13:00,959 --> 00:13:04,959
+at Brigham Women's Hospital at MIT. It
+
+392
+00:13:03,440 --> 00:13:06,800
+was a combined fellowship between the
+
+393
+00:13:04,959 --> 00:13:10,000
+two programs. spent some time up in
+
+394
+00:13:06,800 --> 00:13:12,399
+Boston uh and then left Boston after the
+
+395
+00:13:10,000 --> 00:13:14,880
+fellowship and faculty was done and went
+
+396
+00:13:12,399 --> 00:13:17,200
+to life sciences. I got hired by Fizer
+
+397
+00:13:14,880 --> 00:13:19,360
+and for 13 amazing years I got to do
+
+398
+00:13:17,200 --> 00:13:21,360
+things that were not what a typical
+
+399
+00:13:19,360 --> 00:13:23,760
+doctor in pharmaceuticals gets to do.
+
+400
+00:13:21,360 --> 00:13:26,639
+Like I was not it's called an a medical
+
+401
+00:13:23,760 --> 00:13:28,320
+science liaison or an MSL. I wasn't
+
+402
+00:13:26,639 --> 00:13:30,000
+working on the clinical trial space. I
+
+403
+00:13:28,320 --> 00:13:31,680
+was working on the cutting edge of
+
+404
+00:13:30,000 --> 00:13:33,519
+healthcare technology and how it was
+
+405
+00:13:31,680 --> 00:13:35,040
+affecting the life sciences industry.
+
+406
+00:13:33,519 --> 00:13:37,279
+And that was an amazing thing to do. I
+
+407
+00:13:35,040 --> 00:13:38,800
+mean it led me into programs and things
+
+408
+00:13:37,279 --> 00:13:40,480
+that were that I haven't been able to
+
+409
+00:13:38,800 --> 00:13:43,440
+rival since. Like I got to build a
+
+410
+00:13:40,480 --> 00:13:44,720
+hospital in Africa in Kapala Uganda. So
+
+411
+00:13:43,440 --> 00:13:47,360
+for four years I was going back and
+
+412
+00:13:44,720 --> 00:13:49,279
+forth to Kala and orchestrating all the
+
+413
+00:13:47,360 --> 00:13:50,880
+healthcare IT infrastructure for this
+
+414
+00:13:49,279 --> 00:13:52,240
+hospital. And by the way, if you ask me
+
+415
+00:13:50,880 --> 00:13:53,440
+what I knew about building hospitals
+
+416
+00:13:52,240 --> 00:13:55,040
+when I started, I didn't have the
+
+417
+00:13:53,440 --> 00:13:57,040
+slightest clue and let alone doing it in
+
+418
+00:13:55,040 --> 00:13:58,639
+subsaharan Africa. But over the course
+
+419
+00:13:57,040 --> 00:14:00,399
+of the time I was there, we built out
+
+420
+00:13:58,639 --> 00:14:01,760
+the infrastructure. We treated it like
+
+421
+00:14:00,399 --> 00:14:04,079
+another technology program with
+
+422
+00:14:01,760 --> 00:14:06,079
+different constraints. I raised almost
+
+423
+00:14:04,079 --> 00:14:08,399
+$2 and a half million dollars in funding
+
+424
+00:14:06,079 --> 00:14:10,480
+and and donations and kind from places
+
+425
+00:14:08,399 --> 00:14:14,720
+like Compact Computer and Gillet Packard
+
+426
+00:14:10,480 --> 00:14:16,639
+and IBM and and SAS the statistics
+
+427
+00:14:14,720 --> 00:14:18,639
+company and we got licenses and we got
+
+428
+00:14:16,639 --> 00:14:20,079
+hardware. We implemented all this stuff.
+
+429
+00:14:18,639 --> 00:14:22,160
+The the organization is called the
+
+430
+00:14:20,079 --> 00:14:23,600
+infectious disease institute and
+
+431
+00:14:22,160 --> 00:14:25,440
+recently interviewed somebody for the
+
+432
+00:14:23,600 --> 00:14:27,519
+podcast who's working there. It's still
+
+433
+00:14:25,440 --> 00:14:30,480
+there. It's still up and running 20
+
+434
+00:14:27,519 --> 00:14:32,000
+years later after I was done with Fizer
+
+435
+00:14:30,480 --> 00:14:33,839
+and all these interesting things. Well,
+
+436
+00:14:32,000 --> 00:14:35,199
+actually just before I left, I started a
+
+437
+00:14:33,839 --> 00:14:36,560
+department there called Healthcare
+
+438
+00:14:35,199 --> 00:14:38,000
+Informatics, which was looking at the
+
+439
+00:14:36,560 --> 00:14:40,399
+policy implications of what uh
+
+440
+00:14:38,000 --> 00:14:42,240
+healthcare informatics was doing to the
+
+441
+00:14:40,399 --> 00:14:44,000
+industry. And I actually was almost like
+
+442
+00:14:42,240 --> 00:14:46,079
+a lobbyist. I was in Washington twice a
+
+443
+00:14:44,000 --> 00:14:49,120
+week briefing senates and health
+
+444
+00:14:46,079 --> 00:14:50,880
+staffers on on on e-rescribing and and
+
+445
+00:14:49,120 --> 00:14:52,720
+standards and other things and started
+
+446
+00:14:50,880 --> 00:14:54,480
+that group up back in those days. Fast
+
+447
+00:14:52,720 --> 00:14:57,040
+forward, I ended up doing another stint
+
+448
+00:14:54,480 --> 00:14:58,480
+at Astroenica on real world evidence. I
+
+449
+00:14:57,040 --> 00:15:00,639
+started three departments there in real
+
+450
+00:14:58,480 --> 00:15:03,120
+world evidence and biomarkers and
+
+451
+00:15:00,639 --> 00:15:05,839
+clinical trial design. A few years
+
+452
+00:15:03,120 --> 00:15:07,519
+later, uh, ended up as the chief data
+
+453
+00:15:05,839 --> 00:15:08,720
+officer at the multiple myyoma research
+
+454
+00:15:07,519 --> 00:15:10,639
+foundation, building out one of the
+
+455
+00:15:08,720 --> 00:15:14,000
+biggest medical registries ever stood
+
+456
+00:15:10,639 --> 00:15:16,000
+up, uh, to study myyoma, the the can the
+
+457
+00:15:14,000 --> 00:15:17,920
+blood cancer, the bone cancer. And then
+
+458
+00:15:16,000 --> 00:15:20,720
+most recently, as I said earlier, I was
+
+459
+00:15:17,920 --> 00:15:22,240
+the VP of analytics for clinical
+
+460
+00:15:20,720 --> 00:15:24,160
+operations and medical affairs at
+
+461
+00:15:22,240 --> 00:15:27,199
+Bristol Myers Squibb until uh they went
+
+462
+00:15:24,160 --> 00:15:29,279
+through a major downsizing, 10% cuts.
+
+463
+00:15:27,199 --> 00:15:31,519
+They missed a bunch of trials and I
+
+464
+00:15:29,279 --> 00:15:33,199
+struck out and started doing my uh my
+
+465
+00:15:31,519 --> 00:15:34,399
+consulting through Luminant Consulting,
+
+466
+00:15:33,199 --> 00:15:37,040
+which is my current firm.
+
+467
+00:15:34,399 --> 00:15:39,839
+That that is amazing. I I I don't think
+
+468
+00:15:37,040 --> 00:15:41,920
+I've ever heard anybody rattle off all
+
+469
+00:15:39,839 --> 00:15:45,440
+the anywhere near the number of things
+
+470
+00:15:41,920 --> 00:15:48,000
+that you did that just not typical for a
+
+471
+00:15:45,440 --> 00:15:49,839
+physician to be doing extraordinary. I I
+
+472
+00:15:48,000 --> 00:15:51,519
+it's nuts.
+
+473
+00:15:49,839 --> 00:15:53,600
+I hear the passion that that you have.
+
+474
+00:15:51,519 --> 00:15:55,279
+There's no mistaking that. But I I want
+
+475
+00:15:53,600 --> 00:15:57,519
+to kind of get into what you're doing
+
+476
+00:15:55,279 --> 00:15:59,600
+now, but maybe talk a little bit about
+
+477
+00:15:57,519 --> 00:16:02,000
+what is it now that's driving you and
+
+478
+00:15:59,600 --> 00:16:04,560
+keeping you so engaged. I mean, it's
+
+479
+00:16:02,000 --> 00:16:06,800
+it's got to be really demanding. And by
+
+480
+00:16:04,560 --> 00:16:09,040
+the way, I mean I I happened to know
+
+481
+00:16:06,800 --> 00:16:12,399
+from having our previous conversation
+
+482
+00:16:09,040 --> 00:16:14,639
+that you also raised a family during all
+
+483
+00:16:12,399 --> 00:16:17,440
+this activity that you were doing.
+
+484
+00:16:14,639 --> 00:16:18,880
+Amazing. Amazing to me. But please just
+
+485
+00:16:17,440 --> 00:16:20,639
+just tell me what are some of the things
+
+486
+00:16:18,880 --> 00:16:21,920
+that really get you excited and are
+
+487
+00:16:20,639 --> 00:16:23,519
+motivating you and the things that
+
+488
+00:16:21,920 --> 00:16:25,199
+you're working on now and maybe start to
+
+489
+00:16:23,519 --> 00:16:27,600
+talk a little bit about what some of
+
+490
+00:16:25,199 --> 00:16:29,920
+those things are. Well, every time
+
+491
+00:16:27,600 --> 00:16:32,480
+there's been an interesting new novel
+
+492
+00:16:29,920 --> 00:16:34,320
+thing in healthcare, I I've kind of
+
+493
+00:16:32,480 --> 00:16:36,399
+gotten involved at the beginning of it.
+
+494
+00:16:34,320 --> 00:16:38,399
+And when I started my fellowship at
+
+495
+00:16:36,399 --> 00:16:41,120
+Harvard, it was handheld computers. And
+
+496
+00:16:38,399 --> 00:16:42,800
+I did one I did the very first major
+
+497
+00:16:41,120 --> 00:16:46,560
+study of how they use handheld computers
+
+498
+00:16:42,800 --> 00:16:48,959
+in clinical care back in 1993,9495.
+
+499
+00:16:46,560 --> 00:16:50,800
+And that got published. It was I did it
+
+500
+00:16:48,959 --> 00:16:53,279
+in concert with Apple. It was using
+
+501
+00:16:50,800 --> 00:16:55,199
+Apple Newton's. Uh we spun out a small
+
+502
+00:16:53,279 --> 00:16:56,720
+business called Skyscape Computing.
+
+503
+00:16:55,199 --> 00:16:58,720
+Anyway, fast forward like what's getting
+
+504
+00:16:56,720 --> 00:17:00,240
+me up to date now is like again we're
+
+505
+00:16:58,720 --> 00:17:01,759
+another inflection point with some
+
+506
+00:17:00,240 --> 00:17:05,039
+really interesting innovations to
+
+507
+00:17:01,759 --> 00:17:08,079
+medicine. And when I saw, you know, I
+
+508
+00:17:05,039 --> 00:17:10,160
+knew about Chachi in the fall of 22, but
+
+509
+00:17:08,079 --> 00:17:13,199
+when I went to him in in the spring of
+
+510
+00:17:10,160 --> 00:17:15,360
+like March of 23 and I saw like how
+
+511
+00:17:13,199 --> 00:17:17,839
+crazed the world got in such a short
+
+512
+00:17:15,360 --> 00:17:19,600
+period of time, I was like, "Wow, this
+
+513
+00:17:17,839 --> 00:17:21,280
+is a game changer. I got to get myself
+
+514
+00:17:19,600 --> 00:17:22,880
+involved in this. I want to be an expert
+
+515
+00:17:21,280 --> 00:17:25,280
+in this. I want to get I want to just
+
+516
+00:17:22,880 --> 00:17:28,000
+get become completely in the weeds with
+
+517
+00:17:25,280 --> 00:17:29,360
+all this stuff. And I did and I and I
+
+518
+00:17:28,000 --> 00:17:31,600
+had actually already had my appointment
+
+519
+00:17:29,360 --> 00:17:33,919
+at the Beth Israel. I convinced them
+
+520
+00:17:31,600 --> 00:17:35,760
+that this was the most important new
+
+521
+00:17:33,919 --> 00:17:38,320
+topic in healthcare informatics that has
+
+522
+00:17:35,760 --> 00:17:39,760
+happened in 25 years. I I convinced them
+
+523
+00:17:38,320 --> 00:17:42,000
+to run these conferences. We've
+
+524
+00:17:39,760 --> 00:17:44,960
+published one, two, almost six papers
+
+525
+00:17:42,000 --> 00:17:46,640
+now on the topic. We try to influence
+
+526
+00:17:44,960 --> 00:17:48,720
+policy at the highest levels through
+
+527
+00:17:46,640 --> 00:17:50,960
+this. And what gets me excited is like
+
+528
+00:17:48,720 --> 00:17:53,120
+being here and learning and continuing
+
+529
+00:17:50,960 --> 00:17:55,760
+to try to have impact and to sort of
+
+530
+00:17:53,120 --> 00:17:57,919
+help in some ways try to steer the not
+
+531
+00:17:55,760 --> 00:17:59,919
+the ship so much but at least you know
+
+532
+00:17:57,919 --> 00:18:01,039
+call out where there's issues that
+
+533
+00:17:59,919 --> 00:18:02,320
+people aren't paying attention to like
+
+534
+00:18:01,039 --> 00:18:04,160
+the healthcare literacy. The other thing
+
+535
+00:18:02,320 --> 00:18:06,400
+we called out was, you know, this other
+
+536
+00:18:04,160 --> 00:18:08,480
+issue of we we published four papers out
+
+537
+00:18:06,400 --> 00:18:10,320
+of our first conference and we looked at
+
+538
+00:18:08,480 --> 00:18:11,919
+at AI governance in healthcare and we
+
+539
+00:18:10,320 --> 00:18:14,000
+looked at how it's affecting patients
+
+540
+00:18:11,919 --> 00:18:16,320
+and how it's affecting real world
+
+541
+00:18:14,000 --> 00:18:18,160
+evidence and I I was the lead author on
+
+542
+00:18:16,320 --> 00:18:19,919
+one on clinical decision support. These
+
+543
+00:18:18,160 --> 00:18:21,760
+are all issues which are they're the
+
+544
+00:18:19,919 --> 00:18:23,520
+earliest places where people are
+
+545
+00:18:21,760 --> 00:18:26,000
+planting flags and trying to get some
+
+546
+00:18:23,520 --> 00:18:27,919
+value out of out of AI. And we want to
+
+547
+00:18:26,000 --> 00:18:30,640
+make sure I want to make sure that it's
+
+548
+00:18:27,919 --> 00:18:33,039
+safe for patients that it's providing
+
+549
+00:18:30,640 --> 00:18:35,280
+credible trustworthy information and
+
+550
+00:18:33,039 --> 00:18:37,679
+that the world in general is not going
+
+551
+00:18:35,280 --> 00:18:39,360
+to go down weird rabbit holes on things
+
+552
+00:18:37,679 --> 00:18:41,039
+because of hallucination, but that we
+
+553
+00:18:39,360 --> 00:18:43,200
+actually are looking at it with a
+
+554
+00:18:41,039 --> 00:18:45,039
+critical eye. And I'm actually, you
+
+555
+00:18:43,200 --> 00:18:46,640
+know, that critical eye piece is quite
+
+556
+00:18:45,039 --> 00:18:48,559
+important because I'm afraid what we're
+
+557
+00:18:46,640 --> 00:18:50,400
+going to see is like the dumbing down of
+
+558
+00:18:48,559 --> 00:18:52,160
+medicine. And I say that with a lot of
+
+559
+00:18:50,400 --> 00:18:54,400
+concern to be honest. Like you want to
+
+560
+00:18:52,160 --> 00:18:56,000
+what's my biggest concern? That's one of
+
+561
+00:18:54,400 --> 00:18:57,600
+the biggest concerns that I have is that
+
+562
+00:18:56,000 --> 00:18:59,120
+medicine will it's already getting
+
+563
+00:18:57,600 --> 00:19:00,080
+dumbed down in some respects. And it's
+
+564
+00:18:59,120 --> 00:19:01,840
+going to get a lot worse because people
+
+565
+00:19:00,080 --> 00:19:04,080
+are going to become overly dependent and
+
+566
+00:19:01,840 --> 00:19:06,000
+overrusting of what's they're being
+
+567
+00:19:04,080 --> 00:19:07,760
+told. And maybe or maybe not without
+
+568
+00:19:06,000 --> 00:19:10,640
+good reason because you know Claude and
+
+569
+00:19:07,760 --> 00:19:11,840
+Chacht are just spectacularly good at
+
+570
+00:19:10,640 --> 00:19:13,760
+what they're doing now. and it's only
+
+571
+00:19:11,840 --> 00:19:15,280
+been three years. This is that means
+
+572
+00:19:13,760 --> 00:19:17,039
+it's the worst it's ever going to be in
+
+573
+00:19:15,280 --> 00:19:17,600
+our lifetime is now. It's only going to
+
+574
+00:19:17,039 --> 00:19:19,760
+get better.
+
+575
+00:19:17,600 --> 00:19:21,520
+Yeah. That's the piece that's, you know,
+
+576
+00:19:19,760 --> 00:19:23,200
+a little worrisome to me. I mean, I know
+
+577
+00:19:21,520 --> 00:19:25,760
+you you work with this technology
+
+578
+00:19:23,200 --> 00:19:28,559
+yourself. So, the people that are not uh
+
+579
+00:19:25,760 --> 00:19:30,960
+as involved there are using it a whole
+
+580
+00:19:28,559 --> 00:19:33,120
+lot. They're not seeing some of the the
+
+581
+00:19:30,960 --> 00:19:35,039
+flaws that that you and I are coming
+
+582
+00:19:33,120 --> 00:19:38,480
+just running into on a daily basis with
+
+583
+00:19:35,039 --> 00:19:40,160
+it because it just it drifts the line of
+
+584
+00:19:38,480 --> 00:19:42,559
+questioning and the prompting that you
+
+585
+00:19:40,160 --> 00:19:45,679
+do actually affects it. It just
+
+586
+00:19:42,559 --> 00:19:46,960
+continues to it can spin way out out of
+
+587
+00:19:45,679 --> 00:19:47,919
+alignment for the things that you're
+
+588
+00:19:46,960 --> 00:19:48,160
+trying to do with it.
+
+589
+00:19:47,919 --> 00:19:50,480
+Yeah.
+
+590
+00:19:48,160 --> 00:19:52,640
+And it's so complimentary. I mean I
+
+591
+00:19:50,480 --> 00:19:54,160
+think it thinks I'm a really super nice
+
+592
+00:19:52,640 --> 00:19:56,720
+guy. I'm sure it loves you too.
+
+593
+00:19:54,160 --> 00:20:01,360
+Oh, I named my chat GPT voice. I call
+
+594
+00:19:56,720 --> 00:20:04,080
+her Zora in uh in homage to the computer
+
+595
+00:20:01,360 --> 00:20:05,919
+on Star Trek Discovery. And you know,
+
+596
+00:20:04,080 --> 00:20:07,919
+it's funny. There's people use these
+
+597
+00:20:05,919 --> 00:20:10,640
+tools in a lot of different ways. And I
+
+598
+00:20:07,919 --> 00:20:12,720
+tend to use I don't generally use it
+
+599
+00:20:10,640 --> 00:20:14,480
+like a search engine. I sometimes I do,
+
+600
+00:20:12,720 --> 00:20:17,120
+but what I try to do is I I like to see
+
+601
+00:20:14,480 --> 00:20:19,280
+the world through a systems approach.
+
+602
+00:20:17,120 --> 00:20:21,039
+And I try to help get it to help me
+
+603
+00:20:19,280 --> 00:20:23,120
+connect the dots to try to see the
+
+604
+00:20:21,039 --> 00:20:25,440
+things I'm not seeing in terms of let's
+
+605
+00:20:23,120 --> 00:20:26,720
+say three or four big things that are
+
+606
+00:20:25,440 --> 00:20:28,080
+happening. concurrently and I try to
+
+607
+00:20:26,720 --> 00:20:29,440
+figure out how to, you know, do they
+
+608
+00:20:28,080 --> 00:20:31,360
+connect? If they do connect, what are
+
+609
+00:20:29,440 --> 00:20:32,720
+those connections? Are those connections
+
+610
+00:20:31,360 --> 00:20:34,320
+something that could be influenced? Are
+
+611
+00:20:32,720 --> 00:20:36,080
+they things that we should be concerned
+
+612
+00:20:34,320 --> 00:20:37,919
+about or should we be double downing,
+
+613
+00:20:36,080 --> 00:20:40,240
+you know, doubling down on them, you
+
+614
+00:20:37,919 --> 00:20:42,400
+know, and and I find it to be a really
+
+615
+00:20:40,240 --> 00:20:43,679
+helpful thought partner, but that also
+
+616
+00:20:42,400 --> 00:20:45,120
+means that it I don't have to
+
+617
+00:20:43,679 --> 00:20:47,039
+necessarily trust what it's telling me.
+
+618
+00:20:45,120 --> 00:20:49,679
+I actually I'm using my own critical
+
+619
+00:20:47,039 --> 00:20:51,520
+thinking and it's working as a as a
+
+620
+00:20:49,679 --> 00:20:53,520
+helper with that. My concern is that you
+
+621
+00:20:51,520 --> 00:20:55,280
+ask it things and it gives you
+
+622
+00:20:53,520 --> 00:20:56,480
+interesting answers that sound really
+
+623
+00:20:55,280 --> 00:20:58,240
+credible and that you just take it
+
+624
+00:20:56,480 --> 00:20:58,640
+hookline and sinker and don't don't test
+
+625
+00:20:58,240 --> 00:20:58,880
+it.
+
+626
+00:20:58,640 --> 00:20:59,520
+Yeah.
+
+627
+00:20:58,880 --> 00:21:02,480
+Yeah.
+
+628
+00:20:59,520 --> 00:21:05,039
+I I can't even tell you how many times I
+
+629
+00:21:02,480 --> 00:21:06,960
+tried to train it not to do certain
+
+630
+00:21:05,039 --> 00:21:08,640
+things and the very next thing it does
+
+631
+00:21:06,960 --> 00:21:09,280
+is exactly what it just agreed it
+
+632
+00:21:08,640 --> 00:21:10,000
+wouldn't do.
+
+633
+00:21:09,280 --> 00:21:11,440
+Yeah, of course.
+
+634
+00:21:10,000 --> 00:21:12,400
+It's like dealing with a child in some
+
+635
+00:21:11,440 --> 00:21:14,960
+ways.
+
+636
+00:21:12,400 --> 00:21:16,640
+Well, and by the way, do certain
+
+637
+00:21:14,960 --> 00:21:18,240
+behaviors when you you can condition
+
+638
+00:21:16,640 --> 00:21:20,559
+them better than you condition AI. I
+
+639
+00:21:18,240 --> 00:21:22,799
+think well I was working on a I have a
+
+640
+00:21:20,559 --> 00:21:24,799
+client that was coming up with a a deck
+
+641
+00:21:22,799 --> 00:21:28,000
+to to create for them and I've you know
+
+642
+00:21:24,799 --> 00:21:31,360
+started using Notebook LM to do uh nice
+
+643
+00:21:28,000 --> 00:21:32,720
+graphics and writing slide decks is a
+
+644
+00:21:31,360 --> 00:21:34,000
+one of the it's like balancing your
+
+645
+00:21:32,720 --> 00:21:35,840
+checkbook. It's one thing I really can't
+
+646
+00:21:34,000 --> 00:21:37,120
+stand in life and notebook does a nice
+
+647
+00:21:35,840 --> 00:21:38,720
+job. So I was working on it this
+
+648
+00:21:37,120 --> 00:21:40,640
+morning. I gave it a really good prompt
+
+649
+00:21:38,720 --> 00:21:42,640
+and and I gave it all the the details I
+
+650
+00:21:40,640 --> 00:21:46,080
+wanted it to do and it came back and it
+
+651
+00:21:42,640 --> 00:21:48,480
+was like 95% right and it said okay edit
+
+652
+00:21:46,080 --> 00:21:50,880
+the slides. And I gave it edits on each
+
+653
+00:21:48,480 --> 00:21:52,640
+slide. And what did it do? It messed up
+
+654
+00:21:50,880 --> 00:21:54,640
+slides. There was nothing wrong with
+
+655
+00:21:52,640 --> 00:21:56,240
+them. So I ended up having to like
+
+656
+00:21:54,640 --> 00:21:57,360
+download three or four versions of what
+
+657
+00:21:56,240 --> 00:21:59,280
+I was working on and picking and
+
+658
+00:21:57,360 --> 00:22:02,240
+choosing the slides that were right to
+
+659
+00:21:59,280 --> 00:22:04,720
+get the final product. It didn't hone it
+
+660
+00:22:02,240 --> 00:22:06,880
+to a way to just continually get the one
+
+661
+00:22:04,720 --> 00:22:08,640
+work product better. It kind of went
+
+662
+00:22:06,880 --> 00:22:11,600
+down weird rabbit holes and like it
+
+663
+00:22:08,640 --> 00:22:13,760
+completely took labels off of graphs and
+
+664
+00:22:11,600 --> 00:22:16,720
+and things like that that made it and
+
+665
+00:22:13,760 --> 00:22:18,000
+like why why would you do that? It's and
+
+666
+00:22:16,720 --> 00:22:20,400
+I didn't even give you the instruction
+
+667
+00:22:18,000 --> 00:22:22,640
+to change it. Like I there was a couple,
+
+668
+00:22:20,400 --> 00:22:24,799
+you know, garbage text in there and I
+
+669
+00:22:22,640 --> 00:22:26,000
+said fix the garbage and and it fixed
+
+670
+00:22:24,799 --> 00:22:26,720
+that but it messed up three other
+
+671
+00:22:26,000 --> 00:22:28,400
+things. So
+
+672
+00:22:26,720 --> 00:22:30,960
+it's almost like you're just you were
+
+673
+00:22:28,400 --> 00:22:32,880
+sitting here with me till the wee hours
+
+674
+00:22:30,960 --> 00:22:35,039
+of this morning because I was I was
+
+675
+00:22:32,880 --> 00:22:36,720
+wrestling and fighting
+
+676
+00:22:35,039 --> 00:22:38,400
+with with collage trying to get
+
+677
+00:22:36,720 --> 00:22:40,480
+something, you know, straightened out
+
+678
+00:22:38,400 --> 00:22:42,400
+from a formatting standpoint. I was
+
+679
+00:22:40,480 --> 00:22:44,240
+having it compared to a brand that was
+
+680
+00:22:42,400 --> 00:22:46,480
+actually, you know, already structured
+
+681
+00:22:44,240 --> 00:22:48,640
+in one of my websites. It just decided
+
+682
+00:22:46,480 --> 00:22:50,000
+that something else was more on brand
+
+683
+00:22:48,640 --> 00:22:50,799
+and it just manufactured something
+
+684
+00:22:50,000 --> 00:22:51,679
+completely different.
+
+685
+00:22:50,799 --> 00:22:54,159
+Yeah. Like
+
+686
+00:22:51,679 --> 00:22:56,400
+I never proted to do any of that. And
+
+687
+00:22:54,159 --> 00:22:58,159
+yeah, so if people are afraid it's going
+
+688
+00:22:56,400 --> 00:23:00,159
+to take their job, just pay attention to
+
+689
+00:22:58,159 --> 00:23:01,919
+just a little bit and and start learning
+
+690
+00:23:00,159 --> 00:23:04,159
+how to use it, you'll feel better about
+
+691
+00:23:01,919 --> 00:23:06,480
+Well, that's like that's and that's the
+
+692
+00:23:04,159 --> 00:23:08,640
+literacy piece, right? Like if people
+
+693
+00:23:06,480 --> 00:23:10,240
+understand number one, it's not going to
+
+694
+00:23:08,640 --> 00:23:12,159
+replace your job. In fact, it's going to
+
+695
+00:23:10,240 --> 00:23:13,760
+make your job different. You're gonna
+
+696
+00:23:12,159 --> 00:23:15,440
+have to be using critical thinking with
+
+697
+00:23:13,760 --> 00:23:17,120
+AI a whole lot more than people were
+
+698
+00:23:15,440 --> 00:23:18,960
+realizing. It's not going to be the
+
+699
+00:23:17,120 --> 00:23:21,039
+thing that's g in certain places where
+
+700
+00:23:18,960 --> 00:23:22,240
+it's doing and people I think confuse AI
+
+701
+00:23:21,039 --> 00:23:23,280
+with machine learning. So machine
+
+702
+00:23:22,240 --> 00:23:25,360
+learning techniques that are used in
+
+703
+00:23:23,280 --> 00:23:27,360
+artificial vision and like radiology and
+
+704
+00:23:25,360 --> 00:23:29,360
+pathology that's a whole that's a
+
+705
+00:23:27,360 --> 00:23:31,039
+different beast right and it's been
+
+706
+00:23:29,360 --> 00:23:33,280
+demonstrated and proven that those
+
+707
+00:23:31,039 --> 00:23:35,039
+machine learning techniques are good in
+
+708
+00:23:33,280 --> 00:23:36,799
+fact can be better than humans in terms
+
+709
+00:23:35,039 --> 00:23:38,960
+of recognizing tumors and recognizing
+
+710
+00:23:36,799 --> 00:23:40,320
+pathological disease. That's different
+
+711
+00:23:38,960 --> 00:23:42,559
+than working with a large language
+
+712
+00:23:40,320 --> 00:23:44,080
+model. And people are just bundling it
+
+713
+00:23:42,559 --> 00:23:45,840
+all together and assuming it's all one
+
+714
+00:23:44,080 --> 00:23:47,280
+thing. It's not one thing. It's like,
+
+715
+00:23:45,840 --> 00:23:50,159
+you know, it's the same with internet
+
+716
+00:23:47,280 --> 00:23:52,320
+back in the in the 90s and early 2000s.
+
+717
+00:23:50,159 --> 00:23:53,760
+You know, you've got websites that can
+
+718
+00:23:52,320 --> 00:23:55,679
+just be brochureware. You've got
+
+719
+00:23:53,760 --> 00:23:57,200
+websites that can be search engines.
+
+720
+00:23:55,679 --> 00:23:58,880
+You've got websites that can be
+
+721
+00:23:57,200 --> 00:23:59,840
+e-commerce things. And each one is
+
+722
+00:23:58,880 --> 00:24:01,679
+different. Each one has a different
+
+723
+00:23:59,840 --> 00:24:04,000
+reason for existing. And you need to
+
+724
+00:24:01,679 --> 00:24:06,400
+look at each one with a different lens
+
+725
+00:24:04,000 --> 00:24:08,640
+to figure that all out. I mean, I keep
+
+726
+00:24:06,400 --> 00:24:09,919
+using this lens thing. I you one of the
+
+727
+00:24:08,640 --> 00:24:11,039
+things you didn't mention about me is
+
+728
+00:24:09,919 --> 00:24:13,279
+that I'm actually a professional
+
+729
+00:24:11,039 --> 00:24:13,679
+photographer in the background and uh I
+
+730
+00:24:13,279 --> 00:24:14,960
+do
+
+731
+00:24:13,679 --> 00:24:17,520
+you don't have enough to do
+
+732
+00:24:14,960 --> 00:24:19,520
+well you know when my kids left home and
+
+733
+00:24:17,520 --> 00:24:21,520
+I used to be their soccer coach and I
+
+734
+00:24:19,520 --> 00:24:23,200
+would do all those things with them I
+
+735
+00:24:21,520 --> 00:24:24,880
+needed something to do with a with the
+
+736
+00:24:23,200 --> 00:24:27,919
+spare time I had from not coaching
+
+737
+00:24:24,880 --> 00:24:30,559
+little league soccer right so I got into
+
+738
+00:24:27,919 --> 00:24:31,919
+photography in a big way and uh I've I
+
+739
+00:24:30,559 --> 00:24:34,159
+compete at the national and
+
+740
+00:24:31,919 --> 00:24:36,640
+international level and I've won many
+
+741
+00:24:34,159 --> 00:24:38,240
+awards at those levels and uh my
+
+742
+00:24:36,640 --> 00:24:39,520
+favorite topic though is is
+
+743
+00:24:38,240 --> 00:24:41,279
+astrophotography. I like to shoot
+
+744
+00:24:39,520 --> 00:24:43,039
+pictures of galaxies and nebulas and
+
+745
+00:24:41,279 --> 00:24:45,039
+comets and things like that.
+
+746
+00:24:43,039 --> 00:24:46,960
+That's that's fascinating. Well, you're
+
+747
+00:24:45,039 --> 00:24:48,799
+dealing with uh with clients now. I
+
+748
+00:24:46,960 --> 00:24:51,120
+mean, obviously there's some some bigger
+
+749
+00:24:48,799 --> 00:24:53,120
+challenges that you see, but wonder if
+
+750
+00:24:51,120 --> 00:24:54,400
+there's some some things that you're
+
+751
+00:24:53,120 --> 00:24:55,840
+kind of excited about because you see
+
+752
+00:24:54,400 --> 00:24:58,880
+organizations starting to get some
+
+753
+00:24:55,840 --> 00:25:02,799
+things right and and moving into some
+
+754
+00:24:58,880 --> 00:25:04,400
+much more meaningful applications on the
+
+755
+00:25:02,799 --> 00:25:05,679
+So, one of the clients that I'm I
+
+756
+00:25:04,400 --> 00:25:07,360
+haven't signed yet. I'm not going to say
+
+757
+00:25:05,679 --> 00:25:10,240
+who they are, but they this is an
+
+758
+00:25:07,360 --> 00:25:12,720
+organization I I've known for many years
+
+759
+00:25:10,240 --> 00:25:14,640
+and I look at them as a they're an
+
+760
+00:25:12,720 --> 00:25:16,159
+academic institution and they are
+
+761
+00:25:14,640 --> 00:25:18,960
+finally it's finally dawning on them
+
+762
+00:25:16,159 --> 00:25:21,360
+that they can use AI that their business
+
+763
+00:25:18,960 --> 00:25:22,640
+is going to rely on AI. So they get
+
+764
+00:25:21,360 --> 00:25:24,080
+government they're very much government
+
+765
+00:25:22,640 --> 00:25:25,919
+funded but they realized they can't
+
+766
+00:25:24,080 --> 00:25:28,720
+continue with that. The last couple
+
+767
+00:25:25,919 --> 00:25:30,400
+years of the current administration has
+
+768
+00:25:28,720 --> 00:25:33,120
+seen to it that relying on government
+
+769
+00:25:30,400 --> 00:25:36,240
+grants is not going to be a long-term
+
+770
+00:25:33,120 --> 00:25:38,400
+sustainable way of thinking and they see
+
+771
+00:25:36,240 --> 00:25:40,640
+that and they're trying to bring their
+
+772
+00:25:38,400 --> 00:25:44,159
+organization around into being a lot
+
+773
+00:25:40,640 --> 00:25:46,559
+more focused on the data. I I've been a
+
+774
+00:25:44,159 --> 00:25:49,760
+proponent in in life sciences that life
+
+775
+00:25:46,559 --> 00:25:52,320
+science companies have for generations
+
+776
+00:25:49,760 --> 00:25:54,559
+believed that their work product, the
+
+777
+00:25:52,320 --> 00:25:57,279
+final product that they have is a pill
+
+778
+00:25:54,559 --> 00:25:59,039
+or injection or some kind of therapy.
+
+779
+00:25:57,279 --> 00:26:01,679
+And I look at it with a different lens.
+
+780
+00:25:59,039 --> 00:26:03,919
+I look at it and say, you absolutely
+
+781
+00:26:01,679 --> 00:26:06,640
+never send the FDA a pill. What do you
+
+782
+00:26:03,919 --> 00:26:08,880
+send the FDA? You send the FDA a hard
+
+783
+00:26:06,640 --> 00:26:10,559
+drive full of data. You send them
+
+784
+00:26:08,880 --> 00:26:12,240
+information about the pill. You send
+
+785
+00:26:10,559 --> 00:26:13,600
+them information about safety. You send
+
+786
+00:26:12,240 --> 00:26:16,640
+them information about clinical trial
+
+787
+00:26:13,600 --> 00:26:21,120
+results and what you send them is data.
+
+788
+00:26:16,640 --> 00:26:23,200
+So to me treating data as a product like
+
+789
+00:26:21,120 --> 00:26:25,600
+it's the most logical thing that you can
+
+790
+00:26:23,200 --> 00:26:27,760
+imagine. So what I've been seeing lately
+
+791
+00:26:25,600 --> 00:26:29,840
+is that some companies are starting to
+
+792
+00:26:27,760 --> 00:26:32,640
+understand that in order for them to
+
+793
+00:26:29,840 --> 00:26:34,960
+survive into the next call it 15 to 20
+
+794
+00:26:32,640 --> 00:26:36,880
+years if they haven't been using their
+
+795
+00:26:34,960 --> 00:26:39,120
+data or thinking about their data in
+
+796
+00:26:36,880 --> 00:26:42,080
+that framework that they are going to be
+
+797
+00:26:39,120 --> 00:26:43,440
+like the locomotive engine in 1940 that
+
+798
+00:26:42,080 --> 00:26:45,840
+is precisely what's going to happen.
+
+799
+00:26:43,440 --> 00:26:49,440
+They will be they will be the the the
+
+800
+00:26:45,840 --> 00:26:51,120
+metaphorical locomotive when jet engines
+
+801
+00:26:49,440 --> 00:26:53,120
+have come around and jets are starting
+
+802
+00:26:51,120 --> 00:26:55,039
+to arrive. They're going to keep doing
+
+803
+00:26:53,120 --> 00:26:57,360
+their business as if, you know, it's
+
+804
+00:26:55,039 --> 00:27:00,080
+going to take, you know, 27 hours to go
+
+805
+00:26:57,360 --> 00:27:02,640
+from New York to Chicago on a on a on
+
+806
+00:27:00,080 --> 00:27:07,039
+the Zephyr when it takes an hour and a
+
+807
+00:27:02,640 --> 00:27:10,000
+half to do it on a jet. That entire game
+
+808
+00:27:07,039 --> 00:27:12,720
+change has hasn't sunk in yet. And those
+
+809
+00:27:10,000 --> 00:27:15,279
+that are seeing the data is is that jet
+
+810
+00:27:12,720 --> 00:27:16,880
+engine or at least a jet fuel that
+
+811
+00:27:15,279 --> 00:27:18,159
+they're the ones if they realize it,
+
+812
+00:27:16,880 --> 00:27:19,279
+they're the ones who will succeed. There
+
+813
+00:27:18,159 --> 00:27:21,679
+are companies like there's one out there
+
+814
+00:27:19,279 --> 00:27:24,080
+called Tempest. Tempest is a biologics
+
+815
+00:27:21,679 --> 00:27:28,400
+company that was started by a guy names.
+
+816
+00:27:24,080 --> 00:27:30,320
+And Tempest is a firm that has not just
+
+817
+00:27:28,400 --> 00:27:32,799
+doubled down but like quadrupled down or
+
+818
+00:27:30,320 --> 00:27:34,559
+exponentially doubled down on on the
+
+819
+00:27:32,799 --> 00:27:36,720
+value of data. And in this case it's
+
+820
+00:27:34,559 --> 00:27:38,080
+genomic data and proteomic data. And
+
+821
+00:27:36,720 --> 00:27:39,919
+they are one of the leading
+
+822
+00:27:38,080 --> 00:27:43,279
+organizations out there that that
+
+823
+00:27:39,919 --> 00:27:46,000
+produces highlevel highquality data in
+
+824
+00:27:43,279 --> 00:27:49,120
+that domain. And that data is the fuel
+
+825
+00:27:46,000 --> 00:27:51,200
+that will help us to find the answers to
+
+826
+00:27:49,120 --> 00:27:53,120
+new diseases, find us new drug targets,
+
+827
+00:27:51,200 --> 00:27:55,120
+find us new therapies. And it's
+
+828
+00:27:53,120 --> 00:27:57,919
+companies like them and like Foundation
+
+829
+00:27:55,120 --> 00:28:00,159
+Medicine and and uh some of the other
+
+830
+00:27:57,919 --> 00:28:02,960
+bigger bigger firms. But the data is the
+
+831
+00:28:00,159 --> 00:28:05,520
+product. And largely from my experience,
+
+832
+00:28:02,960 --> 00:28:07,520
+big pharma has not gotten that yet. big
+
+833
+00:28:05,520 --> 00:28:08,720
+pharma doesn't they realize that data is
+
+834
+00:28:07,520 --> 00:28:12,640
+important but they don't treat it with
+
+835
+00:28:08,720 --> 00:28:15,840
+the same degree of reverence as they do
+
+836
+00:28:12,640 --> 00:28:17,760
+uh the pill or you know the actual pill
+
+837
+00:28:15,840 --> 00:28:20,240
+and until they do what's going to happen
+
+838
+00:28:17,760 --> 00:28:22,559
+is there's going to be upstart companies
+
+839
+00:28:20,240 --> 00:28:25,840
+that are going to start to pop up and
+
+840
+00:28:22,559 --> 00:28:28,000
+they will treat the data in the way I'm
+
+841
+00:28:25,840 --> 00:28:30,960
+describing and those companies are going
+
+842
+00:28:28,000 --> 00:28:33,039
+to find you know seven to 12x the number
+
+843
+00:28:30,960 --> 00:28:35,760
+of new targets they're going to find
+
+844
+00:28:33,039 --> 00:28:37,279
+that they can find patient patients more
+
+845
+00:28:35,760 --> 00:28:38,559
+easily for their trials. They're going
+
+846
+00:28:37,279 --> 00:28:40,720
+to find that their inclusion exclusion
+
+847
+00:28:38,559 --> 00:28:43,039
+criteria are going to be honed better
+
+848
+00:28:40,720 --> 00:28:44,559
+because when they think about it with an
+
+849
+00:28:43,039 --> 00:28:46,480
+eye towards the data and getting the
+
+850
+00:28:44,559 --> 00:28:48,320
+data part of it right, all of a sudden
+
+851
+00:28:46,480 --> 00:28:50,000
+it changes everything in terms of your
+
+852
+00:28:48,320 --> 00:28:52,399
+thinking about how do you generate and
+
+853
+00:28:50,000 --> 00:28:54,320
+go from A to B for the development of of
+
+854
+00:28:52,399 --> 00:28:56,000
+a new drug or new compound. This is an
+
+855
+00:28:54,320 --> 00:28:58,799
+interesting space, you know, to me just
+
+856
+00:28:56,000 --> 00:29:00,240
+because organizations have been for the
+
+857
+00:28:58,799 --> 00:29:03,120
+longest time very very comfortable to
+
+858
+00:29:00,240 --> 00:29:04,960
+spend money on technology. Yeah. a
+
+859
+00:29:03,120 --> 00:29:06,720
+little bit short changing on on the on
+
+860
+00:29:04,960 --> 00:29:09,440
+data curation and making sure that the
+
+861
+00:29:06,720 --> 00:29:12,080
+data is in in a usable state and I think
+
+862
+00:29:09,440 --> 00:29:14,320
+the rapid growth of organizations where
+
+863
+00:29:12,080 --> 00:29:15,919
+they're onboarding new healthcare
+
+864
+00:29:14,320 --> 00:29:17,919
+companies whether it's hospitals or
+
+865
+00:29:15,919 --> 00:29:19,440
+clinics or whatever uh there's
+
+866
+00:29:17,919 --> 00:29:21,200
+unfortunately not a whole lot of funds
+
+867
+00:29:19,440 --> 00:29:22,640
+left over to do the the stuff that
+
+868
+00:29:21,200 --> 00:29:24,000
+people like you and I have to clean up
+
+869
+00:29:22,640 --> 00:29:26,000
+when it's it's really the data
+
+870
+00:29:24,000 --> 00:29:28,720
+even the way you just said that people
+
+871
+00:29:26,000 --> 00:29:30,880
+like you and I have to clean up right
+
+872
+00:29:28,720 --> 00:29:32,880
+that makes us sound like we're janitors
+
+873
+00:29:30,880 --> 00:29:35,600
+and at the end of the Hey,
+
+874
+00:29:32,880 --> 00:29:38,559
+we're not janitors. We are I think of us
+
+875
+00:29:35,600 --> 00:29:41,760
+like data chemists. We're the ones who
+
+876
+00:29:38,559 --> 00:29:44,000
+when we we figure out how to purify a a
+
+877
+00:29:41,760 --> 00:29:46,399
+like when you purify a compound in
+
+878
+00:29:44,000 --> 00:29:47,919
+chemistry, you're trying to take away
+
+879
+00:29:46,399 --> 00:29:50,159
+all the impurities. You're trying to get
+
+880
+00:29:47,919 --> 00:29:51,919
+down to like the crystallin truth of
+
+881
+00:29:50,159 --> 00:29:53,840
+what the the molecule that you're trying
+
+882
+00:29:51,919 --> 00:29:56,880
+to synthesize might be. Similarly with
+
+883
+00:29:53,840 --> 00:29:59,760
+data, you want to use the same approach.
+
+884
+00:29:56,880 --> 00:30:01,440
+You want to get it down to a crystallin
+
+885
+00:29:59,760 --> 00:30:03,600
+approach to your data. Make sure it's
+
+886
+00:30:01,440 --> 00:30:05,440
+clean. It's it's there's nothing that's
+
+887
+00:30:03,600 --> 00:30:07,600
+missing. Make sure that it is it's
+
+888
+00:30:05,440 --> 00:30:10,799
+truthful. I mean, there's the the the
+
+889
+00:30:07,600 --> 00:30:12,960
+Evan V's of of big data, but people use
+
+890
+00:30:10,799 --> 00:30:14,720
+that as a catch as a catchphrase, but
+
+891
+00:30:12,960 --> 00:30:16,320
+what they don't do is realize that the
+
+892
+00:30:14,720 --> 00:30:18,720
+reason that catchphrase exists is
+
+893
+00:30:16,320 --> 00:30:20,880
+because this is important stuff. And the
+
+894
+00:30:18,720 --> 00:30:23,279
+data is the jet fuel the for the jet
+
+895
+00:30:20,880 --> 00:30:24,240
+engine, which is the AI model. And if
+
+896
+00:30:23,279 --> 00:30:25,679
+you don't have good data, you're going
+
+897
+00:30:24,240 --> 00:30:26,480
+to get crappy responses out of your
+
+898
+00:30:25,679 --> 00:30:30,559
+model.
+
+899
+00:30:26,480 --> 00:30:32,080
+This kind of goes right into I I suspect
+
+900
+00:30:30,559 --> 00:30:34,320
+that one of the things that really
+
+901
+00:30:32,080 --> 00:30:35,760
+caused you to come up with a name for
+
+902
+00:30:34,320 --> 00:30:37,440
+your consulting firm, you know,
+
+903
+00:30:35,760 --> 00:30:41,360
+ultimately what you're dealing with in
+
+904
+00:30:37,440 --> 00:30:43,679
+your podcast. There's so much volume of
+
+905
+00:30:41,360 --> 00:30:45,760
+data that's being generated. It's just,
+
+906
+00:30:43,679 --> 00:30:48,159
+you know, compounding on a I don't even
+
+907
+00:30:45,760 --> 00:30:49,840
+know how fast it doubling in size. I
+
+908
+00:30:48,159 --> 00:30:53,279
+mean, there was a period of time every
+
+909
+00:30:49,840 --> 00:30:56,080
+24 months all the data in in accumulated
+
+910
+00:30:53,279 --> 00:30:57,760
+history was doubling. I don't I I have
+
+911
+00:30:56,080 --> 00:31:00,080
+no idea what that pace is now, but it's
+
+912
+00:30:57,760 --> 00:31:01,440
+probably exponentially faster than that.
+
+913
+00:31:00,080 --> 00:31:03,440
+I'd love to hear, you know, really
+
+914
+00:31:01,440 --> 00:31:05,360
+what's behind the name, you know, Luna
+
+915
+00:31:03,440 --> 00:31:07,679
+Consulting, then maybe to kind of talk
+
+916
+00:31:05,360 --> 00:31:10,159
+about, you know, how you're dealing with
+
+917
+00:31:07,679 --> 00:31:11,600
+all of this volume of data. And I it's
+
+918
+00:31:10,159 --> 00:31:14,799
+interesting because you use some terms
+
+919
+00:31:11,600 --> 00:31:16,799
+that in your your uh podcast that that I
+
+920
+00:31:14,799 --> 00:31:19,200
+I'm partial to. It's really about
+
+921
+00:31:16,799 --> 00:31:20,480
+signals and noise. We talk about that
+
+922
+00:31:19,200 --> 00:31:22,240
+side. Still your fun.
+
+923
+00:31:20,480 --> 00:31:23,919
+Okay. As I mentioned earlier, one of my
+
+924
+00:31:22,240 --> 00:31:25,679
+hobbies is astrophotography.
+
+925
+00:31:23,919 --> 00:31:27,200
+astrophotography. It turns out when you
+
+926
+00:31:25,679 --> 00:31:28,399
+go to try to take a picture of a nebula,
+
+927
+00:31:27,200 --> 00:31:29,840
+you look up in the night sky. Do you
+
+928
+00:31:28,399 --> 00:31:31,440
+ever see a nebula? Have you ever seen a
+
+929
+00:31:29,840 --> 00:31:33,679
+big red blotch in the night sky?
+
+930
+00:31:31,440 --> 00:31:35,200
+Probably not, right? You never do. But I
+
+931
+00:31:33,679 --> 00:31:36,720
+promise you, they're there. If you're in
+
+932
+00:31:35,200 --> 00:31:38,480
+the summertime sky, you can get a
+
+933
+00:31:36,720 --> 00:31:40,320
+glimmer of it when you see in a very
+
+934
+00:31:38,480 --> 00:31:42,480
+dark place, you see the Milky Way. But
+
+935
+00:31:40,320 --> 00:31:45,039
+it turns out the night sky is loaded,
+
+936
+00:31:42,480 --> 00:31:46,399
+and I mean loaded, with things that you
+
+937
+00:31:45,039 --> 00:31:47,519
+can see if you know how to look for
+
+938
+00:31:46,399 --> 00:31:49,679
+them. You have to separate the signal
+
+939
+00:31:47,519 --> 00:31:52,559
+through the noise. And I've spent the
+
+940
+00:31:49,679 --> 00:31:56,240
+last seven or eight years methodically
+
+941
+00:31:52,559 --> 00:31:58,559
+imaging almost every major nebula, every
+
+942
+00:31:56,240 --> 00:32:00,159
+major galaxy in the northern hemisphere
+
+943
+00:31:58,559 --> 00:32:02,000
+from Westport, Connecticut, which is
+
+944
+00:32:00,159 --> 00:32:03,279
+there's an observatory there and I'm a
+
+945
+00:32:02,000 --> 00:32:06,320
+member there and I get to use their
+
+946
+00:32:03,279 --> 00:32:09,279
+gear. Luminant comes in because our icon
+
+947
+00:32:06,320 --> 00:32:10,480
+is that of a star and the star, you
+
+948
+00:32:09,279 --> 00:32:12,000
+know, I want to be able to see the
+
+949
+00:32:10,480 --> 00:32:14,799
+stars. I want to be able to see how it
+
+950
+00:32:12,000 --> 00:32:16,320
+all comes away from the background. And
+
+951
+00:32:14,799 --> 00:32:17,919
+what we're also doing with Lummit is
+
+952
+00:32:16,320 --> 00:32:19,679
+we're also forming constellations. So
+
+953
+00:32:17,919 --> 00:32:21,840
+all the different projects projects we
+
+954
+00:32:19,679 --> 00:32:23,600
+take on I don't take them on because I
+
+955
+00:32:21,840 --> 00:32:25,600
+needed I need to take them on. Like I
+
+956
+00:32:23,600 --> 00:32:26,880
+I'm at a point in my life where I'm
+
+957
+00:32:25,600 --> 00:32:29,440
+doing this because I really have passion
+
+958
+00:32:26,880 --> 00:32:30,799
+for it as you probably can tell and I
+
+959
+00:32:29,440 --> 00:32:32,559
+take it on and I feel like it's a
+
+960
+00:32:30,799 --> 00:32:34,559
+constellation of different pieces and
+
+961
+00:32:32,559 --> 00:32:36,399
+you know as you put the stars together
+
+962
+00:32:34,559 --> 00:32:39,440
+and you can see different patterns that
+
+963
+00:32:36,399 --> 00:32:41,120
+becomes then your navigation points. It
+
+964
+00:32:39,440 --> 00:32:43,840
+gives you a way to to navigate through
+
+965
+00:32:41,120 --> 00:32:46,960
+the pathway of what's out there. So the
+
+966
+00:32:43,840 --> 00:32:49,200
+that's why the Luminant's icon is that of
+
+967
+00:32:46,960 --> 00:32:51,519
+a of a blazing star. It's funny. I told
+
+968
+00:32:49,200 --> 00:32:53,279
+my wife just this morning, I think it's
+
+969
+00:32:51,519 --> 00:32:54,640
+Beetlejuice is I think because it kind
+
+970
+00:32:53,279 --> 00:32:57,919
+of looks orange like Beetlejuice.
+
+971
+00:32:54,640 --> 00:33:00,720
+Beetlejuice is in the upper in the upper
+
+972
+00:32:57,919 --> 00:33:03,039
+left side of of Orion. It's a very
+
+973
+00:33:00,720 --> 00:33:04,960
+bright star and it's orange. We'll say
+
+974
+00:33:03,039 --> 00:33:08,320
+that my logo is Beetlejuice.
+
+975
+00:33:04,960 --> 00:33:09,679
+I love it. That clearly kind of ties,
+
+976
+00:33:08,320 --> 00:33:11,760
+you know, I think I've seen this on some
+
+977
+00:33:09,679 --> 00:33:14,240
+of your profiles too. finding the signal
+
+978
+00:33:11,760 --> 00:33:16,559
+through the noise and getting getting
+
+979
+00:33:14,240 --> 00:33:18,159
+the right things like amplifying them. I
+
+980
+00:33:16,559 --> 00:33:20,480
+think something that was said to me one
+
+981
+00:33:18,159 --> 00:33:24,320
+time was by a chief data analytics
+
+982
+00:33:20,480 --> 00:33:26,000
+officer. I think it was it's UPMC I
+
+983
+00:33:24,320 --> 00:33:30,000
+think it was but she talked about the
+
+984
+00:33:26,000 --> 00:33:31,919
+number one role in her or was actually a
+
+985
+00:33:30,000 --> 00:33:35,760
+journalist which I thought was
+
+986
+00:33:31,919 --> 00:33:38,159
+interesting and she made a really good
+
+987
+00:33:35,760 --> 00:33:41,440
+point with that and it was not all the
+
+988
+00:33:38,159 --> 00:33:43,440
+things that you know are going to be
+
+989
+00:33:41,440 --> 00:33:44,960
+showing up in the Wall Street Journal.
+
+990
+00:33:43,440 --> 00:33:46,720
+It's the things that are going to inform
+
+991
+00:33:44,960 --> 00:33:49,840
+decisions that have to be made and
+
+992
+00:33:46,720 --> 00:33:52,880
+that's h what how CEOs and executives
+
+993
+00:33:49,840 --> 00:33:54,480
+actually use that kind of data. So it's
+
+994
+00:33:52,880 --> 00:33:56,559
+there's an art to knowing what's
+
+995
+00:33:54,480 --> 00:33:58,320
+important and what's not. Love to hear a
+
+996
+00:33:56,559 --> 00:34:00,159
+little bit how you're how you're
+
+997
+00:33:58,320 --> 00:34:01,840
+thinking about things with your and how
+
+998
+00:34:00,159 --> 00:34:03,519
+you're choosing the direction you're
+
+999
+00:34:01,840 --> 00:34:05,279
+going not only with your you're
+
+1000
+00:34:03,519 --> 00:34:06,799
+consulting for but also in your podcast.
+
+1001
+00:34:05,279 --> 00:34:09,520
+I mean obviously you're you're talking
+
+1002
+00:34:06,799 --> 00:34:12,879
+to some really influential people that
+
+1003
+00:34:09,520 --> 00:34:15,520
+are doing things for wide variety of of
+
+1004
+00:34:12,879 --> 00:34:17,359
+spaces in but all connected to the
+
+1005
+00:34:15,520 --> 00:34:18,960
+things that you're so passionate about.
+
+1006
+00:34:17,359 --> 00:34:22,480
+So you know because I've been in
+
+1007
+00:34:18,960 --> 00:34:24,240
+informatics now for Jesus since 1993
+
+1008
+00:34:22,480 --> 00:34:26,639
+officially but I was kind of doing it in
+
+1009
+00:34:24,240 --> 00:34:29,440
+medical school too. uh I've acquired
+
+1010
+00:34:26,639 --> 00:34:31,520
+quite a rolodex of contacts along the
+
+1011
+00:34:29,440 --> 00:34:33,760
+way and many of these contacts in the
+
+1012
+00:34:31,520 --> 00:34:35,359
+informatics world have filtered
+
+1013
+00:34:33,760 --> 00:34:36,960
+themselves into businesses. Some of them
+
+1014
+00:34:35,359 --> 00:34:40,000
+have filtered themselves into academia,
+
+1015
+00:34:36,960 --> 00:34:41,599
+some of them are in uh PE firms or
+
+1016
+00:34:40,000 --> 00:34:43,760
+venture capital firms. They're all over
+
+1017
+00:34:41,599 --> 00:34:46,079
+the place. And the podcast is sort of
+
+1018
+00:34:43,760 --> 00:34:48,560
+based on trying to understand which of
+
+1019
+00:34:46,079 --> 00:34:51,520
+those souls are doing the most important
+
+1020
+00:34:48,560 --> 00:34:53,040
+work. And we've had to your point, we've
+
+1021
+00:34:51,520 --> 00:34:55,919
+had some very good fortune. We've had
+
+1022
+00:34:53,040 --> 00:34:58,079
+some very high level executives that
+
+1023
+00:34:55,919 --> 00:35:00,560
+actually sought us out. We recently had
+
+1024
+00:34:58,079 --> 00:35:03,119
+a senior executive named Matt Tupo from
+
+1025
+00:35:00,560 --> 00:35:04,560
+Sanopi uh who came and did a two-part
+
+1026
+00:35:03,119 --> 00:35:07,119
+episode with us talking about what
+
+1027
+00:35:04,560 --> 00:35:09,520
+Sanifi is doing with AI. And for those
+
+1028
+00:35:07,119 --> 00:35:11,760
+of you who are interested, this is one
+
+1029
+00:35:09,520 --> 00:35:13,760
+of our best episodes. He was so open and
+
+1030
+00:35:11,760 --> 00:35:15,920
+so informative. It was like I couldn't
+
+1031
+00:35:13,760 --> 00:35:18,560
+believe a pharma company would be that
+
+1032
+00:35:15,920 --> 00:35:21,520
+willing to open the kimono and talk in
+
+1033
+00:35:18,560 --> 00:35:23,760
+detail about what they're doing. and he
+
+1034
+00:35:21,520 --> 00:35:25,200
+was and they did. He did and it's
+
+1035
+00:35:23,760 --> 00:35:26,720
+awesome. But we're also getting other
+
+1036
+00:35:25,200 --> 00:35:28,800
+folks. We're getting medical leaders. We
+
+1037
+00:35:26,720 --> 00:35:31,280
+had Bob Locker who's the chief of
+
+1038
+00:35:28,800 --> 00:35:32,720
+medicine at UCSF. It's a thousand person
+
+1039
+00:35:31,280 --> 00:35:34,400
+internal medicine department, one of the
+
+1040
+00:35:32,720 --> 00:35:36,800
+biggest in the country. He got on our
+
+1041
+00:35:34,400 --> 00:35:38,160
+podcast. We have a member of the of the
+
+1042
+00:35:36,800 --> 00:35:39,839
+federal government will be on in a few
+
+1043
+00:35:38,160 --> 00:35:41,280
+weeks named Jeff Smith who's in the
+
+1044
+00:35:39,839 --> 00:35:43,680
+office of national coordinator and he'll
+
+1045
+00:35:41,280 --> 00:35:45,119
+be talking about US policy around AI and
+
+1046
+00:35:43,680 --> 00:35:47,040
+how it's shaping up in Washington, how
+
+1047
+00:35:45,119 --> 00:35:49,280
+it will affect everybody going forward
+
+1048
+00:35:47,040 --> 00:35:51,040
+and the implications of things that are
+
+1049
+00:35:49,280 --> 00:35:52,720
+happening from the 21st century cure
+
+1050
+00:35:51,040 --> 00:35:54,079
+cures act and things like that. We
+
+1051
+00:35:52,720 --> 00:35:55,920
+choose our guests to try to find those
+
+1052
+00:35:54,079 --> 00:35:57,440
+who have the highest impact, those who
+
+1053
+00:35:55,920 --> 00:36:00,079
+have the best stories to tell and
+
+1054
+00:35:57,440 --> 00:36:01,440
+frankly those who tell good stories.
+
+1055
+00:36:00,079 --> 00:36:03,359
+It's not just enough to have somebody
+
+1056
+00:36:01,440 --> 00:36:05,200
+who's a good has a good thing that
+
+1057
+00:36:03,359 --> 00:36:07,119
+they've done, but they need to be able
+
+1058
+00:36:05,200 --> 00:36:08,480
+to express themselves in a way that is
+
+1059
+00:36:07,119 --> 00:36:11,280
+compelling. We're going to get Zach
+
+1060
+00:36:08,480 --> 00:36:12,960
+Kahani in a few weeks. Uh Zach is the
+
+1061
+00:36:11,280 --> 00:36:14,960
+editor-inchief of New England Journal of
+
+1062
+00:36:12,960 --> 00:36:16,160
+Medicine AI, and he'll be on the
+
+1063
+00:36:14,960 --> 00:36:18,800
+podcast. We're going to record him at
+
+1064
+00:36:16,160 --> 00:36:20,480
+the end of May. And you know, I'm really
+
+1065
+00:36:18,800 --> 00:36:22,160
+fortunate that, you know, because of my
+
+1066
+00:36:20,480 --> 00:36:24,560
+connections over the years that when I
+
+1067
+00:36:22,160 --> 00:36:26,560
+knock on somebody's door, they know me,
+
+1068
+00:36:24,560 --> 00:36:27,839
+they know my reputation, and they're And
+
+1069
+00:36:26,560 --> 00:36:29,599
+it's not just me, by the way. I have a
+
+1070
+00:36:27,839 --> 00:36:32,079
+partner. His name is Lean Rosenblet. And
+
+1071
+00:36:29,599 --> 00:36:34,640
+you know, Leon is like my my right arm
+
+1072
+00:36:32,079 --> 00:36:35,920
+on this project. He's an amazing guy to
+
+1073
+00:36:34,640 --> 00:36:38,000
+help with and I hope that you bring him
+
+1074
+00:36:35,920 --> 00:36:40,800
+on your podcast. He's just a spectacular
+
+1075
+00:36:38,000 --> 00:36:42,240
+partner and uh and a good friend. But
+
+1076
+00:36:40,800 --> 00:36:44,160
+between the two of us, we've been
+
+1077
+00:36:42,240 --> 00:36:46,240
+seeking out sort of the cream and sort
+
+1078
+00:36:44,160 --> 00:36:48,240
+of we want to get that signal from the
+
+1079
+00:36:46,240 --> 00:36:49,920
+podcast out and make sure that we're
+
+1080
+00:36:48,240 --> 00:36:50,720
+getting the best of the best on on our
+
+1081
+00:36:49,920 --> 00:36:53,599
+discussions.
+
+1082
+00:36:50,720 --> 00:36:55,520
+No, I love that. And you know, you know
+
+1083
+00:36:53,599 --> 00:36:57,280
+this, but I mean that was one of the the
+
+1084
+00:36:55,520 --> 00:36:58,960
+reasons I wanted to have you on my
+
+1085
+00:36:57,280 --> 00:37:01,359
+shows. You're a voice that needs to be
+
+1086
+00:36:58,960 --> 00:37:04,400
+heard. And it's really important that
+
+1087
+00:37:01,359 --> 00:37:07,440
+people are are hearing from experts that
+
+1088
+00:37:04,400 --> 00:37:09,040
+are not hobbyists that really they're
+
+1089
+00:37:07,440 --> 00:37:10,880
+doing the doing the research. They're
+
+1090
+00:37:09,040 --> 00:37:12,800
+doing the work to make sure that we're
+
+1091
+00:37:10,880 --> 00:37:14,720
+we're taking things the right direction.
+
+1092
+00:37:12,800 --> 00:37:16,400
+I'm curious all the different
+
+1093
+00:37:14,720 --> 00:37:18,079
+conversations you've been having with
+
+1094
+00:37:16,400 --> 00:37:20,960
+with your guests and your own
+
+1095
+00:37:18,079 --> 00:37:22,640
+observations. Are there patterns or
+
+1096
+00:37:20,960 --> 00:37:24,320
+warning signs that you wish people would
+
+1097
+00:37:22,640 --> 00:37:25,839
+look at and pay attention to that maybe
+
+1098
+00:37:24,320 --> 00:37:28,000
+they're not? I I think one of the
+
+1099
+00:37:25,839 --> 00:37:29,280
+warning signs that I'm seeing or I'm
+
+1100
+00:37:28,000 --> 00:37:30,880
+concerned about is number one, we
+
+1101
+00:37:29,280 --> 00:37:32,720
+mentioned it, the lack of AI literacy
+
+1102
+00:37:30,880 --> 00:37:34,960
+where people are not understanding how
+
+1103
+00:37:32,720 --> 00:37:37,280
+to use these tools in a in a way that is
+
+1104
+00:37:34,960 --> 00:37:40,960
+intelligent. Uh it's not it's not a new
+
+1105
+00:37:37,280 --> 00:37:43,599
+interface for Google. It's not a it's
+
+1106
+00:37:40,960 --> 00:37:46,079
+not a new w version of Wikipedia that
+
+1107
+00:37:43,599 --> 00:37:48,160
+just has the conversation of all all
+
+1108
+00:37:46,079 --> 00:37:49,839
+known information in one place. These
+
+1109
+00:37:48,160 --> 00:37:52,000
+are tools that can connect dots in ways
+
+1110
+00:37:49,839 --> 00:37:54,720
+that people just simply don't get just
+
+1111
+00:37:52,000 --> 00:37:57,760
+yet. I know I have friends, very close
+
+1112
+00:37:54,720 --> 00:38:00,400
+friends who, you know, are trying to use
+
+1113
+00:37:57,760 --> 00:38:02,480
+it to help them diagnose some diseases
+
+1114
+00:38:00,400 --> 00:38:04,240
+that they're they're dealing with. And
+
+1115
+00:38:02,480 --> 00:38:06,480
+the problem I have with that is that it
+
+1116
+00:38:04,240 --> 00:38:08,480
+can do that. But this here's one of my
+
+1117
+00:38:06,480 --> 00:38:10,400
+biggest really biggest concerns of all
+
+1118
+00:38:08,480 --> 00:38:13,440
+actually is that there's been a trend in
+
+1119
+00:38:10,400 --> 00:38:16,079
+the last call it 10 years to quote
+
+1120
+00:38:13,440 --> 00:38:19,040
+unquote democratize data, democratize
+
+1121
+00:38:16,079 --> 00:38:20,720
+information systems. and what that
+
+1122
+00:38:19,040 --> 00:38:22,079
+means. And it I had a very hard time
+
+1123
+00:38:20,720 --> 00:38:24,560
+understanding it when I first heard the
+
+1124
+00:38:22,079 --> 00:38:27,200
+term what it meant to democratize data.
+
+1125
+00:38:24,560 --> 00:38:28,960
+And finally, I I understand it now. And
+
+1126
+00:38:27,200 --> 00:38:31,200
+what it what I believe it means is that
+
+1127
+00:38:28,960 --> 00:38:33,040
+you give lay people access to
+
+1128
+00:38:31,200 --> 00:38:34,640
+information so they can do their own
+
+1129
+00:38:33,040 --> 00:38:36,240
+thinking. They can do their own work and
+
+1130
+00:38:34,640 --> 00:38:39,680
+they can draw their own conclusion. They
+
+1131
+00:38:36,240 --> 00:38:42,800
+so they're not dependent on experts.
+
+1132
+00:38:39,680 --> 00:38:44,960
+They can do it themselves. And therein
+
+1133
+00:38:42,800 --> 00:38:46,560
+lies one of my biggest biggest biggest
+
+1134
+00:38:44,960 --> 00:38:48,160
+concerns. While I know there are people
+
+1135
+00:38:46,560 --> 00:38:49,680
+out there who are citizen scientists, I
+
+1136
+00:38:48,160 --> 00:38:52,000
+know there are people out there who have
+
+1137
+00:38:49,680 --> 00:38:55,119
+trained in other domains and can do this
+
+1138
+00:38:52,000 --> 00:38:57,040
+well, what I'm really afraid of is that
+
+1139
+00:38:55,119 --> 00:38:59,760
+people who don't have that training or
+
+1140
+00:38:57,040 --> 00:39:02,960
+don't have the context work with it and
+
+1141
+00:38:59,760 --> 00:39:06,000
+draw different conclusions from it that
+
+1142
+00:39:02,960 --> 00:39:08,480
+that might even be completely 180
+
+1143
+00:39:06,000 --> 00:39:10,480
+degrees wrong. So, I'll give you an
+
+1144
+00:39:08,480 --> 00:39:12,480
+example and I don't a friend of mine
+
+1145
+00:39:10,480 --> 00:39:15,760
+recently was diagnosed with a rare
+
+1146
+00:39:12,480 --> 00:39:17,440
+disease and he had some lab work done
+
+1147
+00:39:15,760 --> 00:39:21,119
+and he called me on the phone and said,
+
+1148
+00:39:17,440 --> 00:39:22,880
+"Hey, I know what I have. I have celiac
+
+1149
+00:39:21,119 --> 00:39:24,800
+disease." I said, "What do you mean?"
+
+1150
+00:39:22,880 --> 00:39:26,400
+Well, here's the blood work. And I like,
+
+1151
+00:39:24,800 --> 00:39:27,760
+"Oh." When I looked at the blood work
+
+1152
+00:39:26,400 --> 00:39:29,200
+with him, and I'm a physician, right?
+
+1153
+00:39:27,760 --> 00:39:31,119
+I've been trained. I've seen patients
+
+1154
+00:39:29,200 --> 00:39:32,880
+for 10 years. I looked at I said, "What
+
+1155
+00:39:31,119 --> 00:39:35,200
+makes you think this is showing that you
+
+1156
+00:39:32,880 --> 00:39:37,599
+have celiac disease?" Because all the
+
+1157
+00:39:35,200 --> 00:39:38,880
+labs were negative. He's, "Oh, no, no,
+
+1158
+00:39:37,599 --> 00:39:40,160
+no. Look here." I'm like, "No, no, no.
+
+1159
+00:39:38,880 --> 00:39:42,800
+You're misreading it. It doesn't say
+
+1160
+00:39:40,160 --> 00:39:46,079
+what you think it says." And it actually
+
+1161
+00:39:42,800 --> 00:39:47,839
+it did support something that they had
+
+1162
+00:39:46,079 --> 00:39:49,599
+something else that they had, but all
+
+1163
+00:39:47,839 --> 00:39:51,599
+that was was confirmatory that they had
+
+1164
+00:39:49,599 --> 00:39:54,320
+the other problem. So my point here is
+
+1165
+00:39:51,599 --> 00:39:56,400
+that if they look at data without that
+
+1166
+00:39:54,320 --> 00:39:58,079
+critical context, whether it's data that
+
+1167
+00:39:56,400 --> 00:39:59,280
+they get from labcore when they get
+
+1168
+00:39:58,079 --> 00:40:00,560
+their or they look at their medical
+
+1169
+00:39:59,280 --> 00:40:03,520
+records, if they don't have this
+
+1170
+00:40:00,560 --> 00:40:06,400
+clinical context, they have the risk of
+
+1171
+00:40:03,520 --> 00:40:08,400
+making really really bad life decisions.
+
+1172
+00:40:06,400 --> 00:40:10,720
+And I realize it sounds a little snobby
+
+1173
+00:40:08,400 --> 00:40:12,400
+for me as a as an expert to say you need
+
+1174
+00:40:10,720 --> 00:40:14,320
+the experts, but honest to God, I really
+
+1175
+00:40:12,400 --> 00:40:16,800
+do think you need the experts. And I
+
+1176
+00:40:14,320 --> 00:40:19,040
+don't think that the general lay public
+
+1177
+00:40:16,800 --> 00:40:21,839
+has the training or understanding. And I
+
+1178
+00:40:19,040 --> 00:40:24,320
+don't know that chat GBPT or Claude can
+
+1179
+00:40:21,839 --> 00:40:26,480
+take the place of that. Maybe it can,
+
+1180
+00:40:24,320 --> 00:40:29,280
+maybe it will. I don't know that it can
+
+1181
+00:40:26,480 --> 00:40:31,280
+today, but even experts who use these
+
+1182
+00:40:29,280 --> 00:40:33,119
+tool who use these tools today find
+
+1183
+00:40:31,280 --> 00:40:35,119
+there's flaws in there and they're so
+
+1184
+00:40:33,119 --> 00:40:36,800
+convincing that they're correct. These
+
+1185
+00:40:35,119 --> 00:40:38,480
+tools come at you and they they stroke
+
+1186
+00:40:36,800 --> 00:40:40,160
+your ego. They tell you, "Oh, that's a
+
+1187
+00:40:38,480 --> 00:40:42,240
+great idea. Oh, you're thinking about
+
+1188
+00:40:40,160 --> 00:40:44,000
+this in exactly the right way." And
+
+1189
+00:40:42,240 --> 00:40:46,720
+unless you think about it and use these
+
+1190
+00:40:44,000 --> 00:40:48,320
+tools with a very critical eye, you can
+
+1191
+00:40:46,720 --> 00:40:50,640
+be led down a garden path and find
+
+1192
+00:40:48,320 --> 00:40:52,640
+yourself in a in a world of hurt. And
+
+1193
+00:40:50,640 --> 00:40:52,960
+that's my big one of my biggest concerns
+
+1194
+00:40:52,640 --> 00:40:56,079
+here.
+
+1195
+00:40:52,960 --> 00:40:58,240
+I I can tell you from my own experiences
+
+1196
+00:40:56,079 --> 00:41:00,000
+that it's been very very difficult to
+
+1197
+00:40:58,240 --> 00:41:01,839
+push back the whole concept of
+
+1198
+00:41:00,000 --> 00:41:03,680
+democratizing the data particularly in
+
+1199
+00:41:01,839 --> 00:41:06,560
+when I was working in some health
+
+1200
+00:41:03,680 --> 00:41:07,839
+systems because people had this great
+
+1201
+00:41:06,560 --> 00:41:09,760
+technology. They could move data
+
+1202
+00:41:07,839 --> 00:41:11,520
+quickly. they could do classification
+
+1203
+00:41:09,760 --> 00:41:14,000
+and all this other stuff and they just
+
+1204
+00:41:11,520 --> 00:41:17,920
+wanted to move at Mach 10. I'm like
+
+1205
+00:41:14,000 --> 00:41:21,440
+guys, we don't even let our own people
+
+1206
+00:41:17,920 --> 00:41:23,440
+in my data team produce something that
+
+1207
+00:41:21,440 --> 00:41:25,599
+doesn't get passed by somebody with a
+
+1208
+00:41:23,440 --> 00:41:28,319
+clinical eye. If it's clinical data, it
+
+1209
+00:41:25,599 --> 00:41:29,920
+requires some expertise that's beyond
+
+1210
+00:41:28,319 --> 00:41:31,680
+just being a technician who happens to
+
+1211
+00:41:29,920 --> 00:41:34,319
+be able to read. U you know, I'm not
+
+1212
+00:41:31,680 --> 00:41:35,839
+going to be the guy to step in to answer
+
+1213
+00:41:34,319 --> 00:41:38,160
+clinical questions. No, I've been in
+
+1214
+00:41:35,839 --> 00:41:39,839
+healthcare 30 years, but there's no
+
+1215
+00:41:38,160 --> 00:41:42,240
+literary
+
+1216
+00:41:39,839 --> 00:41:44,800
+MD. There's no such thing that has any
+
+1217
+00:41:42,240 --> 00:41:46,319
+meaning whatsoever. You you can't you
+
+1218
+00:41:44,800 --> 00:41:48,319
+can't have the context. And I think this
+
+1219
+00:41:46,319 --> 00:41:50,319
+is where it bugs me with to what you're
+
+1220
+00:41:48,319 --> 00:41:54,720
+saying about how people using, you know,
+
+1221
+00:41:50,319 --> 00:41:56,720
+the cloud or or whatever you chat GPT is
+
+1222
+00:41:54,720 --> 00:41:57,920
+they won't even know what's relevant in
+
+1223
+00:41:56,720 --> 00:41:58,800
+terms of context.
+
+1224
+00:41:57,920 --> 00:42:00,880
+Exactly.
+
+1225
+00:41:58,800 --> 00:42:02,079
+Things that you would know. I mean, just
+
+1226
+00:42:00,880 --> 00:42:04,720
+being able to look at a patient that's
+
+1227
+00:42:02,079 --> 00:42:06,720
+sitting in front of you that has some
+
+1228
+00:42:04,720 --> 00:42:08,079
+body language is it's telling you
+
+1229
+00:42:06,720 --> 00:42:10,160
+something that they're not saying.
+
+1230
+00:42:08,079 --> 00:42:11,520
+That's exactly right. And and and if you
+
+1231
+00:42:10,160 --> 00:42:14,079
+and this is another thing, you know,
+
+1232
+00:42:11,520 --> 00:42:15,920
+when I started my role at at BMS, I
+
+1233
+00:42:14,079 --> 00:42:17,920
+asked my team, I had 50 people on my
+
+1234
+00:42:15,920 --> 00:42:19,280
+team. I asked them, "How many of you
+
+1235
+00:42:17,920 --> 00:42:22,319
+have actually set foot in a clinical
+
+1236
+00:42:19,280 --> 00:42:24,000
+trial? Have you ever been in and watched
+
+1237
+00:42:22,319 --> 00:42:25,920
+or participated in a clinical trial?"
+
+1238
+00:42:24,000 --> 00:42:28,960
+Because this group's job was to
+
+1239
+00:42:25,920 --> 00:42:30,640
+interpret data from clinical trials. Now
+
+1240
+00:42:28,960 --> 00:42:32,560
+I have come you know my informatics
+
+1241
+00:42:30,640 --> 00:42:35,119
+training is stemmed from having 10 years
+
+1242
+00:42:32,560 --> 00:42:38,079
+of clinical experience on top of you
+
+1243
+00:42:35,119 --> 00:42:40,640
+know the next 30 plus years in in
+
+1244
+00:42:38,079 --> 00:42:43,280
+informatics. So I can look at things
+
+1245
+00:42:40,640 --> 00:42:45,520
+with a lens with a lens that sees both
+
+1246
+00:42:43,280 --> 00:42:47,119
+sides of that coin. And if you don't
+
+1247
+00:42:45,520 --> 00:42:49,119
+have that lens and you just look at the
+
+1248
+00:42:47,119 --> 00:42:50,560
+data without a clinical perspective
+
+1249
+00:42:49,119 --> 00:42:52,720
+you're going to miss stuff. And this is
+
+1250
+00:42:50,560 --> 00:42:54,880
+the democratization problem that I see
+
+1251
+00:42:52,720 --> 00:42:56,560
+that if you don't have and and like when
+
+1252
+00:42:54,880 --> 00:42:58,640
+I found out that only three people out
+
+1253
+00:42:56,560 --> 00:43:01,680
+of 50 actually had ever been involved
+
+1254
+00:42:58,640 --> 00:43:03,599
+with a clinical trial or been watched
+
+1255
+00:43:01,680 --> 00:43:06,240
+like blood drawn for a clinical trial or
+
+1256
+00:43:03,599 --> 00:43:07,839
+been in a place where the patients were
+
+1257
+00:43:06,240 --> 00:43:09,920
+being interviewed by a trial manager
+
+1258
+00:43:07,839 --> 00:43:11,760
+like no one had. I don't know how you do
+
+1259
+00:43:09,920 --> 00:43:14,160
+a job like be a data analyst without
+
+1260
+00:43:11,760 --> 00:43:15,520
+that kind of context. I have no idea. I
+
+1261
+00:43:14,160 --> 00:43:17,440
+set up a program where I sent those
+
+1262
+00:43:15,520 --> 00:43:19,440
+folks out to go get that context. I felt
+
+1263
+00:43:17,440 --> 00:43:20,880
+it was that important and and I think
+
+1264
+00:43:19,440 --> 00:43:22,640
+that other organizations should think
+
+1265
+00:43:20,880 --> 00:43:25,440
+about that as well that clinical
+
+1266
+00:43:22,640 --> 00:43:27,920
+content. So Beth Israel runs a program
+
+1267
+00:43:25,440 --> 00:43:31,359
+for uh at the division of clinical
+
+1268
+00:43:27,920 --> 00:43:33,200
+formatics a fellowship for executives
+
+1269
+00:43:31,359 --> 00:43:34,640
+who are actually already doing their day
+
+1270
+00:43:33,200 --> 00:43:36,720
+jobs who want to learn about the
+
+1271
+00:43:34,640 --> 00:43:39,280
+clinical side of things. It's a it's a I
+
+1272
+00:43:36,720 --> 00:43:41,200
+think it's a threemonth kind of program.
+
+1273
+00:43:39,280 --> 00:43:42,960
+It's not cheap, but it helps get
+
+1274
+00:43:41,200 --> 00:43:44,160
+executives to get that kind of clinical
+
+1275
+00:43:42,960 --> 00:43:46,640
+context and it's something if you're
+
+1276
+00:43:44,160 --> 00:43:48,079
+interested, you can contact Yuri Canana
+
+1277
+00:43:46,640 --> 00:43:50,560
+at the division of clinical informatics
+
+1278
+00:43:48,079 --> 00:43:52,079
+and he has slot. They're not that
+
+1279
+00:43:50,560 --> 00:43:54,319
+they're not that many, but there are
+
+1280
+00:43:52,079 --> 00:43:56,160
+slots and you can get that. It's not a
+
+1281
+00:43:54,319 --> 00:43:57,920
+substitution for your MD. It's not a
+
+1282
+00:43:56,160 --> 00:43:59,599
+substitution for your RN or your vet
+
+1283
+00:43:57,920 --> 00:44:01,119
+degree or your dental degree, but it
+
+1284
+00:43:59,599 --> 00:44:02,880
+gives you at least a taste where most of
+
+1285
+00:44:01,119 --> 00:44:04,560
+these folks never had that before.
+
+1286
+00:44:02,880 --> 00:44:06,160
+Yeah, it's just this is just so
+
+1287
+00:44:04,560 --> 00:44:07,599
+important, you know. We we've got to
+
+1288
+00:44:06,160 --> 00:44:10,400
+make sure that we're we're getting it
+
+1289
+00:44:07,599 --> 00:44:12,880
+right. And I, you know, good intentions
+
+1290
+00:44:10,400 --> 00:44:15,440
+are are are fine, but you be you need
+
+1291
+00:44:12,880 --> 00:44:19,119
+qualified people who are making calls
+
+1292
+00:44:15,440 --> 00:44:21,040
+about political decision-m usefulness of
+
+1293
+00:44:19,119 --> 00:44:23,119
+the research, the validity of it. You
+
+1294
+00:44:21,040 --> 00:44:24,079
+you can't we can't get this wrong. We we
+
+1295
+00:44:23,119 --> 00:44:25,760
+we just can't.
+
+1296
+00:44:24,079 --> 00:44:27,760
+Oh, but we are we we're going to get it
+
+1297
+00:44:25,760 --> 00:44:29,599
+wrong. Let's, you know, don't say we
+
+1298
+00:44:27,760 --> 00:44:31,119
+can't because we will get it wrong. We
+
+1299
+00:44:29,599 --> 00:44:33,040
+will get, you know, the old adage from
+
+1300
+00:44:31,119 --> 00:44:34,560
+medical school is that 50% of the things
+
+1301
+00:44:33,040 --> 00:44:36,400
+they teach you in medical school are
+
+1302
+00:44:34,560 --> 00:44:37,599
+going to be proven to be wrong. Problem
+
+1303
+00:44:36,400 --> 00:44:40,000
+is when you're learning it, you don't
+
+1304
+00:44:37,599 --> 00:44:41,599
+know which 50% is wrong. So it's
+
+1305
+00:44:40,000 --> 00:44:43,280
+inevitable we're going to get it wrong.
+
+1306
+00:44:41,599 --> 00:44:45,920
+We have to have enough tolerance and
+
+1307
+00:44:43,280 --> 00:44:48,240
+enough wisdom to know number one, it's
+
+1308
+00:44:45,920 --> 00:44:49,920
+probably okay to get some of it wrong.
+
+1309
+00:44:48,240 --> 00:44:51,359
+And it's essential to get some So you
+
+1310
+00:44:49,920 --> 00:44:53,119
+only learn when you get something wrong,
+
+1311
+00:44:51,359 --> 00:44:54,960
+right? You don't learn much if you get
+
+1312
+00:44:53,119 --> 00:44:56,960
+everything right. So if you get
+
+1313
+00:44:54,960 --> 00:44:59,040
+something goes sideways when the when
+
+1314
+00:44:56,960 --> 00:45:01,040
+the space shuttle exploded that probably
+
+1315
+00:44:59,040 --> 00:45:03,040
+provided an enormous amount of learnings
+
+1316
+00:45:01,040 --> 00:45:05,359
+for NASA so that you know they would
+
+1317
+00:45:03,040 --> 00:45:08,079
+never launch again during an you know an
+
+1318
+00:45:05,359 --> 00:45:09,760
+icy day so the O-rings wouldn't uh
+
+1319
+00:45:08,079 --> 00:45:11,359
+wouldn't expand and cause problems.
+
+1320
+00:45:09,760 --> 00:45:14,240
+We're talking about something that is so
+
+1321
+00:45:11,359 --> 00:45:16,000
+critical and it's the it's the we're
+
+1322
+00:45:14,240 --> 00:45:17,200
+talking about an evolving science and
+
+1323
+00:45:16,000 --> 00:45:19,920
+we're talking about the practice of
+
+1324
+00:45:17,200 --> 00:45:23,119
+medicine and it's such hugely important
+
+1325
+00:45:19,920 --> 00:45:25,119
+which even trained clinicians with 30
+
+1326
+00:45:23,119 --> 00:45:26,960
+years of experience there's still an
+
+1327
+00:45:25,119 --> 00:45:28,720
+evolving science and there's learnings
+
+1328
+00:45:26,960 --> 00:45:31,280
+there's more more information more
+
+1329
+00:45:28,720 --> 00:45:33,200
+insight coming constantly and sadly
+
+1330
+00:45:31,280 --> 00:45:34,240
+we're also discovering new diseases I
+
+1331
+00:45:33,200 --> 00:45:36,400
+think we're probably doing things that
+
+1332
+00:45:34,240 --> 00:45:38,960
+are causing our problems too but that's
+
+1333
+00:45:36,400 --> 00:45:42,560
+a whole another issue but the the the
+
+1334
+00:45:38,960 --> 00:45:45,200
+important from where I'm sitting is it's
+
+1335
+00:45:42,560 --> 00:45:47,599
+voices like yours who need to be heard.
+
+1336
+00:45:45,200 --> 00:45:49,520
+They need to be out in front and being
+
+1337
+00:45:47,599 --> 00:45:51,920
+the ones that are they're being, you
+
+1338
+00:45:49,520 --> 00:45:53,359
+know, listened to and are making we have
+
+1339
+00:45:51,920 --> 00:45:56,079
+to make sure that organizations are
+
+1340
+00:45:53,359 --> 00:45:58,640
+hearing this and they're reaching out to
+
+1341
+00:45:56,079 --> 00:46:01,440
+somebody like you to understand where
+
+1342
+00:45:58,640 --> 00:46:03,280
+they actually are in their journey and
+
+1343
+00:46:01,440 --> 00:46:04,800
+are they prepared? Do they have the
+
+1344
+00:46:03,280 --> 00:46:07,760
+right pieces in place and have the right
+
+1345
+00:46:04,800 --> 00:46:10,160
+programs for literacy? uh all the things
+
+1346
+00:46:07,760 --> 00:46:12,480
+that you've been talking about. Uh I
+
+1347
+00:46:10,160 --> 00:46:14,240
+think it's just hugely important. Well,
+
+1348
+00:46:12,480 --> 00:46:16,000
+the biggest swing and miss we could have
+
+1349
+00:46:14,240 --> 00:46:17,280
+is if we don't pay attention to your
+
+1350
+00:46:16,000 --> 00:46:19,760
+wishes like yours right now.
+
+1351
+00:46:17,280 --> 00:46:21,520
+Well, not to not to be too blatant in
+
+1352
+00:46:19,760 --> 00:46:23,040
+being self- serving, but if people want
+
+1353
+00:46:21,520 --> 00:46:25,680
+to have a longer conversation or want to
+
+1354
+00:46:23,040 --> 00:46:27,760
+engage Luminant in those kinds of
+
+1355
+00:46:25,680 --> 00:46:28,800
+programs or projects, we are selective
+
+1356
+00:46:27,760 --> 00:46:30,480
+in what we take. We don't take
+
+1357
+00:46:28,800 --> 00:46:31,839
+everything that comes down the pike, but
+
+1358
+00:46:30,480 --> 00:46:33,200
+you could reach out to me. It's the
+
+1359
+00:46:31,839 --> 00:46:35,440
+email is simple. It's steve
+
+1360
+00:46:33,200 --> 00:46:39,200
+luminantconsulting.com and luminant is lu
+
+1361
+00:46:35,440 --> 00:46:41,680
+m i n t luminantconsulting.com
+
+1362
+00:46:39,200 --> 00:46:43,760
+and send me an email and we'd have a
+
+1363
+00:46:41,680 --> 00:46:45,920
+conversation. The sweet spot for us is
+
+1364
+00:46:43,760 --> 00:46:47,920
+looking at the at the overall strategy
+
+1365
+00:46:45,920 --> 00:46:49,520
+and how to implement it. Uh we're not a
+
+1366
+00:46:47,920 --> 00:46:51,520
+data science shop. We're not going to do
+
+1367
+00:46:49,520 --> 00:46:53,280
+projects that revolve around, you know,
+
+1368
+00:46:51,520 --> 00:46:55,119
+analyzing the data. Although we can,
+
+1369
+00:46:53,280 --> 00:46:57,680
+that's not where we find our sweet spot.
+
+1370
+00:46:55,119 --> 00:46:59,920
+Our sweet spot is helping organizations
+
+1371
+00:46:57,680 --> 00:47:02,000
+really put together programs that will
+
+1372
+00:46:59,920 --> 00:47:04,079
+breed sustainability and cut through the
+
+1373
+00:47:02,000 --> 00:47:05,680
+noise and get right down to pure signal.
+
+1374
+00:47:04,079 --> 00:47:08,480
+That's fantastic. And for for the
+
+1375
+00:47:05,680 --> 00:47:10,319
+listeners, uh you you'll find a great
+
+1376
+00:47:08,480 --> 00:47:12,960
+amount of detail in in the show notes
+
+1377
+00:47:10,319 --> 00:47:15,040
+how to get in touch for with Dr. Lov Dr.
+
+1378
+00:47:12,960 --> 00:47:18,400
+Lock, this has been amazing for me. I I
+
+1379
+00:47:15,040 --> 00:47:20,400
+I can't tell you I hope the listeners uh
+
+1380
+00:47:18,400 --> 00:47:24,240
+can appreciate that that the the way
+
+1381
+00:47:20,400 --> 00:47:26,960
+that it was for me. I I learned w you're
+
+1382
+00:47:24,240 --> 00:47:28,720
+you've had a very impressive career and
+
+1383
+00:47:26,960 --> 00:47:30,240
+there there's so much uh great work
+
+1384
+00:47:28,720 --> 00:47:33,280
+ahead of you. You've got the passion to
+
+1385
+00:47:30,240 --> 00:47:35,119
+do it and I can't wait to to to stay in
+
+1386
+00:47:33,280 --> 00:47:37,680
+touch and and find ways that I could be
+
+1387
+00:47:35,119 --> 00:47:39,680
+supportive of what you're doing and and
+
+1388
+00:47:37,680 --> 00:47:41,520
+I I I just know there's a lot of great
+
+1389
+00:47:39,680 --> 00:47:43,839
+stuff coming and I can't thank you
+
+1390
+00:47:41,520 --> 00:47:45,359
+enough uh for for coming on the show.
+
+1391
+00:47:43,839 --> 00:47:46,720
+This has been amazing. Thank you.
+
+1392
+00:47:45,359 --> 00:47:48,400
+Oh, you're quite welcome and I really
+
+1393
+00:47:46,720 --> 00:47:50,079
+appreciate having the time to do this
+
+1394
+00:47:48,400 --> 00:47:51,839
+with you and I I hope that it's helpful
+
+1395
+00:47:50,079 --> 00:47:54,079
+to folks out there. And by the way, if
+
+1396
+00:47:51,839 --> 00:47:56,480
+you do find it helpful, pay it forward.
+
+1397
+00:47:54,079 --> 00:47:59,040
+You know, that's always my motto. Pay it
+
+1398
+00:47:56,480 --> 00:48:01,200
+forward. Help folks who are earlier in
+
+1399
+00:47:59,040 --> 00:48:02,880
+their careers and help them leg up
+
+1400
+00:48:01,200 --> 00:48:04,160
+because, you know, we're not always
+
+1401
+00:48:02,880 --> 00:48:07,280
+going to be here. We need to make sure
+
+1402
+00:48:04,160 --> 00:48:09,280
+the next generation is is getting, you
+
+1403
+00:48:07,280 --> 00:48:10,720
+know, tuned up to do this thoughtfully.
+
+1404
+00:48:09,280 --> 00:48:12,880
+So, pay it forward.
+
+1405
+00:48:10,720 --> 00:48:14,319
+We get along well. I think we're we're
+
+1406
+00:48:12,880 --> 00:48:15,920
+thinking the same way at this point
+
+1407
+00:48:14,319 --> 00:48:17,200
+where we've got this horizon. We want to
+
+1408
+00:48:15,920 --> 00:48:19,040
+make sure we're investing in the next
+
+1409
+00:48:17,200 --> 00:48:20,560
+generation and how they make sure that
+
+1410
+00:48:19,040 --> 00:48:22,559
+they they're they're falling in love
+
+1411
+00:48:20,560 --> 00:48:24,400
+with the the the things that we've been
+
+1412
+00:48:22,559 --> 00:48:26,240
+in love with so that they'll carry it
+
+1413
+00:48:24,400 --> 00:48:27,119
+and we hand it to the generation after
+
+1414
+00:48:26,240 --> 00:48:28,960
+them.
+
+1415
+00:48:27,119 --> 00:48:30,240
+Absolutely. Well, thank you so much for
+
+1416
+00:48:28,960 --> 00:48:32,079
+having me. I really appreciate the
+
+1417
+00:48:30,240 --> 00:48:33,839
+opportunity. That's it for this episode
+
+1418
+00:48:32,079 --> 00:48:35,599
+of the Signal Room. If today's
+
+1419
+00:48:33,839 --> 00:48:37,680
+conversation sparked something in you,
+
+1420
+00:48:35,599 --> 00:48:39,599
+an idea, a challenge, or perspective
+
+1421
+00:48:37,680 --> 00:48:41,680
+worth amplifying, I'd love to hear from
+
+1422
+00:48:39,599 --> 00:48:43,200
+you. Message me on LinkedIn or visit
+
+1423
+00:48:41,680 --> 00:48:47,200
+sigaroompodcast.com
+
+1424
+00:48:43,200 --> 00:48:47,200
+to explore being a guest on an upcoming
+

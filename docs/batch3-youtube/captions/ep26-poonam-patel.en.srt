@@ -1,0 +1,4892 @@
+1
+00:00:00,080 --> 00:00:05,279
+Are we solving the right problems?
+
+2
+00:00:02,080 --> 00:00:08,320
+My heart goes out to patient care 100%.
+
+3
+00:00:05,279 --> 00:00:11,599
+But my heart goes out to providers 100%.
+
+4
+00:00:08,320 --> 00:00:14,559
+Because they are the ones in the
+
+5
+00:00:11,599 --> 00:00:16,560
+interaction leading the care and
+
+6
+00:00:14,559 --> 00:00:20,400
+building trust and needing to build
+
+7
+00:00:16,560 --> 00:00:21,840
+trust for adherence, for hope, for
+
+8
+00:00:20,400 --> 00:00:23,439
+families to have faith.
+
+9
+00:00:21,840 --> 00:00:24,800
+But it's still an issue that we got to
+
+10
+00:00:23,439 --> 00:00:27,760
+figure out how to solve for it. It's not
+
+11
+00:00:24,800 --> 00:00:30,080
+easy. Kam, welcome to the Sigma Room. I
+
+12
+00:00:27,760 --> 00:00:31,679
+was so excited to have you on. I I think
+
+13
+00:00:30,080 --> 00:00:34,160
+we've had some really interesting
+
+14
+00:00:31,679 --> 00:00:35,920
+exchanges over the last couple weeks and
+
+15
+00:00:34,160 --> 00:00:37,760
+uh it was clear that we there's just a
+
+16
+00:00:35,920 --> 00:00:39,680
+lot of things that we're we share a
+
+17
+00:00:37,760 --> 00:00:41,280
+common passion for. So, thank you so
+
+18
+00:00:39,680 --> 00:00:43,040
+much for agreeing to come on the show.
+
+19
+00:00:41,280 --> 00:00:45,040
+Yeah, thank you for having me. You know,
+
+20
+00:00:43,040 --> 00:00:47,520
+I'm I'm really grateful to serendipity
+
+21
+00:00:45,040 --> 00:00:50,320
+and giving us the opportunity to connect
+
+22
+00:00:47,520 --> 00:00:52,160
+and finding alignment in in things that
+
+23
+00:00:50,320 --> 00:00:54,879
+we are passionate about is always
+
+24
+00:00:52,160 --> 00:00:57,520
+something very exciting and motivating
+
+25
+00:00:54,879 --> 00:01:00,239
+to to meet others. So, I'm excited to be
+
+26
+00:00:57,520 --> 00:01:02,399
+here. Well, it's it's been a a really
+
+27
+00:01:00,239 --> 00:01:04,400
+wonderful career for me having to the
+
+28
+00:01:02,399 --> 00:01:06,159
+chance to work with with providers and
+
+29
+00:01:04,400 --> 00:01:08,240
+just being around the interactions
+
+30
+00:01:06,159 --> 00:01:10,960
+within the healthcare setting. And for
+
+31
+00:01:08,240 --> 00:01:12,720
+me, it's been really a lot more about
+
+32
+00:01:10,960 --> 00:01:14,400
+the interactions with between human
+
+33
+00:01:12,720 --> 00:01:16,720
+beings than it was really is about
+
+34
+00:01:14,400 --> 00:01:18,960
+anything else. But what's really
+
+35
+00:01:16,720 --> 00:01:20,400
+probably the most me meaningful to me is
+
+36
+00:01:18,960 --> 00:01:23,200
+when I have a conversation with someone
+
+37
+00:01:20,400 --> 00:01:25,200
+like you, you're wired in a way that
+
+38
+00:01:23,200 --> 00:01:26,560
+everything is all about who the person
+
+39
+00:01:25,200 --> 00:01:31,200
+that's in front of you who you're taking
+
+40
+00:01:26,560 --> 00:01:33,600
+care of. And I can't say it enough about
+
+41
+00:01:31,200 --> 00:01:35,439
+the commitment that it takes to do what
+
+42
+00:01:33,600 --> 00:01:36,799
+you do. And I really want to dig into
+
+43
+00:01:35,439 --> 00:01:39,200
+some things today because I know we've
+
+44
+00:01:36,799 --> 00:01:40,960
+been talking about AI and governance and
+
+45
+00:01:39,200 --> 00:01:42,960
+a lot of stuff like that. Innovation's
+
+46
+00:01:40,960 --> 00:01:44,640
+been a thing that's been talked about
+
+47
+00:01:42,960 --> 00:01:46,640
+forever. digital transformation, you
+
+48
+00:01:44,640 --> 00:01:49,280
+know, buzzwords are us basically, but
+
+49
+00:01:46,640 --> 00:01:51,280
+what it really comes down to is are we
+
+50
+00:01:49,280 --> 00:01:54,159
+doing the right things? Are we solving
+
+51
+00:01:51,280 --> 00:01:55,920
+the right problems? And I don't know
+
+52
+00:01:54,159 --> 00:01:57,439
+that we do such a great job with that.
+
+53
+00:01:55,920 --> 00:01:59,600
+But we're at a point right now things
+
+54
+00:01:57,439 --> 00:02:02,000
+are moving very, very quickly. So, I
+
+55
+00:01:59,600 --> 00:02:04,079
+think it's a great opportunity for us to
+
+56
+00:02:02,000 --> 00:02:06,320
+kind of take a pause and really take a
+
+57
+00:02:04,079 --> 00:02:07,920
+look at what we're doing and what should
+
+58
+00:02:06,320 --> 00:02:09,679
+we be doing and and where are there
+
+59
+00:02:07,920 --> 00:02:11,520
+better opportunities maybe that we're
+
+60
+00:02:09,679 --> 00:02:14,239
+not paying attention to because we're
+
+61
+00:02:11,520 --> 00:02:16,080
+distracted. there's a long a long way to
+
+62
+00:02:14,239 --> 00:02:17,840
+go to say I really would love to hear
+
+63
+00:02:16,080 --> 00:02:20,560
+you you talk about what's top of mind
+
+64
+00:02:17,840 --> 00:02:23,040
+for you and if you know if we can tag
+
+65
+00:02:20,560 --> 00:02:24,640
+team and figure out what one or two
+
+66
+00:02:23,040 --> 00:02:27,280
+meaningful things we could tackle
+
+67
+00:02:24,640 --> 00:02:29,040
+together like soon right away bring in
+
+68
+00:02:27,280 --> 00:02:30,160
+more people whatever what would some of
+
+69
+00:02:29,040 --> 00:02:31,920
+those things be for you
+
+70
+00:02:30,160 --> 00:02:35,200
+yeah you know I think thank you again
+
+71
+00:02:31,920 --> 00:02:37,519
+for the by speaking of my my experiences
+
+72
+00:02:35,200 --> 00:02:39,280
+you know I think first being a clinician
+
+73
+00:02:37,519 --> 00:02:41,440
+being a provider in multiple
+
+74
+00:02:39,280 --> 00:02:42,239
+environments inpatient outpatient
+
+75
+00:02:41,440 --> 00:02:44,400
+clinics
+
+76
+00:02:42,239 --> 00:02:46,239
+building a program within a hospital
+
+77
+00:02:44,400 --> 00:02:49,200
+system and then going and scaling
+
+78
+00:02:46,239 --> 00:02:51,200
+another business for virtual care.
+
+79
+00:02:49,200 --> 00:02:53,120
+There's a lot of lenses that as a
+
+80
+00:02:51,200 --> 00:02:56,640
+provider I was able to see. As an
+
+81
+00:02:53,120 --> 00:02:59,920
+operator I was able to see and I really
+
+82
+00:02:56,640 --> 00:03:01,519
+kind of saw things outside the box that
+
+83
+00:02:59,920 --> 00:03:03,200
+I'm like, "Oh, you know, maybe there's a
+
+84
+00:03:01,519 --> 00:03:05,440
+solution for this or hey, maybe I can
+
+85
+00:03:03,200 --> 00:03:07,599
+make this a lot easier for providers
+
+86
+00:03:05,440 --> 00:03:09,280
+where they get more quality time back,
+
+87
+00:03:07,599 --> 00:03:11,440
+right?" Like there was always something
+
+88
+00:03:09,280 --> 00:03:13,360
+in the back of my mind every day I was
+
+89
+00:03:11,440 --> 00:03:14,640
+in the clinic like thinking how can we
+
+90
+00:03:13,360 --> 00:03:16,800
+do this how can we do this how can we do
+
+91
+00:03:14,640 --> 00:03:19,840
+this and I think that we are in a space
+
+92
+00:03:16,800 --> 00:03:24,400
+and in a time where there is opportunity
+
+93
+00:03:19,840 --> 00:03:28,000
+to really look at the workflows the huge
+
+94
+00:03:24,400 --> 00:03:31,680
+admin burden that providers are facing
+
+95
+00:03:28,000 --> 00:03:34,400
+every day and their staff every day and
+
+96
+00:03:31,680 --> 00:03:37,120
+my main goal with where I'm at high
+
+97
+00:03:34,400 --> 00:03:38,799
+level right now is because I've been in
+
+98
+00:03:37,120 --> 00:03:40,640
+these different systems. I've worked for
+
+99
+00:03:38,799 --> 00:03:42,080
+a big healthcare company building
+
+100
+00:03:40,640 --> 00:03:44,159
+clinical programs for very big
+
+101
+00:03:42,080 --> 00:03:47,440
+companies. There's a lot of line of
+
+102
+00:03:44,159 --> 00:03:49,440
+sight that we have in immersing
+
+103
+00:03:47,440 --> 00:03:50,959
+ourselves in these specific
+
+104
+00:03:49,440 --> 00:03:53,920
+environments.
+
+105
+00:03:50,959 --> 00:03:56,640
+And my goal would be to utilize and
+
+106
+00:03:53,920 --> 00:03:58,400
+leverage these amazing technologies when
+
+107
+00:03:56,640 --> 00:04:01,360
+used correctly, solving the right
+
+108
+00:03:58,400 --> 00:04:06,480
+problem, filling the gap. And my goal
+
+109
+00:04:01,360 --> 00:04:09,439
+would be to provide time back to the
+
+110
+00:04:06,480 --> 00:04:12,560
+human to human interaction. I think a
+
+111
+00:04:09,439 --> 00:04:15,200
+lot of times we have to remember what
+
+112
+00:04:12,560 --> 00:04:17,680
+we're doing and who's doing it, right?
+
+113
+00:04:15,200 --> 00:04:20,639
+Like my heart goes out to patient care
+
+114
+00:04:17,680 --> 00:04:25,120
+100%. But my heart goes out to providers
+
+115
+00:04:20,639 --> 00:04:28,080
+100%. because they are the ones in the
+
+116
+00:04:25,120 --> 00:04:30,080
+interaction leading the care and
+
+117
+00:04:28,080 --> 00:04:33,919
+building trust and needing to build
+
+118
+00:04:30,080 --> 00:04:35,680
+trust for adherence, for hope, for
+
+119
+00:04:33,919 --> 00:04:37,759
+families to have faith. You know, a lot
+
+120
+00:04:35,680 --> 00:04:41,280
+of times we're focusing on adults. I'm a
+
+121
+00:04:37,759 --> 00:04:45,840
+pediatric provider and I saw what
+
+122
+00:04:41,280 --> 00:04:47,840
+happens to families and to parents and
+
+123
+00:04:45,840 --> 00:04:50,240
+how overwhelming it could be and how
+
+124
+00:04:47,840 --> 00:04:53,520
+overwhelming it can be for a provider to
+
+125
+00:04:50,240 --> 00:04:56,240
+string care together. And so there are
+
+126
+00:04:53,520 --> 00:04:59,360
+opportunities in the wealth of data that
+
+127
+00:04:56,240 --> 00:05:03,520
+there is. There is a lot of data and for
+
+128
+00:04:59,360 --> 00:05:05,919
+a provider to put a story together it is
+
+129
+00:05:03,520 --> 00:05:07,680
+very taxing very taxing when you are
+
+130
+00:05:05,919 --> 00:05:09,199
+seeing a new patient even if you're
+
+131
+00:05:07,680 --> 00:05:11,600
+seeing a patient you've been seeing for
+
+132
+00:05:09,199 --> 00:05:14,000
+years or months whatever it may be there
+
+133
+00:05:11,600 --> 00:05:16,880
+are opportunities but people who are in
+
+134
+00:05:14,000 --> 00:05:19,680
+it are able to help you say this is what
+
+135
+00:05:16,880 --> 00:05:22,240
+I need this is what I want this is where
+
+136
+00:05:19,680 --> 00:05:25,120
+I wish I could have more time right and
+
+137
+00:05:22,240 --> 00:05:27,680
+so my experience what I'm trying to do
+
+138
+00:05:25,120 --> 00:05:29,840
+is add a voice to the people that I
+
+139
+00:05:27,680 --> 00:05:32,160
+worked with, to the people who were the
+
+140
+00:05:29,840 --> 00:05:35,039
+warriors taking care of all of the
+
+141
+00:05:32,160 --> 00:05:37,039
+patients that we were taking care of. I
+
+142
+00:05:35,039 --> 00:05:39,759
+give all the credit to them in the
+
+143
+00:05:37,039 --> 00:05:41,680
+worlds that I grew up in. The amount of
+
+144
+00:05:39,759 --> 00:05:44,320
+compassion and empathy that I learned
+
+145
+00:05:41,680 --> 00:05:46,720
+from those individuals above me when I
+
+146
+00:05:44,320 --> 00:05:49,120
+came into the world 25 years ago, to my
+
+147
+00:05:46,720 --> 00:05:51,520
+peers, to the nurses who taught me, to
+
+148
+00:05:49,120 --> 00:05:54,080
+the doctors who taught us, there are
+
+149
+00:05:51,520 --> 00:05:58,560
+amazing people out there taking care of
+
+150
+00:05:54,080 --> 00:06:01,600
+our people. And so my goal is to utilize
+
+151
+00:05:58,560 --> 00:06:04,720
+the data, problem solve and analyze it
+
+152
+00:06:01,600 --> 00:06:07,120
+and provide ways to give back to the
+
+153
+00:06:04,720 --> 00:06:08,160
+human component. If I'm giving you a
+
+154
+00:06:07,120 --> 00:06:11,520
+general summary,
+
+155
+00:06:08,160 --> 00:06:13,919
+you're talking about what's been top of
+
+156
+00:06:11,520 --> 00:06:16,400
+mind for me as well. And we we have to
+
+157
+00:06:13,919 --> 00:06:19,520
+think about how do we give time back and
+
+158
+00:06:16,400 --> 00:06:22,960
+whenever you talk about innovation or AI
+
+159
+00:06:19,520 --> 00:06:25,280
+things kind of come around to efficiency
+
+160
+00:06:22,960 --> 00:06:28,000
+inevitably. While you know I understand
+
+161
+00:06:25,280 --> 00:06:30,639
+that there's a need for an ROI, I think
+
+162
+00:06:28,000 --> 00:06:33,280
+that there's an intangible that is not
+
+163
+00:06:30,639 --> 00:06:35,919
+really put into the right category as an
+
+164
+00:06:33,280 --> 00:06:37,680
+ROI, but it absolutely is. We're we
+
+165
+00:06:35,919 --> 00:06:39,199
+already we're starting from a place
+
+166
+00:06:37,680 --> 00:06:39,520
+where there's a deficit.
+
+167
+00:06:39,199 --> 00:06:41,520
+Yeah,
+
+168
+00:06:39,520 --> 00:06:44,639
+we have consistently year after year
+
+169
+00:06:41,520 --> 00:06:47,520
+taken more and more time away from the
+
+170
+00:06:44,639 --> 00:06:50,240
+patient and the provider encounter. But
+
+171
+00:06:47,520 --> 00:06:53,360
+even worse, we've crept into an area
+
+172
+00:06:50,240 --> 00:06:55,759
+where I've had mentioned this term with
+
+173
+00:06:53,360 --> 00:06:58,000
+a couple of folks recently and Dr. Mark
+
+174
+00:06:55,759 --> 00:07:00,080
+Zendro told mentioned to me and just
+
+175
+00:06:58,000 --> 00:07:02,720
+casually you say again in the evening
+
+176
+00:07:00,080 --> 00:07:05,599
+it's really pajama time. I'm like wait
+
+177
+00:07:02,720 --> 00:07:07,759
+is that a thing? And when I started to
+
+178
+00:07:05,599 --> 00:07:10,000
+understand just how far we have crept
+
+179
+00:07:07,759 --> 00:07:11,680
+into like even family life time where
+
+180
+00:07:10,000 --> 00:07:14,000
+people should actually be sleeping even
+
+181
+00:07:11,680 --> 00:07:16,479
+we've gone in the opposite direction and
+
+182
+00:07:14,000 --> 00:07:19,120
+so giving that time back really is a big
+
+183
+00:07:16,479 --> 00:07:21,039
+deal but you know maybe you can help me
+
+184
+00:07:19,120 --> 00:07:24,800
+to think about what do we need to
+
+185
+00:07:21,039 --> 00:07:26,880
+communicate to leaders executives you
+
+186
+00:07:24,800 --> 00:07:28,880
+know in in healthcare organizations
+
+187
+00:07:26,880 --> 00:07:30,720
+what's the right messaging that we need
+
+188
+00:07:28,880 --> 00:07:33,599
+to get to them because we've got to
+
+189
+00:07:30,720 --> 00:07:34,000
+reinforce the need to give back time I
+
+190
+00:07:33,599 --> 00:07:36,560
+think
+
+191
+00:07:34,000 --> 00:07:38,479
+yeah I mean there's multiple ways you
+
+192
+00:07:36,560 --> 00:07:40,880
+can kind of approach that you know one
+
+193
+00:07:38,479 --> 00:07:43,199
+of them is the through line is always
+
+194
+00:07:40,880 --> 00:07:46,160
+patient adherence right and preventing
+
+195
+00:07:43,199 --> 00:07:48,639
+readmissions or preventing bigger
+
+196
+00:07:46,160 --> 00:07:50,720
+complications because of non-adherence
+
+197
+00:07:48,639 --> 00:07:53,280
+which is a patient behavior right you're
+
+198
+00:07:50,720 --> 00:07:55,360
+you're depending on patient behavior for
+
+199
+00:07:53,280 --> 00:07:58,319
+that outcome and in order for that
+
+200
+00:07:55,360 --> 00:08:00,960
+outcome to happen the only way humans
+
+201
+00:07:58,319 --> 00:08:02,800
+are adherent to things is if we trust it
+
+202
+00:08:00,960 --> 00:08:04,560
+right that's one of the components now
+
+203
+00:08:02,800 --> 00:08:06,160
+I'm not talking about social
+
+204
+00:08:04,560 --> 00:08:08,160
+determinance of health and I'm not
+
+205
+00:08:06,160 --> 00:08:10,319
+talking about the complications of the
+
+206
+00:08:08,160 --> 00:08:13,220
+fragmented care they get. I'm talking
+
+207
+00:08:10,319 --> 00:08:14,560
+about the the one thing that is
+
+208
+00:08:13,220 --> 00:08:16,560
+[clears throat] it's a component that's
+
+209
+00:08:14,560 --> 00:08:19,440
+really important. When I had patients
+
+210
+00:08:16,560 --> 00:08:21,280
+who really felt that I cared for them
+
+211
+00:08:19,440 --> 00:08:24,319
+and the families knew I was there for
+
+212
+00:08:21,280 --> 00:08:26,319
+them, they would do 99% of the things I
+
+213
+00:08:24,319 --> 00:08:28,000
+asked them to do. Do this seven days, do
+
+214
+00:08:26,319 --> 00:08:30,639
+this three weeks, I need to see you back
+
+215
+00:08:28,000 --> 00:08:33,440
+in four weeks. Okay? And when they would
+
+216
+00:08:30,639 --> 00:08:36,719
+feel that compassion and empathy and
+
+217
+00:08:33,440 --> 00:08:39,519
+trust, they were more likely to trust me
+
+218
+00:08:36,719 --> 00:08:41,680
+would then trust my facility or hospital
+
+219
+00:08:39,519 --> 00:08:44,800
+and then put trust into the system,
+
+220
+00:08:41,680 --> 00:08:47,279
+right? And so when you have providers
+
+221
+00:08:44,800 --> 00:08:50,080
+who are spent as a leadership team, you
+
+222
+00:08:47,279 --> 00:08:53,440
+have those there is no I'm noting
+
+223
+00:08:50,080 --> 00:08:55,920
+anything. I I can probably say that
+
+224
+00:08:53,440 --> 00:08:57,920
+providers are all spent and a lot of
+
+225
+00:08:55,920 --> 00:08:59,760
+them are doing pajama time. I was one of
+
+226
+00:08:57,920 --> 00:09:02,480
+them. I would put my babies to sleep and
+
+227
+00:08:59,760 --> 00:09:06,880
+I would chart till 12:30, 1:00 a.m. And
+
+228
+00:09:02,480 --> 00:09:09,760
+the goal of that was not really the true
+
+229
+00:09:06,880 --> 00:09:11,839
+patient care for me to document. It was
+
+230
+00:09:09,760 --> 00:09:14,320
+for me to do the checklist for what was
+
+231
+00:09:11,839 --> 00:09:17,519
+required on the administrative side of
+
+232
+00:09:14,320 --> 00:09:19,440
+things to get that is it paid for,
+
+233
+00:09:17,519 --> 00:09:21,760
+right? And so from an executive
+
+234
+00:09:19,440 --> 00:09:24,080
+leadership team or a a leadership team,
+
+235
+00:09:21,760 --> 00:09:26,720
+it's about do the providers feel cared
+
+236
+00:09:24,080 --> 00:09:28,880
+for? Are they being seen as people? Are
+
+237
+00:09:26,720 --> 00:09:31,760
+we saying hey we want to put in
+
+238
+00:09:28,880 --> 00:09:34,240
+technologies not build something and
+
+239
+00:09:31,760 --> 00:09:36,080
+then intervene and put it in and it not
+
+240
+00:09:34,240 --> 00:09:38,720
+be done and then cause more confusion
+
+241
+00:09:36,080 --> 00:09:42,080
+and chaos. It's we want to take some
+
+242
+00:09:38,720 --> 00:09:44,240
+time to understand where your
+
+243
+00:09:42,080 --> 00:09:47,360
+administrative burdens are, where your
+
+244
+00:09:44,240 --> 00:09:49,680
+time sucks are, where you're being spent
+
+245
+00:09:47,360 --> 00:09:52,399
+in places rather than in your human
+
+246
+00:09:49,680 --> 00:09:55,120
+delivery. We want to go and study those.
+
+247
+00:09:52,399 --> 00:09:56,880
+We want to understand that and then we
+
+248
+00:09:55,120 --> 00:09:59,360
+want to go look at what technologies are
+
+249
+00:09:56,880 --> 00:10:01,519
+out there if any or is there something
+
+250
+00:09:59,360 --> 00:10:03,279
+we can do within our own systems and
+
+251
+00:10:01,519 --> 00:10:06,720
+supplement and enhance what we already
+
+252
+00:10:03,279 --> 00:10:10,000
+have to solve those problems. Right? And
+
+253
+00:10:06,720 --> 00:10:13,120
+then we're going to have a roll out to
+
+254
+00:10:10,000 --> 00:10:16,320
+add the intervention with your insights
+
+255
+00:10:13,120 --> 00:10:18,640
+as providers to put it in place and we
+
+256
+00:10:16,320 --> 00:10:20,800
+will reiterate it. Now the downfall of
+
+257
+00:10:18,640 --> 00:10:22,800
+that and most people are probably not
+
+258
+00:10:20,800 --> 00:10:25,040
+going to do what I'm saying because we
+
+259
+00:10:22,800 --> 00:10:28,640
+are in a race. The downfall to that is
+
+260
+00:10:25,040 --> 00:10:30,800
+that it requires organized structure and
+
+261
+00:10:28,640 --> 00:10:33,279
+time and that's where I feel that there
+
+262
+00:10:30,800 --> 00:10:36,399
+is going to be friction because the
+
+263
+00:10:33,279 --> 00:10:38,399
+leadership teams have their own goals to
+
+264
+00:10:36,399 --> 00:10:40,000
+obviously hit numbers for the business
+
+265
+00:10:38,399 --> 00:10:42,160
+you know not be in law whatever it may
+
+266
+00:10:40,000 --> 00:10:44,240
+be and the providers and the clinicians
+
+267
+00:10:42,160 --> 00:10:46,399
+and the nurses and the mas all of those
+
+268
+00:10:44,240 --> 00:10:49,200
+individuals are the flip side of that
+
+269
+00:10:46,399 --> 00:10:52,240
+are having to meet those demands right
+
+270
+00:10:49,200 --> 00:10:53,920
+and time unfortunately somehow time has
+
+271
+00:10:52,240 --> 00:10:56,079
+become our enemy when an actual uality.
+
+272
+00:10:53,920 --> 00:10:59,040
+I think time can actually be our friend
+
+273
+00:10:56,079 --> 00:11:01,279
+because we have less you work and less
+
+274
+00:10:59,040 --> 00:11:03,760
+money spent on fixing things that were
+
+275
+00:11:01,279 --> 00:11:06,240
+implemented too fast if we just
+
+276
+00:11:03,760 --> 00:11:08,320
+thoroughly executed the plan. Do you
+
+277
+00:11:06,240 --> 00:11:10,880
+know what I mean? So again, it may not
+
+278
+00:11:08,320 --> 00:11:12,959
+be realistic what I'm saying because of
+
+279
+00:11:10,880 --> 00:11:15,440
+the way the world is racing right now
+
+280
+00:11:12,959 --> 00:11:17,839
+with all that is going on, but I really
+
+281
+00:11:15,440 --> 00:11:20,000
+do feel the people that are getting lost
+
+282
+00:11:17,839 --> 00:11:22,000
+in this race are the ones who are
+
+283
+00:11:20,000 --> 00:11:23,680
+delivering the care and the ones who are
+
+284
+00:11:22,000 --> 00:11:24,720
+receiving the care. And that's a
+
+285
+00:11:23,680 --> 00:11:26,240
+problem.
+
+286
+00:11:24,720 --> 00:11:29,279
+That's such an important thing, too,
+
+287
+00:11:26,240 --> 00:11:31,440
+because we talk about this stuff so
+
+288
+00:11:29,279 --> 00:11:32,160
+sometimes like it's just mechanical,
+
+289
+00:11:31,440 --> 00:11:34,480
+right?
+
+290
+00:11:32,160 --> 00:11:37,519
+where we completely lose the lose our
+
+291
+00:11:34,480 --> 00:11:39,440
+our perspective when it comes to the
+
+292
+00:11:37,519 --> 00:11:42,000
+people who are delivering the care. You
+
+293
+00:11:39,440 --> 00:11:44,560
+work in the pediatric space. You are you
+
+294
+00:11:42,000 --> 00:11:46,720
+not supposed to feel anything and you're
+
+295
+00:11:44,560 --> 00:11:48,720
+taking care of children. I think you do,
+
+296
+00:11:46,720 --> 00:11:50,160
+right? I mean that's got to take its
+
+297
+00:11:48,720 --> 00:11:52,079
+toll and there's just more and more
+
+298
+00:11:50,160 --> 00:11:54,240
+pressure and then you step into a room
+
+299
+00:11:52,079 --> 00:11:56,160
+and you're looking at at a young child
+
+300
+00:11:54,240 --> 00:11:57,440
+who needs needs care.
+
+301
+00:11:56,160 --> 00:11:59,600
+You have to sit with that for a little
+
+302
+00:11:57,440 --> 00:12:01,839
+bit, right? and like really breathe into
+
+303
+00:11:59,600 --> 00:12:04,880
+what that means. And you know, we're not
+
+304
+00:12:01,839 --> 00:12:07,040
+when I see providers, one of the thing
+
+305
+00:12:04,880 --> 00:12:09,600
+that gives me hope is that the good of
+
+306
+00:12:07,040 --> 00:12:12,079
+humans is still there. No matter how
+
+307
+00:12:09,600 --> 00:12:13,839
+much pajama time a provider has, the
+
+308
+00:12:12,079 --> 00:12:16,160
+majority of providers are still going to
+
+309
+00:12:13,839 --> 00:12:18,399
+do their best in their hands to take
+
+310
+00:12:16,160 --> 00:12:20,720
+care of the child, for example. But the
+
+311
+00:12:18,399 --> 00:12:23,279
+other side to that is our elderly. We're
+
+312
+00:12:20,720 --> 00:12:26,079
+talking about elderly as if they don't
+
+313
+00:12:23,279 --> 00:12:27,760
+mean anything. And I'm generalizing what
+
+314
+00:12:26,079 --> 00:12:29,839
+I'm saying, but you know, when we talk
+
+315
+00:12:27,760 --> 00:12:31,279
+about like the technology is going to
+
+316
+00:12:29,839 --> 00:12:33,760
+scale and it's going to have thousands
+
+317
+00:12:31,279 --> 00:12:35,680
+of people on it and like at that point
+
+318
+00:12:33,760 --> 00:12:37,920
+what you've done is you've diminished
+
+319
+00:12:35,680 --> 00:12:41,040
+the sheer amount of individuals who have
+
+320
+00:12:37,920 --> 00:12:42,720
+paved the way for us to all be here and
+
+321
+00:12:41,040 --> 00:12:45,040
+the wisdom that they hold. We're
+
+322
+00:12:42,720 --> 00:12:48,000
+discounting and we're overlooking the
+
+323
+00:12:45,040 --> 00:12:50,320
+fact of who they are, right? Because
+
+324
+00:12:48,000 --> 00:12:51,680
+we're in a race. And when you're talking
+
+325
+00:12:50,320 --> 00:12:54,240
+about elderly, you're talking about
+
+326
+00:12:51,680 --> 00:12:55,680
+somebody's mom, somebody's grandmother,
+
+327
+00:12:54,240 --> 00:12:57,760
+someone who may have taken care of
+
+328
+00:12:55,680 --> 00:13:00,320
+others children's, someone who may have
+
+329
+00:12:57,760 --> 00:13:02,320
+moved four continents to come here and
+
+330
+00:13:00,320 --> 00:13:05,040
+has figured out, you know, paved a way
+
+331
+00:13:02,320 --> 00:13:06,880
+of life for generations to come. I mean,
+
+332
+00:13:05,040 --> 00:13:10,079
+this is what I'm talking about when I
+
+333
+00:13:06,880 --> 00:13:12,800
+mean the depth of human connection.
+
+334
+00:13:10,079 --> 00:13:14,720
+There is a space for technology. No
+
+335
+00:13:12,800 --> 00:13:17,040
+doubt I think that there is a space for
+
+336
+00:13:14,720 --> 00:13:19,279
+technology. I just don't want us missing
+
+337
+00:13:17,040 --> 00:13:21,600
+the point of what we're doing. You know,
+
+338
+00:13:19,279 --> 00:13:25,279
+you're talking about diagnosing a child
+
+339
+00:13:21,600 --> 00:13:27,760
+with cancer. I am sure there are lovely
+
+340
+00:13:25,279 --> 00:13:30,320
+ways and amazing innovative ways to
+
+341
+00:13:27,760 --> 00:13:32,959
+diagnose that cancer to
+
+342
+00:13:30,320 --> 00:13:35,279
+stage it to find it you know all the
+
+343
+00:13:32,959 --> 00:13:37,360
+things and that is incredible that we
+
+344
+00:13:35,279 --> 00:13:40,560
+can do something like that but in the
+
+345
+00:13:37,360 --> 00:13:44,160
+end we are still talking to someone's
+
+346
+00:13:40,560 --> 00:13:47,120
+child. we are still going to cut a human
+
+347
+00:13:44,160 --> 00:13:50,160
+being and we're still talking about
+
+348
+00:13:47,120 --> 00:13:52,399
+really putting in a massive stressor in
+
+349
+00:13:50,160 --> 00:13:54,240
+a family system in a world that is
+
+350
+00:13:52,399 --> 00:13:56,320
+already stressful. And so the these are
+
+351
+00:13:54,240 --> 00:13:59,120
+just like different components that I
+
+352
+00:13:56,320 --> 00:14:01,040
+give all of the credit to providers and
+
+353
+00:13:59,120 --> 00:14:03,839
+nurses and caregivers in the hospitals,
+
+354
+00:14:01,040 --> 00:14:06,079
+in clinics, in surgery centers. They are
+
+355
+00:14:03,839 --> 00:14:08,399
+pouring their heart out, especially when
+
+356
+00:14:06,079 --> 00:14:10,959
+they're tired. And that's something that
+
+357
+00:14:08,399 --> 00:14:13,279
+really drives my passion that are there
+
+358
+00:14:10,959 --> 00:14:15,760
+ways that I can help that. Are there
+
+359
+00:14:13,279 --> 00:14:18,320
+teams that I can go help that have the
+
+360
+00:14:15,760 --> 00:14:20,240
+technological knowhow but don't know
+
+361
+00:14:18,320 --> 00:14:22,480
+where to start in the clinical workflow?
+
+362
+00:14:20,240 --> 00:14:24,079
+Let's go solve that. Let's go give that
+
+363
+00:14:22,480 --> 00:14:25,680
+time back. And that's kind of where I
+
+364
+00:14:24,079 --> 00:14:29,040
+ignite a little bit in the in the
+
+365
+00:14:25,680 --> 00:14:30,800
+advisory roles or in the strategic roles
+
+366
+00:14:29,040 --> 00:14:33,519
+or even just start starting from ground
+
+367
+00:14:30,800 --> 00:14:36,320
+zero. Where do we start?
+
+368
+00:14:33,519 --> 00:14:38,000
+Chris, what do we do with this data and
+
+369
+00:14:36,320 --> 00:14:39,519
+putting our heads on that and create
+
+370
+00:14:38,000 --> 00:14:41,440
+creating an idea
+
+371
+00:14:39,519 --> 00:14:41,920
+to solve? There's so many ways you can
+
+372
+00:14:41,440 --> 00:14:44,240
+do that.
+
+373
+00:14:41,920 --> 00:14:46,560
+Yeah, you're you're so right. Never was
+
+374
+00:14:44,240 --> 00:14:49,040
+there a more transformational period of
+
+375
+00:14:46,560 --> 00:14:51,040
+you know for me in my life honestly it
+
+376
+00:14:49,040 --> 00:14:53,680
+was being in New York going through the
+
+377
+00:14:51,040 --> 00:14:56,079
+pandemic and you know I'm sure people
+
+378
+00:14:53,680 --> 00:14:58,160
+have heard this you know from many
+
+379
+00:14:56,079 --> 00:15:00,399
+angles you know you saw the best and the
+
+380
+00:14:58,160 --> 00:15:03,279
+worst of humanity in a situation like
+
+381
+00:15:00,399 --> 00:15:06,800
+that you know fortunately I've never met
+
+382
+00:15:03,279 --> 00:15:10,160
+a clinician yourself included who was
+
+383
+00:15:06,800 --> 00:15:12,480
+not 100% on on the same page when it
+
+384
+00:15:10,160 --> 00:15:14,639
+comes to the reason for what you do the
+
+385
+00:15:12,480 --> 00:15:16,079
+sacrifices that you make. It's all about
+
+386
+00:15:14,639 --> 00:15:18,560
+the individual that you're in front of
+
+387
+00:15:16,079 --> 00:15:20,639
+and you're trying to do something to
+
+388
+00:15:18,560 --> 00:15:23,120
+help someone get well or prevent them
+
+389
+00:15:20,639 --> 00:15:25,120
+from being sick. But I think the the the
+
+390
+00:15:23,120 --> 00:15:27,279
+human aspects of this when it comes to
+
+391
+00:15:25,120 --> 00:15:28,880
+the emotional side, I think that's the
+
+392
+00:15:27,279 --> 00:15:32,399
+piece that concerns me a little bit
+
+393
+00:15:28,880 --> 00:15:34,160
+because not only do we not talk about it
+
+394
+00:15:32,399 --> 00:15:36,560
+um in the context of the people who are
+
+395
+00:15:34,160 --> 00:15:38,880
+delivering care, but just in a general
+
+396
+00:15:36,560 --> 00:15:40,399
+sense, we're living in a world that's
+
+397
+00:15:38,880 --> 00:15:41,760
+going at Mach 10 with some of this
+
+398
+00:15:40,399 --> 00:15:43,199
+innovation, but there's a lot of other
+
+399
+00:15:41,760 --> 00:15:45,199
+things, a lot of other factors and
+
+400
+00:15:43,199 --> 00:15:47,040
+stresses that people are dealing with,
+
+401
+00:15:45,199 --> 00:15:49,440
+and they don't really in many cases have
+
+402
+00:15:47,040 --> 00:15:50,560
+the skills to to know how to even
+
+403
+00:15:49,440 --> 00:15:52,399
+navigate it.
+
+404
+00:15:50,560 --> 00:15:54,399
+Yeah. Um, you know, we you and I talked
+
+405
+00:15:52,399 --> 00:15:56,320
+a little bit about this, but I'd like to
+
+406
+00:15:54,399 --> 00:15:58,639
+explore with you if you don't mind. You
+
+407
+00:15:56,320 --> 00:16:01,360
+know, what are some of the factors that
+
+408
+00:15:58,639 --> 00:16:04,079
+make people feel uh inappropriate, you
+
+409
+00:16:01,360 --> 00:16:06,240
+know, from a clinician standpoint that
+
+410
+00:16:04,079 --> 00:16:08,639
+the burnout that they're dealing with
+
+411
+00:16:06,240 --> 00:16:10,240
+and what how do they determine whether
+
+412
+00:16:08,639 --> 00:16:11,920
+they should raise their hand and say, "I
+
+413
+00:16:10,240 --> 00:16:13,199
+need some help." I mean, how do how do
+
+414
+00:16:11,920 --> 00:16:15,360
+they deal with it? How do they cope? And
+
+415
+00:16:13,199 --> 00:16:17,360
+are there things that we should be doing
+
+416
+00:16:15,360 --> 00:16:18,000
+to try to put things in place to help
+
+417
+00:16:17,360 --> 00:16:20,240
+that?
+
+418
+00:16:18,000 --> 00:16:22,000
+Yeah. Um it's such an interesting space
+
+419
+00:16:20,240 --> 00:16:25,279
+and it's a much needed space. You know
+
+420
+00:16:22,000 --> 00:16:26,880
+when I uh after I finished my education
+
+421
+00:16:25,279 --> 00:16:29,920
+I went straight to the children's
+
+422
+00:16:26,880 --> 00:16:31,680
+hospital where there were children dying
+
+423
+00:16:29,920 --> 00:16:34,000
+right I mean they were dying because of
+
+424
+00:16:31,680 --> 00:16:36,399
+chronic illness terminally ill birth
+
+425
+00:16:34,000 --> 00:16:39,920
+defects whatever it may be but they were
+
+426
+00:16:36,399 --> 00:16:42,880
+dying and we didn't learn how to do that
+
+427
+00:16:39,920 --> 00:16:45,839
+per se. No one really taught us the ways
+
+428
+00:16:42,880 --> 00:16:47,680
+to maintain that and then turn around
+
+429
+00:16:45,839 --> 00:16:50,000
+after your 14 hour shift and come back
+
+430
+00:16:47,680 --> 00:16:52,000
+for another one. Like, you know, it's
+
+431
+00:16:50,000 --> 00:16:54,480
+it's one of those things. And what I
+
+432
+00:16:52,000 --> 00:16:56,800
+credit for me to get through that, I
+
+433
+00:16:54,480 --> 00:16:59,600
+credit the collective family that I had
+
+434
+00:16:56,800 --> 00:17:01,680
+that I worked with in the hospital.
+
+435
+00:16:59,600 --> 00:17:04,079
+Those nurses, those doctors that were on
+
+436
+00:17:01,680 --> 00:17:06,079
+the floor with me had been there some of
+
+437
+00:17:04,079 --> 00:17:09,520
+them two decades. I mean, they were
+
+438
+00:17:06,079 --> 00:17:12,319
+there for a very long time. And I have
+
+439
+00:17:09,520 --> 00:17:15,439
+to give sight and gratitude to the idea
+
+440
+00:17:12,319 --> 00:17:17,280
+that there are armies on those floors
+
+441
+00:17:15,439 --> 00:17:19,600
+who hold each other up when they lose
+
+442
+00:17:17,280 --> 00:17:21,520
+patients and they become a family. You
+
+443
+00:17:19,600 --> 00:17:23,679
+know, we would cry together. We would
+
+444
+00:17:21,520 --> 00:17:25,839
+hug families together and we would have
+
+445
+00:17:23,679 --> 00:17:29,280
+times of quiet, you know, where we would
+
+446
+00:17:25,839 --> 00:17:32,000
+all need space to really accept what
+
+447
+00:17:29,280 --> 00:17:34,720
+just happened. But I was fortunate
+
+448
+00:17:32,000 --> 00:17:36,799
+because I was in a time where I had
+
+449
+00:17:34,720 --> 00:17:39,200
+that. I don't know if everybody has
+
+450
+00:17:36,799 --> 00:17:40,880
+that. And right now what's happening is
+
+451
+00:17:39,200 --> 00:17:43,760
+I mean as a provider I would cry by
+
+452
+00:17:40,880 --> 00:17:46,400
+myself honestly because it was too much.
+
+453
+00:17:43,760 --> 00:17:48,640
+It was too daunting to say oh you need
+
+454
+00:17:46,400 --> 00:17:51,840
+to see more patients and in my mind and
+
+455
+00:17:48,640 --> 00:17:53,840
+all of us were thinking when where and
+
+456
+00:17:51,840 --> 00:17:56,160
+the hospitals were trying. I'm not
+
+457
+00:17:53,840 --> 00:17:59,200
+discounting that they were not. I think
+
+458
+00:17:56,160 --> 00:18:02,320
+that it was being done as a as kind of
+
+459
+00:17:59,200 --> 00:18:04,799
+like a general layer like oh we have
+
+460
+00:18:02,320 --> 00:18:08,080
+mental health services. Oh, we have
+
+461
+00:18:04,799 --> 00:18:09,840
+counselors through your benefits. But
+
+462
+00:18:08,080 --> 00:18:11,679
+when you're burdened in clinic and
+
+463
+00:18:09,840 --> 00:18:13,600
+you're working pajama time and you're
+
+464
+00:18:11,679 --> 00:18:16,320
+working on your weekends, who's going to
+
+465
+00:18:13,600 --> 00:18:17,919
+look for a therapist for you? Who how
+
+466
+00:18:16,320 --> 00:18:19,200
+are you going to have time for that?
+
+467
+00:18:17,919 --> 00:18:21,679
+Because you don't even have time for
+
+468
+00:18:19,200 --> 00:18:24,640
+your own children, right? I mean, I see
+
+469
+00:18:21,679 --> 00:18:26,160
+doctors who are racing to soccer games
+
+470
+00:18:24,640 --> 00:18:27,600
+and my biggest fear is that someone's
+
+471
+00:18:26,160 --> 00:18:30,480
+going to get into a car accident on the
+
+472
+00:18:27,600 --> 00:18:35,360
+way there, right? And so, there is a
+
+473
+00:18:30,480 --> 00:18:38,640
+huge burnout. There is a huge exhaustion
+
+474
+00:18:35,360 --> 00:18:41,120
+of the administrative load to be honest
+
+475
+00:18:38,640 --> 00:18:44,720
+with you. If you can decrease that the
+
+476
+00:18:41,120 --> 00:18:46,880
+the um digesting and accepting of the
+
+477
+00:18:44,720 --> 00:18:50,160
+things that happen to your patients, it
+
+478
+00:18:46,880 --> 00:18:52,880
+becomes a little bit more manageable to
+
+479
+00:18:50,160 --> 00:18:55,919
+grieve and to feel because you're not
+
+480
+00:18:52,880 --> 00:18:59,280
+grieving in exhaustion, right? Like that
+
+481
+00:18:55,919 --> 00:19:02,240
+compounds on itself quite honestly. And
+
+482
+00:18:59,280 --> 00:19:04,480
+so before, you know, doctors would hold
+
+483
+00:19:02,240 --> 00:19:06,960
+the hands of patients. They would fight
+
+484
+00:19:04,480 --> 00:19:08,880
+the idea that you need to hurry up. But
+
+485
+00:19:06,960 --> 00:19:10,880
+I worked with uh physicians who would
+
+486
+00:19:08,880 --> 00:19:13,840
+sit on the patient beds and hold the
+
+487
+00:19:10,880 --> 00:19:16,160
+patients hands and hug the moms and hug
+
+488
+00:19:13,840 --> 00:19:18,400
+the dads. And it didn't matter how late
+
+489
+00:19:16,160 --> 00:19:21,440
+it was going to be for them to go home.
+
+490
+00:19:18,400 --> 00:19:23,919
+That is just what they did. And so there
+
+491
+00:19:21,440 --> 00:19:25,600
+is opportunity to help nurses. There is
+
+492
+00:19:23,919 --> 00:19:27,679
+opportunity to help the clinical
+
+493
+00:19:25,600 --> 00:19:30,720
+assistance and medical assistance in
+
+494
+00:19:27,679 --> 00:19:32,720
+these hospitals and in these facilities.
+
+495
+00:19:30,720 --> 00:19:35,679
+They are the ones who are touching the
+
+496
+00:19:32,720 --> 00:19:39,200
+patients and they're going home not
+
+497
+00:19:35,679 --> 00:19:41,919
+equipped to turn that off and then go be
+
+498
+00:19:39,200 --> 00:19:45,280
+in home. Yes. Massive opportunity to
+
+499
+00:19:41,919 --> 00:19:47,360
+help support to help re-calibrate your
+
+500
+00:19:45,280 --> 00:19:49,039
+system. I mean, you're just in stress a
+
+501
+00:19:47,360 --> 00:19:50,400
+lot all day, right? And then you go home
+
+502
+00:19:49,039 --> 00:19:52,400
+and you're in another kind of stress,
+
+503
+00:19:50,400 --> 00:19:55,600
+right? And so the mental health
+
+504
+00:19:52,400 --> 00:19:57,760
+component is compounding and we're we're
+
+505
+00:19:55,600 --> 00:19:59,760
+having health issues because of it. You
+
+506
+00:19:57,760 --> 00:20:01,360
+know, providers are not always able to
+
+507
+00:19:59,760 --> 00:20:03,360
+maintain their physical and mental
+
+508
+00:20:01,360 --> 00:20:05,600
+health. Nurses are having issues with
+
+509
+00:20:03,360 --> 00:20:07,600
+that. When do we work out? When are when
+
+510
+00:20:05,600 --> 00:20:09,520
+do we have time to eat healthy? And
+
+511
+00:20:07,600 --> 00:20:11,679
+we're over we're overlooking these
+
+512
+00:20:09,520 --> 00:20:14,160
+things. It's it's a it's a complete
+
+513
+00:20:11,679 --> 00:20:17,039
+system, right? I can't solve all that by
+
+514
+00:20:14,160 --> 00:20:19,440
+myself, but there are there are things
+
+515
+00:20:17,039 --> 00:20:21,200
+that can be done to help support
+
+516
+00:20:19,440 --> 00:20:23,120
+individuals. So they don't have the
+
+517
+00:20:21,200 --> 00:20:25,360
+mental strain as much.
+
+518
+00:20:23,120 --> 00:20:27,440
+Yeah. And I think that there there's a
+
+519
+00:20:25,360 --> 00:20:30,000
+an acceptance and a normalization of
+
+520
+00:20:27,440 --> 00:20:31,679
+things that I think we've we've allowed
+
+521
+00:20:30,000 --> 00:20:34,240
+uh with all the pressure and all the the
+
+522
+00:20:31,679 --> 00:20:36,480
+race to innovate. And it's just
+
+523
+00:20:34,240 --> 00:20:38,400
+it's something we've got to try to
+
+524
+00:20:36,480 --> 00:20:40,320
+really kind of take a step back and
+
+525
+00:20:38,400 --> 00:20:43,360
+realize what we've done and fix this
+
+526
+00:20:40,320 --> 00:20:46,080
+because this is not just a small issue
+
+527
+00:20:43,360 --> 00:20:47,840
+that we could course correct with a a a
+
+528
+00:20:46,080 --> 00:20:51,120
+cool workflow. It's just not that
+
+529
+00:20:47,840 --> 00:20:53,919
+simple. We we really do have to focus on
+
+530
+00:20:51,120 --> 00:20:56,000
+creating that space. For an example, you
+
+531
+00:20:53,919 --> 00:20:57,600
+know, leaving one exam room and going
+
+532
+00:20:56,000 --> 00:20:58,960
+into another one to see another patient,
+
+533
+00:20:57,600 --> 00:20:59,840
+you're already behind schedule.
+
+534
+00:20:58,960 --> 00:21:01,280
+Yeah.
+
+535
+00:20:59,840 --> 00:21:02,799
+How when are you going to have a moment
+
+536
+00:21:01,280 --> 00:21:04,799
+to reset, right?
+
+537
+00:21:02,799 --> 00:21:06,320
+That's the basic thing that, you know,
+
+538
+00:21:04,799 --> 00:21:08,159
+we're just not we're not designing
+
+539
+00:21:06,320 --> 00:21:09,679
+anything that really helps with that.
+
+540
+00:21:08,159 --> 00:21:12,080
+And I I think there's a lot of
+
+541
+00:21:09,679 --> 00:21:13,200
+opportunities for us. And I love how
+
+542
+00:21:12,080 --> 00:21:15,120
+you're thinking about it. And I hope
+
+543
+00:21:13,200 --> 00:21:16,720
+that we can find some some other uh
+
+544
+00:21:15,120 --> 00:21:18,080
+people. I know there's there's a handful
+
+545
+00:21:16,720 --> 00:21:19,520
+that I've that I've met. I'm sure that
+
+546
+00:21:18,080 --> 00:21:21,440
+you have too. They'll probably be
+
+547
+00:21:19,520 --> 00:21:22,880
+excited to to find some things that are
+
+548
+00:21:21,440 --> 00:21:24,799
+really meaningful, but for goodness
+
+549
+00:21:22,880 --> 00:21:27,039
+sake, enough with the cool tech. That's
+
+550
+00:21:24,799 --> 00:21:29,120
+not what this is about, right? I mean,
+
+551
+00:21:27,039 --> 00:21:31,679
+yes, we want to do cool things, but it's
+
+552
+00:21:29,120 --> 00:21:33,840
+really got to be aimed at, you know,
+
+553
+00:21:31,679 --> 00:21:34,559
+improving the human experience. It has
+
+554
+00:21:33,840 --> 00:21:36,559
+to.
+
+555
+00:21:34,559 --> 00:21:38,960
+And it's not just one side of it or
+
+556
+00:21:36,559 --> 00:21:40,799
+another. It's just all of it. Um, if
+
+557
+00:21:38,960 --> 00:21:42,320
+you're going to do technology stuff and
+
+558
+00:21:40,799 --> 00:21:44,880
+that make that floats your boat,
+
+559
+00:21:42,320 --> 00:21:46,240
+awesome. Let's get let's put our heads
+
+560
+00:21:44,880 --> 00:21:47,919
+together and do something that's
+
+561
+00:21:46,240 --> 00:21:49,760
+actually going to help the people that
+
+562
+00:21:47,919 --> 00:21:51,760
+are needing care, the ones who are able
+
+563
+00:21:49,760 --> 00:21:55,039
+to deliver the care. But, you know, we
+
+564
+00:21:51,760 --> 00:21:56,960
+needed it by throwing more layers of
+
+565
+00:21:55,039 --> 00:21:58,720
+administrative tasks on it and he
+
+566
+00:21:56,960 --> 00:22:00,559
+keeping more pressure. It's not a
+
+567
+00:21:58,720 --> 00:22:01,120
+solution we could keep doing to people.
+
+568
+00:22:00,559 --> 00:22:03,600
+It's not
+
+569
+00:22:01,120 --> 00:22:06,000
+Yeah, I I 100% agree on that. And, you
+
+570
+00:22:03,600 --> 00:22:07,520
+know, a part of me is excited because of
+
+571
+00:22:06,000 --> 00:22:10,320
+the out-of-box thinking that
+
+572
+00:22:07,520 --> 00:22:13,039
+unfortunately I do sometimes or a lot of
+
+573
+00:22:10,320 --> 00:22:15,360
+the times. What it comes down to is that
+
+574
+00:22:13,039 --> 00:22:19,039
+it can be done
+
+575
+00:22:15,360 --> 00:22:21,679
+using the end goal which is giving the
+
+576
+00:22:19,039 --> 00:22:23,679
+the human component back. And a lot of
+
+577
+00:22:21,679 --> 00:22:26,080
+times when I'm building something or if
+
+578
+00:22:23,679 --> 00:22:29,120
+I'm advising on something or if I'm
+
+579
+00:22:26,080 --> 00:22:31,600
+problem solving so for something my end
+
+580
+00:22:29,120 --> 00:22:33,679
+goal is I imagine that it's like my
+
+581
+00:22:31,600 --> 00:22:36,240
+parent or my child. What do they need?
+
+582
+00:22:33,679 --> 00:22:38,799
+What do I need in those components? I'm
+
+583
+00:22:36,240 --> 00:22:41,600
+solving for that. I want that to be the
+
+584
+00:22:38,799 --> 00:22:44,000
+the image in my mind. all the time
+
+585
+00:22:41,600 --> 00:22:46,720
+because that is what is happening. We
+
+586
+00:22:44,000 --> 00:22:49,360
+are solving for someone's child, parent,
+
+587
+00:22:46,720 --> 00:22:53,200
+aunt, adult, grandparent, whatever it
+
+588
+00:22:49,360 --> 00:22:55,840
+is. In the end, we are solving for
+
+589
+00:22:53,200 --> 00:22:57,280
+humans and the the care component is not
+
+590
+00:22:55,840 --> 00:23:00,559
+going to go away. We have to deliver
+
+591
+00:22:57,280 --> 00:23:03,200
+care. The health of the nation is still
+
+592
+00:23:00,559 --> 00:23:06,240
+the health of the nation. Disregarding
+
+593
+00:23:03,200 --> 00:23:08,559
+how fast the technology is moving, we
+
+594
+00:23:06,240 --> 00:23:11,120
+still have a baby boomer population. we
+
+595
+00:23:08,559 --> 00:23:13,679
+still have a middle generation coming
+
+596
+00:23:11,120 --> 00:23:15,440
+and so I'm excited to see how AI can
+
+597
+00:23:13,679 --> 00:23:17,360
+help with those things, you know, help
+
+598
+00:23:15,440 --> 00:23:19,440
+kind of with preventative medicine and
+
+599
+00:23:17,360 --> 00:23:22,320
+like hopefully in the next generations
+
+600
+00:23:19,440 --> 00:23:24,159
+we can have less health care load, but
+
+601
+00:23:22,320 --> 00:23:25,760
+we still have the reality of our own
+
+602
+00:23:24,159 --> 00:23:26,159
+problem today,
+
+603
+00:23:25,760 --> 00:23:28,640
+right?
+
+604
+00:23:26,159 --> 00:23:29,840
+And I do feel like, you know, I'm like a
+
+605
+00:23:28,640 --> 00:23:31,520
+little kid in a playground because
+
+606
+00:23:29,840 --> 00:23:34,320
+there's so many things that you can do.
+
+607
+00:23:31,520 --> 00:23:36,559
+And if you love technology, what I would
+
+608
+00:23:34,320 --> 00:23:40,480
+say as an advice is pick one problem.
+
+609
+00:23:36,559 --> 00:23:42,559
+one problem in the workflow, one goal,
+
+610
+00:23:40,480 --> 00:23:44,559
+one thing. Because if you try to go
+
+611
+00:23:42,559 --> 00:23:47,120
+solve everything, there's too much to
+
+612
+00:23:44,559 --> 00:23:49,679
+solve, and you get lost in the universe
+
+613
+00:23:47,120 --> 00:23:52,320
+of things. And so, let's say you're
+
+614
+00:23:49,679 --> 00:23:55,919
+going to focus on I'm going to help my
+
+615
+00:23:52,320 --> 00:23:58,320
+families navigate their care, or I'm
+
+616
+00:23:55,919 --> 00:24:00,559
+going to help families consolidate their
+
+617
+00:23:58,320 --> 00:24:02,720
+information so that if they ever go to a
+
+618
+00:24:00,559 --> 00:24:05,120
+provider, they can give it to them. And
+
+619
+00:24:02,720 --> 00:24:07,840
+it's a it's a consolidated view of my
+
+620
+00:24:05,120 --> 00:24:11,039
+health so that my new provider can spend
+
+621
+00:24:07,840 --> 00:24:13,360
+time with me getting to know me with
+
+622
+00:24:11,039 --> 00:24:15,440
+full-on information. Right? So I think
+
+623
+00:24:13,360 --> 00:24:17,120
+being very focused on what you're
+
+624
+00:24:15,440 --> 00:24:19,039
+wanting to go and fix, you know, there's
+
+625
+00:24:17,120 --> 00:24:21,039
+companies out there who are working on
+
+626
+00:24:19,039 --> 00:24:23,520
+claims. I think that's a great place to
+
+627
+00:24:21,039 --> 00:24:25,440
+start, right? Like chasing claims,
+
+628
+00:24:23,520 --> 00:24:27,840
+chasing pending claims. Why is it
+
+629
+00:24:25,440 --> 00:24:30,080
+pending? Get the information, use AI to
+
+630
+00:24:27,840 --> 00:24:32,640
+go collect it. That's amazing. So that's
+
+631
+00:24:30,080 --> 00:24:35,360
+one that's one component of the whole
+
+632
+00:24:32,640 --> 00:24:39,279
+thing. So for me it's like I'm kind of
+
+633
+00:24:35,360 --> 00:24:41,840
+focusing on the human side of things and
+
+634
+00:24:39,279 --> 00:24:44,960
+where is it that my mind can help in the
+
+635
+00:24:41,840 --> 00:24:46,320
+technology to then give back that right
+
+636
+00:24:44,960 --> 00:24:49,520
+and so yeah.
+
+637
+00:24:46,320 --> 00:24:52,080
+Yeah that's actually
+
+638
+00:24:49,520 --> 00:24:53,760
+that's something that just you just ded
+
+639
+00:24:52,080 --> 00:24:55,360
+when you're saying that there's a
+
+640
+00:24:53,760 --> 00:24:57,520
+strategic side of this that we got to we
+
+641
+00:24:55,360 --> 00:24:59,600
+have to think about too. And if you're
+
+642
+00:24:57,520 --> 00:25:02,080
+head of an organization and you know
+
+643
+00:24:59,600 --> 00:25:04,960
+that you've got some burnout issues and
+
+644
+00:25:02,080 --> 00:25:07,279
+they're both in the nursing area as well
+
+645
+00:25:04,960 --> 00:25:09,520
+as the the
+
+646
+00:25:07,279 --> 00:25:10,799
+you know all clinicians essentially
+
+647
+00:25:09,520 --> 00:25:12,640
+there's probably other support staff
+
+648
+00:25:10,799 --> 00:25:14,159
+that are dealing with it too. But we
+
+649
+00:25:12,640 --> 00:25:16,559
+also know that there's a global shortage
+
+650
+00:25:14,159 --> 00:25:19,200
+of nursing. There's also a shortage in
+
+651
+00:25:16,559 --> 00:25:23,200
+in a lot of specialties. If people are
+
+652
+00:25:19,200 --> 00:25:24,960
+seeing this kind of load, what's the
+
+653
+00:25:23,200 --> 00:25:26,480
+incentive to want to go to school to
+
+654
+00:25:24,960 --> 00:25:26,880
+become a clinician?
+
+655
+00:25:26,480 --> 00:25:29,039
+Yeah,
+
+656
+00:25:26,880 --> 00:25:31,360
+we have to think differently about this.
+
+657
+00:25:29,039 --> 00:25:32,799
+This is not just, you know, how fast can
+
+658
+00:25:31,360 --> 00:25:34,240
+we get the technology in there? Can we
+
+659
+00:25:32,799 --> 00:25:36,799
+be more efficient? Can we, you know,
+
+660
+00:25:34,240 --> 00:25:39,440
+make things somehow more tolerable? No,
+
+661
+00:25:36,799 --> 00:25:42,080
+we're talking about a an ecosystem
+
+662
+00:25:39,440 --> 00:25:44,640
+that's been eroding basically because
+
+663
+00:25:42,080 --> 00:25:46,480
+we've just been focused on the
+
+664
+00:25:44,640 --> 00:25:48,880
+efficiency stuff and the and the in the
+
+665
+00:25:46,480 --> 00:25:50,960
+technology thing. I mean that's not I
+
+666
+00:25:48,880 --> 00:25:52,320
+want to oversimplify it but I think you
+
+667
+00:25:50,960 --> 00:25:52,960
+understand where I'm going with it.
+
+668
+00:25:52,320 --> 00:25:54,799
+Yeah.
+
+669
+00:25:52,960 --> 00:25:57,039
+Why would someone want to go into one of
+
+670
+00:25:54,799 --> 00:25:57,919
+these professions if this is the way
+
+671
+00:25:57,039 --> 00:25:59,520
+it's going to be?
+
+672
+00:25:57,919 --> 00:26:01,919
+Yeah. And you know it's funny because I
+
+673
+00:25:59,520 --> 00:26:04,240
+saw some chatter someone had posted like
+
+674
+00:26:01,919 --> 00:26:06,400
+oh AI can help some you know help a
+
+675
+00:26:04,240 --> 00:26:10,240
+therapist see five times more patient or
+
+676
+00:26:06,400 --> 00:26:12,480
+five yeah 5x patients in a month. And
+
+677
+00:26:10,240 --> 00:26:16,000
+the chatter was therapists responding
+
+678
+00:26:12,480 --> 00:26:18,640
+like who said that we can see 5x
+
+679
+00:26:16,000 --> 00:26:20,559
+patients in a month, right? Do I agree
+
+680
+00:26:18,640 --> 00:26:22,480
+that it will help us be more efficient
+
+681
+00:26:20,559 --> 00:26:25,600
+from the administrative things that we
+
+682
+00:26:22,480 --> 00:26:28,320
+do? 100%. I think that there are lots of
+
+683
+00:26:25,600 --> 00:26:30,799
+ways to help that. What I don't think
+
+684
+00:26:28,320 --> 00:26:32,480
+the goal is is for people to see more
+
+685
+00:26:30,799 --> 00:26:34,000
+people so that we can get more revenue
+
+686
+00:26:32,480 --> 00:26:36,960
+and so that we can, you know what I
+
+687
+00:26:34,000 --> 00:26:39,039
+mean? And so I think that again the goal
+
+688
+00:26:36,960 --> 00:26:41,840
+and the mission of what the initiative
+
+689
+00:26:39,039 --> 00:26:43,679
+is needs to be realistic in the sense of
+
+690
+00:26:41,840 --> 00:26:46,080
+like is this really going to help my
+
+691
+00:26:43,679 --> 00:26:48,400
+providers? Like is this really going to
+
+692
+00:26:46,080 --> 00:26:50,080
+help my clinicians? Like looking at that
+
+693
+00:26:48,400 --> 00:26:52,799
+because I'm going to tell you the
+
+694
+00:26:50,080 --> 00:26:55,440
+burnout is real. And if we start losing
+
+695
+00:26:52,799 --> 00:26:59,600
+amazing clinicians in our health care
+
+696
+00:26:55,440 --> 00:27:02,000
+spaces, we will not deliver care the way
+
+697
+00:26:59,600 --> 00:27:04,080
+that we've always known how we do. and
+
+698
+00:27:02,000 --> 00:27:06,159
+and there is people out there doing
+
+699
+00:27:04,080 --> 00:27:08,799
+amazing health care and providing
+
+700
+00:27:06,159 --> 00:27:11,679
+services, but if we don't plan for that,
+
+701
+00:27:08,799 --> 00:27:13,039
+we're going to not have those people and
+
+702
+00:27:11,679 --> 00:27:15,600
+they're going to leave, right? Or
+
+703
+00:27:13,039 --> 00:27:17,279
+they're going to retire early or they're
+
+704
+00:27:15,600 --> 00:27:19,200
+going to, I don't know, go figure out
+
+705
+00:27:17,279 --> 00:27:21,360
+another way of giving care or figuring
+
+706
+00:27:19,200 --> 00:27:23,520
+out another way to make an income
+
+707
+00:27:21,360 --> 00:27:27,440
+because people's passion when they come
+
+708
+00:27:23,520 --> 00:27:30,320
+into this space is not just money. It is
+
+709
+00:27:27,440 --> 00:27:32,080
+really it it takes special people to do
+
+710
+00:27:30,320 --> 00:27:34,480
+what they do. And I'm I'm not even
+
+711
+00:27:32,080 --> 00:27:36,080
+including myself. All the people that I
+
+712
+00:27:34,480 --> 00:27:37,520
+worked with, all the people that I watch
+
+713
+00:27:36,080 --> 00:27:40,240
+now, all the people who are doing
+
+714
+00:27:37,520 --> 00:27:43,919
+surgeries, all the paramedics, everybody
+
+715
+00:27:40,240 --> 00:27:46,559
+who is giving themselves to help others,
+
+716
+00:27:43,919 --> 00:27:48,799
+it takes a very special passion and
+
+717
+00:27:46,559 --> 00:27:50,799
+calling to do that. And we need to build
+
+718
+00:27:48,799 --> 00:27:53,760
+systems that honor that because if we
+
+719
+00:27:50,799 --> 00:27:55,760
+don't, it's going to diminish and we'll
+
+720
+00:27:53,760 --> 00:27:58,159
+lose kind of those angels that are that
+
+721
+00:27:55,760 --> 00:27:59,600
+are in the world to to help bring light
+
+722
+00:27:58,159 --> 00:28:01,840
+to those who are needing it, you know.
+
+723
+00:27:59,600 --> 00:28:03,760
+Yeah. I don't want to I don't want to
+
+724
+00:28:01,840 --> 00:28:05,600
+make people feel horrible. I know some
+
+725
+00:28:03,760 --> 00:28:07,520
+of their stuff is a little bit heavy
+
+726
+00:28:05,600 --> 00:28:09,679
+that we're talking about. But I think
+
+727
+00:28:07,520 --> 00:28:11,520
+it's important though just to have the
+
+728
+00:28:09,679 --> 00:28:14,000
+context and the understanding of what
+
+729
+00:28:11,520 --> 00:28:16,559
+the what's really going on so that we
+
+730
+00:28:14,000 --> 00:28:18,399
+really start to dial in our thinking
+
+731
+00:28:16,559 --> 00:28:19,760
+around what are we really going to solve
+
+732
+00:28:18,399 --> 00:28:22,240
+for and what's really going to be
+
+733
+00:28:19,760 --> 00:28:24,480
+meaningful. And you know from that
+
+734
+00:28:22,240 --> 00:28:26,720
+perspective there's a lot of things to
+
+735
+00:28:24,480 --> 00:28:28,640
+be optimistic about. And I know I've
+
+736
+00:28:26,720 --> 00:28:30,320
+seen a few things and they, you know,
+
+737
+00:28:28,640 --> 00:28:31,840
+I'd love to, you know, hear from your
+
+738
+00:28:30,320 --> 00:28:33,840
+perspective some of the things that
+
+739
+00:28:31,840 --> 00:28:36,320
+you've seen that, you know, that that
+
+740
+00:28:33,840 --> 00:28:38,000
+are exciting that maybe we haven't paid
+
+741
+00:28:36,320 --> 00:28:39,679
+enough attention to that we should be.
+
+742
+00:28:38,000 --> 00:28:41,440
+Yeah. You know, I really think that
+
+743
+00:28:39,679 --> 00:28:44,240
+there's a a lot of companies out there
+
+744
+00:28:41,440 --> 00:28:46,480
+who are doing this AI scribing, which
+
+745
+00:28:44,240 --> 00:28:48,799
+has been a thing before, but now there's
+
+746
+00:28:46,480 --> 00:28:50,640
+like layers on top of that that like
+
+747
+00:28:48,799 --> 00:28:53,039
+help summarize information, pull out
+
+748
+00:28:50,640 --> 00:28:55,520
+pertinent data, lay information for a
+
+749
+00:28:53,039 --> 00:28:57,840
+provider so that they can, you know,
+
+750
+00:28:55,520 --> 00:28:59,279
+consolidate that and have a summary
+
+751
+00:28:57,840 --> 00:29:00,799
+while they're talking to the patients.
+
+752
+00:28:59,279 --> 00:29:02,960
+So, they're not typing as much, right?
+
+753
+00:29:00,799 --> 00:29:05,120
+because they are actually able to look
+
+754
+00:29:02,960 --> 00:29:06,799
+at the patient and speak instead of
+
+755
+00:29:05,120 --> 00:29:08,240
+sitting at a computer and like typing on
+
+756
+00:29:06,799 --> 00:29:09,840
+the screen and the patient's kind of
+
+757
+00:29:08,240 --> 00:29:12,000
+behind the computer. You're not really
+
+758
+00:29:09,840 --> 00:29:13,120
+looking at them. So, I think that's
+
+759
+00:29:12,000 --> 00:29:15,440
+rooms myself.
+
+760
+00:29:13,120 --> 00:29:17,039
+Yeah. The diagnostic things. I mean, I'm
+
+761
+00:29:15,440 --> 00:29:18,799
+super excited about the fact that
+
+762
+00:29:17,039 --> 00:29:20,880
+they're using these technologies in
+
+763
+00:29:18,799 --> 00:29:23,039
+diagnostics. I mean, the amount of
+
+764
+00:29:20,880 --> 00:29:24,480
+people that you're going to find who
+
+765
+00:29:23,039 --> 00:29:27,120
+have something that may have been
+
+766
+00:29:24,480 --> 00:29:30,080
+overlooked and like can actually speed
+
+767
+00:29:27,120 --> 00:29:33,520
+up their care and speed up the way that
+
+768
+00:29:30,080 --> 00:29:36,080
+they can um recover. Like those are all
+
+769
+00:29:33,520 --> 00:29:39,279
+and this is why I'm excited. I I am very
+
+770
+00:29:36,080 --> 00:29:42,000
+excited in the idea of using these
+
+771
+00:29:39,279 --> 00:29:44,880
+technologies to get ahead of things, to
+
+772
+00:29:42,000 --> 00:29:46,720
+catch things earlier, to not have stage
+
+773
+00:29:44,880 --> 00:29:48,240
+four cancer. Or can you imagine a world
+
+774
+00:29:46,720 --> 00:29:50,640
+where like patients don't have stage
+
+775
+00:29:48,240 --> 00:29:53,039
+four cancer and we catch it at stage one
+
+776
+00:29:50,640 --> 00:29:55,840
+like those are all very exciting things
+
+777
+00:29:53,039 --> 00:29:58,320
+and there's so many things I mean you
+
+778
+00:29:55,840 --> 00:30:00,480
+have GI disease you have endocrinology
+
+779
+00:29:58,320 --> 00:30:02,320
+at whole sector in itself you have
+
+780
+00:30:00,480 --> 00:30:04,880
+metabolic disorders you have
+
+781
+00:30:02,320 --> 00:30:07,520
+cardiovascular the amount of opportunity
+
+782
+00:30:04,880 --> 00:30:10,320
+there is in order to help kind of the
+
+783
+00:30:07,520 --> 00:30:14,320
+outcomes of patient care and patient
+
+784
+00:30:10,320 --> 00:30:16,480
+outcomes for the nation as a whole maybe
+
+785
+00:30:14,320 --> 00:30:18,320
+the world as a That's really exciting
+
+786
+00:30:16,480 --> 00:30:20,960
+stuff. Like I'm really excited about
+
+787
+00:30:18,320 --> 00:30:23,440
+that. I think where we have to focus
+
+788
+00:30:20,960 --> 00:30:25,840
+though is you still have to have
+
+789
+00:30:23,440 --> 00:30:28,240
+delivery of care if that's the way we're
+
+790
+00:30:25,840 --> 00:30:30,720
+going and we're not going to use AI to
+
+791
+00:30:28,240 --> 00:30:33,520
+like talk to patients because I have a
+
+792
+00:30:30,720 --> 00:30:36,000
+feeling that my 80-year-old grandmother
+
+793
+00:30:33,520 --> 00:30:38,159
+may not talk to a robot openly. And I
+
+794
+00:30:36,000 --> 00:30:40,399
+may be wrong. She may not talk to an AI
+
+795
+00:30:38,159 --> 00:30:42,080
+openly if she had a human. She might
+
+796
+00:30:40,399 --> 00:30:43,440
+she's going to pick the human probably
+
+797
+00:30:42,080 --> 00:30:44,799
+because that's what they've known.
+
+798
+00:30:43,440 --> 00:30:47,360
+That's how they've grown. that's how
+
+799
+00:30:44,799 --> 00:30:48,960
+they've generationally done things. So
+
+800
+00:30:47,360 --> 00:30:50,799
+the it's just I think the through line
+
+801
+00:30:48,960 --> 00:30:53,039
+is just not forgetting that we're
+
+802
+00:30:50,799 --> 00:30:55,440
+solving who we're solving for, why we're
+
+803
+00:30:53,039 --> 00:30:57,600
+solving for it, and what are we doing
+
+804
+00:30:55,440 --> 00:30:59,200
+like what are we doing it for? Right? So
+
+805
+00:30:57,600 --> 00:31:01,760
+I do have a lot of excitement about it.
+
+806
+00:30:59,200 --> 00:31:03,600
+I mean I'm playing all the time to see
+
+807
+00:31:01,760 --> 00:31:05,679
+how is it that we can make it better.
+
+808
+00:31:03,600 --> 00:31:07,840
+What really is serves and something that
+
+809
+00:31:05,679 --> 00:31:10,240
+just popped in my head. One of the
+
+810
+00:31:07,840 --> 00:31:12,080
+things that's very difficult is that you
+
+811
+00:31:10,240 --> 00:31:14,320
+know I can come up with a lot of ideas
+
+812
+00:31:12,080 --> 00:31:17,200
+to solve the gaps within a clinical
+
+813
+00:31:14,320 --> 00:31:19,279
+workflow for example. But I can't throw
+
+814
+00:31:17,200 --> 00:31:21,600
+five apps at a provider who has 50
+
+815
+00:31:19,279 --> 00:31:24,000
+patients to see in a day that has to do
+
+816
+00:31:21,600 --> 00:31:26,080
+50 charts in an EMR and then go sign
+
+817
+00:31:24,000 --> 00:31:27,600
+into another platform and do one thing
+
+818
+00:31:26,080 --> 00:31:30,000
+and then go sign into another platform
+
+819
+00:31:27,600 --> 00:31:32,720
+and do one thing. And so if we can move
+
+820
+00:31:30,000 --> 00:31:35,600
+into a world where it can be
+
+821
+00:31:32,720 --> 00:31:39,120
+consolidated with an EMR, there are
+
+822
+00:31:35,600 --> 00:31:41,840
+compliance rules that allow those types
+
+823
+00:31:39,120 --> 00:31:44,399
+of things. That would be very helpful,
+
+824
+00:31:41,840 --> 00:31:46,000
+right? And so that co goes into like
+
+825
+00:31:44,399 --> 00:31:47,200
+regulations,
+
+826
+00:31:46,000 --> 00:31:50,559
+compliance, that's a whole another
+
+827
+00:31:47,200 --> 00:31:52,640
+world. But do the EMRs want that type of
+
+828
+00:31:50,559 --> 00:31:54,880
+help? Do those companies want to open
+
+829
+00:31:52,640 --> 00:31:57,120
+the gateway and say, "Yes, we like these
+
+830
+00:31:54,880 --> 00:32:00,640
+ideas. You can implement your software
+
+831
+00:31:57,120 --> 00:32:02,480
+within our universe of EMR. Maybe that
+
+832
+00:32:00,640 --> 00:32:04,480
+will happen. Maybe it's happening now.
+
+833
+00:32:02,480 --> 00:32:06,640
+But consolidating the use of the
+
+834
+00:32:04,480 --> 00:32:08,640
+technology in one system that the
+
+835
+00:32:06,640 --> 00:32:10,559
+providers are using or the clinicians
+
+836
+00:32:08,640 --> 00:32:12,320
+are using would be very beneficial.
+
+837
+00:32:10,559 --> 00:32:14,320
+Yeah, it seems like we've been talking
+
+838
+00:32:12,320 --> 00:32:17,039
+about interoperability for a very very
+
+839
+00:32:14,320 --> 00:32:18,159
+long time. But it's been very very slow
+
+840
+00:32:17,039 --> 00:32:19,760
+to say the least.
+
+841
+00:32:18,159 --> 00:32:20,960
+Yeah. You know, there has been, you
+
+842
+00:32:19,760 --> 00:32:23,519
+know, there certainly has been some
+
+843
+00:32:20,960 --> 00:32:26,720
+legislation and appending for quite a
+
+844
+00:32:23,519 --> 00:32:29,120
+while now that would at least force the
+
+845
+00:32:26,720 --> 00:32:31,360
+sharing of information, you know, at
+
+846
+00:32:29,120 --> 00:32:31,679
+least when it comes time for treatment,
+
+847
+00:32:31,360 --> 00:32:33,279
+right?
+
+848
+00:32:31,679 --> 00:32:35,919
+So that, you know, the data would be
+
+849
+00:32:33,279 --> 00:32:37,760
+made available, you know, the minute you
+
+850
+00:32:35,919 --> 00:32:39,360
+are, if you're a physician, the minute
+
+851
+00:32:37,760 --> 00:32:40,640
+you're going to be treating a patient,
+
+852
+00:32:39,360 --> 00:32:42,480
+you should have access to all that
+
+853
+00:32:40,640 --> 00:32:44,399
+information. That's the the premise of
+
+854
+00:32:42,480 --> 00:32:46,799
+it. But it doesn't seem to be moving at
+
+855
+00:32:44,399 --> 00:32:48,480
+the clip that it should. I I kind of
+
+856
+00:32:46,799 --> 00:32:49,840
+thought that maybe they made a mistake
+
+857
+00:32:48,480 --> 00:32:51,279
+even talking about it because it sounded
+
+858
+00:32:49,840 --> 00:32:51,919
+like the right thing,
+
+859
+00:32:51,279 --> 00:32:54,080
+right?
+
+860
+00:32:51,919 --> 00:32:55,679
+But but it it is a it's still an issue
+
+861
+00:32:54,080 --> 00:32:57,760
+that we got to figure we got to figure
+
+862
+00:32:55,679 --> 00:32:59,600
+out how to solve for it. It's not it's
+
+863
+00:32:57,760 --> 00:33:01,679
+not easy because there's so much there's
+
+864
+00:32:59,600 --> 00:33:02,080
+so much red tape and
+
+865
+00:33:01,679 --> 00:33:03,840
+yeah,
+
+866
+00:33:02,080 --> 00:33:05,919
+there's regulatory things that are
+
+867
+00:33:03,840 --> 00:33:08,080
+different in every state. There's just a
+
+868
+00:33:05,919 --> 00:33:10,799
+lot of barriers. But that's why people
+
+869
+00:33:08,080 --> 00:33:12,960
+like us need to put our heads together.
+
+870
+00:33:10,799 --> 00:33:15,679
+Yeah. lock arms, find some more people,
+
+871
+00:33:12,960 --> 00:33:17,039
+and really go after this hard. Like you
+
+872
+00:33:15,679 --> 00:33:19,120
+said, remember why we're doing it
+
+873
+00:33:17,039 --> 00:33:21,039
+because there's a lot we can do. We just
+
+874
+00:33:19,120 --> 00:33:22,000
+we have to apply ourselves to the right
+
+875
+00:33:21,039 --> 00:33:24,480
+things, right?
+
+876
+00:33:22,000 --> 00:33:27,600
+And we're some of that means that people
+
+877
+00:33:24,480 --> 00:33:30,240
+are going to have to push on to leaders
+
+878
+00:33:27,600 --> 00:33:31,840
+honestly because there this is this is
+
+879
+00:33:30,240 --> 00:33:34,159
+too important. You know, I talk a little
+
+880
+00:33:31,840 --> 00:33:36,799
+bit about the erosion of trust that's
+
+881
+00:33:34,159 --> 00:33:38,480
+that exists. Everyone knows inherently
+
+882
+00:33:36,799 --> 00:33:41,679
+today if you're if you're paying
+
+883
+00:33:38,480 --> 00:33:44,000
+attention there's been trust breaking
+
+884
+00:33:41,679 --> 00:33:45,120
+going on for a long time and it's not
+
+885
+00:33:44,000 --> 00:33:47,679
+not something that we think about
+
+886
+00:33:45,120 --> 00:33:51,200
+deliberately. It's just that the
+
+887
+00:33:47,679 --> 00:33:53,440
+environment that we're in it it's just
+
+888
+00:33:51,200 --> 00:33:54,960
+been so overrun with technology that
+
+889
+00:33:53,440 --> 00:33:57,360
+people aren't relating to one another
+
+890
+00:33:54,960 --> 00:33:58,799
+like they used to. And so you know
+
+891
+00:33:57,360 --> 00:34:00,320
+you're you're just
+
+892
+00:33:58,799 --> 00:34:02,240
+being lulled to sleep a little bit and
+
+893
+00:34:00,320 --> 00:34:03,919
+all of a sudden you realize that oh I
+
+894
+00:34:02,240 --> 00:34:06,000
+thought they trusted me and no they they
+
+895
+00:34:03,919 --> 00:34:08,560
+don't. Yeah, you know, if you're a CEO,
+
+896
+00:34:06,000 --> 00:34:09,919
+the stats are not pretty and your
+
+897
+00:34:08,560 --> 00:34:11,919
+engagement scores might be really,
+
+898
+00:34:09,919 --> 00:34:13,280
+really good. But what I look at in the
+
+899
+00:34:11,919 --> 00:34:14,879
+middle of when I was looking at the when
+
+900
+00:34:13,280 --> 00:34:16,639
+I look at engagement, I don't worry
+
+901
+00:34:14,879 --> 00:34:18,079
+about the stuff on the top end because
+
+902
+00:34:16,639 --> 00:34:19,200
+of course you all you all want to hear
+
+903
+00:34:18,079 --> 00:34:20,399
+the positive.
+
+904
+00:34:19,200 --> 00:34:21,919
+And of course, we want to deal with the
+
+905
+00:34:20,399 --> 00:34:23,280
+things that are on the bottom end too.
+
+906
+00:34:21,919 --> 00:34:25,119
+But the piece that's really really
+
+907
+00:34:23,280 --> 00:34:27,919
+frightening to me is when people don't
+
+908
+00:34:25,119 --> 00:34:28,720
+have are not motivated to even move the
+
+909
+00:34:27,919 --> 00:34:29,040
+needle.
+
+910
+00:34:28,720 --> 00:34:31,200
+Yes.
+
+911
+00:34:29,040 --> 00:34:33,760
+To give you a positive or a negative.
+
+912
+00:34:31,200 --> 00:34:35,359
+And and that to me is that that's really
+
+913
+00:34:33,760 --> 00:34:38,000
+the part you want to be paying attention
+
+914
+00:34:35,359 --> 00:34:40,800
+to because if you have a lot of space in
+
+915
+00:34:38,000 --> 00:34:41,919
+the middle, you really got to dig in to
+
+916
+00:34:40,800 --> 00:34:42,320
+understand why.
+
+917
+00:34:41,919 --> 00:34:44,639
+Yeah.
+
+918
+00:34:42,320 --> 00:34:48,159
+And a lot of it comes down to people
+
+919
+00:34:44,639 --> 00:34:50,000
+need to be able to trust and it's needs
+
+920
+00:34:48,159 --> 00:34:52,159
+to happen at every layer when it comes
+
+921
+00:34:50,000 --> 00:34:53,919
+to how an organization runs. If you want
+
+922
+00:34:52,159 --> 00:34:56,320
+to do technology things, you want to do
+
+923
+00:34:53,919 --> 00:34:58,079
+these kind of initiatives and also make
+
+924
+00:34:56,320 --> 00:35:00,079
+sure that we're supporting the mission.
+
+925
+00:34:58,079 --> 00:35:03,359
+We really need to remember that this is
+
+926
+00:35:00,079 --> 00:35:05,760
+this is entirely about humanity and and
+
+927
+00:35:03,359 --> 00:35:08,079
+caring for people. It's got to start
+
+928
+00:35:05,760 --> 00:35:09,760
+there and it has to stay on that and we
+
+929
+00:35:08,079 --> 00:35:11,760
+have to apply ourselves to the things
+
+930
+00:35:09,760 --> 00:35:13,599
+that really undergur you know the
+
+931
+00:35:11,760 --> 00:35:16,000
+mission of patient care and you know we
+
+932
+00:35:13,599 --> 00:35:17,359
+first do know her right and that's not
+
+933
+00:35:16,000 --> 00:35:20,240
+that's not something we talk about
+
+934
+00:35:17,359 --> 00:35:22,240
+enough outside of a you know a a
+
+935
+00:35:20,240 --> 00:35:24,160
+clinical care type of perspective but I
+
+936
+00:35:22,240 --> 00:35:26,560
+think as a nonclinian I need to take
+
+937
+00:35:24,160 --> 00:35:29,599
+that to heart too I mean are we building
+
+938
+00:35:26,560 --> 00:35:31,920
+things that are helping or not and if
+
+939
+00:35:29,599 --> 00:35:34,320
+it's adding more burden more layers that
+
+940
+00:35:31,920 --> 00:35:36,640
+that's that's not a good answer so a lot
+
+941
+00:35:34,320 --> 00:35:36,960
+we can do there. We need to do better.
+
+942
+00:35:36,640 --> 00:35:38,960
+Yeah.
+
+943
+00:35:36,960 --> 00:35:42,160
+Um you know, we're kind of getting
+
+944
+00:35:38,960 --> 00:35:44,320
+getting close to the time um on this on
+
+945
+00:35:42,160 --> 00:35:46,240
+our show today, but if we can look ahead
+
+946
+00:35:44,320 --> 00:35:47,520
+uh maybe in the next, you know, few
+
+947
+00:35:46,240 --> 00:35:49,119
+months, you know, thinking about some of
+
+948
+00:35:47,520 --> 00:35:50,800
+the things that you've been working on,
+
+949
+00:35:49,119 --> 00:35:52,960
+what you may be aware of, I'd love to
+
+950
+00:35:50,800 --> 00:35:55,280
+hear hear your thoughts around what what
+
+951
+00:35:52,960 --> 00:35:57,680
+do you think we could tackle reasonably
+
+952
+00:35:55,280 --> 00:35:59,440
+if we can some smart people together,
+
+953
+00:35:57,680 --> 00:36:01,599
+they're actually passionate, what could
+
+954
+00:35:59,440 --> 00:36:03,440
+we do? then maybe talk about where you
+
+955
+00:36:01,599 --> 00:36:05,200
+see things over the next 12 to 18 months
+
+956
+00:36:03,440 --> 00:36:06,960
+as well. I would go further than that,
+
+957
+00:36:05,200 --> 00:36:08,400
+but the technology is accelerating so
+
+958
+00:36:06,960 --> 00:36:09,599
+fast. It's probably things we can solve
+
+959
+00:36:08,400 --> 00:36:10,079
+tomorrow that we don't even know where
+
+960
+00:36:09,599 --> 00:36:12,160
+we
+
+961
+00:36:10,079 --> 00:36:13,280
+Yeah, I think um you know to touch on a
+
+962
+00:36:12,160 --> 00:36:15,680
+little bit what you were talking about
+
+963
+00:36:13,280 --> 00:36:18,560
+about the trust erosion. I think there
+
+964
+00:36:15,680 --> 00:36:20,880
+is opportunities in coming back to
+
+965
+00:36:18,560 --> 00:36:23,440
+empathetic leadership and starting from
+
+966
+00:36:20,880 --> 00:36:25,599
+the top empathetic leadership. when I
+
+967
+00:36:23,440 --> 00:36:28,400
+came into the clinical world and what I
+
+968
+00:36:25,599 --> 00:36:30,800
+was seeing um when we were in training
+
+969
+00:36:28,400 --> 00:36:32,400
+is that the leadership was present, the
+
+970
+00:36:30,800 --> 00:36:35,359
+leadership was around, the leadership
+
+971
+00:36:32,400 --> 00:36:37,920
+was open to questions, they were very
+
+972
+00:36:35,359 --> 00:36:40,480
+involved because they had done the work
+
+973
+00:36:37,920 --> 00:36:42,160
+before. They were clinical. They had had
+
+974
+00:36:40,480 --> 00:36:44,079
+their hands in there. They had seen the
+
+975
+00:36:42,160 --> 00:36:45,520
+long days. They had seen, you know, a
+
+976
+00:36:44,079 --> 00:36:47,440
+patient code at the end of your shift
+
+977
+00:36:45,520 --> 00:36:48,800
+and you had to stay till 11:00 at night
+
+978
+00:36:47,440 --> 00:36:51,119
+even though you were at the hospital at
+
+979
+00:36:48,800 --> 00:36:54,000
+6:00 a.m. They had seen all of those
+
+980
+00:36:51,119 --> 00:36:56,560
+things. And there was always an a layer
+
+981
+00:36:54,000 --> 00:36:58,240
+and again this is I'm talking about my
+
+982
+00:36:56,560 --> 00:37:00,400
+experience where I grew up as a
+
+983
+00:36:58,240 --> 00:37:03,280
+clinician and provider, but there was a
+
+984
+00:37:00,400 --> 00:37:06,400
+layer of empathy that kind of ran
+
+985
+00:37:03,280 --> 00:37:08,880
+through the creation of goals and the
+
+986
+00:37:06,400 --> 00:37:11,200
+driving of goals. And now more than
+
+987
+00:37:08,880 --> 00:37:12,800
+ever, because of the burnout, because of
+
+988
+00:37:11,200 --> 00:37:15,200
+being tired, because people are
+
+989
+00:37:12,800 --> 00:37:17,760
+overwhelmed with noise of of information
+
+990
+00:37:15,200 --> 00:37:21,599
+and the fear that's happening,
+
+991
+00:37:17,760 --> 00:37:24,160
+empathetic leadership is necessary and
+
+992
+00:37:21,599 --> 00:37:25,920
+we have to build trust again. And that's
+
+993
+00:37:24,160 --> 00:37:28,720
+and that's another component that I
+
+994
+00:37:25,920 --> 00:37:30,720
+would love to have my hands in. As a
+
+995
+00:37:28,720 --> 00:37:32,640
+leader, I was very firm. These are what
+
+996
+00:37:30,720 --> 00:37:34,240
+the things we have to do today. These
+
+997
+00:37:32,640 --> 00:37:36,160
+are your goals for the week. You will
+
+998
+00:37:34,240 --> 00:37:38,079
+not be late. You know, there are certain
+
+999
+00:37:36,160 --> 00:37:40,400
+pillars of trust that you have to meet
+
+1000
+00:37:38,079 --> 00:37:43,440
+in order for me to give you autonomy to
+
+1001
+00:37:40,400 --> 00:37:46,000
+go and do your job. And that empathetic
+
+1002
+00:37:43,440 --> 00:37:49,599
+leadership is required. Revisiting your
+
+1003
+00:37:46,000 --> 00:37:53,200
+mission statement and your assuming or
+
+1004
+00:37:49,599 --> 00:37:55,359
+assessing your culture more than ever is
+
+1005
+00:37:53,200 --> 00:37:56,960
+needed more frequently than ever because
+
+1006
+00:37:55,359 --> 00:37:59,280
+the world is changing just like you
+
+1007
+00:37:56,960 --> 00:38:01,440
+said. And so I think there's an
+
+1008
+00:37:59,280 --> 00:38:04,800
+opportunity right now to go back and
+
+1009
+00:38:01,440 --> 00:38:06,160
+build that empathy again. remembering
+
+1010
+00:38:04,800 --> 00:38:09,440
+why we're doing it and what we're doing
+
+1011
+00:38:06,160 --> 00:38:11,760
+it for. And my outlook in the next, you
+
+1012
+00:38:09,440 --> 00:38:14,240
+know, 12 to 18 months and where I kind
+
+1013
+00:38:11,760 --> 00:38:16,880
+of get excited is like projects that
+
+1014
+00:38:14,240 --> 00:38:19,359
+will help my mind kind of goes to
+
+1015
+00:38:16,880 --> 00:38:21,440
+consolidating information, presenting
+
+1016
+00:38:19,359 --> 00:38:24,000
+information in ways that's a summary
+
+1017
+00:38:21,440 --> 00:38:26,720
+style for families and providers. So,
+
+1018
+00:38:24,000 --> 00:38:28,880
+it's kind of like your kind of pocket of
+
+1019
+00:38:26,720 --> 00:38:30,880
+this is me, this is my health, I'm
+
+1020
+00:38:28,880 --> 00:38:33,520
+having these issues right now. And so
+
+1021
+00:38:30,880 --> 00:38:36,000
+the provider or clinician doesn't have
+
+1022
+00:38:33,520 --> 00:38:38,640
+to call a PCP's office and call the O
+
+1023
+00:38:36,000 --> 00:38:41,599
+and call the ortho specialist to go get
+
+1024
+00:38:38,640 --> 00:38:44,640
+all of the information and then build a
+
+1025
+00:38:41,599 --> 00:38:46,480
+story. That is kind of where I think is
+
+1026
+00:38:44,640 --> 00:38:49,200
+where I kind of find passion because I
+
+1027
+00:38:46,480 --> 00:38:51,280
+I've been in so many scenarios and so
+
+1028
+00:38:49,200 --> 00:38:54,079
+many experiences as a provider, as a
+
+1029
+00:38:51,280 --> 00:38:56,240
+mom, as a daughter, a daughter-in-law,
+
+1030
+00:38:54,079 --> 00:38:59,920
+now a niece. You know, I'm helping my
+
+1031
+00:38:56,240 --> 00:39:02,880
+aunt navigate cancer right now and it is
+
+1032
+00:38:59,920 --> 00:39:04,160
+a beating because I'm a clinician and
+
+1033
+00:39:02,880 --> 00:39:04,560
+reading all the notes.
+
+1034
+00:39:04,160 --> 00:39:07,359
+Yeah.
+
+1035
+00:39:04,560 --> 00:39:10,560
+I can't imagine a 75year-old individual
+
+1036
+00:39:07,359 --> 00:39:13,680
+reading six notes from six different
+
+1037
+00:39:10,560 --> 00:39:16,160
+people with six different directions on
+
+1038
+00:39:13,680 --> 00:39:19,760
+what to do on what day when. It is quite
+
+1039
+00:39:16,160 --> 00:39:22,400
+frankly overwhelming. And so where I see
+
+1040
+00:39:19,760 --> 00:39:26,079
+myself in the next few months is working
+
+1041
+00:39:22,400 --> 00:39:28,320
+with teams who are maybe thinking about
+
+1042
+00:39:26,079 --> 00:39:30,560
+doing something like that so that I can
+
+1043
+00:39:28,320 --> 00:39:31,839
+help kind of put in the little seeds of
+
+1044
+00:39:30,560 --> 00:39:34,880
+like these are the things that would be
+
+1045
+00:39:31,839 --> 00:39:36,720
+very helpful, right? And in 12 to 18
+
+1046
+00:39:34,880 --> 00:39:38,880
+months, I think that there's going to be
+
+1047
+00:39:36,720 --> 00:39:42,160
+a lot of individuals who are going to
+
+1048
+00:39:38,880 --> 00:39:44,880
+create some cool ideas and hopefully
+
+1049
+00:39:42,160 --> 00:39:46,960
+have the sandbox to help implement it
+
+1050
+00:39:44,880 --> 00:39:48,880
+and test it. And I'm hoping that like
+
+1051
+00:39:46,960 --> 00:39:52,640
+more and more cool things like come out
+
+1052
+00:39:48,880 --> 00:39:54,560
+that way and the exhaustion and burnout
+
+1053
+00:39:52,640 --> 00:39:56,800
+kind of diminishes a little bit and the
+
+1054
+00:39:54,560 --> 00:39:58,560
+trust and empathy starts coming up and I
+
+1055
+00:39:56,800 --> 00:40:00,000
+think there is a world for that. We just
+
+1056
+00:39:58,560 --> 00:40:03,599
+have to do it properly.
+
+1057
+00:40:00,000 --> 00:40:06,640
+Well, I I can speak for myself. I am
+
+1058
+00:40:03,599 --> 00:40:08,560
+happy to tag team with you and help you
+
+1059
+00:40:06,640 --> 00:40:09,760
+be supportive in any way I can for for
+
+1060
+00:40:08,560 --> 00:40:13,280
+what you're what you're doing. I think
+
+1061
+00:40:09,760 --> 00:40:17,040
+it's it's incredibly important. And just
+
+1062
+00:40:13,280 --> 00:40:18,880
+to reinforce your your point on empathy,
+
+1063
+00:40:17,040 --> 00:40:20,960
+two things I'll say. There is some
+
+1064
+00:40:18,880 --> 00:40:23,680
+really cool technology that has been
+
+1065
+00:40:20,960 --> 00:40:26,560
+developed by some some really brilliant
+
+1066
+00:40:23,680 --> 00:40:28,320
+people and clinicians out out in
+
+1067
+00:40:26,560 --> 00:40:29,520
+California. And I'm sure you and I will
+
+1068
+00:40:28,320 --> 00:40:30,720
+talk a little bit more about it cuz I
+
+1069
+00:40:29,520 --> 00:40:32,880
+think there could be some fun things
+
+1070
+00:40:30,720 --> 00:40:35,040
+that we might be able to do to to help
+
+1071
+00:40:32,880 --> 00:40:36,880
+bring some of that technology to places
+
+1072
+00:40:35,040 --> 00:40:38,400
+where it's not likely to get if we can't
+
+1073
+00:40:36,880 --> 00:40:39,920
+solve for things from a financial
+
+1074
+00:40:38,400 --> 00:40:41,280
+standpoint. But that's a whole another
+
+1075
+00:40:39,920 --> 00:40:42,880
+thing. The empathy thing I really want
+
+1076
+00:40:41,280 --> 00:40:44,640
+to just want to encourage people to
+
+1077
+00:40:42,880 --> 00:40:47,520
+think about this because we're not
+
+1078
+00:40:44,640 --> 00:40:49,680
+talking about just you at the sea level.
+
+1079
+00:40:47,520 --> 00:40:52,480
+There are people that are managing your
+
+1080
+00:40:49,680 --> 00:40:55,200
+teams and at the very first level a
+
+1081
+00:40:52,480 --> 00:40:56,960
+supervisor whatever their title is
+
+1082
+00:40:55,200 --> 00:40:58,480
+that's not the important thing. We need
+
+1083
+00:40:56,960 --> 00:41:01,200
+to make sure that your management
+
+1084
+00:40:58,480 --> 00:41:02,720
+training actually has some sections and
+
+1085
+00:41:01,200 --> 00:41:04,480
+components in there that are really
+
+1086
+00:41:02,720 --> 00:41:06,000
+teaching how to be empathetic and what
+
+1087
+00:41:04,480 --> 00:41:08,400
+are the signs that you need to do it
+
+1088
+00:41:06,000 --> 00:41:10,240
+when you're working with human beings.
+
+1089
+00:41:08,400 --> 00:41:12,640
+It's just really important and I think
+
+1090
+00:41:10,240 --> 00:41:15,200
+it's overlooked a lot, but there's
+
+1091
+00:41:12,640 --> 00:41:17,040
+there's never been a a bigger need for
+
+1092
+00:41:15,200 --> 00:41:19,440
+that right now than there is right now.
+
+1093
+00:41:17,040 --> 00:41:21,119
+At least from what I'm sensing and I I
+
+1094
+00:41:19,440 --> 00:41:22,960
+don't know if you agree with that.
+
+1095
+00:41:21,119 --> 00:41:25,280
+I agree with that. And I you know the
+
+1096
+00:41:22,960 --> 00:41:27,359
+way I always lead it's I always look at
+
+1097
+00:41:25,280 --> 00:41:29,119
+somebody and I and again I go back to
+
+1098
+00:41:27,359 --> 00:41:31,440
+the same thing like it is somebody's
+
+1099
+00:41:29,119 --> 00:41:34,720
+mother it is someone's daughter it is
+
+1100
+00:41:31,440 --> 00:41:37,200
+someone's sister and more than looking
+
+1101
+00:41:34,720 --> 00:41:39,599
+at what they're doing wrong it's
+
+1102
+00:41:37,200 --> 00:41:40,079
+understanding what they're doing number
+
+1103
+00:41:39,599 --> 00:41:40,560
+one.
+
+1104
+00:41:40,079 --> 00:41:43,200
+Yeah.
+
+1105
+00:41:40,560 --> 00:41:45,599
+Taking the time to understand is there a
+
+1106
+00:41:43,200 --> 00:41:48,079
+knowledge gap that they just didn't
+
+1107
+00:41:45,599 --> 00:41:50,480
+understand it and really teasing out
+
+1108
+00:41:48,079 --> 00:41:52,079
+these critical questions. Right. Are
+
+1109
+00:41:50,480 --> 00:41:54,000
+they not doing it because they're
+
+1110
+00:41:52,079 --> 00:41:55,520
+stressed because their child is sick and
+
+1111
+00:41:54,000 --> 00:41:57,040
+like their child is just a babysitter
+
+1112
+00:41:55,520 --> 00:41:58,400
+that they found on the internet the
+
+1113
+00:41:57,040 --> 00:42:00,000
+night before because they were desperate
+
+1114
+00:41:58,400 --> 00:42:02,560
+to find somebody for a shift. These are
+
+1115
+00:42:00,000 --> 00:42:04,319
+the types of things especially I mean
+
+1116
+00:42:02,560 --> 00:42:06,800
+this could go anywhere but in healthcare
+
+1117
+00:42:04,319 --> 00:42:08,800
+especially you're talking about a let's
+
+1118
+00:42:06,800 --> 00:42:09,920
+say let's take the example of a nurse
+
+1119
+00:42:08,800 --> 00:42:11,599
+you know you're talking about a nurse
+
+1120
+00:42:09,920 --> 00:42:13,599
+who's coming to take care four of four
+
+1121
+00:42:11,599 --> 00:42:14,800
+or five very sick patients in the
+
+1122
+00:42:13,599 --> 00:42:17,599
+hospital
+
+1123
+00:42:14,800 --> 00:42:19,680
+who let their sick child at home who may
+
+1124
+00:42:17,599 --> 00:42:21,200
+not have found someone that they 100%
+
+1125
+00:42:19,680 --> 00:42:22,960
+trusted but they needed to take the
+
+1126
+00:42:21,200 --> 00:42:25,839
+shift right
+
+1127
+00:42:22,960 --> 00:42:28,240
+so I always remembered that I'm with
+
+1128
+00:42:25,839 --> 00:42:30,000
+individuals who have the same stressors
+
+1129
+00:42:28,240 --> 00:42:31,839
+that our patients have And so we have to
+
+1130
+00:42:30,000 --> 00:42:34,000
+be very mindful of these things. We have
+
+1131
+00:42:31,839 --> 00:42:35,599
+to be mindful of the noise. We have to
+
+1132
+00:42:34,000 --> 00:42:37,920
+be mindful that people are overwhelmed
+
+1133
+00:42:35,599 --> 00:42:40,720
+right now. And we really need to take a
+
+1134
+00:42:37,920 --> 00:42:42,960
+pulse of where our team is individually,
+
+1135
+00:42:40,720 --> 00:42:44,720
+not just collectively. And that takes
+
+1136
+00:42:42,960 --> 00:42:46,720
+time for a manager. You have to take a
+
+1137
+00:42:44,720 --> 00:42:48,720
+lot of the admin lift. They have to
+
+1138
+00:42:46,720 --> 00:42:50,800
+regularly meet. They have to regularly
+
+1139
+00:42:48,720 --> 00:42:51,200
+report. Right? So
+
+1140
+00:42:50,800 --> 00:42:54,400
+right
+
+1141
+00:42:51,200 --> 00:42:57,359
+there is um empathy is something
+
+1142
+00:42:54,400 --> 00:42:59,359
+that if we can have tools and workflows
+
+1143
+00:42:57,359 --> 00:43:02,079
+and I don't even want to say workflows
+
+1144
+00:42:59,359 --> 00:43:04,800
+but opportunities to inject empathy
+
+1145
+00:43:02,079 --> 00:43:06,800
+again into these spaces it will
+
+1146
+00:43:04,800 --> 00:43:07,520
+tremendously bring an advantage to what
+
+1147
+00:43:06,800 --> 00:43:11,359
+we're doing.
+
+1148
+00:43:07,520 --> 00:43:13,359
+Yeah it's it's so needed. I mean, it it
+
+1149
+00:43:11,359 --> 00:43:15,119
+really is, you know, you don't have to
+
+1150
+00:43:13,359 --> 00:43:17,760
+take too many steps outside your front
+
+1151
+00:43:15,119 --> 00:43:20,079
+door or don't you can't turn on social
+
+1152
+00:43:17,760 --> 00:43:23,040
+media or or a television and not see
+
+1153
+00:43:20,079 --> 00:43:24,560
+that there's a need for this. So,
+
+1154
+00:43:23,040 --> 00:43:26,800
+I really appreciate you your attention
+
+1155
+00:43:24,560 --> 00:43:29,440
+to that as we're wrapping up our
+
+1156
+00:43:26,800 --> 00:43:31,200
+conversation today. And again, I can't
+
+1157
+00:43:29,440 --> 00:43:33,359
+thank you enough. I really do appreciate
+
+1158
+00:43:31,200 --> 00:43:35,680
+that you take the took the time to come
+
+1159
+00:43:33,359 --> 00:43:37,280
+on and have this conversation. and
+
+1160
+00:43:35,680 --> 00:43:39,119
+excited to talk more with you because I
+
+1161
+00:43:37,280 --> 00:43:41,119
+think there's just so much more that we
+
+1162
+00:43:39,119 --> 00:43:43,520
+can do and certainly conversations that
+
+1163
+00:43:41,119 --> 00:43:46,480
+need to continue to be pushed so that
+
+1164
+00:43:43,520 --> 00:43:49,040
+the the clinical and human views both of
+
+1165
+00:43:46,480 --> 00:43:51,280
+those things stay in focus and we don't
+
+1166
+00:43:49,040 --> 00:43:52,880
+let this just be a technology thing and
+
+1167
+00:43:51,280 --> 00:43:55,440
+and
+
+1168
+00:43:52,880 --> 00:43:57,920
+maybe maybe we can actually have the
+
+1169
+00:43:55,440 --> 00:43:59,839
+kind of impact that we we intend and the
+
+1170
+00:43:57,920 --> 00:44:02,240
+technology will serve humanity the way
+
+1171
+00:43:59,839 --> 00:44:03,680
+it should not the other way around. So
+
+1172
+00:44:02,240 --> 00:44:07,040
+again, thank you so much for coming on
+
+1173
+00:44:03,680 --> 00:44:08,640
+this show and I look forward to working
+
+1174
+00:44:07,040 --> 00:44:10,720
+with you again and let's find some
+
+1175
+00:44:08,640 --> 00:44:12,160
+things we can tag team and we'll we'll
+
+1176
+00:44:10,720 --> 00:44:13,119
+rally some troops and we'll do some good
+
+1177
+00:44:12,160 --> 00:44:14,960
+things together.
+
+1178
+00:44:13,119 --> 00:44:18,079
+Yeah, let's do it. You know, I'm I'm
+
+1179
+00:44:14,960 --> 00:44:20,480
+hopeful maybe I'm, you know, too much in
+
+1180
+00:44:18,079 --> 00:44:23,520
+the rainbows and unicorn world. I But I
+
+1181
+00:44:20,480 --> 00:44:26,400
+do feel um the good the spirit of us
+
+1182
+00:44:23,520 --> 00:44:28,560
+will collectively do good. And so we can
+
+1183
+00:44:26,400 --> 00:44:31,440
+use the technology, we can create things
+
+1184
+00:44:28,560 --> 00:44:33,520
+and ideas and I and I do have a lot of
+
+1185
+00:44:31,440 --> 00:44:35,599
+faith in the fact that that we can do it
+
+1186
+00:44:33,520 --> 00:44:37,760
+and there are ways to do that. So my
+
+1187
+00:44:35,599 --> 00:44:41,440
+intention is to help as much as possible
+
+1188
+00:44:37,760 --> 00:44:43,359
+and to increase our empathy and really
+
+1189
+00:44:41,440 --> 00:44:45,599
+look at what we're doing and take care
+
+1190
+00:44:43,359 --> 00:44:48,800
+of everything um in the sense of our
+
+1191
+00:44:45,599 --> 00:44:50,560
+providers, clinicians, any staff that is
+
+1192
+00:44:48,800 --> 00:44:52,640
+working in these places that then
+
+1193
+00:44:50,560 --> 00:44:55,359
+deliver our care. It is a very big
+
+1194
+00:44:52,640 --> 00:44:57,839
+spectrum of folks and there I would love
+
+1195
+00:44:55,359 --> 00:45:00,800
+to continue conversations of how we can
+
+1196
+00:44:57,839 --> 00:45:03,040
+create ways to help that innovate and
+
+1197
+00:45:00,800 --> 00:45:05,760
+utilize technologies to to take off
+
+1198
+00:45:03,040 --> 00:45:07,520
+burdens. Yeah, I will welcome those
+
+1199
+00:45:05,760 --> 00:45:09,200
+conversations and ideas, you know,
+
+1200
+00:45:07,520 --> 00:45:11,440
+strategies anytime.
+
+1201
+00:45:09,200 --> 00:45:13,040
+Uh we I'll make sure that you you have
+
+1202
+00:45:11,440 --> 00:45:14,319
+all the information that you need in the
+
+1203
+00:45:13,040 --> 00:45:16,000
+show notes to be able to reach out to
+
+1204
+00:45:14,319 --> 00:45:18,079
+Poonam if you want to have one of these
+
+1205
+00:45:16,000 --> 00:45:22,160
+conversations there. She's not uh
+
+1206
+00:45:18,079 --> 00:45:23,760
+lacking in passion or ideas. I I you're
+
+1207
+00:45:22,160 --> 00:45:26,480
+somebody who's looking to to solve some
+
+1208
+00:45:23,760 --> 00:45:27,839
+real problems. I think this would be a
+
+1209
+00:45:26,480 --> 00:45:31,119
+smart move for you to reach out to
+
+1210
+00:45:27,839 --> 00:45:33,440
+Ponam. And that's going to do it for
+
+1211
+00:45:31,119 --> 00:45:36,079
+this episode of the Signal Room. Really
+
+1212
+00:45:33,440 --> 00:45:38,400
+appreciate you all for listening. Stay
+
+1213
+00:45:36,079 --> 00:45:39,359
+calm, stay human.
+
+1214
+00:45:38,400 --> 00:45:41,119
+Thank you.
+
+1215
+00:45:39,359 --> 00:45:43,200
+That's it for this episode of the Signal
+
+1216
+00:45:41,119 --> 00:45:45,280
+Room. If today's conversation sparked
+
+1217
+00:45:43,200 --> 00:45:47,359
+something in you, an idea, a challenge,
+
+1218
+00:45:45,280 --> 00:45:49,200
+or perspective worth amplifying, I'd
+
+1219
+00:45:47,359 --> 00:45:51,599
+love to hear from you. Message me on
+
+1220
+00:45:49,200 --> 00:45:53,520
+LinkedIn or visit cigarroompodcast.com
+
+1221
+00:45:51,599 --> 00:45:56,560
+to explore being a guest on an upcoming
+
+1222
+00:45:53,520 --> 00:46:00,920
+episode. Until next time, stay tuned,
+
+1223
+00:45:56,560 --> 00:46:00,920
+stay curious, and stay human.
+
