@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://signalroompodcast.com/watch/ai-eroding-workplace-communication</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/-bS823lmyU4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Silent Way AI is Destroying Corporate Trust | Katherine Tuominen</video:title>
+      <video:description>Katherine Tuominen explains how AI-generated communication creates narrative debt, why frontline workarounds expose private data, and what leaders can do to preserve trust during technology change.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/-bS823lmyU4</video:player_loc>
+      <video:duration>2845</video:duration>
+      <video:publication_date>2026-05-27T06:15:25Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-legal-work-governance</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/h1VkrBwx5qw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Lawyers Should Be Terrified of This AI Stat</video:title>
+      <video:description>Bennett Borden explains what ten years of legal time-entry data revealed about recurring legal work, why AI adoption is primarily psychological, and how defensible governance moves from theory into operating systems.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/h1VkrBwx5qw</video:player_loc>
+      <video:duration>2979</video:duration>
+      <video:publication_date>2026-06-17T10:45:05Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/ai-literacy-crisis-killing-healthcare</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/PCHVQ9mPHC0/maxresdefault.jpg</video:thumbnail_loc>
@@ -9,6 +33,42 @@
       <video:player_loc>https://www.youtube.com/embed/PCHVQ9mPHC0</video:player_loc>
       <video:duration>2926</video:duration>
       <video:publication_date>2026-05-13T07:45:01Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-security-risk-governance-gap</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/zn4_Tp19tUI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Compliance Illusion: Why Written AI Policies Fail in Seconds</video:title>
+      <video:description>Aaron Puckett explains why an AI policy is only as strong as the infrastructure beneath it, how shadow AI exposes sensitive data, and which technical controls turn governance from paperwork into operational protection.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/zn4_Tp19tUI</video:player_loc>
+      <video:duration>2998</video:duration>
+      <video:publication_date>2026-07-01T06:15:29Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/clinical-ai-shadow-formulary</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/2FhujGxpkoY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Your CISO Can't Govern What They Can't See | The Shadow Formulary Problem</video:title>
+      <video:description>Dr. Ömer Atlı explains the shadow formulary: consumer AI already used in clinical decisions, the lethal omissions standard evaluations miss, and why safe healthcare AI must be resource-aware.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/2FhujGxpkoY</video:player_loc>
+      <video:duration>2227</video:duration>
+      <video:publication_date>2026-06-24T06:15:22Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/why-new-nurses-quit-ai</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/d2yUcYU2US8/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why 50% of New Nurses Quit Within 2 Years | Angela Millan</video:title>
+      <video:description>Angela Millan explains why many new nurses leave the bedside within two years, how clinical knowledge differs from judgment under pressure, and how Prismn's Nurse Hazel helps students build reasoning without replacing it.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/d2yUcYU2US8</video:player_loc>
+      <video:duration>3027</video:duration>
+      <video:publication_date>2026-06-03T06:15:13Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
