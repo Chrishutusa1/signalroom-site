@@ -420,4 +420,52 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-leadership-trust-larry-kuhn</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/HAlocvYL0do/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>75% of Employees Don&#x27;t Trust Their CEO. AI Makes It Worse | Dr. Larry Kuhn</video:title>
+      <video:description>Dr. Larry Kuhn explains why leaders must build trust, psychological safety, and credible authenticity before asking employees to embrace AI-driven change.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/HAlocvYL0do</video:player_loc>
+      <video:duration>1813</video:duration>
+      <video:publication_date>2025-11-19T06:00:15Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-readiness-healthcare-ratnadeep-bhattacharjee</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/oy7Q_tHzAng/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Readiness: Why 85% of Healthcare Organizations Aren&#x27;t Ready | Ratnadeep Bhattacharjee</video:title>
+      <video:description>Ratnadeep Bhattacharjee explains why healthcare AI readiness depends on complete, consistent, connected, and compliant data before model selection.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/oy7Q_tHzAng</video:player_loc>
+      <video:duration>1967</video:duration>
+      <video:publication_date>2025-11-15T14:27:05Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/responsible-ai-healthcare-barry-chaiken-part-2</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/H2sY21MyKgQ/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Healthcare: Start Small, Govern Everything | Dr. Barry Chaiken</video:title>
+      <video:description>Dr. Barry Chaiken explains why responsible healthcare AI starts with small outcome-driven projects, tested assumptions, patient involvement, and human control.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/H2sY21MyKgQ</video:player_loc>
+      <video:duration>1747</video:duration>
+      <video:publication_date>2025-11-06T13:56:31Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-patient-physician-journey-barry-chaiken</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Lhtm0LffY84/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI in Healthcare: Humanize Care Without Losing Clinical Judgment | Dr. Barry Chaiken</video:title>
+      <video:description>Dr. Barry Chaiken explains how ambient AI can restore attention to the patient while safeguards protect clinical judgment, accountability, and trust.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Lhtm0LffY84</video:player_loc>
+      <video:duration>1425</video:duration>
+      <video:publication_date>2025-11-06T13:44:16Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
