@@ -108,6 +108,9 @@ TOPICS = {
     ],
 
     "healthcare-data-security": [
+        dict(slug="ai-agents-patient-data-leak",
+             card_title="When AI Agents Leak Patient Data",
+             card_desc="How patient data reached a public AI prompt, why agents drift, and the governance layer needed to score, audit, and control them."),
         dict(slug="data-quality-ai-strategy",
              card_title="Data Quality and AI Strategy",
              card_desc="Why data quality forms the foundation of viable AI strategy and what it takes to improve it at scale."),
@@ -129,6 +132,9 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
+        dict(slug="ai-agents-patient-data-leak",
+             card_title="When AI Agents Leak Patient Data",
+             card_desc="How patient data reached a public AI prompt, why agents drift, and the governance layer needed to score, audit, and control them."),
         dict(slug="human-ai-leadership-equation",
              card_title="Healthcare AI Leadership",
              card_desc="What leadership capabilities AI demands and why technical expertise alone cannot drive responsible AI deployment.",
