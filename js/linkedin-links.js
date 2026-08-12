@@ -1,6 +1,7 @@
 // LinkedIn profile links for Signal Room Podcast guests
 (function() {
     var linkedInUrls = {
+        'Travis Garland': 'https://www.linkedin.com/in/travis-garland/',
         'David Sichel': 'https://www.linkedin.com/in/david-sichel-blueshirtmedia/',
         'Angel Mena': 'https://www.linkedin.com/in/angeljmenamd/',
         'Ratnadeep Bhattacharjee': 'https://www.linkedin.com/in/ratnadeepbhattacharjee/',
