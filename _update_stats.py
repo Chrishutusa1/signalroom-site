@@ -16,7 +16,22 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 
+# Update these together when platform dashboards are refreshed. The script writes
+# the same display values to every public proof block so pages cannot drift.
+TOTAL_REACH_DISPLAY = "78.8K+"
+IAB_DOWNLOADS_DISPLAY = "2.6K+"
+
 ep_count = len(glob.glob(str(ROOT / "episodes" / "*.html")))
+
+episode_pages = []
+for episode_path in (ROOT / "episodes").glob("*.html"):
+    episode_html = episode_path.read_text(encoding="utf-8")
+    number_match = re.search(r'"episodeNumber"\s*:\s*"?(\d+)"?', episode_html)
+    if number_match:
+        episode_pages.append((int(number_match.group(1)), episode_path.stem))
+if not episode_pages:
+    raise SystemExit("ERROR: no episodeNumber metadata found in episodes/*.html")
+latest_episode_number, latest_episode_slug = max(episode_pages)
 
 guests_html = (ROOT / "guests.html").read_text(encoding="utf-8")
 names = re.findall(r'class="guest-card-name">([^<]+)</h3>', guests_html)
@@ -27,9 +42,16 @@ idx_path = ROOT / "index.html"
 idx = idx_path.read_text(encoding="utf-8")
 idx, n1 = re.subn(r'(id="episode-count">)\d+\+?(<)', rf'\g<1>{ep_count}\g<2>', idx)
 idx, n2 = re.subn(r'(id="guest-count">)\d+\+?(<)', rf'\g<1>{guest_count}\g<2>', idx)
+idx, n10 = re.subn(r'(id="reach-count">)[^<]+(<)', rf'\g<1>{TOTAL_REACH_DISPLAY}\g<2>', idx)
+idx, n11 = re.subn(r'(id="download-count">)[^<]+(<)', rf'\g<1>{IAB_DOWNLOADS_DISPLAY}\g<2>', idx)
 # ("See All N Episodes" was a synced phrase until 07bbd28 reworded the hero CTA
 # to the count-less "View All Episodes" - no longer a sync target.)
 idx, n4 = re.subn(r'\d+ episodes published to date', f'{ep_count} episodes published to date', idx)
+idx, n3 = re.subn(
+    r'(<a href=")[^"]+(" class="btn btn-outline" id="current-episode-cta">)Watch Current Episode(</a>)',
+    rf'\g<1>/episodes/{latest_episode_slug}\g<2>Watch Current Episode\g<3>',
+    idx,
+)
 
 # --- guests.html (og:description + hero copy both say "N healthcare AI practitioners") ---
 gh, n5 = re.subn(r'\d+ healthcare AI practitioners', f'{guest_count} healthcare AI practitioners', guests_html)
@@ -61,9 +83,19 @@ guest_page, n9 = re.subn(
     rf'\g<1>{ep_count}\g<2>',
     guest_page,
 )
+guest_page, n12 = re.subn(
+    r'(<div class="stat-number">)[^<]+(</div>\s*<div class="stat-label">Total Views &amp; Plays</div>)',
+    rf'\g<1>{TOTAL_REACH_DISPLAY}\g<2>',
+    guest_page,
+)
+guest_page, n13 = re.subn(
+    r'(<div class="stat-number">)[^<]+(</div>\s*<div class="stat-label">IAB-Certified Downloads</div>)',
+    rf'\g<1>{IAB_DOWNLOADS_DISPLAY}\g<2>',
+    guest_page,
+)
 
-print(f"episodes={ep_count} guests={guest_count}")
-print(f"index.html: episode-count={n1} guest-count={n2} published-to-date={n4}")
+print(f"episodes={ep_count} guests={guest_count} latest=episode-{latest_episode_number}:{latest_episode_slug}")
+print(f"index.html: episode-count={n1} guest-count={n2} current-episode-cta={n3} published-to-date={n4}")
 print(f"guests.html: practitioner-count={n5}")
 print(f"about.html: guest-count={n6} episode-count={n7}")
 print(f"be-a-guest.html: intro-counts={n8} episode-count={n9}")
@@ -74,12 +106,17 @@ print(f"be-a-guest.html: intro-counts={n8} episode-count={n9}")
 zeros = [label for label, n in [
     ('index.html id="episode-count"', n1),
     ('index.html id="guest-count"', n2),
+    ('index.html id="reach-count"', n10),
+    ('index.html id="download-count"', n11),
+    ('index.html current episode CTA', n3),
     ('index.html "N episodes published to date"', n4),
     ('guests.html "N healthcare AI practitioners"', n5),
     ('about.html guest count', n6),
     ('about.html episode count', n7),
     ('be-a-guest.html intro counts', n8),
     ('be-a-guest.html episode count', n9),
+    ('be-a-guest.html total reach', n12),
+    ('be-a-guest.html IAB downloads', n13),
 ] if n == 0]
 if zeros:
     raise SystemExit("ERROR: anchor pattern(s) not found - markup was reworded? "
