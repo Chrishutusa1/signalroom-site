@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://signalroompodcast.com/watch/why-healthcare-data-integration-fails</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/KHh5OV1a0ec/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Patient Care Is Suffering (And How to Fix Your Workflow)</video:title>
+      <video:description>Ted Lindsley on why healthcare data integration keeps failing, what to demand from vendors, and the legacy costs hiding outside the contract.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/KHh5OV1a0ec</video:player_loc>
+      <video:duration>2654</video:duration>
+      <video:publication_date>2026-08-21T23:22:46Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-agent-patient-data-leak-governance</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/vpCO5zviKGM/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>His Own AI Agents Leaked Patient Data — Here&apos;s What He Built Next</video:title>
+      <video:description>Travis Garland explains how patient data reached a public AI prompt, why healthcare AI agents drift, and how governance can score and control them.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/vpCO5zviKGM</video:player_loc>
+      <video:duration>3918</video:duration>
+      <video:publication_date>2026-08-10T17:45:35Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/chatgpt-medical-record-privacy</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/ATp-HtxgNyw/maxresdefault.jpg</video:thumbnail_loc>
