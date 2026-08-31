@@ -367,6 +367,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/watch/ai-automation-trust-human-skills</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/ai-drug-discovery-verification-david-finkelshteyn</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -381,6 +387,12 @@
   <url>
     <loc>https://signalroompodcast.com/watch/ai-eroding-workplace-communication</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-front-desk-patient-access</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -531,6 +543,12 @@
   <url>
     <loc>https://signalroompodcast.com/watch/healthcare-ai-roi-parth-gargish</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-cybersecurity-human-risk</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

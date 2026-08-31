@@ -492,4 +492,40 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-automation-trust-human-skills</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/qBZSphwlDfA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Can We Actually Trust AI With Our Health?</video:title>
+      <video:description>Chris Bruner on choosing the right work to automate, earning trust, and why judgment, integrity, and responsibility matter more as AI expands.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/qBZSphwlDfA</video:player_loc>
+      <video:duration>2056</video:duration>
+      <video:publication_date>2026-08-29T04:24:40Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/healthcare-cybersecurity-human-risk</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/XbgCM4rG5N4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>What They Won&apos;t Tell You About AI in Healthcare</video:title>
+      <video:description>Craig Taylor explains why cybersecurity is a human behavior problem and how AI makes social engineering more convincing and dangerous.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/XbgCM4rG5N4</video:player_loc>
+      <video:duration>3503</video:duration>
+      <video:publication_date>2026-08-29T04:51:31Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/ai-front-desk-patient-access</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/6pwLdgbTc0s/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Outpatient Care Is Broken—Here&apos;s How to Fix It</video:title>
+      <video:description>Jakub Grajcar explains where AI receptionists improve patient access, when they must escalate, and how practices should prepare before launch.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/6pwLdgbTc0s</video:player_loc>
+      <video:duration>3130</video:duration>
+      <video:publication_date>2026-08-29T05:06:12Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
