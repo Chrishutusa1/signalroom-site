@@ -62,6 +62,9 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="can-we-trust-ai-with-our-health",
+             card_title="Can We Actually Trust AI With Our Health?",
+             card_desc="How leaders choose the right work to automate and make responsibility, judgment, and trust part of the system."),
         dict(slug="data-readiness-ai-adoption",
              card_title="Data Readiness for AI Adoption",
              card_desc="Why most healthcare organizations aren't AI-ready, and what leaders must fix before scaling AI."),
@@ -80,6 +83,9 @@ TOPICS = {
     ],
 
     "clinical-ai-patient-care": [
+        dict(slug="outpatient-care-is-broken",
+             card_title="Outpatient Care Is Broken",
+             card_desc="Where AI receptionists improve access, when they must escalate, and how practices prepare before launch."),
         dict(slug="dont-upload-medical-records-to-chatgpt",
              card_title="Don't Upload Your Medical Record to ChatGPT",
              card_desc="Why your full medical record should never go into a general AI chatbot, who's accountable when AI enters the exam room, and how to be a prepared patient.",
@@ -108,6 +114,9 @@ TOPICS = {
     ],
 
     "healthcare-data-security": [
+        dict(slug="healthcare-cybersecurity-human-behavior",
+             card_title="Healthcare Cybersecurity Is a Human Behavior Problem",
+             card_desc="Why punishment-based training fails and how AI makes social engineering more convincing and dangerous."),
         dict(slug="ai-agents-patient-data-leak",
              card_title="When AI Agents Leak Patient Data",
              card_desc="How patient data reached a public AI prompt, why agents drift, and the governance layer needed to score, audit, and control them."),
@@ -132,6 +141,9 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
+        dict(slug="healthcare-cybersecurity-human-behavior",
+             card_title="Human Risk in AI Governance",
+             card_desc="Why approved tools, verification habits, and psychological safety belong inside healthcare AI governance."),
         dict(slug="ai-agents-patient-data-leak",
              card_title="When AI Agents Leak Patient Data",
              card_desc="How patient data reached a public AI prompt, why agents drift, and the governance layer needed to score, audit, and control them."),
