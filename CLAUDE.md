@@ -12,6 +12,10 @@ npx serve -p 4200 .
 python _validate_episode.py episodes/<slug>.html          # check: meta<=155, title<=57, shorts alt
 python _validate_episode.py episodes/<slug>.html --fix    # auto-trim meta / backfill alt
 
+# Site-wide title/meta gate (every page, not just episodes) - also a CI gate
+python _validate_meta.py                                  # all pages; exit 1 on any violation
+python _validate_meta.py <path>.html                      # just these files
+
 # Normalize before deploy (dry-run by default; --apply to write)
 python signalroom-publish-normalize.py --fix-alt --apply
 

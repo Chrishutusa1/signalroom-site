@@ -13,6 +13,7 @@ _STATUS.md
 !/_generate_topic_cards.py
 !/signalroom-airtable-bridge.py
 !/_validate_episode.py
+!/_validate_meta.py
 !/signalroom-publish-normalize.py
 !/_update_stats.py
 !/_update_featured_guests.py

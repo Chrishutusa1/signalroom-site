@@ -23,9 +23,16 @@ jobs:
           done
           exit $rc
 
+      # The episode loop above only ever looked at episodes/*.html, so titles
+      # and descriptions on root pages, topics/, watch/ and Articles/ were
+      # never gated and 13 violations reached production. This covers every
+      # page. app/ is excluded (noindex internal tool, outside the sitemap).
+      - name: Site-wide title/description gates (_validate_meta.py)
+        if: ${{ !cancelled() }}
+        run: python _validate_meta.py
+
       # if: !cancelled() on the remaining checks so one failing gate doesn't
-      # hide the others' results (17 legacy pages fail the episode gates today
-      # — see GAPS.md #2 — and the other guards must keep reporting meanwhile).
+      # hide the others' results.
       - name: Shorts alt normalize is a no-op (dry-run)
         if: ${{ !cancelled() }}
         run: |
