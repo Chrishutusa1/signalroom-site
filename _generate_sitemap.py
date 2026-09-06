@@ -54,7 +54,6 @@ PAGE_META = {
     "faq":                                  ("monthly", "0.3"),
     "generative-ai-healthcare-podcast":     ("monthly", "0.8"),
     "guests":                               ("weekly", "0.9"),
-    "newsletter":                           ("monthly", "0.5"),
     "notable-healthcare-ai-podcast-guests": ("monthly", "0.8"),
     "podcasts-like-nejm-ai-grand-rounds":   ("monthly", "0.8"),
     "privacy-policy":                       ("monthly", "0.3"),
