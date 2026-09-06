@@ -64,7 +64,7 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /episodes.html                                               /episodes                                                    301!
 /faq.html                                                    /faq                                                         301!
 /guests.html                                                 /guests                                                      301!
-/newsletter.html                                             /articles/                                                   301!
+/newsletter.html                                             https://aihealthpulse.beehiiv.com                            301!
 /privacy-policy.html                                         /privacy-policy                                              301!
 /responsible-ai-in-medicine.html                             /responsible-ai-in-medicine                                  301!
 /best-healthcare-ai-podcast.html                             /best-healthcare-ai-podcast                                  301!
@@ -165,5 +165,6 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /watch/ai-front-desk-patient-access.html  /watch/ai-front-desk-patient-access  301!
 
 # The AI Health Pulse is a separate brand; /newsletter presented itself as that
-# brand on the Signal Room domain. Page retired -> the Articles hub.
-/newsletter                                                  /articles/                                                   301!
+# brand on the Signal Room domain. Page retired -> the newsletter's own home, so
+# the AIHP brand demand this URL ranks for lands where it can be served.
+/newsletter                                                  https://aihealthpulse.beehiiv.com                            301!
