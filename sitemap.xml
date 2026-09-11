@@ -595,6 +595,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/watch/scaling-healthcare-ai-past-pilotitis</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/watch/self-governance-before-ai-arnaud-saint-paul</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/watch/unsupervised-ai-human-oversight</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
