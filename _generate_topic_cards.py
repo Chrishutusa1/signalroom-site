@@ -62,6 +62,9 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="scaling-healthcare-ai-beyond-the-pilot",
+             card_title="Scaling Healthcare AI Beyond the Pilot",
+             card_desc="Dr. Sarah Matt on pilotitis, why healthcare AI stalls after the pilot, and what it takes to scale with clinical voices in the room."),
         dict(slug="can-we-trust-ai-with-our-health",
              card_title="Can We Actually Trust AI With Our Health?",
              card_desc="How leaders choose the right work to automate and make responsibility, judgment, and trust part of the system."),
@@ -141,6 +144,9 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
+        dict(slug="ai-governance-human-problem",
+             card_title="Why AI Governance Is a Human Problem",
+             card_desc="Arnaud Saint-Paul on governing yourself before you scale AI: coherence, model bias, and what governance looks like in high-stakes healthcare."),
         dict(slug="healthcare-cybersecurity-human-behavior",
              card_title="Human Risk in AI Governance",
              card_desc="Why approved tools, verification habits, and psychological safety belong inside healthcare AI governance."),
