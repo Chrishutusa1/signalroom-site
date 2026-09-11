@@ -1,6 +1,11 @@
 __pycache__/
 *.pyc
 
+# Local secrets — never commit env files
+.env
+.env.*
+!.env.example
+
 # Local Netlify folder
 .netlify
 
