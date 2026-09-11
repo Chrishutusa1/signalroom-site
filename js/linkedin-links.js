@@ -1,6 +1,8 @@
 // LinkedIn profile links for Signal Room Podcast guests
 (function() {
     var linkedInUrls = {
+        'Dr. Sarah Matt': 'https://www.linkedin.com/in/sarahmattmd/',
+        'Arnaud Saint-Paul': 'https://www.linkedin.com/in/arnaudsaintpaul',
         'Travis Garland': 'https://www.linkedin.com/in/travis-garland/',
         'David Sichel': 'https://www.linkedin.com/in/david-sichel-blueshirtmedia/',
         'Angel Mena': 'https://www.linkedin.com/in/angeljmenamd/',
