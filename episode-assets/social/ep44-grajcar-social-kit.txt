@@ -1,0 +1,36 @@
+THE SIGNAL ROOM — EP44 SOCIAL KIT
+Guest: Jakub Grajcar (Head of Marketing, Talkie.ai) | Host: Chris Hutchins
+
+TITLES:
+- Half Your Patient Calls Go Unanswered. Here's Why
+- The Front Desk Is Healthcare's Hidden Failure
+- AI Receptionists: Remove Work, Don't Just Move It
+- Why Outpatient Care Breaks at the Phone Call
+
+TAGS:
+healthcare AI, AI receptionist, conversational voice agents, patient access, medical front desk, appointment scheduling, missed calls, outpatient care, practice management, EHR integration, patient retention, patient acquisition, after-hours calls, Talkie.ai, Jakub Grajcar, The Signal Room, Chris Hutchins
+
+HASHTAGS:
+#HealthcareAI #AIReceptionist #PatientAccess #DigitalHealth #PracticeManagement #HealthTech #VoiceAI #Outpatient #MedicalPractice #TheSignalRoom
+
+PULL-QUOTES:
+"Some of the statistics show that this might be even 50% of calls that are being missed. This is just accepted as the status quo, and we're trying to change that." — Jakub Grajcar
+"AI should remove work and not just move work around. That's the assumption we've had." — Jakub Grajcar
+"If the AI doesn't have the answer to that particular scenario yet, it doesn't try to guess, it doesn't hallucinate, it just passes it off to the human front desk." — Jakub Grajcar
+"It's better for the phone to actually ring and for the human to pick it up than for us to show superior automation rates. This is a sensitive industry, some of the situations can be life or death." — Jakub Grajcar
+"The replacing the front desk conversation is a story that's easy to latch on to, it can go a little viral on social media, but it's not the way it actually plays out, and it's not going to be." — Jakub Grajcar
+
+PROMO REEL POST:
+HOOK: Up to half the calls to a medical practice never get answered.
+REHOOK: Nobody even sees the misses. The lines are busy, 30 or 50 patients hang up, and it just gets logged as the status quo.
+PUNCH: The most under-discussed failure in healthcare isn't in the exam room. It's the phone at the front desk.
+BODY: On EP44 of The Signal Room, Jakub Grajcar (Head of Marketing at Talkie.ai) tells host Chris Hutchins how AI voice agents pick up the calls no one can, triage them, and book appointments end to end straight into the EHR, so the front desk can focus on the patient in the room. His rule: AI should remove work, not just move it around. And when a call sounds like distress or an emergency, it hands off to a human every time. Watch or listen to the full conversation on how outpatient care gets fixed at the point it actually breaks.
+
+FIRST COMMENT:
+Full episode with Jakub Grajcar of Talkie.ai: https://signalroompodcast.com/episodes/outpatient-care-is-broken
+Watch on YouTube: https://youtu.be/6pwLdgbTc0s
+We get into after-hours calls, escalation to humans, least-privilege EHR access, the 90-day change-management ramp, and the ROI math on scheduling automation.
+
+TAGS TO MENTION:
+Guest: Jakub Grajcar — https://www.linkedin.com/in/jakub-grajcar
+Host: Chris Hutchins — https://www.linkedin.com/in/chutchins-healthcare

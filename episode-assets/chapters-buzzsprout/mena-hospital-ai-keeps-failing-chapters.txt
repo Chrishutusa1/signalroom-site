@@ -1,0 +1,12 @@
+00:00:00  Introduction: Angel Mena, MD
+00:01:22  From Physician to Health-Tech Builder
+00:03:24  The Administrative Burden on Clinicians
+00:06:40  Build With Clinicians, Not For Them
+00:12:00  The Three Amigos and the ROI Problem
+00:17:50  Where AI Is Actually Delivering Today
+00:20:00  Why AI Pilots Fail
+00:24:16  Ownership, Sign-Off, and Security
+00:26:27  When Governance Slows Innovation
+00:34:10  Burnout and the Human Side of Adoption
+00:36:52  Ambient AI and Fixing Documentation
+00:47:26  Guardrails for Agentic AI

@@ -1,0 +1,12 @@
+0:00 Introduction: Travis Garland
+1:22 From Healthcare Ops to AI Agents
+4:48 Early Automation and NLP Wins
+9:23 AI Inside a Real Practice
+16:54 Payer Speed and Staff Burnout
+22:07 Where AI Makes a Difference
+28:55 Why Agents Need a Control Layer
+35:22 Scoring Agents Like a FICO Score
+40:56 Prompting, Drift, and the ICC Framework
+45:59 Navigating HIPAA and the EU AI Act
+52:54 AI Bias, Liability, and Culture
+58:51 Advice for Leaders
