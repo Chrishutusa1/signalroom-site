@@ -172,3 +172,6 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 # brand on the Signal Room domain. Page retired -> the newsletter's own home, so
 # the AIHP brand demand this URL ranks for lands where it can be served.
 /newsletter                                                  https://aihealthpulse.beehiiv.com                            301!
+
+# Marketing/production source assets — kept in the repo, blocked from the public site
+/episode-assets/*    /404.html    404!
