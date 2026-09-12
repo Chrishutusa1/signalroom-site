@@ -11,7 +11,8 @@ Production/marketing assets for recent episodes, generated to accompany the podc
 | `chapters-youtube/` | Chapter markers for the YouTube description (`M:SS Title`, `0:00` first) | `.txt` |
 | `descriptions/` | Episode descriptions — a short TEASER line + a ~180-word DESCRIPTION | `.txt` |
 | `social/` | Per-episode social kits: titles, tags, hashtags, 5 pull-quotes, a promo-reel post (hook/rehook/punch), a first comment with the episode backlink, and guest + host LinkedIn URLs to tag | `.txt` |
-| `thumbnails/` | 1280×720 episode thumbnails (guest photo + bold hook + Signal Room branding) | `.png` |
+| `thumbnails/` | 1280×720 episode thumbnails — guest composited into an on-message AI scene + bold hook + Signal Room branding (Style C) | `.png` |
+| `thumbnails/shorts/` | 9:16 vertical (1080×1920) versions of the same, for Shorts / Reels / TikTok | `.png` |
 
 ## Episodes covered
 
