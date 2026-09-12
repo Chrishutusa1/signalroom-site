@@ -1,0 +1,17 @@
+THE SIGNAL ROOM — EP43 PROMO REEL
+Guest: Craig Taylor (CISSP, co-founder of CyberHoot, virtual CISO)
+
+PROMO REEL POST:
+HOOK: You can buy every firewall on the market and still get breached by one clicked link.
+REHOOK: Because the attack that took down a real practice didn't beat the technology — it beat a busy human being who was 10 minutes late to a meeting.
+PUNCH: "If you're checking boxes, you're going to be breached. I promise you."
+BODY: In EP43 of The Signal Room, cybersecurity veteran Craig Taylor (CISSP, co-founder of CyberHoot) explains why the real risk in healthcare AI is people, not the model — and why punishing employees for clicking only breeds silence and slower breach reports. He and host Chris Hutchins get practical: reward good behavior, keep governance short enough to actually read, and give resourceful staff an approved AI tool before they route patient data through their phones. Watch or listen to the full conversation and rethink how your organization builds a cyber-aware culture.
+
+FIRST COMMENT:
+The threat isn't just smarter phishing — it's what happens after one click, at machine speed. Craig Taylor breaks down human risk management, the Five Eyes AI advisory, and the "PAR it" rule (Pause, Assess, Report) that anyone can remember.
+Watch or listen to the full episode: https://signalroompodcast.com/episodes/healthcare-cybersecurity-human-behavior
+YouTube: https://youtu.be/XbgCM4rG5N4
+
+TAGS TO MENTION:
+Guest: Craig Taylor — https://www.linkedin.com/in/craigmtaylor
+Host: Chris Hutchins — https://www.linkedin.com/in/chutchins-healthcare

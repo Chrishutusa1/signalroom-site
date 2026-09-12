@@ -1,0 +1,17 @@
+THE SIGNAL ROOM — EP44 PROMO REEL
+Guest: Jakub Grajcar (Head of Marketing, Talkie.ai) | Host: Chris Hutchins
+
+PROMO REEL POST:
+HOOK: Up to half the calls to a medical practice never get answered.
+REHOOK: Nobody even sees the misses. The lines are busy, 30 or 50 patients hang up, and it just gets logged as the status quo.
+PUNCH: The most under-discussed failure in healthcare isn't in the exam room. It's the phone at the front desk.
+BODY: On EP44 of The Signal Room, Jakub Grajcar (Head of Marketing at Talkie.ai) tells host Chris Hutchins how AI voice agents pick up the calls no one can, triage them, and book appointments end to end straight into the EHR, so the front desk can focus on the patient in the room. His rule: AI should remove work, not just move it around. And when a call sounds like distress or an emergency, it hands off to a human every time. Watch or listen to the full conversation on how outpatient care gets fixed at the point it actually breaks.
+
+FIRST COMMENT:
+Full episode with Jakub Grajcar of Talkie.ai: https://signalroompodcast.com/episodes/outpatient-care-is-broken
+Watch on YouTube: https://youtu.be/6pwLdgbTc0s
+We get into after-hours calls, escalation to humans, least-privilege EHR access, the 90-day change-management ramp, and the ROI math on scheduling automation.
+
+TAGS TO MENTION:
+Guest: Jakub Grajcar — https://www.linkedin.com/in/jakub-grajcar
+Host: Chris Hutchins — https://www.linkedin.com/in/chutchins-healthcare
