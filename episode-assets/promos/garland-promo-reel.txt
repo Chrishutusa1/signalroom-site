@@ -1,0 +1,17 @@
+TITLES:
+- When AI Agents Leak Patient Data
+
+PROMO REEL POST:
+HOOK: A front-desk staffer dropped the day's schedule, with patient and physician info, into a free public AI prompt just to tidy it up.
+REHOOK: That prompt wasn't paid, so the data went straight into training. The purest intentions, the most painful result.
+PUNCH: You can govern an agent as tightly as you want, but you can't prompt your way to one that behaves. The only thing that holds is enforcement at the point of action.
+BODY: On this episode of The Signal Room, host Chris Hutchins sits down with Travis Garland, CEO of Kickstand AI and co-founder of My Compliance Citadel, on the real gap between deploying agents and governing them, why agents forget their rules and drift over time, and how HIPAA and the EU AI Act are reshaping what practices can safely automate. If you are putting AI to work anywhere near patient data, this one is a must-watch. Watch or listen to the full conversation now.
+
+FIRST COMMENT:
+Full episode with Travis Garland (Kickstand AI / My Compliance Citadel) and host Chris Hutchins:
+https://signalroompodcast.com/episodes/ai-agents-patient-data-leak
+Watch on YouTube: https://youtu.be/vpCO5zviKGM
+
+TAGS TO MENTION:
+Guest: Travis Garland — https://www.linkedin.com/in/travis-garland
+Host: Chris Hutchins — https://www.linkedin.com/in/chutchins-healthcare
