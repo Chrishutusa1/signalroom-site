@@ -16,7 +16,7 @@ Cut to one on-message soundbite → 9:16 vertical → full-screen active-speaker
 | EP45 | Dr. Sarah Matt | Don't do a pilot you don't plan to scale | ~45s | https://riverside.com/editor/e3f132a6-1403-4185-8c5b-c61138a60dfc/6aa7fa2aac4521bb02d492ec/preview |
 | EP46 | Arnaud Saint-Paul | Scale AI on chaos → it wins | ~37s | https://riverside.com/editor/dab875c9-dac7-4f30-9106-185c3e45c65f/6aa5a9e7f6cfbdba3f788658/preview |
 | — | Travis Garland | AI agents are leaking patient data | ~35s | https://riverside.com/editor/f116668e-cb81-48ce-bea5-c66049804959/6aa7f61bac4521bb02d48f05/preview |
-| — | Angel Mena, MD | Why hospital AI keeps failing | ~26s | https://riverside.com/editor/8e23c59d-a108-4c8b-b616-b56000b3c8a4/6aa7f804249a14f50a58c955/preview |
+| — | Angel Mena, MD | Why hospital AI keeps failing | ~39s | https://riverside.com/editor/8e23c59d-a108-4c8b-b616-b56000b3c8a4/6aa81eb7bea7c18345c414e8/preview |
 | — | Bennett Borden | 80% of legal work? AI does it | ~28s | https://riverside.com/editor/74fee666-a787-412e-8329-c07bf271d5a0/6aa7f7f72852c2a886b3096d/preview |
 
 ## Soundbites used (verbatim)
@@ -27,5 +27,5 @@ Cut to one on-message soundbite → 9:16 vertical → full-screen active-speaker
 - **EP45 Sarah Matt:** "Don't do a pilot you don't plan to scale… consider this phase one. Everyone thinks pilots are gonna be thrown away, but phase one means we're anticipating a second phase and we're willing to do the work."
 - **EP46 Arnaud:** "All that amazing good, if it's still handled from a place of non-coherence, of fragmentation, negative effects may very well supersede the positive ones by a long, long shot… no company can afford the impact fragmentation has on our bottom line. None."
 - **Garland:** "The front office staff were pulling down the schedule… provider and patient information… drop it into their prompt… into a public domain… being used for training. That stuff happens."
-- **Mena:** "I've never been a fan of pilots… the amount of energy and people's time you have to invest in driving adoption of a new technology is enormous. How do you do that for a smaller opportunity?"
+- **Mena:** "I've never been a fan of pilots… the amount of energy and people's time you have to invest in driving adoption of a new technology is enormous. How do you do that for a smaller opportunity?… So is the commitment really there to drive the engagement so that you can show the value of the platform?"
 - **Borden:** "Very conservatively, about 80% of what a lawyer does today is better done by AI… generative AI is an existential threat to how we practice law traditionally."
