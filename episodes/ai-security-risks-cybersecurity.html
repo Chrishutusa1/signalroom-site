@@ -93,42 +93,7 @@
       "@type": "ImageObject",
       "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
     }
-  },
-  "hasPart": [
-    {
-      "@type": "VideoObject",
-      "name": "The Death of the SOC: Alert Fatigue",
-      "thumbnailUrl": [
-        "https://i.ytimg.com/vi/FiGO7pZekqc/hqdefault.jpg"
-      ],
-      "contentUrl": "https://www.youtube.com/shorts/FiGO7pZekqc",
-      "embedUrl": "https://www.youtube.com/embed/FiGO7pZekqc",
-      "uploadDate": "2026-02-25T15:45:05Z",
-      "duration": "PT32S"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Security Breach: Who Knows When?",
-      "thumbnailUrl": [
-        "https://i.ytimg.com/vi/UEy64K-FSxc/hqdefault.jpg"
-      ],
-      "contentUrl": "https://www.youtube.com/shorts/UEy64K-FSxc",
-      "embedUrl": "https://www.youtube.com/embed/UEy64K-FSxc",
-      "uploadDate": "2026-02-24T14:15:06Z",
-      "duration": "PT44S"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "This Is Why Getting Hacked ISN&#x27;T Your Biggest Problem!",
-      "thumbnailUrl": [
-        "https://i.ytimg.com/vi/RJvgSzF0Vnk/hqdefault.jpg"
-      ],
-      "contentUrl": "https://www.youtube.com/shorts/RJvgSzF0Vnk",
-      "embedUrl": "https://www.youtube.com/embed/RJvgSzF0Vnk",
-      "uploadDate": "2026-02-23T18:00:35Z",
-      "duration": "PT58S"
-    }
-  ]
+  }
 }
 </script>
 </head>
@@ -244,19 +209,6 @@
         </div>
         
 <div class="episode-sidebar">
-<div class="sidebar-card episode-shorts-card" aria-labelledby="anitha-mareedu-episode-shorts-title">
-<h4 id="anitha-mareedu-episode-shorts-title">Anitha Mareedu Shorts</h4>
-<p>Short clips featuring Anitha Mareedu from this Signal Room episode.</p>
-<div class="episode-shorts-player">
-<iframe title="Anitha Mareedu Shorts reel" src="https://www.youtube-nocookie.com/embed/FiGO7pZekqc?autoplay=1&amp;loop=1&amp;playlist=FiGO7pZekqc,UEy64K-FSxc,RJvgSzF0Vnk&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="FiGO7pZekqc,UEy64K-FSxc,RJvgSzF0Vnk"></iframe>
-</div>
-<div class="episode-shorts-list" aria-label="Shorts featuring Anitha Mareedu">
-<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/FiGO7pZekqc" target="_blank" rel="noopener" data-video-id="FiGO7pZekqc" data-short-title="The Death of the SOC: Alert Fatigue"><img src="https://img.youtube.com/vi/FiGO7pZekqc/mqdefault.jpg" alt="The Death of the SOC: Alert Fatigue" loading="lazy"><span>The Death of the SOC: Alert Fatigue</span></a>
-<a class="episode-shorts-item" href="https://www.youtube.com/shorts/UEy64K-FSxc" target="_blank" rel="noopener" data-video-id="UEy64K-FSxc" data-short-title="Security Breach: Who Knows When?"><img src="https://img.youtube.com/vi/UEy64K-FSxc/mqdefault.jpg" alt="Security Breach: Who Knows When?" loading="lazy"><span>Security Breach: Who Knows When?</span></a>
-<a class="episode-shorts-item" href="https://www.youtube.com/shorts/RJvgSzF0Vnk" target="_blank" rel="noopener" data-video-id="RJvgSzF0Vnk" data-short-title="This Is Why Getting Hacked ISN&#x27;T Your Biggest Problem!"><img src="https://img.youtube.com/vi/RJvgSzF0Vnk/mqdefault.jpg" alt="This Is Why Getting Hacked ISN&#x27;T Your Biggest Problem!" loading="lazy"><span>This Is Why Getting Hacked ISN&#x27;T Your Biggest Problem!</span></a>
-</div>
-<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
-</div>
 <div class="sidebar-card">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -372,25 +324,5 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
-<script>
-  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
-    const player = card.querySelector('.episode-shorts-player iframe');
-    const items = card.querySelectorAll('.episode-shorts-item');
-    if (!player || !items.length) return;
-    items.forEach((item) => {
-      item.addEventListener('click', (event) => {
-        event.preventDefault();
-        const videoId = item.dataset.videoId;
-        if (!videoId) return;
-        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
-        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
-        player.title = item.dataset.shortTitle || player.title;
-        items.forEach((link) => link.classList.remove('is-active'));
-        item.classList.add('is-active');
-      });
-    });
-  });
-</script>
 </body>
 </html>
