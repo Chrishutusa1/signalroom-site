@@ -93,20 +93,7 @@
       "@type": "ImageObject",
       "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
     }
-  },
-  "hasPart": [
-    {
-      "@type": "VideoObject",
-      "name": "Your AI Strategy is Failing. Here is the Missing Piece.",
-      "thumbnailUrl": [
-        "https://i.ytimg.com/vi/qRrb6T0whP4/hqdefault.jpg"
-      ],
-      "contentUrl": "https://www.youtube.com/shorts/qRrb6T0whP4",
-      "embedUrl": "https://www.youtube.com/embed/qRrb6T0whP4",
-      "uploadDate": "2026-03-13T17:30:23Z",
-      "duration": "PT27S"
-    }
-  ]
+  }
 }
 </script>
 </head>
@@ -238,17 +225,6 @@
         </div>
         
 <div class="episode-sidebar">
-<div class="sidebar-card episode-shorts-card" aria-labelledby="gary-cao-episode-shorts-title">
-<h4 id="gary-cao-episode-shorts-title">Gary Cao Shorts</h4>
-<p>Short clips featuring Gary Cao from this Signal Room episode.</p>
-<div class="episode-shorts-player">
-<iframe title="Gary Cao Shorts reel" src="https://www.youtube-nocookie.com/embed/qRrb6T0whP4?autoplay=1&amp;loop=1&amp;playlist=qRrb6T0whP4&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="qRrb6T0whP4"></iframe>
-</div>
-<div class="episode-shorts-list" aria-label="Shorts featuring Gary Cao">
-<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/qRrb6T0whP4" target="_blank" rel="noopener" data-video-id="qRrb6T0whP4" data-short-title="Your AI Strategy is Failing. Here is the Missing Piece."><img src="https://img.youtube.com/vi/qRrb6T0whP4/mqdefault.jpg" alt="Your AI Strategy is Failing. Here is the Missing Piece." loading="lazy"><span>Your AI Strategy is Failing. Here is the Missing Piece.</span></a>
-</div>
-<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
-</div>
 <div class="sidebar-card">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -469,25 +445,5 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
-<script>
-  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
-    const player = card.querySelector('.episode-shorts-player iframe');
-    const items = card.querySelectorAll('.episode-shorts-item');
-    if (!player || !items.length) return;
-    items.forEach((item) => {
-      item.addEventListener('click', (event) => {
-        event.preventDefault();
-        const videoId = item.dataset.videoId;
-        if (!videoId) return;
-        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
-        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
-        player.title = item.dataset.shortTitle || player.title;
-        items.forEach((link) => link.classList.remove('is-active'));
-        item.classList.add('is-active');
-      });
-    });
-  });
-</script>
 </body>
 </html>
