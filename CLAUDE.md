@@ -53,7 +53,7 @@ There are no tests and no lint. Python scripts are stdlib-only — keep them tha
 2. Add `/<path>.html  /<path>  301!` line to `_redirects`.
 3. Run `python _generate_sitemap.py --apply` (never hand-edit `sitemap.xml` entries; CI fails if it's stale). A brand-new ROOT page also needs a curated changefreq/priority in the script's `PAGE_META`.
 
-New **episode** additionally: run `_validate_episode.py`, `_update_stats.py`, add to the relevant topic in `_generate_topic_cards.py`, add the guest's LinkedIn URL to `js/linkedin-links.js`, thumbnail/og:image must be the real YouTube `maxresdefault.jpg` (never generated), and after prod deploy ping IndexNow. Before ANY SEO-surface change (canonicals, redirects, sitemap, titles/metas, indexing requests), invoke the `gsc-change-preflight` skill.
+New **episode** additionally: emit the standalone **`VideoObject`** JSON-LD block (see Conventions — CI-gated, no longer inherited from `/watch`), run `_validate_episode.py`, `_update_stats.py`, add to the relevant topic in `_generate_topic_cards.py`, add the guest's LinkedIn URL to `js/linkedin-links.js`, thumbnail/og:image must be the real YouTube `maxresdefault.jpg` (never generated), and after prod deploy ping IndexNow. Before ANY SEO-surface change (canonicals, redirects, sitemap, titles/metas, indexing requests), invoke the `gsc-change-preflight` skill.
 
 ## Conventions
 
@@ -62,7 +62,7 @@ New **episode** additionally: run `_validate_episode.py`, `_update_stats.py`, ad
 - **Hard limits (publish gates):** `<meta name="description">` ≤ 155 chars; `<title>` ≤ 57 chars; every shorts-carousel `<img>` alt equals its `data-short-title`.
 - **Mutating scripts are dry-run by default** with `--apply` to act. Follow this in any new script.
 - **Styling:** shared chrome in `css/style.css` (CSS variables: `--purple-primary: #6C5CE7`, `--navy: #1A1A2E`, etc.); episode-body content uses inline styles. Prefer the variables in new work.
-- Episode pages carry three JSON-LD blocks: `PodcastEpisode`, `FAQPage` (2 curated Q&As), `BreadcrumbList`. Homepage carries `PodcastSeries` bound to Wikidata `Q139555656` and a Person schema with a `disambiguatingDescription` (there is an identically-named personal-finance Chris Hutchins — do not remove it).
+- Episode pages carry **four** JSON-LD blocks: `PodcastEpisode`, `FAQPage` (2 curated Q&As), `BreadcrumbList`, and a standalone **`VideoObject`** (the full-episode video, with each short as a `hasPart` VideoObject). The VideoObject is **mandatory and CI-gated** (`validate.yml` fails any `episodes/*.html` without one). It used to live on the `/watch` twin pages, which were retired in the 2026-09 consolidation — so a newly built episode page must emit the VideoObject itself (standalone top-level block, `@id` = `…/episodes/<slug>#video`, `url`/`mainEntityOfPage` = the episode canonical, `contentUrl`/`embedUrl` = the full YouTube video); do NOT nest it inside `PodcastEpisode.associatedMedia` (that field is the Buzzsprout audio `MediaObject`). Homepage carries `PodcastSeries` bound to Wikidata `Q139555656` and a Person schema with a `disambiguatingDescription` (there is an identically-named personal-finance Chris Hutchins — do not remove it).
 
 ## Gotchas
 
