@@ -31,6 +31,29 @@ jobs:
         if: ${{ !cancelled() }}
         run: python _validate_meta.py
 
+      # Every episode page MUST carry a VideoObject (its full-episode video
+      # schema). These used to live on the retired /watch twins and were
+      # migrated onto the /episodes hubs during the 2026-09 consolidation, so a
+      # newly built episode page has no /watch to inherit from — the builder
+      # must emit the VideoObject itself. This gate fails the first page that
+      # ships without one. FAQPage coverage is reported as a notice only (not
+      # every legacy episode has it yet).
+      - name: Every episode page has a VideoObject
+        if: ${{ !cancelled() }}
+        run: |
+          miss=""
+          for f in episodes/*.html; do
+            grep -Eq '"@type":[[:space:]]*"VideoObject"' "$f" || miss="$miss $f"
+          done
+          if [ -n "$miss" ]; then
+            echo "::error::episode page(s) missing a VideoObject JSON-LD block (required — see CLAUDE.md episode anatomy):$miss"
+            exit 1
+          fi
+          tot=$(ls episodes/*.html | wc -l)
+          echo "VideoObject present on all $tot episode pages"
+          faq=$(grep -lE '"@type":[[:space:]]*"FAQPage"' episodes/*.html | wc -l)
+          echo "::notice::FAQPage present on $faq/$tot episode pages"
+
       # if: !cancelled() on the remaining checks so one failing gate doesn't
       # hide the others' results.
       - name: Shorts alt normalize is a no-op (dry-run)
