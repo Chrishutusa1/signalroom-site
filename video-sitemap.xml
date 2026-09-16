@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://signalroompodcast.com/episodes/ai-governance-human-problem</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/8xnsNaLpJ9E/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why AI Governance Is a Human Problem</video:title>
+      <video:description>Arnaud Saint-Paul on governing yourself before you scale AI—coherence, model bias, and what governance looks like in high-stakes healthcare.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/8xnsNaLpJ9E</video:player_loc>
+      <video:duration>2622</video:duration>
+      <video:publication_date>2026-09-11T12:49:54Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/episodes/scaling-healthcare-ai-beyond-the-pilot</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Tco0Yj1lC5c/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Scaling Healthcare AI Beyond the Pilot</video:title>
+      <video:description>Dr. Sarah Matt on pilotitis—why healthcare AI stalls after the pilot, and what it takes to scale it with clinical voices in the room.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Tco0Yj1lC5c</video:player_loc>
+      <video:duration>3255</video:duration>
+      <video:publication_date>2026-09-11T11:56:07Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/episodes/why-patient-care-is-suffering</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/KHh5OV1a0ec/maxresdefault.jpg</video:thumbnail_loc>
