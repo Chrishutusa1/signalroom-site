@@ -64,6 +64,15 @@ After assignment, run a check equivalent to the audit and fail loudly if any reg
 - 23 existing `Parent Episode` values were corrected in Airtable from source links (1 low-confidence left). Re-running the algorithm above over the whole Shorts table will reconcile the rest.
 - 28 embedded clips on the live site have **no source link** in their description and are content-unverifiable — they need a human to watch them (or the routine to regenerate their descriptions with a correct source link so the algorithm can then resolve them).
 
+## 8. Page markup rules for injected shorts (added 2026-09-16)
+
+These apply when the routine writes shorts onto an `episodes/<slug>.html` page:
+
+- **Never write shorts into the `VideoObject` as `hasPart`.** Google reads `VideoObject.hasPart` as key-moment `Clip`s, which require `startOffset` and a `url` into the same video. Shorts are separate YouTube videos, so they fail that validation. Ahrefs flagged all 17 pages that had them on 2026-09-16, and `hasPart` was removed in PR #75. Shorts go only into the visible reel (`.episode-shorts-card`).
+- **Never add the episode's own full video to its reel.** Skip any clip whose YouTube ID equals the page VideoObject `embedUrl` ID. 8 reels had done this.
+- If a reel would end up empty, omit the whole `.episode-shorts-card`.
+- `validate.yml` enforces both rules ("VideoObject has no hasPart; reels never list the page's own episode"), so a routine run that breaks them fails CI.
+
 ## Reference implementation
 
 The audit + fix scripts that validate this spec live in this session's scratchpad: `injection_audit.py` (measures the mislabel rate), `resolve_all_embedded.py` / `reel_truth_audit.py` (source-link resolver), `airtable_parent_fix.py` (the corroboration-gated Airtable corrector).
