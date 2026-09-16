@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://signalroompodcast.com/watch/why-healthcare-data-integration-fails</loc>
+    <loc>https://signalroompodcast.com/episodes/why-patient-care-is-suffering</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/KHh5OV1a0ec/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Patient Care Is Suffering (And How to Fix Your Workflow)</video:title>
@@ -13,7 +13,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-agent-patient-data-leak-governance</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-agents-patient-data-leak</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/vpCO5zviKGM/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>His Own AI Agents Leaked Patient Data — Here&apos;s What He Built Next</video:title>
@@ -25,7 +25,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/chatgpt-medical-record-privacy</loc>
+    <loc>https://signalroompodcast.com/episodes/dont-upload-medical-records-to-chatgpt</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/ATp-HtxgNyw/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Don&apos;t Upload Your Medical Record to ChatGPT — Here&apos;s Why</video:title>
@@ -37,7 +37,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/unsupervised-ai-human-oversight</loc>
+    <loc>https://signalroompodcast.com/episodes/agentic-ai-human-in-the-loop</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/SIamsBgGsZ4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The AI Governance Problem Nobody&apos;s Talking About</video:title>
@@ -49,7 +49,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-addiction-treatment-3am-call</loc>
+    <loc>https://signalroompodcast.com/episodes/responsible-ai-addiction-treatment</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/pkX7oNrda6E/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The Addiction Treatment Crisis No One&apos;s Talking About</video:title>
@@ -61,7 +61,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/hospital-ai-governance-signoff</loc>
+    <loc>https://signalroompodcast.com/episodes/hospital-ai-pilots-fail</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/xaNBfCmMjrs/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI in Healthcare: The Hidden Reason It&apos;s Not Scaling</video:title>
@@ -73,7 +73,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-agent-healthcare-ransomware</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-agents-healthcare-security-risk</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/DlFna8wQghg/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why AI Agents Are Healthcare&apos;s Biggest Security Risk</video:title>
@@ -85,7 +85,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-security-risk-governance-gap</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-security-risk-governance-gap</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/zn4_Tp19tUI/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The Compliance Illusion: Why Written AI Policies Fail in Seconds</video:title>
@@ -97,7 +97,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/clinical-ai-shadow-formulary</loc>
+    <loc>https://signalroompodcast.com/episodes/clinical-ai-shadow-formulary</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/2FhujGxpkoY/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Your CISO Can't Govern What They Can't See | The Shadow Formulary Problem</video:title>
@@ -109,7 +109,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-legal-work-governance</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-legal-work-governance</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/h1VkrBwx5qw/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Lawyers Should Be Terrified of This AI Stat</video:title>
@@ -121,7 +121,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/why-new-nurses-quit-ai</loc>
+    <loc>https://signalroompodcast.com/episodes/why-new-nurses-quit-ai</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/d2yUcYU2US8/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why 50% of New Nurses Quit Within 2 Years | Angela Millan</video:title>
@@ -133,7 +133,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-eroding-workplace-communication</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-eroding-workplace-communication</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/-bS823lmyU4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The Silent Way AI is Destroying Corporate Trust | Katherine Tuominen</video:title>
@@ -145,7 +145,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/workforce-trust-crisis-ai</loc>
+    <loc>https://signalroompodcast.com/episodes/workforce-trust-crisis-ai</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/1FDllB_VhW4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The 2-Minute Habit Elite Executives Use Every Day | Diane Weaver</video:title>
@@ -157,7 +157,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-literacy-crisis-killing-healthcare</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-literacy-crisis-killing-healthcare</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/PCHVQ9mPHC0/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>A Doctor Warns: Don&apos;t Read Lab Results With AI | Dr. Steven Labkoff</video:title>
@@ -169,7 +169,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-ai-data-layer-privacy-governance</loc>
+    <loc>https://signalroompodcast.com/episodes/healthcare-ai-data-layer-privacy-governance</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/G6ChBbgV4xY/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Healthcare AI Stalls Before Deployment — This Is Why</video:title>
@@ -181,7 +181,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-losing-best-people</loc>
+    <loc>https://signalroompodcast.com/episodes/healthcare-losing-best-people</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/hez3mE_AlkA/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Pajama Time Documentation Is Killing Our Clinicians</video:title>
@@ -193,7 +193,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/dark-side-ai-medical-boom</loc>
+    <loc>https://signalroompodcast.com/episodes/dark-side-ai-medical-boom</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/7yo6GahIN2c/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The Dark Side of the $50B AI Medical Boom | Lorraine Fernandes</video:title>
@@ -205,7 +205,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-governance-project-failure-andre-samokish</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-shutdown-governance-privacy</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/pnAPQjVL3yk/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI Governance: Why Most AI Projects Fail Before They Scale | Andre Samokish</video:title>
@@ -217,7 +217,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/quiet-quitting-leadership-carly-caminiti</loc>
+    <loc>https://signalroompodcast.com/episodes/good-people-quietly-quitting</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/Wsv6Pm3axds/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Good Employees Quietly Quit - and What Leaders Miss | Carly Caminiti</video:title>
@@ -229,7 +229,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ethical-ai-operational-trust-markeisha-snaith</loc>
+    <loc>https://signalroompodcast.com/episodes/healthcare-leadership-operational-reality</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/MhHS4drVihM/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI in Healthcare Fails Without Operational Trust | MarKeisha Snaith</video:title>
@@ -241,7 +241,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/personal-ai-patient-advocacy-amanda-roser</loc>
+    <loc>https://signalroompodcast.com/episodes/caregivers-connective-tissue-healthcare</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/0QC5nLRY5fs/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Every Patient Needs a Personal AI Advocate | Amanda Roser</video:title>
@@ -253,7 +253,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-emergency-medicine-natasha-dole</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-in-the-er-clinical-judgment</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/wizfkLwkIYw/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI in Emergency Medicine: Design for the Worst 3 AM | Dr. Natasha Dole</video:title>
@@ -265,7 +265,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/cfo-ai-investment-regret-gary-cao</loc>
+    <loc>https://signalroompodcast.com/episodes/enterprise-ai-journey-data-foundations</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/iKiG5L005Fg/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The $100M Mistake CFOs Make by Going Late on AI</video:title>
@@ -277,7 +277,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-ai-pilots-fail-brian-sutherland</loc>
+    <loc>https://signalroompodcast.com/episodes/rethinking-healthcare-data-strategy</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/7lsO0GK-UK4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Healthcare AI Pilots Fail Before They Scale</video:title>
@@ -289,7 +289,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-drug-discovery-verification-david-finkelshteyn</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-verification-drug-discovery-ep17</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/TvaEQ87vgpo/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI Drug Discovery Has a Verification Problem</video:title>
@@ -301,7 +301,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-governance-cybersecurity-guman-chauhan</loc>
+    <loc>https://signalroompodcast.com/episodes/cybersecurity-ethical-leadership-ai</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/gR6OXuIxIOY/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI Governance Fails Without Cybersecurity</video:title>
@@ -313,7 +313,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/clinical-ai-time-back-mark-gendreau</loc>
+    <loc>https://signalroompodcast.com/episodes/balancing-human-judgment-clinical-trust</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/iNkDlnwZcMc/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Clinical AI Must Give Time Back to Patients</video:title>
@@ -325,7 +325,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-ai-roi-parth-gargish</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-hype-to-real-value</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/mMtwcZBCzb8/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Most Healthcare AI Never Delivers ROI | Parth Gargish</video:title>
@@ -337,7 +337,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-ai-complete-medical-records-aleida-lanza</loc>
+    <loc>https://signalroompodcast.com/episodes/healthcare-ai-complete-medical-records</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/8Yyji02GH7c/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Healthcare AI Fails Without Complete Medical Records | Aleida Lanza</video:title>
@@ -349,7 +349,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/responsible-ai-healthcare-asha-mahesh</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-ethics-ethical-leadership</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/qYeC8dMRmJ4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Responsible AI in Healthcare: How Leaders Build Trust | Asha Mahesh</video:title>
@@ -361,7 +361,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-trust-infrastructure-amit-shivpuja</loc>
+    <loc>https://signalroompodcast.com/episodes/hidden-infrastructure-of-trust</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/SY9xtWnOSOE/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>You Can't Scale AI Without Scaling Trust | Amit Shivpuja</video:title>
@@ -373,7 +373,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-security-cybersecurity-anitha-mareedu</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-security-risks-cybersecurity</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/FhmwMJsVPB8/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI Security Is Expanding the Attack Surface | Anitha Mareedu</video:title>
@@ -385,7 +385,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-ai-context-keshavan-seshadri</loc>
+    <loc>https://signalroompodcast.com/episodes/authentic-intelligence-explainability</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/UpJJejIHN-4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Healthcare AI Fails Without Context | Keshavan Seshadri</video:title>
@@ -397,7 +397,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/google-translate-healthcare-carol-velandia</loc>
+    <loc>https://signalroompodcast.com/episodes/ai-cant-replace-language-access</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/ghk8jZeWw1k/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Google Translate Fails in Healthcare | Carol Velandia</video:title>
@@ -409,7 +409,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/clinical-ai-readiness-susie-branagan</loc>
+    <loc>https://signalroompodcast.com/episodes/human-centered-ai-governance</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/RWrbko3Uo60/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Clinical AI Fails When Healthcare Workers Aren&#x27;t Ready | Susie Branagan</video:title>
@@ -421,7 +421,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/data-quality-healthcare-ai-danette-mcgilvray</loc>
+    <loc>https://signalroompodcast.com/episodes/data-quality-ai-strategy</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/NGBbYZSdcLs/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Bad Data Is Why Healthcare AI Fails | Danette McGilvray</video:title>
@@ -433,7 +433,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-ai-adoption-ritu-chakrawarty</loc>
+    <loc>https://signalroompodcast.com/episodes/healthcare-ai-not-one-size-fits-all</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/fwVp0NsSFSI/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Why Healthcare AI Fails at Adoption | Ritu Chakrawarty</video:title>
@@ -445,7 +445,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-leadership-trust-larry-kuhn</loc>
+    <loc>https://signalroompodcast.com/episodes/human-ai-leadership-equation</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/HAlocvYL0do/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>75% of Employees Don&#x27;t Trust Their CEO. AI Makes It Worse | Dr. Larry Kuhn</video:title>
@@ -457,7 +457,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-readiness-healthcare-ratnadeep-bhattacharjee</loc>
+    <loc>https://signalroompodcast.com/episodes/data-readiness-ai-adoption</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/oy7Q_tHzAng/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI Readiness: Why 85% of Healthcare Organizations Aren&#x27;t Ready | Ratnadeep Bhattacharjee</video:title>
@@ -469,7 +469,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/responsible-ai-healthcare-barry-chaiken-part-2</loc>
+    <loc>https://signalroompodcast.com/episodes/patient-physician-journey-part-2</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/H2sY21MyKgQ/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI in Healthcare: Start Small, Govern Everything | Dr. Barry Chaiken</video:title>
@@ -481,7 +481,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-patient-physician-journey-barry-chaiken</loc>
+    <loc>https://signalroompodcast.com/episodes/patient-physician-journey-part-1</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/Lhtm0LffY84/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>AI in Healthcare: Humanize Care Without Losing Clinical Judgment | Dr. Barry Chaiken</video:title>
@@ -493,7 +493,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-automation-trust-human-skills</loc>
+    <loc>https://signalroompodcast.com/episodes/can-we-trust-ai-with-our-health</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/qBZSphwlDfA/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Can We Actually Trust AI With Our Health?</video:title>
@@ -505,7 +505,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/healthcare-cybersecurity-human-risk</loc>
+    <loc>https://signalroompodcast.com/episodes/healthcare-cybersecurity-human-behavior</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/XbgCM4rG5N4/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>What They Won&apos;t Tell You About AI in Healthcare</video:title>
@@ -517,7 +517,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/watch/ai-front-desk-patient-access</loc>
+    <loc>https://signalroompodcast.com/episodes/outpatient-care-is-broken</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/6pwLdgbTc0s/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Outpatient Care Is Broken—Here&apos;s How to Fix It</video:title>
