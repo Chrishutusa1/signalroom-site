@@ -8,7 +8,7 @@
 - **Standalone** top-level `<script type="application/ld+json">` block in `<head>`, next to the other three JSON-LD blocks.
 - **Do NOT** nest it inside `PodcastEpisode.associatedMedia` — that field is the Buzzsprout **audio** `MediaObject` (`{"@type":"MediaObject","contentUrl":"https://www.buzzsprout.com/2550733/episodes/<id>"}`).
 - `@id` = `…/episodes/<slug>#video`; `url` and `mainEntityOfPage` = the episode's extensionless canonical.
-- `hasPart` is **added later** by the shorts-injection pass (each short as a `VideoObject`), **not** at page creation. A fresh page has no `hasPart`.
+- **Never add `hasPart`.** Google treats `VideoObject.hasPart` as key-moment `Clip`s (required: `name`, `startOffset`, `url` pointing into this same video). Shorts are separate YouTube videos, so they fail that validation. They belong only in the visible reel. CI fails any episode page whose VideoObject has `hasPart`.
 
 ## Template (fill the placeholders)
 ```html
@@ -37,19 +37,11 @@
 </script>
 ```
 
-## After the shorts-injection pass adds clips
-Each short becomes a `hasPart` entry on this VideoObject, and its `data-video-id` in the reel must match:
-```json
-"hasPart": [
-  {
-    "@type": "VideoObject",
-    "name": "<short title>",
-    "thumbnailUrl": ["https://i.ytimg.com/vi/<SHORT_ID>/hqdefault.jpg"],
-    "contentUrl": "https://www.youtube.com/shorts/<SHORT_ID>",
-    "embedUrl": "https://www.youtube.com/embed/<SHORT_ID>",
-    "uploadDate": "<ISO-8601>",
-    "duration": "<ISO-8601>"
-  }
-]
-```
-The publish check for this is `reel data-video-id set == VideoObject hasPart set` on the page (see the reel-consistency scripts). Shorts→episode attribution is governed by `episode-assets/shorts-attribution-spec.md`.
+## When the shorts-injection pass adds clips
+Shorts go **only** into the visible reel (`.episode-shorts-card`). Do not write them into the VideoObject.
+
+- **Never** put the episode's own full video (the VideoObject `embedUrl` ID) in the reel. On 2026-09-16, 8 reels were found listing their own 20 to 60 minute episode as a "short", and those cards were removed.
+- If removing an item empties a reel, remove the whole `.episode-shorts-card`. A page with no shorts has no carousel, same as a brand-new page.
+- Both rules are enforced by the `validate.yml` gate "VideoObject has no hasPart; reels never list the page's own episode".
+
+Key-moment `Clip` markup would be valid only with real start and end offsets into the full episode video. Never estimate or invent offsets. Shorts→episode attribution is governed by `episode-assets/shorts-attribution-spec.md`.

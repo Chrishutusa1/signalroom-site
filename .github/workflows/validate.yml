@@ -54,6 +54,36 @@ jobs:
           faq=$(grep -lE '"@type":[[:space:]]*"FAQPage"' episodes/*.html | wc -l)
           echo "::notice::FAQPage present on $faq/$tot episode pages"
 
+      # Google reads VideoObject.hasPart as key-moment Clips (startOffset + url
+      # into the same video). Shorts are separate YouTube videos, so listing them
+      # there raised "Structured data has Google rich results validation error"
+      # on every page that had them (Ahrefs Site Audit, 2026-09-16). Shorts live
+      # only in the visible reel, and a reel must never list the page's own full
+      # episode video (8 pages did).
+      - name: VideoObject has no hasPart; reels never list the page's own episode
+        if: ${{ !cancelled() }}
+        run: |
+          python - <<'PY'
+          import glob, json, re, sys
+          bad = []
+          for f in sorted(glob.glob("episodes/*.html")):
+              h = open(f, encoding="utf-8").read()
+              for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
+                  d = json.loads(raw)
+                  if d.get("@type") != "VideoObject":
+                      continue
+                  if "hasPart" in d:
+                      bad.append(f"{f}: VideoObject has hasPart")
+                  m = re.search(r"embed/([\w-]{11})", d.get("embedUrl", ""))
+                  reel = re.findall(r'class="episode-shorts-item[^"]*"[^>]*data-video-id="([\w-]{11})"', h)
+                  if m and m.group(1) in reel:
+                      bad.append(f"{f}: reel lists the page's own episode video {m.group(1)}")
+          for b in bad:
+              print(f"::error::{b}")
+          print(f"checked {len(glob.glob('episodes/*.html'))} episode pages, {len(bad)} problem(s)")
+          sys.exit(1 if bad else 0)
+          PY
+
       # if: !cancelled() on the remaining checks so one failing gate doesn't
       # hide the others' results.
       - name: Shorts alt normalize is a no-op (dry-run)
