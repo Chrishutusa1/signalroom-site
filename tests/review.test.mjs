@@ -12,6 +12,7 @@ async function fixture(){
  const state=new Store(),content=new Store(),codes=[];let time=1e12;
  await state.setJSON('grants/test',{enabled:true,emails:['guest@example.com']});
  await content.setJSON('test/manifest',{files:{'index.html':{size:7,type:'text/html'},'movie.mp4':{size:7,type:'video/mp4'}}});
+ await content.setJSON('test/index.html','private');
  const handler=createReviewHandler({state,content,now:()=>time,sendCode:async(email,code)=>codes.push({email,code}),readMedia:async()=>({body:'private',status:200,headers:{}})});
  const call=(p='',method='GET',body='',session='',origin='https://signalroompodcast.com')=>handler(new Request(`https://signalroompodcast.com/review/test/${p}`,{method,headers:{origin,cookie:session,'content-type':'application/x-www-form-urlencoded'},...(method==='POST'?{body}:{})}),{ip:'192.0.2.1'});
  const login=async()=>{await call('request','POST','email=guest%40example.com');const r=await call('verify','POST',`email=guest%40example.com&code=${codes.at(-1).code}`);return r.headers.get('set-cookie').split(';')[0];};
