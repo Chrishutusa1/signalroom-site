@@ -1,5 +1,5 @@
 import { getStore } from '@netlify/blobs';
-import { createReviewHandler } from './review-core.mjs';
+import { createReviewHandler } from '../lib/review-core.mjs';
 
 export default async (request,context)=>{
  try{

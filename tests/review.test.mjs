@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createReviewHandler} from '../netlify/edge-functions/review-core.mjs';
+import {createReviewHandler} from '../netlify/lib/review-core.mjs';
 class Store {
  constructor(){this.values=new Map();this.n=0;}
  async get(k){return structuredClone(this.values.get(k)?.data??null);}
