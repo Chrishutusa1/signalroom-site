@@ -15,6 +15,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Guest review access tests
+        run: |
+          npm ci
+          npm test
+
       - name: Episode publish gates (_validate_episode.py)
         run: |
           rc=0
