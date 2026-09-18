@@ -1,0 +1,6 @@
+node_modules/
+tests/
+tools/
+netlify/
+package.json
+package-lock.json
