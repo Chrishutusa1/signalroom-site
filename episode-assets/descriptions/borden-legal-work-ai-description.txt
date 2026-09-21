@@ -1,0 +1,8 @@
+TEASER: A former intelligence analyst turned AI lawyer on why ~80% of legal work is better done by AI — and how to govern it.
+
+DESCRIPTION:
+Bennett Borden has spent his career at the intersection of intelligence analysis, law, data science, and AI governance — and he has the data to back a provocative claim. After analyzing roughly ten years of time entries from some 14,000 attorneys, he concluded that about 80% of what a lawyer does is better done by AI. Now founder and CEO of Clarion AI Partners, Borden joins Chris Hutchins to unpack what that means far beyond the law firm.
+
+They explore what AI governance actually looks like beyond the policy document, why "supersuiting" your people — think Iron Man, not the Terminator — beats replacing them, and how the common-law standard of reasonableness keeps AI defensible even while regulation stays unsettled. Borden also digs into his public-interest work on child safety and access to justice, the idea of constitutional AI and "forming the psychology" of systems, and why 80% of the AI challenge is really a human and change-management problem.
+
+Subscribe to The Signal Room for more conversations on healthcare AI, governance, and trust.

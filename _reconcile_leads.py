@@ -15,8 +15,8 @@ Airtable record. Exit code is non-zero when anything unexplained is missing
 (loud-failure repo convention). Nothing is ever written to Airtable or Netlify.
 
   python _reconcile_leads.py            # report; exit 1 if unexplained misses
-  python _reconcile_leads.py --notify   # additionally POST the report to
-                                        # LEAD_NOTIFY_WEBHOOK_URL (emails Chris)
+  python _reconcile_leads.py --notify   # additionally email the report to Chris
+                                        # via Resend (RESEND_API_KEY/AUTOREPLY_FROM)
 
 INTENTIONAL absences (deleted spam, merged duplicates, pivoted applications)
 belong in _reconcile_leads_resolved.json: {"<netlify submission id>": "reason"}.
@@ -96,6 +96,35 @@ def airtable_pat():
                      "Cannot reconcile without read access to Airtable.")
 
 
+def site_env(key):
+    """Resolve an env value the same way as airtable_pat(): process env first,
+    then the SR site's Netlify env vars, then the local .env fallback files.
+    Returns None if the key is not found anywhere."""
+    val = os.environ.get(key)
+    if val:
+        return val
+    try:
+        for var in run_netlify(["api", "getEnvVars",
+                                "--data", json.dumps({"site_id": SR_SITE_ID})]):
+            if var.get("key") == key:
+                for v in var.get("values", []):
+                    if v.get("value"):
+                        return v["value"]
+    except SystemExit as e:
+        print(f"note: getEnvVars lookup for {key} failed ({e}); trying .env files",
+              file=sys.stderr)
+    for path in ENV_FALLBACK_FILES:
+        try:
+            with open(path, encoding="utf-8") as fh:
+                for line in fh:
+                    m = re.match(rf"\s*{re.escape(key)}\s*=\s*(\S+)", line)
+                    if m:
+                        return m.group(1).strip().strip('"')
+        except OSError:
+            continue
+    return None
+
+
 def airtable_records(pat, table_id):
     records, offset = [], None
     while True:
@@ -167,24 +196,31 @@ def main():
 
     if missing and notify:
         try:
-            hook = None
-            for var in run_netlify(["api", "getEnvVars",
-                                    "--data", json.dumps({"site_id": SR_SITE_ID})]):
-                if var.get("key") == "LEAD_NOTIFY_WEBHOOK_URL":
-                    hook = next((v["value"] for v in var.get("values", [])
-                                 if v.get("value")), None)
-            if hook:
+            api_key = site_env("RESEND_API_KEY")
+            sender = site_env("AUTOREPLY_FROM")
+            if not api_key or not sender:
+                print("notify SKIPPED: RESEND_API_KEY/AUTOREPLY_FROM not found — "
+                      "no relay to send the reconciliation alert through.",
+                      file=sys.stderr)
+            else:
+                to = [s.strip() for s
+                      in (site_env("LEAD_NOTIFY_TO")
+                          or "chris@hutchinsdatastrategy.com").split(",")
+                      if s.strip()]
                 payload = json.dumps({
-                    "name": "LEAD RECONCILIATION ALERT",
-                    "email": "reconciliation@local-script",
-                    "topics": f"{len(missing)} form submission(s) missing from "
-                              f"Airtable:\n" + "\n".join(missing),
-                    "airtable_status": "reconciliation-miss",
+                    "from": sender,
+                    "to": to,
+                    "subject": f"LEAD RECONCILIATION ALERT — {len(missing)} "
+                               f"submission(s) missing from Airtable",
+                    "text": f"{len(missing)} form submission(s) missing from "
+                            f"Airtable:\n\n" + "\n".join(missing),
                 }).encode()
                 urllib.request.urlopen(urllib.request.Request(
-                    hook, data=payload, headers={"Content-Type": "application/json"}),
+                    "https://api.resend.com/emails", data=payload,
+                    headers={"Authorization": f"Bearer {api_key}",
+                             "Content-Type": "application/json"}),
                     timeout=30)
-                print("notify: alert POSTed to LEAD_NOTIFY_WEBHOOK_URL")
+                print("notify: reconciliation alert emailed via Resend")
         except Exception as e:  # alert failure must not hide the exit code
             print(f"notify FAILED: {e}", file=sys.stderr)
 

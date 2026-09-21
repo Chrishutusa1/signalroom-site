@@ -1,0 +1,19 @@
+THE SIGNAL ROOM — EP46 PROMO REEL
+Episode: Why AI Governance Is a Human Problem
+
+PROMO REEL POST:
+HOOK: Everyone's racing to govern the AI model. Almost no one is governing the thing underneath it — themselves.
+REHOOK: Arnaud Saint-Paul read about someone who fired up an AI system and burned $38,000 in a single night on a runaway loop — not a tech failure, a presence failure.
+PUNCH: Scale AI on top of a dysfunctional organization and you don't fix the dysfunction — you automate it, then multiply it by ten.
+BODY: In EP46 of The Signal Room, Arnaud Saint-Paul explains why coherence and self-governance have to come before AI adoption, not after — and how his Heart Leadership Index maps leadership across seven dimensions (he even ran it through Claude and ChatGPT and watched the models disagree). Host Chris Hutchins presses him on what this means when the stakes are as high as healthcare, where fragmented leadership doesn't just cost money — it costs trust. Watch or listen to the full conversation and rethink the order of operations on your AI rollout.
+
+
+FIRST COMMENT:
+Full episode with Arnaud Saint-Paul on why coherent, self-governed leadership has to come before you scale AI: https://signalroompodcast.com/episodes/ai-governance-human-problem
+Watch on YouTube: https://youtu.be/8xnsNaLpJ9E
+Take the free Heart Leadership assessment and tell us where your team lands.
+
+
+TAGS TO MENTION:
+Guest: Arnaud Saint-Paul — https://www.linkedin.com/in/arnaudsaintpaul
+Host: Chris Hutchins — https://www.linkedin.com/in/chutchins-healthcare

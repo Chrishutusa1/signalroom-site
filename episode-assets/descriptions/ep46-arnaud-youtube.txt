@@ -1,0 +1,45 @@
+Why AI Governance Is a Human Problem — Arnaud Saint-Paul | The Signal Room EP46
+
+Everyone's racing to govern the AI model. Almost no one is governing the thing underneath it — themselves. In this episode, serial entrepreneur Arnaud Saint-Paul (Founder & CEO of Tapuat / Heart Leadership Institute) makes a provocative case: scale AI on top of a dysfunctional, fragmented organization and you don't fix the dysfunction — you automate it and multiply it by ten.
+
+Host Chris Hutchins presses Arnaud on what "coherence" and self-governance actually mean, why they have to come before AI adoption, and why the stakes are highest in healthcare — where fragmented leadership doesn't just cost money, it costs trust. Arnaud also shares his Heart Leadership Index, a framework that maps leadership across seven dimensions (he even ran it through ChatGPT and Claude and watched the models disagree).
+
+In this conversation:
+• Why AI is an accelerator that multiplies a leader's existing challenges by 10x
+• What "coherence" really means — and the orchestra-before-the-conductor metaphor
+• How a fragmented leader guarantees a fragmented AI rollout
+• Why soft skills become the only skills once AI handles the hard ones
+• What to actually do first, before you scale
+
+Chapters
+0:00 The claim: the human side of leadership beats the tech
+2:31 Why AI multiplies a leader's existing challenges (x10)
+5:20 Running the Heart Leadership Index on ChatGPT vs. Claude
+10:03 What "coherence" really means (the orchestra before the conductor)
+12:42 The fragmented-leader problem: your rollout inherits your chaos
+18:02 The research: measuring coherence across 700+ tests
+28:06 Defining "fragmentation" — order out of chaos
+30:01 How fragmentation compounds and hits the bottom line
+33:33 Why the downside can dwarf the upside in healthcare
+35:17 Where to start: measure your team's coherence (free)
+38:45 The next 3-5 years of AI + human coherence
+42:16 The takeaway: coherence decides whether AI helps or scales the mess
+
+(Chapter timestamps are derived from the episode edit; verify against the uploaded cut and shift if the video has an intro offset.)
+
+Full episode + show notes: https://signalroompodcast.com/episodes/ai-governance-human-problem
+
+Connect
+Guest — Arnaud Saint-Paul: https://www.linkedin.com/in/arnaudsaintpaul
+Host — Chris Hutchins: https://www.linkedin.com/in/chutchins-healthcare
+
+About The Signal Room
+The Signal Room is a podcast on AI strategy, AI governance, and healthcare AI — cutting through the noise with the practitioners actually building and deploying it. New episodes regularly; subscribe and hit the bell so you don't miss one.
+
+If this reframed how you think about AI adoption, like the video, subscribe, and drop a comment: where does your team land on coherence?
+
+#AIGovernance #HealthcareAI #ConsciousLeadership #Leadership #AIAdoption #OrganizationalCoherence #TrustInAI #FutureOfWork #TheSignalRoom #SoftSkills
+
+---
+TAGS (YouTube backend, comma-separated):
+AI governance, healthcare AI, conscious leadership, Arnaud Saint-Paul, Heart Leadership Index, organizational coherence, self-governance, leadership development, AI adoption, human factors, trust in AI, soft skills, executive leadership, The Signal Room, Chris Hutchins

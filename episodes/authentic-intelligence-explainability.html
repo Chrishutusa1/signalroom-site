@@ -68,6 +68,34 @@
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signalroompodcast.com/"}, {"@type": "ListItem", "position": 2, "name": "Episodes", "item": "https://signalroompodcast.com/episodes"}, {"@type": "ListItem", "position": 3, "name": "AI Explainability, Algorithmic Bias, and Human-in-the-Loop Design in Healthcare", "item": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability"}]}
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "@id": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability#video",
+  "name": "Why Healthcare AI Fails Without Context | Keshavan Seshadri",
+  "description": "Keshavan Seshadri explains why healthcare AI fails without patient, task, operational, and institutional context, and how explainability and human oversight should be designed in.",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/UpJJejIHN-4/maxresdefault.jpg"
+  ],
+  "uploadDate": "2025-12-24T06:00:24Z",
+  "duration": "PT28M24S",
+  "embedUrl": "https://www.youtube.com/embed/UpJJejIHN-4",
+  "contentUrl": "https://www.youtube.com/watch?v=UpJJejIHN-4",
+  "url": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability",
+  "mainEntityOfPage": "https://signalroompodcast.com/episodes/authentic-intelligence-explainability",
+  "isFamilyFriendly": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  }
+}
+</script>
 </head>
 <body>
   <nav class="nav" id="navbar">
@@ -107,9 +135,6 @@
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/UpJJejIHN-4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="AI Explainability, Algorithmic Bias, and Human-in-the-Loop Design in Healthcare"></iframe>
 </div>
 </div>
-          <div style="max-width:800px;margin:-0.5rem auto 1.5rem;text-align:center;font-size:0.95rem;">
-            <a href="/watch/healthcare-ai-context-keshavan-seshadri" style="font-weight:700;color:#5148dc;">Open the dedicated video watch page</a>
-          </div>
           <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
 <span style="background: #1a1a2e; color: #fff; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Episode 9</span>
@@ -187,17 +212,6 @@
         </div>
         
 <div class="episode-sidebar">
-<div class="sidebar-card episode-shorts-card" aria-labelledby="keshavan-seshadri-episode-shorts-title">
-<h4 id="keshavan-seshadri-episode-shorts-title">Keshavan Seshadri Shorts</h4>
-<p>Short clips featuring Keshavan Seshadri from this Signal Room episode.</p>
-<div class="episode-shorts-player">
-<iframe title="Keshavan Seshadri Shorts reel" src="https://www.youtube-nocookie.com/embed/PxnqxFoYDt0?autoplay=1&amp;loop=1&amp;playlist=PxnqxFoYDt0&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="PxnqxFoYDt0"></iframe>
-</div>
-<div class="episode-shorts-list" aria-label="Shorts featuring Keshavan Seshadri">
-<a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/PxnqxFoYDt0" target="_blank" rel="noopener" data-video-id="PxnqxFoYDt0" data-short-title="Why AI is Not Magic?"><img src="https://img.youtube.com/vi/PxnqxFoYDt0/mqdefault.jpg" alt="Why AI is Not Magic?" loading="lazy"><span>Why AI is Not Magic?</span></a>
-</div>
-<a class="episode-shorts-youtube" href="https://www.youtube.com/@SignalRoomPodcast/shorts" target="_blank" rel="noopener">Browse all Shorts</a>
-</div>
 <div class="sidebar-card">
 <h4>Guest</h4>
 <div class="sidebar-guest">
@@ -331,25 +345,5 @@
     const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
     document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
   </script>
-<script>
-  document.querySelectorAll('.episode-shorts-card').forEach((card) => {
-    const player = card.querySelector('.episode-shorts-player iframe');
-    const items = card.querySelectorAll('.episode-shorts-item');
-    if (!player || !items.length) return;
-    items.forEach((item) => {
-      item.addEventListener('click', (event) => {
-        event.preventDefault();
-        const videoId = item.dataset.videoId;
-        if (!videoId) return;
-        const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
-        const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
-        player.title = item.dataset.shortTitle || player.title;
-        items.forEach((link) => link.classList.remove('is-active'));
-        item.classList.add('is-active');
-      });
-    });
-  });
-</script>
 </body>
 </html>

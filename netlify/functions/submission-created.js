@@ -13,12 +13,17 @@
  *   AIRTABLE_GUEST_APPS_TABLE   - "Guest Applications" (table name or table ID)
  *
  * Optional env vars (scope: functions):
- *   LEAD_NOTIFY_WEBHOOK_URL - incoming webhook for new-application alerts. Posts
- *       flat, form-encoded fields (summary, name, email, title, linkedin, theme,
- *       topics, context, airtable_status). If unset, notification is skipped.
- *   RESEND_API_KEY  - Resend API key for the on-brand auto-reply to the applicant.
+ *   LEAD_NOTIFY_TO  - comma-separated recipient(s) for new-application alerts,
+ *       sent via Resend. Defaults to chris@hutchinsdatastrategy.com if unset.
+ *   RESEND_API_KEY  - Resend API key, used for both the new-application alert and
+ *       the on-brand auto-reply to the applicant.
  *   AUTOREPLY_FROM  - verified sender, e.g. "The Signal Room <chris@hutchinsdatastrategy.com>".
- *       If either is unset, the auto-reply is skipped.
+ *       If either RESEND_API_KEY or AUTOREPLY_FROM is unset, both the alert and
+ *       the auto-reply are skipped.
+ *
+ * 2026-09-04: replaced LEAD_NOTIFY_WEBHOOK_URL (a Zapier catch hook) with a
+ * direct Resend send after the Zapier account was deinstalled — no third-party
+ * relay in the notification path anymore.
  */
 
 // A hostile submission can push multi-KB strings into Airtable and the
@@ -37,42 +42,40 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-// Best-effort new-application notification. Never throws — a notification failure
-// must not lose the application (already stored in Netlify Forms + Airtable).
+// Best-effort new-application notification via Resend, direct (no relay).
+// Never throws — a notification failure must not lose the application (already
+// stored in Netlify Forms + Airtable).
 async function notifyApplication(fields, airtableStatus, recordId) {
-  const webhook = process.env.LEAD_NOTIFY_WEBHOOK_URL;
-  if (!webhook) return;
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.AUTOREPLY_FROM;
+  if (!apiKey || !from) return;
 
-  const summary = [
-    `New guest application (Signal Room) — ${fields.Name || "(no name)"}`,
-    `Email: ${fields.Email || "—"}`,
-    `Title & Org: ${fields["Title & Organization"] || "—"}`,
-    `LinkedIn: ${fields.LinkedIn || "—"}`,
-    `Theme: ${fields.Theme || "—"}`,
-    fields.Topics ? `Topics: ${fields.Topics}` : null,
-    fields.Context ? `Context: ${fields.Context}` : null,
-    `Airtable: ${airtableStatus}${recordId ? ` (${recordId})` : ""}`,
-  ]
-    .filter(Boolean)
-    .join("\n");
+  const to = (process.env.LEAD_NOTIFY_TO || "chris@hutchinsdatastrategy.com")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
 
-  const body = new URLSearchParams({
-    summary,
-    name: fields.Name || "",
-    email: fields.Email || "",
-    title: fields["Title & Organization"] || "",
-    linkedin: fields.LinkedIn || "",
-    theme: fields.Theme || "",
-    topics: fields.Topics || "",
-    context: fields.Context || "",
-    airtable_status: airtableStatus,
-  }).toString();
+  const html =
+    `<h2>New guest application (Signal Room) — ${escapeHtml(fields.Name) || "(no name)"}</h2>` +
+    `<p><b>Email:</b> ${escapeHtml(fields.Email) || "-"}<br>` +
+    `<b>Title &amp; Org:</b> ${escapeHtml(fields["Title & Organization"]) || "-"}<br>` +
+    `<b>LinkedIn:</b> ${escapeHtml(fields.LinkedIn) || "-"}<br>` +
+    `<b>Theme:</b> ${escapeHtml(fields.Theme) || "-"}</p>` +
+    (fields.Topics ? `<p><b>Topics:</b> ${escapeHtml(fields.Topics)}</p>` : "") +
+    (fields.Context ? `<p><b>Context:</b> ${escapeHtml(fields.Context)}</p>` : "") +
+    `<p><b>Airtable:</b> ${escapeHtml(airtableStatus)}${recordId ? ` (${escapeHtml(recordId)})` : ""}</p>`;
 
   try {
-    await fetch(webhook, {
+    await fetch("https://api.resend.com/emails", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body,
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from,
+        to,
+        reply_to: fields.Email || undefined,
+        subject: `New guest application (Signal Room) — ${fields.Name || "(no name)"}`,
+        html,
+      }),
     });
   } catch (err) {
     console.error("application notification failed (non-fatal)", err);

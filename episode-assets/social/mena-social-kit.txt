@@ -1,0 +1,37 @@
+EP36 — Angel Mena, MD (CMO, symplr) — "The Hidden Reason Hospital AI Keeps Failing"
+Backlink (full episode): https://signalroompodcast.com/episodes/hospital-ai-pilots-fail
+YouTube: https://youtu.be/xaNBfCmMjrs
+
+TITLES:
+- Why Hospital AI Pilots Keep Failing
+- You Can't Layer AI on a Broken Process
+- The Hidden Reason Hospital AI Keeps Failing
+- A Physician-CMO on Why Healthcare AI Stalls
+
+TAGS:
+healthcare AI, hospital AI, AI pilots, clinical documentation, ambient AI, AI governance, physician burnout, health system operations, AI adoption, symplr, Angel Mena, agentic AI, healthcare technology, digital health, chief medical officer, EHR, artificial intelligence
+
+HASHTAGS:
+#HealthcareAI #HospitalAI #DigitalHealth #AIinHealthcare #ClinicalAI #HealthTech #AIGovernance #PhysicianBurnout #AmbientAI
+
+PULL-QUOTES:
+"You can't just layer AI on top of a broken process." — Angel Mena
+"I've never been a fan of pilots. The amount of energy and time you have to invest to drive adoption of a new technology is enormous — how do you justify that for a smaller opportunity?" — Angel Mena
+"You can't have shadow IT in healthcare. You need to take every technology through the same process of vetting the security side." — Angel Mena
+"You can't govern by committee everything. At some point, someone needs to make a decision and move things forward." — Angel Mena
+"We were so focused on what we spent the most time on day-to-day that we tried to put AI around that, instead of understanding how we ended up spending so much time in the EMR in the first place." — Angel Mena
+
+PROMO REEL POST:
+HOOK: Most hospital AI pilots don't fail because the model is wrong.
+REHOOK: They fail because we bolted AI onto a process that was already broken.
+PUNCH: You can't automate your way out of dysfunction — you'll just do the wrong thing faster.
+BODY: On The Signal Room, physician and symplr chief medical officer Angel Mena, MD sits down with host Chris Hutchins to unpack why so many healthcare AI projects stall between the demo and production — from the "three amigos" who actually sign the check, to why we may have automated the wrong part of documentation entirely. Watch the full conversation and rethink what "AI-ready" really means.
+
+FIRST COMMENT:
+Full episode with Angel Mena, MD (CMO, symplr) and host Chris Hutchins — why hospital AI keeps failing and what actually works before you scale: https://signalroompodcast.com/episodes/hospital-ai-pilots-fail
+Prefer video? Watch on YouTube: https://youtu.be/xaNBfCmMjrs
+Follow The Signal Room for more honest conversations on healthcare AI.
+
+TAGS TO MENTION:
+Guest: Angel Mena, MD — https://www.linkedin.com/in/angeljmenamd
+Host: Chris Hutchins — https://www.linkedin.com/in/chutchins-healthcare

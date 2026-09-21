@@ -1,0 +1,8 @@
+TEASER: You can't layer AI on top of a broken process — a physician-CMO on why hospital AI pilots stall and what actually works.
+
+DESCRIPTION:
+Most AI conversations in healthcare start with the model. Angel Mena, MD, says that's exactly the problem. An internal medicine physician and former residency program director — now chief medical officer at symplr, sitting over the operational backbone of credentialing, scheduling, and workforce compliance — Mena joins Chris Hutchins to explain why you can't just layer AI on top of a broken process, and why so many pilots stall before they ever scale.
+
+They get into the administrative burden crushing clinicians, why solutions have to be built with the people at the bedside rather than for them, and how to speak to the "three amigos" — the CFO, COO, and CMO — when the ROI is real but hard to put on a P&L. Mena shares where AI is genuinely delivering today, why pilots fail, how to think about ownership, sign-off, and security, and why we may have automated the wrong part of clinical documentation in the first place.
+
+Subscribe to The Signal Room for more honest conversations on healthcare AI.
