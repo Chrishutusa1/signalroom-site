@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createReviewHandler} from '../netlify/lib/review-core.mjs';
+import {createReviewHandler,hash} from '../netlify/lib/review-core.mjs';
 class Store {
  constructor(){this.values=new Map();this.n=0;}
  async get(k){return structuredClone(this.values.get(k)?.data??null);}
@@ -27,3 +27,33 @@ test('grant removal revokes existing sessions immediately',async()=>{const f=awa
 test('cross-origin requests, unsupported ranges, traversal and session expiry are denied',async()=>{const f=await fixture();assert.equal((await f.call('request','POST','email=guest%40example.com','','https://evil.example')).status,403);const s=await f.login();assert.equal((await f.call('files/%2e%2e%2fsecret','GET','',s)).status,404);f.advance(28800001);assert.equal((await f.call('files/movie.mp4','GET','',s)).status,401);});
 test('logout invalidates the stored session',async()=>{const f=await fixture(),s=await f.login();assert.equal((await f.call('logout','POST','',s)).status,303);assert.equal((await f.call('files/movie.mp4','GET','',s)).status,401);});
 test('a token for another episode does not authorize this episode',async()=>{const f=await fixture(),s=await f.login();const entry=[...f.state.values.keys()].find(k=>k.startsWith('sessions/'));const value=await f.state.get(entry);await f.state.setJSON(entry,{...value,episode:'someone-else'});assert.equal((await f.call('files/movie.mp4','GET','',s)).status,401);});
+
+async function invitation(f,overrides={}){
+ const secret='a'.repeat(64),key=`invites/${await hash(secret)}`;
+ await f.state.setJSON(key,{episode:'test',email:'guest@example.com',expires:1e12+60000,...overrides});
+ return {secret,key,open:()=>f.call(`access/${secret}`)};
+}
+test('private link opens without email/code, redirects to clean URL and remains reusable',async()=>{
+ const f=await fixture(),i=await invitation(f),r=await i.open();
+ assert.equal(r.status,303);assert.equal(r.headers.get('location'),'/review/test/');
+ const cookie=r.headers.get('set-cookie');for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/review/test/','Max-Age=60'])assert.ok(cookie.includes(flag));
+ assert.match(r.headers.get('cache-control'),/no-store/);assert.equal(r.headers.get('referrer-policy'),'no-referrer');
+ assert.equal(await (await f.call('files/movie.mp4','GET','',cookie.split(';')[0])).text(),'private');
+ assert.equal((await i.open()).status,303);assert.equal(f.codes.length,0);
+ assert.equal((await f.call(`access/${i.secret}`,'HEAD')).status,405);
+});
+test('invalid, expired, revoked, other-episode and uninvited links are denied',async()=>{
+ for(const overrides of [{expires:1e12},{revoked:true},{episode:'other'},{email:'other@example.com'}]){
+  const f=await fixture(),i=await invitation(f,overrides);assert.equal((await i.open()).status,403);
+ }
+ const f=await fixture();assert.equal((await f.call('access/not-a-secret')).status,403);assert.equal((await f.call('access/'+'b'.repeat(64))).status,403);
+});
+test('revocation, grant removal and expiry also revoke active invitation sessions',async()=>{
+ for(const change of ['revoke','remove','expire']){
+  const f=await fixture(),i=await invitation(f),r=await i.open(),cookie=r.headers.get('set-cookie').split(';')[0];
+  if(change==='revoke')await f.state.setJSON(i.key,{...(await f.state.get(i.key)),revoked:true});
+  if(change==='remove')await f.state.setJSON('grants/test',{enabled:true,emails:[]});
+  if(change==='expire')f.advance(60001);
+  assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,401);assert.equal((await i.open()).status,403);
+ }
+});

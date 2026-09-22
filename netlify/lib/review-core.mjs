@@ -5,7 +5,7 @@ const random = () => Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.
 const headers = {'Cache-Control':'private, no-store','Netlify-CDN-Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow, noarchive','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','X-Frame-Options':'DENY','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"};
 const response = (body,status=200,extra={}) => new Response(body,{status,headers:{...headers,...extra}});
 const cookieName = episode => `__Secure-sr_${episode.replaceAll('-','_')}`;
-const cookie = (episode,token,age=28800) => `${cookieName(episode)}=${token}; Path=/review/${episode}/; HttpOnly; Secure; SameSite=Strict; Max-Age=${age}`;
+const cookie = (episode,token,age=28800,sameSite='Strict') => `${cookieName(episode)}=${token}; Path=/review/${episode}/; HttpOnly; Secure; SameSite=${sameSite}; Max-Age=${age}`;
 const page = (episode,message='',verify=false,email='') => `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Guest review | The Signal Room</title><style>*{box-sizing:border-box}body{margin:0;background:#160d24;color:#f9f6ff;font:17px/1.6 system-ui;min-height:100vh;display:grid;place-items:center;padding:24px}.card{width:min(100%,480px);background:#251936;border:1px solid #4e3b64;border-radius:18px;padding:36px}.brand{color:#edce65;font-size:14px;letter-spacing:.2em}h1{font-size:30px;line-height:1.2}p{color:#d4cadd}label{display:block;margin:20px 0 8px}input,button{font:inherit;width:100%;border-radius:8px;padding:12px}input{border:1px solid #a393b6;background:#160d24;color:white}button{background:#edce65;color:#1a1226;font-weight:700;border:0;margin-top:20px;cursor:pointer}a{color:#edce65}.message{border-left:3px solid #edce65;padding-left:14px}</style></head><body><main class="card"><div class="brand">THE SIGNAL ROOM</div><h1>${verify?'Check your email':'Your guest review room'}</h1><p>${verify?'Enter the eight-digit code sent to your approved email address. It expires in ten minutes.':'Enter the email address associated with your invitation to open your episode package.'}</p>${message?`<p class="message" role="status">${escape(message)}</p>`:''}<form method="post" action="/review/${episode}/${verify?'verify':'request'}"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" value="${escape(email)}">${verify?'<label for="code">Verification code</label><input id="code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{8}" maxlength="8" required>':''}<button>${verify?'Open review room':'Email me a code'}</button></form>${verify?`<p><a href="/review/${episode}/">Request a new code</a></p>`:''}<p style="font-size:14px">Access is limited to invited reviewers.</p></main></body></html>`;
 const submitScript = `document.addEventListener('submit',async event=>{const form=event.target;if(!(form instanceof HTMLFormElement))return;event.preventDefault();const button=form.querySelector('button');button.disabled=true;button.textContent='Please wait…';try{const result=await fetch(form.action,{method:'POST',credentials:'same-origin',body:new URLSearchParams(new FormData(form))});const text=await result.text();if(!result.headers.get('content-type')?.includes('text/html'))throw new Error('Please refresh the page and try again.');const parsed=new DOMParser().parseFromString(text,'text/html');document.head.replaceWith(parsed.head);document.body.replaceWith(parsed.body);history.replaceState(null,'',location.pathname.replace(/\\/(request|verify|logout)$/, '/'));}catch(error){button.disabled=false;button.textContent='Try again';let message=document.getElementById('submit-error');if(!message){message=document.createElement('p');message.id='submit-error';message.setAttribute('role','alert');form.append(message);}message.textContent='We could not complete that request. Please try again.';}});`;
 const html = (body,status=200,extra={}) => {
@@ -35,6 +35,19 @@ export function createReviewHandler({state,content,sendCode,readMedia,now=()=>Da
   if(!grant?.enabled)return response('This review room is unavailable.',404);
   const allowed=email=>grant.emails?.includes(email);
   const time=now();
+  // Private invitation links grant an episode-scoped session, never public access.
+  // Reusable until expiry so email-link scanners cannot consume the invitation.
+  if(action.startsWith('access/')){
+    if(request.method!=='GET')return response('Method not allowed',405);
+    const secret=action.slice(7);
+    if(!/^[a-f0-9]{64}$/.test(secret))return response('This review link is invalid or expired.',403);
+    const inviteKey=`invites/${await hash(secret)}`;
+    const invite=await state.get(inviteKey,{type:'json'});
+    if(!invite||invite.revoked||invite.episode!==episode||invite.expires<=time||!allowed(invite.email))return response('This review link is invalid or expired.',403);
+    const token=random(),expires=Math.min(time+28800000,invite.expires);
+    await state.setJSON(`sessions/${await hash(token)}`,{episode,email:invite.email,expires,inviteKey});
+    return response(null,303,{Location:`/review/${episode}/`,'Set-Cookie':cookie(episode,token,Math.floor((expires-time)/1000),'Lax')});
+  }
   if(request.method==='POST'){
     if(request.headers.get('origin')!==url.origin)return response('Request not allowed',403);
     if(!['request','verify','logout'].includes(action))return response('Not found',404);
@@ -80,6 +93,10 @@ export function createReviewHandler({state,content,sendCode,readMedia,now=()=>Da
   const token=request.headers.get('cookie')?.split(';').map(s=>s.trim()).find(s=>s.startsWith(cookieName(episode)+'='))?.split('=')[1];
   const session=token&&/^[a-f0-9]{64}$/.test(token)?await state.get(`sessions/${await hash(token)}`,{type:'json'}):null;
   if(!session||session.episode!==episode||session.expires<=time||!allowed(session.email))return action?response('Please sign in to this review room.',401):html(page(episode));
+  if(session.inviteKey){
+    const invite=await state.get(session.inviteKey,{type:'json'});
+    if(!invite||invite.revoked||invite.episode!==episode||invite.email!==session.email||invite.expires<=time)return action?response('Please sign in to this review room.',401):html(page(episode));
+  }
   const manifest=await content.get(`${episode}/manifest`,{type:'json'});
   if(!manifest)return response('The review package is being prepared.',503);
   const path=action===''?'index.html':action.startsWith('files/')?action.slice(6):null;
