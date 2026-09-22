@@ -78,3 +78,26 @@ test('shortening invitation expiry limits an already issued session',async()=>{
  await f.state.setJSON(i.key,{...(await f.state.get(i.key)),expires:1e12+1000});f.advance(1001);
  assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,401);
 });
+test('one shared invitation admits each listed reviewer and binds their own session',async()=>{
+ const f=await fixture(),emails=['one@example.com','two@example.com','three@example.com','four@example.com'];
+ await f.state.setJSON('grants/test',{enabled:true,emails:[...emails,'unlisted@example.com']});
+ const i=await invitation(f,{email:undefined,emails});assert.equal((await i.open()).status,200);
+ for(const email of emails){
+  const r=await f.call(`access/${i.secret}`,'POST',new URLSearchParams({email}).toString());assert.equal(r.status,303);
+  const cookie=r.headers.get('set-cookie').split(';')[0],session=await f.state.get(`sessions/${await hash(cookie.split('=')[1])}`);assert.equal(session.email,email);
+  assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,200);
+ }
+ assert.equal((await f.call(`access/${i.secret}`,'POST','email=unlisted%40example.com')).status,403);assert.equal(f.codes.length,0);
+});
+test('removing one shared reviewer from invitation or grant revokes only that reviewer',async()=>{
+ for(const removal of ['invitation','grant']){
+  const f=await fixture(),emails=['one@example.com','two@example.com'];await f.state.setJSON('grants/test',{enabled:true,emails});
+  const i=await invitation(f,{email:undefined,emails,requireEmail:true});const cookies=[];
+  for(const email of emails){const r=await f.call(`access/${i.secret}`,'POST',new URLSearchParams({email}).toString());cookies.push(r.headers.get('set-cookie').split(';')[0]);}
+  if(removal==='grant')await f.state.setJSON('grants/test',{enabled:true,emails:[emails[1]]});
+  else await f.state.setJSON(i.key,{...(await f.state.get(i.key)),emails:[emails[1]]});
+  assert.equal((await f.call('files/movie.mp4','GET','',cookies[0])).status,401);
+  assert.equal((await f.call('files/movie.mp4','GET','',cookies[1])).status,200);
+  assert.equal((await f.call(`access/${i.secret}`,'POST',new URLSearchParams({email:emails[0]}).toString())).status,403);
+ }
+});
