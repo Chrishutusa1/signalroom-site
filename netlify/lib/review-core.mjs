@@ -23,6 +23,12 @@ async function count(store,key,limit,now,window=3600000){
   }
   return false;
 }
+const invitationPage=(episode,action,message='')=>response(
+  page(episode,message)
+    .replace(`action="/review/${episode}/request"`,`action="/review/${episode}/${action}"`)
+    .replace('Email me a code','Open review room'),
+  message?403:200,{'Content-Type':'text/html; charset=utf-8'}
+);
 export function createReviewHandler({state,content,sendCode,readMedia,now=()=>Date.now()}){
  return async(request,context={})=>{
   const url=new URL(request.url),m=url.pathname.match(/^\/review\/([a-z0-9-]{1,80})(?:\/(.*))?$/);
@@ -38,12 +44,22 @@ export function createReviewHandler({state,content,sendCode,readMedia,now=()=>Da
   // Private invitation links grant an episode-scoped session, never public access.
   // Reusable until expiry so email-link scanners cannot consume the invitation.
   if(action.startsWith('access/')){
-    if(request.method!=='GET')return response('Method not allowed',405);
+    if(!['GET','POST'].includes(request.method))return response('Method not allowed',405);
     const secret=action.slice(7);
     if(!/^[a-f0-9]{64}$/.test(secret))return response('This review link is invalid or expired.',403);
     const inviteKey=`invites/${await hash(secret)}`;
     const invite=await state.get(inviteKey,{type:'json'});
     if(!invite||invite.revoked||invite.episode!==episode||invite.expires<=time||!allowed(invite.email))return response('This review link is invalid or expired.',403);
+    if(invite.requireEmail){
+      if(request.method==='GET')return invitationPage(episode,action);
+      if(request.headers.get('origin')!==url.origin)return response('Request not allowed',403);
+      if(Number(request.headers.get('content-length'))>2048)return response('Request too large',413);
+      const body=await request.text();if(body.length>2048)return response('Request too large',413);
+      const email=(new URLSearchParams(body).get('email')||'').trim().toLowerCase();
+      const ip=await hash(`${inviteKey}:${context.ip||'unknown'}`);
+      if(!await count(state,`rate/invite/${ip}`,30,time))return response('Please wait before trying again.',429);
+      if(email!==invite.email)return invitationPage(episode,action,'Use the email address associated with this private invitation.');
+    }else if(request.method!=='GET')return response('Method not allowed',405);
     const token=random(),expires=Math.min(time+28800000,invite.expires);
     await state.setJSON(`sessions/${await hash(token)}`,{episode,email:invite.email,expires,inviteKey});
     return response(null,303,{Location:`/review/${episode}/`,'Set-Cookie':cookie(episode,token,Math.floor((expires-time)/1000),'Lax')});

@@ -57,3 +57,24 @@ test('revocation, grant removal and expiry also revoke active invitation session
   assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,401);assert.equal((await i.open()).status,403);
  }
 });
+
+test('email-only invitation requires its matching address but no passcode',async()=>{
+ const f=await fixture(),i=await invitation(f,{requireEmail:true});
+ const page=await i.open(),body=await page.text();assert.equal(page.status,200);assert.equal(page.headers.get('set-cookie'),null);
+ assert.match(body,/Open review room/);assert.ok(body.includes(`/review/test/access/${i.secret}`));assert.ok(!body.includes('Email me a code'));assert.ok(!body.includes('name="code"'));assert.ok(!body.includes('<script'));
+ const wrong=await f.call(`access/${i.secret}`,'POST','email=other%40example.com');assert.equal(wrong.status,403);assert.equal(wrong.headers.get('set-cookie'),null);
+ const right=await f.call(`access/${i.secret}`,'POST','email=GUEST%40EXAMPLE.COM');assert.equal(right.status,303);assert.equal(right.headers.get('location'),'/review/test/');
+ const cookie=right.headers.get('set-cookie').split(';')[0];assert.equal(await (await f.call('files/movie.mp4','GET','',cookie)).text(),'private');assert.equal(f.codes.length,0);
+});
+test('email-only invitation rejects cross-origin, oversized and excessive submissions',async()=>{
+ const f=await fixture(),i=await invitation(f,{requireEmail:true}),p=`access/${i.secret}`;
+ assert.equal((await f.call(p,'POST','email=guest%40example.com','','https://evil.example')).status,403);
+ assert.equal((await f.call(p,'POST','email='+ 'x'.repeat(2100))).status,413);
+ for(let n=0;n<30;n++)assert.equal((await f.call(p,'POST','email=wrong')).status,403);
+ assert.equal((await f.call(p,'POST','email=guest%40example.com')).status,429);
+});
+test('shortening invitation expiry limits an already issued session',async()=>{
+ const f=await fixture(),i=await invitation(f),r=await i.open(),cookie=r.headers.get('set-cookie').split(';')[0];
+ await f.state.setJSON(i.key,{...(await f.state.get(i.key)),expires:1e12+1000});f.advance(1001);
+ assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,401);
+});
