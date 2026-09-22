@@ -33,6 +33,30 @@ async function invitation(f,overrides={}){
  await f.state.setJSON(key,{episode:'test',email:'guest@example.com',expires:1e12+60000,...overrides});
  return {secret,key,open:()=>f.call(`access/${secret}`)};
 }
+test('anyone link opens without identity or expiry and can renew an expired session',async()=>{
+ const f=await fixture();await f.state.setJSON('grants/test',{enabled:true,emails:[]});
+ const i=await invitation(f,{email:undefined,audience:'anyone-with-link',expires:null});
+ const r=await i.open();assert.equal(r.status,303);const cookie=r.headers.get('set-cookie').split(';')[0];
+ const session=await f.state.get(`sessions/${await hash(cookie.split('=')[1])}`);assert.equal(session.email,undefined);assert.equal(session.audience,'anyone-with-link');
+ assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,200);assert.equal(f.codes.length,0);
+ f.advance(28800001);assert.equal((await f.call('files/movie.mp4','GET','',cookie)).status,401);assert.equal((await i.open()).status,303);
+});
+test('anyone link remains episode-scoped and revocable, with optional expiry',async()=>{
+ for(const change of ['revoke','disable','expire','scope','audience']){
+  const f=await fixture(),i=await invitation(f,{email:undefined,audience:'anyone-with-link',expires:null}),r=await i.open(),cookie=r.headers.get('set-cookie').split(';')[0];
+  const prior=await f.state.get(i.key);
+  if(change==='revoke')await f.state.setJSON(i.key,{...prior,revoked:true});
+  if(change==='disable')await f.state.setJSON('grants/test',{enabled:false});
+  if(change==='expire')await f.state.setJSON(i.key,{...prior,expires:1e12});
+  if(change==='scope')await f.state.setJSON(i.key,{...prior,episode:'other'});
+  if(change==='audience')await f.state.setJSON(i.key,{...prior,audience:undefined});
+  assert.ok([401,404].includes((await f.call('files/movie.mp4','GET','',cookie)).status));assert.ok([403,404].includes((await i.open()).status));
+ }
+});
+test('missing or null expiry does not turn ordinary invitations into permanent links',async()=>{
+ for(const expires of [null,undefined,'later']){const f=await fixture(),i=await invitation(f,{expires});assert.equal((await i.open()).status,403);}
+ const f=await fixture(),token='c'.repeat(64);await f.state.setJSON(`sessions/${await hash(token)}`,{episode:'test',audience:'anyone-with-link',expires:1e12+60000});assert.equal((await f.call('files/movie.mp4','GET','',`__Secure-sr_test=${token}`)).status,401);
+});
 test('private link opens without email/code, redirects to clean URL and remains reusable',async()=>{
  const f=await fixture(),i=await invitation(f),r=await i.open();
  assert.equal(r.status,303);assert.equal(r.headers.get('location'),'/review/test/');
