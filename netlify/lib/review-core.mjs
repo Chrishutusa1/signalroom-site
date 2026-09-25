@@ -12,7 +12,8 @@ const submitScript = `document.addEventListener('submit',async event=>{const for
 const html = (body,status=200,extra={}) => {
  const nonce=random();
  const readyScript=`${submitScript};(${initReviewDownloads.toString()})();document.addEventListener('sr:review-ready',${initReviewDownloads.toString()});`;
- const rendered=body.replace('</body>',`<script nonce="${nonce}">${readyScript}</script></body>`);
+ const script=`<script nonce="${nonce}">${readyScript}</script>`;
+ const rendered=/<\/body\s*>/i.test(body)?body.replace(/<\/body\s*>/i,script+'$&'):/<\/html\s*>/i.test(body)?body.replace(/<\/html\s*>/i,script+'$&'):body+script;
  return response(rendered,status,{'Content-Type':'text/html; charset=utf-8','Content-Security-Policy':headers['Content-Security-Policy']+`; script-src 'nonce-${nonce}'; connect-src 'self'`,...extra});
 };
 async function count(store,key,limit,now,window=3600000){

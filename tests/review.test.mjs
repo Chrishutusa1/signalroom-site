@@ -20,7 +20,7 @@ async function fixture(){
 }
 test('anonymous users receive a login page and cannot read direct media',async()=>{const f=await fixture();assert.match(await (await f.call()).text(),/Your guest review room/);assert.equal((await f.call('files/movie.mp4')).status,401);});
 test('uninvited email is not sent a code and gets the same neutral response',async()=>{const f=await fixture();const r=await f.call('request','POST','email=other%40example.com');assert.equal(r.status,200);assert.equal(f.codes.length,0);assert.match(await r.text(),/If this address is invited/);});
-test('valid code creates secure session; replay fails; private content is no-store',async()=>{const f=await fixture();const s=await f.login();const r=await f.call('','GET','',s);assert.equal(await r.text(),'private');assert.match(r.headers.get('cache-control'),/no-store/);assert.equal((await f.call('verify','POST',`email=guest%40example.com&code=${f.codes[0].code}`)).status,403);});
+test('valid code creates secure session; replay fails; private content is no-store',async()=>{const f=await fixture();const s=await f.login();const r=await f.call('','GET','',s);assert.match(await r.text(),/^private<script nonce=/);assert.match(r.headers.get('cache-control'),/no-store/);assert.equal((await f.call('verify','POST',`email=guest%40example.com&code=${f.codes[0].code}`)).status,403);});
 test('code attempt limit, expiry, and resend throttle',async()=>{const f=await fixture();await f.call('request','POST','email=guest%40example.com');await f.call('request','POST','email=guest%40example.com');assert.equal(f.codes.length,1);for(let i=0;i<5;i++)assert.equal((await f.call('verify','POST','email=guest%40example.com&code=wrong')).status,403);assert.equal((await f.call('verify','POST',`email=guest%40example.com&code=${f.codes[0].code}`)).status,403);f.advance(60001);await f.call('request','POST','email=guest%40example.com');f.advance(600001);assert.equal((await f.call('verify','POST',`email=guest%40example.com&code=${f.codes.at(-1).code}`)).status,403);});
 test('concurrent verification permits only one session',async()=>{const f=await fixture();await f.call('request','POST','email=guest%40example.com');const replies=await Promise.all(Array.from({length:8},()=>f.call('verify','POST',`email=guest%40example.com&code=${f.codes[0].code}`)));assert.equal(replies.filter(r=>r.status===303).length,1);});
 test('grant removal revokes existing sessions immediately',async()=>{const f=await fixture(),s=await f.login();await f.state.setJSON('grants/test',{enabled:true,emails:[]});assert.equal((await f.call('files/movie.mp4','GET','',s)).status,401);});
@@ -123,5 +123,16 @@ test('removing one shared reviewer from invitation or grant revokes only that re
   assert.equal((await f.call('files/movie.mp4','GET','',cookies[0])).status,401);
   assert.equal((await f.call('files/movie.mp4','GET','',cookies[1])).status,200);
   assert.equal((await f.call(`access/${i.secret}`,'POST',new URLSearchParams({email:emails[0]}).toString())).status,403);
+ }
+});
+
+test('download controls receive a CSP nonce even when a gallery omits its closing body tag',async()=>{
+ const f=await fixture(),session=await f.login();
+ for(const ending of ['</body></html>','</html>','</BODY></HTML>','']){
+  await f.content.setJSON('test/index.html','<html><main><a href="/review/test/files/movie.mp4">MP4</a></main>'+ending);
+  const response=await f.call('','GET','',session),body=await response.text();
+  assert.match(body,/id="review-download-library"/);assert.match(body,/showSaveFilePicker/);
+  const nonce=body.match(/<script nonce="([a-f0-9]+)">/)[1];assert.ok(response.headers.get('content-security-policy').includes("'nonce-"+nonce+"'"));
+  assert.equal((body.match(/<script nonce=/g)||[]).length,1);
  }
 });
