@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "node --test tests/review.test.mjs"
+    "test": "node --test tests/*.test.mjs"
   },
   "keywords": [],
   "author": "",
