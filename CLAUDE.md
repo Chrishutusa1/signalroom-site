@@ -28,10 +28,16 @@ python _generate_topic_cards.py --apply
 # Regenerate sitemap.xml from the pages on disk (CI fails if it's stale)
 python _generate_sitemap.py --apply
 
-# Verify the cross-domain 301 targets are still live canonicals (read-only, GAPS #13)
-# Deliberately NOT a CI gate — it fetches someone else's domain. Run on demand and
-# at the 30-day GSC review. Exit 0 = verified, 1 = a target is wrong, 2 = undetermined.
+# Verify the cross-domain 301s end to end (read-only, GAPS #13): the off-site target
+# is live/single-hop/self-canonical, the live site really serves each declared rule,
+# and no required off-site rule has been deleted. Deliberately NOT a CI gate — it
+# fetches someone else's domain. Run on demand and at the 30-day GSC review.
+# Exit 0 = verified, 1 = genuinely wrong, 2 = undetermined (network / bot challenge).
 python _check_external_redirects.py
+python _check_external_redirects.py --skip-live                       # no self-fetch
+python _check_external_redirects.py --host https://deploy-preview-N--signalroom.netlify.app
+# Adding a new cross-domain redirect? Add its source path to REQUIRED_OFFSITE_SOURCES
+# in the script, or a later deletion of that rule will pass silently.
 
 # Deploy: STAGING = push to origin/main -> auto-deploys signalroom-staging.netlify.app (site 75176784)
 # Deploy: PRODUCTION = merge to `main` -> auto-deploys signalroompodcast.com (site 98c71b47).
