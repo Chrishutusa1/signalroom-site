@@ -1,8 +1,10 @@
 # Publish-gate enforcement (GAPS.md #2). Runs the same checks the local
 # publish flow relies on, so a merged episode page can never carry the
-# recurring defect classes (meta >155, title >57, empty shorts alt),
-# a mixed style.css?v= cache-bust, or a malformed _redirects line.
-# Both scripts are stdlib-only Python — no pip install.
+# recurring defect classes (meta >155, title >57, empty shorts alt, a
+# missing or hasPart-carrying VideoObject), a mixed style.css?v=
+# cache-bust, a stale sitemap, or a malformed _redirects line. The
+# title/meta limits are enforced site-wide, not just on episodes.
+# Every script called here is stdlib-only Python — no pip install.
 name: validate
 
 on:
