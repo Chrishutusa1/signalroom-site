@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/ai-trust-at-the-data-layer">
+  <title>Why Healthcare AI Fails at the Data Layer</title>
+  <meta name="description" content="Healthcare AI stalls when data leaves the EHR boundary and its protections fall away. Privacy, governance, and trust at the data layer decide what ships.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Healthcare AI Fails at the Data Layer",
+  "description": "Healthcare AI stalls when data leaves the EHR boundary and its protections fall away. Privacy, governance, and trust at the data layer decide what ships.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/ai-trust-at-the-data-layer"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/healthcare-ai-data-layer-privacy-governance",
+      "url": "https://signalroompodcast.com/episodes/healthcare-ai-data-layer-privacy-governance",
+      "name": "Healthcare AI Fails at the Data Layer: Privacy, Governance & Trust | Sid Dutta"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Sid Dutta",
+      "sameAs": [
+        "https://www.linkedin.com/in/sid-dutta/",
+        "https://privaclave.ai/"
+      ]
+    }
+  ],
+  "keywords": [
+    "healthcare AI data layer"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Healthcare AI Fails at the Data Layer"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does healthcare AI fail at the data layer rather than the model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most stalled initiatives are not blocked by model accuracy. They are blocked because the data cannot be used safely once it leaves its source system, where the native protections that guarded it no longer apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when patient data leaves the EHR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Systems like Epic and Cerner protect data well while it sits inside them, but those controls do not travel with the data. The moment it moves to an AI model, a copilot, or a third party, the native safeguards are gone and security teams lose visibility and control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is privacy-preserving AI in practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It means getting value from data without exposing the data itself — through techniques like de-identification, tokenization, and format-preserving encryption that keep records usable for joins and searches, plus runtime decisions about what to reveal based on context and intent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What signals suggest an organization is not ready to collaborate on data safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over-reliance on static controls like encryption at rest and in transit, no visibility into where sensitive data flows once it leaves a system, unclear ownership of data and its risk, and a block-first default that restricts everything because that is easier than enabling it safely."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Why Healthcare AI Fails at the Data Layer">
+  <meta property="og:description" content="Healthcare AI stalls when data leaves the EHR boundary and its protections fall away. Privacy, governance, and trust at the data layer decide what ships.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/ai-trust-at-the-data-layer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Why Healthcare AI Fails at the Data Layer</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/sid-dutta/" target="_blank" rel="noopener" style="color:#6c63ff;">Sid Dutta</a> &middot; <a href="https://privaclave.ai/" target="_blank" rel="noopener" style="color:#6c63ff;">Website</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Sid Dutta. Listen to the full episode: <a href="/episodes/healthcare-ai-data-layer-privacy-governance" style="color:#6c63ff; font-weight:600;">Healthcare AI Fails at the Data Layer: Privacy, Governance &amp; Trust | Sid Dutta</a>.</p>
+
+<p>Inquiring why a certain healthcare AI initiative remains perpetually piloted, the response invariably centers around the model, citing lack of accuracy, over-promising by the vendor, and clinicians&#39; distrust of the output. Recently, during a Signal Room discussion, Sid Dutta offered a different perspective. He suggested the bottleneck is fundamentally earlier and lower, at the data layer, and that fundamentally it is not the model. Dutta is a veteran cybersecurity professional with extensive experience leading data protection efforts across large enterprises and now runs a startup focused on the protection of highly sensitive data in an AI context. He was particularly clear in his comments: most organizations are not currently facing AI development challenges, but rather, challenges stemming from the safe and responsible use of organizational data.</p>
+<p>This shift in perspective holds a great deal of importance due to its reallocation of the impediments. Improvements in modeling can address issues of sub-par model performance. If the issue at hand is impediments to safe data mobility, then no improvement in modeling can address these impediments, and the focus moves to the layer beneath.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Why Healthcare Data Is Uniquely Hard to Use</h2>
+<p>Dutta gives three reasons that show how healthcare data is more challenging to handle than data in most other sectors. One of these is sensitivity. Data is much more valuable to an organization if the loss of that data has the potential to injure the trust and safety of a patient. Because of this, data is treated with care. Dutta says healthcare data is fragmented. Unlike data in other industries, healthcare data spreads across a collection of electronic platforms, imaging systems, and billing systems, and often cannot talk to any of these systems. The controls that safeguard healthcare data were designed to protect data in a different era.</p>
+<p>The most interesting part of this segment was the point about how controls don&#39;t move with the data. Epic and Cerner do a fine job of protecting data, but only as long as data remains in the platforms. The instant data exits the platform (say, to a model, to a copilot that reads the data, to an agent that accesses the EHR as a tool, or to a third-party platform that provides analytics) protections are no longer in place. Dutta says that, at this point in time, this data is in the wild, and it is most vulnerable. This is exactly where security and compliance teams lose their oversight, and control of the data.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">The Intent Problem With AI Identities</h2>
+<p>The second layer of the erosion of control boundaries is associated more directly with the functioning of AI. Traditional security asks who is accessing data and what they are permitted to touch. Dutta indicated that with agents and copilots accessing data on behalf of users, a system breaks down. You may know which system is making the request and what it is permitted to access, but you cannot know, or even easily determine, what the agent is going to do with the data and why — its intent.</p>
+<p>This is the arena of data access in relation to data protection. Traditional security is based on static systems that were deterministic. An application accepted a defined input, processed it, and stored the result at a known location. In contrast, an agent does not function that way. It is not pre-wired to a fixed scope; rather, it makes decisions in an open-ended manner, with the potential to recombine and/or reinterpret the data in ways that were not defined or even documented. Traditional guardrails do not apply to a system where the scope is continually extended in an open-ended manner.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Privacy-Preserving AI, Without the Marketing Gloss</h2>
+<p>Dutta refers to privacy-preserving AI as a means of maintaining the value of the data without revealing it, which is a much more simplistic idea than the terminology suggests. He was frank about many of the most well-known methods remaining in a research-completion limbo. Homomorphic encryption, differential privacy, federated learning, and trusted execution environments, which are secure enclaves that process data that is still encrypted, are all methods which will allow you to compute on data you will never show. From his perspective, many of these approaches have really never been practical, and in many cases enterprise-class, at scale, and even in niche areas, they fit poorly. This manifests in having a negative impact on their feasibility regarding performance and usability.</p>
+<p>De-identification and data desensitization have proven more reliable, where processing takes place, although they still travel and/or reside on the data, in the form of tokenization, format-preserving encryption, and deterministic encryption. These are important due to referential integrity. Of course, poor masking, like replacing a value with a row of x&#39;s, or deleting the value, will impair the ability to join tables and search a structured dataset. More advanced methods will allow you to replace a real value with a token or surrogate, and will behave like the original value, making data records, and thus, the sensitive value, joinable and searchable, and never having to be exposed.</p>
+<p>Dutta has developed a balancing act in this regard. If you protect too little, then you leak. If you protect too much, or the wrong things, then your model gets nonsense which it can&#39;t reason over, resulting in bad or unfavorable output. In most cases, he elaborated, the model does not need the PHI itself, it needs the surrounding structures. The hard work is determining the least needed to be protected, then masking or tokenizing what needs to be transported, and what needs to be revealed, and then protecting what needs to be revealed to work on the task at hand. Given the fact that most hospitals do not have their own models, this is all done when their data is sent to a hyperscaler&#39;s foundational model which exists outside the hospital&#39;s boundaries, and so the cost and risk to the data gets higher.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Infrastructure versus Models</h2>
+<p>Dutta spent time noting that too much emphasis is placed on models, and not enough on the layering or building blocks of the models placed on data. You can have the best model, but if the data layer is not robust, secure, managed, and observable, then you are not going to be able to run that model at the industrial scale of healthcare. It is the constraint of a garbage in garbage out scenario. It&#39;s not a model at industrial scale if you are dumping garbage data into the model.</p>
+<p>The more difficult point to grasp is that the current infrastructure was not designed for dynamic systems like these. Static applications with known parameters and destinations were the only things considered. With the advent of AI, the static application of data gave way to data that is perpetually altered and recombined, interpreted in dynamic ways, and moved along the continuum while making autonomous decisions. The infrastructure within which this data moves did not evolve at the same pace. In Dutta&#39;s words, organizations have the ability to design extremely powerful models and build the capability to process enormous datasets in seconds. However, the static infrastructure means that organizations have no means of designing these large data models and processing systems in a way that will provide the organization with the ability to retain control. What is lacking is neither creativity nor innovation. It is confidence and control at the data layer.</p>
+<p>This gap also helps explain shadow AI. When privacy and security feel like a cost that the innovator must implement in addition to the real work, people will circumvent the system, and unsanctioned tools will spread. Dutta&#39;s point is that protection must be built into the system by default and enforced at runtime so that it simply works, and the builder does not have to bear the cost. If it works and creates no friction, people will stop bypassing it, and the enterprise will have less hidden risk.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Reading the Signals of an Unready Organization</h2>
+<p>Dutta described several signals for leaders to identify the lack of preparedness for organizations to partner safely on sensitive data. The first signal is an over-reliance on static controls. This occurs when an organization claims data is &quot;encrypted at rest&quot; and &quot;encrypted in transit.&quot; Static controls such as encryption at rest fail to counter threats to functions that could be performed using data once it is in use. The second signal is the absence of data flow visibility. Tools that review the contents of data stores provide a snapshot of data at rest. However, they do not provide information on where data moves to after it leaves the store. If the team does not know where data moves and what the sensitive data is doing in the organization&#39;s AI workflows, then the status is not ready. The third signal is the absence of risk ownership. This is commonly seen in large and complex organizations. This occurs in shared data stores that multiple teams use. The data is accessed through the approval of a person who manages the server as opposed to a person who owns the data and the consequences of the data breach. The final signal is a block-first reflex. If a governance model is to only restrict everything because it is done with an ease of implementation, then the model is not ready.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/services/risk-compliance-management" target="_blank" rel="noopener" style="color:#6c63ff;">Data Risk &amp; Compliance</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">U.S. Department of Health &amp; Human Services — HIPAA</a></li>
+<li><a href="https://www.hhs.gov/ocr/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">HHS Office for Civil Rights</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://www.hl7.org/fhir/" target="_blank" rel="noopener" style="color:#6c63ff;">HL7 FHIR interoperability standard</a></li>
+<li><a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener" style="color:#6c63ff;">WHO — Ethics &amp; governance of AI for health</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why does healthcare AI fail at the data layer rather than the model?</h3>
+          <p>Most stalled initiatives are not blocked by model accuracy. They are blocked because the data cannot be used safely once it leaves its source system, where the native protections that guarded it no longer apply.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What happens when patient data leaves the EHR?</h3>
+          <p>Systems like Epic and Cerner protect data well while it sits inside them, but those controls do not travel with the data. The moment it moves to an AI model, a copilot, or a third party, the native safeguards are gone and security teams lose visibility and control.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is privacy-preserving AI in practice?</h3>
+          <p>It means getting value from data without exposing the data itself — through techniques like de-identification, tokenization, and format-preserving encryption that keep records usable for joins and searches, plus runtime decisions about what to reveal based on context and intent.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What signals suggest an organization is not ready to collaborate on data safely?</h3>
+          <p>Over-reliance on static controls like encryption at rest and in transit, no visibility into where sensitive data flows once it leaves a system, unclear ownership of data and its risk, and a block-first default that restricts everything because that is easier than enabling it safely.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-ai-data-layer-privacy-governance" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Healthcare AI Fails at the Data Layer: Privacy, Governance &amp; Trust | Sid Dutta</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/healthcare-ai-fails-at-the-data-layer-privacy/id1850988366?i=1000764820043" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=G6ChBbgV4xY" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/19103547" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/data-quality-ai-strategy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-ai-security" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI Security: Why the Breach You Can&#x27;t See Is the One That Hurts</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/scaling-healthcare-ai-data-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Scaling Healthcare AI: The Trust Infrastructure Underneath</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-ai-strategy-to-execution" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI: From Strategy to Execution</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-consent-record-is-now-evidence-13f9" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Consent Record Is Now Evidence</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-innovation-tax-how-unresolved-data-problems-compound-against-every-strategic-bet" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Innovation Tax</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/where-responsibility-breaks-down-bdf9" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Where Responsibility Breaks Down</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

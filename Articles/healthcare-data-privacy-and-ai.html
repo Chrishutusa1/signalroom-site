@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/healthcare-data-privacy-and-ai">
+  <title>Healthcare Data Privacy and AI: Designing Trust In</title>
+  <meta name="description" content="Why privacy is a core requirement for healthcare AI: privacy-by-design, data minimization, and the early controls that let teams move fast safely.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Healthcare Data Privacy and AI: Designing Trust In From the Start",
+  "description": "Why privacy is a core requirement for healthcare AI: privacy-by-design, data minimization, and the early controls that let teams move fast safely.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/healthcare-data-privacy-and-ai"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/ai-shutdown-governance-privacy",
+      "url": "https://signalroompodcast.com/episodes/ai-shutdown-governance-privacy",
+      "name": "Strengthen your AI Projects in 2026. Privacy and AI Governance Insights"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Andre Samokish",
+      "sameAs": [
+        "https://www.linkedin.com/in/andresamokish",
+        "https://www.linkedin.com/company/anaplan/"
+      ]
+    }
+  ],
+  "keywords": [
+    "healthcare data privacy AI"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Healthcare Data Privacy and AI: Designing Trust In"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is data privacy a core requirement for healthcare AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because AI systems run on data, and most of the data healthcare organizations hold is personal data. The moment someone touches a service or enters information, their first concern is what happens to it. Privacy is what earns the trust that lets the AI be used at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is privacy by design in an AI project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Building the controls, disclosures, and consent into a product early, while it is still in the idea stage, rather than bolting them on before launch. Done upfront, these controls let a team proceed with confidence instead of stopping to retrofit later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is data minimization and why does it matter for AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Data minimization means you do not collect data just in case. You need a defined reason for every data element, and you need to explain to customers how it will be used and obtain their consent. For AI it matters because models trained on data gathered without purpose carry exposure the organization never accounted for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do privacy controls and AI governance relate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They overlap heavily because both touch data. An organization with privacy and data governance already in place can transfer many of its controls, assessment questions, and tooling to AI governance rather than building it from nothing."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Healthcare Data Privacy and AI: Designing Trust In">
+  <meta property="og:description" content="Why privacy is a core requirement for healthcare AI: privacy-by-design, data minimization, and the early controls that let teams move fast safely.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/healthcare-data-privacy-and-ai">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Healthcare Data Privacy and AI: Designing Trust In From the Start</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/andresamokish" target="_blank" rel="noopener" style="color:#6c63ff;">Andre Samokish</a> &middot; <a href="https://www.linkedin.com/company/anaplan/" target="_blank" rel="noopener" style="color:#6c63ff;">Website</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Andre Samokish. Listen to the full episode: <a href="/episodes/ai-shutdown-governance-privacy" style="color:#6c63ff; font-weight:600;">Strengthen your AI Projects in 2026. Privacy and AI Governance Insights</a>.</p>
+
+<p>In the Signal Room episode that inspired this article, Andre Samokish, a privacy and AI governance expert, began with an unedited expression of his opinion, stating, “If you collect garbage, you will have garbage.” Although he touched on data in his explanation, this statement is applicable in a much broader context. In the world of healthcare, the data that is collected, and oftentimes, not clearly justified, is the same data that AI will learn from, reveal, and rationalize to the organization. Privacy is not a checklist item to be addressed after an AI project has been planned and built. It is a determining factor in the decision to even execute the project.</p>
+<p>In every context, particularly in healthcare, AI will almost always be engaged in the processing of personally identifiable information. In healthcare, the first question that is likely to be asked about a new service or an AI-enhanced tool is “what will happen to the personal information that is input to the system?” Samokish argues that privacy and AI governance have become a single field of practice because of the convergence of these two areas. For the purpose of this article, the focus is on privacy, the responsibilities linked to the processing of personal data, and especially the possible implications of AI. AI governance will be addressed only where it is impossible to separate the two.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Privacy Is the Condition for Moving Fast, Not the Brake on It</h2>
+<p>Privacy is thought to slow teams when in fact the opposite is true. Samokish’s analysis is important. It is privacy controls that allow a company to maintain a business function, not the contrary. If privacy controls have been embedded in the design early, the team can avoid a disruption when they reach the product’s launch. They will not discover a privacy gap that needs to be addressed.</p>
+<p>The example given is intentionally simple. An example of a privacy control is a pop-up window informing the user they are communicating with an AI. Such a control is easy to build into the product during the development process, and very difficult to add after the product is deployed. This illustrates that the best time for a company to address privacy controls is the development phase of a project. It is the least disruptive and least costly approach. Adding controls after the project is developed and in the deployment phase of the lifecycle is not cost-effective.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Data Minimization Changes Healthcare Collection Paradigms</h2>
+<p>For years, the data collection mentality was to hoard and store everything and then figure out the valuable pieces later. Samokish explains that data minimization forces a collection practitioner to think differently. You have to provide a clear purpose for collection of data elements, then explain how the data elements will be used, and get consent from the subjects of the data.</p>
+<p>This is a shift for healthcare, particularly with the evolving use of AI. More data does not make a better model, it actually is a bigger risk. Samokish provides a framework to evaluate data tools. Why is the tool needed? What will the tool do with the data? Is the data use necessary, and can it be avoided? It is much easier to consider these questions when the idea is being generated, compared to having to answer them after the data is set in motion.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Transparency Is Something You Publish, Not Just Promise</h2>
+<p>When talking about the ethical use of AI, Samokish focused the most on the importance of being honest with everyone whose data you are collecting, voluntarily or otherwise. Samokish believes that even if the law does not require you to do so, you should disclose on your website the existence of an AI component, behind-the-scenes logic, what certifications you comply with, and how you protect your data. This needs to be in a manner that the users of the website can easily understand.</p>
+<p>Samokish acknowledges that this kind of documentation requires different levels of translation for different target audiences. He argues that technical employees should build documentation together, and not be provided with a document to read. Website visitors, customers, and employees also deserve the same amount of effort. It is the job of your attorneys to speak the language of regulations. It is common practice to first speak to them and refocus the answers to something that the rest of the employees can understand and use. If transparency is not being done in a manner that the majority of your employees can understand, you are not being transparent.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Talk to Legal Before You Buy, Not After</h2>
+<p>A warning of particular concern should be directed toward organizations who purchase AI as opposed to developing it. The belief is that a purchased service is inherently low risk. However, Samokish contends that the true risk resides in the use case. Some regulatory frameworks explicitly prohibit or classify certain AI use cases as high-risk. Given the potential for a vendor&#39;s tool to be applied to an extremely risky use case, its marketing is of little concern to the organization.</p>
+<p>In terms of risk reduction strategies, Samokish recommends a somewhat boring, early-stage solution. Before making a purchase, organizations should analyze the lists of the high-risk and prohibited use cases, consult with legal, and answer the question of how the organization would be allowed to use the tool in question. If the issue the organization is struggling with is of high enough priority, those discussions may result in the organization dealing with a different vendor or determine which constraints the organization should focus on implementing. Many constraints, such as a vendor&#39;s tool certification, or registration in a particular system, are time-consuming to implement and do not occur instantaneously. A vendor&#39;s assurance that everything is fine is a starting point to verify, not a conclusion to accept.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">The Intersection of Privacy and AI Literacy: An Educational Concern</h2>
+<p>Samokish asserts that privacy and AI literacy are intrinsically linked. He divides AI literacy into three categories. The first is the technical side. This includes the capabilities, functionality, and the metrics that describe its performance. The second is the legal side. This includes the actions that one may or may not take, and the regulations that may or may not be implemented. The third is the ethical side. This includes the reasoning for the data, and the ethical concerns surrounding the data.</p>
+<p>Retention is what makes this an educational rather than a documentation issue. He states that privacy training was often an annual event that occurred at the time of onboarding. Such training was heavily security-focused. Data privacy was considered a minor topic, and as a result, most people forgot what was taught. He proposes something completely different. He suggests training to reinforce the understanding of a core topic, with a duration of around fifteen minutes, occurring as frequently as once per week. Such training should be engaging and focused. Since AI models are continually retrained, the traditional checklist approach to slow processes is no longer effective. Understanding should be sustained in parallel to the changes in the systems. For this reason, continuous education is a privacy control in its own right.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Build It as if You Will Be Audited Tomorrow</h2>
+<p>There are two categories of operations here. One is the tools. Automation is treated by Samokish, who is OneTrust certified, much like AI. Automation saves you in those situations where you are doing the same task on repeat, and it gives you and your team members the time to use their own judgment. Unlike spreadsheets, a company having a single source of truth for vendors/risk, and a tool for reports and dashboards gives them an overview and insight on their overall privacy. The trade-off is not false as it is true that the tool will require heavy customization, as no two companies are the same as they all have different workflows.</p>
+<p>The other category is that reusability of AI and privacy governance is enough to construct the other. The organization can use a lot of the same controls, the same governance tool, the same collaboration patterns, the same questions for risk assessments, etc., and apply them to AI governance without having to start from square one. Not all of the skills required to extend the comfort zone of governance are technical. There are many governance skills required that are not technical, such as the ability to handle projects, the ability to teach and the ability to give constructive feedback. These are the skills that are most apparent to him that are required and are also the most easily learned.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/services/risk-compliance-management" target="_blank" rel="noopener" style="color:#6c63ff;">Data Risk &amp; Compliance</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">U.S. Department of Health &amp; Human Services — HIPAA</a></li>
+<li><a href="https://www.hhs.gov/ocr/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">HHS Office for Civil Rights</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener" style="color:#6c63ff;">WHO — Ethics &amp; governance of AI for health</a></li>
+<li><a href="https://healthit.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">ONC — HealthIT.gov</a></content>
+</invoke></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why is data privacy a core requirement for healthcare AI?</h3>
+          <p>Because AI systems run on data, and most of the data healthcare organizations hold is personal data. The moment someone touches a service or enters information, their first concern is what happens to it. Privacy is what earns the trust that lets the AI be used at all.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is privacy by design in an AI project?</h3>
+          <p>Building the controls, disclosures, and consent into a product early, while it is still in the idea stage, rather than bolting them on before launch. Done upfront, these controls let a team proceed with confidence instead of stopping to retrofit later.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is data minimization and why does it matter for AI?</h3>
+          <p>Data minimization means you do not collect data just in case. You need a defined reason for every data element, and you need to explain to customers how it will be used and obtain their consent. For AI it matters because models trained on data gathered without purpose carry exposure the organization never accounted for.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">How do privacy controls and AI governance relate?</h3>
+          <p>They overlap heavily because both touch data. An organization with privacy and data governance already in place can transfer many of its controls, assessment questions, and tooling to AI governance rather than building it from nothing.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-shutdown-governance-privacy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Strengthen your AI Projects in 2026. Privacy and AI Governance Insights</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/strengthen-your-ai-projects-in-2026-privacy-and-ai/id1850988366?i=1000760191487" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=pnAPQjVL3yk" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18981209" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/hidden-infrastructure-of-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance and Trust Infrastructure for Scaling AI</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/dark-side-ai-medical-boom" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Dark Side of the $50B AI Medical Boom</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/human-centered-ai-governance" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Governance in Healthcare: Just Culture, Emotional Readiness &amp; Trauma-Informed Leadership</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance in Healthcare: From Policy to Operational Reality</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/ai-trust-at-the-data-layer" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Why Healthcare AI Fails at the Data Layer</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/scaling-healthcare-ai-data-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Scaling Healthcare AI: The Trust Infrastructure Underneath</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/the-ai-health-pulse/when-the-patient-becomes-the-training-data" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">When the Patient Becomes the Training Data</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-consent-crisis-9bd7" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Consent Crisis</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/what-scalable-oversight-looks-like-d77f" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">What Scalable Oversight Looks Like</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/2026-is-the-year-of-oversight-8de4" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">2026 Is the Year of Oversight</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/why-oversight-without-ownership-fails-63b7" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Why Oversight Without Ownership Fails</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

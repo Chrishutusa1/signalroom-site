@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/healthcare-ai-security">
+  <title>Healthcare AI Security: The Breach You Can&#x27;t See</title>
+  <meta name="description" content="AI widens the attack surface, and most breaches go undetected because attackers use valid credentials. Detection is a people and process problem.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Healthcare AI Security: Why the Breach You Can't See Is the One That Hurts",
+  "description": "AI widens the attack surface, and most breaches go undetected because attackers use valid credentials. Detection is a people and process problem.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/healthcare-ai-security"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/cybersecurity-ethical-leadership-ai",
+      "url": "https://signalroompodcast.com/episodes/cybersecurity-ethical-leadership-ai",
+      "name": "No Alerts, Still Breached: Ethical Leadership in AI Security and Why Undetected Cyberattacks Threaten Healthcare AI Governance"
+    },
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/ai-security-risks-cybersecurity",
+      "url": "https://signalroompodcast.com/episodes/ai-security-risks-cybersecurity",
+      "name": "Healthcare AI Security Risks and Cybersecurity Leadership Challenges"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Guman Chauhan",
+      "sameAs": [
+        "https://www.linkedin.com/in/guman-chauhan-m-s-cissp-cism-600824103"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Anitha Mareedu",
+      "sameAs": [
+        "https://www.linkedin.com/in/anithamareedu"
+      ]
+    }
+  ],
+  "keywords": [
+    "healthcare AI security"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Healthcare AI Security: The Breach You Can't See"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does AI increase healthcare cybersecurity risk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI is adopted fast and given access to sensitive data and, increasingly, the power to act. Without deliberate access control and protection, each deployment adds an attack surface that was secured as an afterthought, if at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do so many breaches go undetected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because attackers increasingly use valid credentials and behave like legitimate users. Nothing looks anomalous, no alert fires, and a quiet dashboard gets mistaken for safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is healthcare AI security mainly a tools problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most organizations already own capable security tools. The larger share of detection failure comes from process — broken workflows, unclear escalation, untested response — and from people, including alert fatigue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should an organization test whether its defenses actually work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By validating assumptions against reality — independent testing that shows which systems are exposed, which old credentials still work, and whether alerts actually fire during an active intrusion."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Healthcare AI Security: The Breach You Can&#x27;t See">
+  <meta property="og:description" content="AI widens the attack surface, and most breaches go undetected because attackers use valid credentials. Detection is a people and process problem.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/healthcare-ai-security">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Healthcare AI Security: Why the Breach You Can&#x27;t See Is the One That Hurts</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/guman-chauhan-m-s-cissp-cism-600824103" target="_blank" rel="noopener" style="color:#6c63ff;">Guman Chauhan</a> and <a href="https://www.linkedin.com/in/anithamareedu" target="_blank" rel="noopener" style="color:#6c63ff;">Anitha Mareedu</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Guman Chauhan and Anitha Mareedu. Listen to the full episodes: <a href="/episodes/cybersecurity-ethical-leadership-ai" style="color:#6c63ff; font-weight:600;">No Alerts, Still Breached: Ethical Leadership in AI Security and Why Undetected Cyberattacks Threaten Healthcare AI Governance</a> and <a href="/episodes/ai-security-risks-cybersecurity" style="color:#6c63ff; font-weight:600;">Healthcare AI Security Risks and Cybersecurity Leadership Challenges</a>.</p>
+
+<p>Healthcare leaders should be concerned about a particular type of security failure that is more subtle, rather than the more flashy failures. The breach no one sees is more concerning than the breach that sets off the alarms. Guman Chauhan, speaking in a Signal Room discussion, said the worst situation is when there is a breach no one knows about. He then explained that the lack of an alert does not mean there is no breach. It usually means that the observers are not looking in the right place for the right signals.</p>
+<p>As AI technology is being rapidly integrated into healthcare, that distinction is important. Anitha Mareedu, a guest speaker at Signal Room and a cybersecurity practitioner who has worked across network and endpoint defense, explains the paradox. With AI technologies, tasks that would normally take hours can be completed in a matter of minutes. However, this increased speed requires more oversight and monitoring. We, at Hutchins Data Strategy Consultants, consider this question to be of the utmost importance: how will AI be protected? We believe it is imperative to treat this question with the same importance as the implementation of AI itself.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">AI Expands What Needs to Be Defended</h2>
+<p>Integrating any AI system within a healthcare environment carries the potential for that system to gain access to sensitive information, and increasingly the ability to take action. Mareedu discussed the level of access control discipline that needs to accompany the decision to provide access to systems. With the rapid development of technology, systems can be afforded capability very quickly. When access control is not managed, a risk surface has been created that no one is watching.</p>
+<p>There are varying levels of importance assigned to confidentiality, integrity, and availability across sectors. The burden in healthcare falls heavily on the confidentiality of patient records because of the protection of patient information under HIPAA. An AI threat model that is defined generically does not address this. The way the AI systems of a bank and a hospital are controlled is very different, and an AI deployment has to be secured against the threat model healthcare actually faces.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Attackers Do Not Break In. They Log In.</h2>
+<p>The reason that incidents of undetected breaches are so prevalent is because modern intrusions do not resemble the historical definition of an attack. Chauhan explained that, rather than deploying malware, attackers use valid credentials to gain access, then move laterally and exfiltrate data while performing legitimate actions with legitimate access. Service accounts that never expire and administrative credentials allow an intruder to operate in an identical fashion to a trusted administrator, with no anomaly and no alert.</p>
+<p>He argued that automated alerts stand in for the truth in the security industry, and that is a troubling trend. When dashboards are calm, executives believe that everything is operating within the intended parameters, and, unfortunately, cybercriminals know this better than anyone. They design their attacks in order to remain undetected and to stay within the thresholds that a busy security team expects to see. He cited the Colonial Pipeline, SolarWinds, Capital One, and MOVEit as incidents in which authentication was successful and security tooling assumed that everything was operating normally, while trusted-looking access was used to do the damage. In his experience, and unfortunately, many organizations do not know that they have been breached; they learn it from banks, customers, regulators, or law enforcement.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Most of the Problem Is Not Technology</h2>
+<p>The automatic reaction to a breach is to install better technology. However, in his view, based on what he has seen, this is not correct. He believes that technology is responsible for about 30 to 40 percent of the detection issue. Most organizations have already acquired the high-end tools. The larger responsibility rests on the processes and the people. This includes unproven or untested workflows, unclear escalation paths, an unexercised response to incidents, and analysts who are reluctant to respond because they are fearful of chasing a false positive, while leadership quietly prioritizes uptime over fast containment.</p>
+<p>You have to look out for alert fatigue. In situations with a high volume of alerts, a patient attacker can easily stay below the threshold of attention. Chauhan&#39;s approach to combating alert fatigue is to cut the noise rather than increase it. He has seen organizations decrease alert volume and even improve detection after eliminating rules that produced no actionable events in a year. He proposes the shift from volume-based alerting to a risk-based question: does this activity meaningfully increase business risk? That reframing is what turns a flood of signals into something a human can act on.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Visibility Over Perfection, Reality Over Assumption</h2>
+<p>Two of Chauhan&#39;s principles provide tremendous value when incorporated into any healthcare AI security program. The first is that visibility is more important than perfection. A breach that you can see is damaging and unavoidably painful, but a breach that you cannot see is devastating. You cannot protect assets you do not know you have or logs you are not collecting, and a striking number of breaches trace back to a system that was assumed to be internal and was in fact exposed.</p>
+<p>The second principle is that defenses must be verified in the field, not assumed. His image for it was that ships are not built to stay in harbor; you do not learn how strong your defenses are by leaving them unstressed. Independent, external validation shows reality instead of assumption: which systems are actually public-facing, which old credentials still work, and whether the alerts you are counting on actually fire during an active exploitation. For AI systems specifically, which sit on sensitive data and may act with autonomy, that validation is not a luxury. It is how you find out whether the security you believe you have actually exists.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/services/risk-compliance-management" target="_blank" rel="noopener" style="color:#6c63ff;">Data Risk &amp; Compliance</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">U.S. Department of Health &amp; Human Services — HIPAA</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://healthit.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">ONC — HealthIT.gov</a></li>
+<li><a href="https://www.himss.org/" target="_blank" rel="noopener" style="color:#6c63ff;">HIMSS</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why does AI increase healthcare cybersecurity risk?</h3>
+          <p>AI is adopted fast and given access to sensitive data and, increasingly, the power to act. Without deliberate access control and protection, each deployment adds an attack surface that was secured as an afterthought, if at all.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why do so many breaches go undetected?</h3>
+          <p>Because attackers increasingly use valid credentials and behave like legitimate users. Nothing looks anomalous, no alert fires, and a quiet dashboard gets mistaken for safety.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Is healthcare AI security mainly a tools problem?</h3>
+          <p>No. Most organizations already own capable security tools. The larger share of detection failure comes from process — broken workflows, unclear escalation, untested response — and from people, including alert fatigue.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">How should an organization test whether its defenses actually work?</h3>
+          <p>By validating assumptions against reality — independent testing that shows which systems are exposed, which old credentials still work, and whether alerts actually fire during an active intrusion.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/cybersecurity-ethical-leadership-ai" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">No Alerts, Still Breached: Ethical Leadership in AI Security and Why Undetected Cyberattacks Threaten Healthcare AI Governance</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/healthcare-ai-security-governance-no-alerts-still-breached/id1850988366?i=1000749195112" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=gR6OXuIxIOY" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18658645" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-security-risks-cybersecurity" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Healthcare AI Security Risks and Cybersecurity Leadership Challenges</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/healthcare-ai-security-risks-and-cybersecurity/id1850988366?i=1000743327680" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=FhmwMJsVPB8" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18436527" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-shutdown-governance-privacy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Strengthen your AI Projects in 2026. Privacy and AI Governance Insights</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/human-centered-ai-governance" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Governance in Healthcare: Just Culture, Emotional Readiness &amp; Trauma-Informed Leadership</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/enterprise-ai-journey-data-foundations" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Enterprise AI Journey: Agentic AI, Generative AI and Data Foundations in Healthcare</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance in Healthcare: From Policy to Operational Reality</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Responsible AI in Healthcare</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/agentic-ai-in-healthcare" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Agentic AI in Healthcare: Why Data Foundations Decide the Outcome</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-audit-trail-illusion-36ba" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Audit Trail Illusion</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/shadow-ai-the-symptom-not-the-threat-149b" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Shadow AI: The Symptom, Not the Threat</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-incident-response-fallacy-6616" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Incident Response Fallacy</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/where-responsibility-breaks-down-bdf9" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Where Responsibility Breaks Down</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>
