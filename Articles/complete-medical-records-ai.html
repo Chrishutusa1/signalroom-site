@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/complete-medical-records-ai">
+  <title>Complete Medical Records: The Missing Input for AI</title>
+  <meta name="description" content="Patient portals show a fraction of the record. Why healthcare AI needs the complete record — every note, image, and bill — and what completeness takes.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Complete Medical Records: The Missing Input for Healthcare AI",
+  "description": "Patient portals show a fraction of the record. Why healthcare AI needs the complete record — every note, image, and bill — and what completeness takes.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/complete-medical-records-ai"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/healthcare-ai-complete-medical-records",
+      "url": "https://signalroompodcast.com/episodes/healthcare-ai-complete-medical-records",
+      "name": "Healthcare AI and Leadership Challenges with Medical Records"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Aleida Lanza",
+      "sameAs": [
+        "https://www.linkedin.com/in/aleidalanza/",
+        "https://www.casedok.com/"
+      ]
+    }
+  ],
+  "keywords": [
+    "complete medical records"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Complete Medical Records: The Missing Input for AI"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a complete medical record, and why does it matter for AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the full corpus of a patient's history — clinical notes, images, and itemized bills across every provider — not the slice exposed in a single patient portal. AI reasoning over a partial record inherits the gaps in that record, and some of those gaps are impossible to see from inside any one system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Don't patient portals already give patients their records?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most portals surface only a small fraction of what exists. On the episode, Aleida Lanza argued that a patient who reads a portal is not seeing what the doctor sees, and that the rest of the record — including images and billing detail — usually has to be acquired separately and at cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't you just feed the whole record into an AI model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Records arrive in different native formats, from HL7 messages to PDFs to paper, and much of the content is privileged. Lanza's position was that the corpus has to be assembled and handled safely before AI is brought anywhere near it — privileged material cannot simply be poured into a model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does record incompleteness create bias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When information is missing rather than wrong, there is no error signal to catch. A model can look confident while reasoning over a record that omits the one fact that would have changed the plan, which makes missing-data bias harder to detect than most other failure modes."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Complete Medical Records: The Missing Input for AI">
+  <meta property="og:description" content="Patient portals show a fraction of the record. Why healthcare AI needs the complete record — every note, image, and bill — and what completeness takes.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/complete-medical-records-ai">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Complete Medical Records: The Missing Input for Healthcare AI</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/aleidalanza/" target="_blank" rel="noopener" style="color:#6c63ff;">Aleida Lanza</a> &middot; <a href="https://www.casedok.com/" target="_blank" rel="noopener" style="color:#6c63ff;">Website</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Aleida Lanza. Listen to the full episode: <a href="/episodes/healthcare-ai-complete-medical-records" style="color:#6c63ff; font-weight:600;">Healthcare AI and Leadership Challenges with Medical Records</a>.</p>
+
+<p>Each patient is tasked with recalling their entire medical history whenever they step foot into an exam room. This includes their medical histories, surgical procedures, and medication histories, including the time and date. Unfortunately, most individuals struggle with this task because the full medical history is not easily accessible to the patient. It is, however, locked away in multiple locations and exists in multiple, secure, and controlled versions.</p>
+<p>Aleida Lanza talks about this in a recorded Signal Room conversation at the Put Data First conference. Aleida spent 35 years as a medical malpractice paralegal before founding CaseDok. Her thoughts on this subject are direct and unsettling. Truthfully, when we say we are giving patients their data, and when we harness AI to interpret those data, we are giving them a very small piece of the whole. The only data patients have access to is their patient portal, and the entire dataset of their medical care is largely locked away and inaccessible to them. At Hutchins Data Strategy Consultants, this is what people are most frustrated with when it comes to healthcare AI: the framework was never given the data it needed to be right.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Not Everything Is Recorded in the Patient Portal</h2>
+<p>Lanza identified a line that is intentionally glossed over in most patient access conversations. She noted that a patient portal only contains a small amount of what a provider has. Therefore, if you are not viewing what your doctor is seeing, then you are viewing an excerpt of your record, not your actual record.</p>
+<p>Her definition of completeness encompassed more than clinical notes. When she speaks of the medical record, she is referring to everything, the entirety of records, images, and detailed bills. These categories in particular are the ones that typically disappear from the patient-facing view. A scan exists as a report, and a procedure exists as an item that the patient never sees. For someone who has dedicated her career to piecing together the fragmented story of what happened to a patient, that missing material is often the part of the story that is most important.</p>
+<p>She made an additional, more focused observation about the term interoperability. Lanza asserted that when the term is used in the context of the industry, it often refers to the interoperability of only the core clinical records, the portions of the record that are structured, coded, and easily transferable between systems. The remainder of the record does not integrate in that manner, and presenting the clinical record as the entire record allows everyone to consider a widely unresolved issue to be resolved.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Antecedents Over Episodes</h2>
+<p>What a record is for is the line that stays with you. Healthcare, she said, seems to look at what happened at the hospital and misses how the patient got there, the antecedent, the run-up, the history leading to the event. That earlier story is the most often missing part, and it is frequently the part that would change a decision.</p>
+<p>This ties into something Chris Hutchins brought up in the episode: medicine evaluates the performance of a healthcare provider using an average patient, which is an abstraction that collapses the moment the focus is on the actual patient in front of you. A record created around the discrete episode, rather than the trajectory that led to it, carries the same flattening. If you point an AI system at that kind of record, the model will learn the episode, not the patient.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Fragmentation Has a True Cost</h2>
+<p>The fragmentation that Lanza discussed has a price, and it is most often patients who pay this price multiple times. We, in her explanation, pay for the same records repeatedly, every new appointment starts with a blank history form and a patient struggling to remember the history an earlier provider documented. Of the approximately fifteen minutes a visit buys, she said, a large part can be consumed just trying to explain a history that should already be put together.</p>
+<p>She framed it using a specific economic lens: it is possible healthcare is the only sector in which you have to pay for a service in order to receive the data related to that service. If an insurance company covers a large expense for a scan, that scan is essentially a data set that the patient usually does not receive. She was arguing that patients should have the right to not only own that data set, but to also download it, store it, and carry the associated images and other line items. Her position was reinforced by real experience: she explained that she left her legal career after witnessing a family member being the victim of a malpractice incident, which she recognized as it was occurring and was powerless to intervene.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Why Completeness Has to Be Prioritized Before the Model</h2>
+<p>The most important part of Lanza&#39;s lecture for anyone designing a complex healthcare AI was Lanza&#39;s requirement that the record be assembled before AI is considered, and handled with extreme care. It is also relevant that the record does not have a consistent shape to it. If a source sends data in HL7, it will be HL7, and if it is sent as a PDF, it will remain a PDF. A rural practice may still be relying on paper records. Her methodology was to take the source at its face value and in its native format, rather than forcing everything into a single shape up front.</p>
+<p>She was just as adamant regarding the restrictions. You cannot just throw a medical record into an AI system because much of it is protected. The work she envisioned was a pipeline that would enable an AI system to safely access the full medical history and allow the AI to address the antecedent history without further fragmentation or hallucination. She mentioned an unreliability finding of records in emergency settings that she remembered being published in 2025, and estimated it to be on the order of one third. She cited it loosely, and the number should be treated as an alarm and not as a statistic. The underlying point was that when an unreliable history is given to a clinician in a case whereby the patient is unable to provide any information, a complete and curated history is what closes the gap.</p>
+<p>Hutchins identified the deeper concern pertaining to the episode. Missing information is the most dangerous type of bias because there is nothing to identify it with. A wrong value can be identified, but a value can be missing and there is no trace. A model can lack completeness and still be confident, and no fairness audit of the model will reveal a fact that was never part of the information.</p>
+<p>For context, CaseDok launched a day before the recording. She explained that it currently serves UnitedHealthcare, Aetna, and Florida Blue enrolled members and is conditionally approved on the Medicare.gov Connected Apps Registry. Once the government shutdown ends, CaseDok will be able to extend the services to Medicare members. This is a first rollout, and the diagnosis is what is important. AI is being asked to reason over healthcare records that were never complete to begin with.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/services/ai-and-data-readiness" target="_blank" rel="noopener" style="color:#6c63ff;">AI &amp; Data Readiness</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.hl7.org/fhir/" target="_blank" rel="noopener" style="color:#6c63ff;">HL7 FHIR interoperability standard</a></li>
+<li><a href="https://healthit.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">ONC — HealthIT.gov</a></li>
+<li><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">U.S. Department of Health &amp; Human Services — HIPAA</a></li>
+<li><a href="https://www.hhs.gov/ocr/index.html" target="_blank" rel="noopener" style="color:#6c63ff;">HHS Office for Civil Rights</a></li>
+<li><a href="https://www.ahrq.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">Agency for Healthcare Research and Quality</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is a complete medical record, and why does it matter for AI?</h3>
+          <p>It is the full corpus of a patient&#x27;s history — clinical notes, images, and itemized bills across every provider — not the slice exposed in a single patient portal. AI reasoning over a partial record inherits the gaps in that record, and some of those gaps are impossible to see from inside any one system.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Don&#x27;t patient portals already give patients their records?</h3>
+          <p>Most portals surface only a small fraction of what exists. On the episode, Aleida Lanza argued that a patient who reads a portal is not seeing what the doctor sees, and that the rest of the record — including images and billing detail — usually has to be acquired separately and at cost.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why can&#x27;t you just feed the whole record into an AI model?</h3>
+          <p>Records arrive in different native formats, from HL7 messages to PDFs to paper, and much of the content is privileged. Lanza&#x27;s position was that the corpus has to be assembled and handled safely before AI is brought anywhere near it — privileged material cannot simply be poured into a model.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">How does record incompleteness create bias?</h3>
+          <p>When information is missing rather than wrong, there is no error signal to catch. A model can look confident while reasoning over a record that omits the one fact that would have changed the plan, which makes missing-data bias harder to detect than most other failure modes.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-ai-complete-medical-records" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Healthcare AI and Leadership Challenges with Medical Records</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/healthcare-ai-and-leadership-challenges-with/id1850988366?i=1000746001980" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=8Yyji02GH7c" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18545151" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/data-quality-ai-strategy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/caregivers-connective-tissue-healthcare" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI and Rare Disease Caregiving: Why Patient Advocates Deserve a Seat at the Table</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/hidden-infrastructure-of-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance and Trust Infrastructure for Scaling AI</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-in-the-er-clinical-judgment" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Regulation in ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-data-quality" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Data Quality: The Cost Behind Every AI Decision</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-interoperability-and-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Data Interoperability and the Trust It Carries</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-ai-boom-patient-identity" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Healthcare AI Boom&#x27;s Blind Spot: Patient Identity and Data Integrity</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/still-chasing-integration-why-healthcare-data-remains-fragmented-6117" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Still Chasing Integration: Why Healthcare Data Remains Fragmented</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/when-reconstruction-breaks-down" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">When Reconstruction Breaks Down</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-innovation-tax-how-unresolved-data-problems-compound-against-every-strategic-bet" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Innovation Tax</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

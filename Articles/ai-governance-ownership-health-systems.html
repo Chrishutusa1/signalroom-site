@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/ai-governance-ownership-health-systems">
+  <title>Who Owns AI Governance in a Health System</title>
+  <meta name="description" content="AI governance fails as a binder of policy. A practitioner view on automation bias, shared accountability, and briefing a board on AI risk in one page.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Who Should Own AI Governance Inside a Health System",
+  "description": "AI governance fails as a binder of policy. A practitioner view on automation bias, shared accountability, and briefing a board on AI risk in one page.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-29",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/ai-governance-ownership-health-systems"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/patient-physician-journey-part-1",
+      "url": "https://signalroompodcast.com/episodes/patient-physician-journey-part-1",
+      "name": "Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Dr. Barry Chaiken",
+      "sameAs": [
+        "https://www.linkedin.com/in/barrychaiken/"
+      ]
+    }
+  ],
+  "keywords": [
+    "who owns AI governance in a health system"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Who Owns AI Governance in a Health System"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who should govern AI in a health system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can't assign governance to a single sign-off. A governance model that works assigns authority to say something if they are close to the tool. There should be a designated owner who is responsible for that deployment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is automation bias in clinical AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's a time-saving and often an over-reliance on AI to assist in verifying clinical decisions. A governance model that decides to not include automation bias as the greatest risk is misgoverned."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does AI risk look like in a board brief?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A one page, four answer brief that expresses what decisions AI does and does not impact, the expected failure modes, and who is liable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you see when you have AI oversight that clinicians trust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Good practice is rewarded. Clinicians provide honest data to a system that aids them in improving practice. Systems that focus on error and deviation get ignored and gamed to failure."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Who Owns AI Governance in a Health System">
+  <meta property="og:description" content="AI governance fails as a binder of policy. A practitioner view on automation bias, shared accountability, and briefing a board on AI risk in one page.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/ai-governance-ownership-health-systems">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Who Should Own AI Governance Inside a Health System</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 29, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/barrychaiken/" target="_blank" rel="noopener" style="color:#6c63ff;">Dr. Barry Chaiken</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Dr. Barry Chaiken. Listen to the full episode: <a href="/episodes/patient-physician-journey-part-1" style="color:#6c63ff; font-weight:600;">Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT</a>.</p>
+
+<p>Most healthcare systems push AI governance to another document collecting dust in a binder. A policy is drafted and signed off by a committee, then put on the shelf as tools are integrated into clinical workflows. The risk lies in the disconnect between the policy and practice, which cannot be assessed by a vendor checklist.</p>
+<p>In Signal Room, Dr. Barry Chaiken presented several scenarios from clinical practice to simplify governance risk. The main point from the interview was that governance is an operation, not a policy.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Real Clinical Risk is Automation Bias</h2>
+<p>Chaiken described a clear clinical risk. A physician, who is busy and distracted, is more likely to trust an AI-generated recommendation, which is a manifestation of automation bias. In this situation, the physician is probably creating a scenario that does not exist. The risk of automation bias in any AI governance is high, especially when it does not consider this as its highest risk. The main concern with AI governance frameworks is not testing how the AI model functions in a constrained, fully controllable environment. The real focus should be on testing what constraints exist in that recommendation to decision pathway, especially for the clinician who is already fatigued after working many hours in a clinical shift.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Borrow the Cockpit, Not the Checklist</h2>
+<p>Chaiken&#39;s use of aviation is a brilliant play on the classic checklist analogy. In this case, you quickly learned the checklist was not the correct answer. Crew resource management means you need both the pilot and co-pilot&#39;s right to call out. This is where AI oversight fails most. If your governance model has one approval gate, this means one accountable signature and a prolonged silence. Crew resource management is the right to call out, given to everyone present. This is particularly needed when the system is failing, and the first to call out is the nurse, and not the CMO.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Oversight That Clinicians Trust</h2>
+<p>The term that most often dismantles governance programs is surveillance, as for clinicians this means a blame task. With Chaiken, this was the opposite. This is not to mean someone gets to disciplined. This is to mean we are making sure you are not outside the bounds of our expectations. I am sure we will find things you do that are a great idea and we have not thought of implementing. If oversight produces positive outcomes to the most common issues and goes beyond simply reporting the most common errors, this is the oversight system that most clinicians will support and from which we will get real data. If it only identifies mistakes, then it gets ignored, gamed, and starved.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Briefing the Board in One Page</h2>
+<p>The Board does not need to understand the inner workings of the model. However, there are four things they need on one page: 1) what decisions does the AI influence, 2) what decisions does the AI not influence, 3) what are the failure modes, and 4) if one of the failure modes occurs, who is held accountable. If these four things cannot be defined for a tool, then that tool is out of its governance. This is what you tell the Board. You don&#39;t show them the accuracy chart.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/services/ai-governance" target="_blank" rel="noopener" style="color:#6c63ff;">Healthcare AI Governance</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener" style="color:#6c63ff;">WHO — Ethics &amp; governance of AI for health</a></li>
+<li><a href="https://www.himss.org/" target="_blank" rel="noopener" style="color:#6c63ff;">HIMSS</a></li>
+<li><a href="https://ai.nejm.org/" target="_blank" rel="noopener" style="color:#6c63ff;">NEJM AI</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Who should govern AI in a health system?</h3>
+          <p>You can&#x27;t assign governance to a single sign-off. A governance model that works assigns authority to say something if they are close to the tool. There should be a designated owner who is responsible for that deployment.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is automation bias in clinical AI?</h3>
+          <p>It&#x27;s a time-saving and often an over-reliance on AI to assist in verifying clinical decisions. A governance model that decides to not include automation bias as the greatest risk is misgoverned.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What does AI risk look like in a board brief?</h3>
+          <p>A one page, four answer brief that expresses what decisions AI does and does not impact, the expected failure modes, and who is liable.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What do you see when you have AI oversight that clinicians trust?</h3>
+          <p>Good practice is rewarded. Clinicians provide honest data to a system that aids them in improving practice. Systems that focus on error and deviation get ignored and gamed to failure.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/patient-physician-journey-part-1" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/redefining-the-patient-physician-journey-with-ai/id1850988366?i=1000735412230" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=Lhtm0LffY84" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18135232" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/patient-physician-journey-part-2" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Redefining the Patient-Physician Journey with AI: Trust, Interoperability, and the Future of Healthcare 2050</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/balancing-human-judgment-clinical-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Leadership: Balancing AI, Human Judgment and Clinical Trust</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-leadership-operational-reality" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/just-culture-ai-governance" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Just Culture in Healthcare AI: Governing Incidents Without Blame</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance in Healthcare: From Policy to Operational Reality</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/healthcare-ai-consulting" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI Consulting: What It Takes to Make AI Work</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/welcome-to-the-ai-health-pulse-9ef9" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Welcome to The AI Health Pulse</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/easing-the-cognitive-load-where-ai-supports-the-human-work-of-care-a4fe" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Easing the Cognitive Load: Where AI Supports the Human Work of Care</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/designing-clinical-ai-for-real-conditions">
+  <title>Designing Clinical AI for Real Conditions, Not Demos</title>
+  <meta name="description" content="Why clinical AI that works in a 3 PM demo fails at 3 AM — what frontline clinicians need from decision support: co-pilot design, governance, and trust.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Designing Clinical AI for Real Conditions: Built for 3 AM, Not 3 PM",
+  "description": "Why clinical AI that works in a 3 PM demo fails at 3 AM — what frontline clinicians need from decision support: co-pilot design, governance, and trust.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/designing-clinical-ai-for-real-conditions"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/ai-in-the-er-clinical-judgment",
+      "url": "https://signalroompodcast.com/episodes/ai-in-the-er-clinical-judgment",
+      "name": "AI Regulation in ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Dr. Natasha Dole",
+      "sameAs": [
+        "https://www.linkedin.com/in/natashadole/"
+      ]
+    }
+  ],
+  "keywords": [
+    "clinical decision support AI"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Designing Clinical AI for Real Conditions, Not Demos"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does it mean to design clinical AI for real conditions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Designing and testing tools for the high-stress, off-hours environment where clinicians actually work — the 3 AM emergency, not the controlled 3 PM demonstration — so the tool reduces cognitive load instead of adding to it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do clinicians distrust new AI tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often because they were excluded from the design. A tool built for clinicians without clinician and patient input tends to add layers of work rather than remove them, which is why demonstrations draw eye-rolls rather than adoption."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should clinical AI make decisions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The clinician remains the team leader and the accountable decision-maker at all times. AI works best as a co-pilot — a second brain that reduces load and surfaces detail — with human judgment as the first brain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a clinician need before trusting a clinical AI tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evidence it passed clinical governance, that clinicians and patients shaped its design, published performance data for the relevant populations, disclosed biases and harms, and proof it reduces rather than adds to the workload."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Designing Clinical AI for Real Conditions, Not Demos">
+  <meta property="og:description" content="Why clinical AI that works in a 3 PM demo fails at 3 AM — what frontline clinicians need from decision support: co-pilot design, governance, and trust.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/designing-clinical-ai-for-real-conditions">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Designing Clinical AI for Real Conditions: Built for 3 AM, Not 3 PM</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/natashadole/" target="_blank" rel="noopener" style="color:#6c63ff;">Dr. Natasha Dole</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Dr. Natasha Dole. Listen to the full episode: <a href="/episodes/ai-in-the-er-clinical-judgment" style="color:#6c63ff; font-weight:600;">AI Regulation in ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM</a>.</p>
+
+<p>An excellent test of any clinical AI tool is envisioning what it would be like to have it running for one hour. During a Signal Room discussion, emergency physician, Dr. Natasha Dole, made a clear distinction: an effective tool at 2 PM may be of no use at 2 AM. The 2 AM tool is what really counts. She challenged the developers of these tools to visit her and see what happens to her cognitive load at 3 AM when her pager goes off to see the actual worst case scenarios that the tools would need to survive.</p>
+<p>Clinical AI implementations continually fail for the same reason. They are developed and piloted in calm, well-staffed clinicians&#39; environments, and are unleashed on overwhelmed clinicians. At Hutchins Data Strategy Consultants, we view these implementations as a design failure, rather than an adoption failure. We believe the responsibility to address these gaps between the AI tool as designed and the AI tool as used lies with the developers, and not the clinicians, who bear the brunt of these poorly designed tools to do their work and improve care.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Why Clinicians Eye Roll at the Demo</h2>
+<p>Dole was frank about the real reason technology demonstrations become tedious to physicians. It is not innate resistance to change. It is the fact that the employed tool is created without the participation of the main users. If the tool users cannot have a say about what is the most useful to them, then unnecessary work is the end product. This is immediately obvious to the overworked clinician as soon as they touch the device.</p>
+<p>Dole&#39;s solution is to designate a team to include all relevant stakeholders from the outset of the development process. This includes clinicians and patients. A tool designed with no input is already a failure, according to Dole. Towards the end of the conversation she provided a memorable principle of her critique: build with clinicians, not to them.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Co-Pilot, Not Autopilot</h2>
+<p>Dole promotes an AI model for use in medicine and clinical practice where the technology is designed to support clinicians. A primary emergency responder always remains a human 24/7. In her view, the AI is there to act as a support tool and a digital scribe with minimal impact on a clinician&#39;s cognitive processing. The clinician maintains the authority and the decision-making role, while the AI supports them by guiding and optimizing the process.</p>
+<p>She was clear in noting that the first &#39;brain&#39; in the process is the clinician&#39;s judgment, not the AI. If a tool&#39;s result is inconsistent with what she is observing clinically, she compares the two and asks herself if they can logically fit together — if one plus one is two, or if the tool is insisting on three. If it is the latter, she seeks a second human brain&#39;s agreement. The AI is a second opinion that she will consider, but it is not the final answer, and she must maintain this discipline in order to avoid risk.</p>
+<p>This is not only a cultural reason, but a hard accountability reason. When something happens, no one says, &quot;The AI did it.&quot; The clinician is responsible, and in a medical-legal case, the tool is of no defense. This must inform how conservative the approach is to the introduction of these systems, and how unambiguously their boundaries are defined.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Criteria for Clinician Trust</h2>
+<p>Dole essentially clarified the standards to which a tool must adhere before she is willing to trust it — and they provide a practical framework for clinicians when deploying clinical AI. It should have undergone a clinical governance review. It must include clinicians and patients in its design. There should be published performance data and literature for the exact populations it intends to serve, with an honest exposure of its known biases and potential harms. And, it must provide a demonstrable reduction in work.</p>
+<p>Most tools fail the last criterion. More checks, more clicks, more tasks. If tools increase the already present burdens of administrative tasks, they will be rejected by people who are, in Dole&#39;s words, drowning. Dole works against two competing pressures in medicine: overcrowding and exit block. A tool secures its place if it works against these pressures by leading flow. Dole describes the problem of adding administrative friction against these pressures for the sake of safety.</p>
+<p>Dole is describing a judgment based on the &#39;three Ps&#39;: patients, people, and profit. Patients are the main concern. People are the clinicians who have to deal with the tool. Profit is the program&#39;s sustainability funding. Each of the &#39;three Ps&#39; must be included in the discussions to be adequate.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Consent, Equity, and the Limits of Off-the-Shelf AI</h2>
+<p>There are artificial limitations to real-world clinical conditions. Consent is one of these. In emergency medicine, the majority of patients are unconscious and cannot consent to anything on the spot. Dole&#39;s idea is practical consent and to ensure AI use is documented in clinical notes. This is to prevent the AI tool from generated notes and to complete a form of self-disclosure, which will automatically be populated, so clinicians will not have to complete these tasks.</p>
+<p>Equity is another concern. If an AI tool is trained on literature and datasets that are inequitable and under-represent minority groups and populations, then that tool will carry those inequities and gaps to the bedside. Dole noted that AI must serve all populations, including minority populations; otherwise, it will deepen the inequities that exist rather than provide relief to entrenching patterns. Dole explains consumer AI is to offer medical advice, and she defends her position with great care. AI, unlike a medical professional, is unable to take into account the patient&#39;s history and medications; an appropriate and differential answer that AI provides is lacking, and in a situation where it provides a confident answer, the answer is likely dangerous.</p>
+<p>She also separates two literacies that are conflated. AI literacy is not the same as digital literacy, and clinicians need time to develop it — not training if it&#39;s a day they have free to recover. The clinicians who need these tools the most are time and pressure and lacking the most, to the greatest degree, inclination to innovate and/or disrupt the status quo in a way that will be useful, and a rollout that treats AI competence as a hobby and is for the tech-savvy will reach, or be in contact with, the most ill-educated in the field.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Technology That Disappears</h2>
+<p>Dole&#39;s vision for the future of technology is one in which technology recedes. Well-designed AI has the ability to work like a sound engineer. At a concert, sound engineers work behind the scenes. AI has the ability to work behind the scenes, and make everything else possible at an event, without having to be a focus. Dole describes the positive benefits of technology. During the pandemic, clinicians had little to no direct interaction with their patients and were surrounded by layers of protective equipment. One of the things that helped mitigate the burden of that protective equipment was a scribe that handled documentation. That technology provided the clinician with the time that had been wasted to be present with the patient, and to be a human again. Even the smallest of cognitive loads helped to improve the quality of the interaction and what that clinician was able to provide to the patient in that moment.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener" style="color:#6c63ff;">Responsible AI in Healthcare</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener" style="color:#6c63ff;">WHO — Ethics &amp; governance of AI for health</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://ai.nejm.org/" target="_blank" rel="noopener" style="color:#6c63ff;">NEJM AI</a></li>
+<li><a href="https://jamanetwork.com/" target="_blank" rel="noopener" style="color:#6c63ff;">JAMA Network</a></li>
+<li><a href="https://www.himss.org/" target="_blank" rel="noopener" style="color:#6c63ff;">HIMSS</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What does it mean to design clinical AI for real conditions?</h3>
+          <p>Designing and testing tools for the high-stress, off-hours environment where clinicians actually work — the 3 AM emergency, not the controlled 3 PM demonstration — so the tool reduces cognitive load instead of adding to it.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why do clinicians distrust new AI tools?</h3>
+          <p>Often because they were excluded from the design. A tool built for clinicians without clinician and patient input tends to add layers of work rather than remove them, which is why demonstrations draw eye-rolls rather than adoption.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Should clinical AI make decisions?</h3>
+          <p>No. The clinician remains the team leader and the accountable decision-maker at all times. AI works best as a co-pilot — a second brain that reduces load and surfaces detail — with human judgment as the first brain.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What does a clinician need before trusting a clinical AI tool?</h3>
+          <p>Evidence it passed clinical governance, that clinicians and patients shaped its design, published performance data for the relevant populations, disclosed biases and harms, and proof it reduces rather than adds to the workload.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-in-the-er-clinical-judgment" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">AI Regulation in ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/ai-regulation-clinical-ai-in-the-er-designed-for-3-am/id1850988366?i=1000755032528" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=wizfkLwkIYw" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18839920" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/balancing-human-judgment-clinical-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Leadership: Balancing AI, Human Judgment and Clinical Trust</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-verification-drug-discovery-ep17" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Why AI Verification Is the Real Bottleneck in Pharmaceutical Drug Discovery</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-leadership-operational-reality" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/caregivers-connective-tissue-healthcare" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI and Rare Disease Caregiving: Why Patient Advocates Deserve a Seat at the Table</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Responsible AI in Healthcare</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/healthcare-ai-consulting" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI Consulting: What It Takes to Make AI Work</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance in Healthcare: From Policy to Operational Reality</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-quiet-power-of-ai-in-healthcare-closing-care-gaps-before-they-become-costly-43e7" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Quiet Power of AI in Healthcare: Closing Care Gaps Before They Become Costly</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/ai-pilots-win-why-small-ai-tests-succeed-while-full-programs-often-fail" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Pilots Win</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/where-responsibility-breaks-down-bdf9" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Where Responsibility Breaks Down</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

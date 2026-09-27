@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/scaling-healthcare-ai-data-trust">
+  <title>Scaling Healthcare AI: The Trust Infrastructure</title>
+  <meta name="description" content="Moving healthcare AI from pilot to enterprise: the data foundation, verification, and human oversight that let an organization scale trust with it.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Scaling Healthcare AI: The Trust Infrastructure Underneath",
+  "description": "Moving healthcare AI from pilot to enterprise: the data foundation, verification, and human oversight that let an organization scale trust with it.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/scaling-healthcare-ai-data-trust"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/hidden-infrastructure-of-trust",
+      "url": "https://signalroompodcast.com/episodes/hidden-infrastructure-of-trust",
+      "name": "Data Governance and Trust Infrastructure for Scaling AI"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Amit Shivpuja",
+      "sameAs": [
+        "https://www.linkedin.com/in/amitshivpuja/",
+        "https://datacompass.substack.com"
+      ]
+    }
+  ],
+  "keywords": [
+    "scaling healthcare AI"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Scaling Healthcare AI: The Trust Infrastructure"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do healthcare AI pilots fail to scale across an enterprise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often the data foundation underneath was never built to carry more than one use case. A model learns its patterns from the data, so weak, inconsistent, or biased inputs limit how far any deployment can spread before trust erodes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean to scale trust alongside AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It means the people who will use a model believe in it, understand its purpose, and have a way to verify it. Without that, low-friction tools earn misplaced confidence that collapses the first time they return a wrong answer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How early should subject-matter experts be involved in a healthcare AI project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before anything is built. Defining the requirement, the exact need, and the intended business impact up front gives you a baseline to measure outputs against, and the same experts often become the program's strongest champions for adoption."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is human oversight still necessary once an AI system is deployed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Models — agents especially — drift and do things they were not meant to do, so oversight is not a one-time gate. Trust-but-verify and a human in the loop remain part of running the system, not just launching it."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Scaling Healthcare AI: The Trust Infrastructure">
+  <meta property="og:description" content="Moving healthcare AI from pilot to enterprise: the data foundation, verification, and human oversight that let an organization scale trust with it.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/scaling-healthcare-ai-data-trust">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Scaling Healthcare AI: The Trust Infrastructure Underneath</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/amitshivpuja/" target="_blank" rel="noopener" style="color:#6c63ff;">Amit Shivpuja</a> &middot; <a href="https://datacompass.substack.com" target="_blank" rel="noopener" style="color:#6c63ff;">Website</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Amit Shivpuja. Listen to the full episode: <a href="/episodes/hidden-infrastructure-of-trust" style="color:#6c63ff; font-weight:600;">Data Governance and Trust Infrastructure for Scaling AI</a>.</p>
+
+<p>If scaling AI requires a useful analogy, think of a launch pad. That was how Amit Shivpuja, director, data &amp; AI enablement for Walmart, framed a Signal Room conversation on hidden infrastructure of trust. If AI is rockets, the data is the launch pad. If you get the launch pad infrastructure right, the rockets can be launched. If you get it wrong, you will not scale, just repeat the same unreliable rockets launches.</p>
+<p>The line that resonated with him described the stakes as garbage in, garbage squared out. The cost of poor input is not a constant drain as the system scales; the effect is a compounding cost. The first launch on an organization&#39;s part builds credibility, and the system may go unnoticed for a long time. The trust will fade if the same unsound foundation is relied upon to serve an entire organization. At Hutchins Data Strategy Consultants, the most noticeable gap in a deployed system is between a working demo and an actual scaled system: the demo proved the model, and the rollout exposed the data.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Nothing Scales Without Trust</h2>
+<p>The issue of trust is something that has to be worked on alongside the building of AI and it is the critical factor in the success of the AI.</p>
+<p>Current generative tools have a certain problem. These tools are easy to use, and since there is almost no resistance, people start to trust them more than they should. This is a problem because there is almost no resistance to losing trust either. A few incorrect answers, either because the tool is hallucinating or due to the incorrect training data, and people lose trust quickly. Building trust relies on the three things Shivpuja identified: transparency concerning the data actually available, accountability to ensure the question &quot;who addresses the bad output after deployment?&quot; has an answer, and the ability to provide justification for an answer. None of these components are present in the tools by default. Each of them must be incorporated into the tools at least to ensure that the tools can hold the weight of increasing demand.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Bring the Frontline In Before You Build Anything</h2>
+<p>One of the most relevant aspects of the conversation was related to the timing. Almost all organizations have the tendency to operate the way Chris Hutchins described the situation in the healthcare sector. The tendency is to first create something that looks extraordinary because the creators believe that the target audience will eventually show up. Chris Hutchins terms this tendency the &quot;field-of-dreams approach,&quot; and it looks more honestly like if you build it, they won&#39;t come.</p>
+<p>Shivpuja&#39;s solution was to involve both the subject-matter experts and the eventual users as soon as possible, as context exists primarily with them, and to gather the requirement and the exact need and possible business impact before building anything to have that baseline to compare against later. Two things follow. You design against a target rather than a guess, and the people who were part of the journey become the program&#39;s biggest champions, which is what a pilot needs to become an enterprise.</p>
+<p>Trust can be lost here before a single line of output is generated. People will not rely on a capability that they do not understand the purpose of, and no amount of polish at launch recovers that.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Address the Fear by Showing the Value</h2>
+<p>The scaling of AI in any organization hits a human concern, that being the automation of the job. Shivpuja was open that the impact eventually on employment was and still is a real debate with the opposing camps. His way of easing the fear was working on the value, by showing it concretely. A task that took ten hours of manual effort now takes one. The manual error that came with it disappears and the person is left with time.</p>
+<p>Somewhere in the discussion, leaders get stuck figuring out what the time they regained is actually for. There will be tasks that they wanted to start, and there will be challenges they wanted to address. Naming that turns a threat into a bargain. This also means that the workforce needs a baseline of data and AI literacy. It is not technical fluency for everyone and not to the same deep level, but to know what a model is and what it is not. AI&#39;s time, he argues, should be reinvested to avoid losing in-house expertise along the way.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Build Trust with Communication</h2>
+<p>Since trust takes time to build and can slowly disappear, some of the structures are monitoring for the signs. The read on the warning signs was unglamorous and direct. He watches reactions to prototypes, how people actually use it and whether the feedback on the first version is good. The right relationships are an additional channel. This is because the people who trust them say when something is not working.</p>
+<p>For this to work, contact must be sustained. He was emphatic that this is not a fly by or fire and forget. An agent, in particular, will drift and, at some point, do something it was not meant to do. Someone has to be there to see and respond to that. This was related to a larger issue of trust in institutions, where members of an organization do not trust the leadership or some members of the organization, which only increases the cost of the absence of a consistent, ongoing communication which is necessary to highlight concerns and issues in a timely manner.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">What Leaders Should Carry Into the Transition</h2>
+<p>When told to imagine and communicate to leaders navigating such transformations that are comparable to the shifts in the internet of the 1990s, Shivpuja shared a brief checklist. Trust but verify. Leaders should trust their technology and teams, but should make sure that technology and teams are doing the work they said they are doing. This matters more here than in past technology waves, because the tool in some cases is building the tool, with its own automated capabilities.</p>
+<p>Correctly establish the data foundation, as the can has been kicked down the road one too many times, and even if data correctness were ideal, there are still biases and structural issues from business data shaping that would still require addressing. Also, keep a human in the loop as indispensable, for verifying and for representing the people for whom these systems are ultimately built. None of these are checkboxes for go-live. Rather, these are the boundary constraints for where a deployment can grow responsibly.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/services/ai-and-data-readiness" target="_blank" rel="noopener" style="color:#6c63ff;">AI &amp; Data Readiness</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener" style="color:#6c63ff;">WHO — Ethics &amp; governance of AI for health</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles" target="_blank" rel="noopener" style="color:#6c63ff;">FDA — Good Machine Learning Practice</a></li>
+<li><a href="https://www.ahrq.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">Agency for Healthcare Research and Quality</a></li>
+<li><a href="https://www.himss.org/" target="_blank" rel="noopener" style="color:#6c63ff;">HIMSS</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why do healthcare AI pilots fail to scale across an enterprise?</h3>
+          <p>Often the data foundation underneath was never built to carry more than one use case. A model learns its patterns from the data, so weak, inconsistent, or biased inputs limit how far any deployment can spread before trust erodes.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What does it mean to scale trust alongside AI?</h3>
+          <p>It means the people who will use a model believe in it, understand its purpose, and have a way to verify it. Without that, low-friction tools earn misplaced confidence that collapses the first time they return a wrong answer.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">How early should subject-matter experts be involved in a healthcare AI project?</h3>
+          <p>Before anything is built. Defining the requirement, the exact need, and the intended business impact up front gives you a baseline to measure outputs against, and the same experts often become the program&#x27;s strongest champions for adoption.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Is human oversight still necessary once an AI system is deployed?</h3>
+          <p>Yes. Models — agents especially — drift and do things they were not meant to do, so oversight is not a one-time gate. Trust-but-verify and a human in the loop remain part of running the system, not just launching it.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/hidden-infrastructure-of-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Data Governance and Trust Infrastructure for Scaling AI</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/data-governance-and-trust-infrastructure-for-scaling/id1850988366?i=1000744083036" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=SY9xtWnOSOE" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18464077" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/data-quality-ai-strategy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/enterprise-ai-journey-data-foundations" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Enterprise AI Journey: Agentic AI, Generative AI and Data Foundations in Healthcare</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-ai-complete-medical-records" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI and Leadership Challenges with Medical Records</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/ai-shutdown-governance-privacy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Strengthen your AI Projects in 2026. Privacy and AI Governance Insights</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-data-readiness-for-ai" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Data Readiness for AI: Why Programs Stall Before the Model</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-ai-strategy-to-execution" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI: From Strategy to Execution</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-ai-value" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI: Moving From Hype to Measurable Value</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-hidden-infrastructure-of-trust-c428" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Hidden Infrastructure of Trust</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-ai-that-heals-the-system-aca5" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The AI That Heals the System</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/ai-pilots-win-why-small-ai-tests-succeed-while-full-programs-often-fail" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Pilots Win</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-innovation-tax-how-unresolved-data-problems-compound-against-every-strategic-bet" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Innovation Tax</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

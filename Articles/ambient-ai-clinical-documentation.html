@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/ambient-ai-clinical-documentation">
+  <title>Ambient AI in Healthcare: Documentation With Control</title>
+  <meta name="description" content="How ambient AI can lift the documentation burden behind clinician burnout, and the workflow design and oversight that keep automation bias out.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ambient AI in Healthcare: Cutting Documentation Burden Without Ceding Control",
+  "description": "How ambient AI can lift the documentation burden behind clinician burnout, and the workflow design and oversight that keep automation bias out.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/ambient-ai-clinical-documentation"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/patient-physician-journey-part-1",
+      "url": "https://signalroompodcast.com/episodes/patient-physician-journey-part-1",
+      "name": "Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Dr. Barry Chaiken",
+      "sameAs": [
+        "https://www.linkedin.com/in/barrychaiken/",
+        "https://barrychaiken.com/"
+      ]
+    }
+  ],
+  "keywords": [
+    "ambient AI in healthcare"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ambient AI in Healthcare: Documentation With Control"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is ambient AI in clinical documentation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ambient AI listens to the clinical encounter and drafts the documentation, so the clinician can focus on the patient instead of the screen. When it is implemented well, it can capture the visit as completely as the clinician would, and the resulting note can be reworked into a summary the patient can actually understand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ambient AI reduce clinician burnout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It addresses one of the largest drivers of it. Much of physician and nurse burnout traces back to documentation, and a meaningful share of that documentation exists to support reimbursement. Lifting that burden frees the clinician to spend the encounter on the patient rather than the keyboard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is automation bias and why does it matter here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Automation bias is the tendency of a busy, distracted clinician to accept an AI recommendation without scrutiny. Because AI can hallucinate or surface misinformation, an unchecked workflow lets errors pass straight through. The defense is to design the workflow so the clinician stays an active part of it, add a tool that checks the output, and monitor performance over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you keep the clinician in control of clinical AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat the technology as a tool tied to a specific outcome, design the workflow before deploying so the human stays in the loop, and bring clinicians and patients into that design. Oversight should look for better ways of working, not police the clock."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ambient AI in Healthcare: Documentation With Control">
+  <meta property="og:description" content="How ambient AI can lift the documentation burden behind clinician burnout, and the workflow design and oversight that keep automation bias out.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/ambient-ai-clinical-documentation">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Ambient AI in Healthcare: Cutting Documentation Burden Without Ceding Control</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/barrychaiken/" target="_blank" rel="noopener" style="color:#6c63ff;">Dr. Barry Chaiken</a> &middot; <a href="https://barrychaiken.com/" target="_blank" rel="noopener" style="color:#6c63ff;">Website</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Dr. Barry Chaiken. Listen to the full episode: <a href="/episodes/patient-physician-journey-part-1" style="color:#6c63ff; font-weight:600;">Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT</a>.</p>
+
+<p>Most of the burnout problem in healthcare is paperwork. In the inaugural episode of The Signal Room, Dr. Barry Chaiken, a physician leader and former chair of the HIMSS Board of Directors, who has authored a book on the future of healthcare, is one of the few people to pinpoint the cause of clinician burnout to something that&#39;s usually overlooked: the electronic health record, and the documentation requirements associated with it. He makes a disruptive and uncomfortable point about why the systems were designed the way they were. The primary purpose of healthcare organizations is to document patient care in order to get paid. In a US healthcare system that relies on documentation for payment, there would be no market for a system designed to improve patient care.</p>
+<p>This context is important because it helps us understand the role that ambient AI can play in the future. The requirements for documentation in healthcare are unlikely to change in the foreseeable future, without a fundamental change to the reimbursement model. Therefore, as we look to the future, the more appropriate question to ask is not how to remove the burden, but how to shift that burden away from the clinician, and in this regard, ambient AI is the most promising answer that Chaiken has provided.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">The Documentation Burden Is the Practical Place to Start</h2>
+<p>Chaiken has placed ambient listening, which is the first practical use of AI that he has identified, in the practical side of the artificial intelligence balance. The reasoning is based on something that every healthcare system is already measuring: clinician burnout driven by the completion of care documentation.</p>
+<p>Ambient AI provides documentation based on the encounter audio, which allows the clinician to step away from the keyboard and engage with the patient. In Chaiken&#39;s account, this is more than just a minor improvement. Properly integrated ambient listening technology can document a visit as completely as the clinician would, and often in more detail.</p>
+<p>That last point, about completeness, is reliant on proper integration of the technology into the caregiver workflow. The capability is not a property of the tool sitting on a shelf. It is a property of the tool placed inside a workflow designed for it.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">A Note the Patient Can Actually Use</h2>
+<p>Chaiken noted many examples of improvements and enhancements in the quality of care possible due to the improved documentation, rather than just the time saving for the clinician.</p>
+<p>The patient&#39;s note need not be the clinician&#39;s note. It can be modified to a summary that the patient may understand given their language, level of education, profession, and the like. That way, the patient takes home a meaningful document, rather than a clinical record that they cannot understand. The same logic was applied to preparation for the surgery. Preoperative instructions can be tailored to address the patient&#39;s individualized needs and prepared in a language that is uplifting and assuring.</p>
+<p>The same is true for referrals. When a patient is referred to a specialist, the information that the specialist requires can be synthesized and moved to the beginning of the note, rather than being buried in the content of the note. To illustrate, for a patient going for a hip replacement, the surgeon would want to know the patient&#39;s clotting factors and hemoglobin, while the cholesterol level would be less relevant. Chaiken viewed this as a type of personalization that is not feasible for humans to do due to the time and effort that would be required, from patient to patient, but that AI can achieve. It transforms documentation from a burden that the clinician bears to something that benefits the patient and the next clinician in the line.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Where the Risk Lives: Automation Bias</h2>
+<p>The same conversation refused to let the positive aspects stand alone. The moment AI moves from documentation to serving as a therapeutic or diagnostic assistant, Chaiken called it a specific type of failure: automation bias.</p>
+<p>His account displayed a lack of sentimental bias towards the subjects. Clinicians are not absent of humanity. They too can become preoccupied and miss things and make mistakes. In fact, given the nature of humanity, people can be expected to make mistakes. Take a recommendation from an AI, and place it in front of a clinician who is working under those conditions and is experiencing a workflow that was never meant to keep them involved, and the recommendations will go through the process without justification. Since AI can fabricate and provide an answer that is factually incorrect, a process that does not have a manual review has a legitimate problem embedded in it.</p>
+<p>The solution he suggested is more complex, and more than a single thing in the process. First, the process should be designed in such a way that a clinician is an active participant in the process in order to not implement automation bias. Second, build in a review step by using AI paired with another algorithm that focuses on the AI&#39;s work and the clinician&#39;s judgment. Lastly, implement an oversight process. Regularly check the system for actions that are out of the norm, and use those unexpected results to correct the process and the underlying design. These approaches are all required, and are not interchangeable.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Surveillance Without the Stopwatch</h2>
+<p>Chaiken anticipated the response that word invites. Surveillance sounds like someone looking over the clinician&#39;s shoulder, ready to punish. This perspective is unwarranted and has good reason to be distrusted in healthcare.</p>
+<p>His reimagining began with two examples. Crew resource management in commercial flight, which permits co-pilots and supporting staff to challenge a captain, has been shown to improve safety in aviation. The same can be said for the operating room, which has been shown to improve safety through the use of a checklist and establishing open permission to anyone in the room to stop a procedure should they find something that is not correct. A measure in his view of surveillance is the opposite of a stopwatch, which shaves a nurse&#39;s call from four minutes to three minutes and forty-five seconds and is the exact opposite of how to do it right. Instead, he states it is a way to ensure the work is within reasonable bounds, and surmises that the work may be pushing the bounds for improvement for the work in progress.</p>
+<p>He was clear that there is a negative connotation for some with regard to the use of surveillance in for-profit, fund-owned health care practices, which has been implemented to shorten the duration of patient visits. This is the direct opposite of what surveillance is meant to achieve. The focus of surveillance is on the patient, and if that care is overlooked, then the focus has clearly been lost.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Build It With the People Who Do the Work</h2>
+<p>The thread tying the optimism and the caution together is design discipline. Chaiken returned more than once to a conviction shaped by years of EHR rollouts: technology is only a set of tools, and tools tied to no outcome can absorb enormous time and money while achieving nothing, or making things worse.</p>
+<p>To ensure your initiative is unsuccessful, issue orders to the staff before consulting directly with them. If you characterize clinical staff as mere consumers of outputs, you not only risk their trust, but also your initiative. Trust is not given, but earned. Patients also have an important stake in the process, with a say in how AI reaches them through messages and summaries. Collect the information from everyone first, and then make decisions.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener" style="color:#6c63ff;">Responsible AI in Healthcare</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles" target="_blank" rel="noopener" style="color:#6c63ff;">FDA — Good Machine Learning Practice for Medical Device Development</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener" style="color:#6c63ff;">WHO — Ethics &amp; governance of AI for health</a></li>
+<li><a href="https://www.himss.org/" target="_blank" rel="noopener" style="color:#6c63ff;">HIMSS</a></li>
+<li><a href="https://ai.nejm.org/" target="_blank" rel="noopener" style="color:#6c63ff;">NEJM AI</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is ambient AI in clinical documentation?</h3>
+          <p>Ambient AI listens to the clinical encounter and drafts the documentation, so the clinician can focus on the patient instead of the screen. When it is implemented well, it can capture the visit as completely as the clinician would, and the resulting note can be reworked into a summary the patient can actually understand.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Does ambient AI reduce clinician burnout?</h3>
+          <p>It addresses one of the largest drivers of it. Much of physician and nurse burnout traces back to documentation, and a meaningful share of that documentation exists to support reimbursement. Lifting that burden frees the clinician to spend the encounter on the patient rather than the keyboard.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is automation bias and why does it matter here?</h3>
+          <p>Automation bias is the tendency of a busy, distracted clinician to accept an AI recommendation without scrutiny. Because AI can hallucinate or surface misinformation, an unchecked workflow lets errors pass straight through. The defense is to design the workflow so the clinician stays an active part of it, add a tool that checks the output, and monitor performance over time.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">How do you keep the clinician in control of clinical AI?</h3>
+          <p>Treat the technology as a tool tied to a specific outcome, design the workflow before deploying so the human stays in the loop, and bring clinicians and patients into that design. Oversight should look for better ways of working, not police the clock.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/patient-physician-journey-part-1" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Redefining the Patient-Physician Journey with AI: Ambient Listening, Automation Bias, and Revolutionary Health IT</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/redefining-the-patient-physician-journey-with-ai/id1850988366?i=1000735412230" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=Lhtm0LffY84" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18135232" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/balancing-human-judgment-clinical-trust" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Leadership: Balancing AI, Human Judgment and Clinical Trust</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/patient-physician-journey-part-2" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Redefining the Patient-Physician Journey with AI: Trust, Interoperability, and the Future of Healthcare 2050</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-leadership-operational-reality" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/designing-clinical-ai-for-real-conditions" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Designing Clinical AI for Real Conditions: Built for 3 AM, Not 3 PM</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/ai-in-drug-discovery" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI in Drug Discovery: Why Verification Is the Real Bottleneck</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/complete-medical-records-ai" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Complete Medical Records: The Missing Input for Healthcare AI</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/easing-the-cognitive-load-where-ai-supports-the-human-work-of-care-a4fe" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Easing the Cognitive Load: Where AI Supports the Human Work of Care</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/where-responsibility-breaks-down-bdf9" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Where Responsibility Breaks Down</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/ai-pilots-win-why-small-ai-tests-succeed-while-full-programs-often-fail" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">AI Pilots Win</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>

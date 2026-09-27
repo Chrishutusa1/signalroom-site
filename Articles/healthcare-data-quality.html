@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/healthcare-data-quality">
+  <title>Healthcare Data Quality: The Cost Behind AI Decisions</title>
+  <meta name="description" content="Why AI exposes data quality problems instead of hiding them — the leadership, prevention, and governance discipline that makes healthcare data fit for use.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Healthcare Data Quality: The Cost Behind Every AI Decision",
+  "description": "Why AI exposes data quality problems instead of hiding them — the leadership, prevention, and governance discipline that makes healthcare data fit for use.",
+  "author": {
+    "@type": "Person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-06-13",
+  "dateModified": "2026-09-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/healthcare-data-quality"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/data-quality-ai-strategy",
+      "url": "https://signalroompodcast.com/episodes/data-quality-ai-strategy",
+      "name": "Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Danette McGilvray",
+      "sameAs": [
+        "https://www.linkedin.com/in/danette-mcgilvray/",
+        "https://www.gfalls.com"
+      ]
+    }
+  ],
+  "keywords": [
+    "healthcare data quality"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Healthcare Data Quality: The Cost Behind AI Decisions"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is healthcare data quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The degree to which clinical and operational data is fit for the purpose it is being used for — accurate, complete, consistent, and trustworthy enough that decisions and models built on it hold up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does AI make data quality more urgent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI presents its output with confidence regardless of the quality underneath. Poor data no longer surfaces as an obvious error; it is laundered into a fluent, plausible answer that is harder to question."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is fixing data quality later cheaper than fixing it early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The cost of a defect escalates the further downstream it is caught — a small fix at the source becomes expensive rework in testing and far more expensive once it halts the business. Prevention is consistently cheaper than cleanup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Whose job is data quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a leadership responsibility, not only a technical one. Quality work triggers changes to roles, processes, and training, and only sustained leadership support keeps those changes in place."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Healthcare Data Quality: The Cost Behind AI Decisions">
+  <meta property="og:description" content="Why AI exposes data quality problems instead of hiding them — the leadership, prevention, and governance discipline that makes healthcare data fit for use.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/healthcare-data-quality">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if ('requestIdleCallback' in window) { requestIdleCallback(loadGA, {timeout: 4000}); }
+      else { setTimeout(loadGA, 3000); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>Healthcare Data Quality: The Cost Behind Every AI Decision</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; June 13, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/danette-mcgilvray/" target="_blank" rel="noopener" style="color:#6c63ff;">Danette McGilvray</a> &middot; <a href="https://www.gfalls.com" target="_blank" rel="noopener" style="color:#6c63ff;">Website</a> on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:0 0 1.5rem;">This article is drawn from The Signal Room conversation with Danette McGilvray. Listen to the full episode: <a href="/episodes/data-quality-ai-strategy" style="color:#6c63ff; font-weight:600;">Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance</a>.</p>
+
+<p>Organizations routinely skip over a question that will cost them, and I mean cost them dearly, when starting to implement AI systems. During a recent Signal Room episode, data quality specialist Danette McGilvray, characterized the situation best. When a new capacity comes to an organization, it becomes the responsibility of the leadership to evaluate capability and determine if the organization should pursue it. If the answer to the prior question is affirmative, then the organization has to determine the approach to maximize the new capability and the means to mitigate any potential negative impact. She says that leadership over and over again fails to respond to these basic questions. More importantly, the data required to answer the question has been neglected.</p>
+<p>McGilvray says that this is a problem she has been dealing with for a couple of decades, and because of that she considers herself a second-generation pioneer because she built her practice on the works of Tom Redman, Larry English, and Rich Wang. The central piece of her warning is that when it comes to healthcare and AI, McGilvray argues that organizations are more likely to spend millions on technology with a reluctance to spend even a small fraction of that on the data that will be the backbone of the systems that the technology is designed to support. This is a trend that has become more prevalent at Hutchins Data Strategy Consultants in recent years, and we now see it as a leading indicator of a failing AI-driven change initiative.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">AI Doesn&#39;t Expose Bad Data, It Conceals It</h2>
+<p>The old saying that refers to bad data being input to a system and the resulting output also being bad data, &quot;garbage in, garbage out&quot;, was based on the assumption that the system was showing some form of garbage that was obvious to the user. This has changed since the introduction of generative AI systems. Now we can expect the system to produce a well-structured answer that is complete and confident. In reality the answer may be fundamentally based on an assumption that is not warranted and may not even be relevant to the question. This is a real danger of the underlying quality problem that we are currently dealing with in AI systems.</p>
+<p>McGilvray cited several examples of AI systems generating citations and references that appeared to be real but were entirely fictitious. Clinicians and analysts searching for errors of a more obvious nature are unlikely to catch fictitious citations as the AI will show no indication that anything is wrong. The same phenomenon is present with bias. AI systems are intended to mimic the recommendations of the training data. She explained that AI systems are not capable of bias. However, AI systems trained on biased data remain biased and repeat the recommendations of the data.</p>
+<p>This led to a distinction that is useful for all future deployments. She would prefer a model that says data has historically been XYZ as opposed to one that says we should be doing ABC.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Quality Is Not Slower. Skipping It Is.</h2>
+<p>The assumption that not addressing data quality leads to a faster outcome is a huge fallacy. Things done correctly the first time may seem slow, but the lack of attention to the fundamentals derails the project. This leads to far more expensive, time-consuming rework in the future.</p>
+<p>She explained the economics using something understood in good quality work. A defect that costs $1 to fix in the design phase costs roughly $10 in the next phase, and about $1,000 when it reaches the testing phase. After a defect enters production, the multiplier is no longer a theory if the company cannot progress further. She described a large ERP migration, where the sites that performed the necessary data quality work were able to close their books in a few weeks after go-live. In contrast, the site that refused to perform the work at all was unable to ship product and ended up pulling people across the world for emergency calls in the middle of the night.</p>
+<p>The frame of reference she described is the one that communicates well to executives. Data quality debt is the same as technical debt. Bypassing a data quality task means incurring a real liability, which will cost more to address in the future, whereas the costs to address it will continue to grow gradually until the data quality debt is addressed and makes itself known.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Prevention Over Fire-fighting</h2>
+<p>In correcting data problems, most organizations expend the majority of their efforts after bad data has already caused issues, and then working to find and fix the bad data. One of McGilvray&#39;s challenges to leaders is to focus on prevention and the root cause, which she described as the distinction between fire prevention and firefighting. Correction is a never-ending and reactive effort. Prevention is upfront and significantly cheaper. Eventually, prevention is the only way to decrease the number of issues.</p>
+<p>Success relies on the type of work she describes as unglamorous. Having shared metadata is essential. Shared metadata includes having the same names for fields, the same definitions, and having a record for value lists and codes. This allows teams to communicate using the same data, without possibly differing in interpretation. This governance brings teams to the table for the initial conversation, and &quot;People who had never met, all depending on the same data, finally aligned&quot; because this provided them a reason, and a forum, to discuss. Although none of this is exciting, it is essential for the model to be built on.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Quality Serves the Mission, Not Itself</h2>
+<p>McGilvray never does data quality for the sake of data quality. It is always about the organization and the goals they seek to achieve, which can be delivering safer care or making safer decisions. Quality work earns its place only when it is tied to that outcome, and a quality report whose only audience is the data team has lost the plot.</p>
+<p>Any potential change must be coupled with a human dimension to ensure that it will be effective. Whenever a quality program is implemented, it makes changes to roles, systems, processes, and training. Those changes will only become lasting changes when the various forms of leadership understand and appreciate the human dimension and actively work toward it. When leadership is willing to address the issues they face, those changes will also become lasting changes. She recalls a system owner early in her career who discovered tens of millions in unexpected costs and chose to share the problem widely rather than bury it, on the principle that nothing changes if no one will name what is broken. That, she said, is what a real leader does.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+<p>Hutchins Data Strategy Consultants helps health systems put this into practice. See <a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color:#6c63ff;">Data Governance in Healthcare</a>.</p>
+<h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Authoritative sources</h2>
+<ul style="margin: 0 0 1rem 1.25rem;">
+<li><a href="https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles" target="_blank" rel="noopener" style="color:#6c63ff;">FDA Good Machine Learning Practice</a></li>
+<li><a href="https://www.ahrq.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">Agency for Healthcare Research and Quality</a></li>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" style="color:#6c63ff;">NIST AI Risk Management Framework</a></li>
+<li><a href="https://www.hl7.org/fhir/" target="_blank" rel="noopener" style="color:#6c63ff;">HL7 FHIR interoperability standard</a></li>
+<li><a href="https://healthit.gov/" target="_blank" rel="noopener" style="color:#6c63ff;">ONC — HealthIT.gov</a></li>
+</ul>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Frequently asked questions</h2>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">What is healthcare data quality?</h3>
+          <p>The degree to which clinical and operational data is fit for the purpose it is being used for — accurate, complete, consistent, and trustworthy enough that decisions and models built on it hold up.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Why does AI make data quality more urgent?</h3>
+          <p>AI presents its output with confidence regardless of the quality underneath. Poor data no longer surfaces as an obvious error; it is laundered into a fluent, plausible answer that is harder to question.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Is fixing data quality later cheaper than fixing it early?</h3>
+          <p>No. The cost of a defect escalates the further downstream it is caught — a small fix at the source becomes expensive rework in testing and far more expensive once it halts the business. Prevention is consistently cheaper than cleanup.</p>
+          <h3 style="font-size: 1.05rem; color: #1a1a2e; margin: 1.25rem 0 0.5rem;">Whose job is data quality?</h3>
+          <p>It is a leadership responsibility, not only a technical one. Quality work triggers changes to roles, processes, and training, and only sustained leadership support keeps those changes in place.</p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/data-quality-ai-strategy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Data Quality and AI Strategy: The Rising Cost of Ignoring Data Governance</a><br><span style="font-size:0.8rem;"><a href="https://podcasts.apple.com/us/podcast/data-quality-and-ai-strategy-the-rising-cost/id1850988366?i=1000739450944" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://www.youtube.com/watch?v=NGBbYZSdcLs" target="_blank" rel="noopener" style="color:#6c63ff;">YouTube</a> &middot; <a href="https://www.buzzsprout.com/2550733/episodes/18290640" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Episodes</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/healthcare-ai-data-layer-privacy-governance" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare AI Fails at the Data Layer: Privacy, Governance &amp; Trust | Sid Dutta</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/rethinking-healthcare-data-strategy" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">From AI Strategy to Execution: Ethical Leadership, Trust and the Operational Reality of Healthcare AI</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/enterprise-ai-journey-data-foundations" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Enterprise AI Journey: Agentic AI, Generative AI and Data Foundations in Healthcare</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/data-readiness-ai-adoption" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Data Readiness and AI Adoption: Why 85% of Organizations Aren&#x27;t Prepared</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/data-governance-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Data Governance in Healthcare: From Policy to Operational Reality</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/healthcare-data-readiness-for-ai" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Healthcare Data Readiness for AI: Why Programs Stall Before the Model</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://hutchinsdatastrategy.com/insight/responsible-ai-in-healthcare" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Responsible AI in Healthcare</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>From The AI Health Pulse</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-human-signal-in-the-data-noise-de6a" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Human Signal in the Data Noise</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/what-the-model-inherits" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">What the Model Inherits</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="https://aihealthpulse.beehiiv.com/p/the-innovation-tax-how-unresolved-data-problems-compound-against-every-strategic-bet" target="_blank" rel="noopener" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">The Innovation Tax</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank">HDSC</a></li>
+            <li><a href="https://chrisjhutchins.com" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener noreferrer">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>
