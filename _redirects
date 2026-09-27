@@ -167,7 +167,7 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /episodes.html                                               /episodes                                                    301!
 /faq.html                                                    /faq                                                         301!
 /guests.html                                                 /guests                                                      301!
-/newsletter.html                                             https://aihealthpulse.beehiiv.com                            301!
+/newsletter.html                                             https://hutchinsdatastrategy.com/the-ai-health-pulse         301!
 /privacy-policy.html                                         /privacy-policy                                              301!
 /responsible-ai-in-medicine.html                             /responsible-ai-in-medicine                                  301!
 /best-healthcare-ai-podcast.html                             /best-healthcare-ai-podcast                                  301!
@@ -226,9 +226,12 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /episodes/outpatient-care-is-broken.html  /episodes/outpatient-care-is-broken  301!
 
 # The AI Health Pulse is a separate brand; /newsletter presented itself as that
-# brand on the Signal Room domain. Page retired -> the newsletter's own home, so
-# the AIHP brand demand this URL ranks for lands where it can be served.
-/newsletter                                                  https://aihealthpulse.beehiiv.com                            301!
+# brand on the Signal Room domain. Page retired -> the newsletter's CANONICAL
+# entity on HDSC, which declares the Periodical schema
+# (@id .../the-ai-health-pulse#publication) and lists beehiiv/substack/LinkedIn
+# only as sameAs distribution platforms. Point brand demand at the canonical,
+# not at a sameAs: beehiiv self-canonicals and consolidates nothing back.
+/newsletter                                                  https://hutchinsdatastrategy.com/the-ai-health-pulse         301!
 
 # Marketing/production source assets — kept in the repo, blocked from the public site
 /episode-assets/*    /404.html    404!
