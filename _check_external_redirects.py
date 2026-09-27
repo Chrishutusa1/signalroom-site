@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Verify that every cross-domain _redirects target is still a live canonical.
+"""Verify the cross-domain redirects still work, end to end, in both directions.
 
-    python _check_external_redirects.py            # check all absolute targets
-    python _check_external_redirects.py --verbose   # also print each response header set
-    python _check_external_redirects.py --json      # machine-readable report
+    python _check_external_redirects.py                 # all three check groups
+    python _check_external_redirects.py --skip-live      # destination only, no self-fetch
+    python _check_external_redirects.py --host <origin>  # source check vs a deploy preview
+    python _check_external_redirects.py --verbose        # name the rule behind each target
+    python _check_external_redirects.py --json           # machine-readable report
 
 GAPS.md #13. Most _redirects rules point inside signalroompodcast.com, so CI can
 verify them from the files on disk. A handful point at ANOTHER domain, and the
@@ -18,11 +20,29 @@ only, so if HDSC renames the page or moves its canonical, those rules keep
 green. /newsletter carried 491 impressions and 32 AIHP-brand keywords when it
 was retired, so the failure is silent and expensive.
 
-Three things are checked per target:
+Three groups of checks, because a cross-domain redirect can break at either end
+and each end is invisible from the other:
+
+DESTINATION, per off-site target
   1. it answers 200 (not 404, not 5xx),
   2. it does not itself redirect (a hop here makes the real chain 2+ long),
   3. its rel="canonical" equals the URL we fetched, so the target is the
      consolidation point rather than a waypoint.
+
+SOURCE, per rule, against the live site (--host to aim elsewhere)
+  4. the source path really does answer with the status _redirects declares,
+     and its Location really is the declared target. A healthy destination
+     proves nothing about whether the redirect still HAPPENS: a rule can be
+     shadowed by an earlier pattern, or not deployed yet. Netlify matches
+     first-rule-wins, so a later duplicate is silently dead.
+
+RULE PRESENT, per entry in REQUIRED_OFFSITE_SOURCES
+  5. the rule still exists at all. Checks 1 to 4 walk the rules found in
+     _redirects, so NEITHER can notice a rule that was deleted: there is just
+     one less thing to iterate over and the run goes green. That false green was
+     the acknowledged hole when this script first shipped. The hardcoded
+     baseline closes it, at the cost of needing a line added when a new
+     cross-domain redirect is created.
 
 READ-ONLY. It fetches URLs and prints; it never writes a file, so unlike the
 repo's mutating scripts there is no dry-run/--apply pair to remember.
@@ -36,12 +56,16 @@ and then it is worth less than nothing. For that reason a 403/429 is reported as
 BLOCKED, not FAIL, and is retried once as Googlebot to show whether the origin
 is discriminating by client rather than actually broken.
 
+The source check reads production, which briefly lags `main` while Netlify
+builds. A source FAIL straight after a merge may just be that window, so re-run
+before believing it.
+
 Exit codes are kept meaningful anyway, in case this is ever run from a wrapper:
-  0  every target verified, or there was nothing to check
-  1  at least one target is genuinely wrong (bad status, extra hop, canonical
-     mismatch)
-  2  at least one target could not be determined (network error, bot challenge)
-     and nothing was found to be genuinely wrong
+  0  everything verified
+  1  something is genuinely wrong (bad status, extra hop, canonical mismatch,
+     the live site not serving a declared rule, or a required rule gone)
+  2  something could not be determined (network error, bot challenge) and
+     nothing was found to be genuinely wrong
 
 A cross-domain rule whose target is a Netlify template (`/insight/*` ->
 `.../insight/:splat`) has no literal URL to fetch. Those are printed as SKIP and
@@ -68,6 +92,14 @@ REDIRECTS = Path(__file__).resolve().parent / "_redirects"
 # _redirects is `https://www.signalroompodcast.com/*  https://signalroompodcast.com/:splat`,
 # which is internal, and its target is a Netlify placeholder rather than a real URL.
 OWN_HOSTS = {"signalroompodcast.com", "www.signalroompodcast.com"}
+LIVE_HOST = "https://signalroompodcast.com"
+
+# Source paths that MUST still carry an off-site 301. The destination and source
+# checks both walk the rules found in _redirects, so neither can notice a rule
+# that was DELETED: there is simply one less thing to iterate over, and the run
+# goes green. This list is the baseline that closes that hole. Add a path here
+# whenever a new cross-domain redirect is added, and the check will hold it.
+REQUIRED_OFFSITE_SOURCES = ("/newsletter", "/newsletter.html")
 
 # Netlify rule placeholders (:splat, :id, and bare * ) mean the target is a
 # template, not a URL, so there is nothing literal to fetch.
@@ -238,61 +270,161 @@ def check_target(url):
     return r
 
 
+def check_source(pattern, target, declared, host):
+    """Does the LIVE site actually serve this rule? Return a result dict.
+
+    The destination check proves the far end is healthy. It says nothing about
+    whether the redirect still happens: a rule can be shadowed by an earlier
+    pattern, or simply not deployed yet. This fetches the source path and
+    compares the status and Location against what _redirects declares."""
+    url = host.rstrip("/") + pattern
+    r = {"source": url, "pattern": pattern, "verdict": None, "notes": []}
+    want = int(declared.rstrip("!"))
+    try:
+        status, headers, _ = fetch(url, UA)
+    except Exception as e:                      # noqa: BLE001 - report, never crash
+        r["verdict"] = "ERROR"
+        r["notes"].append(f"request failed: {type(e).__name__}: {e}")
+        return r
+
+    r["status"] = status
+    loc = headers.get("Location") or headers.get("location")
+    r["location"] = loc
+
+    if status != want:
+        r["verdict"] = "FAIL"
+        r["notes"].append(
+            f"live site answers {status}, but _redirects declares {declared}"
+            + (f" (Location {loc})" if loc else " (no Location header)"))
+        return r
+    if not loc:
+        r["verdict"] = "FAIL"
+        r["notes"].append(f"{status} with no Location header")
+        return r
+    # Netlify may or may not echo a trailing slash; only that difference is noise.
+    if loc.rstrip("/") != target.rstrip("/"):
+        r["verdict"] = "FAIL"
+        r["notes"].append(
+            f"redirects to {loc!r}, but _redirects declares {target!r}; a rule "
+            "earlier in the file is probably shadowing this one")
+        return r
+
+    r["verdict"] = "PASS"
+    r["notes"].append(f"{status} -> {loc}, matching _redirects")
+    return r
+
+
+def check_presence(rules):
+    """Every REQUIRED_OFFSITE_SOURCES path must still have a cross-domain rule.
+
+    This is the only check here that can catch a DELETED rule, which is why the
+    baseline is hardcoded rather than derived from the file being checked."""
+    have = {pattern for _, pattern, _, _ in rules}
+    results = []
+    for want in REQUIRED_OFFSITE_SOURCES:
+        if want in have:
+            results.append({"pattern": want, "verdict": "PASS",
+                            "notes": ["still has a cross-domain rule"]})
+        else:
+            results.append({"pattern": want, "verdict": "FAIL",
+                            "notes": [
+                                "no cross-domain rule in _redirects any more. Either the "
+                                "rule was deleted (the silent-forfeit case GAPS #13 is "
+                                "about) or it was retired on purpose, in which case drop "
+                                "it from REQUIRED_OFFSITE_SOURCES in this script"]})
+    return results
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--json", action="store_true", help="emit the report as JSON")
     ap.add_argument("--verbose", "-v", action="store_true",
                     help="also print the rules each target came from")
+    ap.add_argument("--skip-live", action="store_true",
+                    help="destination checks only; do not fetch this site's own URLs")
+    ap.add_argument("--host", default=LIVE_HOST,
+                    help=f"origin to run the source-side check against (default {LIVE_HOST}); "
+                         "point it at a deploy preview to verify a rule before merging")
     ap.add_argument("path", nargs="?", default=REDIRECTS, type=Path,
                     help="a _redirects file to read instead of this repo's")
     args = ap.parse_args()
 
     rules, skipped = parse_targets(args.path)
-    if not rules:
-        # Not the same thing as "all well": if the only cross-domain rule were
-        # deleted, this script would have nothing to check and would otherwise
-        # look like a clean pass. Say so out loud.
-        msg = ("NOTE: no checkable cross-domain targets in _redirects. "
-               "If you expected /newsletter here, the rule is gone, not healthy.")
-        if skipped:
-            msg += (f" {len(skipped)} cross-domain rule(s) were skipped as "
-                    "templates and need checking by hand, listed below.")
-        if args.json:
-            print(json.dumps({"targets": 0, "note": msg, "skipped": skipped}, indent=2))
-        else:
-            print(msg)
-            for lineno, target, why in skipped:
-                print(f"SKIP    _redirects:{lineno} {target}\n        {why}")
-        return 0
 
-    # One rule per line, but several lines can share a target (/newsletter and
-    # /newsletter.html both point at HDSC). Fetch each distinct URL once.
-    sources = {}
-    for lineno, pattern, target, status in rules:
-        sources.setdefault(target, []).append(f"_redirects:{lineno} {pattern} ({status})")
+    # Runs even with zero rules: it is the only check that can catch a deleted
+    # one, and zero rules is exactly the case where that matters.
+    presence = check_presence(rules)
 
-    results = [check_target(u) for u in sources]
+    sources, results, live = {}, [], []
+    if rules:
+        # One rule per line, but several lines can share a target (/newsletter and
+        # /newsletter.html both point at HDSC). Fetch each distinct URL once.
+        for lineno, pattern, target, status in rules:
+            sources.setdefault(target, []).append(
+                f"_redirects:{lineno} {pattern} ({status})")
+
+        results = [check_target(u) for u in sources]
+
+        if not args.skip_live:
+            for lineno, pattern, target, status in rules:
+                if pattern.startswith(("http://", "https://")):
+                    live.append({"source": pattern, "pattern": pattern, "verdict": "SKIP",
+                                 "notes": ["host-matching rule, not a path on this site"]})
+                elif PLACEHOLDER_RE.search(pattern):
+                    live.append({"source": pattern, "pattern": pattern, "verdict": "SKIP",
+                                 "notes": ["wildcard pattern; no single URL to fetch"]})
+                else:
+                    live.append(check_source(pattern, target, status, args.host))
 
     if args.json:
         for r in results:
             r["sources"] = sources[r["url"]]
         print(json.dumps({"targets": len(results), "results": results,
-                          "skipped": skipped}, indent=2))
+                          "live": live, "presence": presence,
+                          "skipped": skipped, "host": args.host}, indent=2))
     else:
-        print(f"{len(results)} cross-domain target(s) in _redirects "
-              f"across {len(rules)} rule(s)\n")
-        for r in results:
-            print(f"{r['verdict']:<8}{r['url']}")
-            for note in r["notes"]:
-                print(f"        {note}")
-            if args.verbose:
-                for s in sources[r["url"]]:
-                    print(f"        from {s}")
+        if rules:
+            print(f"{len(results)} cross-domain target(s) in _redirects "
+                  f"across {len(rules)} rule(s)")
+        else:
+            print("No cross-domain rules found in _redirects. That is not the same "
+                  "as healthy; see the RULE PRESENT section.")
+        print()
+
+        if results:
+            print("DESTINATION  is the far end live, single-hop and canonical?")
+            for r in results:
+                print(f"  {r['verdict']:<8}{r['url']}")
+                for note in r["notes"]:
+                    print(f"          {note}")
+                if args.verbose:
+                    for s in sources[r["url"]]:
+                        print(f"          from {s}")
             print()
+
+        if live:
+            print(f"SOURCE       does {args.host} actually serve the redirect?")
+            for r in live:
+                print(f"  {r['verdict']:<8}{r['source']}")
+                for note in r["notes"]:
+                    print(f"          {note}")
+            print()
+        elif args.skip_live and rules:
+            print("SOURCE       skipped (--skip-live)\n")
+
+        print("RULE PRESENT  does each required off-site redirect still exist?")
+        for r in presence:
+            print(f"  {r['verdict']:<8}{r['pattern']}")
+            for note in r["notes"]:
+                print(f"          {note}")
+        print()
+
         for lineno, target, why in skipped:
             print(f"SKIP    {target}\n        {why}\n        from _redirects:{lineno}\n")
 
-    verdicts = [r["verdict"] for r in results]
+    verdicts = ([r["verdict"] for r in results]
+                + [r["verdict"] for r in live]
+                + [r["verdict"] for r in presence])
     if "FAIL" in verdicts:
         return 1
     if "ERROR" in verdicts or "BLOCKED" in verdicts:
