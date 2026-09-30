@@ -62,6 +62,9 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="ai-agents-know-when-to-stop",
+             card_title="Why AI Agents Need to Know When to Stop",
+             card_desc="Kaled Alhanafi, CEO of Basata, on why healthcare AI agents must know when to stop, earning autonomy task by task, and change management."),
         dict(slug="scaling-healthcare-ai-beyond-the-pilot",
              card_title="Scaling Healthcare AI Beyond the Pilot",
              card_desc="Dr. Sarah Matt on pilotitis, why healthcare AI stalls after the pilot, and what it takes to scale with clinical voices in the room."),

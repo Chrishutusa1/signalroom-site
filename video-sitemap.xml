@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://signalroompodcast.com/episodes/ai-agents-know-when-to-stop</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/AhKncFgdYRI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why AI Agents Need to Know When to Stop</video:title>
+      <video:description>Kaled Alhanafi, CEO of Basata, on why healthcare AI agents must know when to stop, earning autonomy task by task, and change management.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/AhKncFgdYRI</video:player_loc>
+      <video:duration>2962</video:duration>
+      <video:publication_date>2026-09-30T13:38:51Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/episodes/ai-governance-human-problem</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/8xnsNaLpJ9E/maxresdefault.jpg</video:thumbnail_loc>
