@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://signalroompodcast.com/episodes/proving-hospital-ai-is-secure</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/AfSfGbjSPaw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Proving Hospital AI Is Secure</video:title>
+      <video:description>Vasanth Mudavatu on proving hospital AI is secure: data poisoning, prompt injection, attestation, governance that survives an audit, and vetting vendors.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/AfSfGbjSPaw</video:player_loc>
+      <video:duration>2209</video:duration>
+      <video:publication_date>2026-10-07T14:00:18Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/episodes/ai-agents-know-when-to-stop</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/AhKncFgdYRI/maxresdefault.jpg</video:thumbnail_loc>
