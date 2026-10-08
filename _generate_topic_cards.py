@@ -120,6 +120,9 @@ TOPICS = {
     ],
 
     "healthcare-data-security": [
+        dict(slug="proving-hospital-ai-is-secure",
+             card_title="Proving Hospital AI Is Secure",
+             card_desc="Vasanth Mudavatu on proving hospital AI is secure: data poisoning, prompt injection, attestation, governance that survives an audit, and vetting vendors."),
         dict(slug="healthcare-cybersecurity-human-behavior",
              card_title="Healthcare Cybersecurity Is a Human Behavior Problem",
              card_desc="Why punishment-based training fails and how AI makes social engineering more convincing and dangerous."),

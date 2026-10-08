@@ -2,6 +2,7 @@
 (function() {
     var linkedInUrls = {
         'Kaled Alhanafi': 'https://www.linkedin.com/in/kaled',
+        'Vasanth Mudavatu': 'https://www.linkedin.com/in/vasanth-mudavatu-4580776',
         'Dr. Sarah Matt': 'https://www.linkedin.com/in/sarahmattmd',
         'Arnaud Saint-Paul': 'https://www.linkedin.com/in/arnaudsaintpaul',
         'Travis Garland': 'https://www.linkedin.com/in/travis-garland',
