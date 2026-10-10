@@ -151,6 +151,8 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /PROJECT.md    /404.html    404!
 /GAPS.md       /404.html    404!
 /CLAUDE.md     /404.html    404!
+/docs          /404.html    404!
+/docs/*        /404.html    404!
 
 # Misc legacy redirects (target extensionless canonical)
 /good-people-quietly-quitting         /episodes/good-people-quietly-quitting         301
