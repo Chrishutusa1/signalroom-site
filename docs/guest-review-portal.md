@@ -1,5 +1,22 @@
 # Guest review rooms
 
+## Current sharing policy
+
+When the owner requests unrestricted review links, set the private access-store
+record `settings/sharing` to `{ "audience": "anyone-with-link" }`. This opens the
+publisher directory, every enabled episode room, and all files in each room's
+published manifest at their normal `/review/` URLs. No email, code, cookie,
+invitation token, or session renewal is needed. Previously issued invitation
+URLs redirect to the ordinary episode URL, including expired invitations.
+
+This policy also applies to subsequently enabled review rooms. Disabled rooms,
+unpublished files, storage records, and administration remain inaccessible.
+Range requests, downloads, no-store, and noindex headers remain in force. The
+review pages stay out of the site's navigation and sitemap; anyone who obtains
+a URL can open or forward it. Set the audience to `invited` (or remove this
+setting) to restore the invitation/session behavior described below. Changing
+this policy requires the owner's authorization.
+
 Private review packages are served only through `/review/<episode>/`. They are absent from the public site's menus, sitemap, repository, and static deploy. The edge handler authenticates both the gallery and every media/download request. Content lives in the private `sr-review-content` Netlify Blobs store; approved email lists and expiring sessions live in the strongly consistent `sr-review-access` store.
 
 Guests request an eight-digit, ten-minute code through the page. Resend sends to approved addresses only, using existing `RESEND_API_KEY` and `AUTOREPLY_FROM` runtime variables. Codes are hashed with a random salt, limited to five guesses, consumed with an atomic conditional write, and never logged. Email/IP request limits and same-origin POST checks apply. Session cookies are HttpOnly, Secure, SameSite=Strict, scoped to the episode and valid for eight hours. Every request rereads the episode's approved addresses, so removing an address revokes active access immediately.
