@@ -45,6 +45,15 @@ export function createReviewHandler({state,content,sendCode,readMedia,now=()=>Da
   if(action.includes('..')||action.includes('\\')||action.includes('\0'))return response('Not found',404);
   const grant=await state.get(`grants/${episode}`,{type:'json'});
   if(!grant?.enabled)return response('This review room is unavailable.',404);
+  // The owner can open every enabled review room without a session. Files
+  // still have to belong to the room's published manifest.
+  const sharing=await state.get('settings/sharing',{type:'json'});
+  const openReview=sharing?.audience==='anyone-with-link';
+  if(openReview&&(action.startsWith('access/')||['request','verify','logout'].includes(action))){
+    if(!['GET','HEAD','POST'].includes(request.method))return response('Method not allowed',405);
+    return response(null,303,{Location:`/review/${episode}/`});
+  }
+  if(openReview&&!['GET','HEAD'].includes(request.method))return response('Method not allowed',405);
   const allowed=email=>grant.emails?.includes(email);
   const time=now();
   // Invitation links grant an episode-scoped session; link audiences need no identity.
@@ -114,12 +123,14 @@ export function createReviewHandler({state,content,sendCode,readMedia,now=()=>Da
     return response(null,303,{Location:`/review/${episode}/`,'Set-Cookie':cookie(episode,token)});
   }
   if(!['GET','HEAD'].includes(request.method))return response('Method not allowed',405);
+  if(!openReview){
   const token=request.headers.get('cookie')?.split(';').map(s=>s.trim()).find(s=>s.startsWith(cookieName(episode)+'='))?.split('=')[1];
   const session=token&&/^[a-f0-9]{64}$/.test(token)?await state.get(`sessions/${await hash(token)}`,{type:'json'}):null;
   if(!session||session.episode!==episode||session.expires<=time||!(linkAudience(session)?session.inviteKey:allowed(session.email)))return action?response('Please sign in to this review room.',401):html(page(episode));
   if(session.inviteKey){
     const invite=await state.get(session.inviteKey,{type:'json'});
     if(!liveInvite(invite,episode,time)||(linkAudience(session)?!linkAudience(invite):!inviteEmails(invite).includes(session.email)))return action?response('Please sign in to this review room.',401):html(page(episode));
+  }
   }
   const manifest=await content.get(`${episode}/manifest`,{type:'json'});
   if(!manifest)return response('The review package is being prepared.',503);
