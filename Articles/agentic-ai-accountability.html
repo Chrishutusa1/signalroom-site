@@ -275,6 +275,29 @@
         </div>
       </div>
     </section>
+  <!-- SR-NEWSLETTER-SIGNUP -->
+  <section class="newsletter-signup-section" aria-labelledby="newsletter-signup-title">
+    <div class="container">
+      <div class="newsletter-signup-card">
+        <span class="section-label">The AI Health Pulse</span>
+        <h2 id="newsletter-signup-title">Get the weekly healthcare AI newsletter</h2>
+        <p>Weekly newsletter for healthcare executives on AI strategy, regulation, and operational reality.</p>
+        <form class="newsletter-signup" data-newsletter-signup data-campaign="article" novalidate>
+          <label class="newsletter-signup__label" for="newsletter-email">Email address</label>
+          <div class="newsletter-signup__row">
+            <input id="newsletter-email" class="newsletter-signup__input" type="email" name="email" placeholder="you@organization.com" autocomplete="email" required>
+            <input class="newsletter-signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary newsletter-signup__button" type="submit">Subscribe</button>
+          </div>
+          <p class="newsletter-signup__status" data-newsletter-status role="status" aria-live="polite"></p>
+          <noscript><p class="newsletter-signup__fine"><a href="https://aihealthpulse.beehiiv.com/subscribe?utm_source=signalroompodcast.com&amp;utm_medium=site-form-fallback" target="_blank" rel="noopener">Subscribe on the newsletter page</a></p></noscript>
+        </form>
+        <p class="newsletter-signup__fine">Free. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+  <script src="/js/newsletter-signup.js" defer></script>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
