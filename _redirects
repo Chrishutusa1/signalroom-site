@@ -154,6 +154,33 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /docs          /404.html    404!
 /docs/*        /404.html    404!
 
+# Internal source, tooling and data: not site content. publish=".", so every
+# tracked file is otherwise public. The review gate code, admin tooling, tests,
+# scripts and lockfiles must not be served. Review pages are served by the
+# /review edge function and are unaffected. Kept public on purpose: app/
+# (guest campaign kits shared by direct link) and the IndexNow key file.
+/netlify/*                        /404.html    404!
+/tools/*                          /404.html    404!
+/tests/*                          /404.html    404!
+/data/*                           /404.html    404!
+/_add_newsletter_signup.py        /404.html    404!
+/_check_external_redirects.py     /404.html    404!
+/_generate_sitemap.py             /404.html    404!
+/_generate_topic_cards.py         /404.html    404!
+/_predeploy_check.py              /404.html    404!
+/_reconcile_leads.py              /404.html    404!
+/_update_featured_guests.py       /404.html    404!
+/_update_stats.py                 /404.html    404!
+/_validate_episode.py             /404.html    404!
+/_validate_meta.py                /404.html    404!
+/signalroom-airtable-bridge.py    /404.html    404!
+/signalroom-publish-normalize.py  /404.html    404!
+/package.json                     /404.html    404!
+/package-lock.json                /404.html    404!
+/deno.lock                        /404.html    404!
+/_reconcile_leads_resolved.json   /404.html    404!
+/CANONICALIZATION-VERIFIED.md     /404.html    404!
+
 # Misc legacy redirects (target extensionless canonical)
 /good-people-quietly-quitting         /episodes/good-people-quietly-quitting         301
 /good-people-quietly-quitting.html    /episodes/good-people-quietly-quitting         301
