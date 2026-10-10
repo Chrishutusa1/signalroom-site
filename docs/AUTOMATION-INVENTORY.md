@@ -69,8 +69,7 @@ into the cloud.
 ### SEO / AEO / keyword intelligence
 `phraseintel-refresh` (monthly), `phraseintel-pulse` (Mon), `phraseintel-pivot-watch` (daily),
 `position-sweep` (Thu), `opportunity-scan` (Wed — SEO tag/cross-link/content gaps, **not** guest
-opps), `aeo-authority-map-refresh` (Mon), `refdomain-audit` (monthly), `brand-alchemy-scan`
-(daily), `airops-sync-watch` (daily) — mostly **Active**; a cluster of `prompt-*` approval-draft
+opps), `aeo-authority-map-refresh` (Mon), `refdomain-audit` (monthly), `airops-sync-watch` (daily) — mostly **Active**; a cluster of `prompt-*` approval-draft
 tasks and `*-tag-optimizer` tasks are **Disabled**.
 
 ### Ops / infra / governance
