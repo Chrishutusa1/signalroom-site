@@ -62,6 +62,10 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="ai-leadership-polymathy",
+             card_title="AI Leadership, Polymathy &amp; Collective Intelligence",
+             card_desc="Dr. Angela C. Meyers on polymathy, collective intelligence, and why specialists must become big-picture thinkers who connect the dots.",
+             guest_display="Dr. Angela C. Meyers"),
         dict(slug="local-seo-ai-search-clinics",
              card_title="Local SEO and AI Search for Clinics",
              card_desc="Darcy Sullivan on how clinics get found in AI search: trust signals, reviews that name services, and where ChatGPT shapes patient choices.",
