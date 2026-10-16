@@ -3,6 +3,9 @@
     var linkedInUrls = {
         'Kaled Alhanafi': 'https://www.linkedin.com/in/kaled',
         'Vasanth Mudavatu': 'https://www.linkedin.com/in/vasanth-mudavatu-4580776',
+        'Darcy Sullivan': 'https://www.linkedin.com/in/darcymsullivan',
+        'Dr. Bharat Tewarie': 'https://www.linkedin.com/in/bharattewarie',
+        'Dr. AJ Blood': 'https://www.linkedin.com/in/alexander-blood-md-msc-facc-abom-a8654a23',
         'Dr. Sarah Matt': 'https://www.linkedin.com/in/sarahmattmd',
         'Arnaud Saint-Paul': 'https://www.linkedin.com/in/arnaudsaintpaul',
         'Travis Garland': 'https://www.linkedin.com/in/travis-garland',

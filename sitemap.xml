@@ -109,6 +109,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/episodes/ai-clinical-trial-screening</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/episodes/ai-eroding-workplace-communication</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -195,6 +201,12 @@
   <url>
     <loc>https://signalroompodcast.com/episodes/caregivers-connective-tissue-healthcare</loc>
     <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/episodes/catching-liver-cancer-earlier</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -303,6 +315,12 @@
   <url>
     <loc>https://signalroompodcast.com/episodes/human-centered-ai-governance</loc>
     <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/episodes/local-seo-ai-search-clinics</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -62,6 +62,10 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="local-seo-ai-search-clinics",
+             card_title="Local SEO and AI Search for Clinics",
+             card_desc="Darcy Sullivan on how clinics get found in AI search: trust signals, reviews that name services, and where ChatGPT shapes patient choices.",
+             guest_display="Darcy Sullivan"),
         dict(slug="ai-agents-know-when-to-stop",
              card_title="Why AI Agents Need to Know When to Stop",
              card_desc="Kaled Alhanafi, CEO of Basata, on why healthcare AI agents must know when to stop, earning autonomy task by task, and change management."),
@@ -89,6 +93,14 @@ TOPICS = {
     ],
 
     "clinical-ai-patient-care": [
+        dict(slug="ai-clinical-trial-screening",
+             card_title="AI Clinical Trial Screening",
+             card_desc="Dr. AJ Blood on holding AI to medicine's evidence bar: RECTIFIER finds eligible patients, human-in-the-loop, with NEJM and JAMA results.",
+             guest_display="Dr. AJ Blood"),
+        dict(slug="catching-liver-cancer-earlier",
+             card_title="Catching Liver Cancer Earlier",
+             card_desc="Dr. Bharat Tewarie on why ultrasound surveillance fails and how the blood-based HelioLiver test and CLiMB study catch liver cancer earlier.",
+             guest_display="Dr. Bharat Tewarie"),
         dict(slug="outpatient-care-is-broken",
              card_title="Outpatient Care Is Broken",
              card_desc="Where AI receptionists improve access, when they must escalate, and how practices prepare before launch."),
