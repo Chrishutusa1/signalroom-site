@@ -1,6 +1,7 @@
 // LinkedIn profile links for Signal Room Podcast guests
 (function() {
     var linkedInUrls = {
+        'Darcy Sullivan': 'https://www.linkedin.com/in/darcymsullivan',
         'Kaled Alhanafi': 'https://www.linkedin.com/in/kaled',
         'Vasanth Mudavatu': 'https://www.linkedin.com/in/vasanth-mudavatu-4580776',
         'Darcy Sullivan': 'https://www.linkedin.com/in/darcymsullivan',
