@@ -281,7 +281,7 @@
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/PCHVQ9mPHC0/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>A Doctor Warns: Don&apos;t Read Lab Results With AI | Dr. Steven Labkoff</video:title>
-      <video:description>Dr. Steven Labkoff explains why using general-purpose AI to interpret personal lab results can produce confident but clinically dangerous conclusions and why healthcare AI literacy matters.</video:description>
+      <video:description>Dr. Steven Labkoff explains why general-purpose AI can produce confident but clinically dangerous interpretations of personal lab results, why clinical context cannot be automated away, and what healthcare leaders need to understand about AI literacy.</video:description>
       <video:player_loc>https://www.youtube.com/embed/PCHVQ9mPHC0</video:player_loc>
       <video:duration>2926</video:duration>
       <video:publication_date>2026-05-13T07:45:01Z</video:publication_date>
@@ -461,7 +461,7 @@
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/7yo6GahIN2c/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>The Dark Side of the $50B AI Medical Boom | Lorraine Fernandes</video:title>
-      <video:description>Lorraine Fernandes explains why trustworthy medical AI begins with governed source data and why health information leaders belong in every procurement decision.</video:description>
+      <video:description>Lorraine Fernandes explains why a $50 billion wave of medical AI investment is moving faster than many health systems can evaluate or govern, and why data stewardship, terminology standards, and HIM leadership belong in every procurement decision.</video:description>
       <video:player_loc>https://www.youtube.com/embed/7yo6GahIN2c</video:player_loc>
       <video:duration>2097</video:duration>
       <video:publication_date>2026-04-15T06:00:05Z</video:publication_date>
@@ -535,8 +535,8 @@
     <priority>0.8</priority>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/Wsv6Pm3axds/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Why Good Employees Quietly Quit - and What Leaders Miss | Carly Caminiti</video:title>
-      <video:description>Carly Caminiti explains why quiet quitting is a leadership signal and why organizations cannot automate their way out of broken culture.</video:description>
+      <video:title>Why Good Employees Quietly Quit | Carly Caminiti</video:title>
+      <video:description>Carly Caminiti explains why healthcare's best people are quietly disengaging and why culture, not technology, decides whether AI adoption stalls.</video:description>
       <video:player_loc>https://www.youtube.com/embed/Wsv6Pm3axds</video:player_loc>
       <video:duration>2966</video:duration>
       <video:publication_date>2026-04-01T06:41:45Z</video:publication_date>
@@ -566,7 +566,7 @@
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/G6ChBbgV4xY/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Healthcare AI Stalls Before Deployment — This Is Why</video:title>
-      <video:description>Sid Dutta explains why healthcare AI stalls at the data layer and how privacy-preserving infrastructure can move clinical AI from pilots to production.</video:description>
+      <video:description>Sid Dutta explains why healthcare AI often stalls before deployment because the data layer cannot support safe access, collaboration, and runtime control, and how privacy-preserving infrastructure can move clinical AI from pilots to production.</video:description>
       <video:player_loc>https://www.youtube.com/embed/G6ChBbgV4xY</video:player_loc>
       <video:duration>3752</video:duration>
       <video:publication_date>2026-04-30T23:15:00Z</video:publication_date>
@@ -595,8 +595,8 @@
     <priority>0.8</priority>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/XbgCM4rG5N4/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>What They Won&apos;t Tell You About AI in Healthcare</video:title>
-      <video:description>Craig Taylor explains why cybersecurity is a human behavior problem and how AI makes social engineering more convincing and dangerous.</video:description>
+      <video:title>What They Won’t Tell You About AI in Healthcare</video:title>
+      <video:description>Craig Taylor explains why cybersecurity is a human behavior problem—and how AI makes social engineering more convincing and dangerous.</video:description>
       <video:player_loc>https://www.youtube.com/embed/XbgCM4rG5N4</video:player_loc>
       <video:duration>3504</video:duration>
       <video:publication_date>2026-08-29T04:51:31Z</video:publication_date>
@@ -626,7 +626,7 @@
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/hez3mE_AlkA/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Pajama Time Documentation Is Killing Our Clinicians</video:title>
-      <video:description>Poonam Patel explains how pajama-time documentation accelerates clinician burnout and how ambient AI, interoperability, and empathetic leadership can give providers time back.</video:description>
+      <video:description>Poonam Patel explains how pajama-time documentation accelerates clinician burnout and how ambient AI, interoperability, and empathetic leadership can give providers time back without compromising trust.</video:description>
       <video:player_loc>https://www.youtube.com/embed/hez3mE_AlkA</video:player_loc>
       <video:duration>2762</video:duration>
       <video:publication_date>2026-04-22T00:15:02Z</video:publication_date>
@@ -715,7 +715,7 @@
     <priority>0.8</priority>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/6pwLdgbTc0s/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Outpatient Care Is Broken—Here&apos;s How to Fix It</video:title>
+      <video:title>Outpatient Care Is Broken—Here’s How to Fix It</video:title>
       <video:description>Jakub Grajcar explains where AI receptionists improve patient access, when they must escalate, and how practices should prepare before launch.</video:description>
       <video:player_loc>https://www.youtube.com/embed/6pwLdgbTc0s</video:player_loc>
       <video:duration>3131</video:duration>
