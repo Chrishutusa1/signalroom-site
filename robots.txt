@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://signalroompodcast.com/sitemap.xml
-Sitemap: https://signalroompodcast.com/video-sitemap.xml
