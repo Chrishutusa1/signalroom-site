@@ -44,7 +44,7 @@ test('verified owner receives navigation, alphabetical episode choices and a sec
  for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/review/publisher/','Max-Age=2592000'])assert.ok(full.includes(flag));
  assert.deepEqual(f.codes[0].options,{purpose:'publisher-owner'});
  const r=await f.call('publisher/',{cookie}),text=await r.text();
- assert.match(text,/<nav id="publisher-owner-nav"/);assert.match(text,/Publisher library/);assert.match(text,/Signal Room site/);assert.match(text,/Ted &amp; Team/);
+ assert.match(text,/<nav id="publisher-owner-nav"/);assert.match(text,/<a href="\/review\/publisher\/">Main Menu<\/a>/);assert.match(text,/Signal Room site/);assert.match(text,/Ted &amp; Team/);
  assert.ok(text.indexOf('value="sarah-matt-v02"')<text.indexOf('value="ted-lindsley-v01"'));
  assert.match(r.headers.get('cache-control'),/private, no-store/);assert.equal(r.headers.get('netlify-cdn-cache-control'),'no-store');
  assert.doesNotMatch(await (await f.call('sarah-matt-v02/',{cookie})).text(),/publisher-owner-nav/);
