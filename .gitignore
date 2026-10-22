@@ -25,6 +25,7 @@ _STATUS.md
 !/_update_featured_guests.py
 !/_predeploy_check.py
 !/_generate_sitemap.py
+!/_generate_hub_schema.py
 !/_reconcile_leads.py
 !/_check_external_redirects.py
 

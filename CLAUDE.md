@@ -28,6 +28,10 @@ python _generate_topic_cards.py --apply
 # Regenerate sitemap.xml from the pages on disk (CI fails if it's stale)
 python _generate_sitemap.py --apply
 
+# Regenerate the /episodes and /guests CollectionPage + ItemList JSON-LD from each hub's own cards
+# (dry-run by default; CI only WARNS if it is stale)
+python _generate_hub_schema.py --apply
+
 # Verify the cross-domain 301s end to end (read-only, GAPS #13): the off-site target
 # is live/single-hop/self-canonical, the live site really serves each declared rule,
 # and no required off-site rule has been deleted. Deliberately NOT a CI gate — it
