@@ -6,10 +6,10 @@ export default async (request,context)=>{
   const state=getStore({name:'sr-review-access',consistency:'strong'});
   const content=getStore({name:'sr-review-content',consistency:'strong'});
   return await createReviewHandler({state,content,
-   sendCode:async(email,code)=>{
+   sendCode:async(email,code,{purpose}={})=>{
     const key=Netlify.env.get('RESEND_API_KEY'),from=Netlify.env.get('AUTOREPLY_FROM');
     if(!key||!from)throw new Error('Email is not configured');
-    const res=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({from,to:[email],subject:'Your Signal Room review code',text:`Your Signal Room review code is ${code}.\n\nThis code expires in ten minutes and can be used once. If you did not request it, you can ignore this email.`})});
+    const res=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({from,to:[email],subject:purpose==='publisher-owner'?'Your Signal Room owner sign-in code':'Your Signal Room review code',text:`Your Signal Room ${purpose==='publisher-owner'?'owner sign-in':'review'} code is ${code}.\n\nThis code expires in ten minutes and can be used once. If you did not request it, you can ignore this email.`})});
     if(!res.ok)throw new Error('Email delivery failed');
    },
    readMedia:async(key,range,size)=>{
