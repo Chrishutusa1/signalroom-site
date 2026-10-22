@@ -125,6 +125,44 @@ jobs:
           git fetch --unshallow --quiet 2>/dev/null || true
           python _generate_sitemap.py --check
 
+      # GA4 loader contract. On 2026-10-21 the deferred loader (idle callback,
+      # up to 4s, page_view as a cancellable fetch) was linked to GA4 sessions
+      # with landing page (not set): 26 of 595 sessions in the prior 30 days,
+      # every one with session_start + user_engagement and no page_view. Every
+      # page that carries the tag must use the beacon transport and start the
+      # load on the window load event, keep the production-hostname gate, and
+      # must not fall back to requestIdleCallback. Pages built outside this repo
+      # (the claude.ai episode builder) will fail here until their template is
+      # updated, which is the point of the gate.
+      - name: GA4 loader uses beacon transport and the load event
+        if: ${{ !cancelled() }}
+        run: |
+          python - <<'PY'
+          import pathlib, sys
+          TAG = "G-RZNHLJSRW3"
+          bad = []
+          n = 0
+          for p in sorted(pathlib.Path(".").rglob("*.html")):
+              if "node_modules" in p.parts or ".git" in p.parts:
+                  continue
+              h = p.read_text(encoding="utf-8")
+              if TAG not in h:
+                  continue
+              n += 1
+              if "transport_type: 'beacon'" not in h:
+                  bad.append(f"{p}: gtag config lacks transport_type: 'beacon'")
+              if "window.addEventListener('load'" not in h and "document.readyState === 'complete'" not in h:
+                  bad.append(f"{p}: loader does not start on the window load event")
+              if "requestIdleCallback(loadGA" in h:
+                  bad.append(f"{p}: loader still waits on requestIdleCallback")
+              if 'location.hostname !== "signalroompodcast.com"' not in h:
+                  bad.append(f"{p}: production-hostname gate missing")
+          for b in bad:
+              print(f"::error::{b}")
+          print(f"checked {n} pages carrying {TAG}, {len(bad)} problem(s)")
+          sys.exit(1 if bad else 0)
+          PY
+
       - name: _redirects line shape
         if: ${{ !cancelled() }}
         run: |
