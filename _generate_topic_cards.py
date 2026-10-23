@@ -62,6 +62,10 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="medical-practice-financial-visibility",
+             card_title="Your Practice Needs a Clearer View of Its Money",
+             card_desc="Tomer and Erez Lankri of Lucid Financials on getting medical practices a current view of their money, AI answers grounded in source records, and keeping a named professional accountable.",
+             guest_display="Tomer &amp; Erez Lankri"),
         dict(slug="ai-leadership-polymathy",
              card_title="AI Leadership, Polymathy &amp; Collective Intelligence",
              card_desc="Dr. Angela C. Meyers on polymathy, collective intelligence, and why specialists must become big-picture thinkers who connect the dots.",
@@ -136,6 +140,9 @@ TOPICS = {
     ],
 
     "healthcare-data-security": [
+        dict(slug="health-data-bias-trustworthy-ai",
+             card_title="Health Data Bias and Trustworthy AI",
+             card_desc="Lisa Marceau on who clinical data leaves out, why data quality and governance come first, and why AI is infrastructure, not innovation."),
         dict(slug="proving-hospital-ai-is-secure",
              card_title="Proving Hospital AI Is Secure",
              card_desc="Vasanth Mudavatu on proving hospital AI is secure: data poisoning, prompt injection, attestation, governance that survives an audit, and vetting vendors."),
@@ -166,6 +173,9 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
+        dict(slug="shadow-ai-governance-healthcare",
+             card_title="Shadow AI and Who Owns the Risk",
+             card_desc="Aaron Bach, co-founder and CTO of Liminal, on shadow AI, governing with the controls you already have, why no single platform covers AI, and who owns the risk."),
         dict(slug="ai-governance-human-problem",
              card_title="Why AI Governance Is a Human Problem",
              card_desc="Arnaud Saint-Paul on governing yourself before you scale AI: coherence, model bias, and what governance looks like in high-stakes healthcare."),
