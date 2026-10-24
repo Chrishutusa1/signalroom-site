@@ -6,6 +6,7 @@
         'Vasanth Mudavatu': 'https://www.linkedin.com/in/vasanth-mudavatu-4580776',
         'Darcy Sullivan': 'https://www.linkedin.com/in/darcymsullivan',
         'Aaron Bach': 'https://www.linkedin.com/in/aaronbach',
+        'Tomer & Erez Lankri': 'https://www.linkedin.com/in/lankrierez',
         'Lisa Marceau': 'https://www.linkedin.com/in/lisamarceau',
         'Dr. Angela C. Meyers': 'https://www.linkedin.com/in/drangelacmeyers',
         'Dr. Bharat Tewarie': 'https://www.linkedin.com/in/bharattewarie',
