@@ -48,6 +48,26 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css?v=20260712">
+  <style>
+    .guest-photo-hero{padding-top:var(--nav-height);background:#faf7f2}
+    .guest-photo-gallery{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px;max-width:1920px;margin:0 auto;background:#20152b}
+    .guest-photo-gallery figure{margin:0;min-width:0}
+    .guest-photo-gallery img{display:block;width:100%;height:auto;aspect-ratio:1672/941}
+    .guest-photo-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,5rem);align-items:center;padding-top:2.5rem;padding-bottom:2.75rem}
+    .guest-photo-intro .hero-tagline{margin-bottom:0.6rem}
+    .guest-photo-intro h1{font-size:clamp(2.5rem,4.7vw,4.5rem);line-height:1.05;letter-spacing:-0.035em;margin:0;color:var(--navy)}
+    .guest-photo-intro .hero-desc{color:var(--text-body);margin:0 0 1.25rem;max-width:560px}
+    .guest-photo-intro .btn:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
+    #guest-apply-form{scroll-margin-top:calc(var(--nav-height) + 24px)}
+    @media(max-width:760px){
+      .guest-photo-gallery{grid-template-columns:minmax(0,1fr)}
+      .guest-photo-intro{grid-template-columns:minmax(0,1fr);gap:1rem;padding-top:1.75rem;padding-bottom:2rem}
+      .guest-photo-intro h1{font-size:clamp(2.35rem,9vw,3.4rem)}
+      .guest-photo-intro .hero-desc{font-size:1rem;line-height:1.6}
+      .guest-photo-hero + .stats-section .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:1.5rem}
+    }
+    @media(max-width:420px){.guest-photo-hero + .stats-section .stats-grid{grid-template-columns:minmax(0,1fr) !important}}
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -74,17 +94,23 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <span class="hero-tagline">Be a Guest</span>
-          <h1>Share Your Signal</h1>
-          <p class="hero-desc">Tell us about yourself and the work you would bring to the show. We review every submission and respond directly.</p>
-        </div>
-        <div class="hero-image">
-          <img src="assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room Podcast with Chris Hutchins" loading="eager" fetchpriority="high" width="600" height="600">
-        </div>
+  <section class="guest-photo-hero" aria-labelledby="guest-hero-title">
+    <div class="guest-photo-gallery">
+      <figure>
+        <img src="/assets/be-a-guest/chris-home-interview-1672.webp" srcset="/assets/be-a-guest/chris-home-interview-836.webp 836w, /assets/be-a-guest/chris-home-interview-1672.webp 1672w" sizes="(max-width:760px) 100vw, (min-width:1920px) 960px, 50vw" alt="Chris Hutchins at a home recording desk with a remote guest on screen" width="1672" height="941" loading="eager" fetchpriority="high" decoding="async">
+      </figure>
+      <figure>
+        <img src="/assets/be-a-guest/chris-studio-conversation-1672.webp" srcset="/assets/be-a-guest/chris-studio-conversation-836.webp 836w, /assets/be-a-guest/chris-studio-conversation-1672.webp 1672w" sizes="(max-width:760px) 100vw, (min-width:1920px) 960px, 50vw" alt="Chris Hutchins in a blue blazer, seated beside a podcast microphone and camera" width="1672" height="941" loading="eager" decoding="async">
+      </figure>
+    </div>
+    <div class="container guest-photo-intro">
+      <div>
+        <span class="hero-tagline">Be a Guest</span>
+        <h1 id="guest-hero-title">Share Your Signal</h1>
+      </div>
+      <div>
+        <p class="hero-desc">Tell us about yourself and the work you would bring to the show. We review every submission and respond directly.</p>
+        <a class="btn btn-primary" href="#guest-apply-form">Apply to Be a Guest <span aria-hidden="true">&darr;</span></a>
       </div>
     </div>
   </section>
