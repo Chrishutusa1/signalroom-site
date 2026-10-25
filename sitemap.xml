@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://signalroompodcast.com/guest-authors</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://signalroompodcast.com/guests</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
