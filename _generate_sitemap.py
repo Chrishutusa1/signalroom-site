@@ -60,6 +60,7 @@ EXCLUDE = {"404.html"}
 # Curated changefreq/priority for root pages. A new root page not listed
 # here gets NEW_ROOT_DEFAULT and a loud note to curate it.
 PAGE_META = {
+    "guest-authors":                        ("monthly", "0.6"),
     "":                                     ("weekly", "1.0"),
     "about":                                ("monthly", "0.7"),
     "be-a-guest":                           ("monthly", "0.6"),
