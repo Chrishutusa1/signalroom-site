@@ -125,6 +125,17 @@ jobs:
           git fetch --unshallow --quiet 2>/dev/null || true
           python _generate_sitemap.py --check
 
+      # The /episodes and /guests CollectionPage + ItemList JSON-LD is generated
+      # from each hub's own cards (_generate_hub_schema.py), so it cannot drift
+      # unless a card is added or removed without regenerating. This reports that
+      # as a WARNING only and never fails the build, so adding an episode is not
+      # blocked on this step. A broken card layout (script cannot parse it) also
+      # surfaces here as a warning.
+      - name: Hub ItemList schema matches the hub cards (warning only)
+        if: ${{ !cancelled() }}
+        run: |
+          python _generate_hub_schema.py --check || echo "::warning::episodes/guests hub ItemList schema is out of date or unreadable: run 'python _generate_hub_schema.py --apply' and commit"
+
       # GA4 loader contract. On 2026-10-21 the deferred loader (idle callback,
       # up to 4s, page_view as a cancellable fetch) was linked to GA4 sessions
       # with landing page (not set): 26 of 595 sessions in the prior 30 days,
