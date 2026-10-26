@@ -134,6 +134,7 @@
                 <li><a href="/guests">Guests</a></li>
                 <li><a href="/about" class="active">About</a></li>
                 <li><a href="/be-a-guest">Be a Guest</a></li>
+                <li><a href="/about#sponsor">Sponsor the Show</a></li>
                 <li><a href="/faq">FAQ</a></li>
                 <li><a href="https://chrisjhutchins.com/speaking/" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
             </ul>
@@ -260,6 +261,24 @@
                 </div>
             </div>
         </section>
+
+        <section class="section section-alt" id="sponsor" aria-labelledby="sponsor-title">
+          <div class="container" style="max-width:760px;">
+            <h2 id="sponsor-title">Sponsor The Signal Room</h2>
+            <p>Discuss sponsorship of The Signal Room with Chris Hutchins. Tell us about your organization, the audience you want to reach, and your campaign timing.</p>
+            <form name="sponsor-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/about#sponsor" id="sponsor-inquiry" style="display:grid;gap:1rem;margin-top:1.5rem;">
+              <input type="hidden" name="form-name" value="sponsor-inquiry">
+              <p hidden><label>Leave this blank <input name="bot-field"></label></p>
+              <label>Name <input name="name" autocomplete="name" required maxlength="160" style="display:block;width:100%;padding:.75rem;"></label>
+              <label>Business email <input name="email" type="email" autocomplete="email" required maxlength="254" style="display:block;width:100%;padding:.75rem;"></label>
+              <label>Organization <input name="organization" autocomplete="organization" required maxlength="200" style="display:block;width:100%;padding:.75rem;"></label>
+              <label>Campaign goals and timing <textarea name="message" required maxlength="4000" rows="5" style="display:block;width:100%;padding:.75rem;"></textarea></label>
+              <button type="submit" class="btn btn-primary">Send sponsorship inquiry</button>
+              <p id="sponsor-inquiry-status" role="status" aria-live="polite"></p>
+              <p><a href="/privacy-policy">Privacy policy</a>. For guest appearances, use the <a href="/be-a-guest">guest application</a>.</p>
+            </form>
+          </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -301,6 +320,7 @@
             <li><a href="/guests">Guests</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/be-a-guest">Be a Guest</a></li>
+                <li><a href="/about#sponsor">Sponsor the Show</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
           </ul>
@@ -362,5 +382,6 @@
         });
 
     </script>
+<script src="/js/sponsor-inquiry.js?v=20261025" defer></script>
 </body>
 </html>
