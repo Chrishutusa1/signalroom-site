@@ -3,14 +3,13 @@
  *
  * Netlify's reserved handler name — invoked automatically on every Netlify Forms
  * submission. Filters to the `guest-application` form and forwards it into
- * Airtable Content Intelligence Hub → `Guest Applications` table
- * (app3hF8k8ZGXvf9XF / tbloZMd3IzXNo20jY), then fires a best-effort
+ * the Neon `guest_application` table (hdsc-intelligence schema; replaced the
+ * Airtable Guest Applications table 2026-10-26), then fires a best-effort
  * new-application notification + on-brand auto-reply.
  *
  * Required env vars (Netlify → Environment variables, scope: functions):
- *   AIRTABLE_PAT                - personal access token w/ data.records:write on the base
- *   AIRTABLE_BASE_ID            - app3hF8k8ZGXvf9XF
- *   AIRTABLE_GUEST_APPS_TABLE   - "Guest Applications" (table name or table ID)
+ *   DATABASE_URL  - Neon pooled connection string (same database as the
+ *                   hdsc-intelligence repo). Replaced the AIRTABLE_* vars 2026-10-26.
  *
  * Optional env vars (scope: functions):
  *   LEAD_NOTIFY_TO  - comma-separated recipient(s) for new-application alerts,
@@ -26,7 +25,7 @@
  * relay in the notification path anymore.
  */
 
-// A hostile submission can push multi-KB strings into Airtable and the
+// A hostile submission can push multi-KB strings into the database and the
 // notification webhook (GAPS #10) — clip every user-supplied field.
 const clip = (s, n = 1000) => String(s ?? "").slice(0, n);
 
@@ -44,7 +43,7 @@ function escapeHtml(s) {
 
 // Best-effort new-application notification via Resend, direct (no relay).
 // Never throws — a notification failure must not lose the application (already
-// stored in Netlify Forms + Airtable).
+// stored in Netlify Forms + the database).
 async function notifyApplication(fields, airtableStatus, recordId) {
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.AUTOREPLY_FROM;
@@ -63,7 +62,7 @@ async function notifyApplication(fields, airtableStatus, recordId) {
     `<b>Theme:</b> ${escapeHtml(fields.Theme) || "-"}</p>` +
     (fields.Topics ? `<p><b>Topics:</b> ${escapeHtml(fields.Topics)}</p>` : "") +
     (fields.Context ? `<p><b>Context:</b> ${escapeHtml(fields.Context)}</p>` : "") +
-    `<p><b>Airtable:</b> ${escapeHtml(airtableStatus)}${recordId ? ` (${escapeHtml(recordId)})` : ""}</p>`;
+    `<p><b>Database:</b> ${escapeHtml(airtableStatus)}${recordId ? ` (${escapeHtml(recordId)})` : ""}</p>`;
 
   try {
     await fetch("https://api.resend.com/emails", {
@@ -127,7 +126,7 @@ async function sendAutoReply(fields) {
 }
 
 // Second alert channel (2026-07-14): email Chris directly via Resend when the
-// Airtable write fails. The Zapier webhook is the primary alert, but two June
+// database write fails. The Zapier webhook is the primary alert, but two June
 // submissions proved a run can lose the lead with no webhook delivery — this
 // path only shares fate with the auto-reply (Resend), not with Zapier.
 async function sendFailureAlert(fields, airtableStatus) {
@@ -143,7 +142,7 @@ async function sendFailureAlert(fields, airtableStatus) {
         to: ["chris@hutchinsdatastrategy.com"],
         subject: `LEAD WRITE FAILED (Signal Room guest form): ${fields.Name || "(no name)"}`,
         text:
-          `The Airtable write for a guest application FAILED (${airtableStatus}). ` +
+          `The database write for a guest application FAILED (${airtableStatus}). ` +
           `The submission is safe in Netlify Forms; re-create the record or wait for the weekly reconciliation.\n\n` +
           `Name: ${fields.Name || "—"}\nEmail: ${fields.Email || "—"}\n` +
           `Title & Org: ${fields["Title & Organization"] || "—"}\n` +
@@ -190,14 +189,6 @@ exports.handler = async (event) => {
     return { statusCode: 200, body: "Ignored non-guest-application form." };
   }
 
-  const { AIRTABLE_PAT, AIRTABLE_BASE_ID, AIRTABLE_GUEST_APPS_TABLE } = process.env;
-  if (!AIRTABLE_PAT || !AIRTABLE_BASE_ID || !AIRTABLE_GUEST_APPS_TABLE) {
-    return {
-      statusCode: 500,
-      body: "Server misconfigured: missing Airtable env vars.",
-    };
-  }
-
   const fields = {
     Name: clip(data.name, 200),
     Email: clip(data.email, 320),
@@ -218,43 +209,45 @@ exports.handler = async (event) => {
   // belt-and-suspenders in case a bot POSTs the form action directly.
   const honeypotTripped = Boolean(data["bot-field"]);
 
-  const url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_GUEST_APPS_TABLE)}`;
-
-  // Write to Airtable, capturing status so we can always notify (and avoid
-  // non-2xx returns that would trigger Netlify retries → duplicate alerts).
-  // A transient 429/5xx or network blip is retried before we declare failure —
-  // an unretried transient error is the most likely cause of the 2026-06-29
-  // silent lost-application (Boris Berenberg). A 4xx (bad token/schema) won't
-  // heal on retry, so we stop immediately and let sendFailureAlert fire.
-  const isRetryable = (status) => status === 429 || (status >= 500 && status <= 599);
-  let airtableStatus = "ok";
+  // Write to the Neon guest_application table (hdsc-intelligence schema).
+  // Airtable was retired as the store on 2026-10-26 after the base went
+  // read-only. Status is captured rather than thrown so we always notify and
+  // always return 200 (non-2xx triggers Netlify retries -> duplicate alerts).
+  // A transient network error is retried; a repeated Netlify submission ID is
+  // ignored by the unique key, so a retry can never duplicate the application.
+  let airtableStatus = "ok"; // name kept: the alert/notify helpers and response use it
   let recordId = null;
-  const MAX_ATTEMPTS = 3;
-  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    try {
-      const resp = await fetch(url, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${AIRTABLE_PAT}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ records: [{ fields }], typecast: true }),
-      });
-      if (resp.ok) {
-        const json = await resp.json();
-        recordId = json.records?.[0]?.id || null;
+  const dbUrl = process.env.DATABASE_URL;
+  if (!dbUrl) {
+    airtableStatus = "misconfigured";
+  } else {
+    const { neon } = require("@neondatabase/serverless");
+    const sql = neon(dbUrl);
+    const v = (k) => (fields[k] ? fields[k] : null);
+    const MAX_ATTEMPTS = 3;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      try {
+        const rows = await sql`
+          insert into guest_application (
+            submission_id, submitted_at, name, email, title_org, linkedin,
+            theme, topics, context, source, referrer, user_agent, status
+          ) values (
+            ${v("Submission ID")}, ${fields["Submitted At"]}, ${v("Name")}, ${v("Email")},
+            ${v("Title & Organization")}, ${v("LinkedIn")}, ${v("Theme")}, ${v("Topics")},
+            ${v("Context")}, ${v("Source")}, ${v("Referrer")}, ${v("User Agent")}, 'New'
+          )
+          on conflict (submission_id) do nothing
+          returning id`;
+        recordId = rows[0] ? String(rows[0].id) : null;
         airtableStatus = "ok";
         break;
+      } catch (err) {
+        airtableStatus = "exception";
+        console.error(`Guest application write to Neon failed (attempt ${attempt}/${MAX_ATTEMPTS})`, err);
       }
-      airtableStatus = `error ${resp.status}`;
-      console.error(`Airtable write failed (attempt ${attempt}/${MAX_ATTEMPTS})`, resp.status, await resp.text());
-      if (!isRetryable(resp.status)) break;
-    } catch (err) {
-      airtableStatus = "exception";
-      console.error(`Airtable write threw (attempt ${attempt}/${MAX_ATTEMPTS})`, err);
-    }
-    if (attempt < MAX_ATTEMPTS) {
-      await new Promise((r) => setTimeout(r, 400 * attempt)); // 400ms, 800ms backoff
+      if (attempt < MAX_ATTEMPTS) {
+        await new Promise((r) => setTimeout(r, 400 * attempt)); // 400ms, 800ms backoff
+      }
     }
   }
 
