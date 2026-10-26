@@ -16,3 +16,16 @@ test('sponsor inquiry uses owner notification and never the guest database',asyn
  global.fetch=async()=>({ok:false});assert.equal((await handler(event)).statusCode,502);
  }finally{global.fetch=oldFetch;for(const key of Object.keys(process.env))if(!(key in oldEnv))delete process.env[key];Object.assign(process.env,oldEnv);}
 });
+import vm from 'node:vm';
+import fs from 'node:fs';
+test('browser records only accepted sponsor submissions, once, without personal data',async()=>{
+ const source=fs.readFileSync(new URL('../js/sponsor-inquiry.js',import.meta.url),'utf8');
+ for(const ok of [true,false]){
+  let handler,events=[],requests=0;const button={},status={};
+  const form={checkValidity:()=>true,addEventListener:(name,fn)=>handler=fn,querySelector:()=>button,reset(){}};
+  class FD extends Map {constructor(){super([['form-name','sponsor-inquiry'],['email','private@example.test'],['message','private message']]);}}
+  vm.runInNewContext(source,{window:{fetch:true,gtag:(...args)=>events.push(args)},document:{getElementById:id=>id==='sponsor-inquiry'?form:status},FormData:FD,URLSearchParams,fetch:async()=>{requests++;return {ok}}});
+  handler({preventDefault(){}});handler({preventDefault(){}});await new Promise(r=>setImmediate(r));
+  assert.equal(requests,1);assert.equal(events.length,ok?1:0);assert(!JSON.stringify(events).includes('private'));assert.equal(button.disabled,ok);
+ }
+});
