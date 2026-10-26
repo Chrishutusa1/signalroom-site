@@ -160,13 +160,6 @@ exports.handler = async (event) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const { AIRTABLE_PAT, AIRTABLE_BASE_ID, AIRTABLE_GUEST_APPS_TABLE } = process.env;
-  if (!AIRTABLE_PAT || !AIRTABLE_BASE_ID || !AIRTABLE_GUEST_APPS_TABLE) {
-    return {
-      statusCode: 500,
-      body: "Server misconfigured: missing Airtable env vars.",
-    };
-  }
 
   let payload;
   try {
@@ -179,8 +172,30 @@ exports.handler = async (event) => {
   const data = submission.data || {};
 
   const formName = submission.form_name || data["form-name"];
+  if (formName === "sponsor-inquiry") {
+    // The accepted submission remains in Netlify Forms; do not put sponsors in Guest Applications.
+    if (data["bot-field"] || !looksLikeEmail(data.email)) return { statusCode: 200, body: "Ignored invalid inquiry." };
+    const apiKey = process.env.RESEND_API_KEY;
+    const from = process.env.AUTOREPLY_FROM;
+    if (!apiKey || !from) return { statusCode: 500, body: "Sponsor inquiry saved in Netlify; notification configuration missing." };
+    const to = (process.env.LEAD_NOTIFY_TO || "chris@hutchinsdatastrategy.com").split(",").map(s => s.trim()).filter(Boolean);
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json", "Idempotency-Key": `sponsor-${submission.id || event.headers?.["x-nf-event-id"] || require("node:crypto").createHash("sha256").update(event.body).digest("hex")}` },
+      body: JSON.stringify({from, to, reply_to: clip(data.email, 254), subject: "New Signal Room sponsorship inquiry", text: `Name: ${clip(data.name,160)}\nOrganization: ${clip(data.organization,200)}\nEmail: ${clip(data.email,254)}\n\n${clip(data.message,4000)}\n\nSaved in Netlify Forms: sponsor-inquiry.`})
+    });
+    return response.ok ? {statusCode:200,body:"Sponsor inquiry notification sent."} : {statusCode:502,body:"Sponsor inquiry saved; notification failed."};
+  }
   if (formName !== "guest-application") {
     return { statusCode: 200, body: "Ignored non-guest-application form." };
+  }
+
+  const { AIRTABLE_PAT, AIRTABLE_BASE_ID, AIRTABLE_GUEST_APPS_TABLE } = process.env;
+  if (!AIRTABLE_PAT || !AIRTABLE_BASE_ID || !AIRTABLE_GUEST_APPS_TABLE) {
+    return {
+      statusCode: 500,
+      body: "Server misconfigured: missing Airtable env vars.",
+    };
   }
 
   const fields = {
