@@ -1,0 +1,113 @@
+/* Signal Room article cards: approved SR purple, white mark and gold accents. */
+.articles-grid {
+  --article-purple: #2f0650;
+  --article-gold: #ffe346;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--article-purple);
+  border: 1px solid #624475;
+  border-top: 3px solid var(--article-gold);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 16px rgba(30, 10, 45, .12);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.article-card:hover,
+.article-card:focus-within {
+  border-color: var(--article-gold);
+  box-shadow: 0 8px 24px rgba(30, 10, 45, .18);
+}
+
+.article-card .article-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid rgba(255, 227, 70, .45);
+}
+
+.article-card .article-brand-name {
+  display: block;
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1.5;
+}
+
+.article-card .article-brand-series {
+  display: block;
+  margin-top: .2rem;
+  color: var(--article-gold);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.article-card .article-brand-logo {
+  width: 48px;
+  height: 46px;
+  flex: 0 0 48px;
+  object-fit: contain;
+}
+
+.article-card h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.article-card h2 a { color: #fff; text-decoration: none; }
+.article-card h2 a:hover { color: var(--article-gold); }
+
+.article-card .article-meta {
+  margin: 0 0 1rem;
+  color: #d5c8df;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.article-card p.article-dek {
+  margin: 0 0 1.5rem;
+  color: #f0eaf4;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.article-card .read-link {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  margin-top: auto;
+  padding: .6rem 0;
+  color: var(--article-gold);
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-card .read-link:hover { text-decoration: underline; text-underline-offset: .25em; }
+.article-card a:focus-visible { outline: 2px solid var(--article-gold); outline-offset: 5px; border-radius: 2px; }
+
+@media (max-width: 700px) {
+  .articles-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article-card { transition: none; }
+}
