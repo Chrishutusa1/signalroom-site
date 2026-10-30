@@ -105,6 +105,7 @@ TOPICS = {
 
     "clinical-ai-patient-care": [
         dict(slug="clinical-ai-hospital-knowledge",
+             thumbnail_url="https://signalroompodcast.com/assets/episodes/declan-kelly-episode-20261030.jpg",
              card_title="Clinical AI Needs the Hospital's Own Knowledge",
              card_desc="Dr. Declan Kelly of Eolas Medical on why clinical AI needs a hospital's own governed knowledge, context, and transparency to be safe at the point of care.",
              guest_display="Dr. Declan Kelly"),
@@ -214,11 +215,12 @@ TOPICS = {
 LISTEN_ARROW = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
 PLAY_ICON    = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>'
 
-def make_card(slug, ep, guest, yt_id, card_title, card_desc):
+def make_card(slug, ep, guest, yt_id, card_title, card_desc, thumbnail_url=None):
+    thumbnail_url = thumbnail_url or f"https://img.youtube.com/vi/{yt_id}/hqdefault.jpg"
     return (
         f'        <a href="/episodes/{slug}" class="episode-card">\n'
         f'          <div class="episode-card-thumb">\n'
-        f'            <img src="https://img.youtube.com/vi/{yt_id}/hqdefault.jpg" alt="{guest} episode" loading="lazy">\n'
+        f'            <img src="{thumbnail_url}" alt="{guest} episode" loading="lazy">\n'
         f'            <div class="episode-card-play">{PLAY_ICON}</div>\n'
         f'          </div>\n'
         f'          <div class="episode-card-body">\n'
@@ -261,6 +263,7 @@ def generate_grid_content(ep_index, cards_config):
             yt_id      = ep_data["yt_id"],
             card_title = card["card_title"],
             card_desc  = card["card_desc"],
+            thumbnail_url = card.get("thumbnail_url"),
         ))
     # Join cards with a blank line between each
     return "\n\n".join(parts)
