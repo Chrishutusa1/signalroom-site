@@ -62,6 +62,9 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="agentic-ai-healthcare-back-office",
+             card_title="Agentic AI in the Healthcare Back Office",
+             card_desc="Michael Johns of Lydonia Technologies on agentic AI in revenue cycle and claims, what never goes to an agent, least privileged access, and keeping score."),
         dict(slug="medical-practice-financial-visibility",
              card_title="Your Practice Needs a Clearer View of Its Money",
              card_desc="Tomer and Erez Lankri of Lucid Financials on getting medical practices a current view of their money, AI answers grounded in source records, and keeping a named professional accountable.",
@@ -101,6 +104,10 @@ TOPICS = {
     ],
 
     "clinical-ai-patient-care": [
+        dict(slug="clinical-ai-hospital-knowledge",
+             card_title="Clinical AI Needs the Hospital's Own Knowledge",
+             card_desc="Dr. Declan Kelly of Eolas Medical on why clinical AI needs a hospital's own governed knowledge, context, and transparency to be safe at the point of care.",
+             guest_display="Dr. Declan Kelly"),
         dict(slug="ai-clinical-trial-screening",
              card_title="AI Clinical Trial Screening",
              card_desc="Dr. AJ Blood on holding AI to medicine's evidence bar: RECTIFIER finds eligible patients, human-in-the-loop, with NEJM and JAMA results.",
