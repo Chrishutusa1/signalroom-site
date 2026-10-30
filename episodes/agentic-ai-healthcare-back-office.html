@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office">
+  <title>Agentic AI in the Healthcare Back Office | Michael Johns</title>
+  <meta name="description" content="Michael Johns of Lydonia Technologies on agentic AI in the healthcare back office: revenue cycle, least privileged access for agents, and shadow AI.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/episodes/shadow-ai-governance-healthcare">
+  <title>Shadow AI and Who Owns the Risk | Aaron Bach</title>
+  <meta name="description" content="Aaron Bach, CTO of Liminal, on shadow AI in healthcare, shipping with the controls you have, multi-model strategy, and who owns the risk when AI fails.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Agentic AI in the Healthcare Back Office">
+  <meta property="og:description" content="Michael Johns of Lydonia Technologies on agentic AI in the healthcare back office: revenue cycle, least privileged access for agents, and shadow AI.">
+  <meta property="og:image" content="https://i.ytimg.com/vi/WVpvaN8bChs/maxresdefault.jpg">
+  <meta property="og:url" content="https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3', {transport_type: 'beacon'});
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script'); s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      ['scroll','click','touchstart','keydown','mousemove'].forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      // load right after the page finishes loading instead of waiting up to 4s for idle
+      if (document.readyState === 'complete') { setTimeout(loadGA, 0); }
+      else { window.addEventListener('load', function(){ setTimeout(loadGA, 0); }, {once:true}); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "PodcastEpisode",
+    "Article"
+  ],
+  "name": "AI Takes Work. What Comes Next?",
+  "headline": "AI Takes Work. What Comes Next?",
+  "image": "https://i.ytimg.com/vi/WVpvaN8bChs/maxresdefault.jpg",
+  "episodeNumber": 56,
+  "datePublished": "2026-10-26T10:00:00-04:00",
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com"
+  },
+  "url": "https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://www.buzzsprout.com/2550733/episodes/20021226"
+  },
+  "actor": {
+    "@type": "Person",
+    "name": "Michael Johns"
+  },
+  "timeRequired": "PT26M25S"
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where should a health system start with agentic AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Michael Johns, business transformation consultant at Lydonia Technologies, points to the back office: high-volume, highly repetitive manual work in finance and accounting, revenue cycle, claims processing, denials management and prior authorization. He says the closer work gets to the patient, the more judgment and experience matter, so the bedside is the last place he would start. Leaders should begin by asking what problem they are trying to solve and where the most pain sits in their own organization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should never be handed to an autonomous AI agent in healthcare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per Johns, clinical judgment, anything centered on patient safety, ethical decisions and anything that requires empathy stay with people. Agents can take high-volume, repetitive, low-value tasks and decisions within guardrails, with humans handling exceptions. He adds that agents need least privileged access, defined application and data permissions, and an audit trail so a regulated organization can prove what an agent did and did not have access to."
+      }
+    }
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://signalroompodcast.com/episodes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Agentic AI in the Healthcare Back Office",
+      "item": "https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office"
+    }
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "@id": "https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office#video",
+  "name": "AI Takes Work. What Comes Next?",
+  "description": "Michael Johns of Lydonia Technologies on agentic AI in the healthcare back office: revenue cycle, least privileged access for agents, and shadow AI.",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/WVpvaN8bChs/maxresdefault.jpg"
+  ],
+  "uploadDate": "2026-10-26",
+  "duration": "PT26M26S",
+  "embedUrl": "https://www.youtube.com/embed/WVpvaN8bChs",
+  "contentUrl": "https://www.youtube.com/watch?v=WVpvaN8bChs",
+  "url": "https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office",
+  "mainEntityOfPage": "https://signalroompodcast.com/episodes/agentic-ai-healthcare-back-office",
+  "isFamilyFriendly": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  }
+}</script>
+</head>
+<body>
+  <nav class="nav" id="navbar"><div class="nav-inner"><a href="/" class="nav-brand"><img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room"><span>The Signal Room</span></a><ul class="nav-links" id="navLinks"><li><a href="/">Home</a></li><li><a href="/episodes" class="active">Episodes</a></li><li><a href="/articles/">Articles</a></li><li><a href="/guests">Guests</a></li><li><a href="/about">About</a></li><li><a href="https://chrisjhutchins.com/speaking/" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li><li><a href="/be-a-guest">Be a Guest</a></li><li><a href="/faq">FAQ</a></li></ul><button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></nav>
+  <section class="episode-hero"><div class="container"><span class="section-label">Episode 56</span><h1>AI Takes Work. What Comes Next?</h1><p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">with <a href="#guest-section" style="color:#6c63ff;text-decoration:none;">Michael Johns</a></p></div></section>
+  <section class="section" style="padding-top:var(--space-lg);"><div class="container"><div class="episode-layout"><div class="episode-main">
+    <div class="episode-video" style="max-width:800px;margin:0 auto 1.5rem;padding:0;position:static;"><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/WVpvaN8bChs" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" title="AI Takes Work. What Comes Next?"></iframe></div></div>
+    <div class="episode-info-card" style="max-width:640px;margin:0 auto 1.5rem;background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);border-radius:12px;padding:1.5rem;border-left:4px solid #1a1a2e;"><div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;flex-wrap:wrap;"><span style="background:#1a1a2e;color:#fff;padding:.25rem .75rem;border-radius:20px;font-size:.8rem;font-weight:600;">Episode 56</span><span style="color:#666;font-size:.85rem;">October 26, 2026</span><span style="color:#666;font-size:.85rem;">26 min</span></div><div class="episode-listen-row"><span class="episode-listen-label">Listen on:</span><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener" class="episode-listen-btn">Apple Podcasts</a><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener" class="episode-listen-btn">Spotify</a><a href="https://www.buzzsprout.com/2550733/episodes/20021226" target="_blank" rel="noopener" class="episode-listen-btn">Buzzsprout</a></div><p style="margin:0 0 .5rem;font-size:1.2rem;color:#1a1a2e;font-weight:700;">AI Takes Work. What Comes Next?</p><p style="margin:0 0 1rem;color:#555;font-size:.95rem;font-style:italic;">with Michael Johns &middot; Business Transformation Consultant, Lydonia Technologies</p><p style="margin:0;color:#444;font-size:.9rem;line-height:1.6;">Michael Johns, business transformation consultant at Lydonia Technologies, joins Chris Hutchins to work through where agentic AI lands first in a health system: the back office. They cover which revenue cycle, claims and finance tasks are ready for autonomous agents, what should never be handed over, and how least privileged access and audit trails keep agent decisions defensible. Michael closes with what separates successful programs: treating automation as a program, telling people what is in it for them, and keeping score in public.</p></div>
+    <div class="show-notes-section" style="max-width:800px;margin:1.5rem auto 2rem;padding:2rem;background:#fff;border-radius:12px;border:1px solid #e0e0e0;"><h3 style="margin:0 0 1rem;font-size:1.15rem;color:#1a1a2e;border-bottom:2px solid #1a1a2e;padding-bottom:.5rem;">Show Notes</h3><div style="color:#444;font-size:.95rem;line-height:1.7;"><p>Michael Johns, business transformation consultant at Lydonia Technologies, joins Chris Hutchins to work through where agentic AI lands first in a health system: the back office. They cover which revenue cycle, claims and finance tasks are ready for autonomous agents, what should never be handed over, and how least privileged access and audit trails keep agent decisions defensible. Michael closes with what separates successful programs: treating automation as a program, telling people what is in it for them, and keeping score in public.</p><h2>What We Cover</h2><ul><li>Why agentic AI is landing in the healthcare back office before the bedside</li><li>Claims processing, denials management, prior authorization and other high-volume manual work</li><li>Returns moving from robotic process automation to agentic workflows, and the 80/20 rule for knowledge workers</li><li>An aging population, a shrinking labor force, and why AI will have to take on work</li><li>Swivel work between the EHR and financial applications</li><li>What never goes to an autonomous agent: clinical judgment, patient safety, ethical decisions and empathy</li><li>Least privileged access, audit trails and defensibility for agents</li><li>Tenancy issues, browser extensions, embedded SaaS AI and shadow AI</li><li>How agent deployments quietly fail, and why smoke and stress testing matter</li><li>Centers of automation and treating agentic automation as a program</li><li>Psychological safety, what is in it for employees, and keeping score publicly</li></ul><h2>Key Takeaways</h2><ul><li><strong>Start where the volume and repetition are.</strong> Per Johns, the best first targets are high-volume, highly repetitive manual work in finance and accounting, revenue cycle and claims. The closer work gets to the patient, the more judgment and experience matter, which makes the bedside the last place he would start.</li><li><strong>Agents need the same boundaries as people.</strong> Least privileged access applies to bots and agents just as it does to humans: define which applications they use and which data they can and cannot see, and keep an audit trail that proves what an agent touched. He adds that agents do not give up and work around the clock, so missing backstops let damage happen fast.</li><li><strong>The return comes from what people do with the time.</strong> Johns describes returns of two to three times investment with robotic process automation and four to seven times with agentic workflows. He argues the larger impact comes from moving skilled staff from remedial work to strategic work, which requires leaders to explain what is in it for employees, make it safe to bring ideas forward, and celebrate wins publicly.</li></ul><h2>Examples Used in the Conversation</h2><ul><li>Chris&#x27;s early billing operations work, including a stack of commercial claims about two and a half feet tall</li><li>An agent with HR system access that has no need to see Social Security numbers or salaries</li><li>Office 365 tenancy crossing between organizational and personal accounts while an agent screen scrapes a website</li><li>Chris&#x27;s experience of an AI tool pivoting into adjacent data after hitting a barrier, without telling him</li><li>An invoice address written as &quot;Fifth&quot; one time and &quot;5th&quot; the next, throwing data extraction off</li><li>A revenue cycle goal of taking DSO from forty days to thirty-eight, then celebrating the people who got it there</li><li>George Hodson&#x27;s lesson to Michael early in his career: what gets rewarded gets done</li></ul><p><em>These examples reflect Michael Johns&#x27; perspective and experience and are offered as leadership insight. They are not legal, clinical or compliance advice for any specific organization.</em></p><h2>About Michael Johns</h2><p>Michael Johns is a business transformation consultant at Lydonia Technologies, where he works with large organizations as they adopt automation and agentic AI. He brings three decades of experience across enterprise IT, operations, sales leadership and business transformation, including roles at Xerox, EMC and Pomeroy. He is also a board member and an Amazon international best-selling author, and has called Louisville home for more than twenty years. Connect with him on <a href="https://www.linkedin.com/in/michaeljohns3/" target="_blank" rel="noopener">LinkedIn</a>.</p><h2>Related Resources</h2><ul><li><a href="https://lydonia.ai/" target="_blank" rel="noopener">Lydonia Technologies</a></li><li><a href="https://www.linkedin.com/in/michaeljohns3/" target="_blank" rel="noopener">Michael Johns on LinkedIn</a></li><li>Related episode: <a href="/episodes/ai-agents-know-when-to-stop">Why AI Agents Need to Know When to Stop</a></li><li>Related episode: <a href="/episodes/agentic-ai-human-in-the-loop">Agentic AI and the Human in the Loop</a></li><li>Related topic: <a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li></ul></div></div>
+  </div><div class="episode-sidebar" id="guest-section"><div class="sidebar-card"><h4>Guest</h4><div class="sidebar-guest"><img alt="Michael Johns" src="../assets/guests/michael-johns.jpg"/><div class="sidebar-guest-info"><h3>Michael Johns</h3><p>Business Transformation Consultant, Lydonia Technologies</p><a href="https://www.linkedin.com/in/michaeljohns3/" class="sidebar-guest-linkedin" target="_blank" rel="noopener">LinkedIn Profile</a></div></div></div><div class="sidebar-card sidebar-follow-card"><h4>Follow the Show</h4><p>Never miss an episode.</p><div class="sidebar-follow-links"><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" class="sidebar-follow-btn spotify" target="_blank" rel="noopener">Spotify</a><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" class="sidebar-follow-btn apple" target="_blank" rel="noopener">Apple Podcasts</a><a href="https://www.youtube.com/@SignalRoomPodcast?sub_confirmation=1" class="sidebar-follow-btn youtube" target="_blank" rel="noopener">YouTube</a></div></div></div></div>
+    <section class="episode-transcript" style="max-width:800px;margin:2.5rem auto 0;padding:1.75rem 2rem;background:#F4F1F7;border-radius:12px;border:1px solid #E0DBE5;"><details><summary style="cursor:pointer;font-size:1rem;font-weight:700;color:#1A1A2E;padding:0.25rem 0;list-style:none;display:flex;align-items:center;gap:0.75rem;"><span style="display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;background:#6C5CE7;border-radius:50%;color:#fff;font-size:0.65rem;flex-shrink:0;">&#9654;</span>Full Episode Transcript</summary><div class="transcript-body" style="margin-top:1.25rem;border-top:1px solid #E0DBE5;padding-top:1.25rem;color:#4A4458;font-size:0.925rem;line-height:1.85;max-height:560px;overflow-y:auto;padding-right:0.5rem;"><p><strong>Chris Hutchins:</strong> Welcome back to The Signal Room. I'm Chris Hutchins. Quick thing before we start. I wrote a book. It's called Beneath the Signal. And it's about the human work behind trusted data and responsible AI in healthcare. Search Beneath the Signal on Amazon now and pick up your copy. Okay, here's our episode. Everybody's talking about agentic AI these days. Agents that don't just answer, they go and do the work. And healthcare, that's not landing at the bedside first. It's landing in the back office. Prior authorization claims. Revenue cycle, scheduling, and the real question isn't whether it works, it's which tasks are safe to hand over to an autonomous agent and how do you keep a human accountable when the setting is regulated and mistakes are real. My guest today has spent thirty years in enterprise IT, operations, sales leadership, and business transformation. At companies like Xerox, EMC, Pomeroy, and today is a business transformation consultant at Lydonia Technologies. He's the person who sits with big organizations while they actually adopt this stuff, turning operations, sales, and a finance lens into one question. What work can you repurpose and to where? He's a board member, the Amazon International best-selling author. And he's called Louisville home for More than twenty plus years, he's not here as a clinician, he's here as the operator who sees across a lot of clients where automation either earns its keep or it silently breaks. Michael Johns, welcome to The Signal Room.</p>
+<p><strong>Michael Johns:</strong> Chris, thank you for having me. I appreciate it. That's quite an introduction. I hope I can live up to that.</p>
+<p><strong>Chris Hutchins:</strong> Where does agentic automation actually show up first inside of a health system?</p>
+<p><strong>Michael Johns:</strong> There there's plenty of areas to look. you know, healthcare is very complex. and by the way, my role is really in more of the back office type stuff. you rattled off a few. rev cycle is very there's a lot of components to that. we think finance and accounting departments are good places to start. but really what you're looking for is high volume. highly repetitive manual type efforts that technology today can replace. You know, this is this is not wet paint anymore. This stuff is real. And then really I think the trick is is is you start to free up your best people's time, your knowledge workers' time, people on the in the back office, what would you have them do? with the time freed up. And I think that's the big bang.</p>
+<p><strong>Chris Hutchins:</strong> But it talk about some of the things there that make this an easier target easier's not maybe not the right word, a better target to start with in the operational side of it than it might be for things that actually touch the patient at the bedside the clinicians are dealing with.</p>
+<p><strong>Michael Johns:</strong> You know, I think as i you get closer and closer to the patient and I think judgment and experience becomes more and more important. And so that's probably the last place I would start. for us, you know, as I mentioned, some of the things that we see are the those manual things that crop up. So we run into things like claims processing. denials management creates a lot of back and forth. Right. you know, knowledge workers are chasing documentation. there's there's checking claim status. and then healthcare in general, I mean it's you know it's fragmented. There's, you know, there's patient records that are contradictory in some cases, payers change rules. there's inconsistent or incomplete documentation. All of those things make healthcare a beast to deal with on the back end. You know, once you care for a patient, how do you bill? How do you how do you check prior authorization? How do you how do you submit claims to the payer? I mean, it's very complex for sure. All of those things are ripe for automation type efforts.</p>
+<p><strong>Chris Hutchins:</strong> And I also want to hear your perspective a little bit about how you frame these things because there's a this is obviously a lot of fears that and apprehension people have about w what can AI actually replace and is it gonna replace a person? talk a little bit about some of the roles and what makes them attractive to for automation and what does it enable from a relief standpoint from the teams that are current you know to currently probably doing some really painful manual processes repeatedly.</p>
+<p><strong>Michael Johns:</strong> Sure. I if you work in finance and accounting, we find invoice processing, creating POs. those are some tasks that can be handled by technology to a large extent. rev cycle specialist. You know, where there's a lot of lookups, there's a lot of double checking, there's a lot of verifying, a lot of those things can be done by technology and you know, we when we get involved with clients or when I do, you know, one of the first things I always ask is what problem are you trying to solve? Now we go in with maybe some ideas on where we know there's friction or errors or a lack of speed, to be sure, but You know, sometimes you y you want to prioritize based on where the most pain is within your own organization. rev cycle was a good place to start, but r we started around robotic process automation, gosh, probably seven years ago. That's been around a while and we started seeing things in, you know, a two to three X return, meaning for every dollar you spend, there's two to three dollars to be returned. Well now as we've got into agentic, we're not just automating a few tasks within a work process. Now all of a sudden we can look at a workflow holistically and we can have an agent gather information, make some decisions around that information with guardrails to be sure, and then trigger workflows and do that across multiple systems. Now all of a sudden we're seeing financial metrics where there's a four to seven X return for every dollar invested. But I think where a lot of executives kind of even miss the boat there is that you know, I think the 80-20 rule applies. If your best people, whether it's in claims, whether it's in rev cycle, whether it's in accounting, if they're spending twenty percent of their time on average doing really important things. And 80% of their time doing remedial things, what's the impact if we can flip that so that they're spending 80% with the time freed up by agents and automation? what's the EBITDA impact if they're spending 80% of their time on big initiatives, strategic projects, patient care, competitive differentiation, things like that? That really becomes the big impact. And then instead of a two to three X return or a four to seven X return, we're seeing even impacts of 10X plus. when you start to look at all of those things I just mentioned. I we think the opportunity is immense.</p>
+<p><strong>Chris Hutchins:</strong> So w w what you're describing is not like a just a replacement. it's actually it's an augmentation, in fact, on top of what gets done today. It's enabling other things to get done that probably aren't getting b a whole lot of attention now. Is that fair?</p>
+<p><strong>Michael Johns:</strong> That's absolutely fair. Yeah. Yeah, you know, another another dynamic in healthcare that we see, and you alluded to it a minute ago, is is with an aging population that has a couple of dynamics that are important for for executives. Well, that has a couple of dynamics for healthcare. Number one, the demand for healthcare is going up as the population ages. but then number two, we're facing a shrinking labor force. And so I know there are in some cases people are concerned with, gosh, you know, AI is going to take jobs. And my response to that is it's going to have to. We're not going to be able to keep up if it doesn't. so I kind of like an AI. you know, it's kind of similar to what the industrial revolution revolution did to revolutionize physical work. AI is doing that today with knowledge work. and I see it as a good thing and a in a really an imperative, not not really a bad thing.</p>
+<p><strong>Chris Hutchins:</strong> When I started working in healthcare, I was it w basically doing billing operations types of functions. And you know, we replaced a really horrible process. I would get this literally a stack of commercial claims like two and a half feet tall. replacing that with the automation that was put in between the electronic billing at the time I think was pretty scary. But we s we seem to figure out what to do with our time coming out of that. I don't think Apples to apples, but I mean how do you think about that and how would you characterize it for someone that's not really comfortable yet?</p>
+<p><strong>Michael Johns:</strong> Well, I think, you know, I that's where leadership comes in is, you know, people need to understand, you know, what's important. and we've got to figure out as leaders, how do we get a disproportionate amount of our people's time focused on what's really important versus versus what's not. You know, it's really easy to do data entry and lookups and check email and do some more lookups and check email. That's not really productive. and so I think that's that's kind of the a leadership challenge is to make sure, you know, as time frees up, people understand what they can pivot to. And the other thing I think if you're a knowledge worker out there, it's more rewarding to go work on big stuff and strategic stuff than it is to just input data into a spreadsheet. Or we tend to call it swivel work. You know, if you've got to move data and healthcare is notorious for this, if you've got to move data from your EMR to your financial application, quite often that's just manual data entry. and that's really not all that rewarding. That's that's one way I would couch it. And I think healthcare is no different. We have a lot of things that we could be doing better. We just don't have enough hours in a day. And hopefully if we do this right, we keep people engaged that actually can help you be part of you know the the efficiency gains that can be you know had by freeing up more people to do some of these harder things. rote based stuff is just not that much fun. and not very lucrative either. And to me, today with technological advances that are increasing and accelerating, I go back to this as a leadership challenge, to make sure that that you know, people understand there's plenty to do. It's just gonna be different and more important type stuff. And let the technology go do the remedial stuff.</p>
+<p><strong>Chris Hutchins:</strong> I love that. And I mentioned this in the opening, but when you're in a regulated setting, what are some of the things that you should never hand over to an autonomous agent? And how do you actually decide which those things are?</p>
+<p><strong>Michael Johns:</strong> Yeah, I think well certainly clinical judgment would be one. Anything centered around patient safety, ethical decisions, you know, anything that requires empathy, you know, if you've got to go tell somebody that, hey, you've got cancer, you d you don't want a telepromp a teleagent doing something like that. th those are kind of the things I wouldn't do. I you know, beyond that, I d high volume, repetitive, manual, low value type tasks or decisions, but decisions within guardrails and then anything that's bumping up against a predetermined set of parameters will will then you have humans handling the exceptions. You know, i we like to say human in the loop. you know, there we're not We don't suggest to our clients that you don't need to have people looking at this stuff, but you wanna do the you wanna do the twenty percent, not the eighty percent. and then like like I mentioned earlier, the real value comes from what what gets done with that eighty percent that wasn't getting done before. To me, that's the real that's the big bang.</p>
+<p><strong>Chris Hutchins:</strong> But I want to kind of dial in on the concept of keeping things defensible. How do you how do you measure that, you know, from your perspective?</p>
+<p><strong>Michael Johns:</strong> Well, it def tell me more about that. Defensible in terms of what an agent did, perhaps?</p>
+<p><strong>Chris Hutchins:</strong> It's a l a lot of the the audit types of activities that you have to be prepared for. You know, 'cause sometimes it's an agency that's you know, looking at things from the outside. Sometimes it's your own internal audit processes that just make sure that you have the right safeguards to protect the information and it's accurate and you know that there's not anything unethical being done when you're dealing with payment transactions, for example.</p>
+<p><strong>Michael Johns:</strong> Yeah. Well governance is key. you know, with bots, software bots or agents, it turns out least privileged access is just as important for them as it is for humans. So you know, with agents, you you've got to put definition around what applications do they need to do their job, what data can they see and not see? you know, as an example, maybe you're giving an agent permissions to go into an HR system, but you don't want them to have access to Social Security numbers because they don't need that, or maybe they don't need salaries. you know, so there's so the when I say governance, that that's kind of what I mean is we've we've got to put a bo a box around what they can and can't do, just like you would with humans, really. And then lastly, you mentioned it, but there needs to be an audit trail. in the event something goes wrong, which, you know, sometimes it does, sometimes it's unintentional. but you do have to be able to demonstrate, particularly in a regulated environment, banking is one, and certainly healthcare is one, where you've got patient data involved, you've got to be able to prove that you know, we the agent did not have access to X, Y, or Z. And here's here's how we know that. And that's your defensible Comment.</p>
+<p><strong>Chris Hutchins:</strong> I think there's some interesting similarities that people may not be thinking about when you're designing your workflows from an audit standpoint, for example, where you understand how humans typically interact with data, but what are some of the things that can get you kind of into a precarious situation where if you're not treating the AI like you would treat an employee, you might have vulnerabilities.</p>
+<p><strong>Michael Johns:</strong> And what we're finding is a lot of network based tools are not prepared to see things at the granularity that is required today. So you're seeing a lot of ad advancements in the security space. without a doubt, but let's let's say an agent goes to a website and they've got to screen scrape some data and somehow, some way, you know, the organization's Office 365 account happens to transverse itself into an individual's Office 365 account. Well now all of a sudden those tenancy issues can cause data leakage. or within a within a browser as an example, you might have extensions in there to where something can inadvertently get out. And so those are some of the common things that we've seen really just crop up in about the last six months. and so tenancy issues, embedded capabilities, you know, sometimes SaaS applications have their own AI tools. You know, this is another one that's come up. I don't know if you've heard this term shadow AI, but remember shadow IT when the cloud, you know, first came on. And if IT was moving too slow, somebody went out, some line of business person would go swipe a credit card at Amazon or Azure or whoever, and all of a sudden these bills start coming in. Nobody was monitoring it. And we're seeing the same thing with AI tools today. And so shadow AI is kind of becoming a thing. So we'll we'll coach we'll coach our clients on how to deal with that as well. but that's shadow AI is a real thing today, and it can be costly if you don't wire that in advance.</p>
+<p><strong>Chris Hutchins:</strong> And I think one of the things that I've discovered by accident just using it myself for my own benefit. And where where I discovered it was I was working on it sp in a specific data set inside of my own ecosystem. And I never told it specifically not to go and look for other opportunities in adjacent data or anything like that. I assumed because I told had it working on one particular data set that it would stick to that data set. Only to find out it ran into a barrier and without even bringing it to my attention, it pivoted and went into another part of my data ecosystem and started pulling things out. And it's not going to necessarily tell me unless I put parameters and hard stops around it. It's not going to stop at some points that I should have it stop at. But if we don't do the same thing for AI, we're probably introducing a higher probability of risk, don't you think?</p>
+<p><strong>Michael Johns:</strong> Absolutely. Yeah. Now it comes back to that concept of least privileged access. it absolutely applies to agents, just like it does humans. And, you know, it's interesting. Agents don't give up. You know, a human, if they if they're trying to solve something and they've looked several different sources and, you know, a human will give up. An agent's not giving up. And by the way, they work twenty four seven. So a lot of damage can be done fast if there's not some Some backstops on what they can and can't do.</p>
+<p><strong>Chris Hutchins:</strong> No question. It's the one that people don't really wanna think about probably, but when the agent gets something wrong, who's accountable? How does it quietly fail? what are some of the most common ways that deployments can quietly fail in the real world?</p>
+<p><strong>Michael Johns:</strong> Yeah, you know, we've seen we've seen some of that with data extraction technologies we leverage to where, you know, it sometimes what'll throw an agent a for a loop is, you know, one time like slight I mentioned invoice processing, one time at the address might say South Fifth Street and it spells out fifth, and then the next time it comes in, it has the letter five and says fifth. And those types of things can throw technologies for a loop. so you've got to solve for things like that. And sometimes it's trial and error. You know, we you know, we're very thorough on the front end in understanding requirements, but you know, invariably, no matter how thorough you are, there's gonna be some curveballs when you get into, you know, what we call smoke testing. you know, or stress testing to make sure that what we built does exactly you know what we anticipate that it's gonna do. And that's where we tend to catch some of these one-offs where that's not exactly what it was supposed to do. that's one way I think you guard it. I think when you're building these types of systems out, you you've got to have some period of of testing so that you know how it's gonna react. under fire with different variables coming at it so that you can address that before you're full blown into production.</p>
+<p><strong>Chris Hutchins:</strong> What are some of the characteristics of the organizations that you've seen have really good success you know, as they've begun this and in how they're engaging their teams as they're starting to figure out which things to tackle first?</p>
+<p><strong>Michael Johns:</strong> We have this we have this thing we call centers of automation. And it's really part of our approach is we're not there just to land and expand and you know rack up a bunch of billable hours. We want to teach you how to fish. And so we where we've seen the most success is when people look at agentic automation is more of a program versus a project. A project is we're gonna go tackle one thing and stop, or we're gonna tackle two or three things and stop. when you turn it into a program, now all of a sudden you're looking for business problems to solve. You know, you you've gotta it's gotta be better, faster, cheaper. you're looking for competitive edge, differentiated client experiences, whatever. Or maybe it's a financial metric. You know, you're you know, you're you hospitals most people don't realize this, but you certainly do. Hospitals run on pretty thin margins. so if you have a sustained you know maybe you're running sustained margins of two percent and you need to bump that up to three percent. How are you going to attack that? so we're you know I we wanna we typically wanna what I would recommend is you look at multiple different department departments and build a program around you know maybe what's one big thing that each department's trying to accomplish and then you start adding that up and all of a sudden, you know, it it quickly becomes apparent the sum is greater than the parts. but I we think it's important that it become a program. and almost here this is a way we do things. It becomes part of your DNA, no pun intended versus just, you know, we're gonna tackle a couple of projects.</p>
+<p><strong>Chris Hutchins:</strong> What are some of the things that you've seen be really effective in terms of getting getting people on board?</p>
+<p><strong>Michael Johns:</strong> I think they're good at communic first of all, you gotta communicate. And I think they're good at communicating to their people what's in it for them. you know, hey, you're gonna be if we do this, you're gonna be able to work on more important things. it's gonna be more interesting, it's gonna be bigger impact, and with bigger impact is there's you know, there's more income advancement for you. You if all you're doing is doing data entry as an example, well, you know what, there's there's a ceiling to that. And that is a job that is gonna be at risk soon, if not already. So I think that's one way you do it is what's in it for them. And is y you know, from a leadership perspective, you may have heard the expression win their hearts and their minds will follow. to the extent that people feel safe bringing ideas to the table, like, hey, I'm not I'm not exactly working my way out of a job here. then you start to incent people to bring ideas forward. and the people closest to the action know more about what the heck's going on day to day than you know, somebody sitting in the ivory tower. And so you you've got to make it a safe environment for people to feel comfortable bringing ideas forward. Those are the two biggest things I've seen be successful.</p>
+<p><strong>Chris Hutchins:</strong> And when they're when they feel like they have the psychological safety, which is the other piece of it that you mentioned, they're they're going to actually be a real effective advocate for what you're trying to accomplish. But it it's goes far beyond just the what I would say, the drive by, you know, town hall mention. You're saying, hey guys, I know your this apprehension here, just trust us it's gonna be okay. That that's just not enough.</p>
+<p><strong>Michael Johns:</strong> No, it's not. Well, and it and if i it i from a leadership team perspective, if you've tried to communicate well, maybe you've done a couple of town halls, maybe there's even a win that's been celebrated that didn't negatively or adversely impact a couple of employees directly involved, if there's still apprehension, then you know that's that's certainly a red flag for the leadership team that, hey, we've got some trust issues we need to address. You know, y the first thing you gotta understand is you do have some work to do, to kind of r rebuild that that trust from a c from a cultural standpoint, in addition to the things that you wanna do to get people engaged.</p>
+<p><strong>Michael Johns:</strong> No, absolutely. Yeah, I think another one that's helpful is is put some metrics around what you're trying to accomplish and then keep score. and keep score publicly. like let's say for the for f as an example, you know, there's a goal in rev cycle to where, you know, we want to take DSO from, you know, forty days down to thirty-eight days. And and then you achieve that goal. And who the people that contributed by embracing some of these things we're talking about, agentic automation and AI and you know, then you go celebrate that. You know, there's I learned in my twenties, I worked for a general manager a guy by the name of George Hodson. but he also always used to tell me what gets rewarded gets done and don't ever forget that. And I never have.</p>
+<p><strong>Chris Hutchins:</strong> Well. That's a powerful one.</p>
+<p><strong>Michael Johns:</strong> Well, nothing you know, if you're gonna get anything done, you technology is an enabler, but you need people. you still need people and that's not gonna change.</p>
+<p><strong>Chris Hutchins:</strong> Well, my d this has been a fascinating conversation. I always enjoy our conversations and I always learn things. So I really appreciate you taking the time and coming on the show. Maybe tell a little bit tell folks where they can find you if they want to reach out.</p>
+<p><strong>Michael Johns:</strong> Yeah, sure. You know, probably the best way to catch me is just my email address. I'm on LinkedIn under Michael Johns, but my email address is michael.johns@lydonia.ai. That's that'd be the easiest way to catch me.</p>
+<p><strong>Chris Hutchins:</strong> Fantastic. Again, Michael, thank you so much. And for the for listeners, make sure you check the show notes. And I think that's gonna do it for this episode of The Signal Room. I just want to encourage you if you're not a subscriber today, you can find us at signalroompodcast.com. You can find us also under that same name on YouTube. Thanks so much for joining us on The Signal Room, and I'll see you next time.</p>
+<p><strong>Michael Johns:</strong> Thank you, Chris.</p></div></details></section>
+  </div></section>
+  <section class="section"><div class="container"><div class="newsletter-cta"><h2>The AI Health Pulse</h2><p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p><div class="newsletter-form" style="justify-content: center;"><a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a></div></div></div></section>
+  <!-- SR-NEWSLETTER-SIGNUP -->
+  <section class="newsletter-signup-section" aria-labelledby="newsletter-signup-title">
+    <div class="container">
+      <div class="newsletter-signup-card">
+        <span class="section-label">The AI Health Pulse</span>
+        <h2 id="newsletter-signup-title">Get the weekly healthcare AI newsletter</h2>
+        <p>Weekly newsletter for healthcare executives on AI strategy, regulation, and operational reality.</p>
+        <form class="newsletter-signup" data-newsletter-signup data-campaign="episode" novalidate>
+          <label class="newsletter-signup__label" for="newsletter-email">Email address</label>
+          <div class="newsletter-signup__row">
+            <input id="newsletter-email" class="newsletter-signup__input" type="email" name="email" placeholder="you@organization.com" autocomplete="email" required>
+            <input class="newsletter-signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary newsletter-signup__button" type="submit">Subscribe</button>
+          </div>
+          <p class="newsletter-signup__status" data-newsletter-status role="status" aria-live="polite"></p>
+          <noscript><p class="newsletter-signup__fine"><a href="https://aihealthpulse.beehiiv.com/subscribe?utm_source=signalroompodcast.com&amp;utm_medium=site-form-fallback" target="_blank" rel="noopener">Subscribe on the newsletter page</a></p></noscript>
+        </form>
+        <p class="newsletter-signup__fine">Free. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+  <script src="/js/newsletter-signup.js" defer></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room" width="48" height="48">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/be-a-guest">Be a Guest</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen &amp; Watch</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+            <li><a href="https://music.amazon.com/podcasts/776b3a30-dc76-400d-a6ca-9f11f6cb15ab/the-signal-room-ai-in-healthcare-strategy-governance" target="_blank" rel="noopener">Amazon Music</a></li>
+            <li><a href="https://www.iheart.com/podcast/269-the-signal-room-ai-in-heal-305174135/" target="_blank" rel="noopener">iHeartRadio</a></li>
+            <li><a href="https://www.pandora.com/podcast/the-signal-room-ai-in-healthcare-strategy-and-governance/PC:1001117115" target="_blank" rel="noopener">Pandora</a></li>
+            <li><a href="https://www.audible.com/podcast/The-Signal-Room-AI-in-Healthcare-Strategy-Governance-Ethical-Leadership/B0FZVY5WBF" target="_blank" rel="noopener">Audible</a></li>
+            <li><a href="https://tunein.com/podcasts/Business--Economics-Podcasts/The-Signal-Room--Healthcare-AI-Strategy--Governance-p4740772/" target="_blank" rel="noopener">TuneIn</a></li>
+            <li><a href="https://pocketcasts.com/podcast/the-signal-room-ai-in-healthcare-strategy-governance/86c88d90-9c8e-013e-8071-0affdb99cfd5" target="_blank" rel="noopener">Pocket Casts</a></li>
+          </ul>
+        </div>
+        <div>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener">Hutchins Data Strategy Consultants</a></li>
+            <li><a href="https://chrisjhutchins.com/speaking/" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});</script>
+</body>
+</html>
