@@ -18,8 +18,8 @@ ROOT = Path(__file__).parent
 
 # Update these together when platform dashboards are refreshed. The script writes
 # the same display values to every public proof block so pages cannot drift.
-TOTAL_REACH_DISPLAY = "83K+"
-IAB_DOWNLOADS_DISPLAY = "3.5K+"
+TOTAL_REACH_DISPLAY = "83.4K+"
+IAB_DOWNLOADS_DISPLAY = "3.9K+"
 
 ep_count = len(glob.glob(str(ROOT / "episodes" / "*.html")))
 
