@@ -65,6 +65,7 @@ TOPICS = {
 
     "healthcare-ai-strategy": [
         dict(slug="ai-native-hospital",
+             thumbnail_url="https://signalroompodcast.com/assets/episodes/david-niewolny-episode-20261031.jpg",
              card_title="AI in Hospitals: Building the AI-Native Hospital",
              card_desc="David Niewolny of NVIDIA on AI in hospitals: what makes a hospital AI-native, digital twins in healthcare, surgical robotics and keeping humans in the loop.",
              ep_label="Season 2, Episode 1"),
