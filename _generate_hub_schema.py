@@ -50,14 +50,19 @@ def episode_items(page):
     items = []
     for i, s in enumerate(starts):
         chunk = page[s:starts[i + 1] if i + 1 < len(starts) else len(page)]
-        num = re.search(r'<div class="episode-number">\s*Ep\s*(\d+)\s*</div>', chunk)
+        num = re.search(r'<div class="episode-number">\s*(?:S(\d+)\s+)?Ep\s*(\d+)\s*</div>', chunk)
+        overall = re.search(r'data-episode="(\d+)"', chunk)
         guest = re.search(r"<h3>(.*?)</h3>", chunk, re.S)
         title = re.search(r'<p class="episode-title">(.*?)</p>', chunk, re.S)
         href = re.search(r'href="(/episodes/[^"#?]+)"', chunk)
         if not (num and guest and title and href):
             raise SystemExit(f"episodes.html: card {i + 1} is missing number/guest/title/link")
-        n = int(num.group(1))
-        items.append((n, f"Episode {n}: {text(title.group(1))} with {text(guest.group(1))}", SITE + href.group(1), None))
+        # Season 2 onward: the card shows "S<season> Ep <n>" and carries the series-wide
+        # sequence in data-episode, which keeps ordering and uniqueness checks working.
+        season, ep = num.group(1), int(num.group(2))
+        n = int(overall.group(1)) if overall else ep
+        label = f"Season {season}, Episode {ep}" if season else f"Episode {ep}"
+        items.append((n, f"{label}: {text(title.group(1))} with {text(guest.group(1))}", SITE + href.group(1), None))
     return items
 
 
@@ -69,7 +74,9 @@ def guest_items(page):
         topic = re.search(r'<p class="guest-card-topic">(.*?)</p>', body, re.S)
         if not (name and topic):
             raise SystemExit(f"guests.html: card for episode {n} is missing name/topic")
-        items.append((n, text(name.group(1)), SITE + href, f"Guest on Episode {n}: {text(topic.group(1))}"))
+        badge = re.search(r'class="guest-card-episode-badge">\s*S(\d+)\s+EP\s*(\d+)\s*<', body)
+        label = f"Season {badge.group(1)}, Episode {badge.group(2)}" if badge else f"Episode {n}"
+        items.append((n, text(name.group(1)), SITE + href, f"Guest on {label}: {text(topic.group(1))}"))
     return items
 
 
