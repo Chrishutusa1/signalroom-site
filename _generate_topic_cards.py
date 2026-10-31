@@ -55,6 +55,8 @@ def build_ep_index():
 # slug         = episode slug → looked up in ep_index for ep_num, guest, yt_id
 # card_title   = short editorial title shown on card (not the full episode title)
 # card_desc    = one-sentence editorial description on card
+# ep_label     = optional footer label, e.g. "Season 2, Episode 1" (Season 2 onward;
+#                JSON-LD episodeNumber stays the series-wide sequence)
 # guest_display = override the guest display name (use only when episode JSON-LD
 #                 and the intended display name genuinely differ; fix the episode
 #                 file when possible instead of using this override)
@@ -62,6 +64,10 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="ai-native-hospital",
+             card_title="AI in Hospitals: Building the AI-Native Hospital",
+             card_desc="David Niewolny of NVIDIA on AI in hospitals: what makes a hospital AI-native, digital twins in healthcare, surgical robotics and keeping humans in the loop.",
+             ep_label="Season 2, Episode 1"),
         dict(slug="agentic-ai-healthcare-back-office",
              card_title="Agentic AI in the Healthcare Back Office",
              card_desc="Michael Johns of Lydonia Technologies on agentic AI in revenue cycle and claims, what never goes to an agent, least privileged access, and keeping score."),
@@ -215,7 +221,7 @@ TOPICS = {
 LISTEN_ARROW = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
 PLAY_ICON    = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>'
 
-def make_card(slug, ep, guest, yt_id, card_title, card_desc, thumbnail_url=None):
+def make_card(slug, ep, guest, yt_id, card_title, card_desc, thumbnail_url=None, ep_label=None):
     thumbnail_url = thumbnail_url or f"https://img.youtube.com/vi/{yt_id}/hqdefault.jpg"
     return (
         f'        <a href="/episodes/{slug}" class="episode-card">\n'
@@ -229,7 +235,7 @@ def make_card(slug, ep, guest, yt_id, card_title, card_desc, thumbnail_url=None)
         f'            <div class="episode-card-desc">{card_desc}</div>\n'
         f'          </div>\n'
         f'          <div class="episode-card-footer">\n'
-        f'            <span class="episode-card-ep">Episode {ep}</span>\n'
+        f'            <span class="episode-card-ep">{ep_label or f"Episode {ep}"}</span>\n'
         f'            <span class="episode-card-link">Listen Now {LISTEN_ARROW}</span>\n'
         f'          </div>\n'
         f'        </a>'
@@ -264,6 +270,7 @@ def generate_grid_content(ep_index, cards_config):
             card_title = card["card_title"],
             card_desc  = card["card_desc"],
             thumbnail_url = card.get("thumbnail_url"),
+            ep_label   = card.get("ep_label"),
         ))
     # Join cards with a blank line between each
     return "\n\n".join(parts)
