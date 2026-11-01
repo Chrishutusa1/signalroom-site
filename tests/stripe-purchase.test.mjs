@@ -22,6 +22,7 @@ test('signed paid events route to the correct property and exclude personal data
   assert.equal((await handler(request(fixture()))).status, 200);
   assert.match(calls[0][0], /measurement_id=G-RZNHLJSRW3/);
   assert.equal(calls[0][1].events[0].params.value, 1250);
+  assert.match(calls[0][1].client_id, /^\d+\.\d+$/);
   assert.doesNotMatch(JSON.stringify(calls), /private@example|Private Person|DO NOT FORWARD/);
   const tu = fixture(); tu.data.object.payment_link = 'plink_1UTZWpLc18Q3MIovx6lmyziM';
   tu.type = 'checkout.session.async_payment_succeeded';
