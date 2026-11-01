@@ -10,6 +10,8 @@
 - `@id` = `…/episodes/<slug>#video`; `url` and `mainEntityOfPage` = the episode's extensionless canonical.
 - **Never add `hasPart`.** Google treats `VideoObject.hasPart` as key-moment `Clip`s (required: `name`, `startOffset`, `url` pointing into this same video). Shorts are separate YouTube videos, so they fail that validation. They belong only in the visible reel. CI fails any episode page whose VideoObject has `hasPart`.
 
+Use `embedUrl` for the YouTube player. Omit `contentUrl` unless a stable URL to the actual video file bytes is available; a YouTube watch page or player is not a video file. See [Google video URL guidance](https://developers.google.com/search/docs/appearance/video#which-url-is-which).
+
 ## Template (fill the placeholders)
 ```html
 <script type="application/ld+json">
@@ -23,7 +25,6 @@
   "uploadDate": "<ISO-8601, e.g. 2026-07-07T18:15:16Z>",
   "duration": "<ISO-8601, e.g. PT30M15S>",
   "embedUrl": "https://www.youtube.com/embed/<YT_VIDEO_ID>",
-  "contentUrl": "https://www.youtube.com/watch?v=<YT_VIDEO_ID>",
   "url": "https://signalroompodcast.com/episodes/<SLUG>",
   "mainEntityOfPage": "https://signalroompodcast.com/episodes/<SLUG>",
   "isFamilyFriendly": true,

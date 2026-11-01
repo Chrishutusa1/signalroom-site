@@ -89,6 +89,9 @@ jobs:
                       continue
                   if "hasPart" in d:
                       bad.append(f"{f}: VideoObject has hasPart")
+                  content_url = d.get("contentUrl", "")
+                  if re.search(r"https?://(?:www\.)?(?:youtube\.com|youtube-nocookie\.com|youtu\.be)(?:/|$)", content_url):
+                      bad.append(f"{f}: VideoObject.contentUrl must be video file bytes, not a YouTube page/player; use embedUrl")
                   m = re.search(r"embed/([\w-]{11})", d.get("embedUrl", ""))
                   reel = re.findall(r'class="episode-shorts-item[^"]*"[^>]*data-video-id="([\w-]{11})"', h)
                   if m and m.group(1) in reel:
