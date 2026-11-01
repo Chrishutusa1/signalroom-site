@@ -65,7 +65,7 @@ TOPICS = {
 
     "healthcare-ai-strategy": [
         dict(slug="ai-native-hospital",
-             thumbnail_url="https://signalroompodcast.com/assets/episodes/david-niewolny-episode-20261031.jpg",
+             thumbnail_url="https://signalroompodcast.com/assets/episodes/david-niewolny-episode-20261031-640.jpg",
              card_title="AI in Hospitals: Building the AI-Native Hospital",
              card_desc="David Niewolny of NVIDIA on AI in hospitals: what makes a hospital AI-native, digital twins in healthcare, surgical robotics and keeping humans in the loop.",
              ep_label="Season 2, Episode 1"),
@@ -112,7 +112,7 @@ TOPICS = {
 
     "clinical-ai-patient-care": [
         dict(slug="clinical-ai-hospital-knowledge",
-             thumbnail_url="https://signalroompodcast.com/assets/episodes/declan-kelly-episode-20261030.jpg",
+             thumbnail_url="https://signalroompodcast.com/assets/episodes/declan-kelly-episode-20261030-640.jpg",
              card_title="Clinical AI Needs the Hospital's Own Knowledge",
              card_desc="Dr. Declan Kelly of Eolas Medical on why clinical AI needs a hospital's own governed knowledge, context, and transparency to be safe at the point of care.",
              guest_display="Dr. Declan Kelly"),
@@ -156,6 +156,7 @@ TOPICS = {
 
     "healthcare-data-security": [
         dict(slug="health-data-bias-trustworthy-ai",
+             thumbnail_url="/assets/episode-thumbnails/ep53-lisa-marceau.jpg",
              card_title="Health Data Bias and Trustworthy AI",
              card_desc="Lisa Marceau on who clinical data leaves out, why data quality and governance come first, and why AI is infrastructure, not innovation."),
         dict(slug="proving-hospital-ai-is-secure",
