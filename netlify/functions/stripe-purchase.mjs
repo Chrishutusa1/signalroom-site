@@ -53,7 +53,7 @@ export function purchasePayload(event, now) {
   // This is a transaction-only client, not a fabricated website visitor/session.
   const hash = createHash('sha256').update(s.id).digest('hex');
   const payload = {
-    client_id: `stripe.${hash.slice(0, 32)}`,
+    client_id: `${parseInt(hash.slice(0, 8), 16)}.${parseInt(hash.slice(8, 16), 16)}`,
     consent: { ad_user_data: 'DENIED', ad_personalization: 'DENIED' },
     events: [{ name: 'purchase', params: {
       transaction_id: `stripe_${hash.slice(0, 32)}`, currency: 'USD', value,
