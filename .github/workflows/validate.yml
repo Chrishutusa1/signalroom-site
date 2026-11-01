@@ -35,6 +35,9 @@ jobs:
           done
           exit $rc
 
+      - name: Published episode count and current episode selection
+        run: python -m unittest discover -s tests -p 'test_*.py'
+
       # The episode loop above only ever looked at episodes/*.html, so titles
       # and descriptions on root pages, topics/, watch/ and Articles/ were
       # never gated and 13 violations reached production. This covers every
