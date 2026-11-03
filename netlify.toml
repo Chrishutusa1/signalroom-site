@@ -48,6 +48,7 @@
 [[headers]]
   for = "/"
   [headers.values]
+    Link = '<https://signalroompodcast.com/llms.txt>; rel="describedby"; type="text/markdown", <https://signalroompodcast.com/.well-known/api-catalog>; rel="api-catalog"'
     Cache-Control = "public, max-age=3600, must-revalidate"
     Netlify-CDN-Cache-Control = "public, max-age=31536000"
 
