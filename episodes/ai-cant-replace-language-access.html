@@ -132,7 +132,7 @@
     <div class="container">
       <section id="watch-full-episode" aria-label="Watch the full episode" style="margin-bottom:2rem;"><h2 style="font-size:1.25rem;margin:0 0 0.75rem;">Watch the full episode</h2><div class="episode-video" style="max-width:960px; margin: 0 auto 1.5rem; padding: 0; position: static;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ghk8jZeWw1k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="AI and Language Access in Healthcare: Communication Equity and Patient Safety"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ghk8jZeWw1k?enablejsapi=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="AI and Language Access in Healthcare: Communication Equity and Patient Safety"></iframe>
 </div>
 </div></section>
 <div class="episode-layout">
@@ -216,7 +216,7 @@
 <h4 id="carol-velandia-episode-shorts-title">Carol Velandia Shorts</h4>
 <p>Short clips featuring Carol Velandia from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="Carol Velandia Shorts reel" src="https://www.youtube-nocookie.com/embed/kzlxyTlN2Yw?autoplay=1&amp;loop=1&amp;playlist=kzlxyTlN2Yw&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="kzlxyTlN2Yw"></iframe>
+<iframe title="Carol Velandia Shorts reel" src="https://www.youtube-nocookie.com/embed/kzlxyTlN2Yw?autoplay=1&amp;loop=1&amp;playlist=kzlxyTlN2Yw&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="kzlxyTlN2Yw"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Shorts featuring Carol Velandia">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/kzlxyTlN2Yw" target="_blank" rel="noopener" data-video-id="kzlxyTlN2Yw" data-short-title="Carol x Chris Teaser"><img src="https://img.youtube.com/vi/kzlxyTlN2Yw/mqdefault.jpg" alt="Carol x Chris Teaser" loading="lazy"><span>Carol x Chris Teaser</span></a>
@@ -405,7 +405,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');

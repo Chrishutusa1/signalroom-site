@@ -134,7 +134,7 @@
         <div class="episode-main">
           <div class="episode-video" style="max-width: 800px; margin: 0 auto 1.5rem; padding: 0; position: static;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/MhHS4drVihM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/MhHS4drVihM?enablejsapi=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation"></iframe>
 </div>
 </div>
           <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
@@ -221,7 +221,7 @@
 <h4 id="markeisha-snaith-episode-shorts-title">MarKeisha Snaith Shorts</h4>
 <p>Short clips featuring MarKeisha Snaith from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="MarKeisha Snaith Shorts reel" src="https://www.youtube-nocookie.com/embed/u-cRBWf3siw?autoplay=1&amp;loop=1&amp;playlist=u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg"></iframe>
+<iframe title="MarKeisha Snaith Shorts reel" src="https://www.youtube-nocookie.com/embed/u-cRBWf3siw?autoplay=1&amp;loop=1&amp;playlist=u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Shorts featuring MarKeisha Snaith">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/u-cRBWf3siw" target="_blank" rel="noopener" data-video-id="u-cRBWf3siw" data-short-title="Stop Treating AI Like a Human."><img src="https://img.youtube.com/vi/u-cRBWf3siw/mqdefault.jpg" alt="Stop Treating AI Like a Human." loading="lazy"><span>Stop Treating AI Like a Human.</span></a>
@@ -430,7 +430,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');

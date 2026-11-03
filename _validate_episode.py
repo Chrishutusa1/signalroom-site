@@ -78,6 +78,9 @@ def main():
                 fails.append(f'meta description {len(desc)} chars > {META_MAX}: "{desc}"')
 
     if args.fix:
+        src, n_video = _normalize.fix_video_api_in_html(src)
+        if n_video:
+            print(f'[fix] enabled JS API for {n_video} video player URL(s)')
         src, n_alt = _normalize.fix_alt_in_html(src)
         if n_alt:
             print(f'[fix] filled {n_alt} empty shorts alt(s) via signalroom-publish-normalize')
@@ -89,6 +92,10 @@ def main():
         am = re.search(r'<img\b[^>]*\balt="([^"]*)"', block)
         if not (am and am.group(1)):
             fails.append(f'shorts-carousel thumbnail has empty/missing alt (should be "{title}")')
+
+    _, missing_video_api = _normalize.fix_video_api_in_html(src)
+    if missing_video_api:
+        fails.append(f'{missing_video_api} YouTube player URL(s) lack enablejsapi=1; run --fix')
 
     if args.fix and src != orig:
         with open(args.path, 'w', encoding='utf-8') as fh:
