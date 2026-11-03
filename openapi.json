@@ -1,0 +1,51 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Signal Room Public Reading API",
+    "version": "1.0.0",
+    "description": "Read-only access to the public sitemap and agent reading guide. No authentication required. No write operations."
+  },
+  "servers": [
+    {
+      "url": "https://signalroompodcast.com"
+    }
+  ],
+  "paths": {
+    "/sitemap.xml": {
+      "get": {
+        "summary": "Canonical public page index",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Canonical public page index",
+            "content": {
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "summary": "Agent reading guide",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Agent reading guide",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

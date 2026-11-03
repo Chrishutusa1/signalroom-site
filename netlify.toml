@@ -66,3 +66,16 @@
 # Extensionless URLs are canonical. pretty_urls=true strips trailing .html
 # (e.g. /episodes.html 301s to /episodes) so no explicit page-level rules needed here.
 # Slug renames and case-sensitive Articles/ rewrites live in _redirects.
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+[[headers]]
+  for = "/index.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+[[headers]]
+  for = "/.well-known/api-catalog"
+  [headers.values]
+    Content-Type = 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"'

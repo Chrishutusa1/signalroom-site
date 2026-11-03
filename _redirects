@@ -1,3 +1,4 @@
+/privacy /privacy-policy.html 200
 # --- Canonical host: force www -> apex (non-www, https) ---
 # Belt-and-suspenders. www is registered as a Netlify domain alias, and Netlify
 # already 301s the alias -> primary (apex) at the edge. This explicit rule makes

@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://signalroompodcast.com/",
+      "service-desc": [
+        {
+          "href": "https://signalroompodcast.com/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://signalroompodcast.com/llms.txt",
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ]
+}
