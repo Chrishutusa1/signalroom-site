@@ -1,3 +1,4 @@
+/mcp/server-card /.well-known/mcp/server-card.json 200
 /privacy /privacy-policy.html 200
 # --- Canonical host: force www -> apex (non-www, https) ---
 # Belt-and-suspenders. www is registered as a Netlify domain alias, and Netlify

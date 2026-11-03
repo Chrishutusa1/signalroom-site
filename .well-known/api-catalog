@@ -14,6 +14,24 @@
           "type": "text/markdown"
         }
       ]
+    },
+    {
+      "anchor": "https://signalroompodcast.com/mcp",
+      "service-desc": [
+        {
+          "href": "https://signalroompodcast.com/.well-known/mcp/server-card.json",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://signalroompodcast.com/a2a",
+      "service-desc": [
+        {
+          "href": "https://signalroompodcast.com/.well-known/agent-card.json",
+          "type": "application/json"
+        }
+      ]
     }
   ]
 }

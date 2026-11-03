@@ -13,3 +13,10 @@
 
 ## Reading guidance
 Request the homepage with Accept: text/markdown for its text representation. Cite canonical episode URLs and distinguish guest statements from the host's statements. Public reading requires no authentication. Guest applications and purchases require human action.
+
+## Agent protocols
+- MCP: https://signalroompodcast.com/mcp (public resources; Streamable HTTP).
+- A2A: https://signalroompodcast.com/a2a (JSON-RPC 0.3.0; public resource directory).
+- Agent card: https://signalroompodcast.com/.well-known/agent-card.json
+
+These read-only services require no authentication. No OAuth authorization server or OAuth-protected resource is offered. MCP Server Card discovery is experimental.

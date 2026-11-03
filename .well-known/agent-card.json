@@ -1,0 +1,34 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Signal Room Resource Directory",
+  "description": "Returns public reading links for Signal Room. A deterministic directory, not a conversational or clinical advisor.",
+  "url": "https://signalroompodcast.com/a2a",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "public-reading-directory",
+      "name": "Public reading directory",
+      "description": "Return links to the reading guide, episode archive, sitemap, and contact page.",
+      "tags": [
+        "podcast",
+        "directory"
+      ],
+      "examples": [
+        "Where can I find Signal Room episodes?"
+      ]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": false
+}
