@@ -1,3 +1,4 @@
+/.well-known/oauth-protected-resource/mcp/private /.well-known/oauth-protected-resource 200
 /mcp/server-card /.well-known/mcp/server-card.json 200
 /privacy /privacy-policy.html 200
 # --- Canonical host: force www -> apex (non-www, https) ---
