@@ -79,6 +79,46 @@ SHORTS_ITEM_RE = re.compile(
 )
 DATA_SHORT_TITLE_RE = re.compile(r'\bdata-short-title="([^"]*)"')
 
+# Include dynamic Shorts player URLs so selecting another clip retains support.
+YOUTUBE_PLAYER_RE = re.compile(
+    r'(?P<prefix><iframe\b[^>]*?\bsrc=["\x27]|player\.src\s*=\s*[`"\x27])'
+    r'(?P<url>https://www\.youtube(?:-nocookie)?\.com/embed/[^"\x27`\s<>]+)',
+    re.DOTALL,
+)
+
+
+def fix_video_api_in_html(html):
+    """Enable native GA4 video measurement without altering schema or video IDs."""
+    count = 0
+
+    def fix(match):
+        nonlocal count
+        url = match['url']
+        if re.search(r'[?&](?:amp;)?enablejsapi=1(?:&|$)', url):
+            return match[0]
+        count += 1
+        if re.search(r'[?&](?:amp;)?enablejsapi=[^&]*', url):
+            url = re.sub(r'([?&](?:amp;)?enablejsapi=)[^&]*', r'\g<1>1', url)
+        else:
+            separator = ('&amp;' if match['prefix'].startswith('<iframe') else '&') if '?' in url else '?'
+            url += separator + 'enablejsapi=1'
+        return match['prefix'] + url
+
+    return YOUTUBE_PLAYER_RE.sub(fix, html), count
+
+
+def run_fix_video_api(apply):
+    changed = []
+    for page in sorted(EPISODES_DIR.glob('*.html')):
+        original = page.read_text(encoding='utf-8')
+        updated, count = fix_video_api_in_html(original)
+        if count:
+            changed.append(page)
+            print(f"  {'FIX' if apply else 'WOULD FIX'} {count} player URL(s): {page.name}")
+            if apply:
+                page.write_text(updated, encoding='utf-8')
+    return 0, changed
+
 
 # ---- alt normalizer --------------------------------------------------------
 
@@ -187,6 +227,8 @@ def main():
                     help="fill empty shorts-thumbnail alt from data-short-title (default action)")
     ap.add_argument("--indexnow", action="store_true",
                     help="submit URLs to IndexNow")
+    ap.add_argument("--fix-video-api", action="store_true",
+                    help="enable JS API on episode/Shorts players for GA4 measurement")
     ap.add_argument("--url", action="append", default=[], metavar="URL",
                     help="explicit URL to submit to IndexNow (repeatable)")
     ap.add_argument("--all", action="store_true",
@@ -196,7 +238,7 @@ def main():
     args = ap.parse_args()
 
     # Default to the alt fix when no explicit action is chosen.
-    do_fix = args.fix_alt or not (args.fix_alt or args.indexnow)
+    do_fix = args.fix_alt or not (args.fix_alt or args.indexnow or args.fix_video_api)
 
     rc = 0
     changed_files = []
@@ -204,6 +246,11 @@ def main():
         print(f"[fix-alt] {'APPLY' if args.apply else 'DRY-RUN'}")
         rc_fix, changed_files = run_fix_alt(args.apply)
         rc |= rc_fix
+
+    if args.fix_video_api:
+        rc_video, video_pages = run_fix_video_api(args.apply)
+        rc |= rc_video
+        changed_files += video_pages
 
     if args.indexnow:
         print(f"[indexnow] {'APPLY' if args.apply else 'DRY-RUN'}")

@@ -134,7 +134,7 @@
         <div class="episode-main">
           <div class="episode-video" style="max-width: 800px; margin: 0 auto 1.5rem; padding: 0; position: static;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/wizfkLwkIYw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="AI Regulation in ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/wizfkLwkIYw?enablejsapi=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="AI Regulation in ER and Clinical Judgment: Why AI Tools Must Be Designed for 3 AM, Not 3 PM"></iframe>
 </div>
 </div>
           <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
@@ -218,7 +218,7 @@
 <h4 id="dr-natasha-dole-episode-shorts-title">Dr. Natasha Dole Shorts</h4>
 <p>Short clips featuring Dr. Natasha Dole from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="Dr. Natasha Dole Shorts reel" src="https://www.youtube-nocookie.com/embed/YkRa-T8q6zI?autoplay=1&amp;loop=1&amp;playlist=YkRa-T8q6zI,82NnzMhS44U,oTK0iEMBJSw&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="YkRa-T8q6zI,82NnzMhS44U,oTK0iEMBJSw"></iframe>
+<iframe title="Dr. Natasha Dole Shorts reel" src="https://www.youtube-nocookie.com/embed/YkRa-T8q6zI?autoplay=1&amp;loop=1&amp;playlist=YkRa-T8q6zI,82NnzMhS44U,oTK0iEMBJSw&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="YkRa-T8q6zI,82NnzMhS44U,oTK0iEMBJSw"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Shorts featuring Dr. Natasha Dole">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/YkRa-T8q6zI" target="_blank" rel="noopener" data-video-id="YkRa-T8q6zI" data-short-title="Why I Don’t Trust AI (Yet) | Dr. Natasha Dole"><img src="https://img.youtube.com/vi/YkRa-T8q6zI/mqdefault.jpg" alt="Why I Don’t Trust AI (Yet) | Dr. Natasha Dole" loading="lazy"><span>Why I Don’t Trust AI (Yet) | Dr. Natasha Dole</span></a>
@@ -434,7 +434,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');

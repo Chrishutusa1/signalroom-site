@@ -186,7 +186,7 @@
         <div class="episode-main">
           <div class="episode-video" style="max-width:800px;margin:0 auto 1.5rem;padding:0;position:static;">
             <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
-              <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/KHh5OV1a0ec" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" title="Why Patient Care Is Suffering (And How to Fix Your Workflow)"></iframe>
+              <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/KHh5OV1a0ec?enablejsapi=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" title="Why Patient Care Is Suffering (And How to Fix Your Workflow)"></iframe>
             </div>
           </div>
           <div class="episode-info-card" style="max-width:640px;margin:0 auto 1.5rem;background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);border-radius:12px;padding:1.5rem;border-left:4px solid #1a1a2e;">
@@ -213,7 +213,7 @@
 <h4 id="ted-lindsley-episode-shorts-title">Ted Lindsley Shorts</h4>
 <p>Short clips featuring Ted Lindsley from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="Ted Lindsley Shorts reel" src="https://www.youtube-nocookie.com/embed/iVb7B7TizDA?autoplay=1&amp;loop=1&amp;playlist=iVb7B7TizDA,nZIHQYeKhNo,97OtAPsa0-0,j2OUzzw_HOY&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="iVb7B7TizDA,nZIHQYeKhNo,97OtAPsa0-0,j2OUzzw_HOY"></iframe>
+<iframe title="Ted Lindsley Shorts reel" src="https://www.youtube-nocookie.com/embed/iVb7B7TizDA?autoplay=1&amp;loop=1&amp;playlist=iVb7B7TizDA,nZIHQYeKhNo,97OtAPsa0-0,j2OUzzw_HOY&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="iVb7B7TizDA,nZIHQYeKhNo,97OtAPsa0-0,j2OUzzw_HOY"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Shorts featuring Ted Lindsley">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/iVb7B7TizDA" target="_blank" rel="noopener" data-video-id="iVb7B7TizDA" data-short-title="The Humanity That Keeps Healthcare Going"><img src="https://img.youtube.com/vi/iVb7B7TizDA/mqdefault.jpg" alt="The Humanity That Keeps Healthcare Going" loading="lazy"><span>The Humanity That Keeps Healthcare Going</span></a>
@@ -449,7 +449,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');

@@ -4,6 +4,8 @@ Static HTML site for The Signal Room podcast (signalroompodcast.com). **No build
 
 ## Commands
 
+Guest application reconciliation now uses Neon: `node scripts/reconcile-guest-applications.cjs --since YYYY-MM-DD`, with `DATABASE_URL` and `NETLIFY_AUTH_TOKEN` supplied privately. It is read-only, scopes to the Signal Room guest form, and exits nonzero for missing submission IDs. The historical `_reconcile_leads.py` uses Airtable and email/name matching; do not use it to verify current Neon delivery.
+
 ```bash
 # Local preview (or use the "signalroom-site" entry in .claude/launch.json)
 npx serve -p 4200 .
@@ -89,6 +91,7 @@ Episode watch-page layout: place the full-episode player in a labeled `#watch-fu
 - **A new root `.py` script is gitignored until you except it.** The `/*.py` rule ignores everything at repo root; the 10 scripts here are tracked only because `.gitignore` carries an explicit `!/<name>.py` line for each. Add that line when you add a script, or `git status` stays clean while the file never leaves your machine. (The four publish scripts that were genuinely untracked were fixed 2026-07-16 — GAPS.md #1 — so a fresh clone now has all 10.)
 - **CSS is cached 1 year immutable.** Any `css/style.css` change requires bumping the `?v=` query on the `<link>` in **every** HTML file (currently `v=20260712` everywhere; CI fails if more than one value is live). Same rule applies to `/js/*`.
 - **GA4 (`G-RZNHLJSRW3`) is deliberately deferred and hostname-gated** to production only. Never replace the loader with a plain script tag; never remove the hostname check.
+- **Video measurement:** all episode and Shorts iframe URLs, including dynamic `player.src` replacements, require `enablejsapi=1`. Run `python signalroom-publish-normalize.py --fix-video-api --apply` after page generation or Shorts injection. `_validate_episode.py` enforces this and `--fix` repairs it. Keep VideoObject URLs unchanged. Guest application conversion is `guest_application_submit`, emitted only after Netlify accepts the POST; it is not editorial approval or proof of Neon persistence.
 - **The shorts carousel is absent on brand-new episode pages** — it's injected by a later cloud pass after clips are cut. Not a bug. After that pass, run `signalroom-publish-normalize.py --fix-alt --apply` (the cloud template emits empty alts).
 - **The "add-podcast-episode" routine lives on claude.ai, not in this repo.** When Chris says an episode is "ready to push", the page usually already exists on staging — the remaining work is prod deploy + any missing `_redirects` line + IndexNow, not a rebuild.
 - `1577c9c65cc397ca183ed80f92e0f9cf.txt` at root is the IndexNow key file. It is public by design. Do not delete, rename, or "move it somewhere safer".

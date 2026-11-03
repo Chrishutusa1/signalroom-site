@@ -132,7 +132,7 @@
     <div class="container">
       <section id="watch-full-episode" aria-label="Watch the full episode" style="margin-bottom:2rem;"><h2 style="font-size:1.25rem;margin:0 0 0.75rem;">Watch the full episode</h2><div class="episode-video" style="max-width:960px; margin: 0 auto 1.5rem; padding: 0; position: static;">
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-              <iframe src="https://www.youtube.com/embed/7lsO0GK-UK4" title="From AI Strategy to Execution: Ethical Leadership, Trust and the Operational Reality of Healthcare AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+              <iframe src="https://www.youtube.com/embed/7lsO0GK-UK4?enablejsapi=1" title="From AI Strategy to Execution: Ethical Leadership, Trust and the Operational Reality of Healthcare AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
             </div>
           </div></section>
 <div class="episode-layout">
@@ -232,7 +232,7 @@
 <h4 id="brian-sutherland-episode-shorts-title">Brian Sutherland Shorts</h4>
 <p>Short clips featuring Brian Sutherland from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="Brian Sutherland Shorts reel" src="https://www.youtube-nocookie.com/embed/qRrb6T0whP4?autoplay=1&amp;loop=1&amp;playlist=qRrb6T0whP4,fFBdCzlEmck,FB5xCuB_5Vw,W5SKsgRPv8Y&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="qRrb6T0whP4,fFBdCzlEmck,FB5xCuB_5Vw,W5SKsgRPv8Y"></iframe>
+<iframe title="Brian Sutherland Shorts reel" src="https://www.youtube-nocookie.com/embed/qRrb6T0whP4?autoplay=1&amp;loop=1&amp;playlist=qRrb6T0whP4,fFBdCzlEmck,FB5xCuB_5Vw,W5SKsgRPv8Y&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="qRrb6T0whP4,fFBdCzlEmck,FB5xCuB_5Vw,W5SKsgRPv8Y"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Shorts featuring Brian Sutherland">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/qRrb6T0whP4" target="_blank" rel="noopener" data-video-id="qRrb6T0whP4" data-short-title="Your AI Strategy is Failing. Here is the Missing Piece."><img src="https://img.youtube.com/vi/qRrb6T0whP4/mqdefault.jpg" alt="Your AI Strategy is Failing. Here is the Missing Piece." loading="lazy"><span>Your AI Strategy is Failing. Here is the Missing Piece.</span></a>
@@ -435,7 +435,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');

@@ -17,6 +17,10 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /episodes/scaling-ai-human-touch.html    /episodes/patient-physician-journey-part-1         301
 
 # 301 redirects for legacy sitemap slugs (404 ghost URLs)
+# Truncated encoded entry URLs observed in GA4, November 2026. The original
+# episode identities cannot be verified; preserve access through the archive.
+/episodes/YWktaHlwZS                       /episodes                                  301!
+/episodes/YWktYWdlbn                       /episodes                                  301!
 /episodes/ai-clinical-guardrails         /episodes/ai-in-the-er-clinical-judgment         301
 /episodes/ai-clinical-guardrails.html    /episodes/ai-in-the-er-clinical-judgment         301
 /episodes/ai-redefines-patient-physician-pt2         /episodes/patient-physician-journey-part-2         301

@@ -130,7 +130,7 @@
     <div class="container">
       <section id="watch-full-episode" aria-label="Watch the full episode" style="margin-bottom:2rem;"><h2 style="font-size:1.25rem;margin:0 0 0.75rem;">Watch the full episode</h2><div class="episode-video" style="max-width:960px; margin: 0 auto 1.5rem; padding: 0; position: static;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/PCHVQ9mPHC0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="How the AI Literacy Crisis Is Killing Healthcare | Dr. Steven Labkoff"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/PCHVQ9mPHC0?enablejsapi=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="How the AI Literacy Crisis Is Killing Healthcare | Dr. Steven Labkoff"></iframe>
 </div>
 </div></section>
 <div class="episode-layout">
@@ -227,7 +227,7 @@
 <h4 id="dr-steven-labkoff-episode-shorts-title">Dr. Steven Labkoff Clips</h4>
 <p>Short-form clips featuring Dr. Steven Labkoff from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="Dr. Steven Labkoff clips reel" src="https://www.youtube-nocookie.com/embed/cQuGzAknqt0?autoplay=1&amp;loop=1&amp;playlist=cQuGzAknqt0,r1K5a2P0I-A&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="cQuGzAknqt0,r1K5a2P0I-A"></iframe>
+<iframe title="Dr. Steven Labkoff clips reel" src="https://www.youtube-nocookie.com/embed/cQuGzAknqt0?autoplay=1&amp;loop=1&amp;playlist=cQuGzAknqt0,r1K5a2P0I-A&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="cQuGzAknqt0,r1K5a2P0I-A"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Clips featuring Dr. Steven Labkoff">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/watch?v=cQuGzAknqt0" target="_blank" rel="noopener" data-video-id="cQuGzAknqt0" data-short-title="Why AI Is Dumbing Down Medicine"><img src="https://img.youtube.com/vi/cQuGzAknqt0/mqdefault.jpg" alt="Why AI Is Dumbing Down Medicine" loading="lazy"><span>Why AI Is Dumbing Down Medicine</span></a>
@@ -425,7 +425,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');
