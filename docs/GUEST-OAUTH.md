@@ -5,7 +5,7 @@ Private endpoint: `/mcp/private`. Public `/mcp` remains anonymous.
 Microsoft Entra tenant: `24457a8d-f4e8-4771-b491-6a917d698b97`.
 API registration: `025bc72e-52e8-4fc4-b29d-42c24ec2a92c`.
 Approved connector: `e9c81893-6a51-4c77-87f3-4a5bec83527f`.
-Delegated scope: `api://025bc72e-52e8-4fc4-b29d-42c24ec2a92c/materials.read`.
+Delegated scope: `https://signalroompodcast.com/mcp/private/materials.read`.
 
 The API registration must set `api.requestedAccessTokenVersion` to `2`.
 Configure the exact ChatGPT callback URI on the connector registration and provide
