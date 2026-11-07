@@ -2,7 +2,7 @@
 _update_stats.py — keep the homepage stat bar + guest counts in sync with the site.
 
 Derives the numbers from the repo itself (no API keys, never stale relative to content):
-  - Episode count   = number of episodes/*.html pages
+  - Episode count   = episodes/*.html pages whose publication date has arrived
   - Guest count     = unique guest names in guests.html (dedup; one card per episode)
 
 Rewrites the count tokens in index.html, guests.html, about.html, and
@@ -12,6 +12,7 @@ should call this). Gitignored local helper, same convention as _pathb_sweep.py.
 """
 import glob
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -21,17 +22,26 @@ ROOT = Path(__file__).parent
 TOTAL_REACH_DISPLAY = "83.4K+"
 IAB_DOWNLOADS_DISPLAY = "3.9K+"
 
-ep_count = len(glob.glob(str(ROOT / "episodes" / "*.html")))
+now = datetime.now(timezone.utc)
 
 episode_pages = []
 for episode_path in (ROOT / "episodes").glob("*.html"):
     episode_html = episode_path.read_text(encoding="utf-8")
     number_match = re.search(r'"episodeNumber"\s*:\s*"?(\d+)"?', episode_html)
     if number_match:
+        date_match = re.search(r'"datePublished"\s*:\s*"([^"]+)"', episode_html)
+        if not date_match:
+            raise SystemExit(f"ERROR: missing datePublished in {episode_path.name}")
+        published = datetime.fromisoformat(date_match.group(1).replace("Z", "+00:00"))
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        if published > now:
+            continue
         episode_pages.append((int(number_match.group(1)), episode_path.stem))
 if not episode_pages:
     raise SystemExit("ERROR: no episodeNumber metadata found in episodes/*.html")
 latest_episode_number, latest_episode_slug = max(episode_pages)
+ep_count = len(episode_pages)
 
 guests_html = (ROOT / "guests.html").read_text(encoding="utf-8")
 names = re.findall(r'class="guest-card-name">([^<]+)</h3>', guests_html)

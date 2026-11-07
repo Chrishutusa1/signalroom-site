@@ -134,7 +134,7 @@
         <div class="episode-main">
           <div class="episode-video" style="max-width: 800px; margin: 0 auto 1.5rem; padding: 0; position: static;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/MhHS4drVihM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/MhHS4drVihM?enablejsapi=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Healthcare Experts on Ethical AI in Operational Reality: AI Transformation Strategies and Healthcare Innovation"></iframe>
 </div>
 </div>
           <div class="episode-info-card" style="max-width: 640px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #1a1a2e;">
@@ -193,6 +193,7 @@
 <h2>About MarKeisha Snaith</h2>
 <p>MarKeisha Snaith is a healthcare leader whose work focuses on the operational reality of AI transformation inside complex health systems. She examines how strategic decisions cascade through clinical, technical, and administrative functions, and what it takes to build leadership capacity that converts AI vision into patient-level outcomes.</p>
 <h2>Related Resources</h2>
+<p>Companion article: <a href="/articles/ethical-ai-operational-reality">Ethical AI in Operational Reality</a>.</p>
 <p>From HDSC Insights:</p>
 <ul>
   <li><a href="https://hutchinsdatastrategy.com/insight/healthcare-data-strategy-operational-alignment" target="_blank" rel="noopener">Why Healthcare Data Strategy Fails Without Operational Alignment</a></li>
@@ -220,7 +221,7 @@
 <h4 id="markeisha-snaith-episode-shorts-title">MarKeisha Snaith Shorts</h4>
 <p>Short clips featuring MarKeisha Snaith from this Signal Room episode.</p>
 <div class="episode-shorts-player">
-<iframe title="MarKeisha Snaith Shorts reel" src="https://www.youtube-nocookie.com/embed/u-cRBWf3siw?autoplay=1&amp;loop=1&amp;playlist=u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg&amp;playsinline=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg"></iframe>
+<iframe title="MarKeisha Snaith Shorts reel" src="https://www.youtube-nocookie.com/embed/u-cRBWf3siw?autoplay=1&amp;loop=1&amp;playlist=u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg&amp;playsinline=1&amp;enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-guest-playlist="u-cRBWf3siw,vxNU10-S7no,1heLLphPWDg"></iframe>
 </div>
 <div class="episode-shorts-list" aria-label="Shorts featuring MarKeisha Snaith">
 <a class="episode-shorts-item is-active" href="https://www.youtube.com/shorts/u-cRBWf3siw" target="_blank" rel="noopener" data-video-id="u-cRBWf3siw" data-short-title="Stop Treating AI Like a Human."><img src="https://img.youtube.com/vi/u-cRBWf3siw/mqdefault.jpg" alt="Stop Treating AI Like a Human." loading="lazy"><span>Stop Treating AI Like a Human.</span></a>
@@ -237,6 +238,7 @@
 <h3>MarKeisha Snaith</h3>
 <p>AI Leadership and System Transformation</p>
 <a href="https://www.linkedin.com/in/markeishasnaith" class="sidebar-guest-linkedin" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn Profile</a>
+<p style="margin-top:0.75rem;"><a href="https://xire.io" data-guest-website target="_blank" rel="noopener">Xire</a></p>
 </div>
 </div>
 </div>
@@ -428,7 +430,7 @@
         if (!videoId) return;
         const guestPlaylist = (player.dataset.guestPlaylist || videoId).split(',').filter(Boolean);
         const playlist = [videoId, ...guestPlaylist.filter((id) => id !== videoId)].join(',');
-        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1`;
+        player.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&loop=1&playlist=${playlist}&playsinline=1&enablejsapi=1`;
         player.title = item.dataset.shortTitle || player.title;
         items.forEach((link) => link.classList.remove('is-active'));
         item.classList.add('is-active');

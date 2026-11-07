@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "read-signal-room",
+      "description": "Find and cite public Signal Room podcast episodes, notes, and available transcripts.",
+      "type": "skill-md",
+      "url": "/.well-known/agent-skills/read-signal-room/SKILL.md",
+      "digest": "sha256:514b4b88112a9e8620ad1f0c10bfaecc1cec93916b3246064bceb9dbfb3ca816"
+    }
+  ]
+}

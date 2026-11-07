@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "com.signalroompodcast/public-reading",
+  "title": "Signal Room Public Reading",
+  "version": "1.0.0",
+  "description": "Read the public Signal Room guide and sitemap without authentication.",
+  "websiteUrl": "https://signalroompodcast.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://signalroompodcast.com/mcp",
+      "supportedProtocolVersions": [
+        "2025-11-25"
+      ]
+    }
+  ]
+}

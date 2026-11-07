@@ -35,7 +35,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ENV_PATH = Path(r"C:\Users\PC\Desktop\HDSC\SignalRoom\.env")
@@ -310,7 +310,7 @@ def build_bed_patch(e):
     return f
 
 
-def build_pe_create(e, yt_id=None):
+def build_pe_create(e, yt_id=None, *, now=None):
     """Full Podcast Episodes record (by field NAME). PhraseIntel/Sync Status left blank
     (owned by other processes; blank Sync Status flags the row as auto-created). YouTube
     Video ID is filled when the key-gated resolver finds a confident match, else blank."""
@@ -318,7 +318,6 @@ def build_pe_create(e, yt_id=None):
         "Episode Title": e["title"],
         "Episode Number": e.get("episode_number"),
         "Buzzsprout Episode ID": str(e["id"]),
-        "Publish Date": e["published_at"][:10] if e.get("published_at") else None,
         "Episode Description": strip_html(e.get("description")),
         "Buzzsprout Show Notes HTML": e.get("description") or "",
         "Buzzsprout Tags": e.get("tags") or "",
@@ -327,6 +326,13 @@ def build_pe_create(e, yt_id=None):
         "Buzzsprout Total Plays": e.get("total_plays"),
         "Guest": parse_guest(e["title"]),
     }
+    if e.get("published_at"):
+        release = datetime.fromisoformat(e["published_at"].replace("Z", "+00:00"))
+        if release.tzinfo is None:
+            raise ValueError("Buzzsprout publication date must include a timezone")
+        f["Target Publish Date"] = e["published_at"][:10]
+        if not e.get("private", False) and release <= (now or datetime.now(timezone.utc)):
+            f["Published Date"] = e["published_at"][:10]
     if yt_id:
         f["YouTube Video ID"] = yt_id
         f["YouTube URL"] = f"https://www.youtube.com/watch?v={yt_id}"
@@ -421,7 +427,7 @@ def main():
         vid = f.get("YouTube Video ID")
         fields = {}
         if not vid and yt_candidates:
-            rvid, dd, reason = resolve(f["Episode Title"], f.get("Guest"), f.get("Publish Date"))
+            rvid, dd, reason = resolve(f["Episode Title"], f.get("Guest"), (f.get("Published Date") or f.get("Target Publish Date")))
             if rvid:
                 vid = rvid
                 fields["YouTube Video ID"] = rvid

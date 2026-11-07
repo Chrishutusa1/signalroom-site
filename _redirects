@@ -1,3 +1,6 @@
+/.well-known/oauth-protected-resource/mcp/private /.well-known/oauth-protected-resource 200
+/mcp/server-card /.well-known/mcp/server-card.json 200
+/privacy /privacy-policy.html 200
 # --- Canonical host: force www -> apex (non-www, https) ---
 # Belt-and-suspenders. www is registered as a Netlify domain alias, and Netlify
 # already 301s the alias -> primary (apex) at the edge. This explicit rule makes
@@ -17,6 +20,10 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /episodes/scaling-ai-human-touch.html    /episodes/patient-physician-journey-part-1         301
 
 # 301 redirects for legacy sitemap slugs (404 ghost URLs)
+# Truncated encoded entry URLs observed in GA4, November 2026. The original
+# episode identities cannot be verified; preserve access through the archive.
+/episodes/YWktaHlwZS                       /episodes                                  301!
+/episodes/YWktYWdlbn                       /episodes                                  301!
 /episodes/ai-clinical-guardrails         /episodes/ai-in-the-er-clinical-judgment         301
 /episodes/ai-clinical-guardrails.html    /episodes/ai-in-the-er-clinical-judgment         301
 /episodes/ai-redefines-patient-physician-pt2         /episodes/patient-physician-journey-part-2         301

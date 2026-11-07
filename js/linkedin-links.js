@@ -34,7 +34,7 @@
         'Guman Chauhan': 'https://www.linkedin.com/in/guman-chauhan-m-s-cissp-cism-600824103',
         'Amit Shivpuja': 'https://www.linkedin.com/in/amitshivpuja',
         'Anitha Mareedu': 'https://www.linkedin.com/in/anithamareedu',
-        'Asha Mahesh': 'https://www.linkedin.com/in/ashamahesh',
+        'Asha Mahesh': 'https://www.linkedin.com/in/asha-mahesh',
         'Barry Chaiken': 'https://www.linkedin.com/in/barrychaiken',
         'Carol Velandia': 'https://www.linkedin.com/in/carol-velandia-mba-chi-pmp-msw-599b753',
         'Keshavan Seshadri': 'https://www.linkedin.com/in/keshavan-seshadri',
