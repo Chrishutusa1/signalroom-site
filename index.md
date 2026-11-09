@@ -52,7 +52,7 @@ About This Show
 
 The Signal Room at a Glance
 
-The Signal Room is a weekly healthcare AI podcast. It covers clinical AI governance, data strategy, and executive decision-making inside real health systems. Every guest holds operational accountability at an academic medical center, regional payer, health system, or health tech firm.
+The Signal Room is a weekly healthcare AI podcast. It covers clinical AI governance, data strategy, and executive decision-making inside real health systems. Guests are clinicians, founders, and leaders who carry responsibility for how AI performs in healthcare.
 
 The show is hosted by Christopher (Chris) Hutchins, Founder and CEO of Hutchins Data Strategy Consultants. Episodes explore AI governance, data strategy, and responsible implementation with healthcare leaders. They publish weekly on YouTube, Apple Podcasts, and Spotify.
 
@@ -102,7 +102,7 @@ A new healthcare AI conversation every week since November 2025
 
 Practitioner-Led
 
-Every guest holds real operational accountability, not advisory titles
+Every guest speaks from their own work
 
 Guests bring experience from
 
@@ -818,7 +818,7 @@ Featured Guests
 
 Practitioners With Operational Accountability
 
-Guests include CMOs, CISOs, enterprise AI leaders, founders, emergency medicine physicians, and data executives. Each one holds live accountability for healthcare AI outcomes inside a specific health system, payer, or health tech firm. No advisory-only roles. No vendor pitches.
+Guests include CMOs, CISOs, enterprise AI leaders, founders, emergency medicine physicians, and data executives. Each one brings direct experience with how AI decisions play out in healthcare. No vendor pitches.
 
 David Niewolny
 
@@ -928,7 +928,7 @@ Christopher (Chris) Hutchins
 
 Christopher (Chris) Hutchins is a healthcare AI and data strategy executive, Founder and CEO of Hutchins Data Strategy Consultants, and host of The Signal Room. He advises health systems on data governance, analytics capability, and responsible AI adoption.
 
-The Signal Room hosts the conversations that do not fit a conference keynote. Every guest has shipped an AI system into production at a hospital, payer, or health tech firm. Every episode names a specific operational decision the guest had to own.
+The Signal Room hosts the conversations that do not fit a conference keynote. Every episode names a specific operational decision the guest had to own.
 
 At Hutchins Data Strategy Consultants, Chris advises health systems on data governance, analytics capability, and AI adoption. The Signal Room takes those advisory conversations public.
 
