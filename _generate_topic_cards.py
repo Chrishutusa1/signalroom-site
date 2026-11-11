@@ -64,6 +64,11 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="clinical-denial-management-ai",
+             thumbnail_url="https://i.ytimg.com/vi/MywupNDNH8M/maxresdefault.jpg",
+             card_title="Clinical Denial Management: Where AI Meets Hospital Workflows",
+             card_desc="Gretchen Heinen of Authsnap on clinical denial management: payer communications, hospital workflows, human review, privacy and rural hospitals.",
+             ep_label="Season 2, Episode 2"),
         dict(slug="ai-native-hospital",
              thumbnail_url="https://i.ytimg.com/vi/GV-6j1QykkQ/maxresdefault.jpg",
              card_title="AI in Hospitals: Building the AI-Native Hospital",
