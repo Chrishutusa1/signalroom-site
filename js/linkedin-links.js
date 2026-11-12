@@ -7,6 +7,7 @@
         'Darcy Sullivan': 'https://www.linkedin.com/in/darcymsullivan',
         'Aaron Bach': 'https://www.linkedin.com/in/aaronbach',
         'David Niewolny': 'https://www.linkedin.com/in/davidniewolny',
+        'Gretchen Heinen': 'https://www.linkedin.com/in/gretchenheinen',
         'Michael Johns': 'https://www.linkedin.com/in/michaeljohns3',
         'Dr. Declan Kelly': 'https://www.linkedin.com/in/declan-kelly-484bb7187',
         'Declan Kelly': 'https://www.linkedin.com/in/declan-kelly-484bb7187',
