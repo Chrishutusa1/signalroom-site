@@ -62,21 +62,41 @@ def episode_items(page):
         season, ep = num.group(1), int(num.group(2))
         n = int(overall.group(1)) if overall else ep
         label = f"Season {season}, Episode {ep}" if season else f"Episode {ep}"
-        items.append((n, f"{label}: {text(title.group(1))} with {text(guest.group(1))}", SITE + href.group(1), None))
+        items.append((n, f"{label}: {text(title.group(1))} with {text(guest.group(1))}", SITE + href.group(1), None, None))
     return items
 
 
 def guest_items(page):
+    """One ListItem per guest card. Each also carries the guest as a Person entity
+    (name, role, LinkedIn sameAs, and every episode they appear on) so answer engines can
+    tie a known name to the show. Cards are matched to their LinkedIn link inside the same
+    guest-card-wrapper."""
     items = []
-    for m in re.finditer(r'<a href="(/episodes/[^"#?]+)" class="guest-card"[^>]*data-episode="(\d+)">(.*?)</a>', page, re.S):
+    episodes_by_name = {}
+    wrappers = re.split(r'<div class="guest-card-wrapper">', page)[1:]
+    for w in wrappers:
+        m = re.search(r'<a href="(/episodes/[^"#?]+)" class="guest-card"[^>]*data-episode="(\d+)">(.*?)</a>', w, re.S)
+        if not m:
+            continue
         href, n, body = m.group(1), int(m.group(2)), m.group(3)
         name = re.search(r'<h3 class="guest-card-name">(.*?)</h3>', body, re.S)
         topic = re.search(r'<p class="guest-card-topic">(.*?)</p>', body, re.S)
+        role = re.search(r'<p class="guest-card-role">(.*?)</p>', body, re.S)
+        li = re.search(r'<a href="(https://(?:www\.)?linkedin\.com/[^"]+)" class="guest-linkedin"', w)
         if not (name and topic):
             raise SystemExit(f"guests.html: card for episode {n} is missing name/topic")
         badge = re.search(r'class="guest-card-episode-badge">\s*S(\d+)\s+EP\s*(\d+)\s*<', body)
         label = f"Season {badge.group(1)}, Episode {badge.group(2)}" if badge else f"Episode {n}"
-        items.append((n, text(name.group(1)), SITE + href, f"Guest on {label}: {text(topic.group(1))}"))
+        gname = text(name.group(1))
+        episodes_by_name.setdefault(gname, []).append(SITE + href)
+        person = {"@type": "Person", "name": gname}
+        if role and text(role.group(1)):
+            person["jobTitle"] = text(role.group(1))
+        if li:
+            person["sameAs"] = [li.group(1)]
+        items.append((n, gname, SITE + href, f"Guest on {label}: {text(topic.group(1))}", person))
+    for *_, person in items:
+        person["subjectOf"] = [{"@type": "PodcastEpisode", "url": u} for u in episodes_by_name[person["name"]]]
     return items
 
 
@@ -104,10 +124,12 @@ def build_block(page, spec):
     if len(set(nums)) != len(nums):
         raise SystemExit("duplicate episode numbers among cards: " + str(sorted(x for x in nums if nums.count(x) > 1)))
     elements = []
-    for pos, (n, name, url, desc) in enumerate(items, 1):
+    for pos, (n, name, url, desc, *person) in enumerate(items, 1):
         el = {"@type": "ListItem", "position": pos, "url": url, "name": name}
         if desc:
             el["description"] = desc
+        if person and person[0]:
+            el["item"] = person[0]
         elements.append(el)
     itemlist = {"@type": "ItemList", "numberOfItems": len(elements), "itemListElement": elements}
     if nums == sorted(nums, reverse=True):
