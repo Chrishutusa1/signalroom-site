@@ -66,7 +66,7 @@ TOPICS = {
     "healthcare-ai-strategy": [
         dict(slug="clinical-denial-management-ai",
              thumbnail_url="https://i.ytimg.com/vi/MywupNDNH8M/maxresdefault.jpg",
-             card_title="Hidden Denial Leaks Your Hospital Can&#x27;t See",
+             card_title="Denial Management: Hidden Leaks Your Hospital Can&#x27;t See",
              card_desc="Gretchen Heinen of Authsnap on clinical denial management: why AI misses denials it cannot find, nurse review on every case, and what rural hospitals need.",
              ep_label="Season 2, Episode 2"),
         dict(slug="ai-native-hospital",
