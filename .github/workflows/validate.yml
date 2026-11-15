@@ -168,8 +168,9 @@ jobs:
               n += 1
               if "transport_type: 'beacon'" not in h:
                   bad.append(f"{p}: gtag config lacks transport_type: 'beacon'")
-              if "window.addEventListener('load'" not in h and "document.readyState === 'complete'" not in h:
-                  bad.append(f"{p}: loader does not start on the window load event")
+              early_async = ("gaScript.async = true" in h and "document.head.appendChild(gaScript)" in h and "window.gtag('config'" in h)
+              if not early_async and "window.addEventListener('load'" not in h and "document.readyState === 'complete'" not in h:
+                  bad.append(f"{p}: loader has neither early async initialization nor window-load start")
               if "requestIdleCallback(loadGA" in h:
                   bad.append(f"{p}: loader still waits on requestIdleCallback")
               if 'location.hostname !== "signalroompodcast.com"' not in h:
