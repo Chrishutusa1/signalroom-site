@@ -173,7 +173,10 @@ jobs:
                   bad.append(f"{p}: loader has neither early async initialization nor window-load start")
               if "requestIdleCallback(loadGA" in h:
                   bad.append(f"{p}: loader still waits on requestIdleCallback")
-              if 'location.hostname !== "signalroompodcast.com"' not in h:
+              old_host_gate = 'location.hostname !== "signalroompodcast.com"' in h
+              new_host_gate = ('location.hostname === "signalroompodcast.com"' in h and
+                               'location.hostname === "www.signalroompodcast.com"' in h)
+              if not (old_host_gate or new_host_gate):
                   bad.append(f"{p}: production-hostname gate missing")
           for b in bad:
               print(f"::error::{b}")
