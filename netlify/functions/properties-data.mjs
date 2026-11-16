@@ -1,36 +1,33 @@
 // Shared server-side storage for the Property Manager app (/app/properties/).
 //
 // Functions v2 handler served at /api/properties-data (see `config` below).
-// Storage is the "Property Manager" Airtable base: a Properties table, an
-// Agents table (linked to Properties), and a Meta table holding the sync
-// timestamp. The app syncs its whole state per request (single-user,
-// last-write-wins); rows edited directly in Airtable show up in the app on
-// its next pull. Zero npm dependencies — plain fetch against the Airtable
-// REST API, keeping the repo package.json-free.
+// Storage is Neon Postgres (project delicate-leaf-67982487): tables
+// property_app, agent_app (FK property_app_id -> property_app, ON DELETE
+// CASCADE), and app_kv holding the sync timestamp under key 'updatedAt'. The
+// app syncs its whole state per request (single-user, last-write-wins).
+//
+// Migrated off Airtable 2026-11-15: the Property Manager Airtable base
+// (appgNkAc7lFFUi086) was retired as the runtime store so the app no longer
+// depends on the Airtable API (which was exhausting its monthly quota). The
+// one-time data copy came from the 2026-11-03 Airtable backup. Agents and
+// properties are keyed by their stable "App ID" (`app_id`), unchanged from the
+// Airtable model, so existing app clients keep working.
 //
 // Env vars (set on both Netlify sites):
 //   PROPERTIES_SYNC_KEY  shared secret; requests carry it in X-Sync-Key.
 //                        Without it the endpoint is disabled (503), so a
 //                        fresh fork can never expose an open endpoint.
-//   AIRTABLE_TOKEN       personal access token scoped to the base
-//                        (data.records:read + data.records:write).
-//   PROPERTIES_AIRTABLE_BASE_ID  optional override of the default base below.
-//                        (Deliberately NOT plain AIRTABLE_BASE_ID — that env
-//                        var already exists on these sites and points at the
-//                        guest-leads base used by submission-created.js.)
+//   DATABASE_URL         Neon pooled connection string (same database the
+//                        guest-application function uses). Replaced the
+//                        AIRTABLE_TOKEN / PROPERTIES_AIRTABLE_BASE_ID vars.
 
 import { timingSafeEqual, createHash } from "node:crypto";
+import { neon } from "@neondatabase/serverless";
 
 export const config = { path: "/api/properties-data" };
 
-const API = () => process.env.AIRTABLE_API_URL || "https://api.airtable.com";
-const BASE = () => process.env.PROPERTIES_AIRTABLE_BASE_ID || "appgNkAc7lFFUi086";
 const MAX_BYTES = 512 * 1024;
-const T_PROPS = "Properties";
-const T_AGENTS = "Agents";
-const T_META = "Meta";
-const STATUS_UP = { active: "Active", paused: "Paused", error: "Error", idle: "Idle" };
-const STATUS_DOWN = { Active: "active", Paused: "paused", Error: "error", Idle: "idle" };
+const STATUSES = new Set(["active", "paused", "error", "idle"]);
 
 function json(body, status) {
   return new Response(JSON.stringify(body), {
@@ -47,145 +44,61 @@ function safeEqual(a, b) {
   return timingSafeEqual(ha, hb);
 }
 
-async function at(path, init = {}) {
-  const doFetch = () =>
-    fetch(`${API()}/v0/${BASE()}/${path}`, {
-      ...init,
-      headers: {
-        Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
-        "Content-Type": "application/json",
-        ...(init.headers || {}),
-      },
-    });
-  let res = await doFetch();
-  if (res.status === 429) {
-    await new Promise((r) => setTimeout(r, 1200));
-    res = await doFetch();
-  }
-  if (!res.ok) {
-    const detail = (await res.text()).slice(0, 300);
-    throw new Error(`Airtable ${init.method || "GET"} ${path.split("?")[0]} -> ${res.status}: ${detail}`);
-  }
-  return res.json();
-}
-
-async function listAll(table) {
-  const records = [];
-  let offset;
-  do {
-    const q = "?pageSize=100" + (offset ? `&offset=${encodeURIComponent(offset)}` : "");
-    const page = await at(encodeURIComponent(table) + q);
-    records.push(...page.records);
-    offset = page.offset;
-  } while (offset);
-  return records;
-}
-
-const chunk = (arr, n) => {
-  const out = [];
-  for (let i = 0; i < arr.length; i += n) out.push(arr.slice(i, i + n));
-  return out;
-};
-
-// Upsert records merged on App ID; returns Map of App ID -> Airtable record id.
-async function upsertByAppId(table, records) {
-  const ids = new Map();
-  for (const batch of chunk(records, 10)) {
-    const res = await at(encodeURIComponent(table), {
-      method: "PATCH",
-      body: JSON.stringify({
-        performUpsert: { fieldsToMergeOn: ["App ID"] },
-        typecast: true,
-        records: batch,
-      }),
-    });
-    for (const rec of res.records) ids.set(rec.fields["App ID"], rec.id);
-  }
-  return ids;
-}
-
-async function deleteRecords(table, recordIds) {
-  for (const batch of chunk(recordIds, 10)) {
-    const q = batch.map((id) => "records[]=" + encodeURIComponent(id)).join("&");
-    await at(encodeURIComponent(table) + "?" + q, { method: "DELETE" });
-  }
-}
-
-// Rows created by hand in Airtable have no App ID; adopt the record id as
-// their App ID so app pushes merge into them instead of duplicating.
-async function backfillAppIds(table, records) {
-  const missing = records.filter((r) => !r.fields["App ID"]);
-  for (const batch of chunk(missing, 10)) {
-    await at(encodeURIComponent(table), {
-      method: "PATCH",
-      body: JSON.stringify({
-        records: batch.map((r) => ({ id: r.id, fields: { "App ID": r.id } })),
-      }),
-    });
-    batch.forEach((r) => (r.fields["App ID"] = r.id));
-  }
-}
-
-const byOrder = (a, b) =>
-  (a.fields["Order"] ?? 1e9) - (b.fields["Order"] ?? 1e9) ||
-  String(a.fields["Name"] || "").localeCompare(String(b.fields["Name"] || ""));
+const db = () => neon(process.env.DATABASE_URL);
 
 async function handleGet() {
-  const [propRecs, agentRecs, metaRecs] = await Promise.all([
-    listAll(T_PROPS),
-    listAll(T_AGENTS),
-    listAll(T_META),
+  const sql = db();
+  const [props, agents, kv] = await Promise.all([
+    sql`SELECT app_id, name, url, notes, ord FROM property_app ORDER BY ord, name`,
+    sql`SELECT app_id, property_app_id, name, role, status, last_run_at, last_run_outcome, last_run_note, ord
+          FROM agent_app ORDER BY ord, name`,
+    sql`SELECT value FROM app_kv WHERE key = 'updatedAt'`,
   ]);
-  await backfillAppIds(T_PROPS, propRecs);
-  await backfillAppIds(T_AGENTS, agentRecs);
 
-  const properties = propRecs.sort(byOrder).map((r) => ({
-    id: r.fields["App ID"],
-    name: String(r.fields["Name"] || "").trim() || "(unnamed)",
-    url: r.fields["URL"] || "",
-    notes: r.fields["Notes"] || "",
-    agents: [],
-  }));
-  const byRecId = new Map(propRecs.map((r, i) => [r.id, properties[i]]));
+  const byId = new Map();
+  const properties = props.map((r) => {
+    const p = {
+      id: r.app_id,
+      name: String(r.name || "").trim() || "(unnamed)",
+      url: r.url || "",
+      notes: r.notes || "",
+      agents: [],
+    };
+    byId.set(r.app_id, p);
+    return p;
+  });
 
-  for (const r of agentRecs.sort(byOrder)) {
-    const parent = byRecId.get((r.fields["Property"] || [])[0]);
+  for (const a of agents) {
+    const parent = byId.get(a.property_app_id);
     if (!parent) continue; // agent with no property link is invisible to the app
     parent.agents.push({
-      id: r.fields["App ID"],
-      name: String(r.fields["Name"] || "").trim() || "(unnamed)",
-      role: r.fields["Role"] || "",
-      status: STATUS_DOWN[r.fields["Status"]] || "idle",
-      lastRun: r.fields["Last Run At"]
+      id: a.app_id,
+      name: String(a.name || "").trim() || "(unnamed)",
+      role: a.role || "",
+      status: STATUSES.has(a.status) ? a.status : "idle",
+      lastRun: a.last_run_at
         ? {
-            at: new Date(r.fields["Last Run At"]).toISOString(),
-            outcome: r.fields["Last Run Outcome"] === "Failure" ? "failure" : "success",
-            note: r.fields["Last Run Note"] || "",
+            at: new Date(a.last_run_at).toISOString(),
+            outcome: a.last_run_outcome === "failure" ? "failure" : "success",
+            note: a.last_run_note || "",
           }
         : null,
     });
   }
 
-  const meta = metaRecs.find((r) => r.fields["Key"] === "updatedAt");
-  return json(
-    { version: 1, updatedAt: meta ? meta.fields["Value"] || null : null, properties },
-    200
-  );
+  const updatedAt = kv.length ? kv[0].value || null : null;
+  return json({ version: 1, updatedAt, properties }, 200);
 }
 
 async function handlePut(doc, clientBase) {
-  const [propRecs, agentRecs, metaRecs] = await Promise.all([
-    listAll(T_PROPS),
-    listAll(T_AGENTS),
-    listAll(T_META),
-  ]);
+  const sql = db();
 
   // Optimistic concurrency: if the store has ever been written, the client
   // must present the updatedAt it last pulled. A mismatch means another
-  // device (or a direct Airtable edit) wrote since — refuse the overwrite
-  // instead of silently deleting whatever the stale client doesn't know about.
-  const meta = metaRecs.find((r) => r.fields["Key"] === "updatedAt");
-  const serverBase = meta ? meta.fields["Value"] || "" : "";
+  // device wrote since — refuse the overwrite instead of silently deleting
+  // whatever the stale client doesn't know about.
+  const cur = await sql`SELECT value FROM app_kv WHERE key = 'updatedAt'`;
+  const serverBase = cur.length ? cur[0].value || "" : "";
   if (serverBase && clientBase !== serverBase) {
     return json(
       { error: "conflict: the shared data changed since this device last pulled", updatedAt: serverBase },
@@ -193,64 +106,49 @@ async function handlePut(doc, clientBase) {
     );
   }
 
-  const propRows = doc.properties.map((p, i) => ({
-    fields: {
-      "App ID": p.id,
-      Name: p.name,
-      URL: p.url || null,
-      Notes: p.notes || "",
-      Order: i,
-    },
-  }));
-  const propIds = await upsertByAppId(T_PROPS, propRows);
-
-  const agentRows = [];
-  for (const p of doc.properties) {
-    p.agents.forEach((a, i) => {
-      agentRows.push({
-        fields: {
-          "App ID": a.id,
-          Name: a.name,
-          Role: a.role || "",
-          Status: STATUS_UP[a.status] || "Idle",
-          "Last Run At": a.lastRun ? a.lastRun.at : null,
-          "Last Run Outcome": a.lastRun ? (a.lastRun.outcome === "failure" ? "Failure" : "Success") : null,
-          "Last Run Note": a.lastRun ? a.lastRun.note || "" : "",
-          Property: propIds.has(p.id) ? [propIds.get(p.id)] : [],
-          Order: i,
-        },
-      });
-    });
-  }
-  await upsertByAppId(T_AGENTS, agentRows);
-
-  const keepProps = new Set(doc.properties.map((p) => p.id));
-  const keepAgents = new Set(doc.properties.flatMap((p) => p.agents.map((a) => a.id)));
-  // Delete agents first so no row ever points at a deleted property.
-  await deleteRecords(
-    T_AGENTS,
-    agentRecs.filter((r) => !keepAgents.has(r.fields["App ID"] || r.id)).map((r) => r.id)
-  );
-  await deleteRecords(
-    T_PROPS,
-    propRecs.filter((r) => !keepProps.has(r.fields["App ID"] || r.id)).map((r) => r.id)
-  );
-
   const updatedAt = typeof doc.updatedAt === "string" ? doc.updatedAt : new Date().toISOString();
-  await at(encodeURIComponent(T_META), {
-    method: "PATCH",
-    body: JSON.stringify({
-      performUpsert: { fieldsToMergeOn: ["Key"] },
-      records: [{ fields: { Key: "updatedAt", Value: updatedAt } }],
-    }),
-  });
+  const keepProps = doc.properties.map((p) => p.id);
+  const keepAgents = doc.properties.flatMap((p) => p.agents.map((a) => a.id));
 
+  const queries = [];
+  doc.properties.forEach((p, i) => {
+    queries.push(sql`
+      INSERT INTO property_app (app_id, name, url, notes, ord)
+      VALUES (${p.id}, ${p.name}, ${p.url || ""}, ${p.notes || ""}, ${i})
+      ON CONFLICT (app_id) DO UPDATE
+        SET name = excluded.name, url = excluded.url, notes = excluded.notes, ord = excluded.ord`);
+  });
+  doc.properties.forEach((p) => {
+    p.agents.forEach((a, i) => {
+      const status = STATUSES.has(a.status) ? a.status : "idle";
+      queries.push(sql`
+        INSERT INTO agent_app (app_id, property_app_id, name, role, status, last_run_at, last_run_outcome, last_run_note, ord)
+        VALUES (${a.id}, ${p.id}, ${a.name}, ${a.role || ""}, ${status},
+                ${a.lastRun ? a.lastRun.at : null},
+                ${a.lastRun ? (a.lastRun.outcome === "failure" ? "failure" : "success") : null},
+                ${a.lastRun ? a.lastRun.note || "" : null}, ${i})
+        ON CONFLICT (app_id) DO UPDATE
+          SET property_app_id = excluded.property_app_id, name = excluded.name, role = excluded.role,
+              status = excluded.status, last_run_at = excluded.last_run_at,
+              last_run_outcome = excluded.last_run_outcome, last_run_note = excluded.last_run_note,
+              ord = excluded.ord`);
+    });
+  });
+  // Delete agents first so no row ever points at a deleted property.
+  // (= ANY('{}') is false for every row, so an empty keep-list clears the table.)
+  queries.push(sql`DELETE FROM agent_app WHERE NOT (app_id = ANY(${keepAgents}))`);
+  queries.push(sql`DELETE FROM property_app WHERE NOT (app_id = ANY(${keepProps}))`);
+  queries.push(sql`
+    INSERT INTO app_kv (key, value) VALUES ('updatedAt', ${updatedAt})
+    ON CONFLICT (key) DO UPDATE SET value = excluded.value`);
+
+  await sql.transaction(queries);
   return json({ ok: true, updatedAt }, 200);
 }
 
 export default async (req) => {
   const expected = process.env.PROPERTIES_SYNC_KEY;
-  if (!expected || !process.env.AIRTABLE_TOKEN) {
+  if (!expected || !process.env.DATABASE_URL) {
     return json({ error: "sync is not configured on this site" }, 503);
   }
   const provided = req.headers.get("x-sync-key") || "";
@@ -286,12 +184,6 @@ export default async (req) => {
     return json({ error: "method not allowed" }, 405);
   } catch (err) {
     console.error("properties-data:", err);
-    const msg = String((err && err.message) || "");
-    const detail = /-> 40[13]/.test(msg)
-      ? "Airtable rejected the token - check the PAT's scopes and base access"
-      : /-> 404/.test(msg)
-        ? "Airtable base or table not found"
-        : "storage backend error";
-    return json({ error: detail }, 502);
+    return json({ error: "storage backend error" }, 502);
   }
 };
