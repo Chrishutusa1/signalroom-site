@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://signalroompodcast.com/articles/denials-your-hospital-cannot-see">
+  <title>The Denials Your Hospital Cannot See</title>
+  <meta name="description" content="Gretchen Heinen of Authsnap on the clinical denials a hospital cannot see, why most AI tools miss them, and what finding them actually takes.">
+  <link rel="icon" href="../assets/logos/Signal_Room_Cover_FINAL_v2.png" type="image/png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Denials Your Hospital Cannot See",
+  "description": "Gretchen Heinen of Authsnap on the clinical denials a hospital cannot see, why most AI tools miss them, and what finding them actually takes.",
+  "image": "https://signalroompodcast.com/assets/article-covers/denials-your-hospital-cannot-see.png",
+  "author": {
+    "@type": "Person",
+    "@id": "https://chrisjhutchins.com/#person",
+    "name": "Christopher Hutchins",
+    "jobTitle": "Founder and CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchins Data Strategy Consultants",
+      "url": "https://hutchinsdatastrategy.com"
+    },
+    "url": "https://www.linkedin.com/in/chutchins-healthcare"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Signal Room",
+    "url": "https://signalroompodcast.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://signalroompodcast.com/assets/logos/Signal_Room_Cover_FINAL_v2.png"
+    }
+  },
+  "datePublished": "2026-11-15",
+  "dateModified": "2026-11-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://signalroompodcast.com/articles/denials-your-hospital-cannot-see"
+  },
+  "isBasedOn": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://signalroompodcast.com/episodes/clinical-denial-management-ai",
+      "url": "https://signalroompodcast.com/episodes/clinical-denial-management-ai",
+      "name": "Denial Management: Hidden Leaks Your Hospital Cannot See"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Gretchen Heinen",
+      "jobTitle": "Founder and CEO, Authsnap",
+      "sameAs": [
+        "https://www.linkedin.com/in/gretchenheinen/",
+        "https://authsnap.ai/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "Authsnap",
+      "url": "https://authsnap.ai/"
+    }
+  ],
+  "keywords": [
+    "clinical denial management",
+    "insurance denials",
+    "hospital revenue cycle",
+    "prior authorization"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://signalroompodcast.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://signalroompodcast.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Denials Your Hospital Cannot See"
+    }
+  ]
+}
+  </script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Denials Your Hospital Cannot See">
+  <meta property="og:description" content="Gretchen Heinen of Authsnap on the clinical denials a hospital cannot see, why most AI tools miss them, and what finding them actually takes.">
+  <meta property="og:image" content="https://signalroompodcast.com/assets/article-covers/denials-your-hospital-cannot-see.png">
+  <meta property="og:url" content="https://signalroompodcast.com/articles/denials-your-hospital-cannot-see">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://signalroompodcast.com/assets/article-covers/denials-your-hospital-cannot-see.png">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RZNHLJSRW3', {transport_type: 'beacon'});
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+        document.head.appendChild(s);
+      }
+      var events = ['scroll','click','touchstart','keydown','mousemove'];
+      events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
+      if (document.readyState === 'complete') { setTimeout(loadGA, 0); }
+      else { window.addEventListener('load', function(){ setTimeout(loadGA, 0); }, {once:true}); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260712">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="../assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room">
+        <span>The Signal Room</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes">Episodes</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/guests">Guests</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/be-a-guest">Be a Guest</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="https://chrisjhutchins.com/speaking/" target="_blank" rel="noopener" class="nav-cta">Book Chris to Speak</a></li>
+    </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="episode-hero">
+    <div class="container">
+      <span class="section-label">Article</span>
+      <h1>The Denials Your Hospital Cannot See</h1>
+      <p style="color:var(--text-muted);font-size:1.1rem;margin-top:0.5rem;">By Christopher Hutchins &middot; November 15, 2026</p>
+      <p style="color:var(--text-muted);font-size:1rem;margin-top:0.25rem;">Featuring <a href="https://www.linkedin.com/in/gretchenheinen" target="_blank" rel="noopener" style="color:#6c63ff;">Gretchen Heinen</a> &middot; Founder &amp; CEO, Authsnap &middot; on The Signal Room</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-lg);">
+    <div class="container">
+      <div class="episode-layout">
+      <article class="show-notes-section" style="max-width: 800px; margin: 0 auto 2rem; padding: 2rem; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0;">
+        <div style="color: #444; font-size: 0.95rem; line-height: 1.8;">
+
+          <p>I remember sitting with stacks of the ones we call EOBs, explanation of benefits, and having to go through them and deal with every line that was an exception. And the worst part of it was knowing that you are probably gonna have to do that two or three times on the same claim before you actually get something processed. It felt like you were getting an immediate denial, and they were gonna deny so many times before they actually would consider it.</p>
+
+          <p style="background:#f5f3ff;border-left:4px solid #6c5ce7;padding:1rem 1.25rem;border-radius:8px;margin:1.5rem 0;">This article is drawn from my conversation with Gretchen Heinen of Authsnap on The Signal Room. Listen to the full episode: <a href="/episodes/clinical-denial-management-ai" style="color:#6c63ff; font-weight:600;">Denial Management: Hidden Leaks Your Hospital Cannot See</a>.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">From the Bedside to the Denial</h2>
+          <p>Gretchen Heinen, a nurse who co-founded Authsnap to take on clinical insurance denials, came on The Signal Room this week. The denials she means are not the clerical kind:</p>
+          <p><strong>&ldquo;These are ones where literally the insurance company is coming back and saying, like, I don&rsquo;t think this patient needed this care. You could have provided lesser care or they didn&rsquo;t need this drug.&rdquo;</strong></p>
+          <p><strong>&ldquo;I watch patients not be able to get the care that they needed because of a sheet of paper, not because we actually can&rsquo;t give the care. Like we have the doctors, we have the resources, we have the medicine, we have the technology, but a sheet of paper was preventing their care.&rdquo;</strong></p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">The Leaks Nobody Can See</h2>
+          <p>Gretchen on why the losses are so hard to catch:</p>
+          <p><strong>&ldquo;The insurance companies all have different communication methods to their hospitals and how they handle denied claims and clawbacks. Sometimes they give you a phone call and say this patient isn&rsquo;t authorized to have this night stay in the hospital. Sometimes they send a spreadsheet with the list of denied claims. Sometimes they will send a remark code documentation where it&rsquo;s just a list of codes that they decided not to pay.&rdquo;</strong></p>
+          <p><strong>&ldquo;So now imagine a hospital trying to figure out how to create a process for managing their denials when some of it&rsquo;s coming as a letter in the mail, some of it&rsquo;s coming as money missing in the bank account, some of it&rsquo;s coming as a spreadsheet.&rdquo;</strong></p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Why the Magic Wand Does Not Work</h2>
+          <p><strong>&ldquo;Whenever I see companies that are popping up and they&rsquo;re like, we&rsquo;re just building AI agents, or we&rsquo;re an AI company and we&rsquo;re gonna come in and wave a magic wand and we&rsquo;re gonna fix your denials. I would love to ask that person, okay, tell me how this is going to happen in this workflow in the hospital. Most technology companies do not understand how patient workflows work.&rdquo;</strong></p>
+          <p>I spent a lot of my career on this. I was in a room with a rather large insurance company representative, trying to solve secondary claim processing, and they wanted to sell me a tool to do it. They claimed those things are not together in any system. And I pulled out a paper EOB and I said, nonsense. You got it. It&rsquo;s right there. Patient gets it. It sure felt like some of that was we are making these systems not talk to each other for a purpose.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">What It Costs</h2>
+          <p><strong>&ldquo;Every week, a physician spends 13 and a half hours on average on things like prior authorization and denials. Imagine if we could take that amount of time off of the physician&rsquo;s plate. How many more happy physicians would we have? How many less suicides would we have in medicine?&rdquo;</strong></p>
+          <p>It seems as though the main focus of the electronic health record was to get more accurate billing. More quality billing. It was never about clinical workflows. But in reality, it sure sounds to me like we have created a whole nother set of issues with denials, and what we did with the right intentions has not been executed properly, and it is still hurting us every single day.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Whose Job This Is</h2>
+          <p>There are people whose job is never going to be to take care of a patient, and a lot of those people are listening to the show. We are the only ones gonna be able to solve this. And we need to make sure that we are not always hoping that somebody else does it, leaning on clinicians and adding more layers.</p>
+
+          <h2 style="font-size: 1.3rem; color: #1a1a2e; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">Related reading from Hutchins Data Strategy</h2>
+          <p>Hutchins Data Strategy Consultants helps health systems put this into practice. Learn more at <a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener" style="color:#6c63ff;">hutchinsdatastrategy.com</a>.</p>
+
+          <p style="margin-top:2rem;"><strong>Listen to the full episode of The Signal Room with Gretchen Heinen, and subscribe so the next one reaches you.</strong> &rarr; <a href="/episodes/clinical-denial-management-ai" style="color:#6c63ff;font-weight:600;">Watch or listen</a></p>
+
+        </div>
+      </article>
+
+      <div class="episode-sidebar">
+        <div class="sidebar-card">
+          <h4>About the Author</h4>
+          <div class="sidebar-guest">
+            <img src="../assets/chris-headshot-navysuit.png" alt="Christopher Hutchins">
+            <div class="sidebar-guest-info">
+              <h3>Christopher Hutchins</h3>
+              <p>Founder and CEO, Hutchins Data Strategy Consultants</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Listen to the Episode</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/episodes/clinical-denial-management-ai" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem; font-weight:600;">Denial Management: Hidden Leaks Your Hospital Cannot See</a><br><span style="font-size:0.8rem;"><a href="https://www.buzzsprout.com/2550733/episodes/20108649" target="_blank" rel="noopener" style="color:#6c63ff;">Buzzsprout</a> &middot; <a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener" style="color:#6c63ff;">Apple Podcasts</a> &middot; <a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener" style="color:#6c63ff;">Spotify</a></span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>About the Guest</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.5rem; font-size: 0.9rem;">Gretchen Heinen, RN &middot; Founder &amp; CEO, <a href="https://authsnap.ai/" target="_blank" rel="noopener" style="color:#6c63ff;">Authsnap</a></li>
+            <li style="font-size: 0.9rem;"><a href="https://www.linkedin.com/in/gretchenheinen" target="_blank" rel="noopener" style="color:#6c63ff;">Gretchen Heinen on LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/agentic-ai-in-healthcare" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Agentic AI in Healthcare: Data Foundations Decide It</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/ambient-ai-clinical-documentation" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Ambient AI in Healthcare: Documentation With Control</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/articles/ethical-ai-operational-reality" style="color: #6c63ff; text-decoration: none; font-size: 0.9rem;">Ethical AI in Practice: Principles Meet Reality</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-cta">
+          <h2>The AI Health Pulse</h2>
+          <p>Weekly healthcare AI intelligence, written for leaders making real decisions. No hype, no filler, just the signal.</p>
+          <div class="newsletter-form" style="justify-content: center;">
+            <a href="https://aihealthpulse.beehiiv.com/?modal=signup" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe to The AI Health Pulse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- SR-NEWSLETTER-SIGNUP -->
+  <section class="newsletter-signup-section" aria-labelledby="newsletter-signup-title">
+    <div class="container">
+      <div class="newsletter-signup-card">
+        <span class="section-label">The AI Health Pulse</span>
+        <h2 id="newsletter-signup-title">Get the weekly healthcare AI newsletter</h2>
+        <p>Weekly newsletter for healthcare executives on AI strategy, regulation, and operational reality.</p>
+        <form class="newsletter-signup" data-newsletter-signup data-campaign="article" novalidate>
+          <label class="newsletter-signup__label" for="newsletter-email">Email address</label>
+          <div class="newsletter-signup__row">
+            <input id="newsletter-email" class="newsletter-signup__input" type="email" name="email" placeholder="you@organization.com" autocomplete="email" required>
+            <input class="newsletter-signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary newsletter-signup__button" type="submit">Subscribe</button>
+          </div>
+          <p class="newsletter-signup__status" data-newsletter-status role="status" aria-live="polite"></p>
+          <noscript><p class="newsletter-signup__fine"><a href="https://aihealthpulse.beehiiv.com/subscribe?utm_source=signalroompodcast.com&amp;utm_medium=site-form-fallback" target="_blank" rel="noopener">Subscribe on the newsletter page</a></p></noscript>
+        </form>
+        <p class="newsletter-signup__fine">Free. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+  <script src="/js/newsletter-signup.js" defer></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/assets/logos/Signal_Room_Cover_FINAL_v2.png" alt="The Signal Room" width="48" height="48">
+          <p>Leadership, ethics, and innovation in healthcare AI, amplified. A production of Hutchins Data Strategy Consultants.</p>
+        </div>
+        <div>
+          <h4>Podcast</h4>
+          <ul class="footer-links">
+            <li><a href="/episodes">All Episodes</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/guests">Guests</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/be-a-guest">Be a Guest</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen &amp; Watch</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/the-signal-room-ai-in-healthcare-strategy-governance/id1850988366" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/3zUsHNLvnGE90gUaNULucZ" target="_blank" rel="noopener">Spotify</a></li>
+            <li><a href="https://music.amazon.com/podcasts/776b3a30-dc76-400d-a6ca-9f11f6cb15ab/the-signal-room-ai-in-healthcare-strategy-governance" target="_blank" rel="noopener">Amazon Music</a></li>
+            <li><a href="https://www.iheart.com/podcast/269-the-signal-room-ai-in-heal-305174135/" target="_blank" rel="noopener">iHeartRadio</a></li>
+            <li><a href="https://www.pandora.com/podcast/the-signal-room-ai-in-healthcare-strategy-and-governance/PC:1001117115" target="_blank" rel="noopener">Pandora</a></li>
+            <li><a href="https://www.audible.com/podcast/The-Signal-Room-AI-in-Healthcare-Strategy-Governance-Ethical-Leadership/B0FZVY5WBF" target="_blank" rel="noopener">Audible</a></li>
+            <li><a href="https://tunein.com/podcasts/Business--Economics-Podcasts/The-Signal-Room--Healthcare-AI-Strategy--Governance-p4740772/" target="_blank" rel="noopener">TuneIn</a></li>
+            <li><a href="https://pocketcasts.com/podcast/the-signal-room-ai-in-healthcare-strategy-governance/86c88d90-9c8e-013e-8071-0affdb99cfd5" target="_blank" rel="noopener">Pocket Casts</a></li>
+          </ul>
+        </div>
+        <div>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="/topics/healthcare-ai-strategy">Healthcare AI Strategy</a></li>
+            <li><a href="/topics/ai-ethics-governance">AI Ethics &amp; Governance</a></li>
+            <li><a href="/topics/healthcare-data-security">Data Quality &amp; Security</a></li>
+            <li><a href="/topics/clinical-ai-patient-care">Clinical AI &amp; Patient Care</a></li>
+          </ul>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://hutchinsdatastrategy.com" target="_blank" rel="noopener">Hutchins Data Strategy Consultants</a></li>
+            <li><a href="https://chrisjhutchins.com/speaking/" target="_blank" rel="noopener">Book Chris to Speak</a></li>
+            <li><a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://aihealthpulse.beehiiv.com" target="_blank" rel="noopener">AI Health Pulse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> The Signal Room. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@SignalRoomPodcast" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chutchins-healthcare" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
+  </script>
+<script src="../js/linkedin-links.js?v=20260916"></script>
+</body>
+</html>
