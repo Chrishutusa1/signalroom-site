@@ -216,26 +216,40 @@
           <h2 class="hero-tagline" style="margin:0 0 1rem;">Featured on The Signal Room</h2>
           <div id="guest-author-preview" style="margin-bottom:2rem;">
             <h3 style="font-size:1.35rem;line-height:1.25;margin:0 0 0.75rem;">The Hidden Books Leaders Are Using to Win in an AI World</h3>
-            <iframe src="https://www.youtube-nocookie.com/embed/Jnke80gTnwE?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Jnke80gTnwE&amp;rel=0&amp;playsinline=1"
-              title="The Signal Room guest author showcase: The Hidden Books Leaders Are Using to Win in an AI World"
-              width="640" height="360" loading="lazy"
-              style="display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:16px;background:#1A1A2E;"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="homepage-preview" style="position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:#1A1A2E;">
+              <a href="https://www.youtube.com/watch?v=Jnke80gTnwE" aria-label="Play The Hidden Books Leaders Are Using to Win in an AI World" style="display:grid;place-items:center;width:100%;height:100%;color:#fff;">
+                <img src="https://i.ytimg.com/vi/Jnke80gTnwE/mqdefault.jpg" alt="" width="320" height="180" loading="lazy" decoding="async" style="grid-area:1/1;width:100%;height:100%;object-fit:cover;">
+                <span aria-hidden="true" style="grid-area:1/1;z-index:1;padding:0.6rem 1rem;background:#1A1A2E;border:1px solid #fff;border-radius:0.5rem;">&#9654; Play preview</span>
+              </a>
+              <template>
+                <iframe src="https://www.youtube-nocookie.com/embed/Jnke80gTnwE?autoplay=1&amp;rel=0&amp;playsinline=1"
+                  title="The Hidden Books Leaders Are Using to Win in an AI World" width="640" height="360"
+                  style="display:block;width:100%;height:100%;border:0;"
+                  allow="autoplay; encrypted-media; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </template>
+            </div>
             <p style="margin:0.75rem 0 0;font-size:0.9rem;"><a href="https://www.youtube.com/watch?v=Jnke80gTnwE" target="_blank" rel="noopener">Watch on YouTube</a> &middot; 3:00 &middot; <a href="/guest-authors">Explore the authors and their books</a></p>
           </div>
           <div class="hero-season2" id="season2-preview">
           <span class="hero-tagline">Season 2 Preview</span>
           <h3 style="font-size:1.35rem;line-height:1.25;margin:0 0 0.75rem;">Are Doctors Too Dependent on AI?</h3>
-          <iframe src="https://www.youtube-nocookie.com/embed/OUcCGbN21kU?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=OUcCGbN21kU&amp;rel=0&amp;playsinline=1"
-            title="The Signal Room Season 2 preview: Are Doctors Too Dependent on AI?"
-            width="640" height="360" loading="lazy"
-            style="display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:16px;background:#1A1A2E;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="homepage-preview" style="position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:#1A1A2E;">
+              <a href="https://www.youtube.com/watch?v=OUcCGbN21kU" aria-label="Play Are Doctors Too Dependent on AI?" style="display:grid;place-items:center;width:100%;height:100%;color:#fff;">
+                <img src="https://i.ytimg.com/vi/OUcCGbN21kU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy" decoding="async" style="grid-area:1/1;width:100%;height:100%;object-fit:cover;">
+                <span aria-hidden="true" style="grid-area:1/1;z-index:1;padding:0.6rem 1rem;background:#1A1A2E;border:1px solid #fff;border-radius:0.5rem;">&#9654; Play preview</span>
+              </a>
+              <template>
+                <iframe src="https://www.youtube-nocookie.com/embed/OUcCGbN21kU?autoplay=1&amp;rel=0&amp;playsinline=1"
+                  title="Are Doctors Too Dependent on AI?" width="640" height="360"
+                  style="display:block;width:100%;height:100%;border:0;"
+                  allow="autoplay; encrypted-media; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </template>
+            </div>
           <p style="margin:0.75rem 0 0;font-size:0.9rem;"><a href="https://www.youtube.com/watch?v=OUcCGbN21kU" target="_blank" rel="noopener">Watch on YouTube</a> &middot; 2:35</p>
           </div>
-          <p style="margin:1rem 0 0;font-size:0.85rem;">Previews loop with sound off. Use either player to turn on sound or pause.</p>
+          <p style="margin:1rem 0 0;font-size:0.85rem;">Select a preview to play it here.</p>
         </div>
       </div>
     </div>
@@ -1258,5 +1272,17 @@
   </script>
   <script src="js/linkedin-links.js?v=20261101-asha"></script>
 <script src="/js/book-links.js?v=20261101" defer></script>
+<script>
+  document.querySelectorAll('.homepage-preview').forEach(function (preview) {
+    var link = preview.querySelector('a');
+    link.addEventListener('click', function (event) {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      var player = preview.querySelector('template').content.cloneNode(true);
+      preview.replaceChildren(player);
+      preview.querySelector('iframe').focus();
+    });
+  });
+</script>
 </body>
 </html>
