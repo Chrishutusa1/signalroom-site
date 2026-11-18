@@ -26,28 +26,18 @@
 
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <script>
+    // Production-only: previews and local builds must not send analytics.
+    if (location.hostname === "signalroompodcast.com" || location.hostname === "www.signalroompodcast.com") {
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-RZNHLJSRW3', {transport_type: 'beacon'});
-      (function(){
-        var loaded = false;
-        function loadGA(){
-          if (loaded) return; loaded = true;
-          // Production-only: never load GA on staging/preview/localhost
-          if (location.hostname !== "signalroompodcast.com" && location.hostname !== "www.signalroompodcast.com") return;
-          var s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
-          document.head.appendChild(s);
-        }
-        var events = ['scroll','click','touchstart','keydown','mousemove'];
-        events.forEach(function(e){ window.addEventListener(e, loadGA, {passive:true, once:true}); });
-        // load right after the page finishes loading instead of waiting up to 4s for idle
-        if (document.readyState === 'complete') { setTimeout(loadGA, 0); }
-        else { window.addEventListener('load', function(){ setTimeout(loadGA, 0); }, {once:true}); }
-      })();
-    </script>
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-RZNHLJSRW3', {transport_type: 'beacon'});
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-RZNHLJSRW3';
+      document.head.appendChild(gaScript);
+    }
+  </script>
 <!-- hub-schema:start -->
 <script type="application/ld+json">
 {

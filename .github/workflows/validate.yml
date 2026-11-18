@@ -142,47 +142,52 @@ jobs:
         run: |
           python _generate_hub_schema.py --check || echo "::warning::episodes/guests hub ItemList schema is out of date or unreadable: run 'python _generate_hub_schema.py --apply' and commit"
 
-      # GA4 loader contract. On 2026-10-21 the deferred loader (idle callback,
-      # up to 4s, page_view as a cancellable fetch) was linked to GA4 sessions
-      # with landing page (not set): 26 of 595 sessions in the prior 30 days,
-      # every one with session_start + user_engagement and no page_view. Every
-      # page that carries the tag must use the beacon transport and start the
-      # load on the window load event, keep the production-hostname gate, and
-      # must not fall back to requestIdleCallback. Pages built outside this repo
-      # (the claude.ai episode builder) will fail here until their template is
-      # updated, which is the point of the gate.
-      - name: GA4 loader uses beacon transport and the load event
+      # Keep the homepage loader as the reference for pages built outside this repo.
+      - name: Public pages use one early GA4 loader
         if: ${{ !cancelled() }}
         run: |
-          python - <<'PY'
-          import pathlib, sys
-          TAG = "G-RZNHLJSRW3"
+          python - <<'PYTHON'
+          import pathlib, re, sys
+          tag = "G-RZNHLJSRW3"
+          inline_script = re.compile(r"<script\b[^>]*>.*?</script>", re.S)
+
+          def loaders(html):
+              return [script for script in inline_script.findall(html) if tag in script]
+
+          homepage = pathlib.Path("index.html").read_text(encoding="utf-8")
+          reference, = loaders(homepage)
+          required = (
+              'location.hostname === "signalroompodcast.com"',
+              'location.hostname === "www.signalroompodcast.com"',
+              "transport_type: 'beacon'",
+              "gaScript.async = true",
+              "document.head.appendChild(gaScript)",
+          )
+          if (
+              any(fragment not in reference for fragment in required)
+              or reference.count("window.gtag('config'") != 1
+              or "send_page_view" in reference
+              or "addEventListener" in reference
+          ):
+              sys.exit("Homepage GA4 loader must initialize one automatic page view asynchronously on production.")
+
           bad = []
-          n = 0
-          for p in sorted(pathlib.Path(".").rglob("*.html")):
-              if "node_modules" in p.parts or ".git" in p.parts:
-                  continue
-              h = p.read_text(encoding="utf-8")
-              if TAG not in h:
-                  continue
-              n += 1
-              if "transport_type: 'beacon'" not in h:
-                  bad.append(f"{p}: gtag config lacks transport_type: 'beacon'")
-              early_async = ("gaScript.async = true" in h and "document.head.appendChild(gaScript)" in h and "window.gtag('config'" in h)
-              if not early_async and "window.addEventListener('load'" not in h and "document.readyState === 'complete'" not in h:
-                  bad.append(f"{p}: loader has neither early async initialization nor window-load start")
-              if "requestIdleCallback(loadGA" in h:
-                  bad.append(f"{p}: loader still waits on requestIdleCallback")
-              old_host_gate = 'location.hostname !== "signalroompodcast.com"' in h
-              new_host_gate = ('location.hostname === "signalroompodcast.com"' in h and
-                               'location.hostname === "www.signalroompodcast.com"' in h)
-              if not (old_host_gate or new_host_gate):
-                  bad.append(f"{p}: production-hostname gate missing")
-          for b in bad:
-              print(f"::error::{b}")
-          print(f"checked {n} pages carrying {TAG}, {len(bad)} problem(s)")
-          sys.exit(1 if bad else 0)
-          PY
+          pages = sorted(set(
+              pathlib.Path(".").glob("*.html")
+          ).union(
+              page for directory in ("episodes", "Articles", "topics")
+              for page in pathlib.Path(directory).rglob("*.html")
+          ))
+          for page in pages:
+              html = page.read_text(encoding="utf-8")
+              head = html.split("</head>", 1)[0]
+              if loaders(html) != [reference] or reference not in head:
+                  bad.append(page)
+          for page in bad:
+              print(f"::error::{page}: expected exactly one copy of the homepage GA4 loader in the head")
+          print(f"checked {len(pages)} public pages, {len(bad)} problem(s)")
+          sys.exit(bool(bad))
+          PYTHON
 
       - name: _redirects line shape
         if: ${{ !cancelled() }}
