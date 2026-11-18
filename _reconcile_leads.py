@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Weekly lead-loss reconciliation: Netlify Forms vs Airtable.
+"""Weekly lead-loss reconciliation: Netlify Forms vs Neon.
 
 WHY THIS EXISTS (2026-07-14): both submission-created.js functions deliberately
-return HTTP 200 even when the Airtable write fails (anti-duplicate contract).
+return HTTP 200 even when the store write fails (anti-duplicate contract).
 When the whole function invocation fails, the notification email AND auto-reply
 fail with it, so a submission can exist ONLY in Netlify Forms with no one told.
 Verified real losses before this script existed: Boris Berenberg (SR guest form,
@@ -10,21 +10,28 @@ Verified real losses before this script existed: Boris Berenberg (SR guest form,
 submissions, silently gone for 2-5 weeks.
 
 WHAT IT DOES (read-only): pulls every submission for both forms via the Netlify
-CLI, pulls the matching Airtable table, and reports any submission with no
-Airtable record. Exit code is non-zero when anything unexplained is missing
-(loud-failure repo convention). Nothing is ever written to Airtable or Netlify.
+CLI, pulls the matching Neon table, and reports any submission with no store
+record. Exit code is non-zero when anything unexplained is missing (loud-failure
+repo convention). Nothing is ever written to Neon or Netlify.
 
   python _reconcile_leads.py            # report; exit 1 if unexplained misses
   python _reconcile_leads.py --notify   # additionally email the report to Chris
                                         # via Resend (RESEND_API_KEY/AUTOREPLY_FROM)
 
+STORE (2026-11, Airtable sunset): the guest-application form reconciles against
+Neon `guest_application` and the HDSC lead-inquiry form against Neon `lead` — the
+tables that replaced the Airtable Guest Applications / Leads tables. A submission
+is considered present if its Netlify submission id matches a row's submission_id,
+or (for rows migrated from Airtable before submission ids were captured) its email
+or a 4+ char name token matches. Zero api.airtable.com calls.
+
 INTENTIONAL absences (deleted spam, merged duplicates, pivoted applications)
 belong in _reconcile_leads_resolved.json: {"<netlify submission id>": "reason"}.
 
-Auth: needs an Airtable PAT with data.records:read on the base. Looked up in
-order: env AIRTABLE_PAT -> `netlify api getEnvVars` on the SR site ->
-C:/Users/PC/Desktop/HDSC/SignalRoom/.env / hdsc-site/.env (AIRTABLE_PAT= line).
-Netlify CLI must be authed (it is on this machine; `netlify status` to check).
+Auth: DATABASE_URL (Neon app_rw role), looked up in order: env DATABASE_URL ->
+`netlify api getEnvVars` on the SR site -> C:/Users/PC/Desktop/HDSC/SignalRoom/.env /
+hdsc-site/.env (DATABASE_URL= line). Neon is read over the serverless HTTP SQL
+endpoint (stdlib only). Netlify CLI must be authed (`netlify status` to check).
 """
 
 import io
@@ -38,16 +45,15 @@ import urllib.request
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
 
-BASE_ID = "app3hF8k8ZGXvf9XF"  # Content Intelligence Hub
 SR_SITE_ID = "98c71b47-cb1e-4eb2-8255-963349df8ccf"  # signalroompodcast.com
 
-# form id -> (label, airtable table id)
+# form id -> (label, Neon table)
 FORMS = {
-    "69c5456bd7d52d00088a50e8": ("SR guest-application", "tbloZMd3IzXNo20jY"),
-    "6a10ad550c02dc000842a26f": ("HDSC lead-inquiry", "tbl8O3S6cYSeOxGHr"),
+    "69c5456bd7d52d00088a50e8": ("SR guest-application", "guest_application"),
+    "6a10ad550c02dc000842a26f": ("HDSC lead-inquiry", "lead"),
 }
 
-# Submissions that are tests/diagnostics, never expected in Airtable.
+# Submissions that are tests/diagnostics, never expected in the store.
 TEST_EMAILS = {"chris@hutchinsdatastrategy.com", "cjhutchins01@gmail.com",
                "pipeline-test@example.com"}
 TEST_NAME_RE = re.compile(r"test|delete|loop-audit|live-proof|role-test|ui-test"
@@ -70,36 +76,9 @@ def run_netlify(args):
     return json.loads(proc.stdout)
 
 
-def airtable_pat():
-    pat = os.environ.get("AIRTABLE_PAT")
-    if pat:
-        return pat
-    try:
-        for var in run_netlify(["api", "getEnvVars",
-                                "--data", json.dumps({"site_id": SR_SITE_ID})]):
-            if var.get("key") == "AIRTABLE_PAT":
-                for v in var.get("values", []):
-                    if v.get("value"):
-                        return v["value"]
-    except SystemExit as e:
-        print(f"note: getEnvVars lookup failed ({e}); trying .env files", file=sys.stderr)
-    for path in ENV_FALLBACK_FILES:
-        try:
-            with open(path, encoding="utf-8") as fh:
-                for line in fh:
-                    m = re.match(r"\s*AIRTABLE_PAT\s*=\s*(\S+)", line)
-                    if m:
-                        return m.group(1).strip().strip('"')
-        except OSError:
-            continue
-    raise SystemExit("No AIRTABLE_PAT found (env var, Netlify env, or .env files). "
-                     "Cannot reconcile without read access to Airtable.")
-
-
 def site_env(key):
-    """Resolve an env value the same way as airtable_pat(): process env first,
-    then the SR site's Netlify env vars, then the local .env fallback files.
-    Returns None if the key is not found anywhere."""
+    """Resolve an env value: process env first, then the SR site's Netlify env vars,
+    then the local .env fallback files. Returns None if not found anywhere."""
     val = os.environ.get(key)
     if val:
         return val
@@ -117,7 +96,7 @@ def site_env(key):
         try:
             with open(path, encoding="utf-8") as fh:
                 for line in fh:
-                    m = re.match(rf"\s*{re.escape(key)}\s*=\s*(\S+)", line)
+                    m = re.match(rf"\s*{re.escape(key)}\s*=\s*(.+)", line)
                     if m:
                         return m.group(1).strip().strip('"')
         except OSError:
@@ -125,20 +104,31 @@ def site_env(key):
     return None
 
 
-def airtable_records(pat, table_id):
-    records, offset = [], None
-    while True:
-        url = (f"https://api.airtable.com/v0/{BASE_ID}/{table_id}"
-               f"?pageSize=100&fields%5B%5D=Name&fields%5B%5D=Email")
-        if offset:
-            url += f"&offset={offset}"
-        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {pat}"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            page = json.load(resp)
-        records += page.get("records", [])
-        offset = page.get("offset")
-        if not offset:
-            return records
+def database_url():
+    dsn = site_env("DATABASE_URL")
+    if not dsn:
+        raise SystemExit("No DATABASE_URL (env var, Netlify env, or .env files). "
+                         "Cannot reconcile without read access to Neon.")
+    return dsn.strip().strip('"')
+
+
+def neon_sql(dsn, query, params=None):
+    m = re.match(r"^postgres(?:ql)?://[^@]+@([^/:?]+)", dsn)
+    if not m:
+        raise SystemExit("DATABASE_URL is not a postgres connection string")
+    body = json.dumps({"query": query, "params": params or []}).encode()
+    req = urllib.request.Request(
+        f"https://{m.group(1)}/sql", data=body, method="POST",
+        headers={"Neon-Connection-String": dsn, "Content-Type": "application/json",
+                 "Neon-Raw-Text-Output": "true", "Neon-Array-Mode": "false"},
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return json.loads(resp.read()).get("rows", [])
+
+
+def store_rows(dsn, table):
+    # table name is from the fixed FORMS map (never user input); interpolation is safe.
+    return neon_sql(dsn, f"select submission_id, name, email from {table}")
 
 
 def is_test(sub):
@@ -151,16 +141,20 @@ def tokens(name):
     return {t.lower() for t in re.findall(r"[A-Za-z]{4,}", name or "")}
 
 
-def matches(sub, records):
-    """Email match, else 4+ char name-token overlap (catches publicist pivots
-    like 'Ciara cbavis' -> 'Angel Mena ... via Ciara Bavis, Greenough Agency')."""
+def matches(sub, rows):
+    """Netlify submission id match first (the robust key written by the function),
+    then email, then 4+ char name-token overlap (catches rows migrated from Airtable
+    before submission ids were captured, and publicist pivots like 'Ciara cbavis' ->
+    'Angel Mena ... via Ciara Bavis, Greenough Agency')."""
+    sid = sub.get("id") or ""
     email = (sub.get("email") or "").lower()
     sub_tokens = tokens(sub.get("name"))
-    for r in records:
-        f = r.get("fields", {})
-        if email and (f.get("Email") or "").lower() == email:
+    for r in rows:
+        if sid and r.get("submission_id") == sid:
             return r
-        if sub_tokens and sub_tokens & tokens(f.get("Name")):
+        if email and (r.get("email") or "").lower() == email:
+            return r
+        if sub_tokens and sub_tokens & tokens(r.get("name")):
             return r
     return None
 
@@ -173,12 +167,12 @@ def main():
     except OSError:
         resolved = {}
 
-    pat = airtable_pat()
+    dsn = database_url()
     missing, lines = [], []
-    for form_id, (label, table_id) in FORMS.items():
+    for form_id, (label, table) in FORMS.items():
         subs = run_netlify(["api", "listFormSubmissions",
                             "--data", json.dumps({"form_id": form_id})])
-        records = airtable_records(pat, table_id)
+        rows = store_rows(dsn, table)
         for sub in subs:
             sid = sub.get("id", "")
             who = f"{sub.get('name')} <{sub.get('email')}> {sub.get('created_at', '')[:10]}"
@@ -187,7 +181,7 @@ def main():
             if sid in resolved:
                 lines.append(f"  resolved   [{label}] {who} — {resolved[sid]}")
                 continue
-            if matches(sub, records):
+            if matches(sub, rows):
                 lines.append(f"  ok         [{label}] {who}")
             else:
                 missing.append(f"  MISSING    [{label}] {who} (submission {sid})")
@@ -211,9 +205,9 @@ def main():
                     "from": sender,
                     "to": to,
                     "subject": f"LEAD RECONCILIATION ALERT — {len(missing)} "
-                               f"submission(s) missing from Airtable",
+                               f"submission(s) missing from Neon",
                     "text": f"{len(missing)} form submission(s) missing from "
-                            f"Airtable:\n\n" + "\n".join(missing),
+                            f"Neon:\n\n" + "\n".join(missing),
                 }).encode()
                 urllib.request.urlopen(urllib.request.Request(
                     "https://api.resend.com/emails", data=payload,

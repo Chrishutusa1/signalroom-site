@@ -1,31 +1,37 @@
 """
-signalroom-airtable-bridge — keep Airtable in sync with Buzzsprout (the source of truth).
+signalroom-airtable-bridge — keep Neon in sync with Buzzsprout (the source of truth).
+
+Name kept for continuity; the store is now Neon, not Airtable. The Airtable base
+(app3hF8k8ZGXvf9XF) was retired in the 2026-11 sunset because its Public API kept
+hitting the monthly quota. This script makes ZERO api.airtable.com calls.
 
 Why this exists
 ---------------
-The Zapier zap "Buzzsprout RSS -> Airtable (new episodes)" only writes a BARE row
-into `Buzzsprout Episode Data` (Episode GUID / Title / Description / Publish Date).
-The rich enrichment of that table was a one-shot manual pipeline (BuzzsproutData/
-build_records.js) that last ran 2026-05-08 and was never repeated. And the
-`Podcast Episodes` table (which the website-add workflow + stats sync read) is
-populated 100% manually and stalled at EP 27 (2026-04-30).
-
-This single task fixes BOTH gaps from the authoritative Buzzsprout API:
-  1. UPSERT rich fields into `Buzzsprout Episode Data` (fills the bare zap rows,
-     refreshes plays + Last API Sync). Idempotent; matches build_records.js mapping.
-  2. CREATE any missing `Podcast Episodes` rows with full Buzzsprout-derived fields
-     + a parsed Guest. Existing Podcast Episodes rows are left untouched (manual
-     curation + the stats-sync/PhraseIntel fields are preserved), with two narrow
-     exceptions: a blank `YouTube Video ID` is backfilled by the key-gated YouTube
-     Data API resolver, and a blank `YouTube URL` is derived deterministically from
-     the Video ID (watch?v=<id>, no API key needed). New rows are created with blank
-     Sync Status to flag them for enrichment; their `YouTube Video ID` + `YouTube URL`
-     are auto-filled when the resolver finds a confident guest+date match (else left
-     blank for manual entry).
+New Signal Room episodes land in Buzzsprout. This single task keeps the Neon data
+layer current from the authoritative Buzzsprout API:
+  1. UPSERT rich raw fields into `buzzsprout_episode_data` (the Neon home of the
+     retired Airtable "Buzzsprout Episode Data" table), matched on the Buzzsprout
+     GUID. Only the Buzzsprout-owned columns are written; transcript / listener /
+     language / status / provenance columns set by the one-time seed or other
+     processes are left untouched.
+  2. CREATE any missing `podcast_episode` hub rows with full Buzzsprout-derived
+     fields + a parsed Guest. Existing hub rows are left untouched (manual curation
+     + stats/PhraseIntel fields preserved), with two narrow exceptions: a blank
+     youtube_video_id is backfilled by the key-gated YouTube Data API resolver, and
+     a blank youtube_url is derived deterministically from the Video ID
+     (watch?v=<id>, no API key needed). New rows get sync_status 'New - Unverified'
+     to flag them for enrichment; their youtube_video_id + youtube_url are auto-filled
+     when the resolver finds a confident guest+date match (else left blank).
+  3. LINK any buzzsprout_episode_data row to its hub episode (podcast_episode_id FK)
+     once the hub row exists.
 
 Run `--dry-run` (default) to preview. Pass `--apply` to write.
 
-Reads secrets from C:\\Users\\PC\\Desktop\\HDSC\\SignalRoom\\.env
+Reads secrets from C:\\Users\\PC\\Desktop\\HDSC\\SignalRoom\\.env (BUZZSPROUT_API_TOKEN,
+YOUTUBE_API_KEY) and DATABASE_URL (the Neon app_rw role) from the environment, else a
+DATABASE_URL= line in that same .env. Neon is reached over the serverless HTTP SQL
+endpoint (standard library only — no psql / driver needed), matching this repo's
+stdlib-only convention for Python scripts.
 """
 
 import argparse
@@ -39,11 +45,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 ENV_PATH = Path(r"C:\Users\PC\Desktop\HDSC\SignalRoom\.env")
-BASE_ID = "app3hF8k8ZGXvf9XF"
 BZ_PODCAST_ID = "2550733"
-
-BED_TABLE = "tblrji2ivwJQYE6Rg"   # Buzzsprout Episode Data
-PE_TABLE = "tblzKDGrxDnhFqQUU"    # Podcast Episodes
 
 # YouTube (full-episode channel; a separate UCPvgS... channel holds shorts/clips)
 YT_CHANNEL_ID = "UCk7qyfPFVyJCMsmQHX8b7mw"
@@ -51,33 +53,19 @@ YT_MIN_FULL_SECONDS = 600     # >=10 min => treat as a full episode, not a Short
 YT_MATCH_DATE_WINDOW = 4      # YT publish must be within N days of Buzzsprout publish
 YT_UPLOADS_PAGE_CAP = 6       # max 50-item pages of uploads to scan (covers months)
 
-# Buzzsprout Episode Data field IDs (from BuzzsproutData/build_records.js)
-BED = {
-    "title": "fldTGlKXxQuejzxOm",
-    "episodeNumber": "fldc6eACSh6IuzeNu",
-    "guid": "fld38bSF5l4VPUZIM",
-    "buzzId": "fldr177dnslG8yp4J",
-    "showName": "fldtT1hpQdwTPCa8B",
-    "podcastId": "fldnhMyI5rkeCLlgZ",
-    "publishDate": "fldeZSpz11PlJ9jFx",
-    "episodeUrl": "fldvP7nmmqGacT3bv",
-    "audioUrl": "fldUgZLaa4Ol9uH9n",
-    "downloadUrl": "fldwDvXo1pSRZeuar",
-    "duration": "fldRFq70OF7av7FOu",
-    "tags": "fldVJY6wSdkATTpB6",
-    "artwork": "fldPSknx2ypJbfD2s",
-    "showNotesHtml": "fldulzgwsmWPPkNVd",
-    "totalPlays": "fldceXO1rMxL98hG3",
-    "season": "fldznPRPBvulpn592",
-    "statsUrl": "fldiJWXKqhxWVbjdH",
-    "lastSync": "fldL36O3CsGmgbftx",
-    "hq": "fldAVuukey9gH0751",
-    "magicMastering": "fldPPa0YkAnLeukkK",
-    "private": "fld1fcx4tXHhAvDwI",
-    "inactiveAt": "fld4wj27giILXAnMX",
-}
+UA = "signalroom-airtable-bridge/2.0"
 
-UA = "signalroom-airtable-bridge/1.0"
+# Buzzsprout-owned columns on buzzsprout_episode_data (matched on guid). Everything
+# NOT listed here (transcript_raw, unique_listeners, explicit, language,
+# buzzsprout_status, notes, transcript_url, chapters, created_at_buzzsprout,
+# updated_at_buzzsprout, airtable_id, podcast_episode_id, description) is owned by the
+# seed or other processes and is never overwritten by this bridge.
+BED_OWNED = [
+    "title", "episode_number", "buzzsprout_episode_id", "show_name", "podcast_id",
+    "publish_date", "episode_url", "audio_url", "download_url", "duration_seconds",
+    "tags", "show_notes_html", "total_plays", "season", "stats_url", "last_api_sync",
+    "hq", "magic_mastering", "private", "inactive_at",
+]
 
 
 def load_env():
@@ -85,6 +73,8 @@ def load_env():
         text = ENV_PATH.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         text = ENV_PATH.read_text(encoding="latin-1")
+    except OSError:
+        return {}
     env = {}
     for line in text.splitlines():
         if line.strip() and not line.startswith("#") and "=" in line:
@@ -97,50 +87,32 @@ def http_get(url, headers):
     return json.loads(urllib.request.urlopen(urllib.request.Request(url, headers=headers)).read())
 
 
-def http_send(url, body, headers, method):
+# ---------------- Neon (serverless HTTP SQL endpoint; stdlib only) ----------------
+
+def get_dsn(env):
+    import os
+    dsn = (os.environ.get("DATABASE_URL") or env.get("DATABASE_URL") or "").strip().strip('"')
+    if not dsn:
+        raise SystemExit("No DATABASE_URL (environment or SignalRoom\\.env). Cannot reach Neon.")
+    return dsn
+
+
+def _neon_endpoint(dsn):
+    m = re.match(r"^postgres(?:ql)?://[^@]+@([^/:?]+)", dsn)
+    if not m:
+        raise SystemExit("DATABASE_URL is not a postgres connection string")
+    return f"https://{m.group(1)}/sql"
+
+
+def neon_sql(dsn, query, params=None):
+    body = json.dumps({"query": query, "params": params or []}).encode()
     req = urllib.request.Request(
-        url, data=json.dumps(body).encode(),
-        headers={**headers, "Content-Type": "application/json"}, method=method,
+        _neon_endpoint(dsn), data=body, method="POST",
+        headers={"Neon-Connection-String": dsn, "Content-Type": "application/json",
+                 "Neon-Raw-Text-Output": "true", "Neon-Array-Mode": "false"},
     )
-    return json.loads(urllib.request.urlopen(req).read())
-
-
-def bz_fetch_episodes(env):
-    return http_get(
-        f"https://www.buzzsprout.com/api/{BZ_PODCAST_ID}/episodes.json",
-        {"Authorization": f"Token token={env['BUZZSPROUT_API_TOKEN']}", "User-Agent": UA},
-    )
-
-
-def at_list(env, table, by_id=False):
-    headers = {"Authorization": f"Bearer {env['AIRTABLE_API_KEY']}"}
-    records, offset = [], None
-    while True:
-        url = f"https://api.airtable.com/v0/{BASE_ID}/{table}?pageSize=100"
-        if by_id:
-            url += "&returnFieldsByFieldId=true"
-        if offset:
-            url += f"&offset={offset}"
-        r = http_get(url, headers)
-        records.extend(r["records"])
-        offset = r.get("offset")
-        if not offset:
-            break
-    return records
-
-
-def at_patch(env, table, updates):
-    headers = {"Authorization": f"Bearer {env['AIRTABLE_API_KEY']}"}
-    url = f"https://api.airtable.com/v0/{BASE_ID}/{table}"
-    for i in range(0, len(updates), 10):
-        http_send(url, {"records": updates[i:i + 10]}, headers, "PATCH")
-
-
-def at_create(env, table, creates):
-    headers = {"Authorization": f"Bearer {env['AIRTABLE_API_KEY']}"}
-    url = f"https://api.airtable.com/v0/{BASE_ID}/{table}"
-    for i in range(0, len(creates), 10):
-        http_send(url, {"records": creates[i:i + 10]}, headers, "POST")
+    with urllib.request.urlopen(req, timeout=120) as r:
+        return json.loads(r.read()).get("rows", [])
 
 
 def strip_html(s):
@@ -159,6 +131,13 @@ def parse_guest(title):
         return None
     guest = title.rsplit("|", 1)[1].strip()
     return guest or None
+
+
+def bz_fetch_episodes(env):
+    return http_get(
+        f"https://www.buzzsprout.com/api/{BZ_PODCAST_ID}/episodes.json",
+        {"Authorization": f"Token token={env['BUZZSPROUT_API_TOKEN']}", "User-Agent": UA},
+    )
 
 
 # ---------------- YouTube Data API (key-gated) ----------------
@@ -262,119 +241,136 @@ def resolve_yt_video_id(ep_title, guest, ep_pub_date, candidates):
             continue
         dd = _days_apart(c["published_at"], ep_pub_date)
         if dd <= YT_MATCH_DATE_WINDOW:
-            cand = (c["id"], dd, c.get("seconds", 0))
             if best is None or (dd, -c.get("seconds", 0)) < (best[1], -best[2]):
-                best = cand
+                best = (c["id"], dd, c.get("seconds", 0))
     if best:
         return best[0], best[1], "guest+date"
     return None, None, "no-confident-match"
 
 
-def build_bed_patch(e):
-    """Rich fields for Buzzsprout Episode Data (mirrors build_records.js). Excludes
-    Episode Description (the zap already sets it from RSS) and Episode GUID (the match key)."""
-    f = {}
-    if e.get("title"):
-        f[BED["title"]] = e["title"]
-    if e.get("episode_number") is not None:
-        f[BED["episodeNumber"]] = e["episode_number"]
-    if e.get("id") is not None:
-        f[BED["buzzId"]] = str(e["id"])
-    if e.get("artist"):
-        f[BED["showName"]] = e["artist"]
-    f[BED["podcastId"]] = BZ_PODCAST_ID
-    if e.get("published_at"):
-        f[BED["publishDate"]] = e["published_at"][:10]
-    if e.get("custom_url"):
-        f[BED["episodeUrl"]] = e["custom_url"]
-    if e.get("audio_url"):
-        f[BED["audioUrl"]] = e["audio_url"]
-        f[BED["downloadUrl"]] = e["audio_url"]
-    if e.get("duration") is not None:
-        f[BED["duration"]] = e["duration"]
-    if e.get("tags"):
-        f[BED["tags"]] = e["tags"]
-    if e.get("description"):
-        f[BED["showNotesHtml"]] = e["description"]
-    if e.get("total_plays") is not None:
-        f[BED["totalPlays"]] = e["total_plays"]
-    if e.get("season_number") is not None:
-        f[BED["season"]] = e["season_number"]
-    f[BED["statsUrl"]] = f"https://www.buzzsprout.com/{BZ_PODCAST_ID}/episodes/{e['id']}"
-    f[BED["lastSync"]] = date.today().isoformat()
-    f[BED["hq"]] = bool(e.get("hq"))
-    f[BED["magicMastering"]] = bool(e.get("magic_mastering"))
-    f[BED["private"]] = bool(e.get("private"))
-    if e.get("inactive_at"):
-        f[BED["inactiveAt"]] = e["inactive_at"]
-    return f
+# ---------------- field builders (Neon columns) ----------------
+
+def build_bed_row(e):
+    """Buzzsprout-owned columns for buzzsprout_episode_data (keyed on guid). Mirrors the
+    former Airtable build_bed_patch. Excludes description (zap/seed-owned) and guid
+    (the match key)."""
+    audio = e.get("audio_url")
+    return {
+        "title": e.get("title"),
+        "episode_number": e.get("episode_number"),
+        "buzzsprout_episode_id": str(e["id"]) if e.get("id") is not None else None,
+        "show_name": e.get("artist"),
+        "podcast_id": BZ_PODCAST_ID,
+        "publish_date": e["published_at"][:10] if e.get("published_at") else None,
+        "episode_url": e.get("custom_url"),
+        "audio_url": audio,
+        "download_url": audio,
+        "duration_seconds": e.get("duration"),
+        "tags": e.get("tags") or None,
+        "show_notes_html": e.get("description") or None,
+        "total_plays": e.get("total_plays"),
+        "season": e.get("season_number"),
+        "stats_url": f"https://www.buzzsprout.com/{BZ_PODCAST_ID}/episodes/{e['id']}",
+        "last_api_sync": date.today().isoformat(),
+        "hq": bool(e.get("hq")),
+        "magic_mastering": bool(e.get("magic_mastering")),
+        "private": bool(e.get("private")),
+        "inactive_at": e.get("inactive_at") or None,
+    }
 
 
 def build_pe_create(e, yt_id=None, *, now=None):
-    """Full Podcast Episodes record (by field NAME). PhraseIntel/Sync Status left blank
-    (owned by other processes; blank Sync Status flags the row as auto-created). YouTube
-    Video ID is filled when the key-gated resolver finds a confident match, else blank."""
+    """Full podcast_episode hub row (missing-episode create). PhraseIntel/keyword fields
+    left blank (owned by other processes); sync_status 'New - Unverified' flags the row
+    as auto-created. youtube_video_id is filled when the resolver is confident, else blank.
+    Raw Buzzsprout detail (show notes html, tags, total plays) lives in
+    buzzsprout_episode_data, not the hub."""
     f = {
-        "Episode Title": e["title"],
-        "Episode Number": e.get("episode_number"),
-        "Buzzsprout Episode ID": str(e["id"]),
-        "Episode Description": strip_html(e.get("description")),
-        "Buzzsprout Show Notes HTML": e.get("description") or "",
-        "Buzzsprout Tags": e.get("tags") or "",
-        "Tags": e.get("tags") or "",
-        "Buzzsprout URL": f"https://www.buzzsprout.com/{BZ_PODCAST_ID}/episodes/{e['id']}",
-        "Buzzsprout Total Plays": e.get("total_plays"),
-        "Guest": parse_guest(e["title"]),
+        "episode_number": e.get("episode_number"),
+        "title": e["title"],
+        "guest_name": parse_guest(e["title"]),
+        "buzzsprout_episode_id": str(e["id"]),
+        "buzzsprout_url": f"https://www.buzzsprout.com/{BZ_PODCAST_ID}/episodes/{e['id']}",
+        "description": strip_html(e.get("description")),
+        "publish_date": None,
+        "youtube_video_id": None,
+        "youtube_url": None,
+        "sync_status": "New - Unverified",
     }
     if e.get("published_at"):
         release = datetime.fromisoformat(e["published_at"].replace("Z", "+00:00"))
         if release.tzinfo is None:
             raise ValueError("Buzzsprout publication date must include a timezone")
-        f["Target Publish Date"] = e["published_at"][:10]
         if not e.get("private", False) and release <= (now or datetime.now(timezone.utc)):
-            f["Published Date"] = e["published_at"][:10]
+            f["publish_date"] = e["published_at"][:10]
     if yt_id:
-        f["YouTube Video ID"] = yt_id
-        f["YouTube URL"] = f"https://www.youtube.com/watch?v={yt_id}"
+        f["youtube_video_id"] = yt_id
+        f["youtube_url"] = f"https://www.youtube.com/watch?v={yt_id}"
     return f
+
+
+# ---------------- Neon writers ----------------
+
+def bed_upsert(dsn, row, guid):
+    cols = ["guid"] + BED_OWNED
+    vals = [guid] + [_param(row.get(c)) for c in BED_OWNED]
+    placeholders = ", ".join(f"${i + 1}" for i in range(len(cols)))
+    updates = ", ".join(f"{c} = excluded.{c}" for c in BED_OWNED)
+    sql = (f"insert into buzzsprout_episode_data ({', '.join(cols)}) "
+           f"values ({placeholders}) "
+           f"on conflict (guid) do update set {updates}, updated_at = now()")
+    neon_sql(dsn, sql, vals)
+
+
+def pe_insert(dsn, f):
+    cols = ["episode_number", "title", "guest_name", "buzzsprout_episode_id",
+            "buzzsprout_url", "description", "publish_date", "youtube_video_id",
+            "youtube_url", "sync_status"]
+    vals = [_param(f.get(c)) for c in cols]
+    placeholders = ", ".join(f"${i + 1}" for i in range(len(cols)))
+    sql = (f"insert into podcast_episode ({', '.join(cols)}) "
+           f"values ({placeholders}) "
+           f"on conflict (show, season, episode_number) do nothing")
+    neon_sql(dsn, sql, vals)
+
+
+def pe_backfill_yt(dsn, row_id, fields):
+    sets = ", ".join(f"{k} = ${i + 2}" for i, k in enumerate(fields))
+    vals = [row_id] + [_param(v) for v in fields.values()]
+    neon_sql(dsn, f"update podcast_episode set {sets}, updated_at = now() where id = $1", vals)
+
+
+def _param(v):
+    """Normalise to a text/None param the Neon column can cast (Neon-Raw-Text-Output)."""
+    if v is None:
+        return None
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    return str(v)
 
 
 def main():
     ap = argparse.ArgumentParser()
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--dry-run", action="store_true", help="preview only (default)")
-    g.add_argument("--apply", action="store_true", help="write changes to Airtable")
+    g.add_argument("--apply", action="store_true", help="write changes to Neon")
     args = ap.parse_args()
     apply = args.apply
     mode = "APPLY" if apply else "DRY-RUN"
 
     env = load_env()
-    print(f"[{date.today().isoformat()}] signalroom-airtable-bridge ({mode})")
+    dsn = get_dsn(env)
+    print(f"[{date.today().isoformat()}] signalroom-airtable-bridge ({mode}) -> Neon")
 
     eps = bz_fetch_episodes(env)
     eps = [e for e in eps if not e.get("private") and not e.get("inactive_at")]
-    by_guid = {e["guid"]: e for e in eps}
-    by_id = {str(e["id"]): e for e in eps}
     print(f"  Buzzsprout API: {len(eps)} public episodes")
 
-    # ---- 1. Buzzsprout Episode Data: upsert rich fields ----
-    bed_rows = at_list(env, BED_TABLE, by_id=True)
-    bed_by_guid = {r["fields"].get(BED["guid"]): r for r in bed_rows}
-    bed_patches, bed_creates = [], []
-    for e in eps:
-        patch = build_bed_patch(e)
-        existing = bed_by_guid.get(e["guid"])
-        if existing:
-            # only patch if something is actually missing/changed (avoid no-op churn on play counts is fine)
-            cur = existing["fields"]
-            changed = {k: v for k, v in patch.items() if cur.get(k) != v}
-            if changed:
-                bed_patches.append({"id": existing["id"], "fields": changed})
-        else:
-            create = dict(patch)
-            create[BED["guid"]] = e["guid"]
-            bed_creates.append({"fields": create})
-    print(f"  Buzzsprout Episode Data: {len(bed_patches)} to patch, {len(bed_creates)} to create")
+    # ---- 1. buzzsprout_episode_data: upsert Buzzsprout-owned fields (match on guid) ----
+    bed_have = {r["guid"] for r in neon_sql(dsn, "select guid from buzzsprout_episode_data")}
+    bed_create = sum(1 for e in eps if e["guid"] not in bed_have)
+    bed_update = len(eps) - bed_create
+    print(f"  buzzsprout_episode_data: {bed_update} to refresh, {bed_create} to create")
 
     # ---- 2. YouTube: resolve full-episode video IDs (key-gated) ----
     yt_candidates = None
@@ -394,69 +390,70 @@ def main():
             return None, None, "no-key"
         return resolve_yt_video_id(title, guest, pub_date, yt_candidates)
 
-    # ---- 3. Podcast Episodes: create missing (with YT id) ----
-    pe_rows = at_list(env, PE_TABLE)
-    pe_have = {str(r["fields"].get("Buzzsprout Episode ID")) for r in pe_rows
-               if r["fields"].get("Buzzsprout Episode ID")}
+    # ---- 3. podcast_episode: create missing (with YT id) ----
+    pe_rows = neon_sql(dsn, "select id, episode_number, buzzsprout_episode_id, title, "
+                            "guest_name, publish_date, youtube_video_id, youtube_url "
+                            "from podcast_episode")
+    pe_have = {str(r["buzzsprout_episode_id"]) for r in pe_rows if r.get("buzzsprout_episode_id")}
     pe_creates = []
     for e in eps:
         if str(e["id"]) in pe_have:
             continue
         pub = e["published_at"][:10] if e.get("published_at") else None
         vid, dd, reason = resolve(e["title"], parse_guest(e["title"]), pub)
-        pe_creates.append({"fields": build_pe_create(e, vid), "_yt": (vid, dd, reason)})
-    print(f"  Podcast Episodes: {len(pe_rows)} existing, {len(pe_creates)} to create")
-    for c in pe_creates:
-        f = c["fields"]
-        vid, dd, reason = c["_yt"]
+        pe_creates.append((build_pe_create(e, vid), (vid, dd, reason)))
+    print(f"  podcast_episode: {len(pe_rows)} existing, {len(pe_creates)} to create")
+    for f, (vid, dd, reason) in pe_creates:
         ytnote = f"YT={vid} (+{dd}d)" if vid else f"YT=none ({reason})"
-        print(f"      + EP {f['Episode Number']}  BZ {f['Buzzsprout Episode ID']}  "
-              f"guest={f['Guest']!r}  {ytnote}  {f['Episode Title'][:46]}")
-    for c in pe_creates:
-        c.pop("_yt", None)
+        print(f"      + EP {f['episode_number']}  BZ {f['buzzsprout_episode_id']}  "
+              f"guest={f['guest_name']!r}  {ytnote}  {str(f['title'])[:46]}")
 
-    # ---- 4. Podcast Episodes: backfill YouTube on existing rows ----
-    #   (a) blank Video ID  -> resolve via the key-gated resolver (needs candidates)
-    #   (b) Video ID present but YouTube URL blank -> derive the URL deterministically
-    #       from the id (no API key required)
+    # ---- 4. podcast_episode: backfill YouTube on existing rows ----
+    #   (a) blank youtube_video_id -> resolve via the key-gated resolver
+    #   (b) youtube_video_id present but youtube_url blank -> derive the URL (no key)
     pe_yt_patches = []
     for r in pe_rows:
-        f = r["fields"]
-        if not f.get("Episode Title"):
+        if not r.get("title"):
             continue
-        vid = f.get("YouTube Video ID")
+        vid = r.get("youtube_video_id")
         fields = {}
         if not vid and yt_candidates:
-            rvid, dd, reason = resolve(f["Episode Title"], f.get("Guest"), (f.get("Published Date") or f.get("Target Publish Date")))
+            rvid, dd, reason = resolve(r["title"], r.get("guest_name"), r.get("publish_date"))
             if rvid:
                 vid = rvid
-                fields["YouTube Video ID"] = rvid
-                print(f"      ~ fill YT id on EP {f.get('Episode Number')} BZ {f.get('Buzzsprout Episode ID')}: "
-                      f"{rvid} (+{dd}d)  guest={f.get('Guest')!r}  {str(f['Episode Title'])[:40]}")
+                fields["youtube_video_id"] = rvid
+                print(f"      ~ fill YT id on EP {r.get('episode_number')} BZ {r.get('buzzsprout_episode_id')}: "
+                      f"{rvid} (+{dd}d)  guest={r.get('guest_name')!r}  {str(r['title'])[:40]}")
             else:
-                print(f"      · no YT match for EP {f.get('Episode Number')} BZ {f.get('Buzzsprout Episode ID')} "
-                      f"({reason})  guest={f.get('Guest')!r}")
-        if vid and not f.get("YouTube URL"):
-            fields["YouTube URL"] = f"https://www.youtube.com/watch?v={vid}"
-            print(f"      ~ fill YT url on EP {f.get('Episode Number')}: watch?v={vid}")
+                print(f"      · no YT match for EP {r.get('episode_number')} BZ {r.get('buzzsprout_episode_id')} "
+                      f"({reason})  guest={r.get('guest_name')!r}")
+        if vid and not r.get("youtube_url"):
+            fields["youtube_url"] = f"https://www.youtube.com/watch?v={vid}"
+            print(f"      ~ fill YT url on EP {r.get('episode_number')}: watch?v={vid}")
         if fields:
-            pe_yt_patches.append({"id": r["id"], "fields": fields})
-    print(f"  Podcast Episodes: {len(pe_yt_patches)} existing rows to backfill (YT id/url)")
+            pe_yt_patches.append((r["id"], fields))
+    print(f"  podcast_episode: {len(pe_yt_patches)} existing rows to backfill (YT id/url)")
 
     if not apply:
         print("\n  DRY-RUN — no changes written. Re-run with --apply to commit.")
         return
 
-    if bed_patches:
-        at_patch(env, BED_TABLE, bed_patches)
-    if bed_creates:
-        at_create(env, BED_TABLE, bed_creates)
-    if pe_creates:
-        at_create(env, PE_TABLE, pe_creates)
-    if pe_yt_patches:
-        at_patch(env, PE_TABLE, pe_yt_patches)
-    print(f"\n  APPLIED: BED {len(bed_patches)} patched / {len(bed_creates)} created; "
-          f"Podcast Episodes {len(pe_creates)} created, {len(pe_yt_patches)} YT-backfilled.")
+    for e in eps:
+        bed_upsert(dsn, build_bed_row(e), e["guid"])
+    for f, _meta in pe_creates:
+        pe_insert(dsn, f)
+    for row_id, fields in pe_yt_patches:
+        pe_backfill_yt(dsn, row_id, fields)
+    # ---- 5. link buzzsprout_episode_data rows to their hub episode (FK) ----
+    linked = neon_sql(dsn,
+        "update buzzsprout_episode_data b set podcast_episode_id = p.id, updated_at = now() "
+        "from podcast_episode p "
+        "where p.buzzsprout_episode_id = b.buzzsprout_episode_id "
+        "and b.podcast_episode_id is distinct from p.id "
+        "returning b.id")
+    print(f"\n  APPLIED: buzzsprout_episode_data {len(eps)} upserted; "
+          f"podcast_episode {len(pe_creates)} created, {len(pe_yt_patches)} YT-backfilled; "
+          f"{len(linked)} BED rows (re)linked to a hub episode.")
 
 
 if __name__ == "__main__":

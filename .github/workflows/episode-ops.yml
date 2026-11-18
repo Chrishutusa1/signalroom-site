@@ -15,8 +15,10 @@
 #   - Every step is guarded so a missing secret degrades to a warning, not a red run.
 #
 # REQUIRED SECRET (repo → Settings → Secrets and variables → Actions):
-#   AIRTABLE_TOKEN   Personal access token with data.records:read on base
-#                    app3hF8k8ZGXvf9XF (Content Intelligence Hub).
+#   DATABASE_URL   Neon pooled connection string (app_rw role) for project
+#                  delicate-leaf-67982487. Replaced AIRTABLE_TOKEN in the 2026-11
+#                  Airtable->Neon sunset; the prep-check reads buzzsprout_episode_data
+#                  over Neon's serverless HTTP SQL endpoint.
 #
 # Cadence mirrors the local tasks (CT → UTC, CT = UTC-5):
 #   prep-check   Tue 16:00 CT = 21:00 UTC
@@ -38,9 +40,6 @@ permissions:
   contents: read
 
 env:
-  AIRTABLE_BASE: app3hF8k8ZGXvf9XF
-  T_BUZZSPROUT: tblrji2ivwJQYE6Rg   # Buzzsprout Episode Data
-  T_EPISODES: tblzKDGrxDnhFqQUU     # Podcast Episodes
   STAGING: https://signalroom-staging.netlify.app
   PROD: https://signalroompodcast.com
 
@@ -53,41 +52,44 @@ jobs:
       github.event.schedule == '0 21 * * 2'
     runs-on: ubuntu-latest
     steps:
-      - name: Check upcoming episode metadata in Airtable
+      - name: Check upcoming episode metadata in Neon
         env:
-          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: |
           set -euo pipefail
-          if [ -z "${AIRTABLE_TOKEN:-}" ]; then
-            echo "::warning::AIRTABLE_TOKEN not set — skipping metadata check (add the secret to enable)."
+          if [ -z "${DATABASE_URL:-}" ]; then
+            echo "::warning::DATABASE_URL not set — skipping metadata check (add the secret to enable)."
             exit 0
           fi
-          # Pull the most recent Buzzsprout Episode Data rows (by Publish Date)
-          # and confirm the fields the page build needs are present.
-          code=$(curl -s -o /tmp/at.json -w '%{http_code}' -H "Authorization: Bearer $AIRTABLE_TOKEN" \
-            "https://api.airtable.com/v0/${AIRTABLE_BASE}/${T_BUZZSPROUT}?pageSize=5&sort%5B0%5D%5Bfield%5D=Publish%20Date&sort%5B0%5D%5Bdirection%5D=desc")
+          # Pull the most recent buzzsprout_episode_data rows (by publish_date) from Neon
+          # over the serverless HTTP SQL endpoint and confirm the fields the page build
+          # needs are present.
+          host=$(printf '%s' "$DATABASE_URL" | sed -E 's#^postgres(ql)?://[^@]+@([^/?]+).*#\2#')
+          code=$(curl -s -o /tmp/neon.json -w '%{http_code}' -X POST "https://$host/sql" \
+            -H "Neon-Connection-String: $DATABASE_URL" \
+            -H "Content-Type: application/json" \
+            -H "Neon-Raw-Text-Output: true" \
+            --data '{"query":"select episode_number, title, publish_date from buzzsprout_episode_data order by publish_date desc nulls last limit 5","params":[]}')
           if [ "$code" != "200" ]; then
-            echo "::error::Airtable request failed (HTTP $code): $(head -c 400 /tmp/at.json)"
+            echo "::error::Neon request failed (HTTP $code): $(head -c 400 /tmp/neon.json)"
             exit 1
           fi
           python3 - <<'PY'
           import json,sys
-          data=json.load(open("/tmp/at.json"))
-          recs=data.get("records",[])
-          if not recs:
-              print("::warning::no Buzzsprout Episode Data rows returned"); sys.exit(0)
-          need=["Episode Number","Episode Title","Buzzsprout Status"]
-          print(f"Checked {len(recs)} most-recent episode row(s):")
+          rows=json.load(open("/tmp/neon.json")).get("rows",[])
+          if not rows:
+              print("::warning::no buzzsprout_episode_data rows returned"); sys.exit(0)
+          need=["episode_number","title","publish_date"]
+          print(f"Checked {len(rows)} most-recent episode row(s):")
           problems=0
-          for r in recs:
-              f=r.get("fields",{})
-              missing=[k for k in need if not f.get(k)]
-              label=f.get("Episode Title") or r["id"]
+          for r in rows:
+              missing=[k for k in need if not r.get(k)]
+              label=r.get("title") or "(untitled)"
               if missing:
                   problems+=1
                   print(f"  ⚠ {label}: missing {missing}")
               else:
-                  print(f"  ✓ {label}: {f.get('Buzzsprout Status')}")
+                  print(f"  ✓ EP {r.get('episode_number')}: {label} ({r.get('publish_date')})")
           # Prep-check is advisory — warn, don't fail the run.
           if problems:
               print(f"::warning::{problems} recent episode row(s) missing required metadata")
@@ -137,7 +139,7 @@ jobs:
 
   # TODO (next iterations, once scheduled-tasks.json is located + secrets added):
   #  - Port the add-podcast-episode page-build logic (currently agent + PR flow).
-  #  - Write a Schedule Heartbeats row per run (tblUmY97D6GxFFERY) for parity with
-  #    the local scheduler's observability. Needs AIRTABLE_TOKEN write scope.
+  #  - Write a per-run heartbeat row to Neon (job_run) for parity with the local
+  #    scheduler's observability. Needs DATABASE_URL (app_rw).
   #  - Optional: add a Netlify-token step to assert prod's published commit ==
   #    main HEAD after auto-deploy (belt-and-suspenders on the verify job).
