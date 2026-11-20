@@ -15,6 +15,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <script>
+    // Production-only: previews and local builds must not send analytics.
     if (location.hostname === "signalroompodcast.com" || location.hostname === "www.signalroompodcast.com") {
       window.dataLayer = window.dataLayer || [];
       window.gtag = function(){ window.dataLayer.push(arguments); };
