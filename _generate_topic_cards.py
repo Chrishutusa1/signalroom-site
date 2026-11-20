@@ -64,6 +64,11 @@ def build_ep_index():
 TOPICS = {
 
     "healthcare-ai-strategy": [
+        dict(slug="cell-gene-therapy-access",
+             thumbnail_url="https://i.ytimg.com/vi/cnZXXQ-jPY4/maxresdefault.jpg",
+             card_title="Cell and Gene Therapy: Why a Cure Isn&#x27;t Enough",
+             card_desc="Andy Moye of Glidepath Health on why cell and gene therapies reach so few patients: scheduling, travel, reimbursement and fragmented data.",
+             ep_label="Season 2, Episode 3"),
         dict(slug="clinical-denial-management-ai",
              thumbnail_url="https://i.ytimg.com/vi/MywupNDNH8M/maxresdefault.jpg",
              card_title="Denial Management: Hidden Leaks Your Hospital Can&#x27;t See",
@@ -193,7 +198,6 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
-        dict(slug="ai-governance-in-practice", card_title="AI Governance in Practice", card_desc="Dr. Latha Karthigaa on AI inventories, decision rights, employee policies and human review.", ep_label="Season 2, Episode 3"),
         dict(slug="shadow-ai-governance-healthcare",
              card_title="Shadow AI and Who Owns the Risk",
              card_desc="Aaron Bach, co-founder and CTO of Liminal, on shadow AI, governing with the controls you already have, why no single platform covers AI, and who owns the risk."),
