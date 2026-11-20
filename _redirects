@@ -77,6 +77,7 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /articles/agentic-ai-accountability                     /Articles/agentic-ai-accountability.html   200
 /articles/ai-voice-agents-patient-access                /Articles/ai-voice-agents-patient-access.html   200
 /articles/hospital-of-the-future-ai-native              /Articles/hospital-of-the-future-ai-native.html   200
+/articles/denials-your-hospital-cannot-see              /Articles/denials-your-hospital-cannot-see.html   200
 # Legacy .html requests 301 to extensionless canonical (force flag required;
 # pretty_urls treats /articles/foo.html as servable even though file is at /Articles/).
 /articles/data-governance-healthcare.html    /articles/data-governance-healthcare              301!
@@ -155,6 +156,8 @@ https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    3
 /Articles/ai-voice-agents-patient-access.html   /articles/ai-voice-agents-patient-access   301!
 /articles/hospital-of-the-future-ai-native.html   /articles/hospital-of-the-future-ai-native   301!
 /Articles/hospital-of-the-future-ai-native.html   /articles/hospital-of-the-future-ai-native   301!
+/articles/denials-your-hospital-cannot-see.html   /articles/denials-your-hospital-cannot-see   301!
+/Articles/denials-your-hospital-cannot-see.html   /articles/denials-your-hospital-cannot-see   301!
 
 # Repo docs: keep out of the served site (publish=".", so root files are public).
 # Force flag required — the files exist in the deploy and would shadow a plain rule.
