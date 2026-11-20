@@ -241,21 +241,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://signalroompodcast.com/episodes/ai-governance-in-practice</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <video:video>
-      <video:thumbnail_loc>https://i.ytimg.com/vi/llblE46JRww/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Who Is Governing Your AI? | Dr. Latha Karthigaa</video:title>
-      <video:description>Dr. Latha Karthigaa on AI governance in practice: AI inventories, decision rights, employee policies, human review and the questions boards should ask.</video:description>
-      <video:player_loc>https://www.youtube.com/embed/llblE46JRww</video:player_loc>
-      <video:duration>4043</video:duration>
-      <video:publication_date>2026-11-18T19:34:15-06:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
     <loc>https://signalroompodcast.com/episodes/ai-hype-to-real-value</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -477,6 +462,21 @@
       <video:player_loc>https://www.youtube.com/embed/gGfHX_xYTqI</video:player_loc>
       <video:duration>2054</video:duration>
       <video:publication_date>2026-10-14T14:00:00Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signalroompodcast.com/episodes/cell-gene-therapy-access</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/cnZXXQ-jPY4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Cell and Gene Therapy: Why a Cure Isn't Enough</video:title>
+      <video:description>Andy Moye of Glidepath Health on why cell and gene therapies reach so few patients: scheduling, travel, reimbursement and fragmented data.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/cnZXXQ-jPY4</video:player_loc>
+      <video:duration>2843</video:duration>
+      <video:publication_date>2026-11-19</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
