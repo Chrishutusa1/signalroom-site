@@ -73,6 +73,7 @@ PAGE_META = {
     "notable-healthcare-ai-podcast-guests": ("monthly", "0.8"),
     "podcasts-like-nejm-ai-grand-rounds":   ("monthly", "0.8"),
     "privacy-policy":                       ("monthly", "0.3"),
+    "copyright":                            ("yearly", "0.3"),
     "responsible-ai-in-medicine":           ("monthly", "0.8"),
 }
 SECTION_DEFAULTS = {
