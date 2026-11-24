@@ -11,6 +11,13 @@
 # is a single 301; every variant terminates at a clean 200 apex extensionless URL.
 https://www.signalroompodcast.com/*    https://signalroompodcast.com/:splat    301!
 
+# --- Canonical host: Netlify subdomains -> apex (2026-11-24) ---
+# The bare project subdomain and the production branch alias served full,
+# indexable duplicates of the site. Host-scoped, so signalroom-staging.netlify.app
+# and deploy-preview-N--signalroom.netlify.app (different hosts) are unaffected.
+https://signalroom.netlify.app/*          https://signalroompodcast.com/:splat    301!
+https://main--signalroom.netlify.app/*    https://signalroompodcast.com/:splat    301!
+
 # 301 redirects for renamed episode slugs (target the extensionless canonical)
 /episodes/ai-verification-pharma-discovery         /episodes/data-readiness-ai-adoption         301
 /episodes/ai-verification-pharma-discovery.html    /episodes/data-readiness-ai-adoption         301
