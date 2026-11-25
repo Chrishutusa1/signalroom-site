@@ -72,6 +72,8 @@ There are no tests and no lint. Python scripts are stdlib-only — keep them tha
 
 New **episode** additionally: emit the standalone **`VideoObject`** JSON-LD block (see Conventions — CI-gated, no longer inherited from `/watch`), run `_validate_episode.py`, `_update_stats.py`, add to the relevant topic in `_generate_topic_cards.py`, add the guest's LinkedIn URL to `js/linkedin-links.js`, thumbnail/og:image must be the real YouTube `maxresdefault.jpg` (never generated), and after prod deploy ping IndexNow. Before ANY SEO-surface change (canonicals, redirects, sitemap, titles/metas, indexing requests), invoke the `gsc-change-preflight` skill.
 
+**Season 2 keyword plan (mandatory for every new Season 2 episode):** read [SEASON2_KEYWORD_PLAN.md](SEASON2_KEYWORD_PLAN.md) before writing the title, meta description, or tags. The page `<title>` leads with the row's primary keyword phrase (still <= 57 chars), and titles and descriptions go by what the guest actually says in the recording. The master copy lives on Chris's PC at `C:\Users\PC\Desktop\HDSC\SignalRoom\EpisodeKits\SEASON2_KEYWORD_PLAN.md`; keep the repo copy in sync when a row changes.
+
 ## Conventions
 
 - **Canonical URLs:** apex host (never www), https, extensionless (`/episodes/foo`). Articles are lowercase `/articles/...` in URLs but the files live in capital-A `Articles/` on disk — never link `href="/Articles/..."`, never rename the directory.
@@ -93,7 +95,7 @@ Episode watch-page layout: place the full-episode player in a labeled `#watch-fu
 - **GA4 (`G-RZNHLJSRW3`) is deliberately deferred and hostname-gated** to production only. Never replace the loader with a plain script tag; never remove the hostname check.
 - **Video measurement:** all episode and Shorts iframe URLs, including dynamic `player.src` replacements, require `enablejsapi=1`. Run `python signalroom-publish-normalize.py --fix-video-api --apply` after page generation or Shorts injection. `_validate_episode.py` enforces this and `--fix` repairs it. Keep VideoObject URLs unchanged. Guest application conversion is `guest_application_submit`, emitted only after Netlify accepts the POST; it is not editorial approval or proof of Neon persistence.
 - **The shorts carousel is absent on brand-new episode pages** — it's injected by a later cloud pass after clips are cut. Not a bug. After that pass, run `signalroom-publish-normalize.py --fix-alt --apply` (the cloud template emits empty alts).
-- **The "add-podcast-episode" routine lives on claude.ai, not in this repo.** When Chris says an episode is "ready to push", the page usually already exists on staging — the remaining work is prod deploy + any missing `_redirects` line + IndexNow, not a rebuild.
+- **No publish routine is running.** The claude.ai "add-podcast-episode" routine was retired 2026-04-27 and the desktop "episode-publish-cascade" task was retired 2026-09-01. Episode pages are built by hand in a session (see PRs #194, #195, #201) from the most recent episode page as the template, following the new-page checklist and the Season 2 keyword plan above.
 - `1577c9c65cc397ca183ed80f92e0f9cf.txt` at root is the IndexNow key file. It is public by design. Do not delete, rename, or "move it somewhere safer".
 - YouTube video IDs are matched to episodes by **guest name + publish date**, never by title (YouTube titles diverge from Buzzsprout titles) — see `signalroom-airtable-bridge.py`.
 - `data/*.csv` are stale March–April 2026 exports; nothing reads them at runtime.

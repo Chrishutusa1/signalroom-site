@@ -203,6 +203,11 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
+        dict(slug="ai-governance-in-practice",
+             thumbnail_url="https://i.ytimg.com/vi/llblE46JRww/maxresdefault.jpg",
+             card_title="AI Governance in Practice: Who Is Governing Your AI?",
+             card_desc="Dr. Latha Karthigaa on AI inventories, decision rights, employee policies and human review.",
+             ep_label="Season 2, Episode 4"),
         dict(slug="shadow-ai-governance-healthcare",
              card_title="Shadow AI and Who Owns the Risk",
              card_desc="Aaron Bach, co-founder and CTO of Liminal, on shadow AI, governing with the controls you already have, why no single platform covers AI, and who owns the risk."),

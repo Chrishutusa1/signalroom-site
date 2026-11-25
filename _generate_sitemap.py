@@ -55,7 +55,7 @@ LEGACY_VIDEO_SITEMAP = ROOT / "video-sitemap.xml"  # retired; read once for migr
 VIDEO_NS = "http://www.google.com/schemas/sitemap-video/1.1"
 VIDEO_TAGS = ("thumbnail_loc", "title", "description", "player_loc",
               "duration", "publication_date", "family_friendly")
-EXCLUDE = {"404.html", "episodes/ai-governance-in-practice.html"}
+EXCLUDE = {"404.html"}
 
 # Curated changefreq/priority for root pages. A new root page not listed
 # here gets NEW_ROOT_DEFAULT and a loud note to curate it.
