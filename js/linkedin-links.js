@@ -1,6 +1,7 @@
 // LinkedIn profile links for Signal Room Podcast guests
 (function() {
     var linkedInUrls = {
+        'Dr. Harvey Castro': 'https://www.linkedin.com/in/harveycastromd',
         'Andy Moye': 'https://www.linkedin.com/in/andymoye',
         'Dr. Latha Karthigaa': 'https://www.linkedin.com/in/lathakarthigaa/',
         'Darcy Sullivan': 'https://www.linkedin.com/in/darcymsullivan',
