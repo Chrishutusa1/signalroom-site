@@ -576,7 +576,7 @@ Clinical AI
 
 Governance
 
-Dr. Ömer Atlı
+Dr. Omer Atli
 
 Why “Academic” AI Models Fail the 3 AM Real-World Stress Test
 
