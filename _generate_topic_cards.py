@@ -121,6 +121,11 @@ TOPICS = {
     ],
 
     "clinical-ai-patient-care": [
+        dict(slug="ai-emergency-medicine",
+             thumbnail_url="https://i.ytimg.com/vi/U7FqhfE6XR0/maxresdefault.jpg",
+             card_title="AI in Emergency Medicine: Does AI Make a Better Doctor?",
+             card_desc="Emergency physician Harvey Castro, MD, on generative AI in healthcare: clearer patient instructions, clinician review, and trust before adopting AI tools.",
+             ep_label="Season 2, Episode 5"),
         dict(slug="clinical-ai-hospital-knowledge",
              thumbnail_url="https://signalroompodcast.com/assets/episodes/declan-kelly-episode-20261030.jpg",
              card_title="Clinical AI Needs the Hospital's Own Knowledge",
@@ -198,6 +203,11 @@ TOPICS = {
     ],
 
     "ai-ethics-governance": [
+        dict(slug="ai-governance-in-practice",
+             thumbnail_url="https://i.ytimg.com/vi/llblE46JRww/maxresdefault.jpg",
+             card_title="AI Governance in Practice: Who Is Governing Your AI?",
+             card_desc="Dr. Latha Karthigaa on AI inventories, decision rights, employee policies and human review.",
+             ep_label="Season 2, Episode 4"),
         dict(slug="shadow-ai-governance-healthcare",
              card_title="Shadow AI and Who Owns the Risk",
              card_desc="Aaron Bach, co-founder and CTO of Liminal, on shadow AI, governing with the controls you already have, why no single platform covers AI, and who owns the risk."),
